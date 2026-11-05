@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hive Admin</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./styles.css">
+<style>
+  .wrap{max-width:960px}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin-bottom:20px}
+  .stat{background:var(--paper-2);border:2px solid var(--ink);padding:10px 12px}
+  .stat b{display:block;font:700 26px var(--font-slab)}
+  .stat span{font:600 12px var(--font-ui);color:var(--ink-soft)}
+  .filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px 12px}
+  .filters label{margin-top:0}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--rule)}
+  th{font:600 12px var(--font-ui)}
+  .cov-wrap{overflow-x:auto}
+  .cov-wrap h3{font:700 15px var(--font-ui);margin:18px 0 6px;padding:4px 10px;background:var(--mustard);color:var(--on-mustard);display:inline-block;border:2px solid var(--ink)}
+  .cov-wrap h3:first-child{margin-top:0}
+  .item{border-bottom:1px solid var(--rule);padding:14px 0}
+  .item:last-child{border-bottom:0}
+  .item-head{display:flex;justify-content:space-between;gap:8px;align-items:flex-start;flex-wrap:wrap}
+  .badge{font:700 11px var(--font-ui);text-transform:uppercase;padding:3px 8px;border:2px solid var(--ink)}
+  .badge.pending{background:var(--mustard-fill)} .badge.approved{background:var(--ok-tint)}
+  .badge.used{background:var(--paper)} .badge.rejected{background:var(--bad-tint)}
+  .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+  .dup{font:600 12px var(--font-ui);color:var(--mustard)}
+  .codebox{display:flex;gap:8px;align-items:flex-end;flex-wrap:wrap}
+  .codebox div{flex:1 1 200px}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="top">
+    <div class="brand"><img src="./icon.svg" alt="" width="44" height="44"><h1><small>Hive · Beekeeper</small>Uploads admin</h1></div>
+    <button type="button" class="small hidden" id="signOut">Sign out</button>
+  </header>
+
+  <div id="notConfigured" class="banner hidden">Fill in <code>supabaseUrl</code> and <code>supabaseKey</code> in <code>config.js</code> first (see README).</div>
+
+  <section class="card hidden" id="loginCard">
+    <h2>Sign in</h2>
+    <form id="loginForm">
+      <label for="email">Email</label>
+      <input id="email" type="email" autocomplete="username" required>
+      <label for="password">Password</label>
+      <input id="password" type="password" autocomplete="current-password" required>
+      <p class="err hidden" id="loginErr" role="alert"></p>
+      <button type="submit" class="primary" style="margin-top:16px">Sign in</button>
+    </form>
+  </section>
+
+  <section class="card hidden" id="notAdmin">
+    <h2>Not an admin</h2>
+    <p>This account isn't on the admin list. Run the last step of <code>supabase/setup.sql</code> with your email.</p>
+  </section>
+
+  <div id="dash" class="hidden">
+    <div class="stats" id="stats"></div>
+
+    <section class="card">
+      <h2>What the hive has, by course</h2>
+      <p class="meta" style="margin-top:0">Numbers count files (not rejected). “ok” = approved or used. Shared subjects count uploads from every course.</p>
+      <div class="cov-wrap" id="coverage"></div>
+    </section>
+
+    <section class="card">
+      <div class="toolbar">
+        <h2 style="margin:0">Files</h2>
+        <span>
+          <button type="button" class="small" id="refresh">Refresh</button>
+          <button type="button" class="small" id="csv">Export CSV</button>
+        </span>
+      </div>
+      <div class="filters" style="margin-top:12px">
+        <div><label for="fStatus">Status</label>
+          <select id="fStatus"><option value="">All</option><option value="pending" selected>Pending</option><option value="approved">Approved</option><option value="used">Used in reviewer</option><option value="rejected">Rejected</option></select></div>
+        <div><label for="fCourse">Course</label><select id="fCourse"></select></div>
+        <div><label for="fSubject">Subject</label><select id="fSubject"></select></div>
+        <div><label for="fPeriod">Exam</label><select id="fPeriod"></select></div>
+        <div><label for="fText">Search</label><input id="fText" type="search" placeholder="teacher, title, file…"></div>
+      </div>
+      <p class="meta" id="count" style="margin:12px 0 0"></p>
+      <div id="list"></div>
+    </section>
+
+    <section class="card">
+      <h2>Upload code</h2>
+      <p class="meta" style="margin-top:0">Students type this to upload. Change it if it leaks outside your class.</p>
+      <div class="codebox">
+        <div><label for="codeInput">Current code</label><input id="codeInput" type="text" maxlength="64" spellcheck="false"></div>
+        <button type="button" id="saveCode">Save code</button>
+      </div>
+      <p class="err hidden" id="codeErr" role="alert"></p>
+    </section>
+  </div>
+</main>
+
+<script src="./config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="./admin.js"></script>
+</body>
+</html>

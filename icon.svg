@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#15171A"/>
+  <!-- outer honeycomb cell -->
+  <path d="M256 52 432 154v204L256 460 80 358V154z" fill="#F2B705" stroke="#15171A" stroke-width="8"/>
+  <!-- inner cells: many courses, one hive -->
+  <g fill="#15171A" opacity=".18">
+    <path d="M256 150 300 175v51l-44 25-44-25v-51z"/>
+    <path d="M190 264 234 289v51l-44 25-44-25v-51z"/>
+    <path d="M322 264 366 289v51l-44 25-44-25v-51z"/>
+  </g>
+  <!-- arrow: bringing lessons in -->
+  <path d="M256 372V214m-62 60 62-62 62 62" fill="none" stroke="#15171A" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
