@@ -220,7 +220,7 @@ $('#form').addEventListener('submit', async e => {
   const subject = subjSel === OTHER ? $('#subjectOther').value.trim() : subjSel;
   const teacher = $('#teacher').value.trim();
   const period = (document.querySelector('input[name=period]:checked') || {}).value;
-  const code = $('#code').value.trim();
+  const code = $('#code').value.trim().toUpperCase();
   const good = picked.filter(p => p.ok);
 
   if (!course) return showErr('Choose your course.');
@@ -413,7 +413,7 @@ $('#queue').addEventListener('click', async e => {
   const items = await Store.all();
   if (retry) {
     const it = items.find(i => i.id === retry); if (!it) return;
-    const code = $('#code').value.trim();
+    const code = $('#code').value.trim().toUpperCase();
     if (/^[A-Za-z0-9_-]{4,64}$/.test(code) && code !== it.code) { it.code = code; prefs.code = code; savePrefs(); }
     it.status = 'waiting'; it.error = '';
     await Store.put(it); await renderQueue(); processQueue();

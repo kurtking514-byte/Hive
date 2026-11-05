@@ -204,7 +204,7 @@ async function loadCode() {
   if (data) $('#codeInput').value = data.upload_code;
 }
 $('#saveCode').addEventListener('click', async () => {
-  const code = $('#codeInput').value.trim();
+  const code = $('#codeInput').value.trim().toUpperCase();
   const err = $('#codeErr');
   if (!/^[A-Za-z0-9_-]{4,64}$/.test(code)) { err.textContent = 'Use 4–64 letters, numbers, - or _.'; err.classList.remove('hidden'); return; }
   err.classList.add('hidden');

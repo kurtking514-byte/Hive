@@ -15,7 +15,7 @@ create table if not exists public.app_settings (
   upload_code text not null check (upload_code ~ '^[A-Za-z0-9_-]{4,64}$')
 );
 insert into public.app_settings (id, upload_code)
-values (1, 'CITCS-2026')
+values (1, 'CITCS')
 on conflict (id) do nothing;
 alter table public.app_settings enable row level security;
 

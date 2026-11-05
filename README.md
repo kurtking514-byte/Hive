@@ -56,7 +56,7 @@ Also check the `courses`, `subjects` and `teachers` lists in `config.js`. Mark e
 3. After a minute it's live at `https://kurtking514-byte.github.io/Hive/` (capital H, the link is case-sensitive). Make a short link (tinyurl) for the group chat.
 
 ### 4. Set the upload code
-Open `.../admin.html` and sign in. Under **Upload code**, choose a code (default is `CITCS-2026`). Post it in your class group chat together with the link.
+Open `.../admin.html` and sign in. Under **Upload code**, choose a code (default is `CITCS`; students can type it in any capitals). Post it in your class group chat together with the link.
 
 ## Day to day
 - **Admin page:** filter by *Pending*, open each file, then **Approve** (keep), **Reject** (wrong, blurry or off-topic) or **Mark used** once it's in a reviewer.
