@@ -1,124 +1,166 @@
-/* Hive — shared styles. Warm honey-dark palette, honeycomb where you navigate,
-   plain surfaces where you read. */
+/* Hive — dark doodle.
+   Shantell Sans ("doodle") for titles and buttons, Nunito for everything you read.
+   Plain warm-dark background with faint paper grain; doodles only in set places. */
 :root{
   color-scheme:dark;
-  --bg:#14110C;          /* inside the hive: warm near-black */
-  --surface:#1E1A13;     /* cards */
-  --cell:#29231A;        /* inputs, unselected cells */
-  --cell-hover:#332B1F;
-  --rule:#3B3226;        /* borders */
-  --ink:#F1E8D8;         /* main text: warm off-white, never pure white */
-  --ink-soft:#B5A891;    /* secondary text */
-  --honey:#F5B72E;       /* the one accent: actions and highlights only */
-  --honey-deep:#C98A0B;
-  --honey-fill:rgba(245,183,46,.14);
-  --on-honey:#1A1305;
-  --ok:#6BD49A;--ok-tint:rgba(107,212,154,.14);
-  --bad:#FF8A7A;--bad-tint:rgba(255,138,122,.13);
-  --font-slab:"Zilla Slab","Rockwell","Roboto Slab",Georgia,serif;
-  --font-ui:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
-  --font-body:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  --hex:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);
-  --hex-pill:polygon(12px 0,calc(100% - 12px) 0,100% 50%,calc(100% - 12px) 100%,12px 100%,0 50%);
-  /* older names, still used by admin.html */
-  --paper:var(--cell);--paper-2:var(--surface);--mustard:var(--honey);--mustard-fill:var(--honey-fill);
-  --on-mustard:var(--on-honey);--shadow:#000;
+  --bg:#17130C;          /* dark notebook page */
+  --card:#221C12;
+  --cell:#2E2618;        /* inputs, unselected cells */
+  --cell-hover:#3A3020;
+  --line:#F6EBD5;        /* cream ink for outlines */
+  --rule:rgba(246,235,213,.2);
+  --ink:#F6EBD5;         /* text: warm cream, never pure white */
+  --soft:#C2B497;
+  --honey:#FFC21A;       /* the one accent: actions and highlights */
+  --on-honey:#1B1408;
+  --honey-fill:rgba(255,194,26,.14);
+  --ok:#7EDC9F;--ok-tint:rgba(126,220,159,.14);
+  --bad:#FF9384;--bad-tint:rgba(255,147,132,.13);
+  --font-doodle:"Shantell Sans","Comic Sans MS",system-ui,sans-serif;
+  --font-body:"Nunito",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --hand:255px 18px 225px 18px/18px 225px 18px 255px;   /* wobbly hand-drawn box */
+  --hand-flat:180px 10px 160px 8px/8px 26px 10px 22px;  /* same wobble for short boxes (text fields) */
+  /* names still used by admin.html */
+  --paper:var(--cell);--paper-2:var(--card);--mustard:var(--honey);--mustard-fill:var(--honey-fill);
+  --on-mustard:var(--on-honey);--ink-soft:var(--soft);--font-slab:var(--font-doodle);--font-ui:var(--font-body);
 }
 *{box-sizing:border-box;min-width:0}
+html,body{overflow-x:hidden}   /* the faint background comb runs off the right edge on purpose */
 html{background:var(--bg)}
 body{
-  margin:0;min-height:100vh;color:var(--ink);font:16px/1.55 var(--font-body);background-color:var(--bg);
-  /* faint honeycomb wall; cards sit on top, so text never does */
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='98'%3E%3Cpath d='M28 66 0 50V17L28 1l28 16v33L28 66v32M28 0v1' fill='none' stroke='%23F5B72E' stroke-opacity='.07' stroke-width='1.5'/%3E%3Cpath d='M0 98V82l28-16 28 16v16' fill='none' stroke='%23F5B72E' stroke-opacity='.07' stroke-width='1.5'/%3E%3C/svg%3E");
-  background-attachment:fixed;
+  margin:0;min-height:100vh;color:var(--ink);font:16px/1.6 var(--font-body);background-color:var(--bg);
+  /* faint paper grain, barely visible */
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 .94 0 0 0 0 .82 0 0 0 .055 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
-.wrap{max-width:680px;margin:0 auto;padding:16px 16px 64px}
-header.top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:8px 0 12px}
-.brand{display:flex;align-items:center;gap:12px}
-.brand img{flex:none;display:block}
-h1{font:700 26px/1.15 var(--font-slab);margin:0}
-h1 small{display:block;font:600 12px/1.4 var(--font-ui);letter-spacing:.1em;text-transform:uppercase;color:var(--honey);margin-bottom:4px}
-h2{font:700 19px/1.2 var(--font-slab);margin:0 0 14px;display:flex;align-items:center;gap:10px}
-h2 .n{display:inline-grid;place-items:center;width:30px;height:26px;background:var(--honey);color:var(--on-honey);font:700 13px var(--font-ui);clip-path:var(--hex)}
-.tagline{font:700 14px var(--font-ui);letter-spacing:.06em;color:var(--honey);margin:0 0 8px}
-.lead{color:var(--ink-soft);margin:0 0 20px}
-.card{background:var(--surface);border:1px solid var(--rule);border-top:3px solid var(--honey);border-radius:0;padding:18px 16px;margin:0 0 20px}
-.pill{font:700 12px var(--font-ui);padding:6px 16px;clip-path:var(--hex-pill);white-space:nowrap}
-.pill.on{background:var(--ok-tint);color:var(--ok)} .pill.off{background:var(--bad-tint);color:var(--bad)}
-.banner{border:1px dashed var(--bad);background:var(--bad-tint);padding:12px;margin:0 0 20px;font-size:14px}
-label{display:block;font:600 13px var(--font-ui);margin:14px 0 6px;color:var(--ink)}
-label .opt{font-weight:400;color:var(--ink-soft)}
+.doodle{font-family:var(--font-doodle);font-weight:650;font-variation-settings:"INFM" 60,"BNCE" 36,"SPAC" 18}
+.wrap{max-width:620px;margin:0 auto;padding:12px 16px 56px}
+
+/* kk mark, top left */
+header.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:4px 0 18px}
+.mark{display:inline-flex;align-items:center;gap:6px;color:var(--ink);text-decoration:none;opacity:.85}
+.mark svg{display:block}
+.mark .doodle{font-size:20px;line-height:1}
+.mark:hover{opacity:1}
+
+.hero{position:relative;display:flex;align-items:center;gap:14px;margin:0 0 20px;padding:18px 0 10px}
+.hero > div{position:relative}
+/* the big comb is background texture, not a second logo: outline only, faint, cut off at the edge */
+.hero-comb{position:absolute;right:-70px;top:-46px;width:300px;opacity:.13;transform:rotate(-14deg);pointer-events:none}
+.hero-comb svg{display:block;width:100%;height:auto}
+@media (max-width:520px){.hero-comb{right:-90px;width:250px}}
+h1{font-size:46px;line-height:1;margin:0}
+.sub{margin:4px 0 0;color:var(--soft)}
+h2{font-size:21px;line-height:1.2;margin:0 0 10px}
+
+.hand{border-radius:var(--hand)}
+.card{background:var(--card);border:2.5px solid var(--line);padding:16px;margin:0 0 18px}
+.pill{font:700 12px var(--font-body);padding:4px 12px;border:2px solid currentColor;border-radius:var(--hand);white-space:nowrap}
+.pill.on{display:none}   /* only speak up when something is wrong */
+.pill.off{color:var(--bad)}
+.banner{border:2px dashed var(--bad);border-radius:var(--hand);background:var(--bad-tint);padding:12px;margin:0 0 18px;font-size:14px}
+
+label{display:block;font-weight:700;font-size:14px;margin:12px 0 6px}
 input[type=text],input[type=email],input[type=password],input[type=search],select,textarea{
-  width:100%;font:16px var(--font-body);color:var(--ink);background:var(--cell);
-  border:1px solid var(--rule);border-radius:6px;padding:10px 12px;min-height:46px
+  display:block;width:100%;font:16px var(--font-body);color:var(--ink);background:var(--cell);
+  border:2px solid var(--line);border-radius:var(--hand-flat);padding:10px 14px;min-height:46px;margin-top:6px
 }
-input::placeholder,textarea::placeholder{color:#8C8070}
+input::placeholder,textarea::placeholder{color:#8F826C}
+input:focus,select:focus,textarea:focus{border-color:var(--honey);outline:none}
+button:focus-visible,a:focus-visible,summary:focus-visible,.drop:focus-within{outline:3px solid var(--honey);outline-offset:3px}
 textarea{min-height:70px;resize:vertical}
-input:focus,select:focus,textarea:focus,button:focus-visible,.drop:focus-within{outline:2px solid var(--honey);outline-offset:2px}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}
 @media (max-width:520px){.row{grid-template-columns:1fr}}
 
-/* exam period: stretched-hexagon cells */
-.seg{display:flex;flex-wrap:wrap;gap:8px}
-.seg label{margin:0;cursor:pointer}
-.seg input{position:absolute;opacity:0;pointer-events:none}
-.seg span{display:inline-block;padding:11px 22px;font:700 14px var(--font-ui);background:var(--cell);color:var(--ink);clip-path:var(--hex-pill)}
-.seg label:hover span{background:var(--cell-hover)}
-.seg input:checked+span{background:var(--honey);color:var(--on-honey)}
-.seg input:focus-visible+span{outline:2px solid var(--honey);outline-offset:2px}
-
-/* course picker: a strip of honeycomb cells, every second one dropped half a cell */
-.combs{display:flex;align-items:flex-start;margin:4px 0 0}
-.comb{
-  position:relative;flex:none;width:78px;height:68px;margin-left:-18px;padding:0;border:0;
-  background:var(--rule);clip-path:var(--hex);cursor:pointer;box-shadow:none;min-height:0
-}
-.comb:first-child{margin-left:0}
-.comb:nth-child(even){margin-top:34px}
-.comb span{position:absolute;inset:2px;clip-path:var(--hex);background:var(--cell);display:grid;place-items:center;font:700 13px var(--font-ui);color:var(--ink)}
-.comb:hover span{background:var(--cell-hover)}
-.comb[aria-checked=true]{background:var(--honey)}
-.comb[aria-checked=true] span{background:var(--honey);color:var(--on-honey)}
-.comb:active{transform:none}
+/* course: hand-drawn honeycomb cells, every second one dropped half a cell */
+.combs{display:flex;flex-direction:column;align-items:center;margin:6px 0 4px}
+.comb-row{display:flex;justify-content:center}
+.comb-row + .comb-row{margin-top:-28px}   /* rows tuck into each other's gaps */
+.comb{position:relative;flex:none;width:92px;height:92px;margin:0 -9px;padding:0;border:0;background:none;cursor:pointer;box-shadow:none;min-height:0}
+.comb svg{position:absolute;inset:0;width:100%;height:100%}
+.comb svg{transition:transform .18s cubic-bezier(.3,1.6,.5,1)}   /* a little springy bounce */
+.comb svg path{fill:var(--cell);stroke:var(--line);transition:fill .15s}
+.comb:hover{z-index:1}
+.comb:hover svg{transform:scale(1.1)}
+.comb:hover svg path{fill:var(--cell-hover)}
+.comb[aria-checked=true]{z-index:2}
+.comb[aria-checked=true] svg{transform:scale(1.14)}
+.comb[aria-checked=true] svg path{fill:var(--honey)}
+.comb span{transition:transform .18s cubic-bezier(.3,1.6,.5,1)}
+.comb:hover span,.comb[aria-checked=true] span{transform:scale(1.08)}
+.comb span{position:relative;font:700 15px var(--font-body);color:var(--ink)}
+.comb[aria-checked=true] span{color:var(--on-honey)}
 .comb:focus-visible{outline:none}
-.comb:focus-visible span{box-shadow:inset 0 0 0 2px var(--honey)}
+/* no square box behind a hex: kill the general button hover/press look, and only the hex itself takes taps */
+.combs .comb,.combs .comb:hover,.combs .comb:active{background:none;transform:none;-webkit-tap-highlight-color:transparent}
+.comb{pointer-events:none}
+.comb svg path{pointer-events:auto}
+.comb:active svg{transform:scale(.96)}
+.comb:focus-visible svg path{stroke:var(--honey);stroke-width:5}
+
+/* drop zone */
+.drop{display:block;text-align:center;padding:22px 16px;margin:0 0 14px;border:2.5px dashed var(--line);background:var(--card);cursor:pointer}
+.drop:hover,.drop.over{background:var(--honey-fill)}
+.drop-title{display:block;font-size:23px;line-height:1.2}
+.drop input{position:absolute;opacity:0;width:1px;height:1px}
+
+/* picked files with auto-filled details */
+.picked{list-style:none;margin:0 0 14px;padding:0}
+.pfile{background:var(--card);border:2px solid var(--line);padding:12px 14px;margin:0 0 10px}
+.pfile.bad{border-color:var(--bad)}
+.pf-head{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.fname{font-weight:700;overflow-wrap:anywhere}
+.pfile .meta{margin:4px 0 0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 8px}
+.chip{font-weight:700;font-size:13px;padding:3px 10px;border:2px solid var(--line);border-radius:999px;overflow-wrap:anywhere}
+.chip.warn{border-style:dashed;border-color:var(--honey);color:var(--honey)}
+.edit label{margin-top:10px}
+.edit .small{margin-top:12px}
+.x{min-height:32px;width:32px;padding:0;font-size:20px;line-height:1;border-radius:50%}
+
+details.more{margin:0 0 14px}
+details.more summary{cursor:pointer;font-weight:700;color:var(--soft);padding:4px 0}
+details.more[open] summary{color:var(--ink)}
 
 .hidden{display:none!important}
-.hint{font-size:13px;color:var(--ink-soft);margin:6px 0 0}
+.hint{font-size:13px;color:var(--soft);margin:6px 0 0}
+.center{text-align:center}
 .err{color:var(--bad);font-size:14px;margin:8px 0 0}
+.meta{color:var(--soft);font-size:13px}
+
 button,.btn{
-  font:700 15px var(--font-ui);cursor:pointer;color:var(--ink);background:var(--cell);
-  border:1px solid var(--rule);border-radius:6px;padding:10px 16px;min-height:44px;text-decoration:none;display:inline-block
+  font:700 14px var(--font-body);cursor:pointer;color:var(--ink);background:var(--cell);
+  border:2px solid var(--rule);border-radius:10px;padding:10px 16px;min-height:44px;text-decoration:none;display:inline-block
 }
 button:hover{background:var(--cell-hover)}
-button:active{transform:translateY(1px)}
-button.primary{background:var(--honey);color:var(--on-honey);width:100%;font-size:17px;padding:15px;border:0;border-radius:0;clip-path:var(--hex-pill)}
-button.primary:hover{background:#FFC64A}
-button.small{font-size:12px;padding:6px 10px;min-height:34px}
+button:active{transform:translate(1px,1px)}
+button.primary{
+  display:block;width:100%;background:var(--honey);color:var(--on-honey);border:3px solid var(--on-honey);
+  box-shadow:4px 4px 0 var(--line);font-size:22px;padding:12px;margin-top:6px
+}
+button.primary:hover{background:#FFCD45}
+button.primary:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--line)}
+button.small{font-size:13px;padding:6px 12px;min-height:34px}
 button.danger{color:var(--bad)}
+button.link{background:none;border:0;padding:0;min-height:0;color:var(--honey);font-weight:700;font-size:14px;text-decoration:underline;text-underline-offset:3px}
 button:disabled{opacity:.55;cursor:not-allowed}
-.drop{border:2px dashed var(--rule);border-radius:8px;padding:22px;text-align:center;background:var(--cell);cursor:pointer;display:block;margin:0}
-.drop:hover,.drop.over{border-color:var(--honey);background:var(--honey-fill)}
-.drop strong{font:700 17px var(--font-slab);color:var(--honey)}
-.drop input{position:absolute;opacity:0;width:1px;height:1px}
-.picked{list-style:none;margin:12px 0 0;padding:0}
-.picked li{display:flex;align-items:center;gap:8px;justify-content:space-between;border-bottom:1px solid var(--rule);padding:8px 0;font-size:14px}
-.picked li.bad{color:var(--bad)}
-.fname{overflow-wrap:anywhere}
-.meta{color:var(--ink-soft);font-size:13px}
-.queue{list-style:none;margin:0;padding:0}
-.queue li{border-bottom:1px solid var(--rule);padding:12px 0}
+
+/* uploads list */
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.toolbar h2{margin:0}
+.queue{list-style:none;margin:8px 0 0;padding:0}
+.queue li{border-bottom:1.5px dashed var(--rule);padding:12px 0}
 .queue li:last-child{border-bottom:0}
 .q-head{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
-.q-state{font:600 12px var(--font-ui);white-space:nowrap;color:var(--honey)}
+.q-state{font-weight:700;font-size:13px;white-space:nowrap;color:var(--honey)}
 .q-state.done{color:var(--ok)} .q-state.failed{color:var(--bad)}
-/* upload progress: honey filling a stretched cell */
-.bar{height:12px;margin-top:8px;background:var(--cell);clip-path:var(--hex-pill)}
+.bar{height:12px;margin-top:8px;background:var(--cell);border:2px solid var(--line);border-radius:999px;overflow:hidden}
 .bar i{display:block;height:100%;background:var(--honey);width:0;transition:width .2s}
 .q-actions{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
-.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:space-between}
-.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--honey);color:var(--on-honey);padding:12px 24px;font:700 14px var(--font-ui);z-index:9;max-width:calc(100% - 32px);clip-path:var(--hex-pill)}
-.empty{color:var(--ink-soft);font-size:14px;margin:0}
-footer{text-align:center;font-size:13px;color:var(--ink-soft)}
+.empty{display:flex;align-items:center;gap:12px;color:var(--soft);font-size:14px;margin:6px 0 0}
+.empty p{margin:0}
+.empty svg{flex:none}
+
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--honey);color:var(--on-honey);border:3px solid var(--on-honey);border-radius:var(--hand);padding:10px 20px;font:700 14px var(--font-body);z-index:9;max-width:calc(100% - 32px);box-shadow:3px 3px 0 var(--line)}
+footer{text-align:center;font-size:13px;color:var(--soft);margin-top:8px}
 footer a{color:var(--honey)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}

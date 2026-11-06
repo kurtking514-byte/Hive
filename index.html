@@ -4,99 +4,88 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hive</title>
-<meta name="description" content="Hive: many courses, one hive. Send your lessons and lectures for the UC CITCS reviewer.">
-<meta name="theme-color" content="#14110C">
+<meta name="description" content="Send your lessons and lectures for the UC CITCS reviewer.">
+<meta name="theme-color" content="#17130C">
 <link rel="manifest" href="./manifest.webmanifest">
 <link rel="icon" href="./icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="./icon.svg">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Hive">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght,BNCE,INFM,SPAC@0,300..800,-100..100,0..100,0..100&family=Nunito:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 <main class="wrap">
   <header class="top">
-    <div class="brand">
-      <img src="./icon.svg" alt="" width="44" height="44">
-      <h1><small>Hive · UC CITCS</small>Send your lessons</h1>
-    </div>
+    <a class="mark" href="./" aria-label="kk Hive"><span id="markComb"></span><span class="doodle">kk</span></a>
     <span id="net" class="pill on" role="status">Online</span>
   </header>
-  <p class="tagline">Many courses. One hive.</p>
-  <p class="lead">Upload your lecture slides, modules, and handouts so they can be turned into notes and quizzes for everyone. No account needed. Weak signal? Your files wait on this phone and send automatically when you're back online.</p>
 
-  <div id="notConfigured" class="banner hidden">This site isn't connected to storage yet. You can still add files, but they will wait on this device until it is set up.</div>
+  <section class="hero">
+    <span id="heroComb" class="hero-comb" aria-hidden="true"></span>
+    <div>
+      <h1 class="doodle">Hive</h1>
+      <p class="sub">Send your lessons for the reviewer.</p>
+    </div>
+  </section>
+
+  <div id="notConfigured" class="banner hidden">This site isn't connected to storage yet. Files will wait on this device until it is.</div>
 
   <form id="form" novalidate>
-    <section class="card">
-      <h2><span class="n">1</span> About you</h2>
-      <label id="courseLabel">Your comb (course)</label>
-      <div class="combs" id="combs" role="radiogroup" aria-labelledby="courseLabel"></div>
-      <select id="course" class="hidden" aria-hidden="true" tabindex="-1"></select>
-      <input id="courseOther" type="text" class="hidden" placeholder="Type your course" maxlength="60" aria-label="Other course">
-      <label for="section">Year &amp; section <span class="opt">(optional)</span></label>
-      <input id="section" type="text" placeholder="e.g. 1-A" maxlength="60" autocomplete="off">
-      <label for="uploader">Your name <span class="opt">(optional, for credit)</span></label>
-      <input id="uploader" type="text" maxlength="80" autocomplete="name">
-      <label for="code">Upload code</label>
-      <input id="code" type="text" required maxlength="64" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="Ask in the class group chat">
-      <p class="hint">Saved on this device, so you only type it once.</p>
+    <section class="card hand hidden" id="codeCard">
+      <h2 class="doodle">Class code</h2>
+      <input id="code" type="text" maxlength="64" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="From the Discord server" aria-label="Class code">
+      <p class="hint">You only type this once.</p>
     </section>
 
-    <section class="card">
-      <h2><span class="n">2</span> About the file</h2>
-      <label for="subject">Subject</label>
-      <select id="subject" required></select>
-      <input id="subjectOther" type="text" class="hidden" placeholder="Subject code and name, e.g. CC3 Data Structures" maxlength="80" aria-label="Other subject">
-
-      <label for="teacher">Teacher</label>
-      <input id="teacher" type="text" list="teacherList" required maxlength="80" placeholder="e.g. Prof. Santos" autocomplete="off">
-      <datalist id="teacherList"></datalist>
-
-      <label id="periodLabel">Exam</label>
-      <div class="seg" id="period" role="radiogroup" aria-labelledby="periodLabel"></div>
-
+    <details class="more">
+      <summary>Add your name for credit <span class="meta">(optional)</span></summary>
       <div class="row">
-        <div>
-          <label for="mtype">Type</label>
-          <select id="mtype"></select>
-        </div>
-        <div>
-          <label for="title">Lesson / lecture <span class="opt">(optional)</span></label>
-          <input id="title" type="text" maxlength="150" placeholder="e.g. Lecture 3: The Human Being">
-        </div>
+        <div><label for="uploader">Your name</label><input id="uploader" type="text" maxlength="80" autocomplete="name"></div>
+        <div><label for="section">Year and section</label><input id="section" type="text" maxlength="60" placeholder="1-A" autocomplete="off"></div>
       </div>
-      <label for="note">Note <span class="opt">(optional)</span></label>
-      <textarea id="note" maxlength="500" placeholder="e.g. teacher said slides 10–20 are on the exam"></textarea>
+    </details>
+
+    <section class="card hand">
+      <h2 class="doodle" id="courseLabel">Your course</h2>
+      <div class="combs" id="combs" role="radiogroup" aria-labelledby="courseLabel"></div>
+      <input id="courseOther" type="text" class="hidden" placeholder="Type your course" maxlength="60" aria-label="Other course">
     </section>
 
-    <section class="card">
-      <h2><span class="n">3</span> Files</h2>
-      <label class="drop" id="drop">
-        <input id="files" type="file" multiple accept=".pdf,.doc,.docx,.ppt,.pptx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation">
-        <strong>Tap to choose files</strong><br>
-        <span class="meta" id="dropHint">PDF, Word, or PowerPoint · up to 20 MB each</span>
-      </label>
-      <ul class="picked" id="picked"></ul>
-      <p class="err hidden" id="formErr" role="alert"></p>
-      <button type="submit" class="primary" id="send" style="margin-top:16px">Send to the hive</button>
-    </section>
+    <label class="drop hand" id="drop">
+      <input id="files" type="file" multiple accept=".pdf,.doc,.docx,.ppt,.pptx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation">
+      <span class="drop-title doodle">Drop your lesson here</span>
+      <span class="meta" id="dropHint">PDF, Word, or PowerPoint · up to 20 MB</span>
+    </label>
+
+    <ul class="picked" id="picked"></ul>
+
+
+    <p class="err hidden" id="formErr" role="alert"></p>
+    <button type="submit" class="primary hand doodle" id="send">Send to the hive</button>
+    <p class="hint center">No signal? It waits on your phone and sends later.</p>
   </form>
 
-  <section class="card">
+  <section class="card hand">
     <div class="toolbar">
-      <h2 style="margin:0">Your uploads</h2>
+      <h2 class="doodle">Your uploads</h2>
       <button type="button" class="small" id="clearDone">Clear sent</button>
     </div>
     <ul class="queue" id="queue"></ul>
-    <p class="empty" id="queueEmpty">No nectar yet. Files you send show up here.</p>
+    <div class="empty" id="queueEmpty"><span id="beeSlot"></span><p>No nectar yet. Files you send show up here.</p></div>
   </section>
 
-  <footer>Files are only seen by the Hive admin. <a href="./admin.html">Admin</a></footer>
+  <datalist id="teacherList"></datalist>
+  <footer><button type="button" class="link" id="changeCode">Change class code</button> · <a href="./admin.html">Admin</a></footer>
 </main>
 
 <script src="./config.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/tus-js-client@4.1.0/dist/tus.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fflate@0.8.2/umd/index.js"></script>
+<script src="./doodle.js"></script>
+<script src="./autofill.js"></script>
 <script src="./app.js"></script>
 </body>
 </html>

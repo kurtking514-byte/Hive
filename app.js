@@ -82,86 +82,89 @@ const Store = (() => {
   };
 })();
 
-/* ---------------- build the form ---------------- */
-function fillSelect(sel, options, current) {
-  sel.innerHTML = options.map(o => `<option value="${esc(o.value)}">${esc(o.label)}</option>`).join('');
-  if (current != null && options.some(o => o.value === current)) sel.value = current;
+/* ---------------- doodles ---------------- */
+if (window.Doodle) {
+  $('#markComb').innerHTML = Doodle.comb({ width: 30 });
+  $('#heroComb').innerHTML = Doodle.comb({ honey: 'none', ink: '#FFC21A', sticker: '' }); // faint outline behind the title
+  $('#beeSlot').innerHTML = Doodle.bee(84);
 }
-const courses = (CFG.courses || []).map(c => ({ value: c, label: c }));
-fillSelect($('#course'), [{ value: '', label: 'Choose…' }, ...courses, { value: OTHER, label: 'Other…' }], prefs.course);
-if (prefs.course && !courses.some(c => c.value === prefs.course)) { $('#course').value = OTHER; $('#courseOther').value = prefs.course; }
+if (!CONFIGURED) $('#notConfigured').classList.remove('hidden');
+$('#dropHint').textContent = `PDF, Word, or PowerPoint · up to ${CFG.maxFileMB || 20} MB`;
 
-/* Course picker as honeycomb cells; the hidden <select> stays the source of truth. */
-$('#combs').innerHTML = [...courses, { value: OTHER, label: 'Other' }].map(c =>
-  `<button type="button" class="comb" role="radio" aria-checked="false" data-v="${esc(c.value)}"><span>${esc(c.label)}</span></button>`).join('');
+/* ---------------- class code: asked once, then hidden ---------------- */
+$('#code').value = prefs.code || '';
+const showCode = on => $('#codeCard').classList.toggle('hidden', !on);
+showCode(!prefs.code);
+$('#changeCode').addEventListener('click', () => { showCode(true); $('#code').focus(); });
+
+/* ---------------- name (optional) ---------------- */
+$('#uploader').value = prefs.uploader || '';
+$('#section').value = prefs.section || '';
+
+/* ---------------- course: honeycomb cells, remembered ---------------- */
+const courseList = CFG.courses || [];
+let course = prefs.course || '';
+if (course && !courseList.includes(course)) { $('#courseOther').value = course; course = OTHER; }
+{
+  const cellBtn = (c, i) => `<button type="button" class="comb" role="radio" aria-checked="false" data-v="${esc(c)}">${window.Doodle ? Doodle.cell(31 + i) : ''}<span>${c === OTHER ? 'Other' : esc(c)}</span></button>`;
+  /* rows of 3 then 2, nested into each other like a real comb (and like the logo) */
+  const all = [...courseList, OTHER].map(cellBtn); let html = '';
+  /* Balanced shapes: next rows differ by one cell, so each row sits in the gaps of the one above
+     and the whole comb is mirror-symmetric. */
+  const SHAPES = { 1: [1], 2: [2], 3: [2, 1], 4: [1, 2, 1], 5: [3, 2], 6: [2, 3, 1], 7: [2, 3, 2], 8: [3, 2, 3] };
+  const rows = SHAPES[all.length] || all.map((_, r) => r % 2 ? 2 : 3);
+  for (let i = 0, r = 0; i < all.length; r++) { const n = rows[r]; html += `<div class="comb-row">${all.slice(i, i + n).join('')}</div>`; i += n; }
+  $('#combs').innerHTML = html;
+}
 function paintCombs() {
-  document.querySelectorAll('.comb').forEach(b => b.setAttribute('aria-checked', String(b.dataset.v === $('#course').value)));
+  document.querySelectorAll('.comb').forEach(b => b.setAttribute('aria-checked', String(b.dataset.v === course)));
+  $('#courseOther').classList.toggle('hidden', course !== OTHER);
 }
 $('#combs').addEventListener('click', e => {
   const b = e.target.closest('.comb'); if (!b) return;
-  $('#course').value = b.dataset.v;
-  $('#course').dispatchEvent(new Event('change'));
+  course = b.dataset.v; paintCombs();
+  if (course === OTHER) $('#courseOther').focus();
 });
-$('#course').addEventListener('change', paintCombs);
 paintCombs();
+const courseValue = () => course === OTHER ? $('#courseOther').value.trim() : course;
 
-/* Subjects: "all" = shared by every CITCS course; a list = only those courses. */
+/* ---------------- current exam: set by the admin, students never pick it ---------------- */
+const EXAMS = ['Prelim', 'Midterm', 'Finals'];
+let examNow = EXAMS.includes(prefs.exam) ? prefs.exam : (CFG.defaultExamPeriod || 'Midterm');
+(async () => {
+  if (!CONFIGURED || !navigator.onLine) return;
+  try {
+    const r = await fetch(BASE + '/rest/v1/rpc/get_current_exam', { method: 'POST', headers: authHeaders({ 'Content-Type': 'application/json' }), body: '{}' });
+    if (!r.ok) return;
+    const v = await r.json();
+    if (EXAMS.includes(v)) { examNow = v; prefs.exam = v; savePrefs(); }
+  } catch (e) { /* offline: keep the last known exam */ }
+})();
+
+/* ---------------- subjects & teachers ---------------- */
+const SUBJECTS = CFG.subjects || [];
 const isShared = s => !s.courses || s.courses === 'all';
-const inCourse = (s, course) => isShared(s) || !course || course === OTHER || (Array.isArray(s.courses) && s.courses.includes(course));
-function fillSubjects() {
-  const sel = $('#subject');
-  const course = $('#course').value;
-  const keep = sel.value || prefs.subject || '';
-  const list = (CFG.subjects || []).filter(s => inCourse(s, course));
-  const own = list.filter(s => !isShared(s));
-  const shared = list.filter(isShared);
-  const opts = arr => arr.map(s => `<option value="${esc(s.id)}">${esc(s.id + ' — ' + s.name)}</option>`).join('');
-  const ownLabel = course && course !== OTHER ? course + ' subjects' : 'Course subjects';
-  sel.innerHTML = '<option value="">Choose…</option>' +
-    (own.length ? `<optgroup label="${esc(ownLabel)}">${opts(own)}</optgroup>` : '') +
-    (shared.length ? `<optgroup label="All CITCS courses">${opts(shared)}</optgroup>` : '') +
+const inCourse = s => isShared(s) || !course || course === OTHER || (Array.isArray(s.courses) && s.courses.includes(course));
+const subjectName = id => { const s = SUBJECTS.find(x => x.id === id); return s ? s.id + ' — ' + s.name : id; };
+function subjectOptions(current) {
+  const list = SUBJECTS.filter(inCourse), own = list.filter(s => !isShared(s)), shared = list.filter(isShared);
+  const known = SUBJECTS.some(s => s.id === current);
+  const opt = s => `<option value="${esc(s.id)}"${s.id === current ? ' selected' : ''}>${esc(s.id + ' — ' + s.name)}</option>`;
+  return `<option value="">Not sure</option>` +
+    (own.length ? `<optgroup label="${esc((course && course !== OTHER ? course : 'Course') + ' subjects')}">${own.map(opt).join('')}</optgroup>` : '') +
+    (shared.length ? `<optgroup label="All CITCS courses">${shared.map(opt).join('')}</optgroup>` : '') +
+    (known || !current ? '' : `<option value="${esc(current)}" selected>${esc(current)}</option>`) +
     `<option value="${OTHER}">Other subject…</option>`;
-  sel.value = [...sel.options].some(o => o.value === keep) ? keep : '';
 }
-fillSubjects();
-
-fillSelect($('#mtype'), (CFG.materialTypes || ['Lecture slides', 'Other']).map(m => ({ value: m, label: m })), prefs.mtype);
-
-const periods = CFG.examPeriods || ['Prelim', 'Midterm', 'Finals'];
-const periodNow = prefs.period && periods.includes(prefs.period) ? prefs.period : (CFG.defaultExamPeriod || periods[0]);
-$('#period').innerHTML = periods.map(p =>
-  `<label><input type="radio" name="period" value="${esc(p)}"${p === periodNow ? ' checked' : ''}><span>${esc(p)}</span></label>`).join('');
-
-$('#section').value = prefs.section || '';
-$('#uploader').value = prefs.uploader || '';
-$('#code').value = prefs.code || '';
-$('#dropHint').textContent = `PDF, Word, or PowerPoint · up to ${CFG.maxFileMB || 20} MB each`;
-
 function renderTeachers() {
   const all = [...new Set([...(CFG.teachers || []), ...prefs.teachers])].sort((a, b) => a.localeCompare(b));
   $('#teacherList').innerHTML = all.map(t => `<option value="${esc(t)}">`).join('');
 }
 renderTeachers();
+const TYPE_LIST = CFG.materialTypes || ['Lecture slides', 'Lesson / module', 'Handout / notes', 'Activity / exercise', 'Other'];
 
-function toggleOther(sel, input) {
-  const on = sel.value === OTHER;
-  input.classList.toggle('hidden', !on);
-  input.required = on;
-  if (on) input.focus();
-}
-$('#course').addEventListener('change', () => {
-  toggleOther($('#course'), $('#courseOther'));
-  fillSubjects();
-  if ($('#subject').value !== OTHER) $('#subjectOther').classList.add('hidden');
-});
-$('#subject').addEventListener('change', () => toggleOther($('#subject'), $('#subjectOther')));
-toggleOther($('#course'), $('#courseOther'));
-if ($('#course').value !== OTHER) $('#courseOther').classList.add('hidden');
-
-if (!CONFIGURED) $('#notConfigured').classList.remove('hidden');
-
-/* ---------------- file picking + checking ---------------- */
-let picked = []; // {file, ok, reason}
+/* ---------------- picked files: checked, read, auto-filled ---------------- */
+let picked = []; // {id, file, ok, reason, reading, readP, meta, found, open}
 
 async function checkFile(file) {
   const ext = extOf(file.name);
@@ -171,8 +174,7 @@ async function checkFile(file) {
   if (file.size > MAX_BYTES) return `Too big (${fmtSize(file.size)}). Max is ${CFG.maxFileMB || 20} MB. ${ext === 'pdf' ? 'Compress it or split it into parts.' : 'Save it as PDF, or compress the pictures in it.'}`;
   try {
     const head = new Uint8Array(await file.slice(0, 8).arrayBuffer());
-    const sig = SIGS[t.sig];
-    if (!sig.every((b, i) => head[i] === b)) return 'This file is not really a ' + ext.toUpperCase() + ' file';
+    if (!SIGS[t.sig].every((b, i) => head[i] === b)) return 'This file is not really a ' + ext.toUpperCase() + ' file';
   } catch (e) { return 'Could not read this file'; }
   return '';
 }
@@ -181,32 +183,73 @@ async function addFiles(list) {
   for (const file of list) {
     if (picked.some(p => p.file.name === file.name && p.file.size === file.size)) continue;
     const reason = await checkFile(file);
-    picked.push({ file, ok: !reason, reason });
+    const p = { id: uuid(), file, ok: !reason, reason, reading: !reason, open: false,
+      meta: { subject: '', subjectOther: '', teacher: '', title: '', type: '', note: '' }, found: {} };
+    picked.push(p);
+    if (p.ok) {
+      p.readP = (window.HiveAutofill ? HiveAutofill.read(file, SUBJECTS) : Promise.resolve(null))
+        .catch(() => null)
+        .then(res => {
+          if (res) { Object.assign(p.meta, { subject: res.subject, teacher: res.teacher, title: res.title, type: res.type }); p.found = res.found; }
+          if (!p.meta.type) p.meta.type = /pptx?$/.test(extOf(file.name)) ? 'Lecture slides' : 'Handout / notes';
+          p.reading = false; renderPicked();
+        });
+    }
   }
   renderPicked();
 }
 
+function chip(text, missing) { return `<span class="chip${missing ? ' warn' : ''}">${esc(text)}</span>`; }
+
 function renderPicked() {
-  $('#picked').innerHTML = picked.map((p, i) => `
-    <li class="${p.ok ? '' : 'bad'}">
-      <span><span class="fname">${esc(p.file.name)}</span><br><span class="meta">${p.ok ? fmtSize(p.file.size) : esc(p.reason)}</span></span>
-      <button type="button" class="small" data-remove="${i}" aria-label="Remove ${esc(p.file.name)}">Remove</button>
-    </li>`).join('');
+  $('#picked').innerHTML = picked.map(p => {
+    const m = p.meta;
+    let body;
+    if (!p.ok) body = `<p class="err">${esc(p.reason)}</p>`;
+    else if (p.reading) body = `<p class="meta">Reading your file…</p>`;
+    else if (!p.open) {
+      const any = p.found.subject || p.found.teacher || p.found.title;
+      body = `<p class="meta">${any ? 'We read your file and filled this in:' : "We couldn't read much from this file. Add what you know:"}</p>
+        <div class="chips">${chip(m.subject ? (m.subject === OTHER ? (m.subjectOther || 'Other subject') : m.subject) : 'Subject?', !m.subject)}${chip(m.teacher || 'Teacher?', !m.teacher)}${m.title ? chip(m.title) : ''}</div>
+        <button type="button" class="link" data-edit>Edit details</button>`;
+    } else {
+      body = `<div class="edit">
+        <label>Subject<select data-f="subject">${subjectOptions(m.subject)}</select></label>
+        <input type="text" data-f="subjectOther" class="${m.subject === OTHER ? '' : 'hidden'}" maxlength="80" placeholder="Subject code and name" value="${esc(m.subjectOther)}" aria-label="Other subject">
+        <label>Teacher<input type="text" data-f="teacher" list="teacherList" maxlength="80" placeholder="Prof. Santos" value="${esc(m.teacher)}"></label>
+        <label>Lesson<input type="text" data-f="title" maxlength="150" placeholder="Lecture 3: The Human Being" value="${esc(m.title)}"></label>
+        <label>Type<select data-f="type">${TYPE_LIST.map(t => `<option${t === m.type ? ' selected' : ''}>${esc(t)}</option>`).join('')}</select></label>
+        <label>Note <span class="meta">(optional)</span><textarea data-f="note" maxlength="500" placeholder="Slides 10–20 are on the exam">${esc(m.note)}</textarea></label>
+        <button type="button" class="small" data-done>Done</button></div>`;
+    }
+    return `<li class="pfile hand${p.ok ? '' : ' bad'}" data-id="${p.id}">
+      <div class="pf-head"><span><span class="fname">${esc(p.file.name)}</span> <span class="meta">${fmtSize(p.file.size)}</span></span>
+      <button type="button" class="x" data-remove aria-label="Remove ${esc(p.file.name)}">×</button></div>${body}</li>`;
+  }).join('');
   const n = picked.filter(p => p.ok).length;
   $('#send').textContent = n > 1 ? `Send ${n} files to the hive` : 'Send to the hive';
 }
 
-$('#files').addEventListener('change', e => { addFiles([...e.target.files]); e.target.value = ''; });
+const pickedOf = el => picked.find(p => p.id === el.closest('.pfile')?.dataset.id);
 $('#picked').addEventListener('click', e => {
-  const i = e.target.getAttribute('data-remove');
-  if (i != null) { picked.splice(+i, 1); renderPicked(); }
+  const p = pickedOf(e.target); if (!p) return;
+  if (e.target.closest('[data-remove]')) { picked = picked.filter(x => x !== p); renderPicked(); }
+  else if (e.target.closest('[data-edit]')) { p.open = true; renderPicked(); }
+  else if (e.target.closest('[data-done]')) { p.open = false; renderPicked(); }
 });
+['input', 'change'].forEach(ev => $('#picked').addEventListener(ev, e => {
+  const f = e.target.dataset.f; const p = pickedOf(e.target); if (!f || !p) return;
+  p.meta[f] = e.target.value;
+  if (f === 'subject') e.target.closest('.edit').querySelector('[data-f=subjectOther]').classList.toggle('hidden', e.target.value !== OTHER);
+}));
+
+$('#files').addEventListener('change', e => { addFiles([...e.target.files]); e.target.value = ''; });
 const drop = $('#drop');
 ['dragenter', 'dragover'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.add('over'); }));
 ['dragleave', 'drop'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.remove('over'); }));
 drop.addEventListener('drop', e => addFiles([...(e.dataTransfer?.files || [])]));
 
-/* ---------------- submit → queue ---------------- */
+/* ---------------- send → queue ---------------- */
 async function sha256Hex(file) {
   if (!(window.crypto && crypto.subtle)) return uuid().replace(/-/g, '');
   const h = await crypto.subtle.digest('SHA-256', await file.arrayBuffer());
@@ -214,7 +257,7 @@ async function sha256Hex(file) {
 }
 
 async function checkCodeOnline(code) {
-  if (!CONFIGURED || !navigator.onLine) return null; // unknown, check later
+  if (!CONFIGURED || !navigator.onLine) return null; // unknown, checked again on upload
   try {
     const r = await fetch(BASE + '/rest/v1/rpc/check_upload_code', {
       method: 'POST', headers: authHeaders({ 'Content-Type': 'application/json' }), body: JSON.stringify({ code })
@@ -225,54 +268,47 @@ async function checkCodeOnline(code) {
 }
 
 function showErr(msg) { const el = $('#formErr'); el.textContent = msg; el.classList.toggle('hidden', !msg); if (msg) el.scrollIntoView({ block: 'nearest' }); }
+const CODE_RE = /^[A-Za-z0-9_-]{4,64}$/;
 
 $('#form').addEventListener('submit', async e => {
   e.preventDefault();
   showErr('');
-  const course = $('#course').value === OTHER ? $('#courseOther').value.trim() : $('#course').value;
-  const subjSel = $('#subject').value;
-  const subject = subjSel === OTHER ? $('#subjectOther').value.trim() : subjSel;
-  const teacher = $('#teacher').value.trim();
-  const period = (document.querySelector('input[name=period]:checked') || {}).value;
-  const code = $('#code').value.trim().toUpperCase();
+  const code = ($('#code').value.trim() || prefs.code || '').toUpperCase();
+  const courseVal = courseValue();
   const good = picked.filter(p => p.ok);
 
-  if (!course) return showErr('Tap your course (comb) first.');
-  if (!subject) return showErr('Choose the subject.');
-  if (!teacher) return showErr("Type the teacher's name.");
-  if (!period) return showErr('Choose which exam this is for.');
-  if (!/^[A-Za-z0-9_-]{4,64}$/.test(code)) return showErr('Type the upload code from your class group chat.');
-  if (!good.length) return showErr(picked.length ? 'None of the chosen files can be sent. See the reasons above.' : 'Choose at least one file.');
+  if (!CODE_RE.test(code)) { showCode(true); $('#code').focus(); return showErr('Type the class code from the Discord server.'); }
+  if (!courseVal) return showErr('Tap your course first.');
+  if (!good.length) return showErr(picked.length ? 'None of these files can be sent. See the reasons above.' : 'Choose a file first.');
 
   const btn = $('#send'); btn.disabled = true; btn.textContent = 'Checking…';
   try {
+    await Promise.all(good.map(p => p.readP));
     const valid = await checkCodeOnline(code);
-    if (valid === false) return showErr('That upload code is not right. Check the class group chat.');
+    if (valid === false) { showCode(true); return showErr("That class code isn't right. Check the Discord server."); }
 
-    Object.assign(prefs, {
-      course, section: $('#section').value.trim(), uploader: $('#uploader').value.trim(), code,
-      subject: subjSel, period, mtype: $('#mtype').value
-    });
-    if (!prefs.teachers.includes(teacher)) prefs.teachers = [teacher, ...prefs.teachers].slice(0, 40);
+    Object.assign(prefs, { course: courseVal, code, uploader: $('#uploader').value.trim(), section: $('#section').value.trim() });
+    for (const p of good) { const t = p.meta.teacher.trim(); if (t && !prefs.teachers.includes(t)) prefs.teachers = [t, ...prefs.teachers].slice(0, 40); }
     savePrefs(); renderTeachers();
 
-    const meta = {
-      course, year_section: prefs.section || null, subject, teacher, exam_period: periods.includes(period) && ['Prelim', 'Midterm', 'Finals'].includes(period) ? period : 'Other',
-      material_type: $('#mtype').value || null, title: $('#title').value.trim() || null,
-      uploader: prefs.uploader || null, note: $('#note').value.trim() || null
-    };
     for (const p of good) {
       btn.textContent = 'Preparing ' + p.file.name + '…';
-      const ext = extOf(p.file.name);
+      const m = p.meta, ext = extOf(p.file.name);
+      const subject = (m.subject === OTHER ? m.subjectOther : m.subject).trim();
       const item = {
         id: uuid(), createdAt: Date.now(), file: p.file, name: p.file.name, size: p.file.size,
-        ext, mime: TYPES[ext].mime, sha256: await sha256Hex(p.file), code, meta,
+        ext, mime: TYPES[ext].mime, sha256: await sha256Hex(p.file), code,
+        meta: {
+          course: courseVal, year_section: prefs.section || null,
+          subject: (subject || 'Unknown').slice(0, 80), teacher: (m.teacher.trim() || 'Unknown').slice(0, 80),
+          exam_period: examNow, material_type: m.type || null, title: m.title.trim().slice(0, 150) || null,
+          uploader: prefs.uploader || null, note: m.note.trim().slice(0, 500) || null
+        },
         stage: 'file', status: 'waiting', error: '', progress: 0, duplicate: false
       };
       await Store.put(item);
     }
-    picked = []; renderPicked();
-    $('#title').value = ''; $('#note').value = '';
+    picked = []; renderPicked(); showCode(false);
     if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {});
     toast(navigator.onLine ? 'Added to the hive. Sending now…' : 'Saved. It flies to the hive when you have signal.');
     await renderQueue();
@@ -291,7 +327,7 @@ const sendingText = id => stalled.has(id) ? 'No signal — will keep trying' : '
 let running = false;
 
 function explain(status, body) {
-  if (status === 401 || status === 403) return 'Upload code was not accepted. Fix the code above, then tap Retry.';
+  if (status === 401 || status === 403) return "Class code wasn't accepted. Fix it above, then tap Retry.";
   if (status === 413 || /too large|maximum allowed size/i.test(body)) return 'File is too large for the server.';
   if (status === 415 || /mime type|not supported/i.test(body)) return 'This file type is not allowed.';
   return 'Server said no (' + status + '). Tap Retry, or remove it.';
@@ -373,6 +409,7 @@ async function processQueue() {
       } catch (err) {
         item.status = err && err.kind === 'fatal' ? 'failed' : 'waiting';
         item.error = (err && err.message) || 'Something went wrong';
+        if (/class code/i.test(item.error)) showCode(true);
         await Store.put(item); await renderQueue();
         if (item.status === 'waiting') { setNet(false); break; } // no signal: stop and try again later
       }

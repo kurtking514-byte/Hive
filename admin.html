@@ -6,6 +6,7 @@
 <title>Hive Admin</title>
 <meta name="robots" content="noindex">
 <link rel="icon" href="./icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght,BNCE,INFM,SPAC@0,300..800,-100..100,0..100,0..100&family=Nunito:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="./styles.css">
 <style>
   .wrap{max-width:960px}
@@ -29,6 +30,9 @@
   .badge.used{background:var(--paper)} .badge.rejected{background:var(--bad-tint)}
   .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
   .dup{font:600 12px var(--font-ui);color:var(--mustard)}
+  .needs{font:700 12px var(--font-ui);color:var(--honey);border:2px dashed var(--honey);border-radius:999px;padding:1px 8px;margin-left:6px}
+  .editbox{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0 12px;margin-top:8px}
+  .stat{border-radius:var(--hand)!important;border:2px solid var(--rule)!important}
   .codebox{display:flex;gap:8px;align-items:flex-end;flex-wrap:wrap}
   .codebox div{flex:1 1 200px}
 </style>
@@ -36,41 +40,42 @@
 <body>
 <main class="wrap">
   <header class="top">
-    <div class="brand"><img src="./icon.svg" alt="" width="44" height="44"><h1><small>Hive · Beekeeper</small>Uploads admin</h1></div>
+    <a class="mark" href="./" aria-label="kk Hive"><span id="markComb"></span><span class="doodle">kk</span></a>
     <button type="button" class="small hidden" id="signOut">Sign out</button>
   </header>
+  <section class="hero"><span id="heroComb" class="hero-comb" aria-hidden="true"></span><div><h1 class="doodle">Beekeeper</h1><p class="sub">Hive uploads admin</p></div></section>
 
   <div id="notConfigured" class="banner hidden">Fill in <code>supabaseUrl</code> and <code>supabaseKey</code> in <code>config.js</code> first (see README).</div>
 
-  <section class="card hidden" id="loginCard">
-    <h2>Sign in</h2>
+  <section class="card hand hidden" id="loginCard">
+    <h2 class="doodle">Sign in</h2>
     <form id="loginForm">
       <label for="email">Email</label>
       <input id="email" type="email" autocomplete="username" required>
       <label for="password">Password</label>
       <input id="password" type="password" autocomplete="current-password" required>
       <p class="err hidden" id="loginErr" role="alert"></p>
-      <button type="submit" class="primary" style="margin-top:16px">Sign in</button>
+      <button type="submit" class="primary hand doodle" style="margin-top:16px">Sign in</button>
     </form>
   </section>
 
-  <section class="card hidden" id="notAdmin">
-    <h2>Not an admin</h2>
+  <section class="card hand hidden" id="notAdmin">
+    <h2 class="doodle">Not an admin</h2>
     <p>This account isn't on the admin list. Run the last step of <code>supabase/setup.sql</code> with your email.</p>
   </section>
 
   <div id="dash" class="hidden">
     <div class="stats" id="stats"></div>
 
-    <section class="card">
-      <h2>What the hive has, by course</h2>
+    <section class="card hand">
+      <h2 class="doodle">What the hive has, by course</h2>
       <p class="meta" style="margin-top:0">Numbers count files (not rejected). “ok” = approved or used. Shared subjects count uploads from every course.</p>
       <div class="cov-wrap" id="coverage"></div>
     </section>
 
-    <section class="card">
+    <section class="card hand">
       <div class="toolbar">
-        <h2 style="margin:0">Files</h2>
+        <h2 class="doodle" style="margin:0">Files</h2>
         <span>
           <button type="button" class="small" id="refresh">Refresh</button>
           <button type="button" class="small" id="csv">Export CSV</button>
@@ -78,7 +83,7 @@
       </div>
       <div class="filters" style="margin-top:12px">
         <div><label for="fStatus">Status</label>
-          <select id="fStatus"><option value="">All</option><option value="pending" selected>Pending</option><option value="approved">Approved</option><option value="used">Used in reviewer</option><option value="rejected">Rejected</option></select></div>
+          <select id="fStatus"><option value="">All</option><option value="pending" selected>Pending</option><option value="needs">Needs details</option><option value="approved">Approved</option><option value="used">Used in reviewer</option><option value="rejected">Rejected</option></select></div>
         <div><label for="fCourse">Course</label><select id="fCourse"></select></div>
         <div><label for="fSubject">Subject</label><select id="fSubject"></select></div>
         <div><label for="fPeriod">Exam</label><select id="fPeriod"></select></div>
@@ -88,13 +93,19 @@
       <div id="list"></div>
     </section>
 
-    <section class="card">
-      <h2>Upload code</h2>
-      <p class="meta" style="margin-top:0">Students type this to upload. Change it if it leaks outside your class.</p>
+    <section class="card hand">
+      <h2 class="doodle">Settings</h2>
       <div class="codebox">
-        <div><label for="codeInput">Current code</label><input id="codeInput" type="text" maxlength="64" spellcheck="false"></div>
+        <div><label for="examInput">Current exam</label><select id="examInput"><option>Prelim</option><option>Midterm</option><option>Finals</option></select></div>
+        <button type="button" id="saveExam">Save exam</button>
+      </div>
+      <p class="meta">New uploads are filed under this exam. Students never have to pick it.</p>
+      <p class="err hidden" id="examErr" role="alert"></p>
+      <div class="codebox" style="margin-top:12px">
+        <div><label for="codeInput">Class code</label><input id="codeInput" type="text" maxlength="64" spellcheck="false"></div>
         <button type="button" id="saveCode">Save code</button>
       </div>
+      <p class="meta">Students type this once to upload. Change it if it leaks outside your class.</p>
       <p class="err hidden" id="codeErr" role="alert"></p>
     </section>
   </div>
@@ -102,6 +113,7 @@
 
 <script src="./config.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="./doodle.js"></script>
 <script src="./admin.js"></script>
 </body>
 </html>

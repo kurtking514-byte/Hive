@@ -1,6 +1,6 @@
 # Hive
 
-**Many courses. One hive.** A study app for UC CITCS. Every course (BSIT, BSCS, BSIS, ACT) has its own space, and everyone feeds the same hive.
+A study app for UC CITCS. Every course (BSIT, BSCS, BSIS) has its own space, and everyone feeds the same hive.
 
 | Hive part | In the app |
 |---|---|
@@ -13,7 +13,7 @@
 
 This part is the **upload site**: students send lecture slides, modules and handouts, and you turn them into notes and quizzes.
 
-- **No student accounts.** Students type a shared **upload code** that you post in the class group chat.
+- **No student accounts.** Students type a shared **upload code** that you post in the Discord server.
 - **Works with weak signal.** Files are saved on the phone first and sent automatically when the connection comes back. Large uploads resume where they stopped instead of starting over.
 - **Small storage.** Only PDF, Word (.doc/.docx) and PowerPoint (.ppt/.pptx) files up to 20 MB are allowed. The page checks each file's real contents, not just its name, and identical files are stored only once.
 - **Private.** Only you, signed in on `admin.html`, can see or download the files.
@@ -53,10 +53,10 @@ Also check the `courses`, `subjects` and `teachers` lists in `config.js`. Mark e
 ### 3. Put it online (GitHub Pages, free)
 1. Push these files to <https://github.com/kurtking514-byte/Hive>.
 2. Go to **Settings → Pages**. Set **Source** to *Deploy from a branch*, choose `main` / root, and click **Save**.
-3. After a minute it's live at `https://kurtking514-byte.github.io/Hive/` (capital H, the link is case-sensitive). Make a short link (tinyurl) for the group chat.
+3. After a minute it's live at `https://kurtking514-byte.github.io/Hive/` (capital H, the link is case-sensitive). Make a short link (tinyurl) for the Discord server.
 
 ### 4. Set the upload code
-Open `.../admin.html` and sign in. Under **Upload code**, choose a code (default is `CITCS`; students can type it in any capitals). Post it in your class group chat together with the link.
+Open `.../admin.html` and sign in. Under **Upload code**, choose a code (default is `CITCS`; students can type it in any capitals). Post it in the Discord server together with the link.
 
 ## Day to day
 - **Admin page:** filter by *Pending*, open each file, then **Approve** (keep), **Reject** (wrong, blurry or off-topic) or **Mark used** once it's in a reviewer.

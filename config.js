@@ -15,7 +15,7 @@ window.APP_CONFIG = {
   examPeriods: ["Prelim", "Midterm", "Finals"],
 
   /* The "combs" of the hive: each course gets its own space. */
-  courses: ["BSIT", "BSCS", "BSIS", "ACT"],
+  courses: ["BSIT", "BSCS", "BSIS"],
 
   /* courses: "all"            → shared, shows for every course (GE and common CC subjects)
      courses: ["BSIT", "BSCS"]  → shows only for those courses
