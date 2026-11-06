@@ -1,5 +1,5 @@
 /* Keeps the upload page working offline. Bump CACHE when you change files. */
-const CACHE = 'hive-v2';
+const CACHE = 'hive-v3';
 const TUS = 'https://cdn.jsdelivr.net/npm/tus-js-client@4.1.0/dist/tus.min.js';
 const CORE = ['./', './index.html', './styles.css', './app.js', './config.js', './manifest.webmanifest', './icon.svg'];
 

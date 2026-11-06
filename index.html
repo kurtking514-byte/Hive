@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hive</title>
 <meta name="description" content="Hive: many courses, one hive. Send your lessons and lectures for the UC CITCS reviewer.">
-<meta name="theme-color" content="#D49A00">
+<meta name="theme-color" content="#14110C">
 <link rel="manifest" href="./manifest.webmanifest">
 <link rel="icon" href="./icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="./icon.svg">
@@ -30,17 +30,12 @@
   <form id="form" novalidate>
     <section class="card">
       <h2><span class="n">1</span> About you</h2>
-      <div class="row">
-        <div>
-          <label for="course">Course</label>
-          <select id="course" required></select>
-          <input id="courseOther" type="text" class="hidden" placeholder="Type your course" maxlength="60" aria-label="Other course">
-        </div>
-        <div>
-          <label for="section">Year &amp; section <span class="opt">(optional)</span></label>
-          <input id="section" type="text" placeholder="e.g. 1-A" maxlength="60" autocomplete="off">
-        </div>
-      </div>
+      <label id="courseLabel">Your comb (course)</label>
+      <div class="combs" id="combs" role="radiogroup" aria-labelledby="courseLabel"></div>
+      <select id="course" class="hidden" aria-hidden="true" tabindex="-1"></select>
+      <input id="courseOther" type="text" class="hidden" placeholder="Type your course" maxlength="60" aria-label="Other course">
+      <label for="section">Year &amp; section <span class="opt">(optional)</span></label>
+      <input id="section" type="text" placeholder="e.g. 1-A" maxlength="60" autocomplete="off">
       <label for="uploader">Your name <span class="opt">(optional, for credit)</span></label>
       <input id="uploader" type="text" maxlength="80" autocomplete="name">
       <label for="code">Upload code</label>
@@ -84,7 +79,7 @@
       </label>
       <ul class="picked" id="picked"></ul>
       <p class="err hidden" id="formErr" role="alert"></p>
-      <button type="submit" class="primary" id="send" style="margin-top:16px">Send files</button>
+      <button type="submit" class="primary" id="send" style="margin-top:16px">Send to the hive</button>
     </section>
   </form>
 
@@ -94,7 +89,7 @@
       <button type="button" class="small" id="clearDone">Clear sent</button>
     </div>
     <ul class="queue" id="queue"></ul>
-    <p class="empty" id="queueEmpty">Nothing yet. Files you send show up here.</p>
+    <p class="empty" id="queueEmpty">No nectar yet. Files you send show up here.</p>
   </section>
 
   <footer>Files are only seen by the Hive admin. <a href="./admin.html">Admin</a></footer>

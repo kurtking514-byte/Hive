@@ -91,6 +91,20 @@ const courses = (CFG.courses || []).map(c => ({ value: c, label: c }));
 fillSelect($('#course'), [{ value: '', label: 'Choose…' }, ...courses, { value: OTHER, label: 'Other…' }], prefs.course);
 if (prefs.course && !courses.some(c => c.value === prefs.course)) { $('#course').value = OTHER; $('#courseOther').value = prefs.course; }
 
+/* Course picker as honeycomb cells; the hidden <select> stays the source of truth. */
+$('#combs').innerHTML = [...courses, { value: OTHER, label: 'Other' }].map(c =>
+  `<button type="button" class="comb" role="radio" aria-checked="false" data-v="${esc(c.value)}"><span>${esc(c.label)}</span></button>`).join('');
+function paintCombs() {
+  document.querySelectorAll('.comb').forEach(b => b.setAttribute('aria-checked', String(b.dataset.v === $('#course').value)));
+}
+$('#combs').addEventListener('click', e => {
+  const b = e.target.closest('.comb'); if (!b) return;
+  $('#course').value = b.dataset.v;
+  $('#course').dispatchEvent(new Event('change'));
+});
+$('#course').addEventListener('change', paintCombs);
+paintCombs();
+
 /* Subjects: "all" = shared by every CITCS course; a list = only those courses. */
 const isShared = s => !s.courses || s.courses === 'all';
 const inCourse = (s, course) => isShared(s) || !course || course === OTHER || (Array.isArray(s.courses) && s.courses.includes(course));
@@ -179,7 +193,7 @@ function renderPicked() {
       <button type="button" class="small" data-remove="${i}" aria-label="Remove ${esc(p.file.name)}">Remove</button>
     </li>`).join('');
   const n = picked.filter(p => p.ok).length;
-  $('#send').textContent = n > 1 ? `Send ${n} files` : 'Send files';
+  $('#send').textContent = n > 1 ? `Send ${n} files to the hive` : 'Send to the hive';
 }
 
 $('#files').addEventListener('change', e => { addFiles([...e.target.files]); e.target.value = ''; });
@@ -223,7 +237,7 @@ $('#form').addEventListener('submit', async e => {
   const code = $('#code').value.trim().toUpperCase();
   const good = picked.filter(p => p.ok);
 
-  if (!course) return showErr('Choose your course.');
+  if (!course) return showErr('Tap your course (comb) first.');
   if (!subject) return showErr('Choose the subject.');
   if (!teacher) return showErr("Type the teacher's name.");
   if (!period) return showErr('Choose which exam this is for.');
@@ -260,7 +274,7 @@ $('#form').addEventListener('submit', async e => {
     picked = []; renderPicked();
     $('#title').value = ''; $('#note').value = '';
     if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {});
-    toast(navigator.onLine ? 'Added. Sending now…' : 'Saved. Will send when you have signal.');
+    toast(navigator.onLine ? 'Added to the hive. Sending now…' : 'Saved. It flies to the hive when you have signal.');
     await renderQueue();
     processQueue();
   } catch (err) {
