@@ -11,7 +11,12 @@ A study app for UC CITCS. Every course (BSIT, BSCS, BSIS) has its own space, and
 | Honey | The finished notes and quizzes |
 | Beekeeper | You, the admin |
 
-This part is the **upload site**: students send lecture slides, modules and handouts, and you turn them into notes and quizzes.
+Hive has two sides. The first time someone opens it, it asks **Review** or **Upload** (only once). After that, the button at the top right switches between them.
+
+- **Review:** pick a course from the honeycomb button, pick an exam tab (*Midterms*, *Finals*…), then tap a subject in the hive. Each subject has lessons with a **Notes** tab and a **Quiz** tab. Best quiz scores are remembered on the phone, and every reviewer is saved for offline use after the first visit.
+- **Upload:** students send lecture slides, modules and handouts, and you turn them into notes and quizzes.
+
+How the upload side works:
 
 - **No student accounts.** Students type a shared **upload code** that you post in the Discord server.
 - **Works with weak signal.** Files are saved on the phone first and sent automatically when the connection comes back. Large uploads resume where they stopped instead of starting over.
@@ -20,7 +25,10 @@ This part is the **upload site**: students send lecture slides, modules and hand
 
 | File | What it is |
 |---|---|
-| `index.html`, `app.js` | Student upload page (works offline, can be installed like an app) |
+| `index.html` | The app shell: the Review / Upload choice, the reviewer and the upload page |
+| `reviewer.js` | The reviewer: hive of subjects, course picker, exam tabs, notes and quiz |
+| `reviewer/` | The reviewer content: `lessons.json`, `notes/*.txt`, `quiz/*.json` (see *Adding reviewers* below) |
+| `app.js` | The upload page (works offline, can be installed like an app) |
 | `admin.html`, `admin.js` | Your page: review, open/download, approve/reject, see which subjects need files, change the code |
 | `config.js` | **The only file you edit**: Supabase keys, courses, subjects, teachers |
 | `supabase/setup.sql` | Database, storage and security rules (run once) |
@@ -65,8 +73,32 @@ Open `.../admin.html` and sign in. Under **Upload code**, choose a code (default
 - **Storage:** the free plan has 1 GB of file storage. After an exam, delete files you've already turned into reviewers.
 - **If the code leaks** outside your class, change it on the admin page. Files already uploaded stay where they are.
 
+## Adding reviewers
+Each lesson needs three things in `reviewer/`.
+
+1. **An entry in `lessons.json`:**
+   ```json
+   { "id": "cc1-L5", "subject": "CC1", "tab": "Lesson 5", "title": "Number Systems",
+     "notes": true, "quiz": 30, "course": "BSCS", "exam": "Finals" }
+   ```
+   `id` names the two files below. `subject` must match a subject code in `config.js`. `exam` is `Prelim`, `Midterm` or `Finals`. `course` is the course it was made for (shared subjects still show under every course).
+2. **`notes/<id>.txt`**, plain text. The first line is the title and isn't shown. Then:
+   - a line in ALL CAPS is a heading
+   - `★` starts a key point or definition
+   - `EASIER:` starts a simpler explanation
+   - `⚙` starts a practice item
+3. **`quiz/<id>.json`**, a list of questions. `answer` is the position of the right option, counting from 0:
+   ```json
+   [{ "q": "Which set correctly lists the three things a computer does?",
+      "options": ["Accepts input, executes a procedure, produces output", "…", "…", "…"],
+      "answer": 0,
+      "explanation": "A computer accepts input, follows a mechanical procedure, and produces output." }]
+   ```
+
+The reviewer opens on the **Current exam** you set on the admin page. Older exams stay one tab away.
+
 ## Updating the site later
-After changing any file, raise the number in `sw.js` (`hive-v1` → `hive-v2`) so phones pick up the new version.
+After changing any file, raise the number in `sw.js` (for example `hive-v25` → `hive-v26`) so phones pick up the new version.
 
 ## Test locally
 ```bash
