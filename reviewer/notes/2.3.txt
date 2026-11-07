@@ -1,0 +1,193 @@
+2.3 Octal and Hexadecimal
+Octal and hexadecimal: reading, converting, and shortcuts with binary
+
+NUMBER SYSTEM BASICS
+★ Binary: base 2, uses the digits 0 and 1.
+★ Octal: base 8, uses the digits 0 to 7.
+★ Decimal: base 10, uses the digits 0 to 9.
+★ Hexadecimal: base 16, uses the digits 0 to 9 and the letters A to F.
+★ Hex letter values: A = 10, B = 11, C = 12, D = 13, E = 14, F = 15.
+EASIER: Hexadecimal needs 16 symbols, but we only have ten digits. So we borrow the first six letters of the alphabet for the values 10 to 15.
+Word origins: "Octal" comes from Latin octo (eight). "Hexadecimal" combines Greek hexa (six) and Latin decem (ten), which gives 16.
+★ Key idea: each digit's position is a power of the base, counting from the right starting at 0.
+⚙ Powers of 8: 8⁰ = 1, 8¹ = 8, 8² = 64, 8³ = 512.
+⚙ Powers of 16: 16⁰ = 1, 16¹ = 16, 16² = 256, 16³ = 4096.
+Octal digits stop at 7. If you see an 8 or 9, the number is not octal.
+
+OCTAL TO DECIMAL
+⚙ Step 1: Number the digits from the right starting at 0.
+⚙ Step 2: Multiply each digit by 8 raised to its position.
+⚙ Step 3: Add the results.
+EXAMPLE: 11 (BASE 8)
+⚙ 1×8¹ + 1×8⁰ = 8 + 1 = 9
+EXAMPLE: 35 (BASE 8)
+⚙ 3×8¹ + 5×8⁰ = 24 + 5 = 29
+EXAMPLE: 472 (BASE 8)
+⚙ 4×8² + 7×8¹ + 2×8⁰ = 4×64 + 7×8 + 2×1 = 256 + 56 + 2 = 314
+Be careful: 8² = 64, so 4×8² = 4×64 = 256. A common slip is writing 4×8² = 64, which gives a wrong answer such as 122. The correct answer is 314.
+
+HEXADECIMAL TO DECIMAL
+Same method, using powers of 16.
+⚙ Memory trick: 16⁰ = 1, 16¹ = 16, 16² = 256, 16³ = 4096.
+EXAMPLE: 11 (BASE 16)
+⚙ 1×16 + 1×1 = 17
+EXAMPLE: 35 (BASE 16)
+⚙ 3×16 + 5×1 = 48 + 5 = 53
+EXAMPLE: 472 (BASE 16)
+⚙ 4×256 + 7×16 + 2×1 = 1024 + 112 + 2 = 1138
+EXAMPLE: ABC (BASE 16)
+⚙ Letter values: A = 10, B = 11, C = 12
+⚙ 10×256 + 11×16 + 12×1 = 2560 + 176 + 12 = 2748
+
+DECIMAL TO OCTAL OR HEXADECIMAL
+⚙ Step 1: Divide the decimal number by the target base (8 for octal, 16 for hex).
+⚙ Step 2: Write down the remainder.
+⚙ Step 3: Divide the quotient by the base again.
+⚙ Step 4: Stop when the quotient reaches 0.
+⚙ Step 5: Read the remainders from the bottom up. This is what the red arrow in the images means.
+⚙ If a remainder in hex is 10 to 15, write it as the letter A to F.
+EXAMPLE: DECIMAL 31 TO OCTAL
+⚙ 31 ÷ 8 = 3, remainder 7
+⚙ 3 ÷ 8 = 0, remainder 3
+⚙ Read upward: 37 (base 8)
+⚙ Check: 3×8 + 7 = 24 + 7 = 31 ✓
+EXAMPLE: DECIMAL 37 TO HEXADECIMAL
+⚙ 37 ÷ 16 = 2, remainder 5
+⚙ 2 ÷ 16 = 0, remainder 2
+⚙ Read upward: 25 (base 16)
+⚙ Check: 2×16 + 5 = 32 + 5 = 37 ✓
+In the notes' images, "37 (base 8)" and "25 (base 16)" are the answers, not the starting numbers. The starting numbers are decimal 31 and decimal 37.
+EXAMPLE: ADDED CONVERSION OF 2748 TO HEXADECIMAL
+⚙ Added example: 2748 ÷ 16 = 171, remainder 12, which is C
+⚙ 171 ÷ 16 = 10, remainder 11, which is B
+⚙ 10 ÷ 16 = 0, remainder 10, which is A
+⚙ Read upward: ABC (base 16), which matches the earlier example ✓
+EASIER: Octal counting skips 8 and 9. After 7 comes 10 (base 8), which is decimal 8.
+⚙ Decimal-to-octal table: decimal 8 = 10, decimal 16 = 20, decimal 24 = 30, decimal 32 = 40 (all in base 8).
+
+BINARY AND OCTAL
+★ Why it works: 8 = 2³, so 1 octal digit = exactly 3 binary digits.
+The weights in each 3-bit group, left to right, are 4, 2, 1.
+⚙ Octal digit to 3 bits: 0 = 000, 1 = 001, 2 = 010, 3 = 011
+⚙ Octal digit to 3 bits: 4 = 100, 5 = 101, 6 = 110, 7 = 111
+EASIER: Think of 3 bits as a tiny scale with weights 4, 2, and 1. Switch on the weights you need. For 5, switch on 4 and 1, which gives 101.
+
+BINARY TO OCTAL
+⚙ Step 1: Group the bits in threes, starting from the right.
+⚙ Step 2: If the leftmost group has fewer than 3 bits, pad it with leading zeros. You always pad the leftmost group, because you start grouping from the right.
+⚙ Step 3: Convert each group using weights 4, 2, 1.
+⚙ Step 4: Write the digits in order.
+EXAMPLE: 110101 (BASE 2) TO OCTAL
+⚙ Groups: 110 | 101
+⚙ 110 = 4 + 2 = 6, and 101 = 4 + 1 = 5
+⚙ Answer: 65 (base 8)
+⚙ Check: 110101 = 32 + 16 + 4 + 1 = 53, and 6×8 + 5 = 53 ✓
+EXAMPLE: 1111110 (BASE 2) TO OCTAL, WITH PADDING
+⚙ Groups from the right: 110 | 111 | 1
+⚙ The leftover 1 is padded to 001.
+⚙ 001 | 111 | 110 = 1 | 7 | 6
+⚙ Answer: 176 (base 8)
+⚙ Check: 1111110 = 126, and 1×64 + 7×8 + 6 = 126 ✓
+EXAMPLE: 11011010 (BASE 2) TO OCTAL, WITH PADDING
+⚙ Groups from the right: 010 | 011 | 11
+⚙ The leftover 11 is padded to 011.
+⚙ 011 | 011 | 010 = 3 | 3 | 2
+⚙ Answer: 332 (base 8)
+⚙ Check: 11011010 = 128 + 64 + 16 + 8 + 2 = 218, and 3×64 + 3×8 + 2 = 218 ✓
+
+OCTAL TO BINARY
+⚙ Step 1: Take each octal digit separately.
+⚙ Step 2: Write it as 3 bits (using 4, 2, 1).
+⚙ Step 3: Join the groups together.
+To convert from octal to binary, convert each octal digit (not each hexadecimal digit) to 3 bits.
+EXAMPLE: 56 (BASE 8)
+⚙ 5 = 4 + 1 → 101, and 6 = 4 + 2 → 110
+⚙ Answer: 101110 (base 2)
+⚙ Check: 56 (base 8) = 5×8 + 6 = 46, and 101110 = 32 + 8 + 4 + 2 = 46 ✓
+EXAMPLE: 35 (BASE 8)
+⚙ 3 → 011, and 5 → 101, giving 011101
+⚙ Remove the leading zero: 11101 (base 2)
+⚙ Check: 35 (base 8) = 29, and 11101 = 16 + 8 + 4 + 1 = 29 ✓
+EXAMPLE: 643 (BASE 8)
+⚙ 6 → 110, 4 → 100, 3 → 011
+⚙ Answer: 110100011 (base 2)
+⚙ Check: 643 (base 8) = 384 + 32 + 3 = 419, and 110100011 = 256 + 128 + 32 + 2 + 1 = 419 ✓
+EXAMPLE: 120475 (BASE 8), FROM THE IMAGE
+⚙ 1 → 001, 2 → 010, 0 → 000, 4 → 100, 7 → 111, 5 → 101
+⚙ Answer: 001010000100111101 (base 2)
+
+BINARY AND HEXADECIMAL
+★ Why it works: 16 = 2⁴, so 1 hex digit = exactly 4 binary digits.
+The weights in each 4-bit group are 8, 4, 2, 1.
+⚙ Hex digit to 4 bits: 0 = 0000, 1 = 0001, 2 = 0010, 3 = 0011, 4 = 0100, 5 = 0101, 6 = 0110, 7 = 0111
+⚙ Hex digit to 4 bits: 8 = 1000, 9 = 1001, A = 1010, B = 1011, C = 1100, D = 1101, E = 1110, F = 1111
+
+BINARY TO HEXADECIMAL
+⚙ Step 1: Group the bits in fours, starting from the right.
+⚙ Step 2: Pad the leftmost group with leading zeros if needed.
+⚙ Step 3: Add up the weights (8, 4, 2, 1) in each group.
+⚙ Step 4: If the value is 10 to 15, write the letter A to F.
+EXAMPLE: 1010 0001 0011 1101 (BASE 2), FROM THE IMAGE
+⚙ 1010 = 8 + 2 = 10 → A
+⚙ 0001 = 1 → 1
+⚙ 0011 = 2 + 1 = 3 → 3
+⚙ 1101 = 8 + 4 + 1 = 13 → D
+⚙ Answer: A13D (base 16)
+EXAMPLE: ADDED EXAMPLE WITH PADDING
+⚙ Added example: 1110110111 (base 2). Groups from the right: 11 | 1011 | 0111
+⚙ The leftover 11 is padded to 0011.
+⚙ 0011 = 3, 1011 = 11 = B, 0111 = 7
+⚙ Answer: 3B7 (base 16), which matches the example below ✓
+
+HEXADECIMAL TO BINARY
+⚙ Step 1: Convert each hex digit into 4 bits.
+⚙ Step 2: Join them.
+EXAMPLE: A9 (BASE 16)
+⚙ A → 1010, and 9 → 1001
+⚙ Answer: 10101001 (base 2)
+⚙ Check: A9 = 10×16 + 9 = 169, and 10101001 = 128 + 32 + 8 + 1 = 169 ✓
+EXAMPLE: 3B7 (BASE 16)
+⚙ 3 → 0011, B → 1011, 7 → 0111
+⚙ Answer: 001110110111 (base 2), or 1110110111 without the leading zeros
+⚙ Check: 3×256 + 11×16 + 7 = 768 + 176 + 7 = 951, and 1110110111 = 512 + 256 + 128 + 32 + 16 + 4 + 2 + 1 = 951 ✓
+EXAMPLE: 1D29 (BASE 16)
+⚙ 1 → 0001, D → 1101, 2 → 0010, 9 → 1001
+⚙ Answer: 0001110100101001 (base 2), or 1110100101001 without the leading zeros
+⚙ Check: 1×4096 + 13×256 + 2×16 + 9 = 4096 + 3328 + 32 + 9 = 7465, and 1110100101001 = 4096 + 2048 + 1024 + 256 + 32 + 8 + 1 = 7465 ✓
+★ Verification rule: convert both the original and the result to decimal. If they match, you are correct.
+
+EXAM TIPS
+Octal digits stop at 7. If you see an 8 or 9, it is not octal.
+Always read division remainders bottom to top.
+Group binary from the right, not the left. Pad the left side.
+Octal uses groups of 3 bits; hex uses groups of 4 bits.
+Write the base after your answers, such as (base 2), (base 8), (base 10), (base 16), so answers are not ambiguous.
+Always verify by converting back to decimal.
+
+COMMON MISTAKES
+Do not mix up the weights. Octal groups use 4, 2, 1. Hex groups use 8, 4, 2, 1.
+Do not group from the left. Always start from the right.
+Do not forget that 8² = 64, not 16.
+Do not forget that hex letters stand for values: A = 10 up to F = 15.
+
+PRACTICE PROBLEMS WITH ANSWERS
+Q: Convert 725 (base 8) to decimal.
+⚙ 7×64 + 2×8 + 5 = 448 + 16 + 5 = 469
+★ Answer: 469
+Q: Convert 2F (base 16) to decimal.
+⚙ 2×16 + 15 = 32 + 15 = 47
+★ Answer: 47
+Q: Convert decimal 100 to octal.
+⚙ 100 ÷ 8 = 12 remainder 4; 12 ÷ 8 = 1 remainder 4; 1 ÷ 8 = 0 remainder 1
+⚙ Read upward: 1, 4, 4
+★ Answer: 144 (base 8)
+Q: Convert decimal 255 to hexadecimal.
+⚙ 255 ÷ 16 = 15 remainder 15; 15 ÷ 16 = 0 remainder 15
+⚙ 15 is F, and 15 is F
+★ Answer: FF (base 16)
+Q: Convert 101110011 (base 2) to octal.
+⚙ Groups: 101 | 110 | 011 = 5, 6, 3
+★ Answer: 563 (base 8)
+Q: Convert 11010111 (base 2) to hexadecimal.
+⚙ Groups: 1101 | 0111 = D, 7
+★ Answer: D7 (base 16)

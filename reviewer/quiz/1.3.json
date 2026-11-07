@@ -1,0 +1,362 @@
+[
+{
+"q": "Which statement correctly distinguishes data from information?",
+"options": [
+"Data is raw facts without context; information is data that has been processed so it means something",
+"Data is processed results; information is raw numbers without context",
+"Data is always numeric while information is always text",
+"Data and information are the same thing, except that information takes more storage"
+],
+"answer": 0,
+"explanation": "Data is the raw ingredients; information is the finished meal produced by processing the data.",
+"source": "notes"
+},
+{
+"q": "A sensor records the readings 14, 18, 22, and 26. A student computes their average, 20. Which description fits the number 20?",
+"options": [
+"Raw data, because it is a single number",
+"Information, because processing the readings produced a meaningful result",
+"A bit, because it is one value",
+"Raw data, because averages never add meaning"
+],
+"answer": 1,
+"explanation": "The sum is 80 and 80 / 4 = 20; processing the data into a meaningful summary makes it information.",
+"source": "notes"
+},
+{
+"q": "In the way computer scientists measure information, what is one bit?",
+"options": [
+"One digit of a decimal number",
+"The amount of data stored in one byte",
+"The amount of information that cuts the number of possibilities in half",
+"The amount of information needed to pick one of ten outcomes"
+],
+"answer": 2,
+"explanation": "One bit halves the possibilities, like the answer to an equally likely yes/no question.",
+"source": "notes"
+},
+{
+"q": "Which question carries exactly one bit of information when you ask it?",
+"options": [
+"Is today a day of the week?",
+"Is a randomly chosen lottery ticket the single jackpot winner?",
+"Is 2 plus 2 equal to 4?",
+"Is a fair coin showing heads?"
+],
+"answer": 3,
+"explanation": "A bit comes from a yes/no question where both answers are equally likely beforehand, as with a fair coin.",
+"source": "notes"
+},
+{
+"q": "Why can a single bit not identify the outcome of a six-sided die roll on its own?",
+"options": [
+"A die has an odd number of faces",
+"Die rolls are not equally likely",
+"One bit only works for physical objects",
+"One bit can separate only 2 outcomes, but a die has 6"
+],
+"answer": 3,
+"explanation": "A bit separates 2 possibilities, so identifying one of 6 outcomes needs several yes/no answers.",
+"source": "notes"
+},
+{
+"q": "A player finds a die roll by asking 'Is it 6?', then 'Is it 5?', and so on down the line. What is the maximum number of questions needed?",
+"options": [
+"3",
+"4",
+"5",
+"6"
+],
+"answer": 2,
+"explanation": "After 5 'no' answers only one value remains, so no sixth question is needed; the worst case is 5.",
+"source": "notes"
+},
+{
+"q": "Using the strategy 'Is it 6?', 'Is it 5?', and so on, the outcomes 6, 5, 4, 3, 2, 1 need 1, 2, 3, 4, 5, 5 questions. What is the average number of questions?",
+"options": [
+"2 2/3",
+"3 1/3",
+"3",
+"2.5"
+],
+"answer": 1,
+"explanation": "The sum is 1+2+3+4+5+5 = 20, and 20 / 6 = 3 1/3.",
+"source": "notes"
+},
+{
+"q": "For the die, why is 'Is it at least 4?' a good first question?",
+"options": [
+"It is true for exactly 3 of the 6 values, so yes and no are equally likely",
+"It is true only for the value 6",
+"It is false for every value",
+"It identifies the exact value immediately"
+],
+"answer": 0,
+"explanation": "A 3 versus 3 split makes the question close to one full bit of information.",
+"source": "notes"
+},
+{
+"q": "Under the good strategy the six outcomes need 2, 3, 3, 2, 3, 3 questions. What is the average?",
+"options": [
+"3 1/3",
+"2 2/3",
+"3",
+"2.58"
+],
+"answer": 1,
+"explanation": "The sum is 2+3+3+2+3+3 = 16, and 16 / 6 = 2 2/3.",
+"source": "notes"
+},
+{
+"q": "How many different possibilities can 6 bits distinguish?",
+"options": [
+"12",
+"36",
+"64",
+"128"
+],
+"answer": 2,
+"explanation": "With n bits you can distinguish 2^n possibilities, and 2^6 = 64.",
+"source": "notes"
+},
+{
+"q": "What is the smallest whole number of well-chosen yes/no questions that is guaranteed to identify one of 20 equally likely values?",
+"options": [
+"3",
+"4",
+"10",
+"5"
+],
+"answer": 3,
+"explanation": "log2 20 is about 4.32, and since 2^4 = 16 is less than 20, you must round up to 5.",
+"source": "notes"
+},
+{
+"q": "A die roll holds about 2.58 bits of information (log2 6). Why does a single roll need 3 questions in the worst case?",
+"options": [
+"Because log2 6 is exactly 3",
+"Because a die has 8 sides",
+"Because questions must be asked in pairs",
+"Because you cannot ask a fraction of a question, so 2.58 rounds up to 3"
+],
+"answer": 3,
+"explanation": "Questions come in whole numbers, so the fractional value 2.58 is rounded up to 3.",
+"source": "notes"
+},
+{
+"q": "Which statement about binary trees of yes/no questions is NOT true?",
+"options": [
+"The top node is called the root",
+"The endpoints at the bottom are called leaves",
+"A leaf can be reached by several different paths from the root",
+"Computer scientists usually draw trees upside down"
+],
+"answer": 2,
+"explanation": "Each leaf has exactly one path from the root, so the statement about several paths is false.",
+"source": "notes"
+},
+{
+"q": "In a 3-question tree, write Yes as 1 and No as 0. Which leaf number is reached by the answers Yes, No, Yes?",
+"options": [
+"3",
+"5",
+"6",
+"4"
+],
+"answer": 1,
+"explanation": "Yes, No, Yes reads as binary 101, which equals 4 + 0 + 1 = 5.",
+"source": "notes"
+},
+{
+"q": "A binary tree has depth 5. What is the maximum number of values it can distinguish?",
+"options": [
+"32",
+"25",
+"10",
+"16"
+],
+"answer": 0,
+"explanation": "A tree of depth d can distinguish up to 2^d values, and 2^5 = 32.",
+"source": "notes"
+},
+{
+"q": "A tree of depth 3 distinguishes 8 numbers. What is the simplest way to extend it to handle 16 numbers?",
+"options": [
+"Remove one question from the tree",
+"Add one question at the top (Is it 8 or more?) and reuse the same tree for each half",
+"Double the depth to 6",
+"Build 16 separate trees with no shared top question"
+],
+"answer": 1,
+"explanation": "One extra question splits the 16 numbers into two groups of 8, and the same 8-value tree handles each group.",
+"source": "notes"
+},
+{
+"q": "How many different values can one byte distinguish?",
+"options": [
+"256",
+"64",
+"8",
+"1024"
+],
+"answer": 0,
+"explanation": "One byte is 8 bits, so it can distinguish 2^8 = 256 values.",
+"source": "notes"
+},
+{
+"q": "A file header uses 2 bytes. How many different values can those 2 bytes distinguish?",
+"options": [
+"512",
+"256",
+"16",
+"65536"
+],
+"answer": 3,
+"explanation": "2 bytes are 16 bits, and 2^16 = 65536.",
+"source": "notes"
+},
+{
+"q": "Which of these is raw data rather than information?",
+"options": [
+"The list 23, 56, 78, 12 with no context",
+"The average 42.25 computed from those numbers",
+"The sum 169 reported as the total of four quiz scores",
+"The statement that the average of the four numbers is above 40"
+],
+"answer": 0,
+"explanation": "Raw numbers with no context or processing are data; sums, averages, and statements about them are processed results.",
+"source": "notes"
+},
+{
+"q": "Why does the good die strategy average fewer questions than asking 'Is it 6?', 'Is it 5?', and so on?",
+"options": [
+"It never needs more than 2 questions",
+"It rolls the die a second time",
+"Each question splits the remaining possibilities about evenly, so it gains close to one bit each time",
+"It relies on lucky guesses"
+],
+"answer": 2,
+"explanation": "Near 50/50 questions carry almost a full bit each, so fewer questions are needed on average.",
+"source": "notes"
+},
+{
+"q": "How many bits are needed to distinguish 1024 equally likely possibilities?",
+"options": [
+"5",
+"8",
+"100",
+"10"
+],
+"answer": 3,
+"explanation": "2^10 = 1024, so log2 1024 = 10 bits.",
+"source": "notes"
+},
+{
+"q": "Two students disagree: one says 5 yes/no questions always suffice to identify one of 40 equally likely values, the other says 6 are needed. Who is right?",
+"options": [
+"The first, since 40 is close to 32",
+"The second, since 2^5 = 32 is less than 40 and 2^6 = 64 is enough",
+"Neither, since 40 values need 20 questions",
+"The first, since log2 40 is below 5"
+],
+"answer": 1,
+"explanation": "log2 40 is about 5.32, so it rounds up to 6; 5 questions can separate only 32 values.",
+"source": "notes"
+},
+{
+"q": "How is the depth of a binary tree defined?",
+"options": [
+"The number of leaves",
+"The total number of nodes",
+"The longest path from the root to a leaf",
+"The width of the bottom row"
+],
+"answer": 2,
+"explanation": "Depth is the longest path from root to leaf, and a tree of depth d can distinguish up to 2^d values.",
+"source": "notes"
+},
+{
+"q": "In a 3-question tree with Yes as 1 and No as 0, which answers lead to leaf 6?",
+"options": [
+"Yes, No, Yes",
+"No, Yes, Yes",
+"No, No, Yes",
+"Yes, Yes, No"
+],
+"answer": 3,
+"explanation": "6 in binary is 110 (4 + 2 + 0), which corresponds to Yes, Yes, No.",
+"source": "notes"
+},
+{
+"q": "A student claims a binary tree of depth 3 can distinguish 9 values because 3 x 3 = 9. What is wrong with this claim?",
+"options": [
+"Nothing, the claim is correct",
+"A tree of depth 3 distinguishes up to 2^3 = 8 values, not 3 x 3",
+"A tree of depth 3 distinguishes only 3 values",
+"A tree of depth 3 distinguishes 2 x 3 = 6 values"
+],
+"answer": 1,
+"explanation": "Each added level doubles the capacity, so capacity is a power of 2, not a product of the depth with itself.",
+"source": "notes"
+},
+{
+"q": "In traditional units, how many bytes are in 1 megabyte?",
+"options": [
+"1,000,000",
+"1,024,000",
+"1,048,576",
+"1,073,741,824"
+],
+"answer": 2,
+"explanation": "Traditionally 1 megabyte = 2^20 bytes = 1,048,576 bytes.",
+"source": "notes"
+},
+{
+"q": "A file is 3 megabytes using traditional units. How many bytes is that?",
+"options": [
+"3,145,728",
+"3,000,000",
+"3,072,000",
+"3,221,225,472"
+],
+"answer": 0,
+"explanation": "3 x 1,048,576 = 3,145,728 bytes.",
+"source": "notes"
+},
+{
+"q": "Using traditional units, how many bits are in 2 kilobytes?",
+"options": [
+"2048",
+"16384",
+"16000",
+"8192"
+],
+"answer": 1,
+"explanation": "2 x 1024 = 2048 bytes, and 2048 x 8 = 16384 bits.",
+"source": "notes"
+},
+{
+"q": "A fair 8-sided die is identified using questions that always split the remaining values in half. What is the average number of questions needed?",
+"options": [
+"3",
+"4",
+"2.5",
+"8"
+],
+"answer": 0,
+"explanation": "Each of the 8 outcomes takes exactly 3 questions, so the average is 3.",
+"source": "notes"
+},
+{
+"q": "Which statement about bits is NOT true?",
+"options": [
+"Any yes/no question always provides exactly one bit, no matter how likely each answer is",
+"One bit is the information that cuts the possibilities in half",
+"One bit corresponds to a yes/no question whose answers were equally likely beforehand",
+"Learning the result of a fair coin toss provides one bit"
+],
+"answer": 0,
+"explanation": "A question gives a full bit only when both answers are equally likely; a lopsided question gives less.",
+"source": "notes"
+}
+]

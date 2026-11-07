@@ -1,0 +1,362 @@
+[
+{
+"q": "Taste and smell are not currently significant in HCI. Which set lists the three senses HCI mainly cares about?",
+"options": [
+"Sight, hearing and touch",
+"Sight, hearing and smell",
+"Hearing, touch and taste",
+"Sight, touch and taste"
+],
+"answer": 0,
+"explanation": "Of the five senses, HCI focuses on sight, hearing and touch. Every wrong option includes taste or smell, which are not currently significant for interaction design.",
+"source": "notes"
+},
+{
+"q": "Using the figures from this module, which statement about human hearing is correct?",
+"options": [
+"Range 20 Hz to 15 kHz, with equally fine accuracy at both low and high frequencies alike",
+"Range 15 Hz to 20 kHz, with the finest discrimination at high frequencies",
+"Hearing cannot be selective and is able to convey only very little information",
+"Range 20 Hz to 15 kHz; changes under 1.5 Hz are distinguishable at low frequencies"
+],
+"answer": 3,
+"explanation": "Hearing spans 20 Hz to 15 kHz, can detect frequency changes below 1.5 Hz at low frequencies, and is less accurate at high frequencies. Hearing is also selective and can convey a lot of information.",
+"source": "notes"
+},
+{
+"q": "Which statement about reading is NOT true?",
+"options": [
+"Reading is a special case of visual perception",
+"Words are recognised partly by their shape",
+"Setting text in all capital letters improves reading speed and accuracy",
+"Text with scrambled middle letters can be read because readers process the word as a whole"
+],
+"answer": 2,
+"explanation": "All capitals remove word-shape clues, which is detrimental to reading speed and accuracy. The other statements are accurate.",
+"source": "notes"
+},
+{
+"q": "Reading is a special case of visual perception. What is the correct order of its stages?",
+"options": [
+"Syntactic and semantic analysis, then decoding against the language, then perceiving the visual pattern",
+"Perceive the word's visual pattern, decode it against the language, then analyse syntax and meaning",
+"Decode against the language representation, then perceive the visual pattern, then analyse syntax and meaning",
+"Analyse meaning first, perceive the visual pattern second, then decode against the internal language"
+],
+"answer": 1,
+"explanation": "Reading first perceives the visual pattern of the word, then decodes it with an internal representation of the language, then performs syntactic and semantic analysis. The other options scramble that order.",
+"source": "notes"
+},
+{
+"q": "In the human-as-information-processor model, which are the three types of memory?",
+"options": [
+"Iconic memory, echoic memory and haptic memory, all treated as separate top-level memory types",
+"Episodic memory, semantic memory and production-rule memory as the three top-level types",
+"Sensory buffers, short-term memory and long-term memory",
+"Recall memory, recognition memory and decay memory as the three top-level types"
+],
+"answer": 2,
+"explanation": "The three types are sensory buffers, short-term memory and long-term memory. Iconic, echoic and haptic are kinds of sensory memory, episodic and semantic are parts of long-term memory, and recall and recognition are retrieval processes.",
+"source": "notes"
+},
+{
+"q": "In the multistage model of memory, which is the correct flow of information?",
+"options": [
+"Sensory registers, then long-term memory, then short-term memory, then the short-term store",
+"Sensory registers, then the short-term store, then short-term memory, then long-term memory",
+"Short-term memory, then sensory registers, then the short-term store, then long-term memory",
+"The short-term store, then sensory registers, then long-term memory, then short-term memory"
+],
+"answer": 1,
+"explanation": "In the multistage model, sensory registers feed the short-term store, then short-term memory, then long-term memory, overseen by executive control processes.",
+"source": "notes"
+},
+{
+"q": "In the multistage model of memory, which timings are given for the short-term store and for short-term memory?",
+"options": [
+"About 20 seconds and about 0.5 to 2.0 seconds",
+"0.5 to 2.0 seconds and about 20 seconds",
+"About 2 to 20 seconds and about 20 minutes",
+"About 0.1 seconds and about 7 seconds"
+],
+"answer": 1,
+"explanation": "The short-term store lasts 0.5 to 2.0 seconds and short-term memory lasts about 20 seconds. The first option swaps them, and the others invent durations. The 1/10 second figure is long-term memory access time.",
+"source": "notes"
+},
+{
+"q": "Which pairing of sensory-memory type and modality is correct?",
+"options": [
+"Iconic = visual, echoic = aural, haptic = touch",
+"Iconic = aural, echoic = visual, haptic = touch",
+"Iconic = touch, echoic = aural, haptic = visual",
+"Iconic = visual, echoic = touch, haptic = aural"
+],
+"answer": 0,
+"explanation": "Iconic memory is visual, echoic memory is aural (a brief play-back), and haptic memory is touch. Each other option swaps at least two modalities.",
+"source": "notes"
+},
+{
+"q": "Which description best fits short-term memory?",
+"options": [
+"A huge, essentially unlimited store of knowledge with relatively slow access",
+"A scratch-pad for fleeting information: fast access, limited capacity",
+"A brief visual after-image that lasts only until the stimulus has been removed",
+"A structured record of facts and skills derived from remembered events"
+],
+"answer": 1,
+"explanation": "Short-term memory is a scratch-pad for temporary recall with rapid access and limited capacity. The first option describes long-term memory, the third iconic memory, and the fourth semantic memory.",
+"source": "notes"
+},
+{
+"q": "A student claims short-term memory can hold only 7 +/- 2 individual characters, so no one can keep a 10-letter word in mind. What is wrong with the claim?",
+"options": [
+"Short-term memory capacity is unlimited for words but limited for digits",
+"The limit describes long-term memory, which is why access to it is slower",
+"The limit counts chunks, and a familiar word forms one chunk",
+"The limit holds only for sounds, since echoic memory stores words"
+],
+"answer": 2,
+"explanation": "Short-term memory holds 7 +/- 2 chunks, not raw characters, and patterns such as familiar words act as single chunks. The limit belongs to short-term memory, not long-term memory, and it is not restricted to sounds or digits.",
+"source": "notes"
+},
+{
+"q": "What does long-term memory store?",
+"options": [
+"Only deliberately studied facts, and nothing gained through experience or practice",
+"Only events in the order they happened, with no stored facts or procedural rules",
+"Only condition-action rules, because every other kind of knowledge is held short-term",
+"Factual, experiential and procedural knowledge of behaviour"
+],
+"answer": 3,
+"explanation": "Long-term memory stores everything we know: factual information, experiential knowledge and procedural rules of behaviour. Each wrong option wrongly restricts it to a single kind of content.",
+"source": "notes"
+},
+{
+"q": "Which pair of characteristics describes long-term memory?",
+"options": [
+"Huge capacity with relatively slow access and slower forgetting",
+"Very limited capacity, rapid access and quick forgetting, like a scratch-pad",
+"Huge capacity, rapid access and quick forgetting, as in the sensory buffers",
+"Limited capacity with slow access and total loss within about 20 seconds"
+],
+"answer": 0,
+"explanation": "Long-term memory has huge, if not unlimited, capacity, relatively slow access (about 1/10 second) and slower forgetting. The other options mix in short-term memory or sensory buffer traits.",
+"source": "notes"
+},
+{
+"q": "Which long-term memory is a structured record of facts, concepts and skills that is derived from episodic memory?",
+"options": [
+"Semantic memory",
+"Episodic memory",
+"Echoic memory",
+"Iconic memory"
+],
+"answer": 0,
+"explanation": "Semantic memory is the structured record of facts, concepts and skills. Episodic memory holds events in serial form, and echoic and iconic memory are sensory memories.",
+"source": "notes"
+},
+{
+"q": "Which list names the components of a script?",
+"options": [
+"Slots, attributes, fixed values, variable values, defaults and nodes",
+"Nodes, links, associations, slots, defaults and episodes",
+"Goals, operators, heuristics, states, analogies and insights",
+"Entry conditions, results, props, roles, scenes and tracks"
+],
+"answer": 3,
+"explanation": "A script contains entry conditions, results, props, roles, scenes and tracks, as in the coffee-making example where the track is that no more coffee is available. The other lists belong to frames, semantic networks or problem solving.",
+"source": "notes"
+},
+{
+"q": "Which statement is written as a production rule?",
+"options": [
+"A dog has four legs and barks",
+"Cats are associated with mice and fur",
+"If the light is red then stop the car",
+"First prepare the coffee, then drink it"
+],
+"answer": 2,
+"explanation": "A production rule is a condition-action (if-then) statement. The first is a frame-style fact, the second a semantic association, and the fourth a script scene sequence.",
+"source": "notes"
+},
+{
+"q": "Which pairing of a long-term memory structure and its description is mismatched?",
+"options": [
+"Semantic networks: interconnections or associations among memories",
+"Frames: slots or attributes holding default, fixed, or variable information",
+"Scripts: default stereotypical information",
+"Production rules: structured records of facts, concepts, and skills"
+],
+"answer": 3,
+"explanation": "Production rules are condition-action (if-then) statements. A structured record of facts, concepts and skills describes semantic memory.",
+"source": "notes"
+},
+{
+"q": "Which of the following is NOT a way information can be organised in long-term memory?",
+"options": [
+"Echoic buffers",
+"Semantic networks",
+"Scripts",
+"Production rules"
+],
+"answer": 0,
+"explanation": "Long-term memory information can be organised into semantic networks, frames, scripts and production rules. Echoic buffers are a sensory memory, not a long-term organisation.",
+"source": "notes"
+},
+{
+"q": "Which sequence correctly describes the coffee-making script from the lecture?",
+"options": [
+"Entry condition: the mug is full of coffee; scenes: drink the coffee, then prepare it; result: the mug is empty",
+"Entry condition: no more coffee is available; scenes: prepare the coffee, then drink it; result: the mug is empty",
+"Entry condition: the mug is empty; scenes: prepare the coffee, then drink it when ready; result: the mug is full of coffee",
+"Entry condition: the mug is empty; scenes: drink the coffee, then prepare it; result: the mug is full of coffee"
+],
+"answer": 2,
+"explanation": "In the script, the entry condition is an empty mug, the scenes are preparing the coffee and then drinking it when ready, and the result is a mug full of coffee.",
+"source": "notes"
+},
+{
+"q": "Reasoning derives new information from what is already known. Which argument is deductive?",
+"options": [
+"Every elephant I have seen has a trunk, so all elephants have trunks",
+"The grass is wet, so perhaps it rained overnight",
+"My last three trains were late, so the next train will probably be late too",
+"All birds have feathers; a robin is a bird; so a robin has feathers"
+],
+"answer": 3,
+"explanation": "Deductive reasoning reaches a conclusion with certainty from two or more assertions. The elephant and train arguments generalise from observed cases (inductive), and the wet grass argument proposes an explanation (abductive).",
+"source": "notes"
+},
+{
+"q": "Which description matches inductive reasoning?",
+"options": [
+"Generalising from observed cases to cases not yet seen",
+"Deriving a conclusion that follows with mathematical certainty from two assertions",
+"Formulating a hypothesis to explain a phenomenon",
+"Restructuring a problem after a sudden insight"
+],
+"answer": 0,
+"explanation": "Inductive reasoning generalises from observations to unseen cases, such as concluding that all elephants have trunks. The second option is deductive, the third abductive, and the fourth is Gestalt problem solving.",
+"source": "notes"
+},
+{
+"q": "Which type of reasoning is the formulation of hypotheses to explain a phenomenon?",
+"options": [
+"Deductive reasoning",
+"Inductive reasoning",
+"Abductive reasoning",
+"Analogical reasoning"
+],
+"answer": 2,
+"explanation": "Abductive reasoning formulates hypotheses to explain a phenomenon. Deduction leads to a certain conclusion, and induction generalises from observed cases.",
+"source": "notes"
+},
+{
+"q": "Which option correctly describes problem solving and the three approaches covered?",
+"options": [
+"Deriving new facts from known ones, through deductive, inductive and abductive steps",
+"Finding solutions to unfamiliar situations: Gestalt, problem space and analogy",
+"Storing and retrieving knowledge through episodic, semantic and haptic memory",
+"Recalling facts by recognition, through frames, scripts and production rules"
+],
+"answer": 1,
+"explanation": "Problem solving is finding a solution to an unfamiliar situation, illustrated by Gestalt, problem space theory and analogy. The first option describes reasoning, the third memory, and the fourth knowledge organisation.",
+"source": "notes"
+},
+{
+"q": "Which statement about the Gestalt view of problem solving is accurate?",
+"options": [
+"It stresses grasp of general principles, yet cannot explain insight itself",
+"It gives a precise mechanism that fully explains how insight and restructuring happen",
+"It says people solve problems best by relying purely on memorised facts and rules",
+"It holds that the whole is simply equal to the sum of its separate parts, nothing more"
+],
+"answer": 0,
+"explanation": "Gestalt stresses understanding general principles and holds that the whole is greater than the sum of its parts. Its weakness is that it lacks structure and does not explain insight and restructuring. Relying on memorised facts leads to stupid mistakes.",
+"source": "notes"
+},
+{
+"q": "Which approach to problem solving notes the similarities between a known domain and a new one and transfers operators from the known domain?",
+"options": [
+"Gestalt theory",
+"Problem space theory",
+"Skill acquisition",
+"Analogy in problem solving"
+],
+"answer": 3,
+"explanation": "Analogy in problem solving transfers operators from a known domain to a novel one. Gestalt stresses insight and restructuring, and problem space theory uses heuristics between states.",
+"source": "notes"
+},
+{
+"q": "In problem space theory, which is the correct order for solving a problem?",
+"options": [
+"Start at the goal state, use heuristics to move between problem states, and arrive at the initial state",
+"Start at the initial state, use heuristics to move between problem states, and arrive at the goal state",
+"Start at the initial state, arrive at the goal state, and then use heuristics to evaluate the route",
+"Use heuristics first, then define the initial state, and then define the goal state"
+],
+"answer": 1,
+"explanation": "The problem is represented as states, and heuristics are used to move from the initial state to the goal state.",
+"source": "notes"
+},
+{
+"q": "Which statement about long-term memory processes is NOT true?",
+"options": [
+"Learning time is most effective when it is distributed over time",
+"The amount learned is proportional to the time spent, according to the total time hypothesis",
+"Information must be meaningful for it to be stored",
+"Abstract words are generally easier to remember than concrete words"
+],
+"answer": 3,
+"explanation": "Concrete words are easier to remember than abstract words. The other statements match the distribution of practice effect, the total time hypothesis, and the need for meaning.",
+"source": "notes"
+},
+{
+"q": "Forgetting by interference occurs when old and new memories displace one another. After learning a new phone number, a person can no longer recall the old one. Which mechanism is this?",
+"options": [
+"Retroactive interference",
+"Passive decay over time",
+"Failure of recognition memory",
+"Proactive inhibition"
+],
+"answer": 0,
+"explanation": "In retroactive interference, new information replaces the old, which is exactly what happened to the old number. Proactive inhibition is the reverse, with the old memory blocking the new one.",
+"source": "notes"
+},
+{
+"q": "After years of using one password, a user keeps typing it when asked to enter their new one. Which mechanism is this?",
+"options": [
+"Retroactive interference",
+"Proactive inhibition",
+"Decay of the new password",
+"Failure of recall caused by iconic memory"
+],
+"answer": 1,
+"explanation": "Proactive inhibition is when the old memory interferes with the new information, as the old password does here. Retroactive interference would be the new password wiping out the old one.",
+"source": "notes"
+},
+{
+"q": "A student cannot write out the definition of a semantic network from a blank page but easily picks the right one from four options. What happened?",
+"options": [
+"Recall succeeded, but recognition failed completely",
+"Neither recall nor recognition was able to operate",
+"Recognition worked, but recall did not",
+"Both recall and recognition worked equally well here"
+],
+"answer": 2,
+"explanation": "Recall means reproducing information from memory, and recognition means judging that information has been seen before. Choosing the correct definition from a list is recognition, while writing it from nothing is recall.",
+"source": "notes"
+},
+{
+"q": "Which statement about skill acquisition is NOT true?",
+"options": [
+"It involves remembering larger and larger chunks, as in chess players",
+"Experts group problems according to superficial characteristics",
+"Novices group problems according to superficial characteristics",
+"Experts group problems according to conceptual similarities"
+],
+"answer": 1,
+"explanation": "Experts group problems by conceptual similarities, while novices rely on superficial characteristics.",
+"source": "notes"
+}
+]

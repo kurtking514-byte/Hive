@@ -1,0 +1,157 @@
+1.1 Computers
+Computing Fundamentals: what a computer is, what it does, and the main types of computers
+
+WHAT IS A COMPUTER?
+★ Computer: a machine that follows instructions to work with information.
+★ A computer does three things: it accepts input, it executes a mechanical procedure, and it produces output.
+EASIER: Think of a computer as a very fast, very obedient helper. You hand it something (input), it follows a fixed list of steps (procedure), and it hands something back (output).
+★ Accepts input: data goes in.
+Input can come from a person typing, from a network, or from sensors such as a thermometer or a camera.
+★ Executes a mechanical procedure: it follows step-by-step instructions where each step can be carried out without any thinking or judgment.
+EASIER: "Mechanical" means the computer never has to guess what you meant. It just does the steps exactly as written, like following a recipe word for word.
+Added example: "Add 2 and 3, then show the answer" is mechanical, because nobody has to use judgment. "Decide whether this song is beautiful" is not mechanical, because the steps cannot be written down exactly.
+★ Produces output: results come out.
+Output can be shown to a person, such as text on a screen.
+Output can also affect the outside world, such as an electrical signal that controls a device, like a microwave heating food.
+★ Dictionary definition (Dictionary.com, 2016): a computer is a programmable electronic device that accepts data, performs mathematical and logical operations at high speed, and displays the results.
+★ Key fact: computers are everywhere, not just laptops and phones. Cars, TVs, microwave ovens, and access cards all contain computers.
+EASIER: If a device takes something in, follows built-in steps, and then does something in response, there is probably a tiny computer inside it.
+★ Universal computer: a computer that can perform any mechanical computation on discrete inputs, limited only by practical constraints like memory space and time.
+This is the main type of computer the course focuses on.
+EASIER: "Universal" means it can do any job that can be written as exact steps. "Discrete" means the inputs are separate, countable pieces, like digits or letters. The only limits are practical ones: how much memory it has and how long you are willing to wait.
+
+WHY COMPUTING MATTERS
+Computing drives most of today's important technology, arts, and sciences.
+Studying computing also helps us understand deeper questions about minds, culture, and the universe.
+Things that exist because of computing include Google search, animated movies like Toy Story, LASIK eye surgery, smartphones, credit card payments, and microwavable pizza.
+Microwavable pizza is a loose example. Computers help run the factories and delivery systems behind it, but it is not a strong example. Remember search, smartphones, and medical technology as the stronger ones.
+Some authors claim that computing has changed the world more than any other invention in the last hundred years.
+That is an opinion, not a proven fact, so treat it as the author's claim and do not memorize it as truth.
+
+THE HISTORY OF THINKING TOOLS
+This is a common exam theme. Humans have built three big tools for thinking.
+★ Language lets us share ideas and cooperate.
+★ Writing lets us record ideas and pass them across time and distance.
+★ Computing lets machines take on almost any mental task.
+Some sources say only humans have developed tools that greatly enhance thinking. That claim is too broad, because other animals use tools too.
+A safer way to say it: humans are unique in how far they have taken thinking tools such as language, writing, and computing.
+
+THE COMPUTING CYCLE (IPOS)
+★ Every computing task follows four functions. Memorize the acronym IPOS.
+★ I = Input: data enters the system.
+★ P = Processing: the computer works on the data.
+★ O = Output: results are presented.
+★ S = Storage: data is saved for later.
+EASIER: Memory trick: IPOS is "In, Process, Out, Save".
+Note the spelling: it is the Computing Cycle, not "Cyle".
+
+EXAMPLE: GROCERY STORE CHECKOUT
+⚙ Input: the clerk scans a barcode.
+⚙ Processing: the computer looks up the barcode.
+⚙ Output: the screen shows the item's name and price.
+⚙ Storage: the sale is recorded, which helps the store track its inventory.
+
+EXAMPLE: ATM WITHDRAWAL
+⚙ Added example: Input: you insert your card and type your PIN and the amount.
+⚙ Added example: Processing: the bank's computer checks your PIN and your balance.
+⚙ Added example: Output: the machine hands out cash and shows a message on the screen.
+⚙ Added example: Storage: your new balance and a record of the withdrawal are saved.
+
+IPOS IN MORE DETAIL
+★ Input is the process of getting data into the system using devices such as a keyboard, scanner, microphone, or mouse.
+Data at this stage is raw, meaning it is not yet useful until it has been processed.
+★ Processing is the internal work that turns raw data into useful information.
+The video describes the results as WYSIWYG, "what you see is what you get," meaning what you see on screen reflects the processing that happened.
+★ Output is presenting the processed information in a usable form: on a monitor, as a printed page, or as sound from speakers.
+★ Storage is saving data for later use or as a backup, on devices like hard drives, USB drives, or CDs.
+Storage matters because it prevents data loss.
+Storage can hold raw input data as well as final results, not only finished output.
+★ Feedback: the video also notes that systems need ongoing feedback, meaning information about how the system is performing, to make sure it keeps working correctly.
+Some textbooks treat feedback as a fifth element, so check whether your course includes it.
+
+TYPES OF COMPUTERS
+★ Computers are classified by purpose, size, speed, and cost.
+EASIER: Think of vehicles. A race car, a cargo truck, a family car, and a bicycle are all vehicles, but each is built for a different job. Computers are the same.
+
+SUPERCOMPUTER
+★ Supercomputer: the fastest, most powerful type, often costing millions of dollars.
+Used for huge calculations and complex problem solving, for example weather forecasting and scientific simulations.
+EASIER: A supercomputer is like one genius working on one enormous math problem.
+
+MAINFRAME
+★ Mainframe: also very powerful and fast, but built for a different job than a supercomputer.
+★ Supercomputer = complex calculations. Mainframe = huge volumes of simple transactions, with extreme reliability.
+EASIER: A mainframe is like a giant post office that must never stop, sorting millions of simple letters correctly every day.
+Used by banks, airlines, and retailers, for example credit card processing, account transfers, and ticketing.
+Mainframes often cost hundreds of thousands of dollars or more.
+That cost is only a rough guide. Modern mainframes often cost far more, into the millions, so treat the figure as approximate.
+From the mainframe video:
+Mainframes focus on throughput (how much work gets done) and reliability, not raw number-crunching.
+They have specialized processors that manage the movement of data, acting like traffic controllers.
+★ Redundancy: built-in backup components, so parts can be repaired or swapped without shutting the system down.
+Redundancy gives a mainframe near-zero downtime.
+Mainframes are not obsolete. They still handle millions of card swipes and transfers every day and can run thousands of virtual servers.
+
+MICROCOMPUTER (PERSONAL COMPUTER, PC)
+★ Microcomputer (personal computer, PC): a computer designed for personal or home use.
+It typically includes a keyboard, a mouse, a monitor, and the system unit.
+★ System unit: the box that holds the main components.
+Desktops are the classic example.
+Some sources say a PC "can also be referred to as a server." That is misleading.
+★ Server: a computer that provides services to other computers over a network. Any computer can act as a server, so "server" describes a role, not a type of personal computer.
+
+NOTEBOOK / LAPTOP
+★ Notebook / laptop: a portable computer that runs on a battery.
+Laptops weigh roughly 2 to 8 lbs.
+In modern usage, "notebook" and "laptop" are mostly used interchangeably.
+Your source claims notebooks are smaller and less powerful. Use that distinction on an exam if your instructor teaches it.
+
+TABLET
+★ Tablet: a computer smaller and lighter than a laptop.
+It usually has no physical keyboard and uses a touchscreen, operated by finger or a stylus.
+★ Stylus: a special pen used on a touchscreen.
+Almost all tablets have a camera, speakers, and a microphone, which makes them good for video calls.
+Tablets are used for many things. Some sources say "primarily for inputting information," but in practice people use them more for consuming content, such as reading, watching, and browsing.
+
+HANDHELD COMPUTER
+★ Handheld computer: includes smartphones, GPS devices, and handheld game consoles.
+EASIER: A smartphone is like a tablet that can also make phone calls.
+★ PIM (Personal Information Manager): software or a device for managing email, contacts, and schedules.
+Handhelds are often used as a PIM, and also for social media, browsing, and games.
+Older examples such as the Nintendo DS, iPod, and Sony PSP are dated. Know the category and be ready to give modern examples like smartphones and the Nintendo Switch.
+
+ORDER OF TYPES
+From largest and most powerful to smallest: Supercomputer, Mainframe, Microcomputer (PC), Notebook/Laptop, Tablet, Handheld.
+One key word for each: Supercomputer = calculations, Mainframe = transactions and reliability, PC = personal use, Laptop = portable, Tablet = touchscreen, Handheld = smartphone.
+
+COMMON MISTAKES
+Do not call a server a type of personal computer. It is a role that any computer can play.
+Do not say mainframes are obsolete or that they are just slower supercomputers. They do a different job.
+Do not forget the S in IPOS. Storage is part of the cycle.
+Do not treat the dollar figures for computer costs as exact.
+Do not describe tablets as mainly input devices.
+
+QUICK REVIEW: LIKELY EXAM QUESTIONS
+Q: What are the three things a computer does?
+★ Accepts input, executes a mechanical procedure, produces output.
+Q: What does IPOS stand for?
+★ Input, Processing, Output, Storage.
+Q: What is a mechanical procedure?
+★ A procedure where every step can be done without thought or judgment.
+Q: What is the main difference between a supercomputer and a mainframe?
+★ Supercomputers focus on complex calculations. Mainframes focus on handling huge volumes of simple transactions reliably.
+Q: What is a universal computer?
+★ A computer able to perform all possible mechanical computations on discrete inputs, limited only by space and time.
+Q: What is a stylus?
+★ A special pen used on a touchscreen.
+Q: What is a PIM?
+★ Personal Information Manager: software or a device for managing email, contacts, and schedules.
+Q: What is redundancy in mainframes?
+★ Built-in backup components that allow repairs without shutting the system down.
+Q: Name the four major ways computers are classified.
+★ Purpose, size, speed, and cost.
+
+STUDY TIPS
+Memorize IPOS first, since it underlies everything else.
+Learn the types of computers in order from largest and most powerful to smallest.
+For each type, remember one key word, as listed under ORDER OF TYPES.

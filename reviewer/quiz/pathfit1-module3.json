@@ -1,0 +1,362 @@
+[
+{
+"q": "Which statement best defines exercise?",
+"options": [
+"Any bodily movement produced by the muscles that uses energy, including walking to class and doing chores",
+"Short bursts of intense physical activity in which the body's oxygen demand exceeds the oxygen supply",
+"A planned, structured, and repetitive physical activity performed to improve or maintain physical fitness",
+"Any continuous, rhythmic activity done at moderate to vigorous intensity for at least ten minutes"
+],
+"answer": 2,
+"explanation": "Exercise is planned, structured, and repetitive, and its purpose is to improve or maintain fitness. The first option describes general physical activity, the second describes anaerobic exercise, and the fourth is only one characteristic of aerobic exercise.",
+"source": "notes"
+},
+{
+"q": "Which statement about exercise and physical activity is NOT true?",
+"options": [
+"Every physical activity qualifies as exercise, even when it is unplanned and has no fitness goal.",
+"All exercise is physical activity.",
+"The distinction between the two lies in structure, purpose, and repetition.",
+"Exercise is intentional and often goal-oriented, unlike everyday chores."
+],
+"answer": 0,
+"explanation": "Not all physical activity is exercise. Walking to class or doing chores is physical activity but lacks the planning, purpose, and repetition that make it exercise. The other three statements are true.",
+"source": "notes"
+},
+{
+"q": "Which set lists the four types of exercise?",
+"options": [
+"Aerobic, anaerobic, resistance, and agility",
+"Aerobic, flexibility, strength, and endurance",
+"Aerobic, resistance, flexibility, and balance and coordination",
+"Aerobic, anaerobic, flexibility, and balance and coordination"
+],
+"answer": 3,
+"explanation": "The four types are aerobic, anaerobic, flexibility, and balance and coordination. Resistance appears in the list of modes, not in the list of types, which is why the third option is a tempting but incorrect choice.",
+"source": "notes"
+},
+{
+"q": "Physical activity that increases heart rate and breathing for a sustained period, using large muscle groups rhythmically and continuously, is called ____ exercise, a term meaning 'with oxygen.'",
+"options": [
+"Anaerobic",
+"Aerobic",
+"Plyometric",
+"Ballistic"
+],
+"answer": 1,
+"explanation": "Aerobic means with oxygen and describes sustained, rhythmic activity that uses oxygen to meet energy demands. Anaerobic exercise is brief and intense, plyometrics are explosive jumping exercises, and ballistic refers to a bouncing stretching method.",
+"source": "notes"
+},
+{
+"q": "Which statement comparing aerobic and anaerobic exercise is NOT true?",
+"options": [
+"Anaerobic exercise usually lasts 30 to 60 minutes, whereas aerobic exercise lasts under two minutes.",
+"Aerobic exercise is continuous and rhythmic, often at moderate to vigorous intensity.",
+"Anaerobic exercise draws on stored glucose and phosphates and builds strength and power.",
+"Aerobic exercise improves cardiovascular and respiratory endurance."
+],
+"answer": 0,
+"explanation": "The durations are reversed in the first statement: anaerobic exercise typically lasts less than two minutes, while aerobic exercise lasts at least 10 minutes and often 30 to 60 minutes. The other statements are true.",
+"source": "notes"
+},
+{
+"q": "During short, intense bursts of activity, which process does the body mainly use to release energy stored in the muscles without relying on oxygen?",
+"options": [
+"Vasodilation",
+"Lipolysis",
+"Glycolysis",
+"Aerobic respiration"
+],
+"answer": 2,
+"explanation": "Anaerobic exercise relies mainly on glycolysis, the quick breakdown of stored glucose. Aerobic respiration depends on oxygen, lipolysis is fat breakdown, and vasodilation is the widening of blood vessels, not an energy pathway.",
+"source": "notes"
+},
+{
+"q": "Which flexibility technique uses a contract-relax method with a partner, such as an assisted hamstring stretch?",
+"options": [
+"Static stretching",
+"Proprioceptive Neuromuscular Facilitation (PNF) stretching",
+"Ballistic stretching",
+"Dynamic stretching"
+],
+"answer": 1,
+"explanation": "PNF stretching is the contract-relax technique performed with a partner. Static stretching is a held stretch, dynamic stretching uses controlled movement, and ballistic stretching uses bouncing.",
+"source": "notes"
+},
+{
+"q": "Which stretching type and example pair is mismatched?",
+"options": [
+"Static stretching: seated hamstring stretch",
+"Dynamic stretching: arm circles",
+"PNF stretching: assisted hamstring stretch with a partner",
+"Ballistic stretching: holding a shoulder stretch still for 30 seconds"
+],
+"answer": 3,
+"explanation": "Ballistic stretching uses bouncing movements, such as quick toe touches, and is less recommended. Holding a stretch still is static stretching. The other pairs are correctly matched.",
+"source": "notes"
+},
+{
+"q": "Which statement correctly defines balance and one of its kinds?",
+"options": [
+"Balance is the ability to keep control of the body's position, still or moving, without falling; dynamic balance is control while moving, as in walking on a beam.",
+"Balance is the ability to use both sides of the body at once; dynamic balance is holding one position, as in standing on one leg.",
+"Balance is the range through which a joint can move; dynamic balance is a held stretch lasting 15 to 60 seconds.",
+"Balance is the ability to catch and throw accurately; dynamic balance is timing and rhythm during a ball toss."
+],
+"answer": 0,
+"explanation": "Balance is maintaining control of position without falling; dynamic balance is doing so while moving, and static balance is holding a position. Using both sides at once is bilateral coordination, joint range is flexibility, and catching and throwing is hand-eye coordination.",
+"source": "notes"
+},
+{
+"q": "Which three inputs does balance rely on?",
+"options": [
+"Neuromuscular control, timing and rhythm, and motor planning",
+"Heart rate, breathing rate, and muscle temperature",
+"Vestibular system, proprioception, and visual cues",
+"Range of motion, muscle elasticity, and joint mobility"
+],
+"answer": 2,
+"explanation": "Balance relies on the vestibular system (inner ear), proprioception (body awareness), and visual cues (sight). The first option lists the inputs of coordination, the second lists things a warm-up changes, and the fourth relates to flexibility.",
+"source": "notes"
+},
+{
+"q": "Bilateral coordination refers to:",
+"options": [
+"Catching a ball by matching hand movement with what the eyes see",
+"Using both sides of the body simultaneously",
+"Kicking or dribbling a ball with accurate foot placement",
+"Holding a position, such as standing on one leg"
+],
+"answer": 1,
+"explanation": "Bilateral coordination means using both sides of the body at the same time. The first option is hand-eye coordination, the third is foot-eye coordination, and the fourth is static balance.",
+"source": "notes"
+},
+{
+"q": "Which type of exercise is specifically designed to improve the range of motion of muscles and joints?",
+"options": [
+"Aerobic",
+"Anaerobic",
+"Balance and coordination",
+"Flexibility"
+],
+"answer": 3,
+"explanation": "Flexibility exercise improves the range of motion of muscles and joints, lengthening muscles and reducing stiffness. The other types target endurance, strength and power, and control of body movements respectively.",
+"source": "notes"
+},
+{
+"q": "In which order are the core elements of a well-rounded exercise session usually performed?",
+"options": [
+"Warm-up with dynamic stretches, workout, cool-down, then static stretching",
+"Static stretching first, then warm-up, workout, and cool-down",
+"Workout first, then warm-up, dynamic stretching, and cool-down",
+"Cool-down first, then workout, warm-up, and static stretching"
+],
+"answer": 0,
+"explanation": "A session starts with a warm-up that includes dynamic stretches, continues with the main workout, then a cool-down, and static stretching comes after activity. Static stretching is not done before the warm-up, and the cool-down never comes before the workout.",
+"source": "notes"
+},
+{
+"q": "Which core element helps the body transition from high activity to rest by gradually lowering heart rate and preventing blood pooling?",
+"options": [
+"Warm-up",
+"Cool-down",
+"Workout",
+"Stretching"
+],
+"answer": 1,
+"explanation": "The cool-down gradually lowers heart rate and prevents blood pooling. The warm-up raises heart rate, blood flow, and muscle temperature before activity, the workout is the main activity, and stretching enhances flexibility and range of motion.",
+"source": "notes"
+},
+{
+"q": "Which statement about the core elements of exercise is NOT true?",
+"options": [
+"A warm-up gradually increases heart rate, blood flow, and muscle temperature.",
+"The workout can be aerobic, anaerobic, or sport-specific, depending on the fitness goal.",
+"Static stretching is performed before the workout, while dynamic stretching is performed after it.",
+"A cool-down gradually lowers heart rate and helps prevent blood pooling after the workout."
+],
+"answer": 2,
+"explanation": "The timing is reversed: dynamic stretching is done before activity and static stretching is done after activity. The other three statements are true.",
+"source": "notes"
+},
+{
+"q": "In the MMFIT framework, which element is the reason behind movement, the 'why' that fuels consistent exercise?",
+"options": [
+"Mode",
+"Intensity",
+"Frequency",
+"Motivation"
+],
+"answer": 3,
+"explanation": "Motivation is the why behind movement. Mode is the kind of exercise, frequency is how often, and intensity is how hard.",
+"source": "notes"
+},
+{
+"q": "Which type of motivation is based on guilt, pressure, or obligation?",
+"options": [
+"Introjected",
+"Identified",
+"Extrinsic",
+"Intrinsic"
+],
+"answer": 0,
+"explanation": "Introjected motivation comes from guilt, pressure, or obligation, such as feeling bad about skipping gym when classmates go. Extrinsic motivation comes from external rewards or social expectations, identified from personal values, and intrinsic from enjoyment or curiosity.",
+"source": "notes"
+},
+{
+"q": "Which motivation type and example pair is mismatched?",
+"options": [
+"Intrinsic: 'I enjoy dancing with friends because it lifts my mood.'",
+"Extrinsic: 'I joined Zumba to earn PE credits.'",
+"Identified: 'I exercise because I don't want to disappoint my PE teacher.'",
+"Introjected: 'I feel bad skipping gym when my classmates go.'"
+],
+"answer": 2,
+"explanation": "Exercising to avoid disappointing the PE teacher is driven by pressure or obligation, so it is introjected, not identified. Identified motivation is aligned with personal values or long-term goals. The other pairs are correct.",
+"source": "notes"
+},
+{
+"q": "Which MMFIT element, also called type, refers to the specific category or form of physical activity chosen to achieve fitness goals?",
+"options": [
+"Motivation",
+"Mode",
+"Frequency",
+"Time"
+],
+"answer": 1,
+"explanation": "Mode (type) answers the question 'What kind of exercise am I doing?' and determines which body systems are targeted. Motivation is the why, frequency is sessions per week, and time is minutes per session.",
+"source": "notes"
+},
+{
+"q": "Which list shows the four modes (types) in the recommended guidelines for college students?",
+"options": [
+"Aerobic, anaerobic, flexibility, balance/coordination",
+"Aerobic, resistance, endurance, flexibility",
+"Resistance, anaerobic, stretching, coordination",
+"Aerobic, resistance, flexibility, balance/coordination"
+],
+"answer": 3,
+"explanation": "The four modes are aerobic, resistance, flexibility, and balance/coordination. The first option lists the four types of exercise, which include anaerobic instead of resistance.",
+"source": "notes"
+},
+{
+"q": "MMFIT stands for:",
+"options": [
+"Motivation, Mode, Frequency, Intensity, Time",
+"Motivation, Muscle, Fitness, Intensity, Type",
+"Mode, Movement, Frequency, Intensity, Time",
+"Motivation, Mode, Fitness, Intensity, Technique"
+],
+"answer": 0,
+"explanation": "MMFIT stands for Motivation, Mode, Frequency, Intensity, and Time. The other options replace one or more words with plausible but incorrect terms.",
+"source": "notes"
+},
+{
+"q": "Which MMFIT element refers to the length of time spent performing physical activity in a single session, typically 20 to 60 minutes including warm-up and cool-down?",
+"options": [
+"Frequency",
+"Time",
+"Intensity",
+"Mode"
+],
+"answer": 1,
+"explanation": "Time is the length of a single session, typically 20 to 60 minutes including warm-up and cool-down. Frequency counts sessions per week, and intensity is the level of effort.",
+"source": "notes"
+},
+{
+"q": "Which description correctly shows how to perform the heel-to-toe walk?",
+"options": [
+"Hop forward on one foot along a straight line while holding the arms still and the eyes fixed ahead",
+"Stand on one foot for 30 seconds while keeping the eyes closed and the arms folded",
+"Walk along a straight line, placing the heel of the front foot directly against the toes of the back foot with each step",
+"Step through the squares of a floor ladder quickly in a set pattern of foot placements"
+],
+"answer": 2,
+"explanation": "The heel-to-toe walk is performed on a straight line with the heel of the front foot touching the toes of the back foot on each step. The second option is a single-leg stand (made harder with closed eyes), and the fourth describes agility ladder drills.",
+"source": "notes"
+},
+{
+"q": "During 45 minutes of steady cycling, Jose rates his effort 5 on a 10-point scale and can talk but not sing. How is this exercise best classified?",
+"options": [
+"Aerobic exercise at moderate intensity",
+"Anaerobic exercise at vigorous intensity",
+"Aerobic exercise at vigorous intensity",
+"Flexibility exercise at light intensity"
+],
+"answer": 0,
+"explanation": "Steady, continuous cycling for 45 minutes is aerobic. An RPE of 5 falls in the moderate range of 4 to 6, and being able to talk but not sing is the moderate talk-test indicator. Vigorous effort is RPE 7 to 9 with only short phrases possible.",
+"source": "notes"
+},
+{
+"q": "Frequency is measured in sessions per week. What is the general recommendation for moderate fitness?",
+"options": [
+"1 to 2 times weekly",
+"6 to 7 times weekly",
+"4 to 6 times weekly",
+"3 to 5 times weekly"
+],
+"answer": 3,
+"explanation": "The general recommendation is 3 to 5 times weekly for moderate fitness, and athletes may train more. The 4 to 6 times weekly range belongs to the cardiovascular endurance goal, one to two sessions is too few for results, and training almost every day risks burnout or injury.",
+"source": "notes"
+},
+{
+"q": "Which set lists three ways intensity can be measured?",
+"options": [
+"Heart rate zones, body mass index, and the sit-and-reach test",
+"Heart rate zones, Rate of Perceived Exertion, and the talk test",
+"Rate of Perceived Exertion, session length, and weekly frequency",
+"Talk test, body weight, and resting pulse"
+],
+"answer": 1,
+"explanation": "Intensity can be measured with heart rate zones, the Rate of Perceived Exertion (RPE), and the talk test. Body mass index, sit-and-reach, session length, and weekly frequency do not measure how hard an activity feels or how fast the heart is beating during it.",
+"source": "notes"
+},
+{
+"q": "Which sequence correctly shows how to find the moderate-intensity heart rate zone of a 20-year-old student?",
+"options": [
+"Add 20 to 220, then multiply by 0.50 and 0.70",
+"Subtract 20 from 220 to get 200, then multiply by 0.70 and 0.85 to get 140 to 170 bpm",
+"Subtract 20 from 220 to get 200, then multiply by 0.50 and 0.70 to get 100 to 140 bpm",
+"Multiply 220 by 0.50 and 0.70, then subtract 20 from each result"
+],
+"answer": 2,
+"explanation": "Max HR = 220 − age = 200, and the moderate zone is 50 to 70 percent of Max HR: 200 × 0.50 = 100 and 200 × 0.70 = 140. The second option uses the vigorous percentages, and the others use the wrong order or operation.",
+"source": "notes"
+},
+{
+"q": "Which order correctly describes one contract-relax PNF repetition for the hamstrings?",
+"options": [
+"A partner moves the leg to a mild stretch, you push against the partner's hand for a few seconds, you relax, and the partner moves the leg slightly further",
+"You bounce the leg repeatedly while the partner counts, then relax and repeat",
+"You relax first, push against the partner's hand while the leg is held still, then the partner stretches the leg to the limit in one fast movement",
+"The partner holds the leg still for 60 seconds with no contraction, then you swing the leg in circles"
+],
+"answer": 0,
+"explanation": "A PNF repetition has a partner-assisted stretch, a contraction against the partner, a relaxation, and a slightly deeper assisted stretch. Bouncing is ballistic, a still hold without contraction is static, and swinging the leg is dynamic.",
+"source": "extra"
+},
+{
+"q": "A student performs six all-out 10-second sprints with long rests between each sprint. How is this exercise best classified?",
+"options": [
+"Aerobic exercise, because it is continuous and rhythmic",
+"Flexibility exercise, because it moves the joints through a wide range",
+"Balance and coordination exercise, because it trains footwork and control",
+"Anaerobic exercise, because it is brief, explosive, and uses rest intervals"
+],
+"answer": 3,
+"explanation": "Short, all-out, explosive efforts separated by rest intervals are anaerobic, because oxygen demand exceeds supply and the body relies on stored energy. Aerobic exercise is continuous and rhythmic and lasts at least 10 minutes, flexibility exercise improves range of motion, and balance and coordination exercises train control of body movements.",
+"source": "notes"
+},
+{
+"q": "A student jogs at vigorous intensity for 25 minutes on 3 days each week. Which statement is correct?",
+"options": [
+"The total is 75 minutes, which is below the vigorous weekly target of 75 to 150 minutes",
+"The total is 75 minutes, which meets the minimum of the 75 to 150 minute weekly vigorous target",
+"The total is 75 minutes, which falls short of the 150 to 300 minute weekly target",
+"The total is 150 minutes, which meets the 150 to 300 minute weekly target"
+],
+"answer": 1,
+"explanation": "25 × 3 = 75 minutes, which equals the minimum of the 75 to 150 minute vigorous target. The 150 to 300 minute target applies to moderate intensity, and the total is not 150 minutes.",
+"source": "notes"
+}
+]

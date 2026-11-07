@@ -13,20 +13,73 @@
 <meta name="apple-mobile-web-app-title" content="Hive">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght,BNCE,INFM,SPAC@0,300..800,-100..100,0..100,0..100&family=Nunito:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght,BNCE,INFM,SPAC@0,300..800,-100..100,0..100,0..100&family=Josefin+Sans:wght@600;700&family=Nunito:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 <main class="wrap">
   <header class="top">
-    <a class="mark" href="./" aria-label="kk Hive"><span id="markComb"></span><span class="doodle">kk</span></a>
-    <span id="net" class="pill on" role="status">Online</span>
+    <div class="top-l">
+      <a id="backBtn" class="back-btn hidden" href="#/review" aria-label="Back to subjects"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></a>
+      <a class="mark" href="#/" aria-label="kk Hive, home"><span id="markComb"></span><span class="doodle">kk</span></a>
+    </div>
+    <div class="top-r">
+      <span id="net" class="pill on" role="status">Online</span>
+      <a id="switchMode" class="mode-btn hidden" href="#/upload"></a>
+    </div>
   </header>
+
+  <!-- first open only: what do you want to do? -->
+  <section id="viewChoose" class="view hidden">
+    <div class="hero"><span class="hero-comb" aria-hidden="true" data-bgcomb></span><div><h1 class="doodle">Hive</h1><p class="sub">Study together for exams.</p></div></div>
+    <h2 class="doodle">What do you want to do?</h2>
+    <div class="choose">
+      <button type="button" class="choice hand" data-mode="review">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6.5c-2-1.6-4.6-2.2-8-2v13.2c3.4-.2 6 .4 8 2"/><path d="M12 6.5c2-1.6 4.6-2.2 8-2v13.2c-3.4-.2-6 .4-8 2V6.5Z"/></svg>
+        <b class="doodle">Review</b><span>Read notes and take quizzes</span></button>
+      <button type="button" class="choice hand" data-mode="upload">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h-.6A4.4 4.4 0 0 1 6 9.7a6 6 0 0 1 11.6 1.1h.4a3.9 3.9 0 0 1 0 7.7h-1"/><path d="M12 20.5v-9"/><path d="m8.6 14.6 3.4-3.4 3.4 3.4"/></svg>
+        <b class="doodle">Upload lessons</b><span>Send slides and handouts for the reviewer</span></button>
+    </div>
+    <p class="hint center">Hive remembers your choice. Switch any time with the button at the top.</p>
+  </section>
+
+  <!-- reviewer: subjects -->
+  <section id="viewReview" class="view hidden">
+    <div class="nb-head">
+      <h1 class="doodle">Review</h1>
+      <div class="course-hex" id="coursePick">
+        <button type="button" class="ch-trigger" id="courseBtn" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="ch-pop" id="coursePop" role="menu" aria-label="Pick a course"></div>
+      </div>
+    </div>
+    <!-- a notebook: exam tabs stick out of the top of the page that holds the hive -->
+    <div class="nb-tabs" id="examTabs" role="tablist" aria-label="Exam"></div>
+    <div class="nb-page hand-page">
+      <div class="hive" id="subjectGrid"></div>
+      <div id="hiveHint" class="hive-hint"></div>
+    </div>
+  </section>
+
+  <!-- reviewer: one subject, Notes | Quiz -->
+  <section id="viewSubject" class="view hidden">
+    <h1 class="doodle subj-h" id="subjTitle"></h1>
+    <p class="sub" id="subjName"></p>
+    <nav class="lesson-row" id="lessonRow" aria-label="Lessons"></nav>
+    <h2 class="lesson-title" id="lessonTitle"></h2>
+    <div class="tabs" id="tabs" role="tablist">
+      <a role="tab" data-tab="notes" href="#">Notes</a>
+      <a role="tab" data-tab="quiz" href="#">Quiz</a>
+    </div>
+    <div id="lessonBody"></div>
+  </section>
+
+  <section id="viewUpload" class="view hidden">
 
   <section class="hero">
     <span id="heroComb" class="hero-comb" aria-hidden="true"></span>
     <div>
-      <h1 class="doodle">Hive</h1>
+      <h1 class="doodle">Upload</h1>
       <p class="sub">Send your lessons for the reviewer.</p>
     </div>
   </section>
@@ -79,6 +132,7 @@
 
   <datalist id="teacherList"></datalist>
   <footer><button type="button" class="link" id="changeCode">Change class code</button> · <a href="./admin.html">Admin</a></footer>
+  </section>
 </main>
 
 <script src="./config.js"></script>
@@ -87,5 +141,6 @@
 <script src="./doodle.js"></script>
 <script src="./autofill.js"></script>
 <script src="./app.js"></script>
+<script src="./reviewer.js"></script>
 </body>
 </html>

@@ -1,0 +1,362 @@
+[
+{
+"q": "Which term names the set that contains all objects pertinent to a given discussion and is designated by the symbol U?",
+"options": [
+"Empty set",
+"Complement of A",
+"Universal set",
+"Proper subset"
+],
+"answer": 2,
+"explanation": "The universal set is the set of all things relevant to the discussion, written U, and every other set in the problem is a subset of it. The empty set has no elements, the complement of A contains only the elements of U that are not in A, and a proper subset is a subset that is not equal to the larger set.",
+"source": "notes"
+},
+{
+"q": "Set A is a subset of Set B, and B contains at least one element that is not in A. Which term correctly describes A?",
+"options": [
+"A is a proper subset of B",
+"A is equal to B",
+"A is disjoint from B",
+"A is the complement of B"
+],
+"answer": 0,
+"explanation": "A proper subset is a subset in which the larger set has more elements, so the two sets are not equal. A is not equal to B because B has an extra element. A is not disjoint from B because every element of A is also in B. A is not the complement of B because it is contained in B.",
+"source": "notes"
+},
+{
+"q": "The set of all subsets that can be formed from a given set (including the empty set and the set itself) is called the",
+"options": [
+"Universal set",
+"Complement",
+"Empty set",
+"Power set"
+],
+"answer": 3,
+"explanation": "The power set P(A) is the set of all subsets of A. For A = {a, b, c} it has 8 members. The universal set is the whole context of a problem, the complement contains elements outside A, and the empty set has no elements.",
+"source": "notes"
+},
+{
+"q": "Two sets A and B are called disjoint when",
+"options": [
+"Every element of A is also an element of B",
+"A intersect B is the empty set",
+"A union B equals the universal set",
+"A and B contain exactly the same elements"
+],
+"answer": 1,
+"explanation": "Disjoint sets share no elements, so their intersection is the empty set. Every element of A being in B describes a subset. A union B equal to U describes sets that cover the universe. Containing exactly the same elements describes equal sets.",
+"source": "notes"
+},
+{
+"q": "In set theory, what does the cardinality |A| of a set A measure?",
+"options": [
+"The number of subsets of A",
+"The sum of the elements of A",
+"The number of elements in A",
+"The number of elements of the universal set that are not in A"
+],
+"answer": 2,
+"explanation": "Cardinality is the number of elements in a set, for example |{1, 3, 2, 5}| = 4. The number of subsets is the cardinality of the power set, 2^|A|. The sum of the elements is not a count. Elements outside A are counted by |A'|, the cardinality of the complement.",
+"source": "notes"
+},
+{
+"q": "According to De Morgan's laws, for any sets S and T, (S intersect T)' equals",
+"options": [
+"S' union T'",
+"S' intersect T'",
+"S intersect T'",
+"S' union T"
+],
+"answer": 0,
+"explanation": "The complement of an intersection is the union of the complements, so (S intersect T)' = S' union T'. The choice S' intersect T' is the result for (S union T)', which is the other law. The remaining choices complement only one of the sets, which is not part of either law.",
+"source": "notes"
+},
+{
+"q": "For any finite sets A and B, which formula correctly gives n(A union B)?",
+"options": [
+"n(A) + n(B)",
+"n(A) + n(B) + n(A intersect B)",
+"n(A) - n(B) + n(A intersect B)",
+"n(A) + n(B) - n(A intersect B)"
+],
+"answer": 3,
+"explanation": "Adding n(A) and n(B) counts every element of the overlap twice, so the overlap n(A intersect B) must be subtracted once. Using n(A) + n(B) alone forgets to subtract the overlap. Adding the overlap counts it three times. The choice with n(A) - n(B) is not a valid formula.",
+"source": "notes"
+},
+{
+"q": "Let A = {1, 2, 3, 4}. Which statement is correct?",
+"options": [
+"{1, 2} is an element of A",
+"The empty set { } is a subset of A",
+"1 is a subset of A",
+"6 is an element of A"
+],
+"answer": 1,
+"explanation": "The empty set is a subset of every set. {1, 2} is a subset of A, not an element, because A's elements are the numbers 1, 2, 3, 4. The number 1 is an element of A, not a subset. 6 is not in the list, so 6 is not an element of A.",
+"source": "notes"
+},
+{
+"q": "To find (V intersect T')' for sets V and T inside a universal set U, which order of steps is correct?",
+"options": [
+"Find T', then find V intersect T', then take the complement of that result",
+"Find V intersect T, then take its complement, then intersect that with T'",
+"Find V', then find V' intersect T, then take the complement of that result",
+"Find V', then find T', then take the union of the two complements"
+],
+"answer": 0,
+"explanation": "Work from the inside out: first T', then the intersection of V with T', then the outer complement. The second choice complements the wrong pieces. The third choice computes (V' intersect T)', which is a different set. The fourth choice computes V' union T', which equals (V intersect T)', not (V intersect T')'.",
+"source": "notes"
+},
+{
+"q": "In a survey of N people, n(A), n(B), and the number who belong to neither group are known. Which order of steps correctly finds the number who belong to both groups?",
+"options": [
+"Add n(A) and n(B), then subtract the neither count; the result is the number in both",
+"Subtract n(A) from n(B), then subtract the neither count from that result",
+"Add n(A), n(B) and the neither count; the result is the number in both",
+"Subtract the neither count from N to get n(A union B), add n(A) and n(B), then subtract n(A union B) from that sum"
+],
+"answer": 3,
+"explanation": "First n(A union B) = N - neither. Then n(A) + n(B) counts the overlap twice, so subtracting n(A union B) leaves the overlap exactly once. The other orders produce numbers that are not the overlap. For example, with N = 100, n(A) = 52, n(B) = 36 and 24 in neither, the correct steps give 76, then 88, then 12.",
+"source": "notes"
+},
+{
+"q": "Which statement is NOT true?",
+"options": [
+"{1, 2, 3, 4} and {4, 2, 1, 3} are equal sets",
+"{1, 2, 2, 3} and {1, 2, 3} are equal sets",
+"The empty set is a subset of every set except itself",
+"The set {x | x is a positive number less than 0} has no elements"
+],
+"answer": 2,
+"explanation": "The empty set is a subset of every set, including itself, so the third statement is false. The first is true because order does not matter. The second is true because repeated elements do not change a set. The fourth is true because no positive number is less than 0.",
+"source": "notes"
+},
+{
+"q": "Which symbol and meaning pair is mismatched?",
+"options": [
+"Z+ : the positive integers",
+"R : the integers",
+"Q : the rational numbers",
+"Z- : the negative integers"
+],
+"answer": 1,
+"explanation": "R stands for the real numbers, and the integers are written Z. So the pair R : the integers is mismatched. The other pairs are correct: Z+ is the positive integers, Q is the rational numbers, and Z- is the negative integers.",
+"source": "notes"
+},
+{
+"q": "In a group of 60 students, 35 like tea, 28 like coffee, and 10 like neither. How many students like both?",
+"options": [
+"63",
+"3",
+"50",
+"13"
+],
+"answer": 3,
+"explanation": "Students who like tea or coffee: 60 - 10 = 50. Then both = 35 + 28 - 50 = 63 - 50 = 13. Check: tea only 22, coffee only 15, both 13, neither 10, and 22 + 15 + 13 + 10 = 60. The value 63 is the plain sum, 3 comes from ignoring the neither group (63 - 60), and 50 is only n(T union C).",
+"source": "notes"
+},
+{
+"q": "A set has 5 elements, {a, b, c, d, e}. How many subsets does it have?",
+"options": [
+"31",
+"10",
+"32",
+"25"
+],
+"answer": 2,
+"explanation": "A set with n elements has 2^n subsets, so 2^5 = 2 x 2 x 2 x 2 x 2 = 32. The value 31 is the number of proper subsets (2^5 - 1), 10 comes from wrongly using 2n, and 25 comes from wrongly using n^2.",
+"source": "notes"
+},
+{
+"q": "Let U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, A = {1, 2, 3, 4, 5}, and B = {4, 5, 6, 7}. Find (A union B)'.",
+"options": [
+"{8, 9, 10}",
+"{1, 2, 3, 6, 7, 8, 9, 10}",
+"{4, 5}",
+"{6, 7, 8, 9, 10}"
+],
+"answer": 0,
+"explanation": "A union B = {1, 2, 3, 4, 5, 6, 7}, and the elements of U not in it are {8, 9, 10}. Check with De Morgan: A' = {6, 7, 8, 9, 10}, B' = {1, 2, 3, 8, 9, 10}, and A' intersect B' = {8, 9, 10}. The second choice is A' union B', which equals (A intersect B)'. The third choice is A intersect B. The fourth choice is only A'.",
+"source": "notes"
+},
+{
+"q": "Let A = {2, 4, 6, 8, 10, 12} and B = {3, 6, 9, 12}. What is |A union B|?",
+"options": [
+"10",
+"8",
+"6",
+"2"
+],
+"answer": 1,
+"explanation": "A union B = {2, 3, 4, 6, 8, 9, 10, 12}, which has 8 elements. Check with the counting formula: A intersect B = {6, 12}, so |A union B| = 6 + 4 - 2 = 8. The value 10 comes from adding 6 + 4 without subtracting the overlap, 6 is only |A|, and 2 is only |A intersect B|.",
+"source": "notes"
+},
+{
+"q": "A student claims A = {1, 2, 6} is a subset of B = {1, 2, 3, 4, 5} after checking only 1 and 2. Which conclusion follows from the subset test?",
+"options": [
+"A is a proper subset of B because B has more elements.",
+"A and B are equal because they share elements.",
+"A is a subset of B because at least two elements of A are in B.",
+"A is not a subset of B because 6 is not in B."
+],
+"answer": 3,
+"explanation": "To be a subset, every element of A must be in B. Since 6 is in A but not B, A is not a subset of B. Having fewer elements or sharing some elements is not enough to establish the subset relation.",
+"source": "notes"
+},
+{
+"q": "What is the cardinality of {2, 2, 5, 7, 7, 9, 9}?",
+"options": [
+"7",
+"4",
+"6",
+"3"
+],
+"answer": 1,
+"explanation": "Remove repeated elements first: the distinct set is {2, 5, 7, 9}, which has cardinality 4. Counting all seven written entries counts repeats; there are four distinct values, not six or three.",
+"source": "notes"
+},
+{
+"q": "When are two sets A and B equal?",
+"options": [
+"Exactly when A is a subset of B and B is a subset of A.",
+"Whenever A and B have the same cardinality, even if their elements differ.",
+"Whenever every element of A is also in B, regardless of the reverse inclusion.",
+"Whenever A and B have at least one element in common."
+],
+"answer": 0,
+"explanation": "Sets are equal exactly when they contain precisely the same elements, which is equivalent to each being a subset of the other. Equal cardinality alone, one-way inclusion, or a shared element does not establish equality.",
+"source": "notes"
+},
+{
+"q": "Which statement about representing sets in a Venn diagram is NOT true?",
+"options": [
+"Shared elements are placed in the overlapping region.",
+"Elements of U that are in none of the sets are placed outside all set circles but inside the rectangle for U.",
+"Disjoint sets are represented by overlapping circles.",
+"A subset can be represented by drawing one set's circle inside the other's."
+],
+"answer": 2,
+"explanation": "Disjoint sets have no elements in common, so their circles are kept apart rather than overlapped. Shared elements go in an overlap, elements in no set remain inside U but outside the circles, and a subset can be shown by a circle inside another.",
+"source": "notes"
+},
+{
+"q": "Which term names the method of describing a set by a condition, such as {x | x is a positive even integer less than 10}, read as the set of all x such that x is ...?",
+"options": [
+"Roster (tabular) method",
+"Venn diagram method",
+"Power set notation",
+"Rule (set-builder) form"
+],
+"answer": 3,
+"explanation": "Rule form describes a set by a condition, and the bar means such that. The roster method lists the elements, for example {2, 4, 6, 8}. A Venn diagram is a picture of sets, and the power set P(A) is the set of all subsets of A.",
+"source": "notes"
+},
+{
+"q": "In a universal set U, which formula gives the number of elements that belong to neither A nor B?",
+"options": [
+"n(U) - n(A union B)",
+"n(U) - n(A) - n(B)",
+"n(A union B) - n(U)",
+"n(U) - n(A intersect B)"
+],
+"answer": 0,
+"explanation": "The elements in neither set are those of U that lie outside A union B, so n(neither) = n(U) - n(A union B). Check with n(U) = 100, n(A) = 54, n(B) = 69 and 35 in both: n(A union B) = 88 and neither = 12. The other formulas give 100 - 54 - 69 = -23, 88 - 100 = -12, and 100 - 35 = 65.",
+"source": "notes"
+},
+{
+"q": "A set has n elements. Which expression gives the number of its proper subsets?",
+"options": [
+"2^n",
+"2^n - 1",
+"2n - 1",
+"n^2 - 1"
+],
+"answer": 1,
+"explanation": "A set with n elements has 2^n subsets, and the set itself is the one subset that is not proper, so there are 2^n - 1 proper subsets. For {1, 2, 3}: 8 - 1 = 7, namely the empty set, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}. The value 2^n includes the set itself, and for n = 3 the other expressions give 5 and 8.",
+"source": "notes"
+},
+{
+"q": "Let E be the empty set { }, and let F be the set whose only element is E. Which pair of cardinalities is correct?",
+"options": [
+"|E| = 1 and |F| = 1",
+"|E| = 0 and |F| = 0",
+"|E| = 0 and |F| = 1",
+"|E| = 1 and |F| = 2"
+],
+"answer": 2,
+"explanation": "The empty set has no elements, so |E| = 0. The set F is a box that contains one item, the empty set E, so |F| = 1. Treating F as empty, or counting E as an element of itself, are the common errors.",
+"source": "notes"
+},
+{
+"q": "In a class of N students, n(M) study mathematics, n(H) study history, and n(both) study both. Which order of steps correctly finds the number who study neither?",
+"options": [
+"Add n(M) and n(H); subtract n(both) to get n(M union H); subtract that result from N",
+"Subtract n(both) from N; then subtract n(M) and n(H) from that result",
+"Add n(M) and n(H); subtract N from that sum; add n(both)",
+"Subtract n(M) from n(H); add n(both); subtract that result from N"
+],
+"answer": 0,
+"explanation": "First n(M union H) = n(M) + n(H) - n(both), then neither = N - n(M union H). With N = 100, n(M) = 54, n(H) = 69 and 35 in both: 54 + 69 - 35 = 88 and 100 - 88 = 12. The second order gives 100 - 35 - 54 - 69 = -58, the third gives 123 - 100 + 35 = 58, and the fourth gives 69 - 54 + 35 = 50 and then 100 - 50 = 50.",
+"source": "notes"
+},
+{
+"q": "Which order of steps correctly tests whether A is a subset of B and then whether it is a proper subset?",
+"options": [
+"Compare the sizes of A and B first; if B is larger, conclude A is a subset; then check the elements of A",
+"Check each element of B against A; if all are in A, conclude A is a subset; then compare sizes",
+"Check each element of A against B; if one is missing, conclude A is a proper subset; otherwise conclude A equals B",
+"Check each element of A against B; if all are in B, conclude A is a subset; then compare sizes to decide whether it is proper"
+],
+"answer": 3,
+"explanation": "Check each element of A one at a time against B. If every one is in B, A is a subset, and only then does a larger B make it a proper subset. For A = {1, 2, 3} and B = {1, 2, 3, 4, 5}, all of A is in B and 5 > 3, so A is a proper subset. Size alone proves nothing: {1, 2, 6} is smaller than {1, 2, 3, 4, 5} but 6 is missing. Checking B against A tests the wrong direction, and a missing element means A is not a subset at all.",
+"source": "notes"
+},
+{
+"q": "Which statement about cardinality is NOT true?",
+"options": [
+"If |A| = 4 and |A'| = 6 in a universal set U, then |U| = 10.",
+"All infinite sets are the same size, because every infinite set has cardinality infinity.",
+"The empty set has cardinality 0.",
+"A finite set has a countable number of elements, so counting it eventually ends."
+],
+"answer": 1,
+"explanation": "Cantor showed that infinities come in different sizes: the natural numbers can be counted one by one, but the real numbers are a bigger infinity. The other statements are true: |A| + |A'| = |U| gives 4 + 6 = 10, |{ }| = 0, and a finite set can be counted to the end.",
+"source": "notes"
+},
+{
+"q": "Let U = {1, 2, 3, 4, 5, 6}, S = {1, 2, 3}, and T = {3, 4}. A student finds (S union T)' as follows. Step 1: S' = {4, 5, 6} and T' = {1, 2, 5, 6}. Step 2: (S union T)' = S' union T' = {1, 2, 4, 5, 6}. Which statement correctly identifies the error and the correct set?",
+"options": [
+"There is no error, so (S union T)' = {1, 2, 4, 5, 6}",
+"S' should be {1, 2, 3}, so the result is {1, 2, 3, 5, 6}",
+"Step 2 should flip the union to an intersection, so (S union T)' = S' intersect T' = {5, 6}",
+"The complement was never taken, so (S union T)' = S union T = {1, 2, 3, 4}"
+],
+"answer": 2,
+"explanation": "Step 1 is correct. In Step 2 De Morgan's first law was misapplied: the complement of a union is the intersection of the complements, so S' intersect T' = {5, 6}. Check directly: S union T = {1, 2, 3, 4} and its complement is {5, 6}. The student's set {1, 2, 4, 5, 6} is actually (S intersect T)', because S intersect T = {3}.",
+"source": "notes"
+},
+{
+"q": "In a graduating class of 90 students, 50 studied mathematics, 60 studied history, and 25 studied both. One student is chosen at random. What is the probability that the student studied history but not mathematics?",
+"options": [
+"5/18",
+"7/18",
+"2/3",
+"1/18"
+],
+"answer": 1,
+"explanation": "History only = 60 - 25 = 35, so the probability is 35/90 = 7/18. Check the regions: math only 25, history only 35, both 25, and neither 90 - (50 + 60 - 25) = 5, which total 90. The value 5/18 is 25/90 (math only or both), 2/3 is 60/90 (all history students, including those who also took math), and 1/18 is 5/90 (neither).",
+"source": "notes"
+},
+{
+"q": "Let U = {1, 2, 3, 4, 5, 6, 7, 8, 9}, S = {2, 4, 6, 8}, and T = {1, 2, 3, 4}. Find (S' intersect T)'.",
+"options": [
+"{2, 4, 5, 6, 7, 8, 9}",
+"{1, 3}",
+"{1, 2, 3, 4, 5, 7, 9}",
+"{1, 2, 3, 4, 6, 8}"
+],
+"answer": 0,
+"explanation": "Work from the inside out: S' = {1, 3, 5, 7, 9}, then S' intersect T = {1, 3}, then the complement is {2, 4, 5, 6, 7, 8, 9}. Check by De Morgan: (S' intersect T)' = S union T' = {2, 4, 6, 8} union {5, 6, 7, 8, 9} = {2, 4, 5, 6, 7, 8, 9}. The value {1, 3} skips the outer complement, {1, 2, 3, 4, 5, 7, 9} complements S intersect T' by mistake, and {1, 2, 3, 4, 6, 8} is S union T, which forgets to complement T.",
+"source": "notes"
+}
+]

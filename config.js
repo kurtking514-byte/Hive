@@ -11,7 +11,7 @@ window.APP_CONFIG = {
   bucket: "uploads",
   maxFileMB: 20,
 
-  defaultExamPeriod: "Midterm",
+  defaultExamPeriod: "Finals",
   examPeriods: ["Prelim", "Midterm", "Finals"],
 
   /* The "combs" of the hive: each course gets its own space. */

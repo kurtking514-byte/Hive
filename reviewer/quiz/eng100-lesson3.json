@@ -1,0 +1,362 @@
+[
+{
+"q": "Culture includes which set?",
+"options": [
+"Beliefs, values, norms, behaviors, way of being",
+"Only language and food",
+"Only laws and government",
+"Only shared history"
+],
+"answer": 0,
+"explanation": "These are the module’s elements of culture.",
+"source": "notes"
+},
+{
+"q": "Cultural diversity is synonymous with",
+"options": [
+"Ethnocentrism",
+"Multiculturalism",
+"Ethnorelativism",
+"Stereotyping"
+],
+"answer": 1,
+"explanation": "The module states this equivalence.",
+"source": "notes"
+},
+{
+"q": "Knowing multiple cultures exist is",
+"options": [
+"Cultural sensitivity",
+"Ethnocentrism",
+"Cultural awareness",
+"Integration"
+],
+"answer": 2,
+"explanation": "Awareness is knowing that cultures and outlooks differ.",
+"source": "notes"
+},
+{
+"q": "Accepting cultural differences without claiming superiority is",
+"options": [
+"Ethnocentrism",
+"Stereotyping",
+"Low-context communication",
+"Cultural sensitivity"
+],
+"answer": 3,
+"explanation": "Sensitivity accepts differences.",
+"source": "notes"
+},
+{
+"q": "Belief that one’s own group is superior is",
+"options": [
+"Ethnocentrism",
+"Ethnorelativism",
+"Cultural awareness",
+"Multiculturalism"
+],
+"answer": 0,
+"explanation": "Ethnocentrism ranks one’s own group above others.",
+"source": "notes"
+},
+{
+"q": "Seeing values and behaviors as cultural, not universal, is",
+"options": [
+"Ethnocentrism",
+"Ethnorelativism",
+"Stereotyping",
+"Cultural diversity"
+],
+"answer": 1,
+"explanation": "This is the module’s definition.",
+"source": "notes"
+},
+{
+"q": "Stereotypes are often based on",
+"options": [
+"Complete knowledge of each person",
+"Explicit words only",
+"Limited observed characteristics",
+"Shared political rules"
+],
+"answer": 2,
+"explanation": "Limited observation invites oversimplification.",
+"source": "notes"
+},
+{
+"q": "Meaning through context, tone, and what is left unsaid is",
+"options": [
+"Low-context communication",
+"Ethnocentrism",
+"Neutral pronouns",
+"High-context communication"
+],
+"answer": 3,
+"explanation": "High-context communication uses indirect cues.",
+"source": "notes"
+},
+{
+"q": "Clear, direct, specific words characterize",
+"options": [
+"Low-context communication",
+"High-context communication",
+"Ethnorelativism",
+"Cultural sensitivity"
+],
+"answer": 0,
+"explanation": "Low-context communication states meaning explicitly.",
+"source": "notes"
+},
+{
+"q": "Which factors affect an individual's communication?",
+"options": [
+"Only nationality",
+"Personality, situation, profession, age, proficiency, relationship",
+"Only country tendency",
+"Only religion"
+],
+"answer": 1,
+"explanation": "The module lists these six factors.",
+"source": "notes"
+},
+{
+"q": "Who developed the DMIS?",
+"options": [
+"Kristine Castillo",
+"Milton Friedman",
+"John Bennett",
+"Dr. Milton Bennett"
+],
+"answer": 3,
+"explanation": "The PDF credits Dr. Milton Bennett.",
+"source": "notes"
+},
+{
+"q": "Which is the correct DMIS order?",
+"options": [
+"Denial, Minimization, Defense, Acceptance, Integration, Adaptation",
+"Denial, Defense, Minimization, Acceptance, Adaptation, Integration",
+"Defense, Denial, Acceptance, Minimization, Adaptation, Integration",
+"Acceptance, Adaptation, Integration, Denial, Defense, Minimization"
+],
+"answer": 1,
+"explanation": "This is the listed sequence.",
+"source": "notes"
+},
+{
+"q": "Which is a listed diversity benefit?",
+"options": [
+"Ethnocentrism",
+"Stereotyping",
+"Innovation",
+"Denial"
+],
+"answer": 2,
+"explanation": "Innovation is one of the benefits.",
+"source": "notes"
+},
+{
+"q": "Which is an educational contribution of diversity?",
+"options": [
+"Ageism",
+"Denial",
+"Ethnocentrism",
+"Empathy"
+],
+"answer": 3,
+"explanation": "Empathy is among the contributions.",
+"source": "notes"
+},
+{
+"q": "Which alternative pair is correct for “mankind” and “manpower”?",
+"options": [
+"Humanity; human resources",
+"Mankind; manpower",
+"Men; male staff",
+"Manhood; manpower"
+],
+"answer": 0,
+"explanation": "Both inclusive alternatives appear in the module.",
+"source": "notes"
+},
+{
+"q": "Alternative to “man-to-man defense”?",
+"options": [
+"Men’s defense",
+"One-on-one defense",
+"Mankind defense",
+"Male defense"
+],
+"answer": 1,
+"explanation": "The module gives one-on-one defense.",
+"source": "notes"
+},
+{
+"q": "Alternative to “chairman”?",
+"options": [
+"Chairperson",
+"Chairwoman",
+"Man chair",
+"Lady chair"
+],
+"answer": 0,
+"explanation": "Chairperson avoids unnecessary gender marking.",
+"source": "notes"
+},
+{
+"q": "Alternative to “lady lawyer”?",
+"options": [
+"Lawyer",
+"Female lawyer",
+"Lady attorney",
+"Woman advocate"
+],
+"answer": 0,
+"explanation": "The module recommends lawyer.",
+"source": "notes"
+},
+{
+"q": "Which uses a neutral pronoun?",
+"options": [
+"Each student should hand in his term paper.",
+"Each student should hand in their term paper.",
+"Each student should hand in her term paper.",
+"Each boy hands in his paper."
+],
+"answer": 1,
+"explanation": "Their avoids a gender assumption.",
+"source": "notes"
+},
+{
+"q": "Which phrase removes gender comparison?",
+"options": [
+"She shoots like a man.",
+"She shoots well for a woman.",
+"She has male-level skill.",
+"She shoots well."
+],
+"answer": 3,
+"explanation": "It states the ability directly.",
+"source": "notes"
+},
+{
+"q": "Which statement is NOT true about cultural tendencies?",
+"options": [
+"Individuals may differ within a culture.",
+"A country’s tendency determines every individual’s style.",
+"Situation affects communication.",
+"Cultures can tend higher or lower context."
+],
+"answer": 1,
+"explanation": "The module explicitly notes individual variation.",
+"source": "notes"
+},
+{
+"q": "Which pair is mismatched?",
+"options": [
+"Low-context—direct wording",
+"Ethnocentrism—own group superior",
+"High-context—explicit words only",
+"Ethnorelativism—cultural variation"
+],
+"answer": 2,
+"explanation": "Explicit wording characterizes low-context communication.",
+"source": "notes"
+},
+{
+"q": "Which statement about stereotypes is NOT true?",
+"options": [
+"They can oversimplify.",
+"They may come from limited observations.",
+"They can misinterpret people.",
+"They reliably describe every group member."
+],
+"answer": 3,
+"explanation": "Stereotypes do not reliably describe all individuals.",
+"source": "notes"
+},
+{
+"q": "Which pair is mismatched?",
+"options": [
+"Ageism—discrimination based on race",
+"Age-sensitive—people of all ages can learn",
+"Gender-sensitive—avoids assumptions",
+"Stereotype—generalization from limited observations"
+],
+"answer": 0,
+"explanation": "Ageism concerns age.",
+"source": "notes"
+},
+{
+"q": "Which DMIS stage follows Minimization?",
+"options": [
+"Defense",
+"Acceptance",
+"Adaptation",
+"Integration"
+],
+"answer": 1,
+"explanation": "Acceptance follows Minimization.",
+"source": "notes"
+},
+{
+"q": "Which is the correct wording-revision order?",
+"options": [
+"Keep label, infer trait, generalize",
+"Remove all detail, add stereotype",
+"Identify assumption, check relevance, remove label, state respectfully",
+"State opinion, assign identity, ignore relevance"
+],
+"answer": 2,
+"explanation": "Check assumptions and relevance before revising.",
+"source": "notes"
+},
+{
+"q": "Best revision for “You’re too old to learn new things”?",
+"options": [
+"Let younger staff learn.",
+"Older people cannot adapt.",
+"Only young people learn.",
+"People of all ages can learn and adapt."
+],
+"answer": 3,
+"explanation": "This recognizes learning ability across ages.",
+"source": "notes"
+},
+{
+"q": "Respectful visual impairment phrase in the module?",
+"options": [
+"A person who is visually impaired",
+"The visually impaired",
+"A visually impaired woman always",
+"A disabled"
+],
+"answer": 0,
+"explanation": "This is the phrasing given.",
+"source": "notes"
+},
+{
+"q": "Which country is listed as generally more high-context?",
+"options": [
+"Germany",
+"Sweden",
+"Japan",
+"Norway"
+],
+"answer": 2,
+"explanation": "Japan is in the high-context list.",
+"source": "notes"
+},
+{
+"q": "Which country is listed as generally more low-context?",
+"options": [
+"Thailand",
+"Mexico",
+"Canada",
+"Indonesia"
+],
+"answer": 2,
+"explanation": "Canada is in the low-context list.",
+"source": "notes"
+}
+]

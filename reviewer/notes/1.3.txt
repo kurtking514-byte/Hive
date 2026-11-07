@@ -1,0 +1,100 @@
+1.3 Data and Information
+Data, information, and bits: how we measure information
+
+DATA VS. INFORMATION
+★ Data: raw facts with no context, such as the numbers 23, 56, 78, 12.
+★ Information: data that has been processed so it means something.
+⚙ Add the numbers: 23 + 56 + 78 + 12 = 169.
+⚙ Divide by how many numbers there are: 169 ÷ 4 = 42.25.
+⚙ The average, 42.25, is information.
+EASIER: Data is the ingredients, and information is the finished meal.
+
+WHAT A BIT IS
+Computer scientists measure information by how much it reduces uncertainty.
+★ One bit is the amount of information that cuts the possibilities in half.
+It is the same as the answer to a yes/no question where both answers were equally likely beforehand.
+EASIER: A bit is the answer to one fair yes/no question.
+Coin toss example: before you look, there are 2 possibilities (heads or tails). After you learn the result, there is 1.
+You used exactly one bit. We write the two values as 0 and 1, for example 0 = heads and 1 = tails.
+
+THE SIX-SIDED DIE
+A die has 6 equally likely outcomes, and one bit can only separate 2 things. So how many yes/no questions do we need?
+★ Bad strategy: ask "Is it 6?", then "Is it 5?", and so on. You need up to 5 questions.
+⚙ Rolling 6 takes 1 question, 5 takes 2, 4 takes 3, 3 takes 4, and both 2 and 1 take 5 (after five "no" answers the die must be 1, but the count is still 5).
+⚙ Average = (1+2+3+4+5+5) ÷ 6 = 20/6 = 3⅓ questions.
+★ Good strategy: ask questions where "yes" and "no" are equally likely.
+Start with "Is it at least 4?" because that is true for 3 of the 6 values, so it is 50/50.
+If yes, the value is 4, 5, or 6. Ask "Is it 4?" and, if not, "Is it 5?".
+If no, the value is 1, 2, or 3. Do the same thing: ask "Is it 1?" and, if not, "Is it 2?".
+⚙ Questions needed for the outcomes 1, 2, 3, 4, 5, 6: 2, 3, 3, 2, 3, 3.
+⚙ Average = (2+3+3+2+3+3) ÷ 6 = 16/6 = 2⅔ questions.
+⚙ Worst case = 3 questions.
+The good strategy is better because every question is close to a full bit of information.
+
+EXPECTED VALUE (THE AVERAGE NUMBER OF QUESTIONS)
+★ Expected value E(X) = the sum of (each value × its probability).
+Here the "value" is the number of questions needed for an outcome, and the probability is how likely that outcome is.
+It has nothing to do with "trials" or "success".
+EASIER: Expected value is a weighted average. Multiply each outcome's question count by its chance, then add everything up.
+⚙ Each die outcome has probability 1/6.
+⚙ Good strategy: E = 2×(1/6) + 3×(1/6) + 3×(1/6) + 2×(1/6) + 3×(1/6) + 3×(1/6) = 16/6 = 2⅔.
+⚙ Bad strategy: E = 1×(1/6) + 2×(1/6) + 3×(1/6) + 4×(1/6) + 5×(1/6) + 5×(1/6) = 20/6 = 3⅓.
+
+POWERS OF TWO AND LOGARITHMS
+★ With n bits you can distinguish 2ⁿ possibilities.
+⚙ 3 bits: 2 × 2 × 2 = 8 possibilities.
+⚙ Added example: 5 bits: 2 × 2 × 2 × 2 × 2 = 32 possibilities.
+★ To distinguish k possibilities you need log₂ k bits.
+EASIER: log₂ k answers the question "2 to what power gives k?"
+⚙ For the die, log₂ 6 ≈ 2.58, because 2² = 4 is too small and 2³ = 8 is too big.
+Since you can't ask 0.58 of a question, you round up to 3 questions for a single roll.
+⚙ Added example: 100 values. log₂ 100 ≈ 6.64, so you need 7 questions, because 2⁶ = 64 is too small and 2⁷ = 128 is enough.
+⚙ Added example: 10 values. log₂ 10 ≈ 3.32, so you need 4 questions, because 2³ = 8 is too small and 2⁴ = 16 is enough.
+★ Bits vs. questions: the die roll contains about 2.58 bits of information, which is the theoretical minimum.
+For a single roll, the best strategy averages 2⅔ (about 2.67) questions, and the worst case is 3.
+You can only approach 2.58 on average by asking about many rolls together.
+⚙ Added example: for two rolls there are 36 outcomes. A best-possible question tree has 28 leaves at depth 5 and 8 leaves at depth 6.
+⚙ Average = (28×5 + 8×6) ÷ 36 = 188/36 ≈ 5.22 questions, which is about 2.61 per roll. That is better than 2.67 and still above 2.58.
+On an exam, write "2.58 bits" and "3 questions needed in the worst case". Do not write "2.58 questions".
+
+BINARY TREES
+★ Binary tree: a diagram of yes/no questions.
+★ Root: the top of the tree. Leaves: the bottom endpoints. Computer scientists draw trees upside down.
+Each leaf has exactly one path from the root.
+Reading the answers as bits gives the number.
+⚙ No, No, No leads to leaf 0, which is binary 000.
+⚙ Yes, No, Yes leads to leaf 5, which is binary 101.
+★ Depth: the longest path from root to leaf. A tree of depth d can distinguish up to 2ᵈ values.
+EASIER: Each extra level of the tree doubles how many values you can tell apart.
+⚙ Depth 3 distinguishes 2³ = 8 values. Depth 4 distinguishes 2⁴ = 16 values.
+To handle 16 numbers instead of 8, add one more question at the top ("Is it ≥ 8?") and reuse the same tree for each half.
+⚙ Added example: a text version of the tree for 8 values (0 to 7). Question 1: "Is it at least 4?" Question 2: "Is it in the upper half of the group that is left?" (for 0 to 3 that means at least 2, for 4 to 7 that means at least 6). Question 3: "Is it odd?" Writing No = 0 and Yes = 1, the three answers spell the number in binary.
+⚙ Added example: for the number 6, the answers are Yes (at least 4), Yes (at least 6), No (not odd). That reads 110, which is 6.
+
+UNITS OF INFORMATION
+★ 1 byte = 8 bits, which can distinguish 2⁸ = 256 values.
+Traditionally: 1 kilobyte (KB) = 1024 bytes = 2¹⁰ bytes.
+Traditionally: 1 megabyte (MB) = 2²⁰ bytes = 1,048,576 bytes, which is "approximately one million".
+Traditionally: 1 gigabyte (GB) = 2³⁰ bytes = 1,073,741,824 bytes.
+Traditionally: 1 terabyte (TB) = 2⁴⁰ bytes = 1,099,511,627,776 bytes.
+Follow your course's usage. The official standard now says kilobyte = 1000 bytes.
+The 1024-based unit is officially a kibibyte (KiB), and likewise MiB, GiB, and TiB.
+
+COMMON MISTAKES
+Do not use E(X) = X × P(x) with "trials" and "success". The correct formula is the sum of (value × probability).
+Do not write "2.58 questions". Write "2.58 bits" and "3 questions in the worst case".
+Do not confuse a bit (one yes/no answer) with a byte (8 bits).
+
+QUICK SELF-TEST
+Q: What is the difference between data and information?
+★ Data is raw facts with no context. Information is data that has been processed so it means something.
+Q: How many bits are in the outcome of a fair coin toss?
+★ 1 bit.
+Q: How many values can 5 bits distinguish?
+★ 32, because 2⁵ = 32.
+Q: About how many bits does it take to distinguish 10 values?
+★ log₂ 10 ≈ 3.32, so 4 whole questions.
+Q: A binary tree has depth 4. What is the most values it can distinguish?
+★ 16, because 2⁴ = 16.
+Q: How many bits are in a byte, and how many values can it represent?
+★ 8 bits, and 256 values.

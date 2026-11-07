@@ -1,0 +1,362 @@
+[
+{
+"q": "Why is baking a cake NOT considered a pure information process?",
+"options": [
+"It has too few steps to count as a process",
+"It cannot be described as a sequence of steps",
+"It involves physical things such as sugar and flour rather than only abstract information",
+"It does not have a goal"
+],
+"answer": 2,
+"explanation": "Baking involves physical materials, so it is a process but not a pure information process. Computer science studies processes on abstract information.",
+"source": "notes"
+},
+{
+"q": "Which of these is the best example of a pure information process as computer science uses the term?",
+"options": [
+"Sorting a list of student names into alphabetical order",
+"Mailing a letter to a friend",
+"Planting a tree in a garden",
+"Baking a cake for a party"
+],
+"answer": 0,
+"explanation": "Sorting names works only on abstract information (text and data). The other three involve physical objects.",
+"source": "notes"
+},
+{
+"q": "A key press is physically an electrical signal, yet computer science deliberately ignores such physical details. What reason do the notes give?",
+"options": [
+"Physical details are never involved in real computers",
+"Computers are not really physical machines",
+"Physical details can only be studied by engineers",
+"Ignoring them makes computation simpler to understand and reason about"
+],
+"answer": 3,
+"explanation": "Computers are physical, but focusing on the information makes computation simpler to understand and reason about.",
+"source": "notes"
+},
+{
+"q": "A cook follows a written recipe to make soup. In computer science terms, which statement is correct?",
+"options": [
+"The act of cooking is the procedure and the written recipe is the process",
+"The written recipe is the procedure and the act of cooking is the process",
+"Both the recipe and the cooking are procedures",
+"Both the recipe and the cooking are processes"
+],
+"answer": 1,
+"explanation": "A procedure is the description of the steps (the recipe). A process is the act of carrying them out (the cooking).",
+"source": "notes"
+},
+{
+"q": "Which instruction would prevent a procedure from being a mechanical procedure?",
+"options": [
+"Add exactly 2 teaspoons of salt",
+"Repeat the next step 10 times",
+"Add salt until it tastes about right",
+"Stir for 30 seconds"
+],
+"answer": 2,
+"explanation": "A mechanical procedure can be followed exactly with no thought or judgment. 'Until it tastes about right' requires judgment.",
+"source": "notes"
+},
+{
+"q": "A procedure can be followed exactly with no judgment, but for some inputs it could run forever. How should it be classified?",
+"options": [
+"As an algorithm, because it is mechanical",
+"As a mechanical procedure that is not an algorithm, because it is not guaranteed to finish",
+"As a process, because it never ends",
+"As not a procedure at all, because it is not a description of steps"
+],
+"answer": 1,
+"explanation": "An algorithm must be both mechanical and guaranteed to eventually finish. Without the guarantee it is only a mechanical procedure.",
+"source": "notes"
+},
+{
+"q": "Which statement is NOT true?",
+"options": [
+"Every algorithm is a mechanical procedure",
+"An algorithm is guaranteed to eventually finish",
+"A procedure is a description of a process",
+"Every mechanical procedure is an algorithm"
+],
+"answer": 3,
+"explanation": "A mechanical procedure that might run forever is not an algorithm, so algorithms are only a subset of mechanical procedures.",
+"source": "notes"
+},
+{
+"q": "Which is an unstated assumption in the coffee-making procedure?",
+"options": [
+"The coffee beans must be ground by hand",
+"The water must be boiled before it is poured",
+"The filter must be made of metal",
+"The coffeemaker is plugged in and sitting on a flat surface"
+],
+"answer": 3,
+"explanation": "The steps never say the coffeemaker must be plugged in and level, but they only work if it is. This shows how natural-language steps rely on unspoken assumptions.",
+"source": "notes"
+},
+{
+"q": "Which order of the final steps follows the coffee procedure?",
+"options": [
+"Close the lid, put the decanter on the warming plate, press ON",
+"Press ON, close the lid, put the decanter on the warming plate",
+"Put the decanter on the warming plate, press ON, close the lid",
+"Close the lid, press ON, put the decanter on the warming plate"
+],
+"answer": 0,
+"explanation": "The procedure closes the lid, then puts the decanter on the warming plate, and presses ON last.",
+"source": "notes"
+},
+{
+"q": "Which instruction is the best example of ambiguity in natural language?",
+"options": [
+"Press the ON button",
+"Put the cup on the table by the window with the flowers",
+"Open the lid",
+"Place the filter in the basket"
+],
+"answer": 1,
+"explanation": "It can be read more than one way (the table with the flowers, or the window with the flowers). Natural language is ambiguous in this way.",
+"source": "notes"
+},
+{
+"q": "A computer carries out a process of one trillion steps. Which problem arises if every step is written out as a list?",
+"options": [
+"The steps become ambiguous",
+"The computer loses its common sense",
+"The description becomes impossibly long",
+"The process stops being mechanical"
+],
+"answer": 2,
+"explanation": "Description length grows with the number of steps. We need a way to describe a huge number of steps briefly.",
+"source": "notes"
+},
+{
+"q": "What point do the notes make by mentioning long legal documents?",
+"options": [
+"Laws are always unambiguous if they are long enough",
+"Legal documents are examples of algorithms",
+"Only short documents can be written in natural language",
+"Adding more detail helps but natural language stays ambiguous"
+],
+"answer": 3,
+"explanation": "Even long, detailed laws are argued over for years, so extra detail does not remove the ambiguity of natural language.",
+"source": "notes"
+},
+{
+"q": "Why can a machine not follow the step 'fill the decanter with water' as written?",
+"options": [
+"A machine has no common sense, so details such as where the water comes from and how to turn on the faucet must be explained",
+"The step is too long for a machine to read",
+"Machines cannot handle liquids in any procedure",
+"The step is mechanical, and machines only follow non-mechanical steps"
+],
+"answer": 0,
+"explanation": "A machine has no common sense, so a procedure for it must be fully detailed.",
+"source": "notes"
+},
+{
+"q": "Which set of qualities explains why programmers use programming languages instead of English?",
+"options": [
+"They are flexible, informal, and rely on context",
+"They are clear, brief, and fully detailed so a machine can follow them exactly",
+"They are long, detailed, and open to interpretation",
+"They are short, ambiguous, and easy to read aloud"
+],
+"answer": 1,
+"explanation": "Programming languages avoid ambiguity, describe many steps briefly, and include all the detail a machine needs.",
+"source": "notes"
+},
+{
+"q": "Which statement about programming languages is NOT true?",
+"options": [
+"They let us write procedures that are followed exactly as written",
+"They can describe a huge number of steps briefly",
+"They allow the machine to use common sense to fill in missing details",
+"They avoid the ambiguity found in natural languages"
+],
+"answer": 2,
+"explanation": "Machines have no common sense, so everything must be spelled out. That is why programming languages are precise and fully detailed.",
+"source": "notes"
+},
+{
+"q": "A business video says a procedure is the lowest level of work, such as clicking buttons, and a process is a group of about 5 to 15 tasks. On a computer science exam asking for the definitions, what is the best approach?",
+"options": [
+"Use the business meanings, because they are more detailed",
+"Use the CS meanings: a procedure is a description of steps and a process is the act of carrying it out",
+"Say that a procedure is an action and a process is a group of tasks",
+"Treat procedure and process as having the same meaning"
+],
+"answer": 1,
+"explanation": "Business process management uses these words differently from computer science. For a CS exam, use the CS definitions.",
+"source": "notes"
+},
+{
+"q": "Consider this procedure: set n to 5, then repeat 'subtract 2 from n' until n equals 0. What does this show?",
+"options": [
+"n takes the values 3, 1, -1 and so on, never equals 0, and the procedure never finishes, so it is not an algorithm",
+"n becomes 3, then 1, then 0, so the procedure finishes",
+"n reaches 0 after 3 subtractions, so it is an algorithm",
+"n reaches 0 after 2 subtractions, so it is an algorithm"
+],
+"answer": 0,
+"explanation": "5 minus 2 repeatedly gives 3, 1, -1, and so on, which skips 0. Since it is not guaranteed to finish, it is not an algorithm.",
+"source": "extra"
+},
+{
+"q": "In business process management, which item would be a procedure, the lowest level?",
+"options": [
+"Onboarding a new employee from start to finish",
+"A group of 10 related tasks",
+"Entering the employee's name into the HR form",
+"Approving a company budget"
+],
+"answer": 2,
+"explanation": "In business process management, a procedure is the lowest level, such as entering data. A process is the top level, a group of about 5 to 15 tasks.",
+"source": "notes"
+},
+{
+"q": "Your course defines computer science one way, but another textbook defines the field more broadly. Which approach is best for this course's exams?",
+"options": [
+"Use whichever definition is longer",
+"Use the broader textbook definition",
+"Combine the two definitions into one",
+"Use the definition your course uses"
+],
+"answer": 3,
+"explanation": "The notes say different books define the field differently, so you should use the definition your own course uses.",
+"source": "notes"
+},
+{
+"q": "Which description best fits a process as defined in the notes?",
+"options": [
+"A sequence of steps in which each step changes the state of the world a little, and together they reach a goal",
+"A single action that changes nothing",
+"A list of rules that is never carried out",
+"A physical machine that performs calculations"
+],
+"answer": 0,
+"explanation": "A process is a sequence of steps that each change the state of the world a little and together reach a goal.",
+"source": "notes"
+},
+{
+"q": "A procedure always stops after at most 100 steps, but one step says 'decide whether the result looks good enough'. Why is it NOT an algorithm?",
+"options": [
+"Because it stops too quickly",
+"Because it has too many steps",
+"Because it is written as a list",
+"Because that step needs judgment, so the procedure is not mechanical"
+],
+"answer": 3,
+"explanation": "An algorithm must be mechanical and guaranteed to finish. Guaranteed stopping is not enough if a step needs judgment.",
+"source": "notes"
+},
+{
+"q": "Which pairing correctly matches the two problems with step lists to what a programming language needs?",
+"options": [
+"Ambiguity calls for brevity, and long descriptions call for clarity",
+"Ambiguity calls for common sense, and long descriptions call for more detail",
+"Ambiguity calls for informality, and long descriptions call for more steps",
+"Ambiguity calls for clarity, and long descriptions call for brevity"
+],
+"answer": 3,
+"explanation": "Natural language is ambiguous, so a programming language must be clear. Listing every step is too long, so it must be brief.",
+"source": "notes"
+},
+{
+"q": "In business process management, as the notes describe it, which ordering runs from the lowest level to the highest?",
+"options": [
+"Procedure, task, process",
+"Process, task, procedure",
+"Task, procedure, process",
+"Procedure, process, task"
+],
+"answer": 0,
+"explanation": "In that field a procedure is the lowest level, a task is the middle level, and a process is the top level.",
+"source": "notes"
+},
+{
+"q": "A person performs random unrelated actions with no ordering and no goal. Why is this NOT a process as the notes define it?",
+"options": [
+"It is not a sequence of steps that together reach a goal",
+"It involves too few physical objects",
+"It is not carried out by a machine",
+"It is not written in a programming language"
+],
+"answer": 0,
+"explanation": "A process is a sequence of steps that together reach a goal. Random actions with no order or goal do not fit.",
+"source": "notes"
+},
+{
+"q": "A student says: My procedure is an algorithm because it finished on every input I tried. What is the flaw in this reasoning?",
+"options": [
+"Algorithms must never use inputs",
+"An algorithm must be non-mechanical",
+"Testing some inputs does not guarantee that it will always eventually finish",
+"The procedure must be a process first"
+],
+"answer": 2,
+"explanation": "An algorithm must be guaranteed to eventually finish. Finishing on the inputs tried is not a guarantee for all inputs.",
+"source": "notes"
+},
+{
+"q": "A recipe card is sitting in a drawer and nobody is cooking. Which statement is correct?",
+"options": [
+"The card is a procedure, but no process is happening",
+"The card is a process, and no procedure exists",
+"The card is both a procedure and a process",
+"The card is an algorithm because it exists"
+],
+"answer": 0,
+"explanation": "The card is a description of steps (a procedure). A process only happens when someone carries the steps out.",
+"source": "notes"
+},
+{
+"q": "Suppose each step is written on its own line and a page holds 50 lines. About how many pages are needed to list a process of 1 trillion steps?",
+"options": [
+"2 billion",
+"20 billion",
+"200 million",
+"200 billion"
+],
+"answer": 1,
+"explanation": "1,000,000,000,000 divided by 50 is 20,000,000,000 pages, or 20 billion. This shows why listing every step is impractical.",
+"source": "notes"
+},
+{
+"q": "Which ordering goes from the broadest category to the narrowest?",
+"options": [
+"Algorithm, mechanical procedure, procedure",
+"Mechanical procedure, procedure, algorithm",
+"Procedure, mechanical procedure, algorithm",
+"Procedure, algorithm, mechanical procedure"
+],
+"answer": 2,
+"explanation": "Every algorithm is a mechanical procedure, and every mechanical procedure is a procedure. So the categories narrow in that order.",
+"source": "notes"
+},
+{
+"q": "Which statement is NOT true?",
+"options": [
+"Baking a cake is a process",
+"Planting a tree is a pure information process",
+"Planting a tree is a process",
+"Mailing a letter is a process"
+],
+"answer": 1,
+"explanation": "Planting a tree is a process, but it involves physical things like dirt, so it is not a pure information process.",
+"source": "notes"
+},
+{
+"q": "A cook follows every coffee step except the last one, 'press ON'. Which part of the definition of a process fails?",
+"options": [
+"The steps no longer change anything",
+"The steps together do not reach the goal",
+"The steps are no longer a sequence",
+"The procedure becomes an algorithm"
+],
+"answer": 1,
+"explanation": "A process is a sequence of steps that together reach a goal. Without pressing ON, the coffee is never brewed.",
+"source": "notes"
+}
+]

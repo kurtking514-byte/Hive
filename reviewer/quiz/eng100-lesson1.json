@@ -1,0 +1,362 @@
+[
+{
+"q": "Which definition best matches John Adair’s account of communication?",
+"options": [
+"A process of transmitting only factual information",
+"A system of grammatical categories shared by a nation",
+"A one-way broadcast without a receiver",
+"An ability to contact another person and make oneself understood"
+],
+"answer": 3,
+"explanation": "Adair emphasizes making contact with another person and being understood.",
+"source": "notes"
+},
+{
+"q": "Which term means a distinctive way of pronouncing a language associated with a nation, locality, or social class?",
+"options": [
+"Accent",
+"Dialect",
+"Context",
+"Channel"
+],
+"answer": 0,
+"explanation": "An accent concerns pronunciation; a dialect may also differ in vocabulary and grammar.",
+"source": "notes"
+},
+{
+"q": "What is encoding in the communication process?",
+"options": [
+"The receiver’s response to a message",
+"Transforming ideas into symbols such as words, pictures, or signs",
+"The surroundings in which people interact",
+"The audience’s interpretation of a message"
+],
+"answer": 1,
+"explanation": "Encoding turns abstract ideas into symbols; interpretation is decoding.",
+"source": "notes"
+},
+{
+"q": "Which term refers to a barrier that affects a message being sent, received, or understood?",
+"options": [
+"Feedback",
+"Receiver",
+"Noise",
+"Message"
+],
+"answer": 2,
+"explanation": "Noise interferes with communication.",
+"source": "notes"
+},
+{
+"q": "Which term describes learned behaviors and rules, such as gestures and facial expressions, that affect an interaction?",
+"options": [
+"Physical context",
+"Cultural context",
+"Psychological context",
+"Social context"
+],
+"answer": 1,
+"explanation": "Cultural context includes learned behaviors and rules.",
+"source": "notes"
+},
+{
+"q": "What is a communication channel?",
+"options": [
+"The central idea being sent",
+"The response that confirms understanding",
+"The means or way a message is sent",
+"The person who interprets a message"
+],
+"answer": 2,
+"explanation": "A channel is the means of transmission, such as a call or email.",
+"source": "notes"
+},
+{
+"q": "Which scholar described communication as a “bridge of meaning”?",
+"options": [
+"John Adair",
+"Louis Allen",
+"Theo Haimann",
+"Charles Summer"
+],
+"answer": 1,
+"explanation": "Louis Allen used the bridge-of-meaning description.",
+"source": "notes"
+},
+{
+"q": "Which communication model has participants alternate sender and receiver roles and exchange feedback?",
+"options": [
+"Linear model",
+"Interactive model",
+"Transactional model",
+"Physical model"
+],
+"answer": 1,
+"explanation": "The interactive model is a two-way exchange in which roles alternate.",
+"source": "notes"
+},
+{
+"q": "Which term is the idea, information, or topic sent by a communicator?",
+"options": [
+"Channel",
+"Noise",
+"Context",
+"Message"
+],
+"answer": 3,
+"explanation": "The message is the content being communicated.",
+"source": "notes"
+},
+{
+"q": "Which model treats each participant as both speaker and listener who may send and receive simultaneously?",
+"options": [
+"Linear model",
+"Interactive model",
+"Transactional model",
+"Schramm’s one-way model"
+],
+"answer": 2,
+"explanation": "The transactional model involves simultaneous, interdependent communication.",
+"source": "notes"
+},
+{
+"q": "According to Theo Haimann, communication is the process of what?",
+"options": [
+"Sending only written information",
+"Changing a dialect into an accent",
+"Broadcasting without a receiver",
+"Passing information and understanding from one person to another"
+],
+"answer": 3,
+"explanation": "Haimann emphasizes passing information and understanding between people.",
+"source": "notes"
+},
+{
+"q": "Which principle of the 7 Cs requires specific, definite details rather than vague wording?",
+"options": [
+"Courtesy",
+"Concreteness",
+"Conciseness",
+"Completeness"
+],
+"answer": 1,
+"explanation": "Concreteness means using specific details.",
+"source": "notes"
+},
+{
+"q": "What is decoding?",
+"options": [
+"The sender’s conversion of ideas into symbols",
+"The receiver’s interpretation of a message",
+"The physical place where a conversation occurs",
+"A response sent back to the communicator"
+],
+"answer": 1,
+"explanation": "Decoding is the receiver’s interpretation; encoding is the sender’s symbol-forming process.",
+"source": "notes"
+},
+{
+"q": "What does ethics evaluate?",
+"options": [
+"What is right or wrong",
+"Whether the channel is spoken or written",
+"Whether the message is long enough",
+"Whether the sender is also the receiver"
+],
+"answer": 0,
+"explanation": "Ethics is the area of philosophy that judges what is right or wrong.",
+"source": "notes"
+},
+{
+"q": "How many forms of noise are distinguished in the communication process?",
+"options": [
+"Six",
+"Five",
+"Seven",
+"Eight"
+],
+"answer": 0,
+"explanation": "The module lists physical, physiological, semantic, psychological, technical, and cultural noise.",
+"source": "notes"
+},
+{
+"q": "How many Cs make up the principles of communication?",
+"options": [
+"Five",
+"Six",
+"Eight",
+"Seven"
+],
+"answer": 3,
+"explanation": "There are seven Cs: completeness, conciseness, consideration, concreteness, courtesy, clearness, and correctness.",
+"source": "notes"
+},
+{
+"q": "Which sequence best represents the communication process?",
+"options": [
+"Receiver, feedback, channel, sender, noise, encoding",
+"Sender, encoding, message through a channel, decoding, receiver, feedback",
+"Sender, decoding, feedback, message, receiver, channel",
+"Message, receiver, encoding, noise, sender, feedback"
+],
+"answer": 1,
+"explanation": "The sender encodes; the receiver decodes; feedback follows the receiver’s response.",
+"source": "notes"
+},
+{
+"q": "A receiver interprets a text message and replies. Which order best describes these actions?",
+"options": [
+"Decoding, then feedback",
+"Feedback, then encoding",
+"Channel, then encoding",
+"Noise, then message"
+],
+"answer": 0,
+"explanation": "The receiver first interprets the message, and the reply is feedback.",
+"source": "notes"
+},
+{
+"q": "A speaker sends a message through a phone call. Which identification is correct?",
+"options": [
+"Words are feedback; the call is the receiver",
+"The call is context; words are noise",
+"Words are the message; the call is the channel",
+"Words are decoding; the call is encoding"
+],
+"answer": 2,
+"explanation": "The message is the content; the channel is how it is sent.",
+"source": "notes"
+},
+{
+"q": "Which description correctly distinguishes the three models?",
+"options": [
+"Linear is simultaneous; interactive is one-way; transactional alternates turns",
+"Linear alternates roles; interactive is simultaneous; transactional has no feedback",
+"Linear is one-way; interactive alternates roles; transactional is simultaneous and interdependent",
+"All three models describe one-way communication"
+],
+"answer": 2,
+"explanation": "These are the defining differences among the three models.",
+"source": "notes"
+},
+{
+"q": "A receiver misunderstands a phrase because its wording is ambiguous. What kind of noise is this?",
+"options": [
+"Physical noise",
+"Semantic noise",
+"Physiological noise",
+"Technical noise"
+],
+"answer": 1,
+"explanation": "Semantic noise arises from confusing or ambiguous words and signs.",
+"source": "notes"
+},
+{
+"q": "A person’s anxiety prevents them from focusing on the speaker. What kind of noise is this?",
+"options": [
+"Cultural noise",
+"Physical noise",
+"Psychological noise",
+"Technical noise"
+],
+"answer": 2,
+"explanation": "Psychological noise arises from thoughts or emotions that distract a person.",
+"source": "notes"
+},
+{
+"q": "Which statement about dialects and accents is NOT true?",
+"options": [
+"An accent necessarily includes differences in grammar and vocabulary.",
+"A dialect can differ in pronunciation, vocabulary, and grammar.",
+"An accent specifically concerns pronunciation.",
+"A dialect is a language variety associated with a community."
+],
+"answer": 0,
+"explanation": "An accent specifically concerns pronunciation; it does not necessarily involve grammar and vocabulary.",
+"source": "notes"
+},
+{
+"q": "Which statement about communication models is NOT true?",
+"options": [
+"The interactive model is a one-way process with no feedback.",
+"The linear model has no immediate feedback.",
+"The transactional model treats elements as interdependent.",
+"The interactive model lets participants alternate roles."
+],
+"answer": 0,
+"explanation": "The interactive model is two-way and includes feedback.",
+"source": "notes"
+},
+{
+"q": "Which pair is mismatched?",
+"options": [
+"Physical context — place where communication happens",
+"Cultural context — learned behaviors affecting interaction",
+"Social context — relationship and expectations between speaker and listener",
+"Psychological context — learned cultural rules such as gestures and facial expressions"
+],
+"answer": 3,
+"explanation": "Psychological context concerns needs, desires, and values; gestures and learned rules belong to cultural context.",
+"source": "notes"
+},
+{
+"q": "Which pair is mismatched?",
+"options": [
+"Encoding — receiver’s interpretation of the message",
+"Message — ideas or information sent",
+"Channel — means through which a message is sent",
+"Feedback — receiver’s reaction or response"
+],
+"answer": 0,
+"explanation": "Encoding is the sender’s transformation of ideas into symbols; decoding is the receiver’s interpretation.",
+"source": "notes"
+},
+{
+"q": "Which statement about ethical communication is NOT true?",
+"options": [
+"Ethical communicators consider their audience.",
+"Ethical communicators weigh consequences.",
+"Ethical communicators communicate accurately.",
+"A communicator may invent facts if that makes a message persuasive."
+],
+"answer": 3,
+"explanation": "Ethical communicators do not falsify information.",
+"source": "notes"
+},
+{
+"q": "Which pair is mismatched?",
+"options": [
+"Completeness — include needed information",
+"Courtesy — communicate respectfully",
+"Conciseness — use specific, definite details",
+"Correctness — use accurate information"
+],
+"answer": 2,
+"explanation": "Specific, definite details describe concreteness; conciseness removes unnecessary words.",
+"source": "notes"
+},
+{
+"q": "A television advertisement reaches an audience without an immediate response. Which model fits?",
+"options": [
+"Interactive model",
+"Transactional model",
+"Social model",
+"Linear model"
+],
+"answer": 3,
+"explanation": "The linear model describes one-way communication without immediate feedback.",
+"source": "notes"
+},
+{
+"q": "Which statement about language is NOT true?",
+"options": [
+"Languages never change, and new words do not enter dictionaries.",
+"Languages change through time.",
+"All languages have grammatical categories.",
+"Language is arbitrary."
+],
+"answer": 0,
+"explanation": "The module states that languages change and new words enter dictionaries.",
+"source": "notes"
+}
+]

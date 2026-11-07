@@ -1,0 +1,362 @@
+[
+{
+"q": "A statement formed from simpler statements by using connectives such as AND, OR, and NOT is called a:",
+"options": [
+"Predicate with a free variable",
+"Truth table",
+"Compound proposition",
+"Tautology"
+],
+"answer": 2,
+"explanation": "A compound proposition is built from simpler propositions using Boolean connectives. A truth table is only a tool for listing the truth values of such a proposition, and a tautology is a special compound proposition that is true in every row. A predicate with a free variable is not covered by propositional logic.",
+"source": "notes"
+},
+{
+"q": "Which description of the disjunction p OR q (inclusive or) is correct?",
+"options": [
+"True when at least one of p, q is true; false only when both are false",
+"True only when exactly one of p and q is true",
+"True only when both p and q are true",
+"False only when p is true and q is false"
+],
+"answer": 0,
+"explanation": "Inclusive OR is true in rows T,T, T,F and F,T and false only in F,F. Option B describes XOR, option C describes AND, and option D describes the implication p -> q.",
+"source": "notes"
+},
+{
+"q": "Which statement correctly describes p XOR q (exclusive or)?",
+"options": [
+"It is true when p and q are both true",
+"It is true when at least one of p and q is true",
+"It is true when p and q have the same truth value",
+"It is true when exactly one of p and q is true, but not both"
+],
+"answer": 3,
+"explanation": "XOR has truth values F, T, T, F in rows TT, TF, FT, FF. Option A and option B describe features of AND and OR, and option C describes the biconditional p <-> q, which is the opposite of XOR.",
+"source": "notes"
+},
+{
+"q": "In the implication p -> q, the proposition q is called the:",
+"options": [
+"Antecedent",
+"Consequent",
+"Converse",
+"Contrapositive"
+],
+"answer": 1,
+"explanation": "In p -> q, p is the antecedent and q is the consequent. The converse and contrapositive are names for other implications formed from p -> q, not for its parts.",
+"source": "notes"
+},
+{
+"q": "Compound propositions p and q are logically equivalent exactly when:",
+"options": [
+"p and q are both true in at least one row of their truth tables",
+"p AND q is a tautology",
+"p <-> q is a tautology",
+"p -> q is true in exactly one row"
+],
+"answer": 2,
+"explanation": "Logical equivalence means p <-> q is a tautology, which is the same as p and q having identical truth values in all rows. If p AND q were a tautology, both would always be true, which is stronger than equivalence and not required, since two propositions can always be false together.",
+"source": "notes"
+},
+{
+"q": "Which statement is logically equivalent to NOT (A OR B)?",
+"options": [
+"NOT A OR NOT B",
+"NOT A AND NOT B",
+"NOT A AND B",
+"A AND B"
+],
+"answer": 1,
+"explanation": "By De Morgan's law, the negation of A OR B is NOT A AND NOT B. Option A is the negation of A AND B, which is a common mix-up. Check with A false and B true: NOT (F OR T) = F, and NOT A AND NOT B = T AND F = F, but NOT A OR NOT B = T OR F = T, which differs.",
+"source": "notes"
+},
+{
+"q": "A compound proposition p1 AND p2 AND p3 AND p4 AND p5 is built from 5 different simple propositions. How many rows does its truth table have?",
+"options": [
+"25",
+"10",
+"5",
+"32"
+],
+"answer": 3,
+"explanation": "A truth table for n simple propositions has 2^n rows. Here 2^5 = 32. The values 25 (5^2) and 10 (2*5) come from using the wrong formula.",
+"source": "notes"
+},
+{
+"q": "Which of the following sets of connectives is NOT sufficient to express every possible truth table?",
+"options": [
+"NOT and XOR",
+"NOT and AND",
+"NOT and OR",
+"NOT, AND, and OR together"
+],
+"answer": 0,
+"explanation": "NOT with AND is sufficient, and NOT with OR is sufficient. Any set that contains one of these two pairs is also sufficient, so NOT, AND, and OR together works. NOT with XOR is not universal.",
+"source": "notes"
+},
+{
+"q": "A student wants to prove two compound propositions are logically equivalent using truth tables. Which order of steps is correct?",
+"options": [
+"Compute the final columns first, then list the T/F combinations, then compute the sub-expressions, then compare",
+"List all T/F combinations, compute the sub-expressions and then both final columns, then compare the two final columns in every row",
+"List all T/F combinations, compare the two final columns in the first row only, then compute the sub-expressions",
+"Compute the sub-expressions, list all T/F combinations, compare the final columns in the last row only, then compute the final columns"
+],
+"answer": 1,
+"explanation": "The rows must be listed first, then the sub-expression columns, then the final columns of both propositions, and finally all rows must be compared. Comparing only one row proves nothing, because equivalence requires a match in every row.",
+"source": "notes"
+},
+{
+"q": "Which order of steps correctly builds the truth table of (P OR Q) -> R?",
+"options": [
+"Compute (P OR Q) -> R; list the eight rows of P, Q, R; compute the column P OR Q",
+"List the four rows of P and Q; compute (P OR Q) -> R; compute P OR Q",
+"List the eight combinations of P, Q, R; compute the column P OR Q; compute the column (P OR Q) -> R",
+"Compute P OR Q; list the eight rows of P, Q, R; compute (P OR Q) -> R"
+],
+"answer": 2,
+"explanation": "Three simple propositions give 2^3 = 8 rows, which must be listed first. Then the inner expression P OR Q is computed, and only then the whole implication, which uses the P OR Q column and the R column. Listing only four rows ignores R.",
+"source": "notes"
+},
+{
+"q": "Which of the following is NOT a proposition?",
+"options": [
+"1 + 2",
+"1 + 2 = 3",
+"Beijing is the capital of China",
+"It is raining (in a given situation)"
+],
+"answer": 0,
+"explanation": "The expression 1 + 2 has the numerical value 3, not a truth value of true or false, so it is not a proposition. The statement 1 + 2 = 3 is true, the statement about Beijing is true, and It is raining is true or false in any given situation.",
+"source": "notes"
+},
+{
+"q": "Which statement about the implication p -> q is NOT true?",
+"options": [
+"It is false only when p is true and q is false",
+"It is logically equivalent to its contrapositive, NOT q -> NOT p",
+"It does not claim that p causes q",
+"It is logically equivalent to its converse, q -> p"
+],
+"answer": 3,
+"explanation": "The converse is not equivalent to the original implication: in the row p = T, q = F, p -> q is false but q -> p is true. The other three statements are true facts about implication.",
+"source": "notes"
+},
+{
+"q": "For which assignment of truth values is (P OR Q) -> R false?",
+"options": [
+"P = F, Q = F, R = F",
+"P = T, Q = T, R = T",
+"P = F, Q = T, R = T",
+"P = T, Q = F, R = F"
+],
+"answer": 3,
+"explanation": "An implication is false only when its antecedent is true and its consequent is false. For P = T, Q = F, R = F: P OR Q = T and R = F, so T -> F = F. For P = F, Q = F, R = F: P OR Q = F, so F -> F = T. The other two options have R = T, which makes the implication true.",
+"source": "notes"
+},
+{
+"q": "Let s = I studied, e = the exam is easy, and l = I got lucky. Which expression represents: I studied, and either the exam is easy or I got lucky?",
+"options": [
+"(s AND e) OR l",
+"s OR (e AND l)",
+"s AND (e OR l)",
+"s AND e AND l"
+],
+"answer": 2,
+"explanation": "The main connective is AND, joining s with the grouped phrase either e or l, which is (e OR l). Option A has the wrong grouping and means I studied and the exam is easy, or I got lucky. Option D requires both e and l to be true.",
+"source": "notes"
+},
+{
+"q": "Which statement is the contrapositive of: If you study hard, then you will get a good grade?",
+"options": [
+"If you get a good grade, then you studied hard.",
+"If you do not get a good grade, then you did not study hard.",
+"If you do not study hard, then you will not get a good grade.",
+"If you study hard, then you will not get a good grade."
+],
+"answer": 1,
+"explanation": "The contrapositive of p -> q is NOT q -> NOT p, which swaps and negates both parts. Option A is the converse and option C is the inverse. Option D negates only the consequent.",
+"source": "notes"
+},
+{
+"q": "Let p be false and q be true. Which of the following compound propositions has the truth value true?",
+"options": [
+"p XOR q",
+"p <-> q",
+"q -> p",
+"p AND q"
+],
+"answer": 0,
+"explanation": "With p = F and q = T: p XOR q = T because exactly one is true. p <-> q = F because the values differ. q -> p = (T -> F) = F. p AND q = F.",
+"source": "notes"
+},
+{
+"q": "Which statement correctly characterizes the biconditional p <-> q?",
+"options": [
+"It is true only when both p and q are true.",
+"It is true when exactly one of p and q is true.",
+"It is true when p and q have the same truth value.",
+"It is true when p and q have different truth values."
+],
+"answer": 2,
+"explanation": "A biconditional is true when its two propositions have the same truth value: both true or both false. Exactly one true describes XOR; requiring both true is too restrictive, and different truth values is the opposite condition.",
+"source": "notes"
+},
+{
+"q": "Let p be false and q be false. What is the truth value of p -> q?",
+"options": [
+"False, because both propositions are false.",
+"True, because an implication is false only when its antecedent is true and its consequent is false.",
+"Undetermined unless p causes q.",
+"False, because the consequent is false."
+],
+"answer": 1,
+"explanation": "Here the antecedent p is false, so this is not the one falsifying case. The only false case is p = T and q = F; therefore F -> F is true. The implication is truth-functional and does not depend on causation.",
+"source": "notes"
+},
+{
+"q": "Which statement about propositions is NOT true?",
+"options": [
+"An imperative command does not have a definite truth value and is not a proposition.",
+"A declarative sentence with a definite truth value can be a proposition even when it is false.",
+"A question does not by itself assert a statement with a definite truth value.",
+"A declarative sentence that is false cannot be a proposition, because propositions must be true."
+],
+"answer": 3,
+"explanation": "A proposition must have a definite truth value, which may be either true or false. It need not be true. Commands and questions do not assert declarative propositions with definite truth values, while the false declarative sentence described in the last option can still be a proposition.",
+"source": "notes"
+},
+{
+"q": "A student interprets p -> q as saying that p causes q and that p must actually occur. Which correction matches the truth-functional meaning of implication?",
+"options": [
+"If p is false, p -> q is true regardless of q, and the implication does not assert causation.",
+"The implication asserts that p causes q, so it is false whenever p is false.",
+"The implication is equivalent to q -> p, so q must occur before p.",
+"The implication is true only when both p and q are true."
+],
+"answer": 0,
+"explanation": "An implication is false only when p is true and q is false. Thus, with a false antecedent p, it is true for either truth value of q, and the connective does not state that p causes q. The other choices impose causation, reverse the implication, or require both parts true.",
+"source": "notes"
+},
+{
+"q": "A compound proposition that is true in every row of its truth table is called a",
+"options": [
+"tautology",
+"contradiction",
+"converse",
+"biconditional"
+],
+"answer": 0,
+"explanation": "A tautology is true in every row of its truth table, for example p OR NOT p. A contradiction is the opposite, false in every row, such as p AND NOT p. The converse is the implication q -> p, and a biconditional is the connective p <-> q, which is true in only some rows.",
+"source": "notes"
+},
+{
+"q": "A declarative sentence with a definite meaning whose truth value is exactly true or false, never both and never neither, is called a",
+"options": [
+"Boolean connective",
+"proposition",
+"truth table",
+"expression"
+],
+"answer": 1,
+"explanation": "This is the definition of a proposition, for example 1 + 2 = 3 or 1 + 2 = 5 (which is false but still definite). A Boolean connective such as AND or OR joins propositions, a truth table lists truth values, and an expression such as 1 + 2 names a number and has no truth value.",
+"source": "notes"
+},
+{
+"q": "Which pair correctly gives the converse and the inverse of the implication p -> q?",
+"options": [
+"Converse: NOT q -> NOT p; inverse: q -> p",
+"Converse: NOT p -> NOT q; inverse: q -> p",
+"Converse: q -> p; inverse: NOT p -> NOT q",
+"Converse: q -> p; inverse: NOT q -> NOT p"
+],
+"answer": 2,
+"explanation": "The converse swaps the two parts, giving q -> p. The inverse negates both parts and keeps the order, giving NOT p -> NOT q. The expression NOT q -> NOT p swaps and negates, so it is the contrapositive, which is why options that use it for the converse or the inverse are wrong. The option that exchanges the converse and the inverse is also wrong.",
+"source": "notes"
+},
+{
+"q": "In the standard truth table with rows TT, TF, FT, FF, in which row do p OR q and p XOR q have different truth values?",
+"options": [
+"p = F, q = F",
+"p = T, q = F",
+"p = F, q = T",
+"p = T, q = T"
+],
+"answer": 3,
+"explanation": "For p = T, q = T: p OR q = T but p XOR q = F, so they differ. For p = T, q = F and p = F, q = T both are T, and for p = F, q = F both are F. XOR excludes the case where both inputs are true, and that is the only difference from OR.",
+"source": "notes"
+},
+{
+"q": "In C, C++, and Java, which connectives do the word-wise operators != and == correspond to, respectively?",
+"options": [
+"XOR and iff (the biconditional)",
+"iff (the biconditional) and XOR",
+"NOT and AND",
+"AND and OR"
+],
+"answer": 0,
+"explanation": "The operator != is true when its two sides differ, which is XOR, and == is true when its two sides are the same, which is the biconditional. The reversed pairing swaps them. NOT and AND are written ! and &&, and AND and OR are written && and ||.",
+"source": "notes"
+},
+{
+"q": "Which order of steps correctly translates the sentence 'I just saw my old friend, and either he has grown or I have shrunk' into symbols?",
+"options": [
+"Write the connectives first; name the simple propositions; find the main connective; check the grouping",
+"Name the simple propositions; find the main connective; write the either-or phrase as one grouped piece; assemble and check the grouping",
+"Name the simple propositions; write the connectives left to right with no parentheses; find the main connective; group the pieces",
+"Find the main connective; write the grouped piece; name the simple propositions; check the grouping"
+],
+"answer": 1,
+"explanation": "Name f, g, s first; the main connective is AND, joining f with the whole phrase; the phrase 'he has grown or I have shrunk' is g OR s and must be grouped; the result is f AND (g OR s), and the check confirms that (f AND g) OR s would mean something different. You cannot find a main connective or build a grouped piece before the simple propositions are named.",
+"source": "notes"
+},
+{
+"q": "Which order of steps correctly negates the statement 'I am both rich and happy'?",
+"options": [
+"Negate each part and keep AND; name A and B; read the result in words",
+"Swap AND with OR; name A and B; negate only the first part; read the result in words",
+"Name A and B; identify the connective AND; negate each part and swap AND with OR; read the result in words",
+"Read the result in words; name A and B; identify the connective; negate each part and swap AND with OR"
+],
+"answer": 2,
+"explanation": "Let A = I am rich and B = I am happy. Identify the connective AND, then push NOT inside and swap AND with OR to get NOT A OR NOT B, which reads 'I am not rich or I am not happy'. Keeping AND gives NOT A AND NOT B, which is the negation of A OR B. The other orders read the result before it exists or negate only one part.",
+"source": "notes"
+},
+{
+"q": "A student negates 'The lawn is wet and the sprinklers came on' as 'The lawn is not wet and the sprinklers did not come on.' Which analysis of the student's work is correct?",
+"options": [
+"The work is correct, because NOT distributes over AND without changing the connective.",
+"The work is correct, because both parts of the statement are negated.",
+"The work is wrong only because the sprinkler part should stay unnegated, giving 'The lawn is not wet and the sprinklers came on'.",
+"The work is wrong because AND must become OR; the correct negation is 'The lawn is not wet or the sprinklers did not come on'."
+],
+"answer": 3,
+"explanation": "The negation of A AND B is NOT A OR NOT B. The statement is false when at least one part fails, so only one of the two parts has to fail. The student wrote NOT A AND NOT B, which is the negation of A OR B. Truth-table check: NOT (A AND B) reads F, T, T, T and NOT A OR NOT B reads F, T, T, T, while NOT A AND NOT B reads F, F, F, T.",
+"source": "notes"
+},
+{
+"q": "How many of the 8 rows of the truth table of (P XOR Q) AND R have the value true?",
+"options": [
+"2",
+"4",
+"1",
+"3"
+],
+"answer": 0,
+"explanation": "P XOR Q is true in the rows where exactly one of P, Q is true: TF and FT, each with R = T or R = F, so 4 rows. The conjunction with R keeps only the rows with R = T, namely (T, F, T) and (F, T, T), so the answer is 2. The value 4 ignores R, and 3 comes from using OR instead of XOR (rows TTT, TFT, FTT).",
+"source": "notes"
+},
+{
+"q": "Which statement is logically equivalent to NOT (p -> q)?",
+"options": [
+"NOT p AND q",
+"p AND NOT q",
+"NOT p OR NOT q",
+"q -> p"
+],
+"answer": 1,
+"explanation": "Use p -> q = NOT p OR q, so NOT (p -> q) = NOT (NOT p OR q) = NOT NOT p AND NOT q = p AND NOT q. Truth-table check in rows TT, TF, FT, FF: p -> q is T, F, T, T, so its negation is F, T, F, F, which matches p AND NOT q. NOT p AND q gives F, F, T, F, NOT p OR NOT q gives F, T, T, T, and q -> p gives T, T, F, T.",
+"source": "notes"
+}
+]

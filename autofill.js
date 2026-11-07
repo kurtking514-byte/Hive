@@ -75,8 +75,8 @@ function findSubject(hay, subjects) {
   let best = null, bestScore = 0, bestPos = Infinity;
   for (const s of subjects || []) {
     const idRe = new RegExp('(?:^|[^A-Za-z0-9])' + esc(s.id).replace(/(\d+)$/, '[\\s-]*$1') + '(?![0-9])', 'i');
-    const nameRe = new RegExp(s.name.split(/[\s-]+/).map(esc).join('[\\s\\-–]+'), 'i');
-    const a = hay.search(idRe), b = hay.search(nameRe);
+    const nameRe = s.name ? new RegExp(s.name.split(/[\s-]+/).map(esc).join('[\\s\\-–]+'), 'i') : null;
+    const a = hay.search(idRe), b = nameRe ? hay.search(nameRe) : -1;
     const score = (a >= 0 ? 3 : 0) + (b >= 0 ? 2 : 0);
     const pos = Math.min(a >= 0 ? a : Infinity, b >= 0 ? b : Infinity);
     if (score > bestScore || (score === bestScore && score > 0 && pos < bestPos)) { best = s; bestScore = score; bestPos = pos; }
@@ -117,7 +117,7 @@ function analyse(info, subjects, fileName, ext) {
   const subject = findSubject(hay, subjects);
   const teacher = findTeacher(lines, info.author);
   const isTeacherLine = l => LABEL.test(l) || HON.test(l);
-  const isSubjectLine = l => !!subject && findSubject(l, [subject]) && l.length <= subject.id.length + subject.name.length + 12;
+  const isSubjectLine = l => !!subject && findSubject(l, [subject]) && l.length <= subject.id.length + (subject.name || '').length + 12;
   const afterTag = l => l.replace(LESSON, '').replace(/^[\s:–—.-]+/, '').trim();
   const okTitle = t => t && t.length >= 3 && t.length <= 150 && !BAD_TITLE.test(t) && !/^[\d\s._-]+$/.test(t);
   const usable = l => okTitle(l) && l.length <= 120 && !SKIP_LINE.test(l) && !isTeacherLine(l) && !isSubjectLine(l);

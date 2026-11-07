@@ -1,0 +1,362 @@
+[
+{
+"q": "History is best defined as",
+"options": [
+"An evidence-based interpretation of the past",
+"A list of dates",
+"A complete copy of the past",
+"Only official records"
+],
+"answer": 0,
+"explanation": "History interprets surviving evidence.",
+"source": "notes"
+},
+{
+"q": "Origin and preservation history is",
+"options": [
+"Credibility",
+"Provenance",
+"Context",
+"Authenticity"
+],
+"answer": 1,
+"explanation": "Provenance traces origin and custody.",
+"source": "notes"
+},
+{
+"q": "Authenticity asks whether a source is",
+"options": [
+"Useful for all claims",
+"Reliable for all questions",
+"Genuine or accurately reproduced",
+"Popular"
+],
+"answer": 2,
+"explanation": "Authenticity concerns genuineness.",
+"source": "notes"
+},
+{
+"q": "Dates primarily establish",
+"options": [
+"Purpose",
+"Sequence",
+"Authenticity",
+"Bias"
+],
+"answer": 1,
+"explanation": "Dates place events in sequence.",
+"source": "notes"
+},
+{
+"q": "Trustworthiness for a specific historical question is",
+"options": [
+"Authenticity",
+"Credibility",
+"Provenance",
+"Chronology"
+],
+"answer": 1,
+"explanation": "Credibility depends on the question.",
+"source": "notes"
+},
+{
+"q": "WHO asks about",
+"options": [
+"Causes",
+"Time",
+"Place",
+"Actors and voices"
+],
+"answer": 3,
+"explanation": "WHO identifies participants and voices.",
+"source": "notes"
+},
+{
+"q": "Long-term change unfolding over time is a",
+"options": [
+"Date",
+"Source",
+"Event",
+"Process"
+],
+"answer": 3,
+"explanation": "A process is long-term change.",
+"source": "notes"
+},
+{
+"q": "Which skill asks what other sources say?",
+"options": [
+"Sourcing",
+"Corroborating",
+"Close reading",
+"Contextualizing"
+],
+"answer": 1,
+"explanation": "Corroboration compares sources.",
+"source": "notes"
+},
+{
+"q": "Which lens emphasizes extraordinary individuals?",
+"options": [
+"Annales",
+"Cyclical",
+"Great Man",
+"Materialist"
+],
+"answer": 2,
+"explanation": "Great Man theory emphasizes individuals.",
+"source": "notes"
+},
+{
+"q": "A law is a",
+"options": [
+"Material source",
+"Oral source",
+"Digital source",
+"Written source"
+],
+"answer": 3,
+"explanation": "Laws are written records.",
+"source": "notes"
+},
+{
+"q": "Annales / Social History centers",
+"options": [
+"Everyday life",
+"Leaders only",
+"Economic class only",
+"Recurring cycles"
+],
+"answer": 0,
+"explanation": "It studies ordinary people and daily life.",
+"source": "notes"
+},
+{
+"q": "Metadata and upload history are clues for",
+"options": [
+"Oral sources",
+"Digital sources",
+"Material sources",
+"Visual sources"
+],
+"answer": 1,
+"explanation": "They help authenticate digital items.",
+"source": "notes"
+},
+{
+"q": "An encyclopedia is generally",
+"options": [
+"Primary",
+"Oral",
+"Tertiary",
+"Material"
+],
+"answer": 2,
+"explanation": "It summarizes established information.",
+"source": "notes"
+},
+{
+"q": "Materialist theory emphasizes",
+"options": [
+"Colonial narratives",
+"Progress alone",
+"Heroic choices",
+"Class, labor, resources, conflict"
+],
+"answer": 3,
+"explanation": "These are its central factors.",
+"source": "notes"
+},
+{
+"q": "Which claim is NOT true of primary sources?",
+"options": [
+"They are automatically accurate",
+"They may come from the period",
+"They may be participant-created",
+"They are close to the event"
+],
+"answer": 0,
+"explanation": "Primary sources can be biased or altered.",
+"source": "notes"
+},
+{
+"q": "Which pair is mismatched?",
+"options": [
+"Oral—testimony",
+"Material—metadata",
+"Visual—photo",
+"Written—law"
+],
+"answer": 1,
+"explanation": "Metadata is digital, not material.",
+"source": "notes"
+},
+{
+"q": "Source type classification",
+"options": [
+"Never changes",
+"Depends only on age",
+"Depends on research question",
+"Depends on fame"
+],
+"answer": 2,
+"explanation": "Relation to the question determines type.",
+"source": "notes"
+},
+{
+"q": "Paper, ink, and seals are",
+"options": [
+"Physical clues",
+"Digital clues",
+"Expert clues",
+"Purpose clues"
+],
+"answer": 0,
+"explanation": "These are physical features.",
+"source": "notes"
+},
+{
+"q": "Which pair is mismatched?",
+"options": [
+"External—origin",
+"Internal—meaning",
+"External—claim plausibility",
+"Internal—bias"
+],
+"answer": 2,
+"explanation": "Claim plausibility is internal criticism.",
+"source": "notes"
+},
+{
+"q": "Which matrix statement is NOT true?",
+"options": [
+"Criteria are separate",
+"Some ratings are High/Medium/Low",
+"Usefulness is Strong/Limited",
+"High provenance guarantees high credibility"
+],
+"answer": 3,
+"explanation": "Criteria are evaluated separately.",
+"source": "notes"
+},
+{
+"q": "Which is a provenance question?",
+"options": [
+"How did it reach us?",
+"Is wording plausible?",
+"What viewpoint is present?",
+"What does it imply?"
+],
+"answer": 0,
+"explanation": "Provenance tracks transmission.",
+"source": "notes"
+},
+{
+"q": "Internal criticism asks",
+"options": [
+"Is it a copy?",
+"Where made?",
+"What viewpoint is present?",
+"How preserved?"
+],
+"answer": 2,
+"explanation": "Internal analysis examines perspective.",
+"source": "notes"
+},
+{
+"q": "Which provenance question checks audience?",
+"options": [
+"How preserved?",
+"Where originated?",
+"Is custody clear?",
+"For whom was it made?"
+],
+"answer": 3,
+"explanation": "Audience is the intended recipient.",
+"source": "notes"
+},
+{
+"q": "Creator and purpose, then historical setting, means",
+"options": [
+"Sourcing then contextualizing",
+"Close reading then corroborating",
+"Corroborating then sourcing",
+"Context then close reading"
+],
+"answer": 0,
+"explanation": "Sourcing identifies creator and purpose.",
+"source": "notes"
+},
+{
+"q": "Best evaluation sequence is",
+"options": [
+"Accept then check",
+"Question, assess source, explain limits",
+"Choose conclusion first",
+"Assume authenticity"
+],
+"answer": 1,
+"explanation": "Evaluation begins with the research question.",
+"source": "notes"
+},
+{
+"q": "A photo alone proves an entire event. Best correction?",
+"options": [
+"It supports a limited frame-based claim; corroborate.",
+"All photos are tertiary.",
+"Age proves caption.",
+"Photos are unusable."
+],
+"answer": 0,
+"explanation": "A photo records one angle and moment.",
+"source": "notes"
+},
+{
+"q": "An anonymous repost has unclear origin. Best assessment?",
+"options": [
+"Credibility certain",
+"Authenticity certain",
+"Provenance unclear; use caution",
+"Tertiary automatically"
+],
+"answer": 2,
+"explanation": "Unknown origin weakens provenance.",
+"source": "notes"
+},
+{
+"q": "A genuine persuasive source may be",
+"options": [
+"Inauthentic by definition",
+"Credible for all claims",
+"Without purpose",
+"Authentic but limited in credibility"
+],
+"answer": 3,
+"explanation": "Authenticity and credibility differ.",
+"source": "notes"
+},
+{
+"q": "Which is NOT true of theory lenses?",
+"options": [
+"They shape emphasis",
+"They guarantee one interpretation",
+"They should not replace evidence",
+"They can help interpret"
+],
+"answer": 1,
+"explanation": "Lenses do not guarantee a sole reading.",
+"source": "notes"
+},
+{
+"q": "Archive catalogs and period-fitting language are",
+"options": [
+"Expert and content clues",
+"Digital and physical only",
+"Purpose and audience",
+"Usefulness and credibility"
+],
+"answer": 0,
+"explanation": "Catalogs are expert; fit of wording is content.",
+"source": "notes"
+}
+]

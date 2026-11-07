@@ -1,0 +1,298 @@
+4 Problem Solving
+Problem solving, Polya's four steps, strategies, and heuristics
+
+WHAT IS A PROBLEM AND WHAT IS PROBLEM SOLVING
+★ Problem solving means engaging in a task for which the solution method is not known in advance (NCTM, 2000).
+★ A problem is a situation in which a person is seeking some goal and for which a suitable course of action is not immediately apparent (Marilyn Burns, 2001).
+★ Solving problems takes place when students think flexibly, creatively, and analytically to define, examine, diagnose, and unravel complicated problems.
+EASIER: Think of a problem as a locked door when you do not yet have the key. You know where you want to go (the goal), but you do not know how to open the door.
+EASIER: If you already know exactly what to do, the task is not a problem for you. It is just a task you can carry out.
+EASIER: A task can be a problem for one student and routine for another, because it depends on what the person already knows.
+EASIER: Flexibly means you can switch methods when one fails. Creatively means you can come up with new ideas. Analytically means you break the situation into parts and study each part carefully.
+EASIER: Define means state clearly what is being asked. Examine means look closely at what is given. Diagnose means figure out what is really going on. Unravel means untangle the problem step by step, like untangling a knot in a string.
+
+MATHEMATICAL PROBLEM SOLVING
+★ Mathematical problem-solving is the application of Problem Based Learning to mathematical education, where the students learn mathematics by solving mathematical problems.
+★ The mathematical problems used may be non-routine, open-ended, and sometimes connected to real-life applications.
+EASIER: Problem Based Learning means you learn the math by working on a puzzle first, instead of memorizing a rule first.
+EASIER: Non-routine means the problem is not a copy of an example you have already seen.
+EASIER: Open-ended means there may be more than one correct answer or more than one way to reach the answer.
+EASIER: A real-life application means the problem comes from a situation outside the classroom, such as time, money, or measurement.
+
+PROBLEM VERSUS EXERCISE
+EASIER: These two words sound alike, but they are different. An exercise is like following a recipe you already know. A problem is like inventing the recipe yourself.
+EASIER: The key question is this: is the path to the solution clear right away? If yes, it is an exercise. If no, it is a problem.
+★ A mathematical exercise tests the student's mastery of a narrowly focused technique, usually one that was recently "covered" in class.
+⚙ Characteristic of an exercise: it may be hard or easy, but it is never puzzling, for it is immediately clear how to proceed.
+⚙ Characteristic of an exercise: it may involve highly technical work, but the path toward the solution is always apparent.
+★ A mathematical problem cannot be solved immediately.
+⚙ Characteristic of a problem: it is often open-ended, paradoxical, and sometimes unsolvable.
+⚙ Characteristic of a problem: it requires investigation before one comes close to a solution.
+EASIER: Paradoxical means it seems to contradict itself at first, so it looks impossible until you think about it carefully.
+EASIER: Hard does not mean problem. A long, difficult computation can still be an exercise if you know exactly what steps to take.
+
+EXAMPLE: AN EXERCISE VERSUS A PROBLEM
+Added example: Compare the two tasks below.
+⚙ Task A: Solve 2x + 6 = 14 right after learning how to solve linear equations.
+⚙ Step 1: Subtract 6 from both sides: 2x + 6 - 6 = 14 - 6, so 2x = 8.
+⚙ Step 2: Divide both sides by 2: 2x/2 = 8/2, so x = 4.
+⚙ Check: 2*4 + 6 = 8 + 6 = 14, which matches the right side.
+⚙ Task A is an exercise, because the method is known and every step is clear from the start.
+⚙ Task B: Place the digits 1, 2, 3, 4, and 5 in a plus-shaped figure so that the sums across and down are the same (this is Prb-2 below).
+⚙ Task B is a problem, because no single known technique tells you where to start. You must investigate first.
+
+POLYA'S FOUR-STEP MODEL
+★ George Polya has had an important influence on problem solving in mathematics education.
+He noted that good problem solvers tend to forget the details and focus on the structure of the problem, while poor problem solvers do the opposite.
+★ Polya's four-step process is: Understand the problem (See), Devise a plan (Plan), Carry out the plan (Do), and Look back (Check).
+⚙ Step 1: Understand the problem (See)
+⚙ Step 2: Devise a plan (Plan)
+⚙ Step 3: Carry out the plan (Do)
+⚙ Step 4: Look back (Check)
+EASIER: Remember the labels See, Plan, Do, Check in that order. It is like cooking: read the recipe, decide your order of work, cook, then taste the food.
+EASIER: Focusing on structure means asking what kind of problem this is, instead of getting lost in the story. The story about Mr. Dong Y. Lhates is really a problem about multiplying and dividing amounts of time.
+EASIER: The steps go in order, but you may go back. If your plan fails in Step 3, return to Step 2 and choose a new plan.
+
+STEP 1: UNDERSTAND THE PROBLEM (SEE)
+Many students are overwhelmed just by reading a problem. At this point group discussion is beneficial.
+Here are questions that may help lead students to an understanding of the problem.
+⚙ What are you asked to find or show?
+⚙ What type of answer do you expect?
+⚙ What units will be used in the answer?
+⚙ Can you give an estimate?
+⚙ What information is given?
+⚙ Is there enough or too little information given?
+⚙ Can you restate the problem in your own words?
+⚙ Can you draw a picture or diagram to help you understand the problem?
+EASIER: Before you calculate anything, make sure you can say in your own words what the problem wants. If you cannot, you are not ready for Step 2.
+EASIER: An estimate is a rough guess of the size of the answer. It gives you a way to tell later whether your final answer is sensible.
+EASIER: Units are the labels on a number, such as minutes, pesos, or class periods. An answer with the wrong unit is a wrong answer.
+
+STEP 2: DEVISE A PLAN (PLAN)
+★ The plan is usually called a strategy.
+EASIER: A strategy is your chosen route to the answer, like choosing which road to take before you start driving.
+The problem-solving strategies include the following.
+⚙ Use a variable
+⚙ Make a drawing or diagram
+⚙ Look for a pattern
+⚙ Construct a table
+⚙ Experiment / Identify all possibilities
+⚙ Guess and check
+⚙ Work backward
+⚙ Write an open sentence
+⚙ Solve a simpler or similar problem
+⚙ Change your point of view / logical reasoning
+
+THE STRATEGIES IN PLAIN WORDS
+Use a variable: give the unknown quantity a letter such as x, like an empty box that you will fill in later.
+Make a drawing or diagram: sketch the situation so you can see how the parts relate.
+Look for a pattern: write the first few cases and look for what repeats or what changes by the same amount each time.
+Construct a table: organize the information in rows and columns so patterns and missing values become visible.
+Experiment / Identify all possibilities: try the cases in an organized way until you have found every option.
+Guess and check: make a sensible guess, test it, and use the result to make a better guess.
+Work backward: start from the end result and undo the steps in reverse order.
+Write an open sentence: turn the problem into a math sentence with a letter or blank, such as 2x + 6 = 14. It becomes true or false once the blank is filled in.
+Solve a simpler or similar problem: try smaller numbers or an easier version to find the idea, then return to the real problem.
+Change your point of view / logical reasoning: look at the problem from another angle, or use logic to rule out impossible choices.
+
+HEURISTICS
+★ Heuristics (from a Greek word meaning "find" or "discover") are experience-based techniques for problem solving, learning, and discovery.
+Examples of this method include using a "rule of thumb", an educated guess, an intuitive judgment, or common sense.
+EASIER: A heuristic is a handy tip learned from experience. It often helps, but it does not guarantee an answer.
+EASIER: A formula or algorithm always gives the answer if you follow it exactly. A heuristic is only a good direction to try.
+EASIER: A strategy is the plan you pick for one particular problem. A heuristic is a general thinking habit that helps you pick that plan.
+
+FOCUS OF HEURISTICS
+⚙ Heuristic 1: Searching for a pattern
+⚙ Heuristic 2: Drawing a figure
+⚙ Heuristic 3: Formulate an equivalent problem
+⚙ Heuristic 4: Modify the problem
+⚙ Heuristic 5: Choose effective notation
+⚙ Heuristic 6: Exploit symmetry
+⚙ Heuristic 7: Divide into cases
+⚙ Heuristic 8: Work backward (Analyse)
+⚙ Heuristic 9: Argue by contradiction
+⚙ Heuristic 10: Pursue parity
+⚙ Heuristic 11: Consider extreme cases
+⚙ Heuristic 12: Generalize
+
+THE TWELVE HEURISTICS IN PLAIN WORDS
+Searching for a pattern: list several cases and look for a rule that repeats.
+Drawing a figure: a picture often shows relationships that words hide.
+Formulate an equivalent problem: restate the problem in a different form that has the same answer but is easier to handle.
+Modify the problem: change it a little, for example use smaller numbers or drop one condition, to see how it behaves.
+Choose effective notation: pick clear letters and symbols, such as p for the price of a pencil, so your work is easy to read.
+Exploit symmetry: if two parts of a problem look the same or can be swapped, solve one part and use the result for the other.
+Divide into cases: split the problem into separate situations, such as even and odd, and handle each one.
+Work backward (Analyse): start from the goal and ask what must have been true just before it.
+Argue by contradiction: assume the opposite of what you want to show, find that it leads to something impossible, and conclude that the original statement is true.
+Pursue parity: pay attention to whether numbers are even or odd. Parity means whether a whole number is even or odd.
+Consider extreme cases: look at the smallest, largest, or most unusual values, which often reveal how the whole problem works.
+Generalize: instead of one specific case, solve the whole family of cases using a letter such as n.
+
+STEP 3: CARRY OUT THE PLAN (DO)
+The original strategy may need to be modified. Students need to understand that not every problem will be solved in the first attempt. Cooperative learning teams can be very beneficial at this point.
+⚙ Carrying out the plan is usually easier than devising the plan.
+⚙ Be patient. Most problems are not solved quickly nor on the first attempt.
+⚙ If a plan does not work immediately, be persistent.
+⚙ Do not let yourself get discouraged.
+⚙ If one strategy is not working, try a different one.
+EASIER: Getting stuck is normal. It does not mean you are bad at math. It means you should try another route.
+
+STEP 4: LOOK BACK (CHECK AND REFLECT)
+This is simply checking all steps and calculations. Students should be reminded (and reminded) that they should not assume the problem is complete once a solution has been found. Instead, students should examine the problem to ensure that the solution makes sense.
+Reflection means thinking back over your work. Use these questions.
+⚙ Does your answer make sense?
+⚙ Did you answer all of the questions?
+⚙ What did you learn by doing this?
+⚙ Could you have done this problem another way, maybe even an easier way?
+EASIER: Finding an answer is not the end. Checking is like proofreading a message before you send it.
+EASIER: One good way to check is to put your answer back into the original problem and see whether it works.
+
+EXAMPLE: PROBLEM 1 MR. DONG Y. LHATES IS LATE TO CLASS
+From the lecture slides. The problem: Mr. Dong Y. Lhates was 5 minutes late to his Problem Solving class in UC. His teacher asked him to figure out how many math class periods he would miss in a school year if he was 5 minutes late every meeting. Each class period is 2 hours long and there are 234 days in the school year.
+⚙ Step 1 (See): We are asked for the number of math class periods missed in a school year.
+⚙ Given: 5 minutes late at every meeting, 2 hours per period, 234 days.
+⚙ The answer should be a number of class periods, so the unit is periods.
+⚙ Estimate: 5 minutes is a small part of a 120-minute period (about 1 out of 24), so over 234 days the answer should be roughly 234 divided by 24, which is close to 10 periods.
+⚙ Step 2 (Plan): The strategy is multiplication and division.
+⚙ Plan: change 2 hours to minutes, find the total minutes missed, then divide by the length of one period.
+⚙ Step 3 (Do): Change 2 hours to minutes: 2 * 60 = 120 minutes.
+⚙ Total minutes missed: 5 * 234 = 1170 minutes, because 5 * 200 = 1000 and 5 * 34 = 170, and 1000 + 170 = 1170.
+⚙ Number of periods: 1170 / 120 = 9.75, because 120 * 9 = 1080, then 1170 - 1080 = 90, and 90 / 120 = 0.75.
+⚙ Step 4 (Check): Multiply back: 9.75 * 120 = 1080 + 90 = 1170, which matches the total minutes.
+⚙ Second check: each meeting loses 5/120 = 1/24 of a period, and 234/24 = 9.75 because 24 * 9 = 216, then 234 - 216 = 18, and 18/24 = 0.75.
+⚙ The answer is close to the estimate of 10, so it makes sense.
+⚙ Final answer: Mr. Dong Y. Lhates will miss 9.75 math class periods, which is 9 whole periods plus 90 minutes.
+
+EXAMPLE: PROBLEM 2 THE PLUS-SHAPED FIGURE
+From the lecture slides. The problem: Copy the figure and place the digits 1, 2, 3, 4, and 5 in the circles so that the sums across (horizontally) and down (vertically) are the same. Is there more than one solution?
+The figure has five circles in a plus shape: one at the top, three in the middle row (left, center, right), and one at the bottom. The center circle belongs to both the row and the column.
+⚙ Step 1 (See): We must place each digit 1 to 5 exactly once so that the row sum (left + center + right) equals the column sum (top + center + bottom). We must also decide whether more than one solution exists.
+⚙ Step 2 (Plan): Use guess and check, organized by the digit placed in the center.
+⚙ Step 3 (Do): Try the center as 3. Put 2, 3, 4 across and 1, 3, 5 down. Across: 2 + 3 + 4 = 9. Down: 1 + 3 + 5 = 9. The sums match.
+⚙ Try the center as 1. Put 3, 1, 4 across and 5, 1, 2 down. Across: 3 + 1 + 4 = 8. Down: 5 + 1 + 2 = 8. The sums match.
+⚙ Try the center as 5. Put 1, 5, 4 across and 2, 5, 3 down. Across: 1 + 5 + 4 = 10. Down: 2 + 5 + 3 = 10. The sums match.
+⚙ Step 4 (Check): Every digit 1 to 5 is used exactly once in each arrangement, and each arrangement has equal sums, so each one is a valid solution.
+⚙ Final answer: Yes, there is more than one solution. The slides show three with common sums 9, 8, and 10.
+Added example: Find every possible solution of Prb-2 using parity (even or odd) and symmetry.
+⚙ Step 1: The four outer circles hold the four digits that are not in the center. Let the two row ends add to S and the two column ends add to S, because the row and column sums are equal and share the same center.
+⚙ Step 2: So the four outer digits add to 2 * S, which must be an even number.
+⚙ Step 3: The total of 1 + 2 + 3 + 4 + 5 is 15. The outer digits add to 15 minus the center digit. For this to be even, the center must be odd.
+⚙ Step 4: So the center is 1, 3, or 5. A center of 2 fails because the outer digits 1, 3, 4, 5 add to 13, which is odd. A center of 4 fails because the outer digits 1, 2, 3, 5 add to 11, which is odd.
+⚙ Center 1: outer digits 2, 3, 4, 5 add to 14, so S = 7. Pairs adding to 7 are 2 and 5, and 3 and 4. Common sum = 1 + 7 = 8.
+⚙ Center 3: outer digits 1, 2, 4, 5 add to 12, so S = 6. Pairs adding to 6 are 1 and 5, and 2 and 4. Common sum = 3 + 6 = 9.
+⚙ Center 5: outer digits 1, 2, 3, 4 add to 10, so S = 5. Pairs adding to 5 are 1 and 4, and 2 and 3. Common sum = 5 + 5 = 10.
+⚙ Counting: for each valid center, choose which pair goes in the row (2 ways), order that pair left to right (2 ways), and order the other pair top to bottom (2 ways). That gives 2 * 2 * 2 = 8 placements per center.
+⚙ Total: 3 centers * 8 placements = 24 placements if every different placement is counted.
+⚙ Check: the symmetry of the figure explains the counting, since swapping the row pair and the column pair gives another solution with the same sum.
+
+EXAMPLE: PROBLEM 3 COUNTING RECTANGLES IN A ROW OF SEVEN BOXES
+From the lecture slides. The problem: How many rectangles are there in a figure made of 7 equal boxes in one row? A square counts as a rectangle.
+⚙ Strategies shown in the slides: draw a diagram, make an organized list, and counting.
+⚙ Step 1 (See): We must count every rectangle of every width, including single boxes and the whole row.
+⚙ Step 2 (Plan): Draw each possible width and count how many of that width fit in the row.
+⚙ Step 3 (Do): Rectangles that are 1 box wide: there are 7.
+⚙ Rectangles that are 2 boxes wide: there are 6.
+⚙ Rectangles that are 3 boxes wide: there are 5.
+⚙ Rectangles that are 4 boxes wide: there are 4.
+⚙ Rectangles that are 5 boxes wide: there are 3.
+⚙ Rectangles that are 6 boxes wide: there are 2.
+⚙ Rectangles that are 7 boxes wide: there is 1.
+⚙ Total: 7 + 6 + 5 + 4 + 3 + 2 + 1 = 28, because 7 + 6 = 13, 13 + 5 = 18, 18 + 4 = 22, 22 + 3 = 25, 25 + 2 = 27, and 27 + 1 = 28.
+⚙ Step 4 (Check): The shortcut n(n + 1)/2 with n = 7 gives 7 * 8 / 2 = 56 / 2 = 28, which agrees.
+⚙ Final answer: There are 28 rectangles. In the slide drawing the numbers beside the bars go from 7 for the one-box bar down to 1 for the whole-row bar, which is the same counting.
+★ For a row of n equal boxes, the number of rectangles is n + (n - 1) + ... + 2 + 1, which equals n(n + 1)/2.
+EASIER: Each possible starting edge and ending edge of a rectangle makes one rectangle. A row of n boxes has n + 1 vertical lines, and choosing 2 of them gives n(n + 1)/2 rectangles.
+Added example: How many rectangles are in a row of 5 boxes?
+⚙ Count by width: 5 + 4 + 3 + 2 + 1 = 15.
+⚙ Check with the shortcut: 5 * 6 / 2 = 30 / 2 = 15. Both methods agree.
+
+EXAMPLE: USE A VARIABLE AND WRITE AN OPEN SENTENCE
+Added example: A notebook and a pencil cost 35 pesos together. The notebook costs 15 pesos more than the pencil. Find each price.
+⚙ Step 1 (See): We need two prices. Given: the total is 35 and the notebook costs 15 more.
+⚙ Step 2 (Plan): Let p be the price of the pencil in pesos. Then the notebook costs p + 15.
+⚙ Step 3 (Do): Write the open sentence: p + (p + 15) = 35.
+⚙ Combine like terms: 2p + 15 = 35.
+⚙ Subtract 15 from both sides: 2p = 20.
+⚙ Divide both sides by 2: p = 10.
+⚙ Notebook price: p + 15 = 10 + 15 = 25.
+⚙ Step 4 (Check): 10 + 25 = 35, which matches the total. 25 - 10 = 15, which matches the difference.
+⚙ Final answer: the pencil costs 10 pesos and the notebook costs 25 pesos.
+
+EXAMPLE: WORK BACKWARD
+Added example: I think of a number, multiply it by 3, subtract 4, and get 20. What is my number?
+⚙ Step 1: Undo the last operation. The last step was subtract 4, so add 4: 20 + 4 = 24.
+⚙ Step 2: Undo the first operation. The first step was multiply by 3, so divide by 3: 24 / 3 = 8.
+⚙ Check: Start with 8. Multiply by 3: 8 * 3 = 24. Subtract 4: 24 - 4 = 20, which matches.
+⚙ Final answer: the number is 8.
+
+EXAMPLE: GUESS AND CHECK
+Added example: Find two whole numbers whose sum is 12 and whose product is 35.
+⚙ Guess 1 and 11: sum 12, product 11. The product is too small.
+⚙ Guess 2 and 10: sum 12, product 20. Still too small.
+⚙ Guess 3 and 9: sum 12, product 27. Still too small.
+⚙ Guess 4 and 8: sum 12, product 32. Still too small, but closer.
+⚙ Guess 5 and 7: sum 12, product 35. This matches both conditions.
+⚙ Final answer: the numbers are 5 and 7.
+
+EXAMPLE: LOOK FOR A PATTERN AND CONSTRUCT A TABLE
+Added example: Find the 10th term of the list 3, 7, 11, 15, and so on.
+⚙ Step 1: Build a table with the term number n and the value. n = 1 gives 3, n = 2 gives 7, n = 3 gives 11, n = 4 gives 15.
+⚙ Step 2: Find the differences: 7 - 3 = 4, 11 - 7 = 4, 15 - 11 = 4. The list goes up by 4 each time.
+⚙ Step 3: Write the rule: the nth term is 4n - 1.
+⚙ Check the rule: n = 1 gives 4 * 1 - 1 = 3, and n = 4 gives 4 * 4 - 1 = 15. Both match.
+⚙ Step 4: For n = 10, the term is 4 * 10 - 1 = 39.
+⚙ Second check: starting at 3 and adding 4 nine times gives 3 + 9 * 4 = 3 + 36 = 39.
+⚙ Final answer: the 10th term is 39.
+
+EXAMPLE: PURSUE PARITY
+Added example: Can five odd numbers add up to 20?
+⚙ Step 1: An odd number plus an odd number is even. For example 3 + 5 = 8.
+⚙ Step 2: So four odd numbers add to an even number, because two pairs of odd numbers each give an even sum, and even + even = even.
+⚙ Step 3: Adding the fifth odd number to an even sum gives an odd sum.
+⚙ Step 4: So the sum of any five odd numbers is odd, and 20 is even.
+⚙ Check with a real case: 1 + 3 + 5 + 7 + 9 = 25, which is odd.
+⚙ Final answer: No, five odd numbers can never add up to 20.
+
+EXAMPLE: ARGUE BY CONTRADICTION
+Added example: Show that there is no largest whole number.
+⚙ Step 1: Assume the opposite, that there is a largest whole number, and call it N.
+⚙ Step 2: Then N + 1 is also a whole number.
+⚙ Step 3: But N + 1 is greater than N, which contradicts the assumption that N is the largest.
+⚙ Step 4: The assumption leads to something impossible, so it must be false.
+⚙ Final answer: there is no largest whole number.
+
+COMMON MISTAKES
+Confusing an exercise with a problem. An exercise has an obvious path. A problem does not.
+Starting to calculate before understanding what the problem asks. Always do Step 1 first.
+Forgetting to change units. In Problem 1, using 1 hour as 60 minutes instead of using 2 hours as 120 minutes gives 1170 / 60 = 19.5 periods, which is wrong.
+Stopping as soon as an answer is found. Always do Step 4 and check that the answer makes sense.
+Giving up when the first strategy fails. Switch to another strategy instead.
+Treating a heuristic as a guaranteed method. A heuristic is a helpful guide, not a guarantee.
+In rectangle counting, forgetting to count the larger rectangles made of several boxes, or forgetting that the whole figure is also a rectangle.
+
+EXAM TIPS
+Memorize the order of Polya's steps with the labels: See, Plan, Do, Check.
+Be ready to tell an exercise from a problem by asking whether the path to the solution is clear right away.
+Be able to name at least the ten problem-solving strategies and the twelve heuristics.
+When you solve a numeric problem, write the estimate, the steps, the check, and the final answer with units.
+For the three lecture problems, remember the answers: Problem 1 gives 9.75 periods, Problem 2 has more than one solution, and Problem 3 gives 28 rectangles.
+
+SELF TEST
+Q: What is problem solving according to NCTM (2000)?
+★ Engaging in a task for which the solution method is not known in advance.
+Q: What are Polya's four steps and their labels?
+★ Understand the problem (See), Devise a plan (Plan), Carry out the plan (Do), Look back (Check).
+Q: How is a mathematical exercise different from a mathematical problem?
+★ In an exercise the path to the solution is immediately clear and tests a narrowly focused technique. A problem cannot be solved immediately and needs investigation first.
+Q: What does the word heuristics mean and what does it refer to?
+★ It comes from a Greek word meaning find or discover, and it refers to experience-based techniques such as a rule of thumb, an educated guess, an intuitive judgment, or common sense.
+Q: How many class periods are missed if a student is 5 minutes late to every meeting of 2-hour periods over 234 days?
+★ 5 * 234 = 1170 minutes, and 1170 / 120 = 9.75 periods.
+Q: In the plus-shaped figure with digits 1 to 5, can the center digit be 2?
+★ No. The outer digits would be 1, 3, 4, 5 with total 13, which is odd and cannot be split into two equal-sum pairs.
+Q: How many rectangles are in a row of 7 boxes?
+★ 7 + 6 + 5 + 4 + 3 + 2 + 1 = 28, which also equals 7 * 8 / 2.
+Q: What should you do in Step 4 (Look back)?
+★ Check all steps and calculations and ask whether the answer makes sense, whether all questions were answered, what you learned, and whether another or easier way exists.

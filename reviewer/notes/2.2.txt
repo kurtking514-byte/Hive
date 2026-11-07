@@ -1,0 +1,130 @@
+2.2 One's Complement and Two's Complement
+1's and 2's complement: how computers store negative numbers
+
+THE CORE PROBLEM
+Computers only store 0s and 1s, so how do you store a negative number?
+Whatever method we choose must also make addition and subtraction work correctly using the same simple hardware.
+Three methods were tried. Think of them as drafts, each fixing the flaws of the one before.
+EASIER: There is no room for a minus sign in a row of bits, so we invent a rule that lets certain bit patterns mean negative numbers.
+
+SIGNED MAGNITUDE (THE FIRST ATTEMPT)
+★ Signed magnitude: use the leftmost bit (MSB) as a sign, where 0 = positive and 1 = negative. The remaining bits are the size of the number.
+⚙ Using 4 bits: +3 = 0011
+⚙ Using 4 bits: -3 = 1011
+Why it fails: try 3 - 3, which is 3 + (-3), by plain binary addition.
+⚙ 0011 (+3) + 1011 (-3) = 1110
+⚙ 1110 in signed magnitude means sign 1 (negative) and size 110 = 6, so the result is -6.
+The answer should be 0, but we get garbage.
+The hardware would need special rules for signs, which is complicated and slow.
+
+1'S COMPLEMENT
+★ 1's complement rule: flip every bit (0 becomes 1, 1 becomes 0).
+EASIER: Flipping is like turning a photo into its negative. Every light spot becomes dark and every dark spot becomes light.
+⚙ Example (4 bits): +5 = 0101
+⚙ Flip all bits: -5 = 1010
+Why it is better: addition mostly works, with an extra "end-around carry" step.
+⚙ Added example: 5 + (-3) in 1's complement. +3 = 0011, so -3 = 1100.
+⚙ 0101 + 1100 = 1 0001. There is a carry out of the leftmost bit.
+⚙ End-around carry: take that carry out and add it back at the right: 0001 + 1 = 0010.
+⚙ 0010 = +2 ✓
+Why it still fails: it has two zeros.
+⚙ +0 = 0000
+⚙ -0 = 1111 (flip all bits of 0000)
+Zero should have one representation.
+Two zeros waste a pattern and force the computer to check both when comparing to zero.
+
+2'S COMPLEMENT (THE STANDARD TODAY)
+★ 2's complement rule: take the 1's complement, then add 1.
+★ 2's complement = 1's complement + 1
+EASIER: First flip the bits, then add 1. The "add 1" is the small fix that removes the double zero.
+
+EXAMPLE: FIND -5 IN 4 BITS
+⚙ Step 1: write +5 = 0101
+⚙ Step 2: flip the bits = 1010 (this is the 1's complement)
+⚙ Step 3: add 1 = 1011 (this is the 2's complement)
+⚙ Answer: -5 = 1011
+
+EXAMPLE: THE ZERO PROBLEM IS SOLVED
+Find -0 in 4 bits:
+⚙ 0000 → flip → 1111 → add 1 → 1 0000
+The carry out of the leftmost bit is discarded, leaving 0000.
+So there is only one zero.
+
+EXAMPLE: 5 - 3 USING 2'S COMPLEMENT
+Subtraction is just addition of the 2's complement.
+⚙ Step 1: 5 - 3 = 5 + (-3)
+⚙ Step 2: +5 = 0101
+⚙ Step 3: find -3. +3 = 0011, flip = 1100, add 1 = 1101
+⚙ Step 4: add 0101 + 1101 = 1 0010
+⚙ Step 5: discard the carry out of the leftmost bit, leaving 0010
+⚙ Answer: 0010 = +2 ✓
+The computer needs only an adder, with no separate subtractor circuit. That is why every modern computer uses 2's complement.
+
+EXAMPLE: A NEGATIVE ANSWER (3 - 5)
+⚙ Added example: 3 - 5 = 3 + (-5)
+⚙ +3 = 0011 and -5 = 1011 (from the earlier example)
+⚙ 0011 + 1011 = 1110, with no carry out
+⚙ MSB is 1, so the answer is negative. Flip 1110 = 0001, add 1 = 0010 = 2. So the answer is -2 ✓
+
+QUICK COMPARISON OF THE THREE METHODS
+★ Signed magnitude: negate by flipping the sign bit. It has 2 zeros. Addition does not work simply. It is rarely used.
+★ 1's complement: negate by flipping all bits. It has 2 zeros. Addition needs an end-around carry. It is not used today.
+★ 2's complement: negate by flipping all bits and adding 1. It has 1 zero. Addition works simply. It is used today.
+
+RANGE OF VALUES (VERY COMMON EXAM QUESTION)
+★ With n bits, 2's complement represents -2^(n-1) to +(2^(n-1) - 1).
+⚙ 4 bits: -8 to +7
+⚙ 8 bits: -128 to +127
+⚙ 16 bits: -32,768 to +32,767
+⚙ Added example: 5 bits: -2⁴ = -16 to +(2⁴ - 1) = +15
+Using one bit for the sign means you lose the "all positive" range (4 bits unsigned would be 0 to 15), but you gain negatives.
+The range is also asymmetric: there is one more negative number than positive.
+⚙ Added example: in 4 bits, the pattern 1000 is -8. Its flip is 0111, add 1 gives 1000 again, so -8 has no positive partner in 4 bits.
+
+READING A 2'S COMPLEMENT NUMBER
+★ MSB = 0: the number is positive. Read it normally.
+★ MSB = 1: the number is negative. To find its value, apply the 2's complement again and put a minus sign in front.
+EXAMPLE: READ 1110 (4 BITS)
+⚙ Step 1: the MSB is 1, so it is negative.
+⚙ Step 2: flip 1110 = 0001
+⚙ Step 3: add 1 = 0010 = 2
+⚙ Answer: 1110 = -2
+⚙ Added example: read 1101 (4 bits). MSB is 1. Flip = 0010, add 1 = 0011 = 3. So 1101 = -3 ✓
+
+SHORTCUT FOR FINDING THE 2'S COMPLEMENT
+★ Starting from the right, copy the bits up to and including the first 1, then flip all the bits to the left of it.
+⚙ 0110100 → 1001100
+⚙ Why: from the right, copy 1 0 0 (the first 1 and the zeros before it). The remaining bits 0110 become 1001. Together: 1001100.
+⚙ Added example: find -5 in 4 bits with the shortcut. 0101: copy the first 1 from the right, which is the last bit. Flip the rest, 010 becomes 101. Answer: 1011 ✓
+
+BITS MATTER
+⚙ Added example: -5 in 8 bits: +5 = 00000101, flip = 11111010, add 1 = 11111011.
+The same number needs more bits when the word is longer. 1011 (4 bits) and 11111011 (8 bits) both mean -5.
+⚙ Added example: overflow. In 4 bits, 7 + 1 = 0111 + 0001 = 1000, which reads as -8. The true answer, +8, does not fit in 4 bits.
+
+EXAM TIPS
+Always state the number of bits. Answers depend on it (0101 vs 00000101).
+Discard the final carry in 2's complement addition.
+Memorize the range formula and the 2's complement steps.
+Check your work: a number plus its negative should equal 0.
+Know the three reasons 2's complement wins: one zero, simple addition and subtraction, and no extra hardware.
+
+COMMON MISTAKES
+Do not forget the "add 1" step. Flipping alone gives the 1's complement.
+Do not keep the carry out of the leftmost bit in 2's complement addition.
+Do not forget that the range has one more negative number than positive.
+
+QUICK SELF-TEST
+Q: Find -6 in 4 bits.
+⚙ +6 = 0110, flip = 1001, add 1 = 1010.
+★ Answer: 1010
+Q: What decimal number is 11101100 in 8-bit 2's complement?
+⚙ MSB is 1, so it is negative. Flip = 00010011, add 1 = 00010100 = 20.
+★ Answer: -20
+Q: What is the range of 2's complement with 5 bits?
+★ -16 to +15
+Q: Compute 6 - 2 in 4 bits using 2's complement.
+⚙ -2 = flip 0010 = 1101, add 1 = 1110. Then 0110 + 1110 = 1 0100. Discard the carry: 0100.
+★ Answer: 0100 = +4
+Q: Why are two zeros a problem?
+★ They waste a bit pattern and force the computer to check both when comparing to zero.

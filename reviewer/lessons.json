@@ -1,0 +1,322 @@
+[
+ {
+  "id": "1",
+  "subject": "CC2",
+  "tab": "Lesson 1",
+  "title": "Introduction to Programming",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "1.1",
+  "subject": "CC1",
+  "tab": "Lesson 1.1",
+  "title": "Computers",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "1.2",
+  "subject": "CC1",
+  "tab": "Lesson 1.2",
+  "title": "Processes, Procedures, and Algorithms",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "1.3",
+  "subject": "CC1",
+  "tab": "Lesson 1.3",
+  "title": "Data and Information",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "2",
+  "subject": "CC2",
+  "tab": "Lesson 2",
+  "title": "Python Variables, Data Types, Expressions, and Statements",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "2.1",
+  "subject": "CC1",
+  "tab": "Lesson 2.1",
+  "title": "Decimal and Binary",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "2.2",
+  "subject": "CC1",
+  "tab": "Lesson 2.2",
+  "title": "One's Complement and Two's Complement",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "2.3",
+  "subject": "CC1",
+  "tab": "Lesson 2.3",
+  "title": "Octal and Hexadecimal",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "2.4",
+  "subject": "CC1",
+  "tab": "Lesson 2.4",
+  "title": "Radix Conversion",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "3.1",
+  "subject": "CC1",
+  "tab": "Lesson 3.1",
+  "title": "Bitwise Operations",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "3.2",
+  "subject": "CC1",
+  "tab": "Lesson 3.2",
+  "title": "Arithmetic Operations",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "3",
+  "subject": "CC2",
+  "tab": "Lesson 3",
+  "title": "Decision Control Structure",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "4",
+  "subject": "CC2",
+  "tab": "Lesson 4",
+  "title": "Iterative Control Structure",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "eng100-lesson1",
+  "subject": "ENG100",
+  "tab": "Lesson 1",
+  "title": "Communication Process, Principles, and Ethics",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "eng100-lesson2",
+  "subject": "ENG100",
+  "tab": "Lesson 2",
+  "title": "Communication and Globalization",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "eng100-lesson3",
+  "subject": "ENG100",
+  "tab": "Lesson 3",
+  "title": "Local and Global Communication in Multicultural Settings",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "eng100-lecture4",
+  "subject": "ENG100",
+  "tab": "Lecture 4",
+  "title": "Register and Tone in Spoken and Written Communication",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "cc7-L1",
+  "subject": "CC7",
+  "tab": "Lecture 1",
+  "title": "Introduction to Human Computer Interaction",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "cc7-L2",
+  "subject": "CC7",
+  "tab": "Lecture 2",
+  "title": "Introduction to Designing",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "cc7-L3",
+  "subject": "CC7",
+  "tab": "Lecture 3",
+  "title": "The Human Being",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "cc7-L4",
+  "subject": "CC7",
+  "tab": "Lecture 4",
+  "title": "Human Errors",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "cc7-L5",
+  "subject": "CC7",
+  "tab": "Lecture 5",
+  "title": "The Human: Emotions",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "cc7-L6",
+  "subject": "CC7",
+  "tab": "Lecture 6",
+  "title": "Interactions",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "HIST100-unit1",
+  "subject": "HIST100",
+  "tab": "Unit 1",
+  "title": "Unit 1",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "HIST100-unit2",
+  "subject": "HIST100",
+  "tab": "Unit 2",
+  "title": "Content and Contextual Analysis of Primary Sources",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "pathfit1-module1",
+  "subject": "PATHFIT1",
+  "tab": "Module 1",
+  "title": "Fundamental Movement Skills",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "pathfit1-module2",
+  "subject": "PATHFIT1",
+  "tab": "Module 2",
+  "title": "Living Well Through Movement: The PE Primer",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "pathfit1-module3",
+  "subject": "PATHFIT1",
+  "tab": "Module 3",
+  "title": "Move for Life: Understanding Exercise and the MMFIT Framework",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "math100-module1",
+  "subject": "MATH100",
+  "tab": "Module 1",
+  "title": "Patterns and Sequences",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "math100-module2",
+  "subject": "MATH100",
+  "tab": "Module 2",
+  "title": "Set Theory",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "math100-module3",
+  "subject": "MATH100",
+  "tab": "Module 3",
+  "title": "Logic",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ },
+ {
+  "id": "math100-module4",
+  "subject": "MATH100",
+  "tab": "Module 4",
+  "title": "Problem Solving",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
+ }
+]

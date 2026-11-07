@@ -1,0 +1,362 @@
+[
+{
+"q": "What is globalization?",
+"options": [
+"Integrating national economies, societies, and cultures through global exchange",
+"Adapting only local products",
+"One-way mass communication",
+"A decline in international trade"
+],
+"answer": 0,
+"explanation": "It connects countries through goods, services, information, and ideas.",
+"source": "notes"
+},
+{
+"q": "What is glocalization?",
+"options": [
+"Making all cultures identical",
+"Adapting global elements to local or regional needs",
+"Hiring workers only locally",
+"Removing global products"
+],
+"answer": 1,
+"explanation": "Local adaptation is the defining feature.",
+"source": "notes"
+},
+{
+"q": "What drives globalization, aided by information technology?",
+"options": [
+"Local customs alone",
+"Entertainment and fashion alone",
+"International trade and investment",
+"Agriculture and wildlife"
+],
+"answer": 2,
+"explanation": "The module identifies trade and investment, aided by IT.",
+"source": "notes"
+},
+{
+"q": "According to Nikolay Daney (2017), what is a major effect?",
+"options": [
+"Reduced communication",
+"The end of inequality",
+"The elimination of trade",
+"Easy access to information"
+],
+"answer": 3,
+"explanation": "The module attributes this effect to Daney (2017).",
+"source": "notes"
+},
+{
+"q": "What does business expansion to other markets allow?",
+"options": [
+"Offering products and services to a larger audience",
+"Preventing all competition",
+"Ending local business",
+"Reducing access to information"
+],
+"answer": 0,
+"explanation": "Market expansion reaches customers in new regions.",
+"source": "notes"
+},
+{
+"q": "How can companies make the language gap smaller?",
+"options": [
+"Avoid translating content",
+"Communicate with customers in their native language",
+"Use only technical language",
+"Stop remote operations"
+],
+"answer": 1,
+"explanation": "Native-language communication improves connection and experience.",
+"source": "notes"
+},
+{
+"q": "What does global access to diverse talent involve?",
+"options": [
+"Avoiding knowledge sharing",
+"Hiring only locally",
+"Remote operations and global hiring",
+"Selling only in one market"
+],
+"answer": 2,
+"explanation": "Companies increasingly operate remotely and hire globally.",
+"source": "notes"
+},
+{
+"q": "What may technology transfer and knowledge sharing support?",
+"options": [
+"A decrease in all trade",
+"Guaranteed equality",
+"The end of cultural exchange",
+"Innovation, breakthroughs, and growth"
+],
+"answer": 3,
+"explanation": "Sharing can support innovation and growth.",
+"source": "notes"
+},
+{
+"q": "What is cultural homogenization?",
+"options": [
+"Dominant cultures influencing local culture toward greater uniformity",
+"A local item sold abroad",
+"A translated advertisement",
+"A transfer of technology"
+],
+"answer": 0,
+"explanation": "It makes global cultures more uniform.",
+"source": "notes"
+},
+{
+"q": "Which statement about globalization and poverty is accurate?",
+"options": [
+"Poverty always rises",
+"Poverty may decrease overall at the expense of local businesses and populations",
+"No local group faces costs",
+"Only large companies are affected"
+],
+"answer": 1,
+"explanation": "Both the overall decrease and local costs are noted.",
+"source": "notes"
+},
+{
+"q": "Which environmental effects are named?",
+"options": [
+"No effect on wildlife",
+"Higher biodiversity everywhere",
+"Decreased biodiversity and invasive species",
+"Only language change"
+],
+"answer": 2,
+"explanation": "These effects can affect agriculture, wildlife, and ecosystems.",
+"source": "notes"
+},
+{
+"q": "Which list contains all five advantages?",
+"options": [
+"Markets, crises, biodiversity, talent, entertainment",
+"Homogenization, inequality, invasive species, fashion, food",
+"Trade, poverty, wildlife, language, advertising",
+"Information, markets, language, talent, technology/knowledge"
+],
+"answer": 3,
+"explanation": "These are the five advantages listed.",
+"source": "notes"
+},
+{
+"q": "Which set contains all three disadvantages?",
+"options": [
+"Homogenization; financial crises and inequality; environmental toll",
+"Information; markets; talent",
+"Language; technology; innovation",
+"Advertising; fashion; food"
+],
+"answer": 0,
+"explanation": "These are the three disadvantages listed.",
+"source": "notes"
+},
+{
+"q": "What are the group preparation and presentation times?",
+"options": [
+"10 minutes; 2–3 minutes",
+"5 minutes; 10 minutes",
+"10 minutes; 10 minutes",
+"2–3 minutes; 10 minutes"
+],
+"answer": 0,
+"explanation": "The activity specifies 10 minutes to prepare and 2–3 to present.",
+"source": "notes"
+},
+{
+"q": "What is the exit-ticket point total?",
+"options": [
+"35",
+"25",
+"28",
+"30"
+],
+"answer": 3,
+"explanation": "2 + 5 + 8 + 10 + 5 = 30.",
+"source": "notes"
+},
+{
+"q": "What must the exit-ticket explanation do?",
+"options": [
+"Explain the item and how it works in at least five sentences",
+"Use exactly two sentences",
+"Describe only a company",
+"It is optional"
+],
+"answer": 0,
+"explanation": "The module requires at least five explanatory sentences.",
+"source": "notes"
+},
+{
+"q": "Which statement is NOT true about glocalization?",
+"options": [
+"It responds to regional needs",
+"It can adapt a global service",
+"It is simply spreading a global product without local adaptation",
+"It can adapt cultural elements"
+],
+"answer": 2,
+"explanation": "Local adaptation is essential to glocalization.",
+"source": "notes"
+},
+{
+"q": "Which pair is mismatched?",
+"options": [
+"Homogenization — uniformity",
+"Glocalization — local adaptation",
+"Market expansion — new regions",
+"Cultural homogenization — adapting global products for local taste"
+],
+"answer": 3,
+"explanation": "Local adaptation is glocalization, not homogenization.",
+"source": "notes"
+},
+{
+"q": "Which statement about global hiring is NOT supported?",
+"options": [
+"Companies can hire only from their home region",
+"Remote operations can support global hiring",
+"Companies access diverse talent",
+"Global hiring is an advantage"
+],
+"answer": 0,
+"explanation": "The module describes remote global hiring.",
+"source": "notes"
+},
+{
+"q": "Which item is mismatched as a disadvantage?",
+"options": [
+"Environmental toll",
+"Technology transfer",
+"Financial crises and inequality",
+"Cultural homogenization"
+],
+"answer": 1,
+"explanation": "Technology transfer is listed as an advantage.",
+"source": "notes"
+},
+{
+"q": "Which is not listed as a glocalization area?",
+"options": [
+"Fashion",
+"Fast food chains",
+"Starbucks",
+"Biodiversity"
+],
+"answer": 3,
+"explanation": "Biodiversity appears under environmental toll.",
+"source": "notes"
+},
+{
+"q": "A company adapts its advertisement for a local audience. What concept is shown?",
+"options": [
+"Glocalization",
+"Environmental toll",
+"Financial inequality",
+"Cultural homogenization"
+],
+"answer": 0,
+"explanation": "The global advertisement is adapted locally.",
+"source": "notes"
+},
+{
+"q": "A business sells its existing product in new countries. Which advantage is shown?",
+"options": [
+"Diverse talent",
+"Expansion to other markets",
+"Smaller language gap",
+"Knowledge sharing"
+],
+"answer": 1,
+"explanation": "Selling in new regions expands markets.",
+"source": "notes"
+},
+{
+"q": "A global chain adapts a menu to regional flavors. What is this?",
+"options": [
+"Financial crisis",
+"Homogenization only",
+"Glocalization",
+"Technology transfer"
+],
+"answer": 2,
+"explanation": "The offering is tailored to local tastes.",
+"source": "notes"
+},
+{
+"q": "A company hires specialists living in several countries. Which advantage?",
+"options": [
+"Invasive species",
+"Environmental toll",
+"Cultural uniformity",
+"Access to diverse talent"
+],
+"answer": 3,
+"explanation": "Global hiring expands the talent pool.",
+"source": "notes"
+},
+{
+"q": "In a locally adapted global study app, what is the global element?",
+"options": [
+"The local examples only",
+"The app; its local language and examples are adaptations",
+"The community itself",
+"There is no global element"
+],
+"answer": 1,
+"explanation": "The app is global and its examples/language are localized.",
+"source": "notes"
+},
+{
+"q": "Which best illustrates knowledge sharing?",
+"options": [
+"A store removes local goods",
+"A company stops exchanging information",
+"Researchers in different countries share a method and build on findings",
+"A species spreads to a new ecosystem"
+],
+"answer": 2,
+"explanation": "Shared research is knowledge exchange.",
+"source": "notes"
+},
+{
+"q": "A streaming service creates a local-language version of a show. Which listed area?",
+"options": [
+"Fashion",
+"Entertainment",
+"Environmental toll",
+"Market expansion"
+],
+"answer": 1,
+"explanation": "The adaptation concerns entertainment.",
+"source": "notes"
+},
+{
+"q": "What is the environmental toll described?",
+"options": [
+"Only language is affected",
+"Globalization guarantees ecosystem recovery",
+"Global integration can reduce biodiversity and spread invasive species",
+"It always improves wildlife diversity"
+],
+"answer": 2,
+"explanation": "Those are the environmental effects named.",
+"source": "notes"
+},
+{
+"q": "How should a student explain a glocalization example?",
+"options": [
+"List advantages without local change",
+"Name global element, local audience, and adaptation",
+"Describe only trade volume",
+"Name only the company"
+],
+"answer": 1,
+"explanation": "These three parts clarify what is global and what was localized.",
+"source": "notes"
+}
+]

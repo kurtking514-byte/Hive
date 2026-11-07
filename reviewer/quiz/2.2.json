@@ -1,0 +1,362 @@
+[
+{
+"q": "Using 4-bit signed magnitude, 0011 + 1011 (which is 3 + (-3)) is computed by plain binary addition. What is the result and why is it a problem?",
+"options": [
+"0000, which is correct, so there is no problem",
+"1110, which is +6 in signed magnitude",
+"1110, which is -6 in signed magnitude but the answer should be 0",
+"10000, which overflows the 4 bits"
+],
+"answer": 2,
+"explanation": "1110 has sign bit 1 and magnitude 110 (6), so it reads as -6 instead of 0. Signed magnitude needs special sign rules in hardware.",
+"source": "notes"
+},
+{
+"q": "Which pair of 4-bit patterns represents zero in 1's complement?",
+"options": [
+"0000 and 1111",
+"0000 and 1000",
+"1111 and 1000",
+"0000 and 0001"
+],
+"answer": 0,
+"explanation": "+0 is 0000, and flipping every bit gives 1111 as -0, so 1's complement has two zeros.",
+"source": "notes"
+},
+{
+"q": "What is -5 in 4-bit 2's complement?",
+"options": [
+"1010",
+"1011",
+"1101",
+"0101"
+],
+"answer": 1,
+"explanation": "5 = 0101, flip to get 1010, then add 1 to get 1011. The pattern 1010 is only the 1's complement.",
+"source": "notes"
+},
+{
+"q": "What is the range of values that 8-bit 2's complement can represent?",
+"options": [
+"-127 to +127",
+"-128 to +128",
+"0 to 255",
+"-128 to +127"
+],
+"answer": 3,
+"explanation": "The range is -2^(n-1) to +(2^(n-1) - 1), which for n = 8 is -128 to +127.",
+"source": "notes"
+},
+{
+"q": "What is the decimal value of the 8-bit 2's complement number 11111000?",
+"options": [
+"-8",
+"-7",
+"-120",
+"-248"
+],
+"answer": 0,
+"explanation": "The MSB is 1, so it is negative. Flip to get 00000111, add 1 to get 00001000 = 8, so the value is -8.",
+"source": "notes"
+},
+{
+"q": "Using the shortcut (copy bits from the right up to and including the first 1, then flip the rest), what is the 2's complement of 0110100?",
+"options": [
+"1001011",
+"1001101",
+"1001100",
+"0110100"
+],
+"answer": 2,
+"explanation": "From the right, copy 100, then flip the remaining bits 0110 to 1001, giving 1001100. The pattern 1001011 is only the 1's complement.",
+"source": "notes"
+},
+{
+"q": "Which statement about 4-bit 2's complement is NOT true?",
+"options": [
+"There is only one representation of zero",
+"The MSB tells whether the number is negative",
+"Subtraction can be done by adding the 2's complement",
+"It has the same number of positive and negative values"
+],
+"answer": 3,
+"explanation": "The range -8 to +7 is asymmetric, with one more negative value than positive values.",
+"source": "notes"
+},
+{
+"q": "What is the 1's complement of the 8-bit number 00101101?",
+"options": [
+"11010010",
+"11010011",
+"00101110",
+"11010001"
+],
+"answer": 0,
+"explanation": "Flipping every bit of 00101101 gives 11010010. Adding 1 would give the 2's complement, 11010011.",
+"source": "notes"
+},
+{
+"q": "Finding -0 in 4-bit 2's complement gives 0000 -> flip -> 1111 -> add 1 -> 10000. Why does this leave only one zero?",
+"options": [
+"The added 1 goes into the sign bit and cancels it",
+"The result is treated as negative zero",
+"The carry out of the leftmost bit is discarded, leaving 0000",
+"The bits are flipped a second time"
+],
+"answer": 2,
+"explanation": "Discarding the carry out of the leftmost bit leaves 0000, the same pattern as +0.",
+"source": "notes"
+},
+{
+"q": "Which representation needs an extra 'end-around carry' step for addition to work?",
+"options": [
+"Signed magnitude",
+"2's complement",
+"Plain unsigned binary",
+"1's complement"
+],
+"answer": 3,
+"explanation": "In the comparison table, 1's complement addition works only with the end-around carry step.",
+"source": "notes"
+},
+{
+"q": "In 4-bit signed magnitude, +6 is 0110. What is -6?",
+"options": [
+"1110",
+"1001",
+"1010",
+"0110"
+],
+"answer": 0,
+"explanation": "Signed magnitude negates by flipping only the sign bit, so 0110 becomes 1110. The patterns 1001 and 1010 are the 1's and 2's complement forms.",
+"source": "notes"
+},
+{
+"q": "What is -5 in 8-bit 2's complement?",
+"options": [
+"11111010",
+"00000101",
+"11111011",
+"10000101"
+],
+"answer": 2,
+"explanation": "5 = 00000101, flip to 11111010, add 1 to get 11111011. Answers depend on the number of bits used.",
+"source": "notes"
+},
+{
+"q": "Which of the following is NOT one of the reasons 2's complement is the standard today?",
+"options": [
+"It has only one zero",
+"Addition and subtraction use the same simple adder",
+"No separate subtractor circuit is needed",
+"It requires a dedicated subtractor circuit that is faster than the adder"
+],
+"answer": 3,
+"explanation": "2's complement removes the need for a separate subtractor, because subtraction is done as addition of the 2's complement.",
+"source": "notes"
+},
+{
+"q": "What is 3 - 5 in 4-bit 2's complement, computed as 0011 + (2's complement of 0101)?",
+"options": [
+"1010",
+"1110",
+"0010",
+"1101"
+],
+"answer": 1,
+"explanation": "-5 = 1011, and 0011 + 1011 = 1110 with no carry out. 1110 reads as -2, which is correct.",
+"source": "notes"
+},
+{
+"q": "Why does 2's complement need only an adder to perform subtraction?",
+"options": [
+"The adder can flip signs by itself",
+"a - b is done as a + (2's complement of b)",
+"The carry is always added back to the result",
+"Subtraction is never needed in a computer"
+],
+"answer": 1,
+"explanation": "Subtraction becomes addition of the negated number, so the same adder circuit handles both operations.",
+"source": "notes"
+},
+{
+"q": "A student finds -6 in 4-bit 2's complement by flipping 0110 and writes 1001. What went wrong and what is the correct answer?",
+"options": [
+"Nothing went wrong; 1001 is correct",
+"The student forgot to add 1; the correct answer is 1010",
+"The student should have used 5 bits; the answer is 11001",
+"The student should have flipped only the sign bit; the answer is 1110"
+],
+"answer": 1,
+"explanation": "Flipping bits gives only the 1's complement. Adding 1 gives 1010, which is the 2's complement and equals -6.",
+"source": "notes"
+},
+{
+"q": "What does the 4-bit 2's complement pattern 1000 represent?",
+"options": [
+"-8",
+"-0",
+"-7",
+"+8"
+],
+"answer": 0,
+"explanation": "The MSB is 1, so flip 1000 to 0111 and add 1 to get 1000 = 8. The value is -8, the most negative 4-bit number.",
+"source": "notes"
+},
+{
+"q": "Which choice correctly matches each method with how it negates a number?",
+"options": [
+"Signed magnitude flips only the sign bit, 1's complement flips all bits, 2's complement flips all bits and adds 1",
+"Signed magnitude flips all bits, 1's complement flips all bits and adds 1, 2's complement flips only the sign bit",
+"Signed magnitude flips all bits, 1's complement flips only the sign bit, 2's complement flips all bits",
+"Signed magnitude flips the sign bit and adds 1, 1's complement only adds 1, 2's complement flips all bits"
+],
+"answer": 0,
+"explanation": "The comparison table lists these rules: flip sign bit, flip all bits, and flip all bits then add 1.",
+"source": "notes"
+},
+{
+"q": "What is the decimal value of the 4-bit 2's complement number 1100?",
+"options": [
+"-3",
+"+4",
+"-12",
+"-4"
+],
+"answer": 3,
+"explanation": "The MSB is 1, so flip 1100 to 0011 and add 1 to get 0100 = 4. The value is -4.",
+"source": "notes"
+},
+{
+"q": "How does 4-bit 2's complement compare with 4-bit unsigned binary?",
+"options": [
+"Unsigned covers 0 to 15 while 2's complement covers -8 to +7, both using 16 patterns",
+"Unsigned covers 0 to 15 while 2's complement covers -7 to +7",
+"Unsigned covers 0 to 16 while 2's complement covers -8 to +8",
+"Both cover 0 to 15, but 2's complement adds a sign bit on top"
+],
+"answer": 0,
+"explanation": "Using the MSB for sign gives up the 'all positive' range of 0 to 15 and gains negatives, but the number of patterns stays at 16.",
+"source": "notes"
+},
+{
+"q": "Compute 7 - 4 in 4-bit 2's complement as 0111 + (2's complement of 0100). What is the final 4-bit result?",
+"options": [
+"1011",
+"0011",
+"0100",
+"10011"
+],
+"answer": 1,
+"explanation": "-4 = 1100 (0100 flips to 1011, plus 1 gives 1100). 0111 + 1100 = 10011, and discarding the carry leaves 0011 = +3.",
+"source": "notes"
+},
+{
+"q": "Why does the exam advice say to always state the number of bits?",
+"options": [
+"Because 2's complement only works with 8 bits",
+"Because the carry bit counts as an extra data bit",
+"Because the pattern and the range depend on the bit width, as with 0101 and 00000101",
+"Because zero has two forms unless the bit count is stated"
+],
+"answer": 2,
+"explanation": "The same value is written with different patterns at different widths, and the range changes with n.",
+"source": "notes"
+},
+{
+"q": "Which check best confirms that 1101 is -3 in 4-bit 2's complement?",
+"options": [
+"0011 + 1101 = 1111, which is all ones, so it is correct",
+"0011 + 1101 = 0000 with no carry out",
+"1101 + 1101 = 1010",
+"0011 + 1101 = 10000, and after discarding the carry the result is 0000"
+],
+"answer": 3,
+"explanation": "A number plus its negative should equal 0. The 4-bit sum is 10000, and discarding the carry leaves 0000.",
+"source": "notes"
+},
+{
+"q": "What happens if you take the 2's complement of the 4-bit number 0110 and then take the 2's complement of the result?",
+"options": [
+"You get the original number 0110 back",
+"You get 1001",
+"You get 1010",
+"You get 0000"
+],
+"answer": 0,
+"explanation": "0110 becomes 1010 (-6), and negating that gives flip 0101, plus 1 equals 0110. Negating twice returns the original number.",
+"source": "notes"
+},
+{
+"q": "What is -7 in 4-bit 1's complement?",
+"options": [
+"1001",
+"1111",
+"1000",
+"0001"
+],
+"answer": 2,
+"explanation": "+7 = 0111, and flipping every bit gives 1000. The pattern 1001 would be the 2's complement.",
+"source": "notes"
+},
+{
+"q": "In 8-bit 2's complement, how many nonzero positive values and how many negative values are there?",
+"options": [
+"128 positive and 127 negative",
+"127 positive and 128 negative",
+"127 positive and 127 negative",
+"128 positive and 128 negative"
+],
+"answer": 1,
+"explanation": "The range -128 to +127 has 127 values from +1 to +127, one zero, and 128 negative values. This is the asymmetry of 2's complement.",
+"source": "notes"
+},
+{
+"q": "A student says 1111 is the largest 4-bit 2's complement number because all its bits are 1. Which statement is correct?",
+"options": [
+"1111 is +15, so the student is right",
+"1111 is -7 and 0111 is the largest value",
+"1111 is -1 and the largest value is 0111 (+7)",
+"1111 is zero and 0111 is the largest value"
+],
+"answer": 2,
+"explanation": "1111 has MSB 1, so flip to 0000 and add 1 to get 1, meaning -1. The largest value is 0111 = +7.",
+"source": "notes"
+},
+{
+"q": "Which flaw of 1's complement is directly fixed by adding 1 in 2's complement?",
+"options": [
+"Negative numbers cannot be stored",
+"The MSB cannot be used as a sign",
+"Addition needs special sign rules",
+"There are two zeros, because -0 wraps back to 0000"
+],
+"answer": 3,
+"explanation": "In 2's complement, 1111 plus 1 gives 10000 and the carry is discarded, leaving 0000. There is only one zero.",
+"source": "notes"
+},
+{
+"q": "Which statement about 1's complement is NOT true?",
+"options": [
+"It negates a number by flipping every bit",
+"It is the standard representation in modern computers",
+"It has two representations of zero",
+"Addition needs an end-around carry step"
+],
+"answer": 1,
+"explanation": "Modern computers use 2's complement. The comparison table says 1's complement is not used today.",
+"source": "notes"
+},
+{
+"q": "A student reads 8-bit 11110110 as follows. Which reading is correct?",
+"options": [
+"Flip to 00001001, so the value is -9",
+"Flip to 00001001, add 1 to get 00001010, so the value is -10",
+"The MSB is 1 and the magnitude 1110110 is 118, so the value is -118",
+"Add 1 to get 11110111, so the value is -9"
+],
+"answer": 1,
+"explanation": "For a negative 2's complement number, apply the 2's complement again: flip then add 1 gives 00001010 = 10, so the value is -10.",
+"source": "notes"
+}
+]

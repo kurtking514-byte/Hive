@@ -1,0 +1,165 @@
+M1 Python Variables, Data Types, Expressions, and Statements
+Study notes on data types, variables, naming, operators, input and output, lists, tuples, and dictionaries
+
+PYTHON DATA TYPES
+★ Data type: defines the kind of value a variable can hold and the operations that can be performed on it.
+★ Dynamically typed: you do not declare the type explicitly, the interpreter determines it at runtime.
+Python has five main data types: Integer, Floating Point, String, Boolean, Null.
+
+INTEGER AND FLOATING POINT
+★ Integer: a zero, positive, or negative whole number, for example x = 10000000.
+Python has no explicitly defined limit on the value of an integer, so very long integers (dozens of digits) can be stored and printed unchanged.
+⚙ Integers can also be written in other bases: prefix 0b for binary, 0o for octal, 0x for hexadecimal.
+Examples: binaryVar = 0b1010 prints 10, octalVar = 0o14 prints 12, hexadecimalVar = 0xF prints 15.
+EASIER: print shows the ordinary decimal value, so 0b1010 is 8 + 2 = 10, 0o14 is 8 + 4 = 12, and 0xF is 15.
+★ Floating point: a number represented with a decimal point, and it may be negative.
+Examples: x = 9.999999999999 prints 9.999999999999 and x = -73.435 prints -73.435.
+
+STRINGS
+★ String: a sequence of bytes representing Unicode characters.
+Strings can be created in several ways, which differ by the delimiters and by whether the string is single-line or multiline.
+⚙ Double quote delimiters: string = "Flying Eagle", helpful for text containing single quotes or apostrophes.
+⚙ Single quote delimiters: string = 'Diving Whale', helpful for text containing double quotes.
+Example: print("You can place single quotes like 'this'") prints the text with the single quotes shown.
+Example: print('You can place double quotes like "this"') prints the text with the double quotes shown.
+⚙ Escape character: the backslash, and writing \\ inside a string prints one \ character.
+⚙ Triple quote delimiters make a multiline string that can be assigned to a variable, using triple single quotes or triple double quotes.
+Example: string = """This string spans / multiple lines / with the use of triple quotes""" then print(string).
+
+BOOLEAN AND NULL
+★ Boolean: determines the truth value of expressions and is either True or False.
+Example: booleanVal = True prints True.
+★ Null: defines a null variable or object and uses the None keyword.
+None can be assigned to any variable and can also be used in expressions.
+Example: emptyVal = None prints None.
+
+VARIABLES
+★ Variable: a name that can be assigned a value and then used to refer to that value throughout your code.
+Reason one: variables keep values accessible, for example storing the result of a time-consuming operation so it need not be repeated.
+Reason two: variables give values context, for example naming the value 28 as numStudents shows what it means.
+⚙ Create a variable with <variable name> = <value>; the assignment itself declares and initializes it, with no advance declaration or data type needed.
+A variable cannot be declared without an initial value.
+Example: a = 3 then print(a) prints 3.
+Variable assignment works from left to right.
+⚙ Names are case sensitive: after greeting = "Hello World", print(Greeting) fails with NameError: name 'Greeting' is not defined.
+
+VALID VARIABLE NAMES
+⚙ A name may contain uppercase and lowercase letters, digits 0 to 9, and underscores, must start with a letter or underscore, and cannot begin with a digit.
+Names are case-sensitive, so age, Age, and AGE are three different variables.
+Valid examples: String1, _a1p4a, list_of_names.
+Invalid examples because they start with a digit: 9lives, 99_ballons, 2beOrNot2Be.
+
+DESCRIPTIVE NAMES AND NAMING CONVENTIONS
+⚙ Use descriptive names, especially in complex programs, even if that needs multiple words and long names.
+Example: s = 3600 is ambiguous, seconds = 3600 is clearer, seconds_per_hour = 3600 is clearest.
+★ Naming conventions: Camel Case is myAge or favColor, Pascal Case is MyAge or FavColor, Snake Case is my_age or fav_color.
+★ Constant: Python has no true constants, but by convention UPPER_SNAKE_CASE marks values that should not change.
+Examples of constants: PI = 3.14159, MAX_STUDENTS = 50, TAX_RATE = 0.15.
+
+COMMENTS
+★ Comment: a line of text that does not affect how a program runs, documents what code does and why decisions were made, and starts with the # character.
+Python ignores lines starting with #.
+A block comment starts on a new line; an inline comment sits on the same line as the code it references, with # at the end of the line followed by the text.
+Example: print(greeting) # This is an inline comment.
+
+EXPRESSIONS AND STATEMENTS
+★ Expression: a combination of values, variables, and operators.
+A value by itself is an expression, and so is a variable by itself.
+Legal expressions, assuming x has been assigned a value: 15, x, x + 15, 15 > 10.
+★ Statement: a unit of code that the Python interpreter can execute, usually written on a single line.
+Assignment with = is a statement, and calling the print function is also a statement.
+
+OPERATORS
+★ Operator: a symbol such as + that performs an operation on one or more values, and the values it is applied to are called operands.
+★ Assignment operator =: takes the value to the right of the operator and assigns it to the name on the left.
+Example: x = 10 then print(x) prints 10.
+⚙ Operators are evaluated using the standard order of operations, and parentheses force certain operators to be evaluated first.
+★ Concatenation: for strings, combines two strings into one using the + operator.
+Example: print("Hel" + "lo") prints Hello.
+
+ARITHMETIC OPERATORS
+Addition uses the operator +.
+Subtraction uses the operator -.
+Multiplication uses the operator *.
+Division uses the operator /.
+Exponentiation uses the operator **.
+Floor Division uses the operator //.
+Modulo uses the operator %.
+EASIER: floor division drops the fractional part of a division and modulo gives the remainder (the source only names these two).
+
+AUGMENTED ASSIGNMENT OPERATORS
+★ Augmented assignment: a shorthand way to perform a binary operation on a variable and then assign the result back to that same variable.
+Example: count = 10, then count += 5 means count = count + 5.
+The source also lists count -= 2, count *= 3, and count /= 4.
+Worked example: count goes 10, 15, 13, 39, then 9.75.
+
+RELATIONAL OPERATORS
+★ Relational operators: compare two values or variables and return a Boolean value (True or False); syntax is <expression> <relational operator> <expression>.
+Equal to is ==, which checks if two values are equal.
+Not equal to is !=, which checks if two values are not equal.
+Greater than is >, which checks if the left value is greater than the right.
+Less than is <, which checks if the left value is less than the right.
+Greater than or equal to is >=, which checks if the left value is greater than or equal to the right.
+Less than or equal to is <=, which checks if the left value is less than or equal to the right.
+
+LOGICAL OPERATORS
+★ Logical operators: combine or manipulate Boolean values; syntax is <boolean expression> <logical operator> <boolean expression>.
+and returns True if both conditions are True.
+or returns True if at least one of the conditions is True.
+not returns the opposite Boolean value (negation).
+
+OUTPUT
+★ print(): function that displays text or values; text must be enclosed in a pair of quotes, single or double.
+Example: age = 23 then print(age) prints 23.
+⚙ print() always ends in a new line; to stay on the same line use the end parameter.
+Example: print("Hello!", end=" ") then print("My name is Janelle.") prints on the same line as Hello!.
+To print multiple strings in one output use +, for example print("Hello" + "World") prints HelloWorld.
+⚙ To print a combination of text and numbers use commas, for example print("I have ", no_of_classes, " classes.") with no_of_classes = 6.
+★ f-string: formats selected parts of a string by placing values or expressions inside curly braces.
+Example: with price = 67, f"The total price is {price:.2f} pesos" prints 67.00.
+Example: f"The total price is {price * 7} pesos" prints 469.
+Example: with department = "citcs", {department.upper()} inside an f-string prints CITCS.
+
+USER INPUT
+★ input(): function that asks the user for input, either name = input() after a print prompt or name = input("Enter your name: ").
+Example: name = input("Enter your name: ") then print(f"Hello {name}").
+⚙ User input is automatically a String, so type(age) shows str; convert it with type casting such as age = int(input("Enter your age: ")).
+
+SEQUENCE STRUCTURE
+★ Sequence: the generic term for an ordered set; the three most important types in the source are lists, tuples, and dictionary.
+★ List: an ordered collection of valid Python values, like an array in other languages, that can contain any object and is created with comma-separated values in square brackets.
+Examples: int_list = [1, 2, 3] and string_list = ['abc', 'def', 'ghi'].
+A list can be empty: empty_list = [].
+List elements need not share one data type: mixed_list = [1, 'abc', True, 2.34, None].
+A list can contain another list as an element: nested_list = [['a', 'b', 'c'], [1, 2, 3]].
+⚙ Access elements by index: lists are zero-indexed so the first element is index 0, and negative indices count from the end with -1 as the last element.
+Example with names = ['Alice', 'Bob', 'Craig', 'Diana', 'Eric']: names[0] is Alice, names[2] is Craig, names[-1] is Eric, names[-4] is Bob.
+★ Mutable: lists can be changed, for example names[0] = 'Ann' replaces Alice.
+⚙ Add elements: List.append(value) adds to the end; List.insert(index, value) adds at a specific index.
+Example: names.append('Sia') adds Sia at the end and names.insert(1, "Nikki") puts Nikki at index 1.
+⚙ List.remove(value) removes the first occurrence of a value.
+Example: names.remove("Bob") removes Bob.
+⚙ List.index(value) returns the index of the first item whose value matches.
+Example: names.index("Alice") gives 0.
+⚙ len(List) gives the length of the list and List.count(value) gives how many times a value occurs.
+Example: len(names) is 6 after Nikki and Sia are added and Bob is removed, and a = [1, 1, 1, 2, 3, 4] gives a.count(1) = 3.
+⚙ List.reverse() reverses the list; a.reverse() turns the list above into [4, 3, 2, 1, 1, 1].
+⚙ List.pop([index]) removes and returns the item at index, defaulting to the last item.
+Example: names.pop() returns 'Sia'.
+⚙ del List[index] removes the item at a specific index, and del List deletes the whole list.
+Example: del names[1] leaves ['Alice', 'Craig', 'Diana', 'Eric'].
+
+TUPLES
+★ Tuple: like a list except fixed-length and immutable, so values cannot be changed, added, or removed, and it is written with parentheses.
+Example: ip_address = ('10.20.30.40', 8080).
+The same indexing rules as lists also apply to tuples.
+⚙ A one-member tuple needs a trailing comma: ('Only member',) or 'Only member', without brackets.
+A one-member tuple can also be made with tuple(['Only member']).
+
+DICTIONARIES
+★ Dictionary: a collection of key-value pairs surrounded by curly braces, pairs separated by commas, and each key separated from its value by a colon.
+The same key cannot be used multiple times; reusing it overwrites the existing value.
+Example: state_capitals = {'Arkansas': 'Little Rock', 'Colorado': 'Denver', 'California': 'Sacramento', 'Georgia': 'Atlanta'}.
+⚙ To get a value, refer to it by its key: ca_capital = state_capitals['California'].
+⚙ To add a value use dictionary_name[key] = value; to delete a value use del dictionary_name[key].
+Example: state_capitals['Hawaii'] = 'Honolulu' adds a pair and del state_capitals['California'] removes one.

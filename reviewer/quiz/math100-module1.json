@@ -1,0 +1,362 @@
+[
+{
+"q": "In mathematics, a sequence in which each term after the first is obtained by multiplying the previous term by a fixed constant is called a(n)",
+"options": [
+"arithmetic sequence",
+"Fibonacci sequence",
+"geometric sequence",
+"quadratic sequence"
+],
+"answer": 2,
+"explanation": "Multiplying by a fixed constant defines a geometric sequence, for example 2, 4, 8, 16 where each term is multiplied by 2. An arithmetic sequence adds a constant, the Fibonacci sequence adds the two previous terms, and a quadratic sequence has constant second differences.",
+"source": "notes"
+},
+{
+"q": "In a geometric sequence, the value obtained by dividing any term by the term immediately before it is called the",
+"options": [
+"common ratio",
+"common difference",
+"explicit formula",
+"first term"
+],
+"answer": 0,
+"explanation": "Dividing a term by the previous term gives the common ratio r, for example 18/3 = 6 in 3, 18, 108. The common difference comes from subtraction in an arithmetic sequence, and the explicit formula and first term are different objects.",
+"source": "notes"
+},
+{
+"q": "In Pascal's triangle, every number that is not on the outer edge is obtained by",
+"options": [
+"doubling the number directly above it",
+"multiplying the two numbers directly above it",
+"subtracting the two numbers directly above it",
+"adding the two numbers directly above it"
+],
+"answer": 3,
+"explanation": "Each interior entry is the sum of the two entries above it. For example, in row 3 (1, 3, 3, 1) the entry 6 in row 4 is 3 + 3. Multiplying would give 9 and subtracting would give 0.",
+"source": "notes"
+},
+{
+"q": "A sequence has first differences that are not constant, but its second differences are all equal to the same non-zero constant. Its explicit formula has the form",
+"options": [
+"an = a * r^(n-1)",
+"an = a * n^2 + b * n + c, with a not equal to 0",
+"an = a1 + d(n - 1)",
+"an = a * n + b"
+],
+"answer": 1,
+"explanation": "Constant non-zero second differences mean a quadratic sequence with formula a*n^2 + b*n + c, where a equals half the second difference. For 3, 9, 19, 33 the first differences are 6, 10, 14 and the second difference is 4, so a = 2 and an = 2n^2 + 1. The geometric and arithmetic forms need a common ratio or a common difference.",
+"source": "notes"
+},
+{
+"q": "Which description of the golden ratio phi is correct?",
+"options": [
+"A rational number equal to exactly 1.6, shown by 8/5 in the Fibonacci sequence",
+"An irrational number of about 3.1416 that the ratios of successive Fibonacci numbers approach",
+"An irrational number of about 1.618 that the ratios of successive Fibonacci numbers approach",
+"An irrational number of about 2.718 that the ratios of successive Fibonacci numbers approach"
+],
+"answer": 2,
+"explanation": "The ratios 1.5, 1.667, 1.6, 1.625, 1.615, 1.619, ... settle near 1.618034, and phi is irrational. The value 8/5 = 1.6 is only one early ratio, 3.1416 is pi, and 2.718 is e.",
+"source": "notes"
+},
+{
+"q": "Which formula gives the nth term of a geometric sequence with first term a1 and common ratio r?",
+"options": [
+"an = a1 * r^(n-1)",
+"an = a1 + r(n-1)",
+"an = a1 * r^n",
+"an = (a1 * r)^(n-1)"
+],
+"answer": 0,
+"explanation": "The first term is multiplied by r exactly n - 1 times. Test with 2, 4, 8 (a1 = 2, r = 2): a3 = 2 * 2^2 = 8. The formula a1 * r^n would give 16, the formula a1 + r(n-1) is the arithmetic form, and (a1 * r)^(n-1) would give 16 as well.",
+"source": "notes"
+},
+{
+"q": "Which formula gives the nth N-agonal number, where N is the number of sides of the shape?",
+"options": [
+"n((N - 2)n + (N - 4))/2",
+"n((N - 2)n - (N - 4))/2",
+"n((N + 2)n - (N + 4))/2",
+"n((N - 4)n - (N - 2))/2"
+],
+"answer": 1,
+"explanation": "For N = 3 the correct formula gives n(n + 1)/2 (triangular) and for N = 4 it gives n^2 (square). Option A at N = 3 gives n(n - 1)/2, option C at N = 4 with n = 1 gives -1, and option D at N = 4 gives -n, so all three fail.",
+"source": "notes"
+},
+{
+"q": "Which rule generates the Fibonacci sequence 1, 1, 2, 3, 5, 8, 13, ...?",
+"options": [
+"Each term is twice the term before it",
+"Each term is the sum of the previous term and its term number",
+"Each term is the sum of the three terms before it",
+"Each term after the first two is the sum of the two terms before it"
+],
+"answer": 3,
+"explanation": "Each term is the sum of the two before it: 5 + 8 = 13 and 8 + 13 = 21. Doubling would give 1, 2, 4, 8 and adding the term number would give 1, 3, 6, 10, which are triangular numbers.",
+"source": "notes"
+},
+{
+"q": "What is the correct order of steps for finding the explicit formula of an arithmetic sequence?",
+"options": [
+"Substitute into an = a1 + d(n - 1); find a1 and d; simplify; check a known term",
+"Find a1 and d; substitute into an = a1 + d(n - 1); simplify; check with a known term",
+"Find a1 and d; simplify; substitute into an = a1 + d(n - 1); check with a known term",
+"Check a known term; find a1 and d; substitute into the formula; simplify"
+],
+"answer": 1,
+"explanation": "You must know a1 and d before substituting, you simplify after substituting, and the check comes last. Example: 15, 32, 49 gives a1 = 15, d = 17, an = 15 + 17(n - 1) = 17n - 2, and n = 3 gives 49.",
+"source": "notes"
+},
+{
+"q": "What is the correct order of steps in the method of successive differences?",
+"options": [
+"Extend the constant row; take differences until a row is constant; work backward by adding; read the next term",
+"Take differences repeatedly; work backward by adding; extend the constant row; read the next term",
+"Work backward by adding; take differences until a row is constant; extend the constant row; read the next term",
+"Take differences until a row is constant; extend that constant row; work backward by adding; read the next term"
+],
+"answer": 3,
+"explanation": "For 2, 57, 220, 575, 1230, 2317 the rows reach the constant row 24, 24. Extending it by one 24 and adding upward gives 132 + 24 = 156, 432 + 156 = 588, 1087 + 588 = 1675, and 2317 + 1675 = 3992. You cannot extend or add before a constant row has been found.",
+"source": "notes"
+},
+{
+"q": "Which statement is NOT true?",
+"options": [
+"The sequence 7, 4, 1, -2 is arithmetic with common difference -3.",
+"The sequence 5, 10, 20, 40 is geometric with common ratio 2.",
+"The sequence 1, 4, 9, 16, 25 is arithmetic because its first differences are constant.",
+"The sequence 1, 4, 9, 16, 25 has constant second differences."
+],
+"answer": 2,
+"explanation": "The first differences of 1, 4, 9, 16, 25 are 3, 5, 7, 9, which are not constant, so the sequence is not arithmetic. Its second differences are 2, 2, 2, so statement D is true. Statements A and B are true because 4 - 7 = -3 and 10/5 = 2.",
+"source": "notes"
+},
+{
+"q": "Which pair of figurate number type and formula is mismatched?",
+"options": [
+"Octagonal numbers and n(7n - 5)/2",
+"Triangular numbers and n(n + 1)/2",
+"Square numbers and n^2",
+"Pentagonal numbers and n(3n - 1)/2"
+],
+"answer": 0,
+"explanation": "The octagonal formula is n(6n - 4)/2, which gives 1, 8, 21, 40. The formula n(7n - 5)/2 gives 1, 9, 24, 46 and belongs to nonagonal numbers. The other three pairs are correct.",
+"source": "notes"
+},
+{
+"q": "The first three terms of an arithmetic sequence are 6, 11, 16. What is the 20th term?",
+"options": [
+"120",
+"96",
+"101",
+"106"
+],
+"answer": 2,
+"explanation": "a1 = 6 and d = 5, so an = 6 + 5(n - 1) = 5n + 1 and a20 = 5(20) + 1 = 101. The value 106 comes from using n instead of n - 1, 96 is the 19th term, and 120 comes from multiplying 6 by 20.",
+"source": "notes"
+},
+{
+"q": "What is the 7th term of the geometric sequence 5, 15, 45, ...?",
+"options": [
+"3645",
+"10935",
+"1215",
+"729"
+],
+"answer": 0,
+"explanation": "a1 = 5 and r = 15/5 = 3, so a7 = 5 * 3^6 = 5 * 729 = 3645. The value 10935 uses the exponent 7 (5 * 2187), 1215 is the 6th term (5 * 243), and 729 forgets to multiply by a1.",
+"source": "notes"
+},
+{
+"q": "Using the method of successive differences, what is the next term of 3, 8, 15, 24, 35, ...?",
+"options": [
+"46",
+"48",
+"50",
+"47"
+],
+"answer": 1,
+"explanation": "First differences are 5, 7, 9, 11 and the second differences are all 2, so the next first difference is 13 and the next term is 35 + 13 = 48. Check with the formula n^2 + 2n: n = 6 gives 36 + 12 = 48. The value 46 repeats the last difference 11.",
+"source": "notes"
+},
+{
+"q": "What is the 6th octagonal number?",
+"options": [
+"111",
+"81",
+"66",
+"96"
+],
+"answer": 3,
+"explanation": "Octagonal numbers use n(6n - 4)/2. For n = 6 this is 6(36 - 4)/2 = 6(32)/2 = 96. The value 111 is the 6th nonagonal number, 81 is the 6th heptagonal number, and 66 is the 6th hexagonal number.",
+"source": "notes"
+},
+{
+"q": "A student observes 81, -27, 9, -3 and claims the sequence cannot be geometric because its signs change. Which analysis is correct?",
+"options": [
+"It is arithmetic with common difference -108.",
+"It is geometric with common ratio 1/3 because each term's magnitude is divided by 3.",
+"It is geometric with common ratio -1/3, so its signs alternate.",
+"It is neither arithmetic nor geometric because a geometric ratio must be positive."
+],
+"answer": 2,
+"explanation": "Divide each term by the preceding term: -27/81 = -1/3, 9/(-27) = -1/3, and -3/9 = -1/3. The constant ratio makes it geometric, and the negative ratio explains the alternating signs. The differences are not -108, and a geometric ratio may be negative.",
+"source": "notes"
+},
+{
+"q": "How many dots are in the 12th triangular number?",
+"options": [
+"78",
+"72",
+"84",
+"66"
+],
+"answer": 0,
+"explanation": "Use T(n) = n(n + 1)/2: T(12) = 12(13)/2 = 156/2 = 78. Recheck by adding 1 through 12: (1 + 12) + (2 + 11) + ... + (6 + 7) = 6(13) = 78. The other values do not result from the triangular formula.",
+"source": "notes"
+},
+{
+"q": "Which statement describes the sum of the entries in row n of Pascal's triangle, with the top row numbered 0?",
+"options": [
+"The sum is n^2.",
+"The sum is n(n + 1)/2.",
+"The sum is 2n.",
+"The sum is 2^n."
+],
+"answer": 3,
+"explanation": "The row sum is 2^n. For example, row 3 sums to 1 + 3 + 3 + 1 = 8 = 2^3. The other choices are formulas for square numbers, triangular numbers, and twice the row number, respectively.",
+"source": "notes"
+},
+{
+"q": "Which statement about the golden spiral and examples in nature is NOT true?",
+"options": [
+"The golden ratio is approximately 1.618.",
+"Real nautilus shells match the golden spiral exactly.",
+"The illustrated spiral is drawn through squares whose side lengths are Fibonacci numbers.",
+"Patterns in real objects such as shells or leaves are usually approximate matches."
+],
+"answer": 1,
+"explanation": "The notes state that matches in real objects are usually approximate, so an exact match for real nautilus shells is not supported. The golden ratio is about 1.618, and the illustrated spiral uses squares with Fibonacci-number side lengths.",
+"source": "notes"
+},
+{
+"q": "Which description of an explicit formula for a sequence is correct?",
+"options": [
+"It defines each term only from the term immediately before it, so all earlier terms must be found first",
+"It gives any term an directly from its position n, without listing the earlier terms",
+"It lists the first several terms of the sequence and stops at the last term shown",
+"It gives only the constant that is added or multiplied at each step of the sequence"
+],
+"answer": 1,
+"explanation": "An explicit formula such as an = 2n gives the 155th term directly: a155 = 2(155) = 310, with no need to list the 154 terms before it. The first option describes a rule that needs earlier terms, the third option is only a list of terms, and the fourth option describes d or r alone, not a formula for an.",
+"source": "notes"
+},
+{
+"q": "Numbers that count the dots needed to build a regular shape such as a triangle, a square, or a pentagon are called",
+"options": [
+"Fibonacci numbers",
+"quadratic numbers",
+"golden numbers",
+"figurate numbers"
+],
+"answer": 3,
+"explanation": "Figurate numbers count dots in regular shapes, for example the triangular numbers 1, 3, 6, 10 and the square numbers 1, 4, 9, 16. Fibonacci numbers come from adding the two previous terms, a golden number is another name for the golden ratio phi, and quadratic describes a kind of sequence, not a dot count.",
+"source": "notes"
+},
+{
+"q": "In Pascal's triangle, if all even numbers are colored white and all odd numbers are colored black, the resulting pattern resembles the",
+"options": [
+"Sierpinski gasket",
+"golden spiral",
+"picture of the square numbers",
+"Fibonacci rabbit story"
+],
+"answer": 0,
+"explanation": "The even/odd coloring produces a pattern similar to the Sierpinski gasket, a triangle made of smaller and smaller triangles. The golden spiral is drawn through squares with Fibonacci side lengths, and the square numbers and the rabbit story are not produced by this coloring.",
+"source": "notes"
+},
+{
+"q": "Which formula gives the nth term of an arithmetic sequence with first term a1 and common difference d?",
+"options": [
+"an = a1 + dn",
+"an = a1 * d^(n-1)",
+"an = a1 + d(n - 1)",
+"an = d + a1(n - 1)"
+],
+"answer": 2,
+"explanation": "The first term is increased by d exactly n - 1 times. Test with 15, 32, 49 (a1 = 15, d = 17): a3 = 15 + 17(2) = 49. The formula a1 + dn gives 15 + 51 = 66, a1 * d^(n-1) gives 15 * 289 = 4335, and d + a1(n - 1) gives 17 + 30 = 47, so only the correct formula matches.",
+"source": "notes"
+},
+{
+"q": "What is the correct order of steps for finding the explicit formula of a quadratic sequence?",
+"options": [
+"Take first differences; take second differences; halve the second difference to get a; subtract a*n^2 from each term; read the leftover pattern to finish the formula",
+"Take first differences; halve the first difference to get a; subtract a*n^2 from each term; take second differences; read the leftover pattern to finish the formula",
+"Subtract a*n^2 from each term; take first differences; take second differences; halve the second difference to get a; read the leftover pattern to finish the formula",
+"Take first differences; take second differences; subtract a*n^2 from each term; halve the second difference to get a; read the leftover pattern to finish the formula"
+],
+"answer": 0,
+"explanation": "The value a is needed before a*n^2 can be subtracted, and a comes from half of the second difference, so the differences must be taken first. Example 5, 12, 23, 38: first differences 7, 11, 15; second difference 4; a = 2; subtracting 2n^2 leaves 3, 4, 5, 6 = n + 2; so an = 2n^2 + n + 2, and n = 4 gives 32 + 4 + 2 = 38. The other orders subtract before a is known or halve the wrong difference.",
+"source": "notes"
+},
+{
+"q": "Which order of steps correctly finds the 8th term of the geometric sequence given by an = 3 * 6^(n-1)?",
+"options": [
+"Substitute n = 8; multiply 3 by 6; raise 18 to the 7th power",
+"Substitute n = 8; simplify the exponent to 7; compute 6^7 = 279936; multiply by 3",
+"Compute 6^8; subtract 1; multiply by 3",
+"Substitute n = 8; simplify the exponent to 7; compute 6^7; add 3"
+],
+"answer": 1,
+"explanation": "Substitute, simplify the exponent 8 - 1 = 7, evaluate 6^7 = 279936, then multiply by 3 to get 839808. Multiplying 3 by 6 first puts the exponent on the whole product and gives 18^7 = 612220032. Computing 6^8 and then subtracting 1 misplaces the - 1, and adding 3 instead of multiplying gives 279939.",
+"source": "notes"
+},
+{
+"q": "Which statement about Pascal's triangle is NOT true?",
+"options": [
+"Each row reads the same forward and backward.",
+"The diagonal next to the edge consists of the counting numbers 1, 2, 3, 4, ...",
+"The next diagonal consists of the triangular numbers 1, 3, 6, 10, 15, ...",
+"Rows 2, 3, and 4 read as 121, 1331, and 14641, and every row n reads as 11^n."
+],
+"answer": 3,
+"explanation": "The powers-of-11 pattern works only for early rows, before any entry reaches 10. Row 5 is 1, 5, 10, 10, 5, 1, but 11^5 = 161051, so the statement fails. Symmetry, the counting-number diagonal, and the triangular-number diagonal are all true properties.",
+"source": "notes"
+},
+{
+"q": "A student finds the 10th term of the sequence 4, 10, 16, 22, ... as follows. Step 1: d = 10 - 4 = 6. Step 2: an = 4 + 6n. Step 3: a10 = 4 + 6(10) = 64. Which statement correctly identifies the error and the correct 10th term?",
+"options": [
+"Step 1 should use d = 22 - 4 = 18, so a10 = 4 + 18(9) = 166",
+"There is no error, so a10 = 64",
+"Step 2 should use n - 1, so an = 4 + 6(n - 1) and a10 = 58",
+"Step 3 should multiply instead of add, so a10 = 4 * 6^9 = 40310784"
+],
+"answer": 2,
+"explanation": "Step 1 is correct because 10 - 4 = 6. Step 2 is the error: the first term takes n - 1 steps of size d, so an = 4 + 6(n - 1) = 6n - 2 and a10 = 6(10) - 2 = 58. Check by listing: 4, 10, 16, 22, 28, 34, 40, 46, 52, 58. The value 64 is actually the 11th term, 166 uses a wrong common difference, and 40310784 uses the geometric idea of repeated multiplication.",
+"source": "notes"
+},
+{
+"q": "The terms 6, 15, 28, 45 have constant second differences. What is the 10th term of the sequence?",
+"options": [
+"231",
+"190",
+"201",
+"431"
+],
+"answer": 0,
+"explanation": "First differences are 9, 13, 17 and the second difference is 4, so a = 4/2 = 2. Subtracting 2n^2 leaves 4, 7, 10, 13, which equals 3n + 1, so an = 2n^2 + 3n + 1 and a10 = 200 + 30 + 1 = 231. Check by extending the differences 21, 25, 29, 33, 37, 41: 45 + 21 = 66, then 91, 120, 153, 190, 231. The value 190 is the 9th term, 201 assumes the leftover is the constant 1, and 431 forgets to halve the second difference.",
+"source": "notes"
+},
+{
+"q": "Which term of the arithmetic sequence 7, 12, 17, 22, ... equals 102?",
+"options": [
+"21st",
+"20th",
+"95th",
+"19th"
+],
+"answer": 1,
+"explanation": "Here a1 = 7 and d = 5, so an = 7 + 5(n - 1) = 5n + 2. Setting 5n + 2 = 102 gives n = 20. Check: a20 = 7 + 5(19) = 102. The value 19 comes from stopping at n - 1 = 19 or from using a1 + dn, 21 adds the extra 1 twice, and 95 stops after subtracting a1 without dividing by d.",
+"source": "notes"
+}
+]

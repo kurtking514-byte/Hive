@@ -1,0 +1,362 @@
+[
+{
+"q": "Which set correctly lists the three things a computer does?",
+"options": [
+"Accepts input, executes a mechanical procedure, and produces output",
+"Accepts input, makes judgments, and produces output",
+"Stores data, compresses data, and deletes data",
+"Accepts input, thinks creatively, and stores output"
+],
+"answer": 0,
+"explanation": "A computer accepts input, follows a mechanical procedure, and produces output; no judgment or creativity is involved.",
+"source": "notes"
+},
+{
+"q": "Which description best fits a mechanical procedure?",
+"options": [
+"A procedure that can only be carried out by physical gears and levers",
+"A step-by-step procedure in which every step can be done without thought or judgment",
+"A procedure that needs human intuition to decide each step",
+"A procedure that can only run on electronic hardware"
+],
+"answer": 1,
+"explanation": "A mechanical procedure is a series of steps that can be followed exactly with no thinking or judgment.",
+"source": "notes"
+},
+{
+"q": "A microwave oven's computer receives a 30-second button press and then switches on the heating element. Which item is the output?",
+"options": [
+"The person pressing the buttons",
+"The stored cooking time",
+"The electrical signal that turns on the heating element",
+"The keypad hardware"
+],
+"answer": 2,
+"explanation": "Output can be a signal that affects the outside world, such as the one that controls the heating element.",
+"source": "notes"
+},
+{
+"q": "What is a universal computer?",
+"options": [
+"A computer that runs every operating system ever made",
+"A computer that can solve problems needing human judgment",
+"A computer sold in every country",
+"A computer that can perform any mechanical computation on discrete inputs, limited only by practical constraints like memory and time"
+],
+"answer": 3,
+"explanation": "A universal computer can do any mechanical computation on discrete inputs, limited only by space and time.",
+"source": "notes"
+},
+{
+"q": "Which statement is NOT true?",
+"options": [
+"Computers are found only in laptops and phones",
+"Cars contain computers",
+"Microwave ovens contain computers",
+"Access cards contain computers"
+],
+"answer": 0,
+"explanation": "Computers are everywhere, including cars, TVs, microwave ovens, and access cards, so 'only laptops and phones' is false.",
+"source": "notes"
+},
+{
+"q": "Which pairing of a thinking tool and its contribution is correct?",
+"options": [
+"Language lets machines take on mental tasks",
+"Writing lets ideas be recorded and passed across time and distance",
+"Computing lets people share ideas and cooperate",
+"Language lets ideas be stored in electronic memory"
+],
+"answer": 1,
+"explanation": "Writing records ideas across time and distance, language shares ideas and enables cooperation, and computing lets machines do mental tasks.",
+"source": "notes"
+},
+{
+"q": "A student records a lecture with a microphone and saves the file to a USB drive. Which two IPOS functions are described, in order?",
+"options": [
+"Processing then Output",
+"Output then Input",
+"Storage then Input",
+"Input then Storage"
+],
+"answer": 3,
+"explanation": "The microphone brings data in (Input) and the USB drive saves it for later (Storage).",
+"source": "notes"
+},
+{
+"q": "Why is data at the input stage described as raw?",
+"options": [
+"It is not yet useful until it has been processed",
+"It has been damaged during entry",
+"It can only be entered with a keyboard",
+"It has already been saved permanently"
+],
+"answer": 0,
+"explanation": "Raw input data becomes useful information only after processing.",
+"source": "notes"
+},
+{
+"q": "A bank must handle millions of simple card transactions every day with extreme reliability. Which type of computer fits best?",
+"options": [
+"Supercomputer",
+"Microcomputer",
+"Mainframe",
+"Tablet"
+],
+"answer": 2,
+"explanation": "Mainframes are built for huge volumes of simple transactions with extreme reliability, as at banks and airlines.",
+"source": "notes"
+},
+{
+"q": "Why can a mainframe keep running with near-zero downtime when a component fails?",
+"options": [
+"It automatically turns off the failed part and slows down",
+"It restarts all of its virtual servers every hour",
+"It is cooled so well that parts never fail",
+"It has built-in backup components, so parts can be swapped without shutting the system down"
+],
+"answer": 3,
+"explanation": "Built-in redundancy lets parts be replaced while the system keeps running.",
+"source": "notes"
+},
+{
+"q": "Which statement about mainframes is NOT true?",
+"options": [
+"They focus on throughput and reliability rather than raw number-crunching",
+"They are obsolete and no longer used for card swipes or account transfers",
+"They can run thousands of virtual servers",
+"Airlines use them for ticketing"
+],
+"answer": 1,
+"explanation": "Mainframes are not obsolete; they still handle millions of card swipes and transfers daily.",
+"source": "notes"
+},
+{
+"q": "Which set lists the ways computers are classified in the notes?",
+"options": [
+"Brand, color, age, and weight",
+"Operating system, vendor, warranty, and price",
+"Purpose, size, speed, and cost",
+"Input, processing, output, and storage"
+],
+"answer": 2,
+"explanation": "Computers are classified by purpose, size, speed, and cost; IPOS describes the computing cycle, not classification.",
+"source": "notes"
+},
+{
+"q": "In a microcomputer (personal computer), what is the system unit?",
+"options": [
+"The monitor that shows results",
+"The keyboard and mouse together",
+"The device used only for backups",
+"The box that holds the main components"
+],
+"answer": 3,
+"explanation": "The system unit is the box holding the main components of a personal computer.",
+"source": "notes"
+},
+{
+"q": "A device has a touchscreen and no physical keyboard, is used with a finger or stylus, and has a camera, speakers, and microphone suited to video calls. Which type of computer is it?",
+"options": [
+"Tablet",
+"Mainframe",
+"Supercomputer",
+"Desktop microcomputer"
+],
+"answer": 0,
+"explanation": "These features describe a tablet: touchscreen operation, no physical keyboard, and built-in camera, speakers, and microphone.",
+"source": "notes"
+},
+{
+"q": "A traveler needs a computer that runs on a battery and weighs roughly 2 to 8 lbs. Which type fits?",
+"options": [
+"Laptop",
+"Desktop microcomputer",
+"Supercomputer",
+"Mainframe"
+],
+"answer": 0,
+"explanation": "Laptops are portable, battery-powered computers weighing roughly 2 to 8 lbs.",
+"source": "notes"
+},
+{
+"q": "A computer connected to a thermometer reads the temperature every minute. Which kind of input source is this?",
+"options": [
+"A person typing",
+"Sensors",
+"A network",
+"A stored file"
+],
+"answer": 1,
+"explanation": "Input can come from a person, a network, or sensors such as a thermometer or camera.",
+"source": "notes"
+},
+{
+"q": "According to the dictionary definition in the notes, which kinds of operations does a computer perform at high speed?",
+"options": [
+"Artistic and creative operations",
+"Physical and mechanical operations",
+"Social and emotional operations",
+"Mathematical and logical operations"
+],
+"answer": 3,
+"explanation": "The definition describes a programmable electronic device that performs mathematical and logical operations at high speed.",
+"source": "notes"
+},
+{
+"q": "Which sequence correctly shows the order of events in the grocery checkout example?",
+"options": [
+"The sale is recorded, the barcode is scanned, the screen shows the price, the barcode is looked up",
+"The barcode is looked up, the barcode is scanned, the screen shows the price, the sale is recorded",
+"The barcode is scanned, the barcode is looked up, the screen shows the price, the sale is recorded",
+"The screen shows the price, the barcode is scanned, the barcode is looked up, the sale is recorded"
+],
+"answer": 2,
+"explanation": "Scanning is Input, the lookup is Processing, the display is Output, and recording the sale is Storage.",
+"source": "notes"
+},
+{
+"q": "Which device-and-function pairing is correct?",
+"options": [
+"Speakers - input",
+"Scanner - input",
+"Hard drive - output",
+"Microphone - processing"
+],
+"answer": 1,
+"explanation": "A scanner brings data into the system, so it is an input device; a hard drive is storage and speakers are output.",
+"source": "notes"
+},
+{
+"q": "Which statement about the computing cycle is NOT true?",
+"options": [
+"Storage holds only final results and never raw input data",
+"Raw input data is not useful until it has been processed",
+"Output can be shown on a monitor, printed on a page, or played as sound",
+"Processing turns raw data into useful information"
+],
+"answer": 0,
+"explanation": "Storage can also hold raw input data, not only final results.",
+"source": "notes"
+},
+{
+"q": "A research team must run a huge weather forecasting simulation that needs very complex calculations. Which type of computer is built for this job?",
+"options": [
+"Mainframe",
+"Tablet",
+"Supercomputer",
+"Handheld computer"
+],
+"answer": 2,
+"explanation": "Supercomputers are the fastest, most powerful type and are used for huge calculations such as weather forecasting.",
+"source": "notes"
+},
+{
+"q": "Which pairing correctly contrasts the focus of a supercomputer and a mainframe?",
+"options": [
+"Supercomputer: huge numbers of simple transactions; mainframe: complex calculations",
+"Supercomputer: personal use; mainframe: portability",
+"Supercomputer: reliability through backups only; mainframe: weather simulations only",
+"Supercomputer: complex calculations; mainframe: huge volumes of simple transactions with extreme reliability"
+],
+"answer": 3,
+"explanation": "Supercomputers focus on complex calculations, while mainframes focus on handling huge volumes of simple transactions reliably.",
+"source": "notes"
+},
+{
+"q": "In the discussion of mainframes, what does the term throughput refer to?",
+"options": [
+"The speed of a single complex calculation",
+"How much work gets done",
+"The physical size of the machine",
+"The number of screens attached to the system"
+],
+"answer": 1,
+"explanation": "Throughput is how much work gets done, which is why mainframes are judged on throughput and reliability.",
+"source": "notes"
+},
+{
+"q": "A smartphone is used to manage email, contacts, and a calendar. Which role does it play?",
+"options": [
+"Supercomputer",
+"Mainframe",
+"System unit",
+"Personal Information Manager (PIM)"
+],
+"answer": 3,
+"explanation": "Handheld computers are often used as a Personal Information Manager for email, contacts, and calendar.",
+"source": "notes"
+},
+{
+"q": "Which list orders the types of computers from largest or most powerful to smallest, as in the study tips?",
+"options": [
+"Mainframe, Supercomputer, Microcomputer, Notebook, Tablet, Handheld",
+"Supercomputer, Mainframe, Microcomputer, Notebook, Tablet, Handheld",
+"Supercomputer, Microcomputer, Mainframe, Tablet, Notebook, Handheld",
+"Supercomputer, Mainframe, Notebook, Microcomputer, Handheld, Tablet"
+],
+"answer": 1,
+"explanation": "The study tips list the order as Supercomputer, Mainframe, Microcomputer (PC), Notebook or Laptop, Tablet, Handheld.",
+"source": "notes"
+},
+{
+"q": "Which pairing of computer type and key word is correct?",
+"options": [
+"Tablet - touchscreen",
+"Mainframe - portable",
+"Laptop - transactions",
+"PC - calculations"
+],
+"answer": 0,
+"explanation": "Tablet is touchscreen, mainframe is transactions and reliability, laptop is portable, and PC is personal use.",
+"source": "notes"
+},
+{
+"q": "Which of the following is classified in the notes as a handheld computer?",
+"options": [
+"A desktop with monitor and system unit",
+"A rack of mainframe processors",
+"A GPS device",
+"A supercomputer cluster"
+],
+"answer": 2,
+"explanation": "Handheld computers include smartphones, GPS devices, and handheld game consoles.",
+"source": "notes"
+},
+{
+"q": "Which statement is NOT true?",
+"options": [
+"Laptops cannot run on a battery",
+"Microcomputers are designed for personal or home use",
+"Almost all tablets include a camera, speakers, and a microphone",
+"Mainframes are used by banks, airlines, and retailers"
+],
+"answer": 0,
+"explanation": "Laptops are portable computers that run on a battery.",
+"source": "notes"
+},
+{
+"q": "A smart thermostat reads the room temperature, compares it with a target, and then shows the result on its display. Comparing the reading with the target is which IPOS function?",
+"options": [
+"Input",
+"Output",
+"Processing",
+"Storage"
+],
+"answer": 2,
+"explanation": "Working on the data to produce useful information is Processing; reading is Input and displaying is Output.",
+"source": "notes"
+},
+{
+"q": "A task cannot finish on a universal computer because the machine runs out of memory. What does this show?",
+"options": [
+"The task is not mechanical, so no computer could ever do it",
+"The limit comes from practical constraints such as memory space and time, not from the kind of computation",
+"A universal computer can only handle small tasks",
+"The inputs must have been discrete"
+],
+"answer": 1,
+"explanation": "A universal computer can perform any mechanical computation on discrete inputs, limited only by practical constraints like space and time.",
+"source": "notes"
+}
+]

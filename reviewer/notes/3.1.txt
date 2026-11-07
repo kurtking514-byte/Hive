@@ -1,0 +1,321 @@
+3.1 Bitwise Operations
+Bitwise operators: working with the individual bits inside a number
+
+BASIC CONCEPTS
+Binary operators && and || perform logical AND and OR on two boolean expressions.
+EASIER: "Binary operator" here just means an operator with two inputs. && and || look at two whole true/false answers, not at individual bits.
+★ Boolean logic can work with single bits.
+C, Java, Python and most languages provide operators for individual bits within a variable.
+★ Bitwise operators calculate an operation on each corresponding bit.
+Each pair of bits comes from the same position in both inputs.
+★ 0 is False and 1 is True.
+EASIER: Picture two rows of light switches. A bitwise operator compares the switches in the same column, one column at a time, and sets a new row of switches as the answer.
+Added example: in C, 5 && 3 is true, because both values are non-zero. But 5 & 3 = 1, because 101 & 011 = 001 bit by bit.
+
+THE BITWISE OPERATORS AT A GLANCE
+★ AND (&): 1 & 1 = 1, and every other pair gives 0.
+★ OR (|): 0 | 0 = 0, and every other pair gives 1.
+★ XOR (^): the result is 1 only when exactly one of the two bits is 1. Otherwise it is 0.
+★ NOT (~): ~bin returns the 1's complement of the number in binary. It flips every bit.
+★ Left Shift (<<): a << b adds b 0s to the right of a's binary representation.
+★ Right Shift (>>): a >> b chops off the last b bits and adds b 0s to the left.
+★ Bitwise AND, OR, and XOR are commutative. For example, 47 & 72 gives the same answer as 72 & 47.
+★ Bitwise NOT and Left Shift are memory space sensitive. Their results depend on how many bits (the memory space) you use, as the 8-bit and 16-bit examples below show.
+The examples use two numbers: 47 = 00101111 and 72 = 01001000 in 8-bit binary.
+⚙ How 47 becomes binary: 47 = 32 + 8 + 4 + 2 + 1 = 00101111
+⚙ How 72 becomes binary: 72 = 64 + 8 = 01001000
+
+BITWISE AND (&)
+⚙ Truth table: 0 & 0 = 0
+⚙ Truth table: 0 & 1 = 0
+⚙ Truth table: 1 & 0 = 0
+⚙ Truth table: 1 & 1 = 1
+EASIER: AND means "both must be on". The answer is 1 only if both bits are 1.
+EXAMPLE: 47 & 72
+⚙ Step 1: write both numbers in 8-bit binary: 00101111 and 01001000
+⚙ Step 2: compare column by column from the left: (0,0) (0,1) (1,0) (0,0) (1,1) (1,0) (1,0) (1,0)
+⚙ Step 3: apply AND to each pair: 0 0 0 0 1 0 0 0
+⚙ Step 4: join the results: 00001000
+⚙ Step 5: convert to decimal: 00001000 = 8
+⚙ 47 & 72 = 8
+
+BITWISE OR (|)
+⚙ Truth table: 0 | 0 = 0
+⚙ Truth table: 0 | 1 = 1
+⚙ Truth table: 1 | 0 = 1
+⚙ Truth table: 1 | 1 = 1
+EASIER: OR means "at least one is on". The answer is 0 only if both bits are 0.
+EXAMPLE: 47 | 72
+⚙ Step 1: write both numbers in 8-bit binary: 00101111 and 01001000
+⚙ Step 2: compare column by column from the left: (0,0) (0,1) (1,0) (0,0) (1,1) (1,0) (1,0) (1,0)
+⚙ Step 3: apply OR to each pair: 0 1 1 0 1 1 1 1
+⚙ Step 4: join the results: 01101111
+⚙ Step 5: convert to decimal: 64 + 32 + 8 + 4 + 2 + 1 = 111
+⚙ 47 | 72 = 111
+
+BITWISE XOR (EXCLUSIVE OR) ^
+⚙ Truth table: 0 ^ 0 = 0
+⚙ Truth table: 0 ^ 1 = 1
+⚙ Truth table: 1 ^ 0 = 1
+⚙ Truth table: 1 ^ 1 = 0
+EASIER: XOR means "different". The answer is 1 when the two bits are different, and 0 when they are the same.
+EXAMPLE: 47 ^ 72
+⚙ Step 1: write both numbers in 8-bit binary: 00101111 and 01001000
+⚙ Step 2: compare column by column from the left: (0,0) (0,1) (1,0) (0,0) (1,1) (1,0) (1,0) (1,0)
+⚙ Step 3: apply XOR to each pair: 0 1 1 0 0 1 1 1
+⚙ Step 4: join the results: 01100111
+⚙ Step 5: convert to decimal: 64 + 32 + 4 + 2 + 1 = 103
+⚙ 47 ^ 72 = 103
+
+BITWISE NOT (~)
+★ NOT flips every bit, so 0 becomes 1 and 1 becomes 0. The result is the 1's complement.
+EASIER: Because NOT flips every bit, including the leading zeros, a wider register gives a different result. More bits means more leading 1s.
+EXAMPLE: ~47 AND ~72
+⚙ ~47 = ~00101111 = 11010000 (8-bit)
+⚙ ~47 = ~00000000 00101111 = 11111111 11010000 (16-bit)
+⚙ ~72 = ~01001000 = 10110111 (8-bit)
+⚙ ~72 = ~00000000 01001000 = 11111111 10110111 (16-bit)
+⚙ Read as plain (unsigned) numbers: 11010000 = 208, 11111111 11010000 = 65488, 10110111 = 183, and 11111111 10110111 = 65463.
+⚙ Added example: in 2's complement, ~x = -x - 1. So ~47 = -48 and ~72 = -73 in both 8-bit and 16-bit.
+⚙ Added check: 11010000 (8-bit) is negative because its MSB is 1. Flip = 00101111, add 1 = 00110000 = 48. So 11010000 = -48 ✓
+This is why NOT helps explain how negative numbers are stored in 2's complement.
+
+LEFT SHIFT (<<)
+★ Left shifting logically doubles the number per bit shifted if no overflow occurs.
+★ Overflow occurs when a calculation's result goes beyond the system's representational capacity.
+Bits beyond the representational capacity are dropped. The bits are practically deleted.
+EASIER: Picture the bits as beads on a fixed-length wire. Pushing every bead one place left makes room for a new 0 on the right, but any bead pushed off the left end falls off and is lost.
+⚙ Step 1: write the number in the chosen bit width (8-bit or 16-bit).
+⚙ Step 2: slide every bit b places to the left.
+⚙ Step 3: bits that fall off the left end are dropped.
+⚙ Step 4: fill the empty places on the right with 0s.
+⚙ Step 5: convert the result back to decimal.
+EXAMPLE: 47 << 2
+⚙ (8-bit) 47 << 2: 00101111 << 2 = 10111100 = 188 (bits dropped on the left: 00)
+⚙ (16-bit) 47 << 2: 00000000 00101111 << 2 = 00000000 10111100 = 188
+⚙ Check: 47 × 4 = 188, which fits in 8 bits, so nothing was lost.
+⚙ In 16 bits the answer 188 fits, so the full doubling effect is kept.
+
+EXAMPLE: 47 << 4
+⚙ (8-bit) 47 << 4: 00101111 << 4 = 11110000 = 240 (bits dropped on the left: 0010)
+⚙ (16-bit) 47 << 4: 00000000 00101111 << 4 = 00000010 11110000 = 752
+⚙ Check: 47 × 16 = 752, which does not fit in 8 bits (maximum 255). Overflow: only the lowest 8 bits remain, giving 240.
+⚙ In 16 bits the answer 752 fits, so the full doubling effect is kept.
+
+EXAMPLE: 47 << 6
+⚙ (8-bit) 47 << 6: 00101111 << 6 = 11000000 = 192 (bits dropped on the left: 001011)
+⚙ (16-bit) 47 << 6: 00000000 00101111 << 6 = 00001011 11000000 = 3008
+⚙ Check: 47 × 64 = 3008, which does not fit in 8 bits (maximum 255). Overflow: only the lowest 8 bits remain, giving 192.
+⚙ In 16 bits the answer 3008 fits, so the full doubling effect is kept.
+
+EXAMPLE: 47 << 8
+⚙ (8-bit) 47 << 8: 00101111 << 8 = 00000000 = 0 (bits dropped on the left: 00101111)
+⚙ (16-bit) 47 << 8: 00000000 00101111 << 8 = 00101111 00000000 = 12032
+⚙ Check: 47 × 256 = 12032, which does not fit in 8 bits (maximum 255). Overflow: only the lowest 8 bits remain, giving 0.
+⚙ In 16 bits the answer 12032 fits, so the full doubling effect is kept.
+
+EXAMPLE: 72 << 2
+⚙ (8-bit) 72 << 2: 01001000 << 2 = 00100000 = 32 (bits dropped on the left: 01)
+⚙ (16-bit) 72 << 2: 00000000 01001000 << 2 = 00000001 00100000 = 288
+⚙ Check: 72 × 4 = 288, which does not fit in 8 bits (maximum 255). Overflow: only the lowest 8 bits remain, giving 32.
+⚙ In 16 bits the answer 288 fits, so the full doubling effect is kept.
+
+EXAMPLE: 72 << 4
+⚙ (8-bit) 72 << 4: 01001000 << 4 = 10000000 = 128 (bits dropped on the left: 0100)
+⚙ (16-bit) 72 << 4: 00000000 01001000 << 4 = 00000100 10000000 = 1152
+⚙ Check: 72 × 16 = 1152, which does not fit in 8 bits (maximum 255). Overflow: only the lowest 8 bits remain, giving 128.
+⚙ In 16 bits the answer 1152 fits, so the full doubling effect is kept.
+
+EXAMPLE: 72 << 6
+⚙ (8-bit) 72 << 6: 01001000 << 6 = 00000000 = 0 (bits dropped on the left: 010010)
+⚙ (16-bit) 72 << 6: 00000000 01001000 << 6 = 00010010 00000000 = 4608
+⚙ Check: 72 × 64 = 4608, which does not fit in 8 bits (maximum 255). Overflow: only the lowest 8 bits remain, giving 0.
+⚙ In 16 bits the answer 4608 fits, so the full doubling effect is kept.
+
+EXAMPLE: 72 << 8
+⚙ (8-bit) 72 << 8: 01001000 << 8 = 00000000 = 0 (bits dropped on the left: 01001000)
+⚙ (16-bit) 72 << 8: 00000000 01001000 << 8 = 01001000 00000000 = 18432
+⚙ Check: 72 × 256 = 18432, which does not fit in 8 bits (maximum 255). Overflow: only the lowest 8 bits remain, giving 0.
+⚙ In 16 bits the answer 18432 fits, so the full doubling effect is kept.
+
+RIGHT SHIFT (>>)
+★ Right shifting logically generally halves the number per bit shifted.
+EASIER: Right shift is the mirror image. Every bead slides right, the beads that fall off the right end are lost, and 0s are added on the left.
+⚙ Step 1: write the number in the chosen bit width (8-bit or 16-bit).
+⚙ Step 2: slide every bit b places to the right.
+⚙ Step 3: the last b bits fall off and are dropped.
+⚙ Step 4: fill the empty places on the left with 0s.
+⚙ Step 5: convert the result back to decimal.
+EXAMPLE: 47 >> 2
+⚙ (8-bit) 47 >> 2: 00101111 >> 2 = 00001011 = 11 (bits dropped on the right: 11)
+⚙ (16-bit) 47 >> 2: 00000000 00101111 >> 2 = 00000000 00001011 = 11
+⚙ Check: 47 ÷ 4 = 11.75, and 11 is that value rounded down.
+
+EXAMPLE: 47 >> 4
+⚙ (8-bit) 47 >> 4: 00101111 >> 4 = 00000010 = 2 (bits dropped on the right: 1111)
+⚙ (16-bit) 47 >> 4: 00000000 00101111 >> 4 = 00000000 00000010 = 2
+⚙ Check: 47 ÷ 16 = 2.9375, and 2 is that value rounded down.
+
+EXAMPLE: 47 >> 6
+⚙ (8-bit) 47 >> 6: 00101111 >> 6 = 00000000 = 0 (bits dropped on the right: 101111)
+⚙ (16-bit) 47 >> 6: 00000000 00101111 >> 6 = 00000000 00000000 = 0
+⚙ Check: 47 ÷ 64 = 0.734375, and 0 is that value rounded down.
+
+EXAMPLE: 47 >> 8
+⚙ (8-bit) 47 >> 8: 00101111 >> 8 = 00000000 = 0 (bits dropped on the right: 00101111)
+⚙ (16-bit) 47 >> 8: 00000000 00101111 >> 8 = 00000000 00000000 = 0
+⚙ Check: 47 ÷ 256 = 0.183594, and 0 is that value rounded down.
+
+EXAMPLE: 72 >> 2
+⚙ (8-bit) 72 >> 2: 01001000 >> 2 = 00010010 = 18 (bits dropped on the right: 00)
+⚙ (16-bit) 72 >> 2: 00000000 01001000 >> 2 = 00000000 00010010 = 18
+⚙ Check: 72 ÷ 4 = 18, and 18 is that value rounded down.
+
+EXAMPLE: 72 >> 4
+⚙ (8-bit) 72 >> 4: 01001000 >> 4 = 00000100 = 4 (bits dropped on the right: 1000)
+⚙ (16-bit) 72 >> 4: 00000000 01001000 >> 4 = 00000000 00000100 = 4
+⚙ Check: 72 ÷ 16 = 4.5, and 4 is that value rounded down.
+
+EXAMPLE: 72 >> 6
+⚙ (8-bit) 72 >> 6: 01001000 >> 6 = 00000001 = 1 (bits dropped on the right: 001000)
+⚙ (16-bit) 72 >> 6: 00000000 01001000 >> 6 = 00000000 00000001 = 1
+⚙ Check: 72 ÷ 64 = 1.125, and 1 is that value rounded down.
+
+EXAMPLE: 72 >> 8
+⚙ (8-bit) 72 >> 8: 01001000 >> 8 = 00000000 = 0 (bits dropped on the right: 01001000)
+⚙ (16-bit) 72 >> 8: 00000000 01001000 >> 8 = 00000000 00000000 = 0
+⚙ Check: 72 ÷ 256 = 0.28125, and 0 is that value rounded down.
+
+BITWISE AND APPLICATIONS
+★ AND compares two binary numbers bit by bit.
+AND results in 1 only if both corresponding bits are 1.
+Demonstrated using 16-bit register examples. A register is a small fixed-size storage place for bits.
+VB.NET, JavaScript, and Python can perform AND operations.
+JavaScript and Python use the ampersand (&) operator. VB.NET uses the keyword And.
+★ AND with 1 can determine whether a number is odd. This checks the rightmost bit.
+⚙ 47 & 1 = 00101111 & 00000001 = 00000001 = 1, so 47 is odd.
+⚙ 72 & 1 = 01001000 & 00000001 = 00000000 = 0, so 72 is even.
+★ Bitmasks manage registers containing status flags.
+Example: controlling central heating in different rooms. Each bit in a register stands for one room's heater (1 = on, 0 = off).
+⚙ Added example: bit 0 = kitchen, bit 1 = dining room, bit 2 = lounge, bit 3 = bedroom.
+⚙ Register 00000111 means kitchen, dining room, and lounge are on.
+⚙ Is the kitchen on? 00000111 & 00000001 = 00000001. The result is non-zero, so yes.
+⚙ Is the bedroom on? 00000111 & 00001000 = 00000000. The result is zero, so no.
+⚙ Turn off kitchen and dining room: AND with the flipped mask. The mask 00000011 flips to 11111100, and 00000111 & 11111100 = 00000100. Only the lounge is left on.
+Bitwise operations allow efficient data manipulation.
+They are useful for systems programming, embedded control, and graphics.
+
+BITWISE OR APPLICATIONS
+★ OR compares corresponding bits. If either bit in a pair is 1, the result is 1.
+VB.NET uses the keyword Or. JavaScript uses the vertical bar |. Python uses the vertical bar |.
+★ OR manipulates bit flags using bit masks. It is the tool for switching flags on.
+Example: a mask selectively turns on the kitchen and dining room heaters.
+⚙ Mask for kitchen and dining room: 00000011
+⚙ Start with only the lounge on: 00000100
+⚙ 00000100 | 00000011 = 00000111. Kitchen and dining room are now on, and the lounge is still on.
+The mask does not disturb the other bits. A 0 in the mask leaves the matching bit in the register unchanged.
+★ A mask consisting of all ones can activate all devices simultaneously.
+⚙ 00000100 | 11111111 = 11111111. Every heater is on.
+
+BITWISE XOR APPLICATIONS
+★ XOR outputs 1 only if the two input bits are different.
+VB.NET, JavaScript, and Python implement XOR with varying syntax.
+VB.NET uses the Xor keyword. JavaScript and Python use the ^ operator.
+Careful: in VB.NET the ^ symbol means "raised to a power", not XOR.
+★ XOR with a bitmask can invert or toggle specific bits within a register.
+⚙ 00000111 ^ 00000010 = 00000101. The dining room heater was on and is now off.
+⚙ 00000101 ^ 00000010 = 00000111. The dining room heater was off and is now on again.
+★ XOR is a fundamental component of many cryptographic systems. XOR is used in encryption algorithms.
+XOR is valued for speed and simplicity in data processing.
+★ XORing a value with a key produces a ciphertext. Applying the same key to the ciphertext recovers the original data.
+EXAMPLE: XOR ENCRYPTION AND DECRYPTION
+⚙ Added example: data = 72 = 01001000 and key = 47 = 00101111
+⚙ Encrypt: 01001000 ^ 00101111 = 01100111 (ciphertext, which is 103)
+⚙ Decrypt: 01100111 ^ 00101111 = 01001000 = 72, the original data ✓
+⚙ Why it works: x ^ key ^ key = x, because XOR with the same value twice cancels out.
+
+WHY USE BITWISE OPERATORS?
+Computers typically allocate memory in bytes (8 bits).
+Bitwise operators pack multiple boolean flags into a single byte.
+This is crucial for embedded systems with limited memory.
+EASIER: Instead of using one whole byte to store a single yes/no answer, you can store 8 yes/no answers in one byte.
+★ Unix file permissions, such as 644 or 777, illustrate bit toggling. Bits represent read, write, and execute permissions.
+⚙ Each permission has a weight: read (r) = 4, write (w) = 2, execute (x) = 1.
+⚙ 644 means the owner has 6 = 4 + 2 = read and write, the group has 4 = read only, and others have 4 = read only. In bits: 110 100 100.
+⚙ 777 means everyone has 7 = 4 + 2 + 1 = read, write, and execute. In bits: 111 111 111.
+⚙ Added example: can the owner of a 644 file write? The owner digit is 6. 6 & 2 = 110 & 010 = 010 = 2. Non-zero, so yes.
+⚙ Added example: can the group write? The group digit is 4. 4 & 2 = 100 & 010 = 000 = 0. Zero, so no.
+
+THE 6 BITWISE OPERATORS
+★ AND (&): returns 1 only if both bits are 1. AND is useful for checking whether a specific permission is active.
+★ OR (|): returns 1 if either bit is 1. OR combines or sets specific flags.
+⚙ Added example: give the group write permission on a read-only digit. 4 | 2 = 100 | 010 = 110 = 6, which is read and write.
+★ XOR (^): returns 1 if the bits are different. XOR is often used to toggle a permission, which removes it if it is currently set.
+⚙ Added example: 7 ^ 2 = 111 ^ 010 = 101 = 5. Write was set, so it is removed.
+⚙ Added example: 5 ^ 2 = 101 ^ 010 = 111 = 7. Write was not set, so XOR adds it. This is why XOR toggles instead of only removing.
+⚙ Added example: to remove a permission safely whether or not it is set, use AND with the flipped mask. 7 & ~2 = 111 & 101 = 101 = 5. And 5 & ~2 = 101 & 101 = 101 = 5 still.
+★ NOT (~): flips all bits in a single number. NOT explains how negative numbers are represented using 2's complement.
+★ Left Shift (<<) and Right Shift (>>): shift bits by a specified amount. Shifts effectively multiply or divide the number by powers of two.
+
+LOGICAL SHIFT CONCEPTS
+★ Logical Left Shift moves bits to the left. It effectively multiplies the value by 2 for each place moved.
+When a 1 bit is pushed off the leftmost end, the value overflows. The doubling effect is then lost.
+⚙ Added example: 5 << 1 = 00000101 << 1 = 00001010 = 10. 5 << 3 = 00101000 = 40. Each shift doubles the number.
+⚙ Added example: overflow. 200 << 1 in 8 bits: 11001000 << 1 = 10010000 = 144, not 400. The leftmost 1 was pushed off. 400 − 256 = 144.
+★ Logical Right Shift moves bits to the right. It effectively divides the value by 2 for each place moved.
+Shifting odd numbers causes a rounding error. The remainder is lost, so the result is rounded down.
+⚙ Added example: 12 >> 1 = 00001100 >> 1 = 00000110 = 6. This is exact because 12 is even.
+⚙ Added example: 13 >> 1 = 00001101 >> 1 = 00000110 = 6. The true answer is 6.5, and the remainder is lost.
+
+PRACTICAL APPLICATIONS
+RGB colour codes can pack and unpack 32-bit RGB color codes.
+32-bit RGB color codes represent Alpha, Red, Green, and Blue channels, 8 bits each.
+Packing and unpacking uses logical shifts. AND operations are used for masking. OR operations combine bytes.
+⚙ Layout: Alpha is bits 31 to 24, Red is bits 23 to 16, Green is bits 15 to 8, and Blue is bits 7 to 0.
+⚙ Pack: color = (Alpha << 24) | (Red << 16) | (Green << 8) | Blue
+⚙ Unpack: Red = (color >> 16) & 0xFF. Shift the wanted channel down to the right end, then mask off everything else with AND.
+EXAMPLE: PACK AND UNPACK AN ORANGE COLOUR
+⚙ Added example: Alpha = 255 (FF), Red = 255 (FF), Green = 128 (80), Blue = 0 (00).
+⚙ Alpha << 24 = FF000000
+⚙ Red << 16 = 00FF0000
+⚙ Green << 8 = 00008000
+⚙ Blue = 00000000
+⚙ OR them together: FFFF8000
+⚙ Unpack Red: FFFF8000 >> 16 = FFFF, then & FF = FF = 255 ✓
+⚙ Unpack Green: FFFF8000 >> 8 = FFFF80, then & FF = 80 = 128 ✓
+⚙ Unpack Blue: FFFF8000 & FF = 00 = 0 ✓
+Visual Basic.NET demonstrates manually manipulating channels to create a specific color.
+JavaScript can convert separate RGB values into a single hexadecimal color code.
+⚙ Added example: (255 << 16) | (128 << 8) | 0 = 16744448, which is FF8000 in hex, so the CSS colour is #FF8000.
+JavaScript bit operations use signed 32-bit numbers. A packed value with the top bit set can show as negative. Adding >>> 0 reads it as unsigned.
+Shifts are used in web development. Techniques convert between different formats.
+★ RGB 5-6-5 uses fewer bits to save memory. It packs one colour into 16 bits: 5 bits red, 6 bits green, 5 bits blue.
+⚙ Pack: color = (Red5 << 11) | (Green6 << 5) | Blue5
+⚙ Shrink an 8-bit channel to fewer bits by shifting right: 255 >> 3 = 31 (5 bits), and 255 >> 2 = 63 (6 bits).
+⚙ Added example: white = (31 << 11) | (63 << 5) | 31 = 63488 + 2016 + 31 = 65535 = FFFF in hex.
+⚙ Added example: pure red = (31 << 11) | 0 | 0 = 63488 = F800 in hex.
+
+COMMON MISTAKES
+Do not confuse & with &&, or | with ||. The single symbols work bit by bit. The double symbols work on whole true/false values.
+Do not forget the bit width. ~47 is 11010000 in 8 bits but 11111111 11010000 in 16 bits.
+Do not assume a left shift always doubles. If a 1 is pushed off the end, the result is wrong.
+Do not use XOR to "remove" a permission without checking it is set. XOR toggles.
+Do not use ^ as XOR in VB.NET. Use Xor.
+
+QUICK SELF-TEST
+Q: What is 47 & 72?
+★ 8 (00101111 & 01001000 = 00001000).
+Q: What is 47 | 72?
+★ 111 (01101111).
+Q: What is 47 ^ 72?
+★ 103 (01100111).
+Q: What is ~72 in 8 bits?
+★ 10110111 (which is 183 as an unsigned number, or -73 in 2's complement).
+Q: What is 47 << 4 in 8 bits, and in 16 bits?
+★ 240 in 8 bits (11110000, bits were lost). 752 in 16 bits (00000010 11110000).
+Q: What is 72 >> 6?
+★ 1 (72 ÷ 64 = 1.125, rounded down).
+Q: Which operator and value tell you if a number is odd?
+★ AND with 1. If n & 1 is 1, the number is odd.
+Q: How can you toggle a bit?
+★ XOR with a mask that has a 1 in that bit's place.

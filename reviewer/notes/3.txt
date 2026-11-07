@@ -1,0 +1,110 @@
+3 Decision Control Structure
+CC2 Introduction to Computer Programming: Python conditionals, nested conditionals, and match case
+
+1. Conditionals and Boolean values
+★ Conditional expressions use the keywords if, elif, and else to let a Python program perform different actions depending on a Boolean condition (True or False)
+★ Boolean: a value that is one of two values, True or False
+Any expression in Python can be evaluated to give True or False
+When two values are compared, the expression is evaluated and Python returns the Boolean answer
+A Boolean can be declared as a variable, for example test = True
+A Boolean can be the result of an expression, as in the next six lines
+print(10 > 9) # Outputs True
+print(10 == 0) # Outputs False
+print(10 < 9) # Outputs False
+print(10 >= 9) # Outputs True
+print(10 <= 9) # Outputs False
+print(10 != 10) # Outputs False
+⚙ not negates (reverses) the value of a Boolean variable
+Example: test = True, then print(not test) outputs False
+
+2. The and and or operators
+★ and operator: a special operator that judges whether all arguments in a set are True
+★ or operator: a special operator that judges whether at least one argument in a set is True
+⚙ With Booleans, x and y is True only when both are True, otherwise it is False
+Example: True and True gives True, True and False gives False
+⚙ With Booleans, x or y is True when at least one is True, and False only when both are False
+Example: True or False gives True, False or False gives False
+⚙ and with numbers or strings: if both arguments are True (not 0 and not an empty string) it evaluates to the second argument
+⚙ Otherwise, and evaluates to the first False argument
+Example: x = 1, y = 2, z = x and y gives z = 2 (the second value)
+Example: x = 0, y = 1, z = x and y gives z = 0 (the first False argument)
+⚙ or with numbers or strings: if at least one argument is True it evaluates to the first True argument
+⚙ Otherwise (both are False) or evaluates to the second argument
+Example: x = 1, y = 0, z = x or y gives z = 1
+Example: x = 0, y = 0, z = x or y gives z = 0 (the second argument)
+EASIER: and hands back the first False value it meets, or the second value if none is False; or hands back the first True value it meets, or the second value if none is True
+
+3. The IF statement
+★ IF statement: one of the most used conditional statements, it decides whether certain statements are executed or not
+⚙ IF checks a condition: if it is True the body (block) is executed, if it is False the body is skipped
+⚙ IF syntax: the line if condition: followed by an indented body
+Example: if True: print("It is true!") outputs It is true!
+Example: if False: print("This won't get printed.") prints nothing
+The condition can be any valid expression, for example if 2 + 2 == 4: print("I know math!") outputs I know math!
+Variables can be used in the condition: x = 10, then if(x < 15): prints Number is smaller than 15
+⚙ Integer rule: any integer is treated as True except 0, which is treated as False
+Example: a = 7 and b = 0, so if (a): prints true
+⚙ String rule: a String with a value is treated as True and an empty string is treated as False
+Example: a = "Hello" and b = "", so if (a): prints true
+EASIER: zero and the empty string count as False, everything else counts as True
+
+4. The ELIF statement
+★ ELIF: used to check additional conditions if the first condition (usually the IF statement) is evaluated as False
+Example: a = 5, b = 5, if b > a is False so elif a == b runs and prints a and b are equal
+⚙ When adding multiple conditions, use ELIF instead of multiple IF statements
+Reason: ELIF statements do not execute if the IF statement is already found to be True
+Multiple IF statements can be used instead of ELIF, but this is generally not recommended
+EASIER: IF and ELIF form one chain, so once one branch is True the rest are skipped
+
+5. The ELSE statement
+★ ELSE: the statement used if none of the previous conditions are met
+ELSE syntax: if condition: body, then else: body
+⚙ ELSE executes its body only if all preceding conditional statements evaluate to False, otherwise it is not executed
+ELSE is usually the last statement after IF and ELIF
+Example: if True: print("It is true!") else: print("This won't get printed.") prints It is true!
+Example: if False: print("This won't get printed.") else: print("It is false!") prints It is false!
+
+6. Nested IF-ELSE statements
+★ Nested IF-ELSE: an IF statement or ELIF statement present inside another IF or ELIF block
+Nested if-else can be used to check for multiple conditions before making a decision
+⚙ Nested syntax: outer if condition1 contains an inner if condition2 with its own else, and the outer else follows
+Inner if body runs when both condition1 and condition2 are true
+Inner else body runs when condition1 is true and condition2 is false
+Outer else body runs when condition1 is false
+Example: num = 7, if (num != 0): then if (num > 0): prints Number is a positive integer
+⚙ Even or odd check: get the remainder of num divided by 2 with the % operator, and a remainder of 0 means even
+Spec: if num is greater than 0 check num % 2 == 0, print The number is positive and is even. when true, otherwise print The number is positive but odd.
+Spec: if num is not greater than 0, print The number is not positive.
+Worked example: num = 67, 67 > 0 is True, 67 % 2 is 1 (not 0), so the output is The number is positive but odd.
+Nested conditionals are also used for validation and authentication when the program asks for user input
+Case scenario: a simple login system asks for a username and password and uses nested if-else statements to authenticate the user and authorize access
+⚙ Login logic: the outer if checks username == "admin", the inner if checks password == "admin1234password"
+Correct username and correct password prints Login successful.
+Correct username and wrong password prints Invalid password.
+Wrong username prints Invalid username. (the outer else)
+
+7. Review of conditional statements
+Conditional statements rely on Boolean expressions (conditions) before a statement is executed or not
+Conditionals can be chained together with the elif clause and end with an else clause
+Conditionals can be nested to check for multiple conditions before creating a decision
+
+8. Match case statements
+★ Match case statement: a value-matching decision-control structure introduced in Python 3.10
+It is similar to chained conditional statements, but it does not support the use of relational or logical operators
+It is best used when an expression may evaluate to multiple known values
+Advantage, conciseness: complex branching logic can be expressed in a concise and readable manner
+Advantage, readability: pattern matching is more readable and self-explanatory because it closely resembles the problem domain
+Advantage, safety: exhaustive pattern matching, ensuring that all possible cases are handled
+⚙ Match syntax: the line match <expression>: then an indented case <value>: then the code on a further indented line
+Example: code = "A" with case "A" printing Alpha, case "B" printing Bravo, case "C" printing Charlie gives the output Alpha
+⚙ Or operator in a case: the pipe symbol | checks for more than one value match in one case
+Example: numValue = 4 with case 1 | 3 | 5 | 7 | 9 printing odd and case 2 | 4 | 6 | 8 | 10 printing even gives 4 is an even number.
+⚙ If guard: an additional if statement can be added to a case as an extra condition check, written case <value1> | <value2> if <condition>:
+⚙ Default case: the underscore _ used as the last case (case _:) runs when there is no match
+Example No Match: the A, B, C example with an added case _: printing Unknown Code
+Discussion example: bank menu with A Withdraw with Card, B Withdraw with QR, C Deposit, D Check Balance, and bankBalance = 1000
+case "A" | "B" if bankBalance > 0 prints You have withdrawn money.
+case "C" prints You have successfully deposited your money.
+case "D" prints Your current balance is followed by bankBalance
+case _ prints Please input A, B, C, or D only.
+Worked example: input B with balance 1000 prints You have withdrawn money., input X prints Please input A, B, C, or D only.

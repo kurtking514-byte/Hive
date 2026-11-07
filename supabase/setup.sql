@@ -43,6 +43,16 @@ create or replace function public.get_current_exam() returns text
 language sql stable security definer set search_path = public
 as $$ select current_exam from public.app_settings where id = 1 $$;
 
+-- The subject list grows by itself: every subject on an upload you APPROVED (or used) shows up
+-- in the students' subject search. Only the subject name, course and a count leave the database.
+create or replace function public.list_subjects() returns table (subject text, course text, files bigint)
+language sql stable security definer set search_path = public
+as $$
+  select subject, course, count(*) from public.submissions
+  where status in ('approved', 'used') and lower(subject) <> 'unknown'
+  group by subject, course
+$$;
+
 -- ---------------------------------------------------------------------
 -- 3. Submissions: one row per uploaded file, with what it is about
 -- ---------------------------------------------------------------------
@@ -110,7 +120,7 @@ create policy "admins delete submissions" on public.submissions
 -- Start from zero, then give back only what Hive needs. This keeps things tight
 -- even if "Automatically expose new tables" was ON when the project was created.
 revoke all on public.submissions, public.app_settings, public.admins from anon, authenticated;
-revoke execute on function public.check_upload_code(text), public.is_admin(), public.get_current_exam() from public;
+revoke execute on function public.check_upload_code(text), public.is_admin(), public.get_current_exam(), public.list_subjects() from public;
 
 grant usage on schema public to anon, authenticated;
 grant insert                 on public.submissions  to anon, authenticated;
@@ -120,6 +130,7 @@ grant select                 on public.admins       to authenticated;
 grant execute on function public.check_upload_code(text) to anon, authenticated;
 grant execute on function public.is_admin()              to anon, authenticated;
 grant execute on function public.get_current_exam()      to anon, authenticated;
+grant execute on function public.list_subjects()         to anon, authenticated;
 
 -- ---------------------------------------------------------------------
 -- 5. File storage: private bucket, 20 MB max, documents / PDF / slides only

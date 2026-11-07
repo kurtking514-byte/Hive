@@ -1,0 +1,362 @@
+[
+{
+"q": "Which term refers to the recurrence or duplication of an action or event?",
+"options": [
+"Selection",
+"Initialization",
+"Iteration",
+"Indentation"
+],
+"answer": 2,
+"explanation": "Iteration is the recurrence or duplication of an action or event. Selection chooses between paths (if statements), initialization gives a variable its first value, and indentation marks code blocks in Python.",
+"source": "notes"
+},
+{
+"q": "In a loop, which part is the creation of the variable whose value the condition compares on each check?",
+"options": [
+"Counter variable declaration",
+"Counter variable update",
+"Body",
+"Condition"
+],
+"answer": 0,
+"explanation": "The counter variable declaration creates the variable (with a starting value) before the loop. The update changes it, the body is the repeated code, and the condition is the True or False test.",
+"source": "notes"
+},
+{
+"q": "Which part of a loop is the logic that evaluates to True or False and decides whether the loop repeats or exits?",
+"options": [
+"Body",
+"Counter variable update",
+"Counter variable declaration",
+"Condition"
+],
+"answer": 3,
+"explanation": "The condition evaluates to True or False. True repeats the loop and False ends it. The body is the repeated code, the update changes the counter, and the declaration creates it.",
+"source": "notes"
+},
+{
+"q": "Which part of a loop is the code block that is executed repeatedly as long as the condition is True?",
+"options": [
+"Condition",
+"Body",
+"Counter variable declaration",
+"Counter variable update"
+],
+"answer": 1,
+"explanation": "The body is the code block executed repeatedly while the condition is True. The condition only decides whether to repeat, and the declaration and update manage the counter.",
+"source": "notes"
+},
+{
+"q": "Which loop part changes the count variable when the condition is True, so that the condition eventually changes and the loop does not run forever?",
+"options": [
+"Counter variable update",
+"Counter variable declaration",
+"Body",
+"Condition"
+],
+"answer": 0,
+"explanation": "The counter variable update (for example i = i + 1) changes the count variable so the condition can become False. The declaration only creates the variable once, before the loop.",
+"source": "notes"
+},
+{
+"q": "A loop that checks its condition before deciding whether to execute its body, so that the body runs 0 or more times, is called a:",
+"options": [
+"Post-test loop",
+"Nested loop",
+"Infinite loop",
+"Pre-test loop"
+],
+"answer": 3,
+"explanation": "A pre-test loop checks first and runs its body 0 times if the initial condition is False. A post-test loop checks after the body, a nested loop sits inside another loop, and an infinite loop never stops.",
+"source": "notes"
+},
+{
+"q": "Which type of loop always executes its body at least once, even if the initial condition evaluates to False?",
+"options": [
+"Pre-test loop",
+"Post-test loop",
+"Nested loop",
+"Infinite loop"
+],
+"answer": 1,
+"explanation": "A post-test loop runs its body first and checks the condition afterward, so the body runs at least once. A pre-test loop can run 0 times.",
+"source": "notes"
+},
+{
+"q": "A loop whose condition never becomes False, so that it never stops, is called a(n):",
+"options": [
+"Nested loop",
+"Consecutive loop",
+"Infinite loop",
+"Post-test loop"
+],
+"answer": 2,
+"explanation": "That is the definition of an infinite loop. It is usually caused by a missing or misplaced counter variable update. Nested and consecutive loops describe how loops are arranged, not whether they stop.",
+"source": "notes"
+},
+{
+"q": "Which line shows the correct general syntax of a Python for loop header?",
+"options": [
+"for <variable_name> in <sequence_structure>:",
+"for <variable_name> = <sequence_structure>:",
+"for(<variable_name> in <sequence_structure>)",
+"foreach <variable_name> in <sequence_structure>:"
+],
+"answer": 0,
+"explanation": "Python uses for <variable_name> in <sequence_structure>: followed by an indented body. Using = in place of in, omitting the colon, or writing foreach are not valid Python for loop syntax.",
+"source": "notes"
+},
+{
+"q": "Which range call is paired with its correct generated sequence?",
+"options": [
+"range(2, 6) generates 2 3 4 5 6",
+"range(1, 5, 2) generates 1 3 5",
+"range(0, 9, 3) generates 0 3 6 9",
+"range(4) generates 0 1 2 3"
+],
+"answer": 3,
+"explanation": "range(4) starts at 0 and excludes 4, giving 0 1 2 3. The others wrongly include the stop value: range(2, 6) gives 2 3 4 5, range(1, 5, 2) gives 1 3, and range(0, 9, 3) gives 0 3 6.",
+"source": "notes"
+},
+{
+"q": "In Python, when does the else clause attached to a while loop (lined up with the while keyword) run?",
+"options": [
+"Every time the condition evaluates to True",
+"Only when the loop is exited without the break keyword being triggered",
+"Only when the break keyword is triggered",
+"Only after continue is executed"
+],
+"answer": 1,
+"explanation": "A loop else runs if and only if the loop ends without triggering break. A break skips it, and continue does not trigger it.",
+"source": "notes"
+},
+{
+"q": "Which statement about post-test loops is correct?",
+"options": [
+"Python has a do-while loop, but Java does not",
+"Python's for loop is a post-test loop",
+"Python has no post-test loop, whereas Java provides the do-while loop",
+"Both while and for in Python are post-test loops"
+],
+"answer": 2,
+"explanation": "Python does not have a post-test loop, and Java's do-while is a post-test loop. Python's while and for loops are both pre-test loops.",
+"source": "notes"
+},
+{
+"q": "Given myList = [1, 2, 3, 4, 5] and an index i, which condition is True exactly when myList[i] is even?",
+"options": [
+"myList[i] % 2 == 0",
+"myList[i] % 2 == 1",
+"myList[i] / 2 == 0",
+"myList[i] % 2 = 0"
+],
+"answer": 0,
+"explanation": "% gives the remainder, and an even number has remainder 0 when divided by 2. The == 1 test finds odd numbers, / 2 == 0 is True only for 0, and a single = is assignment, which is a syntax error in a condition.",
+"source": "notes"
+},
+{
+"q": "Which sequence correctly lists the order of events in a Python while loop that has one counter variable and its update at the end of the body?",
+"options": [
+"Test the condition; declare the counter; run the body; update the counter; test again",
+"Declare the counter; test the condition; run the body; update the counter; test again",
+"Declare the counter; run the body; test the condition; update the counter; test again",
+"Declare the counter; test the condition; update the counter; run the body; test again"
+],
+"answer": 1,
+"explanation": "The counter is declared once before the loop. Then the condition is tested, the body runs if True, the update runs at the end of the body, and the condition is tested again. When it is False the loop exits.",
+"source": "notes"
+},
+{
+"q": "Which sequence correctly describes one pass through a post-test loop?",
+"options": [
+"Check the condition; if True execute the body and repeat; if False the body never runs",
+"Execute the body; if the condition is False repeat the body; if True exit",
+"Check the condition; if False execute the body once and stop",
+"Execute the body; check the condition; if True return to the body, if False exit the loop"
+],
+"answer": 3,
+"explanation": "In a post-test loop the body comes first, then the condition is checked. True sends control back to the body and False exits. The first option describes a pre-test loop.",
+"source": "notes"
+},
+{
+"q": "Which order of steps correctly builds a while-loop program that sums the even numbers from 0 to 20?",
+"options": [
+"Print total; set total and i to 0; while i <= 20: add i if even, then increment i",
+"Set total and i to 0; while i <= 20: increment i, then add i to total if even; print total after the loop",
+"Set total and i to 0; while i <= 20: add i to total if even, then increment i; print total after the loop",
+"Set total and i to 0; add i to total if even; while i <= 20: increment i; print total inside the loop"
+],
+"answer": 2,
+"explanation": "Initialize first, loop while i <= 20, add i if it is even, then increment, and print once after the loop. Incrementing before adding sums the wrong values, printing first shows 0, and printing inside the loop prints repeatedly.",
+"source": "notes"
+},
+{
+"q": "Which sequence correctly describes how the loop for fruit in [apple, banana]: print(fruit) processes the list?",
+"options": [
+"Assign apple to fruit; print it; assign banana to fruit; print it; no items remain, so the loop exits",
+"Print apple and banana together; then assign fruit; then exit",
+"Assign apple to fruit; print it; add 1 to fruit manually; print again; exit",
+"Check whether fruit < 2; print apple; update a counter; check again; print banana; exit"
+],
+"answer": 0,
+"explanation": "A for loop assigns each item to the loop variable in turn, runs the body, and exits when no items remain. It moves to the next item automatically, with no manual update or numeric condition.",
+"source": "notes"
+},
+{
+"q": "Which statement about an iterative control structure is NOT true?",
+"options": [
+"It is also referred to as a repetition control structure",
+"It always executes its body at least once, whatever the condition",
+"It repeats a sequence of statements while a condition holds true",
+"It can repeat zero or more times until a control value or condition stops it"
+],
+"answer": 1,
+"explanation": "An iterative control structure can repeat zero or more times. Zero happens when the first check is False in a pre-test loop. Only a post-test loop always runs at least once.",
+"source": "notes"
+},
+{
+"q": "Which keyword-effect pair is mismatched?",
+"options": [
+"break - stops the loop and exits the structure; used only inside the loop",
+"continue - skips the rest of the current iteration and jumps to the next; used only inside the loop",
+"pass - does nothing and only fills a block that requires content",
+"else (on a loop) - runs every time an iteration of the loop finishes"
+],
+"answer": 3,
+"explanation": "A loop else runs only once, when the loop ends without break. It does not run after every iteration. The other three pairs are correct.",
+"source": "notes"
+},
+{
+"q": "Which statement about Python for loops is NOT true?",
+"options": [
+"They are usually used to go through sequence structures",
+"They can use the optional keywords break, continue, else, and pass",
+"They require the programmer to write a counter update such as i += 1 to move to the next item",
+"They are pre-test loops"
+],
+"answer": 2,
+"explanation": "A for loop automatically increments the counter variable, meaning it moves to the next item without an update line. The other statements are true.",
+"source": "notes"
+},
+{
+"q": "Which statement about loop nesting is NOT true?",
+"options": [
+"Indentation does not matter, since consecutive and nested loops behave the same",
+"A while loop may be placed inside a for loop",
+"A for loop may be placed inside another for loop",
+"Like nested if statements, loops can be placed inside other loops"
+],
+"answer": 0,
+"explanation": "Indentation decides whether loops are consecutive (one after another) or nested (one inside the other), and the two behave differently. All the other statements are true.",
+"source": "notes"
+},
+{
+"q": "Consider this code (/ separates lines, each leading dot is one indent level): i = 0 / while i < 8: / .if i == 3 or i == 4: / ..i += 1 / ..continue / .print(i) / .i += 1. What is the sum of all the values printed?",
+"options": [
+"25",
+"28",
+"21",
+"14"
+],
+"answer": 2,
+"explanation": "Printed values are 0, 1, 2, 5, 6, 7. When i is 3 or 4, i is incremented and continue skips the print. The sum is 0 + 1 + 2 + 5 + 6 + 7 = 21. 28 means nothing was skipped, 25 means only 3 was skipped, and 14 stops before 7.",
+"source": "notes"
+},
+{
+"q": "A student wants the sum of the integers 1 through 6 and writes: total = 0 / for i in range(1, 6): / .total += i / print(total). The program prints 15, not 21. Which rule was misapplied?",
+"options": [
+"range(start, stop) excludes the start value, so 1 was skipped",
+"range(start, stop) excludes the stop value, so 6 was never added and the call should be range(1, 7)",
+"range(start, stop) uses a default step of 2, so some values were skipped",
+"range(start, stop) begins at 0, so an extra 0 was added"
+],
+"answer": 1,
+"explanation": "range(1, 6) gives 1 2 3 4 5, which sums to 15. The stop value is excluded, so range(1, 7) is needed to include 6 and give 21. The start is included, the default step is 1, and adding 0 would not change the sum.",
+"source": "notes"
+},
+{
+"q": "What does this code print? (/ separates lines, each leading dot is one indent level) count = 1 / total = 0 / while count < 20: / .total += count / .count *= 2 / print(total, count)",
+"options": [
+"31 16",
+"63 64",
+"15 16",
+"31 32"
+],
+"answer": 3,
+"explanation": "Rounds: count 1 (total 1, count 2), count 2 (total 3, count 4), count 4 (total 7, count 8), count 8 (total 15, count 16), count 16 (total 31, count 32). Then 32 < 20 is False. The output is 31 32. The other options stop early or add 32.",
+"source": "notes"
+},
+{
+"q": "Consider this code (/ separates lines, each leading dot is one indent level): i = 0 / while i < 3: / .course = input('Enter code') / .if course == 'CC2': / ..break / .i += 1 / else: / .print('Successful 3 iterations.') The user enters CC1 and then CC2. What are the final value of i and the output?",
+"options": [
+"i is 1 and nothing is printed",
+"i is 2 and the message is printed",
+"i is 2 and nothing is printed",
+"i is 3 and the message is printed"
+],
+"answer": 0,
+"explanation": "Round 1: CC1 is not CC2, so i becomes 1. Round 2: CC2 triggers break before i += 1, so i stays 1. The loop was left by break, so the loop else is skipped and nothing is printed.",
+"source": "notes"
+},
+{
+"q": "How many times is print executed by this code? (/ separates lines, each leading dot is one indent level) for a in range(1, 4): / .for b in range(a): / ..print(a, b)",
+"options": [
+"10",
+"9",
+"6",
+"3"
+],
+"answer": 2,
+"explanation": "The outer loop gives a = 1, 2, 3. The inner loop runs a times: 1 + 2 + 3 = 6. Multiplying 3 x 3 = 9 ignores that range(a) depends on a, and 10 wrongly counts range(1, 4) as four values.",
+"source": "notes"
+},
+{
+"q": "A student wants the sum of the even numbers from 0 to 20 and writes: total = 0 / i = 0 / while i <= 20: / .if i % 2 == 0: / ..total += i / ..i += 1 / print(total). The program never ends. Which statement identifies the error?",
+"options": [
+"The condition should be i < 20 because 20 is odd",
+"The update i += 1 is indented inside the if block, so for the first odd i the counter is never updated and the loop never ends",
+"total should be initialized inside the loop",
+"The test should be i % 2 == 1 so that odd numbers are added"
+],
+"answer": 1,
+"explanation": "After i = 0 is handled, i becomes 1. Since 1 is odd the if is False, so i += 1 is skipped and i stays 1 forever. The update must be lined up with the if. 20 is even, total is correctly initialized outside the loop, and the task asks for even numbers.",
+"source": "notes"
+},
+{
+"q": "What is the output of this code? (/ separates lines, each leading dot is one indent level) myList = [2, 4, 6, 8, 10] / for i in myList: / .if i == 6: / ..print('Gotcha') / ..break / .else: / ..print('Looking')",
+"options": [
+"Looking, Looking, Gotcha, Looking, Looking",
+"Looking, Looking, Looking, Gotcha",
+"Gotcha",
+"Looking, Looking, Gotcha"
+],
+"answer": 3,
+"explanation": "i = 2 prints Looking, i = 4 prints Looking, and i = 6 prints Gotcha and break ends the loop. The values 8 and 10 are never visited. The else belongs to the if, not to the loop.",
+"source": "notes"
+},
+{
+"q": "How many times is print executed by: for letter in 'I love programming.': print(letter)?",
+"options": [
+"19",
+"16",
+"18",
+"3"
+],
+"answer": 0,
+"explanation": "A for loop over a string visits every character, including spaces and the period. I (1) + space (1) + love (4) + space (1) + programming (11) + period (1) = 19. 16 counts only letters, 18 omits one character, and 3 counts words.",
+"source": "notes"
+},
+{
+"q": "What is the output of this code? (/ separates lines, each leading dot is one indent level) x = 10 / while x < 5: / .print(x) / .x += 1 / print('done')",
+"options": [
+"10 then done",
+"done",
+"10, 11, 12, 13, 14, then done",
+"Nothing is printed because an error occurs"
+],
+"answer": 1,
+"explanation": "A while loop is a pre-test loop. The first check 10 < 5 is False, so the body runs 0 times. Control moves to the statement after the loop, which prints done.",
+"source": "notes"
+}
+]

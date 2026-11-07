@@ -1,0 +1,362 @@
+[
+{
+"q": "Which digits does the hexadecimal system use?",
+"options": [
+"0 to 9 and A to F",
+"0 to 7 and A to F",
+"0 to 9 and A to H",
+"1 to 9 and A to F"
+],
+"answer": 0,
+"explanation": "Hexadecimal is base 16, so it needs sixteen symbols: 0 to 9 plus A to F for the values 10 to 15.",
+"source": "notes"
+},
+{
+"q": "What are the decimal values of the hex digits D and B, in that order?",
+"options": [
+"13 and 11",
+"12 and 10",
+"14 and 12",
+"11 and 13"
+],
+"answer": 0,
+"explanation": "A=10, B=11, C=12, D=13, E=14, F=15, so D is 13 and B is 11.",
+"source": "notes"
+},
+{
+"q": "Why does exactly one octal digit correspond to exactly 3 binary digits?",
+"options": [
+"Because 8 = 2^3",
+"Because octal numbers always have 3 digits",
+"Because 8 = 3^2",
+"Because octal uses only 3 different symbols"
+],
+"answer": 0,
+"explanation": "Octal is base 8 and 8 = 2^3, so each octal digit holds exactly 3 bits.",
+"source": "notes"
+},
+{
+"q": "Which statement correctly describes the origin of the word 'hexadecimal'?",
+"options": [
+"Latin hexa (six) and Greek decem (ten), giving 16",
+"Greek hexa (six) and Latin decem (ten), giving 16",
+"Greek octo (eight) and Latin decem (ten), giving 18",
+"Latin hexa (six) and Latin decem (ten), giving 60"
+],
+"answer": 1,
+"explanation": "The word combines Greek hexa (six) and Latin decem (ten), and 6 + 10 gives 16.",
+"source": "notes"
+},
+{
+"q": "Why is hexadecimal commonly used to write long binary values?",
+"options": [
+"Hex uses fewer symbols than binary",
+"Hex arithmetic is faster for the processor",
+"Hex digits are all letters, which are easier to read",
+"Each hex digit stands for exactly 4 bits, so long binary strings become much shorter"
+],
+"answer": 3,
+"explanation": "Because 16 = 2^4, one hex digit replaces exactly 4 bits, which makes long binary values compact and easy to convert.",
+"source": "extra"
+},
+{
+"q": "Why should the base be written with an answer, for example 11 (base 8) or 11 (base 16)?",
+"options": [
+"It makes the calculation faster",
+"The same digits mean different values in different bases",
+"It tells the computer which processor to use",
+"It is only needed for hexadecimal numbers"
+],
+"answer": 1,
+"explanation": "The digits 11 equal 9 in base 8 and 17 in base 16, so the base is needed to avoid ambiguity.",
+"source": "notes"
+},
+{
+"q": "When converting a 4-bit group to a hex digit, what are the bit weights from left to right?",
+"options": [
+"1, 2, 4, 8",
+"4, 2, 1, 0",
+"16, 8, 4, 2",
+"8, 4, 2, 1"
+],
+"answer": 3,
+"explanation": "A 4-bit group uses the weights 8, 4, 2, 1 from left to right, because 16 = 2^4.",
+"source": "notes"
+},
+{
+"q": "In a 3-digit hexadecimal number, what is the place value of the leftmost digit?",
+"options": [
+"16",
+"48",
+"4096",
+"256"
+],
+"answer": 3,
+"explanation": "Positions count from the right starting at 0, so the leftmost digit of 3 digits has weight 16^2 = 256. The value 4096 is 16^3, which belongs to a 4-digit number.",
+"source": "notes"
+},
+{
+"q": "How many hexadecimal digits are needed to write one full byte (8 bits)?",
+"options": [
+"1",
+"2",
+"4",
+"8"
+],
+"answer": 1,
+"explanation": "One hex digit holds 4 bits, so a byte of 8 bits needs exactly 2 hex digits.",
+"source": "extra"
+},
+{
+"q": "What is the largest decimal value that two hexadecimal digits can represent?",
+"options": [
+"200",
+"256",
+"240",
+"255"
+],
+"answer": 3,
+"explanation": "The largest two-digit hex number is FF = 15x16 + 15 = 255. The value 256 needs a third digit (100 in hex).",
+"source": "extra"
+},
+{
+"q": "To check that 56 (base 8) equals 101110 (base 2), both are converted to decimal. What value should both give?",
+"options": [
+"56",
+"46",
+"44",
+"50"
+],
+"answer": 1,
+"explanation": "56 (base 8) = 5x8 + 6 = 46, and 101110 (base 2) = 32 + 8 + 4 + 2 = 46.",
+"source": "notes"
+},
+{
+"q": "Which description of the repeated division method for converting decimal to another base is correct?",
+"options": [
+"Stop when the remainder is 0 and read the remainders from top to bottom",
+"Stop when the quotient is 0 and read the remainders from bottom to top",
+"Stop when the quotient is 0 and read the remainders from top to bottom",
+"Stop when the quotient is 1 and read the remainders from bottom to top"
+],
+"answer": 1,
+"explanation": "You keep dividing by the target base until the quotient reaches 0, and the remainders read from the last one to the first give the answer.",
+"source": "notes"
+},
+{
+"q": "When grouping binary digits from the right leaves an incomplete group, where are the zeros added?",
+"options": [
+"At the left end, in the leftmost group",
+"At the right end, in the rightmost group",
+"Between the two middle groups",
+"Nowhere, leftover bits are dropped"
+],
+"answer": 0,
+"explanation": "Grouping starts from the right, so only the leftmost group can be short, and it is padded with leading zeros.",
+"source": "notes"
+},
+{
+"q": "Dividing decimal 45 by 16 repeatedly gives remainders 13 first and then 2. What is 45 in hexadecimal?",
+"options": [
+"2D",
+"D2",
+"2C",
+"D20"
+],
+"answer": 0,
+"explanation": "Remainders are read from the last to the first, so 2 then D, giving 2D (base 16). Check: 2x16 + 13 = 45.",
+"source": "notes"
+},
+{
+"q": "Repeated division of decimal 439 by 16 gives remainders 7, 11, 1 in that order. What is 439 in hexadecimal?",
+"options": [
+"71B",
+"B17",
+"1B7",
+"17B"
+],
+"answer": 2,
+"explanation": "Remainders are read from the last to the first, so 1, then 11 (B), then 7, giving 1B7. Check: 256 + 176 + 7 = 439.",
+"source": "notes"
+},
+{
+"q": "Which of the following is NOT a valid octal number?",
+"options": [
+"1750",
+"6047",
+"3082",
+"7777"
+],
+"answer": 2,
+"explanation": "Octal digits stop at 7, so 3082 is invalid because it contains the digit 8.",
+"source": "notes"
+},
+{
+"q": "Which statement about octal counting is NOT true?",
+"options": [
+"Octal counting skips the digits 8 and 9",
+"Decimal 8 is written 10 in octal",
+"Decimal 16 is written 20 in octal",
+"Decimal 24 is written 40 in octal"
+],
+"answer": 3,
+"explanation": "Decimal 24 is 3x8, so it is written 30 in octal. 40 (base 8) is decimal 32.",
+"source": "notes"
+},
+{
+"q": "Which statement is NOT true?",
+"options": [
+"Decimal 10 is written A in hexadecimal",
+"Decimal 15 is written F in hexadecimal",
+"Decimal 16 is written 16 in hexadecimal",
+"Decimal 17 is written 11 in hexadecimal"
+],
+"answer": 2,
+"explanation": "Decimal 16 is 1x16 + 0, so it is written 10 in hexadecimal. The number 16 (base 16) equals decimal 22.",
+"source": "notes"
+},
+{
+"q": "Which pair gives the decimal values of 35 (base 8) and 35 (base 16), in that order?",
+"options": [
+"29 and 29",
+"53 and 29",
+"29 and 53",
+"35 and 35"
+],
+"answer": 2,
+"explanation": "35 (base 8) = 3x8 + 5 = 29 and 35 (base 16) = 3x16 + 5 = 53. The same digits give different values in different bases.",
+"source": "notes"
+},
+{
+"q": "A student converts 1101101 (base 2) to octal. Which result is correct?",
+"options": [
+"664",
+"331",
+"551",
+"155"
+],
+"answer": 3,
+"explanation": "Group from the right: 1 | 101 | 101, padding the leftmost group to 001, which gives 1 | 5 | 5 = 155 (base 8). Grouping from the left gives the wrong answer 664.",
+"source": "notes"
+},
+{
+"q": "A student converts 643 (base 8) to binary and writes 110 100 11, joined as 11010011. What is the mistake?",
+"options": [
+"6 should be written as 011",
+"Each octal digit must be exactly 3 bits, so 3 should be 011",
+"4 should be written as 010",
+"There is no mistake"
+],
+"answer": 1,
+"explanation": "Every octal digit must be written as exactly 3 bits, so 3 becomes 011 and the correct answer is 110100011.",
+"source": "notes"
+},
+{
+"q": "Convert 3F (base 16) to octal using binary as the middle step.",
+"options": [
+"63 (base 8)",
+"3F (base 8)",
+"77 (base 8)",
+"111 (base 8)"
+],
+"answer": 2,
+"explanation": "3F = 0011 1111 = 111111, which regroups in threes as 111 | 111 = 77 (base 8). Both equal decimal 63.",
+"source": "notes"
+},
+{
+"q": "Convert 53 (base 8) to hexadecimal using binary as the middle step.",
+"options": [
+"B2",
+"2B",
+"5B",
+"1B"
+],
+"answer": 1,
+"explanation": "5 = 101 and 3 = 011, giving 101011, which regroups in fours as 0010 | 1011 = 2B. Check: 5x8 + 3 = 43 and 2x16 + 11 = 43.",
+"source": "notes"
+},
+{
+"q": "Convert decimal 200 to hexadecimal.",
+"options": [
+"8C",
+"C8",
+"B8",
+"D0"
+],
+"answer": 1,
+"explanation": "200 / 16 = 12 R8 and 12 / 16 = 0 R12. Reading upward gives C then 8, so C8 (base 16).",
+"source": "notes"
+},
+{
+"q": "Convert decimal 1000 to hexadecimal.",
+"options": [
+"8E3",
+"E83",
+"3E8",
+"3D8"
+],
+"answer": 2,
+"explanation": "1000 / 16 = 62 R8, 62 / 16 = 3 R14 (E), 3 / 16 = 0 R3. Reading upward gives 3E8. Check: 768 + 224 + 8 = 1000.",
+"source": "notes"
+},
+{
+"q": "Convert 4071 (base 8) to binary.",
+"options": [
+"100000011001",
+"100000101001",
+"100001110001",
+"100000111001"
+],
+"answer": 3,
+"explanation": "Write each octal digit as 3 bits: 4 = 100, 0 = 000, 7 = 111, 1 = 001, giving 100000111001.",
+"source": "notes"
+},
+{
+"q": "Convert 1110 0010 1001 1111 (base 2) to hexadecimal.",
+"options": [
+"E29F",
+"E2F9",
+"D29F",
+"E19F"
+],
+"answer": 0,
+"explanation": "1110 = 14 (E), 0010 = 2, 1001 = 9, 1111 = 15 (F), giving E29F.",
+"source": "notes"
+},
+{
+"q": "Which pair correctly gives 11111111 (base 2) in octal and in hexadecimal?",
+"options": [
+"377 and FF",
+"377 and F",
+"777 and FF",
+"FF and 377"
+],
+"answer": 0,
+"explanation": "For octal, group in threes as 011 | 111 | 111 = 377. For hex, group in fours as 1111 | 1111 = FF. Both equal decimal 255.",
+"source": "notes"
+},
+{
+"q": "What is 154 (base 8) in decimal?",
+"options": [
+"108",
+"118",
+"98",
+"154"
+],
+"answer": 0,
+"explanation": "1x8^2 + 5x8^1 + 4x8^0 = 64 + 40 + 4 = 108.",
+"source": "notes"
+},
+{
+"q": "What is 472 (base 8) in decimal?",
+"options": [
+"122",
+"256",
+"314",
+"1138"
+],
+"answer": 2,
+"explanation": "4x8^2 + 7x8^1 + 2x8^0 = 256 + 56 + 2 = 314. The value 1138 is 472 read as a base 16 number.",
+"source": "notes"
+}
+]

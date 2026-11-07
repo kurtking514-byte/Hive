@@ -1,0 +1,362 @@
+[
+{
+"q": "Which statement correctly distinguishes the bitwise AND operator (&) from the logical AND operator (&&)?",
+"options": [
+"& compares each pair of corresponding bits of two values, while && combines two boolean expressions",
+"& works only on boolean expressions, while && works on individual bits",
+"& can only return true or false, while && returns a number",
+"They are identical, and && is just an older syntax for &"
+],
+"answer": 0,
+"explanation": "Bitwise operators act on each corresponding bit pair, while && and || act on whole boolean expressions.",
+"source": "notes"
+},
+{
+"q": "Why do embedded systems often use bitwise operators to pack boolean flags?",
+"options": [
+"Eight flags fit in one byte instead of using a full byte each, which saves limited memory",
+"Bitwise operators make each flag larger and easier to read",
+"Computers cannot store single boolean values",
+"Bitwise operators avoid the need for any masks"
+],
+"answer": 0,
+"explanation": "Memory is allocated in bytes, so packing flags into individual bits uses far less space.",
+"source": "notes"
+},
+{
+"q": "Which two bitwise operators produce results that depend on how many bits (the memory width) are used?",
+"options": [
+"NOT and left shift",
+"AND and OR",
+"XOR and AND",
+"OR and XOR"
+],
+"answer": 0,
+"explanation": "NOT adds extra leading 1s in a wider register and left shift can overflow in a narrow one, so both are memory space sensitive.",
+"source": "notes"
+},
+{
+"q": "Why does 47 << 6 give 192 in 8-bit arithmetic but 3008 in 16-bit arithmetic?",
+"options": [
+"In 8-bit the bits shifted past the leftmost position are dropped, while 16-bit has room to keep them",
+"In 16-bit the shift amount is automatically doubled",
+"In 8-bit the number is shifted right instead of left",
+"In 8-bit the overflow bits are XORed back into the result"
+],
+"answer": 0,
+"explanation": "Bits beyond the representational capacity are deleted, so 00101111 << 6 keeps only 11000000 (192) in 8 bits, but 47 x 2^6 = 3008 fits in 16 bits.",
+"source": "notes"
+},
+{
+"q": "A register has one bit per heater. Which operation turns ON the kitchen and dining room heaters without changing any other heater?",
+"options": [
+"OR with a mask that has 1s only at the kitchen and dining room bits",
+"AND with a mask that has 1s only at the kitchen and dining room bits",
+"XOR with a mask of all 0s",
+"Left shift the register by 2 bits"
+],
+"answer": 0,
+"explanation": "OR sets a bit to 1 where the mask has 1 and leaves every bit where the mask has 0 unchanged.",
+"source": "notes"
+},
+{
+"q": "A heating status register is ORed with a mask made of all 1s. What happens?",
+"options": [
+"Every heater is turned off",
+"Every heater is turned on regardless of its previous state",
+"The register is left unchanged",
+"Every heater is toggled to the opposite state"
+],
+"answer": 1,
+"explanation": "OR with 1 always gives 1, so a mask of all ones activates all devices at once.",
+"source": "notes"
+},
+{
+"q": "Which expression correctly tests whether an integer n is odd by checking the rightmost bit?",
+"options": [
+"n & 1 equals 1",
+"n ^ 1 equals 0",
+"n >> 1 equals 1",
+"n | 1 is nonzero"
+],
+"answer": 0,
+"explanation": "AND with 1 isolates the rightmost bit, which is 1 only for odd numbers.",
+"source": "notes"
+},
+{
+"q": "In a Unix permission digit made of read, write and execute bits, what does the digit 5 (binary 101) allow?",
+"options": [
+"Read and write",
+"Read and execute",
+"Write and execute",
+"Read, write and execute"
+],
+"answer": 1,
+"explanation": "Binary 101 has the read bit and the execute bit set and the write bit clear.",
+"source": "notes"
+},
+{
+"q": "In the RGB 5-6-5 format the red channel uses 5 bits. How many different red levels can it represent?",
+"options": [
+"8",
+"32",
+"64",
+"16"
+],
+"answer": 1,
+"explanation": "5 bits give 2^5 = 32 different values, which is why 5-6-5 saves memory compared with 8 bits per channel.",
+"source": "extra"
+},
+{
+"q": "What is the minimum number of bytes needed to store 20 independent on/off settings if each setting uses a single bit?",
+"options": [
+"2",
+"3",
+"20",
+"5"
+],
+"answer": 1,
+"explanation": "20 bits is 2.5 bytes, and memory is allocated in whole bytes of 8 bits, so 3 bytes are needed.",
+"source": "notes"
+},
+{
+"q": "XORing a byte with 11111111 has the same effect as which operation?",
+"options": [
+"Clearing the byte to 00000000",
+"NOT, which flips every bit",
+"Left shifting by 1 bit",
+"Leaving the byte unchanged"
+],
+"answer": 1,
+"explanation": "XOR with 1 toggles a bit, so a mask of all 1s toggles every bit, which is exactly the 1's complement.",
+"source": "notes"
+},
+{
+"q": "A 32-bit ARGB color has Alpha in the top byte, then Red, Green and Blue. Which expression extracts the Red channel?",
+"options": [
+"color & 16",
+"color << 16",
+"(color >> 16) & 255",
+"(color & 255) >> 16"
+],
+"answer": 2,
+"explanation": "Shifting right by 16 moves Red to the lowest byte, and AND with 255 masks away the Alpha bits above it.",
+"source": "notes"
+},
+{
+"q": "A status register holds 01101010 and the kitchen heater is the bit with value 00000100. What does the register AND 00000100 return, and what does it mean?",
+"options": [
+"00000100, so the heater is on",
+"01101010, so the heater is on",
+"00000000, so the heater is off",
+"00000100, so the heater is off"
+],
+"answer": 2,
+"explanation": "The bit with value 4 in 01101010 is 0, so the AND result is 00000000, meaning that heater is off.",
+"source": "notes"
+},
+{
+"q": "A permission value is 5 (101) with read = 4, write = 2 and execute = 1. What does 5 & 2 return, and what does it show?",
+"options": [
+"0, so write permission is not set",
+"2, so write permission is set",
+"7, so all permissions are set",
+"1, so execute permission is not set"
+],
+"answer": 0,
+"explanation": "101 AND 010 = 000, so the write bit is clear; AND is used to check whether a specific permission is active.",
+"source": "notes"
+},
+{
+"q": "Using (A << 24) | (R << 16) | (G << 8) | B, what 32-bit value in base 16 is produced for Alpha = 255, Red = 0, Green = 128 and Blue = 64?",
+"options": [
+"FF800040 (base 16)",
+"40800000 (base 16)",
+"FF008040 (base 16)",
+"008040FF (base 16)"
+],
+"answer": 2,
+"explanation": "255, 0, 128 and 64 are FF, 00, 80 and 40 in base 16, placed in the order A, R, G, B.",
+"source": "notes"
+},
+{
+"q": "Which statement about bitwise operators is NOT true?",
+"options": [
+"Bitwise AND, OR and XOR are commutative",
+"a << b adds b zeros to the right of the binary representation of a",
+"XOR outputs 1 when both input bits are 1",
+"Shifting an odd number right loses the remainder"
+],
+"answer": 2,
+"explanation": "XOR outputs 1 only when the two bits differ, so 1 ^ 1 = 0.",
+"source": "notes"
+},
+{
+"q": "Which statement about shift operations is NOT true?",
+"options": [
+"A left shift doubles the value per bit shifted when no overflow occurs",
+"Right shifting an odd number loses a remainder",
+"Bits shifted beyond the representational capacity are dropped",
+"A left shift always exactly doubles the value, even when overflow occurs"
+],
+"answer": 3,
+"explanation": "When overflow occurs the leftmost bits are deleted, so the doubling effect is lost.",
+"source": "notes"
+},
+{
+"q": "Which pair of expressions can give different results when the operands are swapped?",
+"options": [
+"12 & 10 versus 10 & 12",
+"5 | 9 versus 9 | 5",
+"6 ^ 3 versus 3 ^ 6",
+"3 << 2 versus 2 << 3"
+],
+"answer": 3,
+"explanation": "AND, OR and XOR are commutative, but a shift is not: 3 << 2 = 12 while 2 << 3 = 16.",
+"source": "notes"
+},
+{
+"q": "A student claims that 12 | 5 equals 17 because OR adds the numbers. What is the correct result of 12 | 5 (12 = 1100, 5 = 0101)?",
+"options": [
+"17",
+"4",
+"13",
+"9"
+],
+"answer": 2,
+"explanation": "1100 OR 0101 = 1101, which is 13, because OR works bit by bit and does not add the values.",
+"source": "notes"
+},
+{
+"q": "What is 25 >> 1, and why is it not 12.5?",
+"options": [
+"12, because the shifted-out remainder is lost",
+"13, because right shift rounds up",
+"12.5, because right shift halves exactly",
+"24, because right shift only clears the last bit"
+],
+"answer": 0,
+"explanation": "25 is 11001, and shifting right by 1 gives 1100, which is 12; the dropped bit is the remainder.",
+"source": "notes"
+},
+{
+"q": "A plaintext byte 01010011 is XORed with the key 00101101. What is the ciphertext, and what recovers the plaintext?",
+"options": [
+"01111111; XOR with a different key",
+"01111000; AND with the key",
+"00101110; OR with the key",
+"01111110; XOR with the same key again"
+],
+"answer": 3,
+"explanation": "01010011 XOR 00101101 = 01111110, and XORing with the same key again cancels it out and returns 01010011.",
+"source": "notes"
+},
+{
+"q": "A ciphertext byte 01101100 was produced by XOR with the key 00101101. What is the original byte in decimal?",
+"options": [
+"108",
+"45",
+"65",
+"97"
+],
+"answer": 2,
+"explanation": "01101100 XOR 00101101 = 01000001, which is 64+1 = 65, because applying the same key again recovers the original data.",
+"source": "notes"
+},
+{
+"q": "Using (R << 16) | (G << 8) | B, what is RGB(18, 52, 86) packed into one hexadecimal value?",
+"options": [
+"563412 (base 16)",
+"125634 (base 16)",
+"341256 (base 16)",
+"123456 (base 16)"
+],
+"answer": 3,
+"explanation": "18, 52 and 86 are 12, 34 and 56 in base 16, and the shifts place them in the byte order R, G, B.",
+"source": "notes"
+},
+{
+"q": "A register holds 10110010. What is the result of XOR with the mask 00001111?",
+"options": [
+"10111111",
+"10111101",
+"10110000",
+"00000010"
+],
+"answer": 1,
+"explanation": "XOR with 1 toggles a bit, so the lower four bits 0010 become 1101, giving 10111101.",
+"source": "notes"
+},
+{
+"q": "To clear the lower 4 bits of 11010110 while keeping the upper 4 bits, you AND it with 11110000. What is the result?",
+"options": [
+"00000110",
+"11011111",
+"11010000",
+"11110110"
+],
+"answer": 2,
+"explanation": "AND with 0 forces a bit to 0 and AND with 1 keeps it, so 1101 stays and the lower nibble becomes 0000.",
+"source": "notes"
+},
+{
+"q": "What is 53 ^ 29 using 8-bit binary (53 = 00110101, 29 = 00011101)?",
+"options": [
+"61",
+"21",
+"32",
+"40"
+],
+"answer": 3,
+"explanation": "00110101 XOR 00011101 = 00101000, which is 32+8 = 40, because XOR gives 1 only where the bits differ.",
+"source": "notes"
+},
+{
+"q": "What is ~47 in 16-bit binary, read as an unsigned number?",
+"options": [
+"208",
+"65488",
+"65487",
+"65489"
+],
+"answer": 1,
+"explanation": "Flipping 00000000 00101111 gives 11111111 11010000, which is 65535 - 47 = 65488.",
+"source": "notes"
+},
+{
+"q": "What is 200 << 1 when the result must fit in 8 bits (200 = 11001000)?",
+"options": [
+"400",
+"100",
+"0",
+"144"
+],
+"answer": 3,
+"explanation": "The leftmost 1 is dropped, leaving 10010000, which is 144; the doubling effect is lost to overflow.",
+"source": "notes"
+},
+{
+"q": "What is 91 >> 3 (91 = 01011011)?",
+"options": [
+"12",
+"11",
+"10",
+"8"
+],
+"answer": 1,
+"explanation": "Chopping off the last 3 bits leaves 00001011, which is 11; the remainder is lost, so the result is not 11.375 or 12.",
+"source": "notes"
+},
+{
+"q": "In JavaScript, what do 6 & 3 and 6 && 3 evaluate to?",
+"options": [
+"Both evaluate to 2",
+"6 & 3 is 3 and 6 && 3 is 2",
+"6 & 3 is true and 6 && 3 is 2",
+"6 & 3 is 2 and 6 && 3 is 3"
+],
+"answer": 3,
+"explanation": "110 AND 011 = 010, which is 2, while && is a logical operator that returns its last operand, 3, when both operands are truthy.",
+"source": "extra"
+}
+]

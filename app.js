@@ -142,19 +142,65 @@ let examNow = EXAMS.includes(prefs.exam) ? prefs.exam : (CFG.defaultExamPeriod |
 })();
 
 /* ---------------- subjects & teachers ---------------- */
-const SUBJECTS = CFG.subjects || [];
+/* The list = subjects in config.js + subjects on uploads the admin approved (list_subjects).
+   The approved part is kept on the phone, so search works with no signal. */
 const isShared = s => !s.courses || s.courses === 'all';
-const inCourse = s => isShared(s) || !course || course === OTHER || (Array.isArray(s.courses) && s.courses.includes(course));
-const subjectName = id => { const s = SUBJECTS.find(x => x.id === id); return s ? s.id + ' — ' + s.name : id; };
-function subjectOptions(current) {
-  const list = SUBJECTS.filter(inCourse), own = list.filter(s => !isShared(s)), shared = list.filter(isShared);
-  const known = SUBJECTS.some(s => s.id === current);
-  const opt = s => `<option value="${esc(s.id)}"${s.id === current ? ' selected' : ''}>${esc(s.id + ' — ' + s.name)}</option>`;
-  return `<option value="">Not sure</option>` +
-    (own.length ? `<optgroup label="${esc((course && course !== OTHER ? course : 'Course') + ' subjects')}">${own.map(opt).join('')}</optgroup>` : '') +
-    (shared.length ? `<optgroup label="All CITCS courses">${shared.map(opt).join('')}</optgroup>` : '') +
-    (known || !current ? '' : `<option value="${esc(current)}" selected>${esc(current)}</option>`) +
-    `<option value="${OTHER}">Other subject…</option>`;
+const key = s => String(s).toLowerCase().replace(/[^a-z0-9]/g, '');
+let SUBJECTS = [];
+function buildSubjects() {
+  const list = (CFG.subjects || []).map(s => ({ id: s.id, name: s.name || '', courses: isShared(s) ? 'all' : [...s.courses] }));
+  for (const r of prefs.learned || []) {
+    let s = list.find(x => key(x.id) === key(r.subject) || (x.name && key(x.name) === key(r.subject)));
+    if (!s) list.push(s = { id: r.subject, name: '', courses: [] });
+    if (Array.isArray(s.courses) && r.course && !s.courses.includes(r.course)) s.courses.push(r.course);
+  }
+  /* a subject every course has is shared */
+  for (const s of list) if (Array.isArray(s.courses) && courseList.length && courseList.every(c => s.courses.includes(c))) s.courses = 'all';
+  SUBJECTS = list.sort((a, b) => a.id.localeCompare(b.id, undefined, { numeric: true }));
+}
+buildSubjects();
+(async () => {
+  if (!CONFIGURED || !navigator.onLine) return;
+  try {
+    const r = await fetch(BASE + '/rest/v1/rpc/list_subjects', { method: 'POST', headers: authHeaders({ 'Content-Type': 'application/json' }), body: '{}' });
+    if (!r.ok) return; // setup.sql not re-run yet: config subjects only
+    const rows = await r.json();
+    if (Array.isArray(rows)) { prefs.learned = rows.slice(0, 500); savePrefs(); buildSubjects(); }
+  } catch (e) { /* offline: keep the saved list */ }
+})();
+
+/* Subject search: "my course" tab or "Everything", then type to narrow it down. */
+const myCourse = () => course && course !== OTHER ? course : '';
+const inCourse = (s, c) => isShared(s) || s.courses.includes(c);
+const tagOf = s => isShared(s) ? 'All courses' : (s.courses.join(', ') || 'Other course');
+function subjectMatches(scope, q) {
+  const c = myCourse(), k = key(q), words = q.toLowerCase().split(/\s+/).filter(Boolean);
+  return SUBJECTS.filter(s => scope === 'all' || !c || inCourse(s, c))
+    .filter(s => !k || key(s.id).includes(k) || words.every(w => (s.id + ' ' + s.name).toLowerCase().includes(w)))
+    .slice(0, 30);
+}
+function subjectResults(p) {
+  const q = p.meta.subject.trim(), scope = myCourse() ? p.scope : 'all';
+  const list = subjectMatches(scope, q);
+  const exact = list.some(s => key(s.id) === key(q));
+  const items = list.map(s => `<li><button type="button" class="subj-item${key(s.id) === key(q) ? ' on' : ''}" data-pick="${esc(s.id)}">` +
+    `<b>${esc(s.id)}</b>${s.name ? ` <span>${esc(s.name)}</span>` : ''}${scope === 'all' ? `<small>${esc(tagOf(s))}</small>` : ''}</button></li>`).join('');
+  let note = '';
+  if (!list.length) note = q ? `No match. It'll be sent as “${esc(q)}”.`
+    : scope === 'course' ? `No ${esc(myCourse())} subjects yet. Try Everything, or just type it.` : 'No subjects yet. Just type it.';
+  else if (q && !exact) note = `Not in the list? It'll be sent as “${esc(q)}”.`;
+  return items + (note ? `<li class="meta">${note}</li>` : '');
+}
+function subjectPicker(p) {
+  const c = myCourse();
+  return `<div class="subj">
+    <span class="label-like">Subject</span>
+    ${c ? `<div class="seg" role="group" aria-label="Which subjects">
+      <button type="button" data-scope="course" aria-pressed="${p.scope === 'course'}">${esc(c)}</button>
+      <button type="button" data-scope="all" aria-pressed="${p.scope === 'all'}">Everything</button></div>` : ''}
+    <input type="search" data-f="subject" maxlength="80" autocomplete="off" placeholder="Search: CC7, programming…" value="${esc(p.meta.subject)}" aria-label="Subject">
+    <ul class="subj-list" data-list>${subjectResults(p)}</ul>
+  </div>`;
 }
 function renderTeachers() {
   const all = [...new Set([...(CFG.teachers || []), ...prefs.teachers])].sort((a, b) => a.localeCompare(b));
@@ -183,8 +229,8 @@ async function addFiles(list) {
   for (const file of list) {
     if (picked.some(p => p.file.name === file.name && p.file.size === file.size)) continue;
     const reason = await checkFile(file);
-    const p = { id: uuid(), file, ok: !reason, reason, reading: !reason, open: false,
-      meta: { subject: '', subjectOther: '', teacher: '', title: '', type: '', note: '' }, found: {} };
+    const p = { id: uuid(), file, ok: !reason, reason, reading: !reason, open: false, scope: 'course',
+      meta: { subject: '', teacher: '', title: '', type: '', note: '' }, found: {} };
     picked.push(p);
     if (p.ok) {
       p.readP = (window.HiveAutofill ? HiveAutofill.read(file, SUBJECTS) : Promise.resolve(null))
@@ -210,12 +256,11 @@ function renderPicked() {
     else if (!p.open) {
       const any = p.found.subject || p.found.teacher || p.found.title;
       body = `<p class="meta">${any ? 'We read your file and filled this in:' : "We couldn't read much from this file. Add what you know:"}</p>
-        <div class="chips">${chip(m.subject ? (m.subject === OTHER ? (m.subjectOther || 'Other subject') : m.subject) : 'Subject?', !m.subject)}${chip(m.teacher || 'Teacher?', !m.teacher)}${m.title ? chip(m.title) : ''}</div>
+        <div class="chips">${chip(m.subject || 'Subject?', !m.subject)}${chip(m.teacher || 'Teacher?', !m.teacher)}${m.title ? chip(m.title) : ''}</div>
         <button type="button" class="link" data-edit>Edit details</button>`;
     } else {
       body = `<div class="edit">
-        <label>Subject<select data-f="subject">${subjectOptions(m.subject)}</select></label>
-        <input type="text" data-f="subjectOther" class="${m.subject === OTHER ? '' : 'hidden'}" maxlength="80" placeholder="Subject code and name" value="${esc(m.subjectOther)}" aria-label="Other subject">
+        ${subjectPicker(p)}
         <label>Teacher<input type="text" data-f="teacher" list="teacherList" maxlength="80" placeholder="Prof. Santos" value="${esc(m.teacher)}"></label>
         <label>Lesson<input type="text" data-f="title" maxlength="150" placeholder="Lecture 3: The Human Being" value="${esc(m.title)}"></label>
         <label>Type<select data-f="type">${TYPE_LIST.map(t => `<option${t === m.type ? ' selected' : ''}>${esc(t)}</option>`).join('')}</select></label>
@@ -236,11 +281,22 @@ $('#picked').addEventListener('click', e => {
   if (e.target.closest('[data-remove]')) { picked = picked.filter(x => x !== p); renderPicked(); }
   else if (e.target.closest('[data-edit]')) { p.open = true; renderPicked(); }
   else if (e.target.closest('[data-done]')) { p.open = false; renderPicked(); }
+  else if (e.target.closest('[data-scope]')) {
+    p.scope = e.target.closest('[data-scope]').dataset.scope;
+    const box = e.target.closest('.subj');
+    box.querySelectorAll('[data-scope]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.scope === p.scope)));
+    box.querySelector('[data-list]').innerHTML = subjectResults(p);
+  } else if (e.target.closest('[data-pick]')) {
+    p.meta.subject = e.target.closest('[data-pick]').dataset.pick;
+    const box = e.target.closest('.subj');
+    box.querySelector('[data-f=subject]').value = p.meta.subject;
+    box.querySelector('[data-list]').innerHTML = subjectResults(p);
+  }
 });
 ['input', 'change'].forEach(ev => $('#picked').addEventListener(ev, e => {
   const f = e.target.dataset.f; const p = pickedOf(e.target); if (!f || !p) return;
   p.meta[f] = e.target.value;
-  if (f === 'subject') e.target.closest('.edit').querySelector('[data-f=subjectOther]').classList.toggle('hidden', e.target.value !== OTHER);
+  if (f === 'subject') e.target.closest('.subj').querySelector('[data-list]').innerHTML = subjectResults(p); // only the list, so typing keeps focus
 }));
 
 $('#files').addEventListener('change', e => { addFiles([...e.target.files]); e.target.value = ''; });
@@ -294,7 +350,7 @@ $('#form').addEventListener('submit', async e => {
     for (const p of good) {
       btn.textContent = 'Preparing ' + p.file.name + '…';
       const m = p.meta, ext = extOf(p.file.name);
-      const subject = (m.subject === OTHER ? m.subjectOther : m.subject).trim();
+      const subject = m.subject.trim();
       const item = {
         id: uuid(), createdAt: Date.now(), file: p.file, name: p.file.name, size: p.file.size,
         ext, mime: TYPES[ext].mime, sha256: await sha256Hex(p.file), code,

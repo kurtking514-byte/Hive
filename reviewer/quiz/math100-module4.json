@@ -1,0 +1,362 @@
+[
+{
+"q": "Which statement matches the NCTM (2000) definition of problem solving?",
+"options": [
+"Applying a technique that was recently covered in class to a familiar task",
+"Checking all steps and calculations after an answer has been found",
+"Engaging in a task for which the solution method is not known in advance",
+"Using a rule of thumb or an educated guess to discover a result"
+],
+"answer": 2,
+"explanation": "NCTM (2000) defines problem solving as engaging in a task for which the solution method is not known in advance. Applying a recently covered technique describes an exercise, checking calculations describes Polya's Step 4, and a rule of thumb or educated guess describes a heuristic.",
+"source": "notes"
+},
+{
+"q": "A situation in which a person is seeking some goal and for which a suitable course of action is not immediately apparent is called a(n)",
+"options": [
+"exercise",
+"problem",
+"heuristic",
+"strategy"
+],
+"answer": 1,
+"explanation": "This is Marilyn Burns's (2001) definition of a problem. An exercise has an immediately clear path, a heuristic is an experience-based technique, and a strategy is the plan chosen in Polya's second step.",
+"source": "notes"
+},
+{
+"q": "The word heuristics, taken from a Greek word meaning find or discover, refers to",
+"options": [
+"experience-based techniques for problem solving, learning, and discovery",
+"step-by-step procedures that always guarantee a correct answer",
+"the final step of Polya's model, in which all calculations are rechecked",
+"tasks that test mastery of a narrowly focused technique recently covered"
+],
+"answer": 0,
+"explanation": "Heuristics are experience-based techniques such as a rule of thumb, an educated guess, an intuitive judgment, or common sense. They do not guarantee an answer, so the second option is wrong. Rechecking is Step 4 (Look back), and the last option describes an exercise.",
+"source": "notes"
+},
+{
+"q": "Mathematical problem-solving is best described as",
+"options": [
+"memorizing a list of formulas so that every task can be finished immediately",
+"a set of routine drills built around the most recently covered technique",
+"a method that applies only to real-life word problems that have one fixed answer",
+"the application of Problem Based Learning to mathematical education using problems that may be non-routine, open-ended, and sometimes real-life"
+],
+"answer": 3,
+"explanation": "Mathematical problem-solving applies Problem Based Learning to mathematics, and students learn by solving problems that may be non-routine, open-ended, and sometimes tied to real life. Memorized formulas and routine drills describe exercises, and the problems are not limited to real-life word problems with one fixed answer.",
+"source": "notes"
+},
+{
+"q": "In Polya's model, the plan devised in the second step is usually called a",
+"options": [
+"strategy",
+"exercise",
+"reflection",
+"estimate"
+],
+"answer": 0,
+"explanation": "The plan is usually called a strategy, for example use a variable, work backward, or guess and check. An exercise is a type of task, reflection belongs to Step 4, and an estimate is a rough guess of the answer made in Step 1.",
+"source": "notes"
+},
+{
+"q": "Which pairing of Polya step and its label is correct?",
+"options": [
+"Understand the problem - Check",
+"Carry out the plan - Plan",
+"Look back - See",
+"Devise a plan - Plan"
+],
+"answer": 3,
+"explanation": "The labels are Understand the problem (See), Devise a plan (Plan), Carry out the plan (Do), and Look back (Check). In the wrong options the labels Check, Plan, and See are attached to the wrong steps.",
+"source": "notes"
+},
+{
+"q": "A row of n equal boxes placed side by side contains how many rectangles of all possible widths, counting the whole row?",
+"options": [
+"n^2/2",
+"n(n-1)/2",
+"n(n+1)/2",
+"2n"
+],
+"answer": 2,
+"explanation": "The count is n + (n-1) + ... + 2 + 1 = n(n+1)/2. For n = 7 this gives 7*8/2 = 28, which matches 7+6+5+4+3+2+1. The other formulas give 24.5, 21, and 14 for n = 7, none of which is the correct count of 28.",
+"source": "notes"
+},
+{
+"q": "Which of the following is one of the twelve focus areas of heuristics?",
+"options": [
+"Memorize every formula before starting",
+"Exploit symmetry",
+"Avoid drawing figures",
+"Stop after the first correct answer"
+],
+"answer": 1,
+"explanation": "The twelve heuristics include searching for a pattern, drawing a figure, formulating an equivalent problem, modifying the problem, choosing effective notation, exploiting symmetry, dividing into cases, working backward, arguing by contradiction, pursuing parity, considering extreme cases, and generalizing. The other options are not on the list and go against good problem-solving habits.",
+"source": "notes"
+},
+{
+"q": "Which sequence lists Polya's four steps in the correct order?",
+"options": [
+"Plan, See, Do, Check",
+"See, Plan, Do, Check",
+"See, Do, Plan, Check",
+"Plan, Do, Check, See"
+],
+"answer": 1,
+"explanation": "The order is Understand the problem (See), Devise a plan (Plan), Carry out the plan (Do), and Look back (Check). You must understand the problem before planning, and plan before carrying out the work, so the other orders are wrong.",
+"source": "notes"
+},
+{
+"q": "A student is 5 minutes late to every meeting of a class with 2-hour periods, and there are 234 class days. Which order of computations correctly finds the number of periods missed?",
+"options": [
+"Divide 5 by 234, then multiply the result by 2",
+"Multiply 234 by 2, then divide the result by 5",
+"Divide 234 by 5, then divide the result by 120",
+"Change 2 hours to 120 minutes, multiply 5 by 234, then divide the total minutes by 120"
+],
+"answer": 3,
+"explanation": "Convert the period length to 120 minutes, find the total minutes missed as 5*234 = 1170, then divide by 120 to get 9.75 periods. The other orders mix up units or divide by the wrong quantity and do not give 9.75.",
+"source": "notes"
+},
+{
+"q": "Which statement is NOT true of a mathematical problem?",
+"options": [
+"The path toward the solution is always apparent from the start",
+"It cannot be solved immediately",
+"It is often open-ended, paradoxical, and sometimes unsolvable",
+"It requires investigation before one comes close to a solution"
+],
+"answer": 0,
+"explanation": "An apparent path from the start is a characteristic of an exercise, not of a problem. A problem cannot be solved immediately, is often open-ended, paradoxical, and sometimes unsolvable, and requires investigation first.",
+"source": "notes"
+},
+{
+"q": "Which pair is mismatched?",
+"options": [
+"Exercise - the path toward the solution is always apparent",
+"Heuristic - a rule of thumb or an educated guess",
+"Step 1 Understand - ask what information is given and what you are asked to find",
+"Step 4 Look back - assume the problem is finished as soon as an answer is found"
+],
+"answer": 3,
+"explanation": "In Step 4 you should not assume the problem is complete once a solution is found. You check all steps and calculations and make sure the solution makes sense. The other three pairs are correct matches.",
+"source": "notes"
+},
+{
+"q": "A student is 10 minutes late to every meeting of a 90-minute class, and the class meets 180 times in a year. How many class periods of time does the student miss in total?",
+"options": [
+"30",
+"18",
+"20",
+"200"
+],
+"answer": 2,
+"explanation": "Total minutes missed = 10*180 = 1800. Periods = 1800/90 = 20. Check: 20*90 = 1800. Dividing by 60 gives 30, which wrongly uses a 60-minute period. Dividing 180 by 10 gives 18, which does not use the period length. Dividing 1800 by 9 gives 200, which is a place-value error.",
+"source": "notes"
+},
+{
+"q": "The digits 1, 2, 3, 4, and 5 are each used once in a plus-shaped figure with 5 circles (one on top, three across the middle, one at the bottom), and the sum across equals the sum down. If the center digit is 3, what is the common sum?",
+"options": [
+"12",
+"9",
+"6",
+"10"
+],
+"answer": 1,
+"explanation": "The four outer digits are 1, 2, 4, 5 with total 12. The row ends and the column ends must each add to half of that, which is 6. The common sum is 3 + 6 = 9. For example 2+3+4 = 9 and 1+3+5 = 9. The value 6 forgets the center, 12 is the total of the outer digits, and 10 is the common sum when the center is 5.",
+"source": "notes"
+},
+{
+"q": "How many rectangles of all sizes are in a row of 9 equal boxes?",
+"options": [
+"81",
+"36",
+"45",
+"90"
+],
+"answer": 2,
+"explanation": "The count is 9+8+7+6+5+4+3+2+1 = 45, which equals 9*10/2 = 45. The value 81 is 9^2, 36 is 8*9/2 (using n-1 instead of n), and 90 is 9*10 without dividing by 2.",
+"source": "notes"
+},
+{
+"q": "I think of a number, multiply it by 3, subtract 4, and get 20. Using the strategy of working backward, what is my number?",
+"options": [
+"8",
+"24",
+"72",
+"16/3"
+],
+"answer": 0,
+"explanation": "Undo the steps in reverse order: 20 + 4 = 24, then 24/3 = 8. Check: 8*3 = 24 and 24 - 4 = 20. The value 24 skips the division by 3, 72 multiplies by 3 instead of dividing, and 16/3 subtracts 4 instead of adding it.",
+"source": "notes"
+},
+{
+"q": "A student assumes that a largest whole number N exists, then observes that N + 1 is also a whole number greater than N and rejects the assumption. Which heuristic is the student using?",
+"options": [
+"Work backward.",
+"Search for a pattern.",
+"Guess and check.",
+"Argue by contradiction."
+],
+"answer": 3,
+"explanation": "The student assumes the opposite of the desired conclusion and derives an impossibility: N + 1 would exceed the supposed largest whole number. This is arguing by contradiction, not reversing operations, extending a pattern, or testing guesses.",
+"source": "notes"
+},
+{
+"q": "A notebook costs 15 pesos more than a pencil, and together they cost 35 pesos. Using p for the pencil price, what is the pencil price?",
+"options": [
+"10 pesos",
+"15 pesos",
+"20 pesos",
+"25 pesos"
+],
+"answer": 0,
+"explanation": "The open sentence is p + (p + 15) = 35. Then 2p + 15 = 35, 2p = 20, and p = 10. Check: the notebook costs 25, the total is 35, and the difference is 15. The other listed amounts do not satisfy both conditions as the pencil price.",
+"source": "notes"
+},
+{
+"q": "Which statement distinguishes a strategy from a heuristic?",
+"options": [
+"A strategy is a formula that guarantees an answer; a heuristic is a truth table.",
+"A strategy is a general rule of thumb, while a heuristic is a specific route chosen for one problem.",
+"A strategy is the plan chosen for a particular problem; a heuristic is a general experience-based aid that may help without guaranteeing a solution.",
+"A strategy and a heuristic are identical terms for an algorithm that always works."
+],
+"answer": 2,
+"explanation": "A strategy is the plan selected for a particular problem. A heuristic is a broader, experience-based technique that can guide problem solving but does not guarantee success. The other choices reverse the terms or incorrectly make heuristics guaranteed algorithms.",
+"source": "notes"
+},
+{
+"q": "Which statement about heuristics is NOT true?",
+"options": [
+"A heuristic can be an experience-based technique for discovery.",
+"A heuristic guarantees the answer whenever it is followed exactly, just like an algorithm.",
+"A heuristic can be a general thinking aid for selecting a strategy.",
+"A heuristic may point toward a useful approach without ensuring that it succeeds."
+],
+"answer": 1,
+"explanation": "A heuristic is a helpful direction based on experience, but it does not guarantee an answer. The guarantee described belongs to an algorithm or formula followed exactly. The other statements match the notes' description of heuristics.",
+"source": "notes"
+},
+{
+"q": "A mathematical task that tests the student's mastery of a narrowly focused technique, usually one recently covered in class, and for which it is immediately clear how to proceed, is called a(n)",
+"options": [
+"exercise",
+"open sentence",
+"estimate",
+"reflection"
+],
+"answer": 0,
+"explanation": "An exercise may be easy or hard, but the path toward the solution is always apparent, for example solving 2x + 6 = 14 right after learning linear equations. An open sentence is a math sentence with a blank or letter, an estimate is a rough guess of the size of an answer, and reflection is the thinking done in the look-back step.",
+"source": "notes"
+},
+{
+"q": "Which heuristic restates a problem in a different form that has the same answer but is easier to handle?",
+"options": [
+"Modify the problem",
+"Formulate an equivalent problem",
+"Choose effective notation",
+"Generalize"
+],
+"answer": 1,
+"explanation": "Formulating an equivalent problem keeps the same answer while changing the form. Modifying the problem changes it a little, such as using smaller numbers or dropping a condition, so the answer may change. Choosing effective notation means picking clear letters and symbols, and generalizing means solving the whole family of cases with a letter such as n.",
+"source": "notes"
+},
+{
+"q": "Which statement describes how good problem solvers differ from poor problem solvers, as observed by George Polya?",
+"options": [
+"They memorize more details of the story so that no information is lost",
+"They avoid drawing figures so that attention stays on the numbers",
+"They tend to forget the details and focus on the structure of the problem",
+"They begin calculating immediately and examine the structure afterward"
+],
+"answer": 2,
+"explanation": "Polya noted that good problem solvers focus on the structure of the problem and poor problem solvers do the opposite. For example, the story of a student who is late to class is really a problem about multiplying and dividing amounts of time. Starting to calculate before understanding the problem is listed as a common mistake.",
+"source": "notes"
+},
+{
+"q": "Which question belongs to Step 4 (Look back) of Polya's model?",
+"options": [
+"Can you restate the problem in your own words?",
+"What type of answer do you expect?",
+"What information is given?",
+"Did you answer all of the questions?"
+],
+"answer": 3,
+"explanation": "The look-back questions are: Does your answer make sense? Did you answer all of the questions? What did you learn? Could you have done it another way? The other three questions belong to Step 1 (See), where the solver works out what is asked and what is given.",
+"source": "notes"
+},
+{
+"q": "Which order correctly describes solving a word problem by using a variable and an open sentence?",
+"options": [
+"Let a letter stand for the unknown; write the open sentence; solve it; check in the original problem",
+"Write the open sentence; let a letter stand for the unknown; solve it; check in the original problem",
+"Solve for the unknown; write the open sentence; let a letter stand for it; check in the original problem",
+"Let a letter stand for the unknown; solve for it; write the open sentence; check in the original problem"
+],
+"answer": 0,
+"explanation": "The letter must exist before an open sentence can be written, and the sentence must exist before it can be solved. Example: let p be the pencil price, write p + (p + 15) = 35, solve 2p + 15 = 35 to get p = 10, then check 10 + 25 = 35 and 25 - 10 = 15.",
+"source": "notes"
+},
+{
+"q": "Which order of steps correctly shows that a statement is true by arguing by contradiction?",
+"options": [
+"Assume the statement is true; derive consequences; find an impossibility; conclude that the statement is false",
+"Assume the opposite of the statement; derive consequences; reach an impossibility; conclude that the statement is true",
+"Reach an impossibility; assume the opposite of the statement; derive consequences; conclude that the statement is true",
+"Derive consequences; assume the opposite of the statement; conclude that the statement is true; reach an impossibility"
+],
+"answer": 1,
+"explanation": "Example: to show there is no largest whole number, assume there is one, N; then N + 1 is a larger whole number, which is impossible, so the assumption is false and the original statement is true. The impossibility can only be reached after the opposite has been assumed and its consequences derived.",
+"source": "notes"
+},
+{
+"q": "Which statement about Step 3 (Carry out the plan) is NOT true?",
+"options": [
+"If one strategy is not working, a different one should be tried.",
+"Most problems are not solved quickly or on the first attempt.",
+"Carrying out the plan is usually harder than devising the plan.",
+"The original strategy may need to be modified while working."
+],
+"answer": 2,
+"explanation": "Carrying out the plan is usually easier than devising it, so the third statement is false. The other three are true: persistence is expected, switching strategies is normal, and a plan may need to be modified.",
+"source": "notes"
+},
+{
+"q": "A student argues that five odd numbers can add up to 20: 'An odd number plus an odd number is even, so a sum of odd numbers is even, and 20 is even.' Which analysis of this argument is correct?",
+"options": [
+"The argument is correct, because odd + odd is even and the same reasoning extends to any number of odd numbers.",
+"The argument is wrong, because odd + odd is odd, so the sum of five odd numbers is odd.",
+"The argument is wrong, because 20 is too large to be written as a sum of five odd numbers.",
+"The step is misapplied: four odd numbers give an even sum, but a fifth odd number makes the total odd, so 20 is impossible."
+],
+"answer": 3,
+"explanation": "Odd + odd is even, so pairs of odd numbers give even sums and four odd numbers give an even sum. Adding a fifth odd number to an even sum gives an odd sum, so five odd numbers never add to the even number 20. Check: 1 + 3 + 5 + 7 + 9 = 25, which is odd. The claim that odd + odd is odd is false, and size is not the reason for the impossibility.",
+"source": "notes"
+},
+{
+"q": "A student looks for two whole numbers with sum 12 and product 35, tries 4 and 8, gets product 32, and concludes that no such numbers exist. Which analysis is correct?",
+"options": [
+"The conclusion is correct, because 32 is not 35 and the guess already satisfied the sum.",
+"The conclusion is wrong, because guess and check uses each result to improve the next guess, and 5 and 7 give sum 12 and product 35.",
+"The conclusion is wrong, because 6 and 6 give sum 12 and product 35.",
+"The conclusion is wrong, because 3 and 9 give sum 12 and product 35."
+],
+"answer": 1,
+"explanation": "One failed guess does not show that no solution exists. The product 32 is too small but closer than 27, so the next guess should move toward 5 and 7: 5 + 7 = 12 and 5 * 7 = 35. The pair 6 and 6 gives product 36, and 3 and 9 gives product 27.",
+"source": "notes"
+},
+{
+"q": "A list begins 5, 9, 13, 17 and continues by the same rule. Using a table and a pattern, what is the 25th term?",
+"options": [
+"101",
+"100",
+"105",
+"97"
+],
+"answer": 0,
+"explanation": "The differences are 4, 4, 4, so the nth term is 5 + 4(n - 1) = 4n + 1, and n = 25 gives 101. Second check: 5 + 24 * 4 = 5 + 96 = 101. The value 100 drops the + 1 (4n), 105 adds 4 twenty-five times to 5 (using n instead of n - 1), and 97 is the 24th term.",
+"source": "notes"
+}
+]

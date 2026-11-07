@@ -1,0 +1,49 @@
+Lecture 5 The Human: Emotions
+CC7 Human Computer Interaction: why emotions matter, their effects on design, and the three levels of processing
+
+1. Why emotions matter
+★ Emotions make the human smart.
+★ Much of human behavior is subconscious.
+★ The affective system helps a person make judgments.
+★ People without emotions cannot choose between alternatives.
+EASIER: Emotion is what tips a decision. Without it, a person cannot pick one option over another.
+
+2. Effects of using emotions in design
+★ Using emotions in design broadens thorough processes.
+★ Using emotions in design brings greater creativity.
+★ Using emotions in design brings greater imagination.
+★ Using emotions in design makes people more tolerant of minor difficulties.
+EASIER: An emotionally engaged user thinks more widely, creates and imagines more, and forgives small flaws.
+
+3. The three levels of emotion-based processing
+★ Emotion-based processing has three levels: visceral, behavioral, and reflective.
+EASIER: Visceral is the look, behavioral is the use, reflective is the self-image and memories.
+
+4. Visceral level
+★ Visceral processing is pre-conscious and pre-thought.
+★ Appearance matters at the visceral level.
+★ First impressions are formed at the visceral level.
+★ The visceral level covers the initial impact of the product: touch, feel, and appearance.
+Slide image: a kitten appears on the visceral slide, with no caption in the source.
+EASIER: Visceral is the gut reaction that happens before you think.
+
+5. Behavioral level
+★ The behavioral level focuses on the use of the product.
+★ Behavioral covers the experience with the product: function, performance, and usability.
+Slide images: two chairs appear on the behavioral slide, with no caption in the source.
+EASIER: Behavioral asks whether the product works well and is good to use.
+
+6. Reflective level
+★ The reflective level is affected by culture, experience, education, and individual differences.
+★ The reflective level can override the visceral and behavioral levels.
+★ The reflective level involves sophistication versus popularity.
+★ The reflective level involves long-term relationships with the product.
+★ The reflective level involves consideration of the future.
+Slide images: two kinds of wristwatch appear on the reflective slide, with no caption in the source.
+EASIER: Reflective is the thinking-it-over level, and it can overrule a gut reaction or a good use experience.
+
+7. Working with the three levels
+⚙ Visceral: design for appearance.
+⚙ Behavioral: design for pleasure and effectiveness of use.
+⚙ Reflective: design for self-image, personal satisfaction, and memories.
+EASIER: Look for visceral, use for behavioral, and who I am and what I remember for reflective.

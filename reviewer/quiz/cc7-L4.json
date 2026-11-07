@@ -1,0 +1,362 @@
+[
+{
+"q": "Which principle guided the evolution of the human mind, in contrast with the design of computers?",
+"options": [
+"Mathematical precision in every computation",
+"Raw speed of calculation above all else",
+"Survival rather than precision",
+"Consistency across repeated tasks"
+],
+"answer": 2,
+"explanation": "Humans are the product of millions of years of evolution whose guiding principle was survival, not precision. Precision, consistency, and mathematical grounding describe computers.",
+"source": "notes"
+},
+{
+"q": "Which pairing correctly describes computer processing?",
+"options": [
+"Slow and error tolerant",
+"Precise and not fault tolerant",
+"Highly parallel and error tolerant",
+"Fast and fault tolerant"
+],
+"answer": 1,
+"explanation": "Computers are fast, high speed, precise, and not fault tolerant. The other pairings describe humans (slow, parallel, error tolerant) or mix up the two.",
+"source": "notes"
+},
+{
+"q": "How does the age of computing technology compare with the history of human evolution?",
+"options": [
+"About a million years old",
+"Roughly 500 years old",
+"Less than 100 years old",
+"Around 1,000 years old"
+],
+"answer": 2,
+"explanation": "Computers are less than 100 years old, while humans are the result of millions of years of evolution.",
+"source": "notes"
+},
+{
+"q": "Which description fits human computation as contrasted with computer computation?",
+"options": [
+"Slow, complex, highly parallel, error tolerant",
+"Fast, precise, complex, and strictly serial in operation",
+"Slow, simple, serial, and unforgiving of any error",
+"Fast, highly parallel, and not at all fault tolerant"
+],
+"answer": 0,
+"explanation": "Human computation is slow, complex, highly parallel, error tolerant, and forgiving. The other options attach computer traits (fast, precise, not fault tolerant) to humans.",
+"source": "notes"
+},
+{
+"q": "When a computer is given information it cannot process, whom does the conventional view blame?",
+"options": [
+"The programmer who wrote the software",
+"The human user",
+"The manufacturer of the hardware",
+"No one, because errors are treated as neutral events"
+],
+"answer": 1,
+"explanation": "The computer received information it could not process, and blame is shifted onto the human being. The lecture presents this as the wrong framing.",
+"source": "notes"
+},
+{
+"q": "An application answers every unparseable input with the message 'User error: fix your input.' Which principle does this design violate?",
+"options": [
+"Reaching a goal is a cooperative effort, not an exercise in blame",
+"Users should be treated as precise, consistent components of the machine",
+"Errors should be penalized so that users avoid repeating them",
+"Computers should sacrifice speed in order to remain fault tolerant"
+],
+"answer": 0,
+"explanation": "Achieving a goal should be a cooperative endeavor between human and machine. Pinning the fault on the user shifts blame instead of helping complete the task.",
+"source": "notes"
+},
+{
+"q": "What is the origin of a slip?",
+"options": [
+"Automatic behavior",
+"Conscious deliberation about the goal",
+"Choice of an inappropriate goal",
+"Misclassifying the situation"
+],
+"answer": 0,
+"explanation": "Slips result from automatic behavior. Conscious deliberation, poor goals, and misclassification are the sources of mistakes.",
+"source": "notes"
+},
+{
+"q": "After careful deliberation, a driver concludes the lane ahead is closed and detours, but the lane was actually open. How is this error classified?",
+"options": [
+"A slip, because the result was not the outcome the driver wanted",
+"A mistake, because it stems from conscious deliberation",
+"A slip, because a step in the sequence was forgotten",
+"Neither, since no harm resulted from the detour"
+],
+"answer": 1,
+"explanation": "Mistakes stem from conscious deliberation, here a poor decision based on a misjudged situation. An unwanted outcome alone does not make something a slip; slips come from automatic behavior.",
+"source": "notes"
+},
+{
+"q": "Which of these is NOT one of the six types of slips?",
+"options": [
+"Mode errors",
+"Capture errors",
+"Loss of activation errors",
+"Relevance bias"
+],
+"answer": 3,
+"explanation": "The six slip types are capture, description, data driven, association activation, loss of activation, and mode errors. Relevance bias is a factor in failing to detect problems.",
+"source": "notes"
+},
+{
+"q": "In a capture error, what takes over the intended action?",
+"options": [
+"A sudden sensory stimulus in the environment",
+"An unconscious wish that surfaces in speech",
+"An operating mode set earlier",
+"A frequently performed activity"
+],
+"answer": 3,
+"explanation": "A frequently done activity captures the one intended. Sensory triggers describe data-driven errors, unconscious wishes describe Freudian slips, and modes describe mode errors.",
+"source": "notes"
+},
+{
+"q": "A caller means to dial the DISCS direct line (426-6071) but dials the Ateneo trunk line (426-6001), which shares the same prefix. Which slip is this?",
+"options": [
+"Description error",
+"Data-driven error",
+"Capture error",
+"Mode error"
+],
+"answer": 2,
+"explanation": "Dialing a number with the same prefix as the intended one is the lecture's example of a capture error, where the frequently done activity takes over.",
+"source": "notes"
+},
+{
+"q": "Which statement defines a description error?",
+"options": [
+"Performing the right action on the right object in the wrong mode",
+"Forgetting to carry out an intended action",
+"Performing a habitual action in place of the intended one",
+"Performing an action on the wrong artifact"
+],
+"answer": 3,
+"explanation": "A description error is an action performed on the wrong artifact. The other options describe mode, loss-of-activation, and capture errors.",
+"source": "notes"
+},
+{
+"q": "You intend to pour milk into your coffee but pour it into the identical-looking mug of tea beside it. Which slip is this?",
+"options": [
+"Capture error",
+"Description error",
+"Loss-of-activation error",
+"Mode error"
+],
+"answer": 1,
+"explanation": "The action was right but was performed on the wrong artifact, which is a description error.",
+"source": "notes"
+},
+{
+"q": "Data-driven errors are triggered by:",
+"options": [
+"The arrival of sensory data",
+"A habitual activity overriding the intended one",
+"A poor choice of goal",
+"An action sequence started in the wrong mode"
+],
+"answer": 0,
+"explanation": "Data-driven errors are triggered by the arrival of sensory data. A habitual activity is capture, a poor goal is a mistake, and the wrong mode is a mode error.",
+"source": "notes"
+},
+{
+"q": "A Freudian slip is:",
+"options": [
+"A habitual, frequently done activity that overrides the action that was intended",
+"A failure to notice that a problem exists because of confirmatory evidence",
+"An action sequence that is carried out while the system is in the wrong mode",
+"A verbal or memory mistake that usually reveals the subconscious"
+],
+"answer": 3,
+"explanation": "A Freudian slip is a verbal or memory mistake that usually reveals the subconscious. The others describe capture errors, relevance bias, and mode errors.",
+"source": "notes"
+},
+{
+"q": "Loss-of-activation errors are errors of:",
+"options": [
+"Acting on the wrong artifact",
+"Acting in the wrong mode",
+"Choosing an inappropriate goal",
+"Forgetting to do something"
+],
+"answer": 3,
+"explanation": "A loss-of-activation error is forgetting to do something. Wrong artifact is description, wrong mode is mode error, and inappropriate goals are mistakes.",
+"source": "notes"
+},
+{
+"q": "Mode errors are:",
+"options": [
+"Action sequences performed in the wrong mode",
+"Actions performed on the wrong artifact",
+"Errors triggered by the arrival of sensory data",
+"Failures to carry out an intended action"
+],
+"answer": 0,
+"explanation": "A mode error is an action sequence performed in the wrong mode. The other options are description, data-driven, and loss-of-activation errors.",
+"source": "notes"
+},
+{
+"q": "A user types the correct password but is rejected because CAPS LOCK is on. Which slip is this?",
+"options": [
+"Description error",
+"Capture error",
+"Mode error",
+"Loss-of-activation error"
+],
+"answer": 2,
+"explanation": "The right keystrokes were performed while the keyboard was in the wrong mode, the lecture's example of a mode error.",
+"source": "notes"
+},
+{
+"q": "Which describes a mistake as opposed to a slip?",
+"options": [
+"Typing words you have just heard instead of the words you meant to type",
+"Forgetting to carry out a step that was part of the intended plan",
+"Choosing an inappropriate goal or making a poor decision",
+"Dialing a number that shares its prefix with the number that was intended"
+],
+"answer": 2,
+"explanation": "Mistakes involve choosing an inappropriate goal or a poor decision. The other options are data-driven, loss-of-activation, and capture slips.",
+"source": "notes"
+},
+{
+"q": "An operator misreads a panel, decides the plant is in a normal state when it is in a fault condition, and proceeds accordingly. Which classification fits?",
+"options": [
+"Mistake, because the situation was misclassified",
+"Capture error, because the operator repeated a habitual action",
+"Loss-of-activation error, because a step was forgotten",
+"Mode error, because the panel was in the wrong mode"
+],
+"answer": 0,
+"explanation": "Misclassifying a situation leads to a poor decision, which is a mistake. No habit, forgotten step, or wrong-mode action is described.",
+"source": "notes"
+},
+{
+"q": "Human mental thought is not neat and orderly. What does the lecture say follows from this disorder?",
+"options": [
+"It is a pure flaw that training should eliminate",
+"It makes humans less robust in behavior than computers",
+"It leads to creativity, discovery, and robust behavior",
+"It makes errors impossible for users to detect"
+],
+"answer": 2,
+"explanation": "The same disorder behind human error also leads to creativity, discovery, and great robustness of behavior.",
+"source": "notes"
+},
+{
+"q": "Which statement about a user's ability to detect errors is supported?",
+"options": [
+"It is highly reliable once the user is trained",
+"It is unreliable",
+"It is reliable for slips but unreliable for mistakes",
+"It is reliable whenever the computer reports the error"
+],
+"answer": 1,
+"explanation": "The user's ability to detect errors is unreliable. Relevance bias, partial explanation, and model-world overlap are given as reasons.",
+"source": "notes"
+},
+{
+"q": "Relevance bias means:",
+"options": [
+"People accept a crude agreement between what they expect and what they see",
+"People look for confirming evidence when testing a hypothesis",
+"A person's mental model is only partly consistent with the world",
+"People attend most to the latest sensory data they receive"
+],
+"answer": 1,
+"explanation": "Relevance bias is seeking confirmatory evidence when evaluating a hypothesis. The other options describe partial explanation, overlap of model and world, and a made-up factor.",
+"source": "notes"
+},
+{
+"q": "Partial explanation refers to:",
+"options": [
+"A mental model that is only partly consistent with the world around",
+"A crude agreement between what is expected and what is seen",
+"Seeking only evidence that confirms a hypothesis",
+"An error message that explains only part of a failure"
+],
+"answer": 1,
+"explanation": "Partial explanation is a crude agreement between what the user expects and what he sees. A mental model that is only partly consistent with the world is overlap of model and world, and seeking only confirming evidence is relevance bias.",
+"source": "notes"
+},
+{
+"q": "Overlap of model and world means:",
+"options": [
+"The user searches only for evidence confirming a hypothesis",
+"The user's expectation roughly agrees with what is seen",
+"The mental model is partly consistent with the world",
+"The computer's model is identical to the user's model"
+],
+"answer": 2,
+"explanation": "Overlap of model and world is a mental model that is partially consistent with the world. Seeking confirmatory evidence is relevance bias, and a crude agreement between expectation and observation is partial explanation.",
+"source": "notes"
+},
+{
+"q": "Which pairing of factor and description is correct?",
+"options": [
+"Overlap of model and world: a partly consistent mental model",
+"Relevance bias: crude agreement between expectation and observation",
+"Partial explanation: seeking confirmatory evidence for a hypothesis",
+"Overlap of model and world: dialing a number with a shared prefix"
+],
+"answer": 0,
+"explanation": "Overlap of model and world is a partly consistent mental model. The pairings that give relevance bias the description of partial explanation, or partial explanation the description of relevance bias, are swapped, and a shared-prefix dialing error describes a capture error.",
+"source": "notes"
+},
+{
+"q": "The lecture's treatment of errors is drawn from which work?",
+"options": [
+"Nielsen (1993), Usability Engineering",
+"Shneiderman (1987), Designing the User Interface",
+"Card, Moran, and Newell (1983), The Psychology of Human-Computer Interaction",
+"Norman (1988), The Design of Everyday Things"
+],
+"answer": 3,
+"explanation": "The material is attributed to Norman, D.A. (1988), The Design of Everyday Things.",
+"source": "notes"
+},
+{
+"q": "Which statement about human and computer computation is NOT true?",
+"options": [
+"Human computation is error tolerant and forgiving",
+"Computer computation is precise and not fault tolerant",
+"Human computation is subject to rapid change",
+"Computer computation is slow, complex, and highly parallel"
+],
+"answer": 3,
+"explanation": "Computer computation is fast, high speed, precise, and not fault tolerant. Slow, complex, highly parallel processing describes humans, so the first statement is the false one.",
+"source": "notes"
+},
+{
+"q": "Which pairing of slip type and description is mismatched?",
+"options": [
+"Capture error: a frequently done activity captures the one intended",
+"Description error: triggered by the arrival of sensory data",
+"Mode error: an action sequence performed in the wrong mode",
+"Loss-of-activation error: forgetting to do something"
+],
+"answer": 1,
+"explanation": "A description error is an action performed on the wrong artifact. Being triggered by the arrival of sensory data defines a data-driven error. The other three pairings are correct.",
+"source": "notes"
+},
+{
+"q": "Which statement about failure to detect problems is NOT true?",
+"options": [
+"Overlap of model and world means the user's mental model is fully consistent with the world",
+"The user's ability to detect errors is unreliable",
+"Relevance bias leads people to seek confirmatory evidence when evaluating a hypothesis",
+"Partial explanation is a crude agreement between what the user expects and what he sees"
+],
+"answer": 0,
+"explanation": "Overlap of model and world means the mental model is only partially consistent with the world, not fully consistent. The other three statements are accurate.",
+"source": "notes"
+}
+]

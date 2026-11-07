@@ -1,0 +1,390 @@
+3 Iterative Control Structure
+CC2 Introduction to Computer Programming: repeating code with while and for loops
+
+WHAT ITERATION AND ITERATIVE CONTROL STRUCTURES ARE
+★ Iteration: the recurrence or duplication of an action or event.
+EASIER: Iteration means doing the same thing again and again, like brushing every tooth one after another.
+★ Iterative control structure: a group of code that executes a sequence of statements repeatedly if a condition holds true.
+★ Another name for an iterative control structure is repetition control structure.
+The iteration can repeat zero or more times, until some control value or condition causes the repetition to stop.
+Zero times means the condition was False at the very first check, so the body never ran.
+EASIER: A control structure decides which code runs and when. An iterative control structure decides to run the same code again.
+★ Loop: the most common term used to describe iteration control structures.
+The lecture covers three topics: the definition, the parts of a loop, and the types of loops.
+
+THE FOUR PARTS OF A LOOP
+★ A loop has four parts: counter variable declaration, condition, body, and counter variable update.
+★ Counter variable declaration: the creation of a variable (with a starting value) that the condition compares each time the loop checks whether to continue.
+Correction: the lecture sentence for this part is garbled. The meaning is that the counter is created before the loop starts and is compared by the condition on every check.
+EASIER: The counter is like a lap count on a scoreboard. You must write the starting number (usually 0) before the race begins.
+★ Condition: the logic that evaluates to True or False.
+⚙ If the condition is True, the loop will repeat.
+⚙ If the condition is False, the loop will end and exit the structure.
+★ Body: the code block or blocks that are executed repeatedly as long as the condition is True.
+★ Counter variable update: the change that happens to the count variable if the condition is True.
+⚙ The update can use arithmetic operators (for example i = i + 1), direct assignment via a conditional structure, or special keywords (for example break, covered later).
+⚙ The update ensures that the condition will eventually change, so the loop does not become an infinite loop.
+★ Infinite loop: a loop whose condition never becomes False, so it never stops.
+EASIER: Think of running laps. Start at 0 laps (declaration), ask "fewer than 5 laps?" (condition), run one lap (body), add 1 to your lap count (update). If you forget to add 1, you run forever.
+
+HOW THE PARTS WORK TOGETHER
+⚙ Step 1: Declare the counter variable with a starting value before the loop.
+⚙ Step 2: Test the condition.
+⚙ Step 3: If the condition is True, run the body.
+⚙ Step 4: Update the counter variable.
+⚙ Step 5: Go back to Step 2 and test the condition again.
+⚙ Step 6: When the condition is False, leave the loop and continue with the statement after it.
+
+TYPES OF LOOPS: PRE-TEST AND POST-TEST
+★ Pre-test loop: checks the condition first, before deciding whether to execute the body of the loop or not.
+⚙ A pre-test loop executes its body 0 or more times (0 if the initial condition evaluates to False).
+⚙ Examples of pre-test loops: while loops and for loops.
+⚙ Pre-test flowchart: enter at the Condition diamond. If true, go to the Action box, then return to the Condition. If false, leave the loop.
+★ Post-test loop: checks the condition after executing the body of the loop.
+⚙ A post-test loop will always execute its body at least once, even if the initial condition evaluates to False.
+⚙ Post-test flowchart: enter at the Action box, then go to the Condition diamond. If true, return to the Action box. If false, leave the loop.
+★ Python does not have a post-test loop. Java's do-while loop is a post-test loop.
+EASIER: A pre-test loop is like checking your ticket before entering the cinema. A post-test loop is like watching the first scene and then checking your ticket.
+Difference: pre-test checks first and may run 0 times, post-test runs first and runs at least 1 time.
+Added example: Python can imitate a post-test loop with while True and a break at the end of the body.
+⚙ count = 10
+⚙ while True:
+⚙     print(count)
+⚙     count += 1
+⚙     if count > 5:
+⚙         break
+Added example: this prints 10 once. The body runs before the first test, so it runs once even though 10 is already past 5.
+
+WHILE LOOPS
+★ while loop: a statement in Python that repeatedly executes a block of statements if a condition evaluates to a True value.
+⚙ When the condition in a while loop evaluates to False, it exits the loop and the process continues to the statement below or after the while block.
+⚙ Flowchart: "Is condition true?" If true, run the body of the while loop and return to the question. If false, exit the while loop.
+⚙ Syntax pattern, first line: <counter_variable>
+⚙ Syntax pattern, second line: while(condition):
+⚙ Syntax pattern, third line (indented): <body>
+⚙ Syntax pattern, fourth line (indented): <counter_variable update>
+The parentheses around the condition are optional in Python. The colon and the indentation are required.
+EASIER: The indented lines under while are the loop. The first unindented line after them is where the program continues after the loop ends.
+★ A while loop is a pre-test loop.
+
+EXAMPLE: PRINTING HELLO FIVE TIMES
+The lecture first shows this code without an update, which would print Hello! forever (an infinite loop).
+⚙ i = 0
+⚙ while i < 5:
+⚙     print("Hello!")
+Corrected version with the counter variable update added (the lecture's next slide):
+⚙ i = 0
+⚙ while i < 5:
+⚙     print("Hello!")
+⚙     i = i + 1     # or you can use i += 1
+⚙ Check 1: i = 0, 0 < 5 is True, print Hello!, i becomes 1.
+⚙ Check 2: i = 1, 1 < 5 is True, print Hello!, i becomes 2.
+⚙ Check 3: i = 2, 2 < 5 is True, print Hello!, i becomes 3.
+⚙ Check 4: i = 3, 3 < 5 is True, print Hello!, i becomes 4.
+⚙ Check 5: i = 4, 4 < 5 is True, print Hello!, i becomes 5.
+⚙ Check 6: i = 5, 5 < 5 is False, the loop exits.
+⚙ Final answer: Hello! is printed 5 times. The body runs 5 times and the condition is checked 6 times.
+Added example: a counter update that is not +1. The update can be any arithmetic change, such as doubling.
+⚙ count = 1
+⚙ total = 0
+⚙ while count < 20:
+⚙     total += count
+⚙     count *= 2
+⚙ print(total, count)
+⚙ Check 1: count = 1, True, total = 1, count = 2.
+⚙ Check 2: count = 2, True, total = 3, count = 4.
+⚙ Check 3: count = 4, True, total = 7, count = 8.
+⚙ Check 4: count = 8, True, total = 15, count = 16.
+⚙ Check 5: count = 16, True, total = 31, count = 32.
+⚙ Check 6: count = 32, 32 < 20 is False, exit.
+⚙ Final answer: the program prints 31 32. Check: 1 + 2 + 4 + 8 + 16 = 31.
+
+EXAMPLE: EVEN OR ODD IN A LIST
+⚙ myList = [1, 2, 3, 4, 5]
+⚙ i = 0
+⚙ while i < len(myList):
+⚙     if myList[i] % 2 == 0:
+⚙         print(myList[i], "is even.")
+⚙     else:
+⚙         print(myList[i], "is odd.")
+⚙     i += 1
+len(myList) is the number of items, which is 5. The symbol % gives the remainder after division. A number is even when its remainder after dividing by 2 is 0.
+Note: == tests equality. A single = would be assignment and is an error inside an if condition.
+⚙ i = 0: myList[0] = 1, 1 % 2 = 1, not 0, so print 1 is odd.
+⚙ i = 1: myList[1] = 2, 2 % 2 = 0, so print 2 is even.
+⚙ i = 2: myList[2] = 3, 3 % 2 = 1, so print 3 is odd.
+⚙ i = 3: myList[3] = 4, 4 % 2 = 0, so print 4 is even.
+⚙ i = 4: myList[4] = 5, 5 % 2 = 1, so print 5 is odd.
+⚙ i becomes 5, 5 < 5 is False, the loop exits.
+⚙ Final output: 1 is odd. then 2 is even. then 3 is odd. then 4 is even. then 5 is odd. (each on its own line)
+
+EXAMPLE: SUM OF EVEN NUMBERS FROM 0 TO 20
+This is the lecture practice problem (the one marked half crosswise individual). The lecture gives no answer, so it is solved here.
+Task: use a while loop over the numbers 0 to 20. If a number is even, add it. If it is odd, skip it. Print the total.
+Correction: the lecture says "add the numbers". It means add the even number to the running total.
+⚙ total = 0
+⚙ i = 0
+⚙ while i <= 20:
+⚙     if i % 2 == 0:
+⚙         total += i
+⚙     i += 1
+⚙ print(total)
+The update i += 1 is outside the if block, so it runs for every number, odd or even. The condition uses <= so that 20 is included.
+⚙ i = 0: even, total = 0 + 0 = 0.
+⚙ i = 1: odd, skipped, total stays 0.
+⚙ i = 2: even, total = 0 + 2 = 2.
+⚙ i = 3: odd, skipped.
+⚙ i = 4: even, total = 2 + 4 = 6.
+⚙ i = 5: odd, skipped.
+⚙ i = 6: even, total = 6 + 6 = 12.
+⚙ i = 7: odd, skipped.
+⚙ i = 8: even, total = 12 + 8 = 20.
+⚙ i = 9: odd, skipped.
+⚙ i = 10: even, total = 20 + 10 = 30.
+⚙ i = 11: odd, skipped.
+⚙ i = 12: even, total = 30 + 12 = 42.
+⚙ i = 13: odd, skipped.
+⚙ i = 14: even, total = 42 + 14 = 56.
+⚙ i = 15: odd, skipped.
+⚙ i = 16: even, total = 56 + 16 = 72.
+⚙ i = 17: odd, skipped.
+⚙ i = 18: even, total = 72 + 18 = 90.
+⚙ i = 19: odd, skipped.
+⚙ i = 20: even, total = 90 + 20 = 110.
+⚙ i becomes 21, 21 <= 20 is False, the loop exits and 110 is printed.
+⚙ Check a second way: 2 + 4 + ... + 20 = 2 x (1 + 2 + ... + 10) = 2 x 55 = 110.
+Added example: the same answer with a for loop and range.
+⚙ total = 0
+⚙ for n in range(0, 21, 2):
+⚙     total += n
+⚙ print(total)
+⚙ range(0, 21, 2) gives 0 2 4 ... 20, which is 11 values with an average of 10, so the total is 110.
+
+OPTIONAL KEYWORDS IN LOOPS
+The while loop (and the for loop) can use four optional keywords: break, continue, else, and pass.
+★ break keyword: stops the loop and exits the structure. It is used only inside the loop.
+★ continue keyword: skips the rest of the code in the current iteration and immediately jumps to the next one. Unlike break, it does not stop the loop entirely. It just moves the loop forward to its next cycle. It is used only inside the loop.
+★ else keyword (on a loop): runs if and only if the loop is exited without triggering the break keyword. It is written outside the loop indentation, lined up with the while keyword.
+★ pass keyword: literally does nothing. It is only used as a substitute to occupy code blocks that require content.
+EASIER: break means "stop everything and leave". continue means "skip the rest of this round and start the next round". pass means "do nothing here, I just need something to fill the block".
+Difference: break leaves the whole loop, continue only leaves the current round, and pass does not change the flow at all.
+Difference: an else lined up with while belongs to the loop. An else lined up with if belongs to the if statement.
+
+EXAMPLE: BREAK
+⚙ while True:
+⚙     course = input("Enter course code: ")
+⚙     if course == "CC2":
+⚙         break
+while True is always True, so without break this loop would never end. The only way out is break.
+⚙ Suppose the user types CC1, then CC3, then CC2.
+⚙ Round 1: course = CC1, not equal to CC2, loop continues.
+⚙ Round 2: course = CC3, not equal to CC2, loop continues.
+⚙ Round 3: course = CC2, the if is True, break runs, the loop exits.
+⚙ Final answer: the loop ran 3 rounds and stopped on the third.
+
+EXAMPLE: CONTINUE
+⚙ i = 0
+⚙ while i < 10:
+⚙     if i == 6 or i == 7:
+⚙         i += 1
+⚙         continue
+⚙     print(i)
+⚙     i += 1
+The update i += 1 is placed before continue. If it were missing, i would stay at 6 and the loop would never end.
+⚙ i = 0 to 5: the if is False, each value is printed, and i goes up by 1.
+⚙ i = 6: the if is True, i becomes 7, continue jumps back to the condition without printing.
+⚙ i = 7: the if is True, i becomes 8, continue jumps back without printing.
+⚙ i = 8: printed, i becomes 9.
+⚙ i = 9: printed, i becomes 10.
+⚙ i = 10: 10 < 10 is False, the loop exits.
+⚙ Final output: 0 1 2 3 4 5 8 9 (each on its own line). The numbers 6 and 7 are skipped.
+
+EXAMPLE: ELSE ON A LOOP
+⚙ i = 0
+⚙ while i < 3:
+⚙     course = input("Enter a course code: ")
+⚙     if course == "CC2":
+⚙         break
+⚙     i += 1
+⚙ else:
+⚙     print("Successful 3 iterations.")
+Here else is lined up with while, so it belongs to the loop.
+⚙ Case 1: the user types CC1, CC3, CC4. i goes 0, 1, 2, 3. The condition 3 < 3 becomes False, the loop ends normally, no break happened, so the else block runs and prints Successful 3 iterations.
+⚙ Case 2: the user types CC1 and then CC2. In round 2 the break runs while i is still 1. The loop is left by break, so the else block is skipped and nothing is printed. The final value of i is 1.
+The message means all 3 tries were used without finding CC2.
+Added example: the else block also runs when the condition is False at the first check, because no break happened.
+
+EXAMPLE: PASS
+⚙ i = 0
+⚙ while i < 3:
+⚙     course = input("Enter a course code: ")
+⚙     if course == "CC2":
+⚙         pass
+⚙     else:
+⚙         print("This is not Intro to Com Prog")
+⚙     i += 1
+Here else is lined up with if, so it belongs to the if statement. The if block needs some content, so pass fills it.
+⚙ Suppose the user types CC2, CC1, CC2.
+⚙ Round 1: CC2, the if is True, pass does nothing, i becomes 1.
+⚙ Round 2: CC1, the if is False, print This is not Intro to Com Prog, i becomes 2.
+⚙ Round 3: CC2, pass does nothing, i becomes 3, the loop exits.
+⚙ Final answer: the message is printed once.
+
+FOR LOOPS
+★ for loop: usually used to go through sequence structures such as lists and strings.
+⚙ A for loop also uses the optional keywords break, continue, else, and pass.
+⚙ A for loop automatically increments the counter variable, meaning it moves to the next item by itself. You do not write an update line.
+⚙ Flowchart: ask "Last item in sequence?" If true, exit the for loop. If false, execute the body for the next item and return to the question.
+⚙ Syntax, first line: for <variable_name> in <sequence_structure>:
+⚙ Syntax, second line (indented): <body>
+★ A for loop is a pre-test loop.
+EASIER: Read for fruit in fruits as "for each fruit in the fruits list". The loop variable holds one item at a time.
+Difference: a while loop needs you to write the counter declaration and the update. A for loop handles moving to the next item by itself.
+
+EXAMPLE: FOR LOOP THROUGH A LIST AND A STRING
+⚙ # Looping through a list
+⚙ fruits = ["apple", "banana", "cherry"]
+⚙ for fruit in fruits:
+⚙     print(fruit)
+⚙ Round 1: fruit = apple, print apple.
+⚙ Round 2: fruit = banana, print banana.
+⚙ Round 3: fruit = cherry, print cherry.
+⚙ No items remain, so the loop exits. Output: apple, banana, cherry (each on its own line).
+⚙ # Looping through a String
+⚙ for letter in "I love programming.":
+⚙     print(letter)
+A string is a sequence of characters, so the loop visits one character at a time, including spaces and the period.
+⚙ Count: I = 1, space = 1, love = 4, space = 1, programming = 11, period = 1.
+⚙ Final answer: 1 + 1 + 4 + 1 + 11 + 1 = 19 characters, so print runs 19 times and the output has 19 lines.
+
+EXAMPLE: FOR LOOP WITH BREAK
+⚙ myList = [1, 2, 3, 4, 5]
+⚙ for i in myList:
+⚙     if i == 3:
+⚙         print("Gotcha")
+⚙         break
+⚙     else:
+⚙         print("Looking for the chosen one.")
+Here else is lined up with if, so it belongs to the if statement, not to the loop.
+⚙ i = 1: not 3, print Looking for the chosen one.
+⚙ i = 2: not 3, print Looking for the chosen one.
+⚙ i = 3: print Gotcha, then break leaves the loop. The values 4 and 5 are never visited.
+⚙ Final output: Looking for the chosen one. then Looking for the chosen one. then Gotcha (3 lines).
+
+THE RANGE FUNCTION
+★ range() function: generates a sequence of integers dynamically.
+★ range(stop): generates numbers starting from 0 up to, but excluding, the stop value.
+★ range(start, stop): starts at the start value (inclusive) and ends right before the stop value (exclusive).
+★ range(start, stop, step): increments the sequence by the step value instead of the default 1.
+EASIER: The start is included and the stop is not included. A way to remember: the stop is a wall you may not touch.
+EASIER: The lecture says "dynamically". The numbers are produced one at a time as the loop needs them, rather than being typed out by hand.
+Added example: counting the values. With a positive step and stop greater than start, the number of values is (stop - start) divided by step, rounded up.
+
+EXAMPLE: RANGE WITH ONE, TWO AND THREE ARGUMENTS
+⚙ for i in range(5):
+⚙     print(i)
+⚙ Output: 0 1 2 3 4 (5 values, the stop value 5 is excluded).
+⚙ for i in range(5, 9):
+⚙     print(i)
+⚙ Output: 5 6 7 8 (9 - 5 = 4 values, 5 is included and 9 is excluded).
+⚙ for i in range(0,10,2):
+⚙     print(i)
+⚙ Output: 0 2 4 6 8 (10 divided by 2 = 5 values, 10 is excluded).
+Added example: range(2, 15, 4) gives 2, 6, 10, 14. The next value 18 is past 15, so it stops. Count check: (15 - 2) / 4 = 3.25, rounded up to 4 values.
+Added example: a negative step counts down. range(10, 0, -3) gives 10, 7, 4, 1. The next value -2 passes the stop value 0, so it stops. Count check: (0 - 10) / -3 = 3.33, rounded up to 4 values.
+Added example: the sum of the integers 1 through 6.
+⚙ total = 0
+⚙ for i in range(1, 7):
+⚙     total += i
+⚙ print(total)
+⚙ Final answer: 1 + 2 + 3 + 4 + 5 + 6 = 21. Writing range(1, 6) would give only 15 because 6 is excluded.
+
+LOOP NESTING
+★ Loop nesting: placing a loop inside another loop. Both for loops and while loops can be nested.
+Like nested if statements, there can be loops inside other loops.
+⚙ Any combination is allowed: a while inside a while, a for inside a for, a for inside a while, a while inside a for, and so on.
+⚙ Take note of the indentations. They make the difference between consecutive loops and nested loops.
+EASIER: Think of a clock. The minute hand (inner loop) goes all the way around for every single step of the hour hand (outer loop).
+Rule: if the outer loop runs A times and the inner loop runs B times each round, the inner body runs A x B times in total.
+Difference: consecutive loops are written one after another at the same indentation, and the second starts only after the first has finished. A nested loop is indented inside the first loop and runs fully on every round of the outer loop.
+Added example: consecutive loops.
+⚙ for a in range(2):
+⚙     print(a)
+⚙ for b in range(2):
+⚙     print(b)
+⚙ Output: 0 1 0 1 (4 lines, the loops run one after the other).
+Added example: nested loops.
+⚙ for a in range(2):
+⚙     for b in range(2):
+⚙         print(a, b)
+⚙ Output: 0 0, then 0 1, then 1 0, then 1 1 (2 x 2 = 4 lines).
+
+EXAMPLE: NESTED LOOP FROM THE LECTURE
+⚙ my_list = [1, 2, 3, 4, 5]
+⚙ i = 0
+⚙ while i < len(my_list):
+⚙     if my_list[i] % 2 == 0:
+⚙         print(my_list[i], "is even")
+⚙     else:
+⚙         print(my_list[i], "is not even")
+⚙     for x in my_list:
+⚙         print(my_list[i])
+⚙     i = i + 1
+The for loop is indented inside the while loop, so it runs completely on every round of the while loop. The line i = i + 1 lines up with the for keyword, so it belongs to the while body and runs once per round.
+Note: the inner loop never uses x. It prints my_list[i], the same item every time. To print each item of the list, the inner line should be print(x).
+⚙ i = 0: print 1 is not even, then the inner loop prints 1 five times.
+⚙ i = 1: print 2 is even, then the inner loop prints 2 five times.
+⚙ i = 2: print 3 is not even, then the inner loop prints 3 five times.
+⚙ i = 3: print 4 is even, then the inner loop prints 4 five times.
+⚙ i = 4: print 5 is not even, then the inner loop prints 5 five times.
+⚙ i becomes 5, the while loop exits.
+⚙ Final answer: 5 lines from the if and else, plus 5 x 5 = 25 lines from the inner loop, which is 30 lines in total.
+⚙ With print(x) instead, each round would print 1 2 3 4 5 (still 25 inner lines in total).
+
+COMMON MISTAKES
+Forgetting the counter variable update in a while loop. The condition never changes and the loop is infinite.
+Putting the update inside an if block. If the if is False the counter is never updated, so the loop can get stuck.
+Writing continue before the update in a while loop. The skipped update causes an infinite loop. Update first, then continue.
+Thinking range(1, 6) includes 6. The stop value is excluded, so it gives 1 2 3 4 5.
+Thinking range(5) starts at 1. It starts at 0 and ends at 4.
+Mixing up break and continue. break leaves the whole loop, continue only skips to the next round.
+Thinking the loop else runs when break happens. It runs only when the loop ends without break.
+Lining up else with if when you meant the loop else, or the reverse. The indentation decides which statement owns the else.
+Using = instead of == in a condition. = assigns a value, == compares.
+Thinking Python has a do-while loop. Python has no post-test loop.
+Ignoring indentation in nested loops. Wrong indentation turns nested loops into consecutive loops, or the reverse.
+Using break or continue outside a loop. They are only allowed inside a loop.
+
+EXAM TIPS
+When tracing a loop, make a small table with the counter value, the condition result, and the output for each round.
+Always check the very first condition. If it is False, a pre-test loop runs 0 times.
+For range, write out the first value, the last value (stop minus 1 for step 1), and the count of values.
+For the nested loop count, multiply the outer count by the inner count, unless the inner range depends on the outer variable. Then add up the inner counts round by round.
+For break, continue, and else questions, look at the indentation first to see which statement owns each line.
+Check that every while loop has an update that moves the counter toward making the condition False.
+
+SELF-TEST
+Q: What is iteration?
+★ The recurrence or duplication of an action or event.
+Q: What is another name for an iterative control structure?
+★ Repetition control structure.
+Q: Name the four parts of a loop.
+★ Counter variable declaration, condition, body, and counter variable update.
+Q: How does a pre-test loop differ from a post-test loop?
+★ A pre-test loop checks the condition first and runs its body 0 or more times. A post-test loop runs its body first and always runs it at least once.
+Q: Which loop type does Java provide that Python does not?
+★ The post-test do-while loop.
+Q: What does the code i = 0, then while i < 5: print(i) with no update do?
+★ It prints 0 forever, because i never changes and the condition stays True (an infinite loop).
+Q: What does break do, and what does continue do?
+★ break stops the loop and exits the structure. continue skips the rest of the current iteration and jumps to the next one.
+Q: When does the else clause of a loop run?
+★ Only when the loop is exited without triggering break.
+Q: What does range(5, 9) generate?
+★ 5 6 7 8, because the start is included and the stop is excluded.
+Q: What does range(0, 10, 2) generate?
+★ 0 2 4 6 8.
+Q: How many times does the inner body run in a nested loop where the outer loop runs 3 times and the inner loop runs 4 times each round?
+★ 3 x 4 = 12 times.
+Q: What is the sum of the even numbers from 0 to 20?
+★ 110.

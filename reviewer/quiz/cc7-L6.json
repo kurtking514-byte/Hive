@@ -1,0 +1,362 @@
+[
+{
+"q": "In HCI, what is the stated purpose of interaction?",
+"options": [
+"To make the interface as visually appealing as possible to users",
+"To transfer data between hardware components at the highest possible speed",
+"To translate the system's core language into the user's personal vocabulary",
+"To accomplish a goal within an application domain"
+],
+"answer": 3,
+"explanation": "Interaction exists to accomplish a goal within an application domain, performing what is intended with what is available. Visual appeal and raw data speed are side concerns, and translating languages is the interface's job, not the purpose of interaction.",
+"source": "notes"
+},
+{
+"q": "A student opens a spreadsheet, enters values, and applies a SUM formula in order to produce a budget total. Which labeling is correct?",
+"options": [
+"Budget total is the task; entering values and applying SUM are the goals",
+"Budget total is the goal; entering values and applying SUM are tasks",
+"Budget total is the domain; entering values is the core language",
+"Budget total is the task language; SUM is the goal"
+],
+"answer": 1,
+"explanation": "The goal is the desired output (the total). Tasks are the operations performed to reach it (entering values, applying SUM). Swapping goal and task is the common trap. The domain is the area of expertise, and the core language belongs to the system.",
+"source": "notes"
+},
+{
+"q": "Which description matches task analysis?",
+"options": [
+"Compiling the system's source code into machine-level instructions for the processor",
+"Measuring the delay between an input action and the corresponding output on the display",
+"Identifying the user's problem space: domain, goals, intentions, and tasks",
+"Testing afterwards whether the user's tasks were executed properly and what went wrong"
+],
+"answer": 2,
+"explanation": "Task analysis identifies the problem space for the user in terms of domain, goals, intentions, and tasks, from the user's point of view. Compiling is a performance concern, measuring delay is latency, and checking execution afterwards is the evaluation phase of Norman's cycle.",
+"source": "notes"
+},
+{
+"q": "A banking app is written in Java, but customers think in terms of 'transfer funds' and 'check balance'. Which pairing is correct?",
+"options": [
+"Java is the task language; 'transfer funds' is the core language",
+"Java is the core language; 'transfer funds' is the task language",
+"Both are core language, because both are part of the system itself",
+"Both are task language, because both are used by the customer"
+],
+"answer": 1,
+"explanation": "The core language is the language of the computer-based system (the programming language). The task language is the language of the user. Reversing them is wrong, and merging them into one language ignores the gap an interface must bridge.",
+"source": "notes"
+},
+{
+"q": "Which pairing of term and definition is correct?",
+"options": [
+"System: the individual using the application; User: the software or hardware being designed",
+"System: the computer-based software or hardware; User: the individual who will use it",
+"System: the language of the user; User: the language of the computer-based system",
+"System: the area of expertise; User: the operations that manipulate the domain"
+],
+"answer": 1,
+"explanation": "The system is the computer-based system (software or hardware being designed) and the user is the individual who will use it. Swapping them is wrong, and the other pairings describe task and core language or domain and tasks.",
+"source": "notes"
+},
+{
+"q": "Which set lists the human specifications to identify when analyzing tasks?",
+"options": [
+"Human perception, memory, processing, error, and emotions",
+"Input and output devices, computer memory, and processing",
+"Interpreters, compilers, and the programming languages of the core",
+"Servers, routers, and network hardware between server and device"
+],
+"answer": 0,
+"explanation": "Human specifications cover perceptual systems, memory and processing, and human error and emotions. Input/output devices and computer memory and processing are the computer specifications. The other two options are performance and latency topics.",
+"source": "notes"
+},
+{
+"q": "Interaction in HCI takes place between the user and the system. What must the interface do, and what is the risk?",
+"options": [
+"Store the user's goals; storage limits can cause the translation to fail",
+"Replace the user's tasks; automation can cause the user to lose control",
+"Display output only; ignoring input can cause the system to stall",
+"Translate their communication; translation can fail at several points"
+],
+"answer": 3,
+"explanation": "The interface must translate communication between user and system, and that translation can fail at several points, which is why frameworks such as Abowd and Beale and Norman's cycle exist. The other options invent roles the interface does not have.",
+"source": "notes"
+},
+{
+"q": "In the Abowd and Beale framework, which pairing of component and what it represents is correct?",
+"options": [
+"Core represents the user; task represents the system",
+"Input represents the system; output represents the user",
+"Core represents the system; task represents the user",
+"Task represents the output; core represents the input"
+],
+"answer": 2,
+"explanation": "In the diagram S is the system (core) and U is the user (task), with input and output between them. Swapping system and user is wrong, and the remaining pairings misassign input and output.",
+"source": "notes"
+},
+{
+"q": "Which sequence correctly traces the Abowd and Beale cycle starting from the user?",
+"options": [
+"Articulation, performance, presentation, observation",
+"Observation, presentation, performance, articulation",
+"Performance, articulation, observation, presentation",
+"Articulation, presentation, performance, observation"
+],
+"answer": 0,
+"explanation": "User to input is articulation, input to system is performance, system to output is presentation, and output to user is observation. Swapping performance and presentation would skip the system processing the input.",
+"source": "notes"
+},
+{
+"q": "Which statement best describes articulation in the Abowd and Beale framework?",
+"options": [
+"The interface translates the input language into stimuli for the core language",
+"The user expresses the task in the input language",
+"The system displays what it processed in the output language",
+"The user translates the output language into personal understanding"
+],
+"answer": 1,
+"explanation": "Articulation is the user expressing the task in the input language, which must be compatible with achieving the task. Translating input into stimuli for the core language is performance, displaying results is presentation, and the user's own understanding of output is observation.",
+"source": "notes"
+},
+{
+"q": "A user sees an error code that means nothing to them. Which Abowd and Beale step has failed, and why?",
+"options": [
+"Observation, because the output is not something the user understands",
+"Articulation, because the user could not state the task in the input language",
+"Performance, because the interpreter could not translate the input language",
+"Presentation, because the system did not show any result of processing"
+],
+"answer": 0,
+"explanation": "The system did present a result, but observation requires the output to be something the user understands. The code was shown (so presentation worked), and the problem is not about stating the task or translating input.",
+"source": "notes"
+},
+{
+"q": "Which of the following is NOT listed as an advantage of the Abowd and Beale framework?",
+"options": [
+"It models the user's seven stages of action",
+"It is not restricted to electronic computer systems",
+"It identifies all major components involved in interaction",
+"It allows comparative assessment of systems"
+],
+"answer": 0,
+"explanation": "The seven stages of action belong to Norman's execution-evaluation cycle. The Abowd and Beale advantages are: not restricted to electronic systems, identifies all major components, allows comparative assessment, and provides an abstraction of interaction.",
+"source": "notes"
+},
+{
+"q": "Norman's interaction cycle divides the interaction between user and system into which two phases?",
+"options": [
+"Execution and evaluation",
+"Presentation and observation",
+"Articulation and performance",
+"Perception and memory"
+],
+"answer": 0,
+"explanation": "Norman's cycle is the execution-evaluation cycle. Execution is doing tasks to achieve the goal, and evaluation is testing whether they were executed properly. Presentation, observation, articulation, and performance are Abowd and Beale terms.",
+"source": "notes"
+},
+{
+"q": "Which list gives the four execution steps of Norman's cycle in order?",
+"options": [
+"Perceive state, interpret response, evaluate against goal, establish goal",
+"Formulate intention, establish goal, execute action, then decide on action",
+"Decide on action, establish goal, perceive state, execute action",
+"Establish goal, formulate intention, decide on action, execute action"
+],
+"answer": 3,
+"explanation": "Execution runs: establish a goal, formulate the intention, decide on the action on the interface, execute the action. The option that mixes in evaluation steps is wrong, and the others scramble the order.",
+"source": "notes"
+},
+{
+"q": "Which of the following is an advantage listed for Norman's cycle, rather than for the Abowd and Beale framework?",
+"options": [
+"It is not restricted to electronic computer systems",
+"It allows comparative assessment of systems",
+"It identifies all major components involved in interaction",
+"It considers the user's view"
+],
+"answer": 3,
+"explanation": "Considering the user's view is a Norman advantage (along with being clear and intuitive, and allowing detailed work within a common framework). The other three are Abowd and Beale advantages.",
+"source": "notes"
+},
+{
+"q": "A user wants to undo last week's edit, but the app only offers 'revert to version' and the user cannot work out how to express the intent with it. This is best described as a:",
+"options": [
+"gulf of evaluation",
+"latency problem",
+"gulf of execution",
+"property-sensing problem"
+],
+"answer": 2,
+"explanation": "The gulf of execution is the difference between the user's formulation of the action and the actions the system allows. The gulf of evaluation concerns understanding the system's displayed state. Latency is a delay and property sensing is about sensing force.",
+"source": "notes"
+},
+{
+"q": "Which statement defines the gulf of evaluation?",
+"options": [
+"The distance between the physical presentation of the state and the user's expectation",
+"The difference between the user's formulation of an action and the actions the system allows",
+"The ratio between movement of the controller and movement of the display",
+"The delay between an input action and the corresponding output"
+],
+"answer": 0,
+"explanation": "The gulf of evaluation is the distance between the physical presentation of the system state and what the user expects. The difference between the user's formulated action and the allowed actions is the gulf of execution, the controller-to-display ratio is gain and transfer, and the input-to-output delay is latency.",
+"source": "notes"
+},
+{
+"q": "Controller-display relationships are sometimes called:",
+"options": [
+"frameworks",
+"mappings",
+"gulfs",
+"interfaces"
+],
+"answer": 1,
+"explanation": "The relationship between what a user does and how the system responds is sometimes called mappings. Frameworks are models like Abowd and Beale, gulfs are gaps in execution or evaluation, and the interface is the translation layer.",
+"source": "notes"
+},
+{
+"q": "An experienced user clicks a toolbar icon without looking because it has always been in the same place. Which concept explains this?",
+"options": [
+"Latency between input and display",
+"Spatial memory (spatial mapping)",
+"Gain and transfer functions",
+"Property sensing of force input"
+],
+"answer": 1,
+"explanation": "Spatial memory is the ability to learn the location of objects by interacting with them repeatedly, giving automaticity when accessing data. The other options concern delay, controller-to-display ratio, and sensed force.",
+"source": "notes"
+},
+{
+"q": "Which statement best defines gain and transfer functions?",
+"options": [
+"The delay between an input action and the output, in milliseconds",
+"The ratio between controller movement and display movement",
+"Sensing the force a user applies and turning it into device input",
+"The ability to learn the location of objects through repetition"
+],
+"answer": 1,
+"explanation": "Gain and transfer functions describe the ratio between movement of the controller and movement of the display. The input-to-output delay is latency, sensing force is property sensing, and learning object locations through repetition is spatial memory.",
+"source": "notes"
+},
+{
+"q": "Latency is best defined as:",
+"options": [
+"the ratio between controller movement and display movement",
+"the force sensed from a user's grip or tap on a device",
+"the ability to learn where objects are by repeated interaction",
+"the delay between input action and output, in milliseconds"
+],
+"answer": 3,
+"explanation": "Latency is the delay between an input action and the corresponding display or output, measured in milliseconds. The controller-to-display ratio is gain, sensing force is property sensing, and learning locations through repetition is spatial memory.",
+"source": "notes"
+},
+{
+"q": "Which factor is cited as a cause of latency?",
+"options": [
+"The physical size of the display panel being used",
+"The number of keys on the keyboard layout used",
+"The color depth and resolution of the monitor used",
+"Server distance and in-between routers"
+],
+"answer": 3,
+"explanation": "Latency is usually caused by network hardware, the server's location, and the internet routers between the server and the user's devices. Display size, key count, and resolution are not cited causes.",
+"source": "notes"
+},
+{
+"q": "Which pair of typical audio latencies is correct for a regular wired connection versus Bluetooth?",
+"options": [
+"Wired about 30-60 ms; Bluetooth about 5-10 ms ideally, up to 100-300 ms",
+"Wired about 100-300 ms; Bluetooth about 30-60 ms ideally, down to 5-10 ms",
+"Wired about 5-10 seconds; Bluetooth about 30-60 seconds ideally, to 300 s",
+"Wired about 5-10 ms; Bluetooth about 30-60 ms ideally, up to 100-300 ms"
+],
+"answer": 3,
+"explanation": "Wired audio is typically 5-10 ms, while Bluetooth ranges from an ideal 30-60 ms up to 100-300 ms for true wireless earbuds. The options that reverse the order are wrong, and the option using seconds uses the wrong unit (latency is measured in milliseconds).",
+"source": "notes"
+},
+{
+"q": "Which mapping type senses the force given by the user and transforms it into input for a device?",
+"options": [
+"Gain and transfer functions",
+"Latency",
+"Property sensing",
+"Spatial mapping"
+],
+"answer": 2,
+"explanation": "Property sensing senses the user's force and turns it into device input. Gain adjusts the controller-to-display ratio, latency is delay, and spatial mapping relies on learned locations.",
+"source": "notes"
+},
+{
+"q": "In property sensing, which set names the properties sensed by the controller?",
+"options": [
+"Latency, gain, ratio, and network hardware",
+"Domain, goal, task, and task language",
+"Position, displacement, force",
+"Input, output, core language, and task"
+],
+"answer": 2,
+"explanation": "Property in this context refers to the actions sensed by the controller: position, displacement, and force. The other options mix up terms from other sections.",
+"source": "notes"
+},
+{
+"q": "Which set lists interaction technologies commonly found on mobile devices?",
+"options": [
+"Multitouch, accelerometers, fingerprint and face scanners, gyroscopes",
+"Trackballs, light pens, joysticks, barcode scanners, and dial pads",
+"Keyboards, mice, microphones, desktop speakers, and webcams",
+"Punch cards, command lines, function keys, serial ports, and floppy drives"
+],
+"answer": 0,
+"explanation": "Mobile devices commonly offer touchscreens and multitouch, accelerometers, fingerprint scanners, face scanners, and gyroscopes. These introduced interactions that were not previously available on desktops, and the other sets are older or desktop-oriented technologies.",
+"source": "notes"
+},
+{
+"q": "Which pair names the two interaction frameworks introduced for determining how a user and system interact?",
+"options": [
+"Fitts's law for pointing and Hick's law for choice reaction time",
+"Abowd and Beale framework; Norman's execution-evaluation cycle",
+"GOMS goals-operators-methods-selection rules and the keystroke-level model",
+"Nielsen's ten usability heuristics and Shneiderman's eight golden rules"
+],
+"answer": 1,
+"explanation": "Determining an interaction framework means choosing between the Abowd and Beale framework and Norman's execution-evaluation cycle. The other pairs are real HCI concepts but are not the frameworks covered in this module.",
+"source": "notes"
+},
+{
+"q": "Which statement about Norman's execution-evaluation cycle is NOT true?",
+"options": [
+"Step 1 is the user establishing a goal",
+"Step 6 is the user interpreting the system response",
+"Step 5 is the user executing the action on the interface",
+"Step 7 is the user evaluating the system with respect to the goal"
+],
+"answer": 2,
+"explanation": "Executing the action on the interface is Step 4. Step 5 is perceiving the system state. The other three statements correctly state Steps 1, 6, and 7.",
+"source": "notes"
+},
+{
+"q": "Which pairing of mapping type and description is mismatched?",
+"options": [
+"Spatial mapping: relies on spatial memory of object locations learned through repeated interaction",
+"Latency: the delay between an input action and the corresponding display or output",
+"Gain and transfer functions: the delay, in milliseconds, between an input action and the output",
+"Property sensing: sensing the force given by the user and transforming it into device input"
+],
+"answer": 2,
+"explanation": "Gain and transfer functions are the ratio between controller movement and display movement. The delay in milliseconds is latency. The other three pairings are correct.",
+"source": "notes"
+},
+{
+"q": "In which order do the evaluation steps of Norman's cycle occur?",
+"options": [
+"Perceive the system state, interpret the system response, evaluate against the goal",
+"Interpret the system response, perceive the system state, evaluate against the goal",
+"Evaluate against the goal, perceive the system state, interpret the system response",
+"Perceive the system state, evaluate against the goal, interpret the system response"
+],
+"answer": 0,
+"explanation": "Evaluation runs Step 5 perceive the system state, Step 6 interpret the system response, Step 7 evaluate the system with respect to the goal. The other orders scramble these steps.",
+"source": "notes"
+}
+]

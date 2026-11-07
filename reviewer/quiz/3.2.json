@@ -1,0 +1,362 @@
+[
+{
+"q": "In base 8, a column sum of 8 is handled by writing what?",
+"options": [
+"Write 0 and carry 8",
+"Write 8 and carry 0, because 8 is a valid digit",
+"Write 1 and carry 0",
+"Write 0 and carry 1, because 8 equals 10 (base 8)"
+],
+"answer": 3,
+"explanation": "Octal digits only go from 0 to 7, so a sum of 8 becomes 10 (base 8): digit 0 with a carry of 1.",
+"source": "notes"
+},
+{
+"q": "In binary addition, one column contains 1, 1, and a carry of 1 from the previous column. What is written and what is carried?",
+"options": [
+"Write 0, carry 1",
+"Write 0, carry 0",
+"Write 1, carry 1",
+"Write 1, carry 0"
+],
+"answer": 2,
+"explanation": "1 + 1 + 1 = 3 in decimal, which is 11 (base 2), so write 1 and carry 1.",
+"source": "notes"
+},
+{
+"q": "In hexadecimal addition, one column totals 27 in decimal. What digit is written and what is carried?",
+"options": [
+"Write 1, carry B",
+"Write 27, carry 0",
+"Write B, carry 1",
+"Write 1B, carry 0"
+],
+"answer": 2,
+"explanation": "Divide 27 by 16: the quotient 1 is the carry and the remainder 11 is written as the digit B.",
+"source": "notes"
+},
+{
+"q": "In binary subtraction, when a 0 borrows from the next higher bit, what decimal value does the borrowed 1 carry in the current position?",
+"options": [
+"2",
+"1",
+"10",
+"4"
+],
+"answer": 0,
+"explanation": "Binary has base 2, so a borrowed 1 from the next place is worth 2 (decimal) in the current place.",
+"source": "notes"
+},
+{
+"q": "In hexadecimal subtraction, a column needs 5 - 9. After borrowing from the next place, the top digit 5 is treated as what decimal value?",
+"options": [
+"14",
+"25",
+"15",
+"21"
+],
+"answer": 3,
+"explanation": "The borrow equals the base, 16, so the top digit becomes 5 + 16 = 21.",
+"source": "notes"
+},
+{
+"q": "In octal multiplication, 6 x 7 is computed in one column. What digit is written and what is carried?",
+"options": [
+"Write 4, carry 5",
+"Write 2, carry 4",
+"Write 2, carry 5",
+"Write 42, carry 0"
+],
+"answer": 2,
+"explanation": "6 x 7 = 42 in decimal, and 42 = 5 x 8 + 2, so write the remainder 2 and carry the quotient 5.",
+"source": "notes"
+},
+{
+"q": "When adding 567 (base 8) + 243 (base 8), what happens in the rightmost column?",
+"options": [
+"Write 0, carry 1",
+"Write 10, carry 0",
+"Write 2, carry 0",
+"Write 2, carry 1"
+],
+"answer": 3,
+"explanation": "7 + 3 = 10 in decimal, and 10 = 1 x 8 + 2, so the digit is 2 and the carry is 1.",
+"source": "notes"
+},
+{
+"q": "Which pair of octal digits, added with no incoming carry, produces a carry to the next column?",
+"options": [
+"3 + 4",
+"6 + 2",
+"1 + 6",
+"2 + 5"
+],
+"answer": 1,
+"explanation": "6 + 2 = 8, which is 10 (base 8), so write 0 and carry 1. The other pairs total 7, which is a valid single digit.",
+"source": "notes"
+},
+{
+"q": "What is ABC (base 16) x 3 (base 16), the first partial product when multiplying ABC (base 16) by 23 (base 16)?",
+"options": [
+"2134 (base 16)",
+"2034 (base 16)",
+"2024 (base 16)",
+"1F34 (base 16)"
+],
+"answer": 1,
+"explanation": "C x 3 = 36 gives 4 carry 2; B x 3 + 2 = 35 gives 3 carry 2; A x 3 + 2 = 32 gives 0 carry 2; the final carry gives 2. The result is 2034 (base 16).",
+"source": "notes"
+},
+{
+"q": "What are the quotient and remainder of 101 (base 2) divided by 11 (base 2)?",
+"options": [
+"Quotient 1, remainder 10 (base 2)",
+"Quotient 10, remainder 1 (base 2)",
+"Quotient 1, remainder 11 (base 2)",
+"Quotient 11, remainder 10 (base 2)"
+],
+"answer": 0,
+"explanation": "101 (base 2) is 5 and 11 (base 2) is 3. 5 = 1 x 3 + 2, so the quotient is 1 and the remainder is 2, which is 10 (base 2).",
+"source": "notes"
+},
+{
+"q": "A 4-bit register adds 1011 (base 2) and 0111 (base 2). Which value remains stored after the overflow bit is discarded?",
+"options": [
+"1111 (base 2)",
+"10010 (base 2)",
+"0001 (base 2)",
+"0010 (base 2)"
+],
+"answer": 3,
+"explanation": "11 + 7 = 18, which is 10010 (base 2). Keeping only the lowest 4 bits leaves 0010 (base 2).",
+"source": "extra"
+},
+{
+"q": "When multiplying 357 (base 8) by 23 (base 8), how should the partial product from the multiplier digit 2 be placed?",
+"options": [
+"Directly under the units column with no shift",
+"Converted to decimal before being added",
+"Shifted one place left to match the place value of the digit 2",
+"Divided by 8 before being added"
+],
+"answer": 2,
+"explanation": "Each partial product must be aligned with its multiplier digit's place value, so the product from the tens digit is shifted one place left.",
+"source": "notes"
+},
+{
+"q": "What is the correct procedure for dividing fractional octal numbers?",
+"options": [
+"Convert both numbers to decimal, divide, then convert back",
+"Remove the decimal points, do octal long division, then restore the point based on the original positions",
+"Divide as decimal numbers and subtract 8 from each remainder",
+"Ignore the decimal points because they do not affect the quotient"
+],
+"answer": 1,
+"explanation": "The notes say to temporarily remove the decimal points, divide normally in base 8, and then re-insert the point.",
+"source": "notes"
+},
+{
+"q": "In B41F (base 16) divided by A (base 16), what quotient and remainder come from the first step of dividing B by A?",
+"options": [
+"Quotient 1, remainder 1",
+"Quotient 1, remainder 0",
+"Quotient 0, remainder B",
+"Quotient 2, remainder 1"
+],
+"answer": 0,
+"explanation": "B is 11 in decimal and A is 10, so A goes into B once with remainder 1.",
+"source": "notes"
+},
+{
+"q": "In B41F (base 16) divided by A (base 16), the remainder 1 is followed by the digit 4, giving 14 (base 16). What is that value in decimal and how many times does A go into it?",
+"options": [
+"14 in decimal, and A goes in once",
+"20 in decimal, and A goes in exactly twice",
+"20 in decimal, and A goes in three times",
+"16 in decimal, and A goes in once"
+],
+"answer": 1,
+"explanation": "14 (base 16) = 1 x 16 + 4 = 20 in decimal, and A (10) goes into 20 exactly twice.",
+"source": "notes"
+},
+{
+"q": "Which statement about borrowing in octal subtraction is NOT true?",
+"options": [
+"A borrowed 1 adds 8 to the current digit",
+"Borrowing is needed only when the top digit is smaller than the bottom digit",
+"If the next digit is 0, borrow from the next nonzero place to the left",
+"A borrowed 1 adds 10 to the current digit because 10 is the base"
+],
+"answer": 3,
+"explanation": "The borrowed amount equals the base, which is 8 in octal. Adding 10 is the decimal rule.",
+"source": "notes"
+},
+{
+"q": "Which statement about hexadecimal addition is NOT true?",
+"options": [
+"F + 1 = 10 (base 16)",
+"F + F = 1E (base 16)",
+"A + 6 = 16 (base 16)",
+"9 + 1 = A (base 16)"
+],
+"answer": 2,
+"explanation": "A + 6 = 10 + 6 = 16 in decimal, which is written 10 (base 16), not 16 (base 16).",
+"source": "notes"
+},
+{
+"q": "Which statement about binary addition is NOT true?",
+"options": [
+"1 + 0 = 1 with a carry of 1",
+"1 + 1 = 0 with a carry of 1",
+"1 + 1 + 1 = 1 with a carry of 1",
+"Any column sum greater than 1 requires a carry"
+],
+"answer": 0,
+"explanation": "1 + 0 = 1 with a carry of 0, because the sum 1 fits in a single binary digit.",
+"source": "notes"
+},
+{
+"q": "What is 1011 (base 2) + 110 (base 2)?",
+"options": [
+"10011 (base 2)",
+"10001 (base 2)",
+"10101 (base 2)",
+"1111 (base 2)"
+],
+"answer": 1,
+"explanation": "11 + 6 = 17 in decimal, which is 10001 (base 2). Column by column: 1+0=1, 1+1=0 carry 1, 0+1+1=0 carry 1, 1+0+1=0 carry 1, then the final carry gives 1.",
+"source": "notes"
+},
+{
+"q": "What is 1776 (base 8) + 345 (base 8)?",
+"options": [
+"2343 (base 8)",
+"2243 (base 8)",
+"2353 (base 8)",
+"2443 (base 8)"
+],
+"answer": 0,
+"explanation": "Columns from the right: 6+5=11 gives 3 carry 1; 7+4+1=12 gives 4 carry 1; 7+3+1=11 gives 3 carry 1; 1+1=2. The result is 2343 (base 8).",
+"source": "notes"
+},
+{
+"q": "What is A7 (base 16) + 5C (base 16)?",
+"options": [
+"113 (base 16)",
+"103 (base 16)",
+"10F (base 16)",
+"F3 (base 16)"
+],
+"answer": 1,
+"explanation": "7 + C = 7 + 12 = 19 = 16 + 3, so write 3 carry 1; A + 5 + 1 = 16, so write 0 carry 1; the final carry gives 103 (base 16).",
+"source": "notes"
+},
+{
+"q": "What is 10110 (base 2) - 1011 (base 2)?",
+"options": [
+"01101 (base 2)",
+"01011 (base 2)",
+"01111 (base 2)",
+"01001 (base 2)"
+],
+"answer": 1,
+"explanation": "22 - 11 = 11 in decimal, which is 01011 (base 2) in five bits.",
+"source": "notes"
+},
+{
+"q": "What is 720 (base 8) - 53 (base 8)?",
+"options": [
+"675 (base 8)",
+"745 (base 8)",
+"645 (base 8)",
+"655 (base 8)"
+],
+"answer": 2,
+"explanation": "Units: borrow 8, 8-3=5. Tens: 1 after lending, borrow 8 gives 9, 9-5=4. Hundreds: 7 became 6. The result is 645 (base 8).",
+"source": "notes"
+},
+{
+"q": "What is 3A2 (base 16) - 1B7 (base 16)?",
+"options": [
+"1EB (base 16)",
+"1DB (base 16)",
+"1EF (base 16)",
+"2EB (base 16)"
+],
+"answer": 0,
+"explanation": "Units: 2+16-7=11 which is B. Tens: A became 9, 9+16-B(11)=14 which is E. Hundreds: 3 became 2, 2-1=1. The result is 1EB (base 16).",
+"source": "notes"
+},
+{
+"q": "What is 1011 (base 2) x 101 (base 2)?",
+"options": [
+"101111 (base 2)",
+"111011 (base 2)",
+"110011 (base 2)",
+"110111 (base 2)"
+],
+"answer": 3,
+"explanation": "11 x 5 = 55 in decimal, which is 110111 (base 2). Partial products are 1011 and 101100, and their sum is 110111.",
+"source": "notes"
+},
+{
+"q": "What is 35 (base 8) x 6 (base 8)?",
+"options": [
+"256 (base 8)",
+"246 (base 8)",
+"266 (base 8)",
+"236 (base 8)"
+],
+"answer": 0,
+"explanation": "5 x 6 = 30 = 3 x 8 + 6, so write 6 carry 3. Then 3 x 6 + 3 = 21 = 2 x 8 + 5, so write 5 carry 2. The result is 256 (base 8).",
+"source": "notes"
+},
+{
+"q": "What is 2B (base 16) x 4 (base 16)?",
+"options": [
+"A8 (base 16)",
+"AC (base 16)",
+"AE (base 16)",
+"B0 (base 16)"
+],
+"answer": 1,
+"explanation": "B x 4 = 44 = 2 x 16 + 12, so write C carry 2. Then 2 x 4 + 2 = 10, which is A. The result is AC (base 16).",
+"source": "notes"
+},
+{
+"q": "What is 110100 (base 2) divided by 100 (base 2)?",
+"options": [
+"1011 (base 2)",
+"1110 (base 2)",
+"1001 (base 2)",
+"1101 (base 2)"
+],
+"answer": 3,
+"explanation": "110100 (base 2) is 52 and 100 (base 2) is 4, and 52 / 4 = 13, which is 1101 (base 2).",
+"source": "notes"
+},
+{
+"q": "What is 7F (base 16) divided by 5 (base 16)?",
+"options": [
+"Quotient 19, remainder 2 (base 16)",
+"Quotient 19, remainder 1 (base 16)",
+"Quotient 18, remainder 7 (base 16)",
+"Quotient 1A, remainder 2 (base 16)"
+],
+"answer": 0,
+"explanation": "7F (base 16) is 127. 127 = 25 x 5 + 2, and 25 is 19 (base 16), so the quotient is 19 and the remainder is 2.",
+"source": "notes"
+},
+{
+"q": "What is 6.4 (base 8) divided by 0.2 (base 8)?",
+"options": [
+"23 (base 8)",
+"3.2 (base 8)",
+"32 (base 8)",
+"26 (base 8)"
+],
+"answer": 2,
+"explanation": "Shift both points one place to get 64 (base 8) / 2 (base 8) = 52 / 2 = 26 in decimal, which is 32 (base 8). Shifting both points the same amount leaves the quotient unchanged.",
+"source": "notes"
+}
+]

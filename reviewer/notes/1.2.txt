@@ -1,0 +1,90 @@
+1.2 Processes, Procedures, and Algorithms
+Information processes, procedures, and algorithms explained step by step
+
+WHAT IS COMPUTER SCIENCE?
+★ Computer science is the study of information processes.
+This is one common textbook definition. Some other books define the field more broadly, so use the definition your course uses.
+★ Process: a sequence of steps. Each step changes the state of the world a little, and together the steps reach a goal.
+EASIER: A process is like a chain of small moves that gets you from "where things are now" to "where you want them to be".
+Baking a cake, mailing a letter, and planting a tree are processes.
+They are not pure information processes, because they involve physical things like sugar, paper, and dirt.
+★ Information process: a process that works with abstract information (numbers, text, data) rather than physical objects.
+Computer science focuses on information processes.
+Added example: adding 3 and 4 to get 7, or sorting a list of names alphabetically, are information processes. Nothing physical has to be moved.
+Why the physical world still matters: real computers are physical machines. A key press is an electrical signal, and an image on a screen is a physical output.
+But computer science deliberately ignores the physical details and focuses on the information.
+This makes computation simpler to understand and reason about.
+
+KEY VOCABULARY (MEMORIZE THESE)
+★ Process: the act of carrying out a sequence of steps.
+★ Procedure: a description of a process (the list of steps).
+★ Mechanical procedure: a procedure that can be followed exactly, with no thought or judgment.
+★ Algorithm: a mechanical procedure that is guaranteed to eventually finish.
+EASIER: The procedure is the recipe, and the process is the cooking. The list of steps is the procedure, and following the steps is the process.
+★ An algorithm needs two things: it must be mechanical, and it must be guaranteed to stop.
+A procedure that could run forever is not an algorithm.
+EASIER: A mechanical procedure is any exact recipe. An algorithm is an exact recipe that you are sure will end.
+Added example: "Count from 1 upward forever, printing each number" is a mechanical procedure, but it is not an algorithm because it never stops.
+Added example: "Count from 1 to 10, printing each number" is an algorithm, because it is mechanical and it stops after 10.
+
+EXAMPLE: THE COFFEE PROCEDURE
+The text gives a step-by-step procedure for making coffee.
+⚙ Step 1: Open the lid.
+⚙ Step 2: Place a filter.
+⚙ Step 3: Add the desired amount of coffee (this means coffee grounds).
+⚙ Step 4: Fill the decanter with water.
+⚙ Step 5: Pour the water into the reservoir.
+⚙ Step 6: Close the lid.
+⚙ Step 7: Put the decanter on the warming plate.
+⚙ Step 8: Press ON.
+EASIER: A person can follow this easily, but a machine would struggle, as the next section shows.
+
+PROBLEMS WITH DESCRIBING PROCEDURES AS A LIST OF STEPS
+★ Problem 1: natural languages (like English) are ambiguous.
+English can be read in more than one way, and following the steps correctly depends on unspoken assumptions.
+In step 3, "coffee" means coffee grounds, not brewed coffee. A human knows this from context, but a machine would not.
+The steps assume the coffeemaker is plugged in and sitting on a flat surface.
+Added example: "I saw the man with the telescope" can mean you used a telescope, or the man had one. English allows both readings.
+Adding more detail helps, but natural language stays ambiguous.
+Long legal documents are an example: even very long laws written in English are still argued over for years.
+The notes mention a figure of about 250 thousand words for the unamended 1997 Philippine tax code. That figure could not be verified, so do not memorize it. The point to remember is only that long legal documents written in natural language can still be ambiguous.
+★ Problem 2: the length of the description grows with the number of steps.
+Listing every step works for short processes that a human can finish quickly.
+But computers perform processes with trillions of steps, so we need a way to describe a huge number of steps briefly, without listing each one.
+
+WHY THIS MATTERS FOR PROGRAMMING
+Because a machine follows the procedure, we need a way to describe processes that is clear, brief, and fully detailed.
+★ Clear: no ambiguity.
+★ Brief: we do not have to list every step.
+★ Fully detailed: a machine has no common sense.
+You cannot just say "fill the decanter with water." You would have to explain where the water comes from, how to turn on the faucet, and so on.
+★ This is why we use programming languages instead of English. They let us write mechanical procedures that can be followed exactly as written.
+
+PROCESS AND PROCEDURE IN OTHER FIELDS
+The words "process" and "procedure" are used differently in business process management (BPM), which the video summary comes from.
+In BPM, a procedure is the lowest level (clicking buttons, entering data).
+In BPM, a task is the middle level.
+In BPM, a process is the top level, a group of about 5 to 15 tasks, like onboarding an employee.
+In computer science, a procedure is a description (the list of steps) and a process is the act of following it.
+The two meanings do not match. For an exam on computer science, use the computer science definitions from KEY VOCABULARY.
+The BPM meaning is only useful as an example that these words can mean different things in different fields.
+
+COMMON MISTAKES
+Do not mix up process and procedure. Procedure = the written steps. Process = carrying them out.
+Do not say every procedure is an algorithm. It must also be guaranteed to stop.
+Baking a cake, mailing a letter, and planting a tree are processes, but they are not pure information processes.
+Do not memorize the tax code word count.
+
+QUICK SELF-TEST
+Q: What makes a process an information process?
+★ It works with abstract information rather than physical things.
+Q: What is the difference between a procedure and a process?
+★ A procedure is the description (the list of steps), and a process is the act of following it.
+Q: What two properties make a procedure an algorithm?
+★ It is mechanical (needs no thought) and guaranteed to finish.
+Q: Why does "add the desired amount of coffee" in the coffee procedure show ambiguity?
+★ "Coffee" could mean grounds or brewed coffee, and a machine has no common sense to decide.
+Q: Why can't we just list every step when programming a computer?
+★ Computer processes can have trillions of steps, so a step-by-step list would be impossibly long.
+Q: Why do programmers use programming languages instead of English?
+★ English is ambiguous and relies on common sense, while programming languages are precise and brief, so a machine can follow them exactly.

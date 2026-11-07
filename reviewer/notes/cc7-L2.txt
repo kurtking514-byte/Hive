@@ -1,0 +1,77 @@
+Lecture 02 Introduction to Designing
+Failures in design, the Norman door, and the six principles of interaction design
+
+LECTURE OBJECTIVES
+Objective 1: Review fail designing
+Objective 2: Principles in interaction design, covering Donald A. Norman and the Norman door, and the six principles in interaction design
+The slide deck was prepared by Luis Meing
+
+FAILURES IN DESIGN
+★ HCI is a complex problem solving process that looks into creating and designing interactive products and services.
+There is a lot of focus on how the users will interact with the product or service.
+HCI looks into ideas like planned usage, target area, resources, cost, and viability.
+The lecture shows ten real world design fails as pictures only, with no written explanation on the slides.
+Fail 1: toilet stalls whose doors leave a large gap, so the toilets are exposed (a privacy problem).
+Fail 2: a store window sale sign whose letter panels read SASA LELE across the rows instead of SALE, with SALE 50% banners below.
+Fail 3: a pair of glass doors with pull style handles that are labeled PUSH.
+Fail 4: a jeepney sign reading MINIMUM FEAR P11.00 (a typo for fare).
+Fail 5: a bread package labeled English French Toast with a Spanish flag, the word American, a pizza picture, and German style text; the caption jokes about offending many countries at once.
+Fail 6: a meme about building an orphanage's website without a Home page.
+Fail 7: a zoo style sign with a hippo silhouette icon and the label Hipopótamos, shown with two outline redrawings of the icon.
+Fail 8: food tray labels reading Chicken Adobo 45 and Adobong Manok P45 (the same dish named in two languages).
+Fail 9: a framed sign reading Life is short lick the bowl placed on a toilet tank, with a caption where Mom says to leave the sign in the kitchen where it belongs.
+Fail 10: a shirt printed with THINGER STRANGS, a misspelled imitation of the Stranger Things logo.
+
+DONALD NORMAN AND THE NORMAN DOOR
+★ Donald A. Norman is a cognitive psychologist, author, and lecturer.
+★ Norman is dubbed the Father of User Experience Design because of his contributions to interaction design and user interface and user experience (UI/UX).
+★ Norman door: basically any door that is confusing or difficult to use.
+⚙ Test for a Norman door: determine whether or not the door makes sense as it is being approached.
+EASIER: If you cannot tell how to use a door just by walking up to it, it is a Norman door.
+The slides illustrate this with a glass door that has several long handles, and a picture of one hand pushing a flat panel while another hand pulls a handle.
+★ As the solution to the Norman door, Norman formulated six principles of interaction design based on the concept of Human Centered Design.
+
+THE SIX PRINCIPLES OF INTERACTION DESIGN
+⚙ The six principles are Affordances, Signifiers, Constraints, Mappings, Feedback, and Conceptual Models.
+Discoverability is a later addition and is not one of the original six.
+
+AFFORDANCES
+★ Affordances: in this context, to afford means to give a clue.
+★ Affordances focus on the qualities or properties of an object that define its possible uses or make clear how it can or should be used.
+Examples shown: a red mug with a handle and a computer mouse with a scroll wheel.
+EASIER: An affordance is what the object itself hints that you can do with it.
+
+SIGNIFIERS
+★ Signifiers are indicators of any type that communicate the action needed so the affordance can take place.
+A signifier can be any visual mark, sound, or perceivable indicator that communicates appropriate behavior to a person, such as a cursor for most digital user interfaces.
+Examples shown: a text field with a cursor in a form with Title, Price, Location (optional), and Description fields, and enabled versus disabled (greyed out) buttons.
+EASIER: The affordance is what can be done, and the signifier is the signal that shows how to do it.
+
+CONSTRAINTS
+★ Constraints are limitations or restrictions that give clues that allow us to determine a course of action by limiting the possible actions available to the user.
+Constraints limit the set of possible actions that can be done.
+⚙ There are four kinds of constraints: Physical, Cultural, Semantic, and Logical.
+★ Physical constraint: shown with a lock cylinder and key.
+★ Cultural constraint: shown with chopsticks, a fork and spoon, a fork spoon and knife set, and a chopsticks and spoon set.
+★ Semantic constraint: shown with a car windshield carrying a sticker (the slide gives no further explanation).
+★ Logical constraint: shown with a shape sorter cube toy with colored blocks.
+
+MAPPINGS
+★ Mappings look into the relationship between a set of inputs and a set of permissible outputs.
+⚙ The relationship between controls and their actions follows the principles of good mapping, enhanced as much as possible through spatial layout and temporal contiguity.
+Example shown: a New Customer phone form with a numeric keypad (digits with letters such as ABC and DEF).
+
+FEEDBACK
+★ Feedback happens when an object or system notifies the user that it is working towards the completion of its objective.
+Feedbacks communicate the results of an action.
+Example shown: a Loading... Please Wait screen with a progress bar.
+
+CONCEPTUAL MODELS
+★ A conceptual model is an explanation, usually highly simplified, of how something works.
+There are often multiple conceptual models of a product or device, especially complex systems.
+Example shown: a labeled scissors diagram with inner blade, cutting edge, back, blade, point or tip, screw, pivot point, handle, finger rest, stopper or silencer, and finger ring.
+
+DISCOVERABILITY
+★ Discoverability, also known as visibility, looks into the degree of ease with which the user can find all the elements and features of a new system when they first encounter it.
+Discoverability was not part of the original six principles but was added in later years due to its relevance.
+Example shown: a TV remote labeled 43 baffling buttons.

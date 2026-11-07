@@ -1,0 +1,97 @@
+Lecture 1 Introduction to Human Computer Interaction
+Week 1 Unit 1, CC7 Human-Computer Interaction: what HCI is, its history, why it matters, and its four components
+
+WHAT IS HCI
+★ HCI (Human Computer Interaction) is a multidisciplinary field of study on the design of computer technology and the interaction between humans and computers.
+HCI is concerned with the physical, psychological, and theoretical aspects of these processes.
+HCI has since expanded to cover almost all forms of information technology design.
+★ Second definition: HCI is the field of study that focuses on optimizing how users and computers interact by designing interactive computer interfaces that satisfy users' needs.
+★ Misconception: HCI only involves physical interactions with a computer.
+Fact: HCI encompasses all interactions between humans and digital devices.
+EASIER: HCI is not just typing and clicking, it covers every way people deal with digital devices.
+
+HISTORY OF HCI
+HCI emerged in the 1980s, when personal computing was on the rise and desktop computers started appearing in households and corporate offices.
+HCI's journey began with video games, word processors, and numerical units.
+With the advent of the internet and the explosion of mobile and diversified technologies such as voice-based and Internet of Things (IoT), computing became omnipresent and omnipotent.
+Technological competence further led to the evolution of user interactions.
+Consequently, the need for a tool that would make man-machine interactions more human-like grew significantly.
+This established HCI as a technology, bringing cognitive engineering, linguistics, neuroscience, and other fields under its realm.
+Today HCI focuses on designing, implementing, and evaluating interactive interfaces that enhance user experience using computing devices.
+Today HCI includes user interface design, user-centered design, and user experience design.
+EASIER: Early desktops and games, then internet, mobile, voice and IoT everywhere, then a push for human-like interaction, now designing and evaluating interfaces for good user experience.
+
+INTERACTION MODES DIAGRAM FROM SPICEWORKS
+★ Cognitive Interaction is the top of the diagram and branches into five modes: Sight, Touch, Hearing, Voice, Spatial.
+The diagram links Sight to a table called Interaction I and Spatial to a table called Interaction II.
+Interaction I input (row labeled I/O): Mouse plus Keyboard, and Touch screen UI.
+Interaction I output (row labeled O/P): Monitor plus speakers, and Screen plus speakers plus vibrations.
+Interaction II input (row labeled I/O): Voice, Body movement, and Gesture plus face.
+Interaction II output (row labeled O/P): Speakers, Sensors, and Screen plus speakers.
+Columns line up as drawn: Voice with Speakers, Body movement with Sensors, Gesture plus face with Screen plus speakers.
+EASIER: Interaction I is the classic keyboard, mouse and touchscreen style; Interaction II is the voice, body movement and gesture style.
+
+EXAMPLES OF TECHNOLOGIES
+The slides show smartphones (Android and iPhone), smartwatches, smart glasses, and social media apps.
+Social media apps shown: Facebook, Instagram, Snapchat, YouTube, TikTok, LinkedIn, Pinterest, Twitter.
+Warm-up questions: How do you interact with technology? What are some examples of technology you use regularly?
+
+TECHNOLOGIES GOOD VS BAD
+Question: Is good or bad the right question?
+Question: What makes a technology good or bad?
+Question: How can we build good technologies?
+Question: How can we verify or validate the goodness of our technologies?
+
+WHY HCI
+Errors and mistakes in computer technologies still exist today.
+Error cause: focus on whether or not the technology works.
+Error cause: the concept is too cool or groundbreaking.
+Error cause: functions are hard to utilize or process.
+Error cause: specific people use things specifically.
+Error cause: too much safety or security in the technology.
+Error cause: too much focus on the design.
+⚙ When creating technologies, it must be: suitable for the task; easy to use; adaptable to the user's knowledge and experience; provides feedback on the performance; displays information in a format and pace understandable to the user; conforms to the principles of software ergonomics.
+The idea of use is also necessary for HCI.
+★ Useful means accomplish what is required, for example play music, cook dinner, or format a document.
+★ Usable means do it easily and naturally, without danger of error.
+★ Used means make people want to use it: be attractive, engaging, fun.
+EASIER: Useful does the job, Usable is easy and safe, Used is something people actually want to use.
+
+FOUR COMPONENTS OF HCI
+★ The four components of HCI are Human, Computer, Interaction, and Context.
+⚙ Each component answers a question: Human is who the HCI is for, Computer is where the HCI is found, Interaction is what the HCI is, Context is how the HCI will be formed.
+EASIER: Human = who, Computer = where, Interaction = what, Context = how.
+
+THE HUMAN
+★ The Human is also known as the user or end-user.
+Humans are limited in their capacity to process information, which has important implications for design.
+The Human component focuses on who the HCI is for.
+Information is received and responses given via several input and output channels: Visual, Auditory, Haptic channel, and Movement.
+★ Information is stored in memory of three types: Sensory memory, Short-term (working) memory, and Long-term memory.
+Information is processed and applied through reasoning, problem solving, skill acquisition, and error.
+Emotion influences human capabilities.
+Users share common capabilities but are individuals with differences.
+
+THE COMPUTER
+★ The Computer component focuses on where the HCI is found.
+The Computer comprises various elements, each of which affects the user of the system.
+Computer elements: input devices, output display, virtual reality systems, various displays (physical controls, haptic dieback [sic], sensors), paper output and input, memory, and processing.
+
+THE INTERACTION
+★ Interaction models help us understand what is going on in the interaction between user and system.
+Interaction models address the translations between what the user wants and what the system does.
+The Interaction component focuses on what the HCI is.
+★ Ergonomics are the physical characteristics of the interaction and how these influence its effectiveness.
+Dialog between user and system is influenced by the style of the interface.
+Interaction takes place within a social and organizational context that affects both user and system.
+
+THE CONTEXT
+★ Context is also known as paradigms.
+Paradigms are examples of effective strategies for building interactive systems, used to design usable interactive systems.
+The Context component focuses on how the HCI will be formed.
+Context ranges from the introduction of timesharing computers, through the WIMP and web, to ubiquitous and context-aware computing.
+EASIER: Paradigms move from timesharing, to WIMP and web, to ubiquitous and context-aware computing.
+
+PRACTICE ACTIVITY
+The Practice Activity is found in the Canvas Module.
+The activity is done in groups of 4 members each, and the groupings were already randomly selected.

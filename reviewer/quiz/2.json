@@ -1,0 +1,362 @@
+[
+{
+"q": "A program runs x = 10 and then x = \"ten\" with no error. Which statement best explains this?",
+"options": [
+"Python converts the integer 10 into a string automatically before the second assignment is executed",
+"The second assignment is an error that Python ignores because the first value was already stored",
+"Python is dynamically typed, so the interpreter determines the type from the value at runtime and x can later refer to a string",
+"A variable gets a fixed type at its first assignment, and the type is only checked when it is printed"
+],
+"answer": 2,
+"explanation": "A data type describes the kind of value and the operations allowed on it, and Python is dynamically typed: the interpreter decides the type at runtime, so a name can be reassigned to a value of another type.",
+"source": "notes"
+},
+{
+"q": "What does print(0b101 + 0o10 + 0x10) output?",
+"options": [
+"23",
+"25",
+"31",
+"29"
+],
+"answer": 3,
+"explanation": "0b101 is 5, 0o10 is 8 and 0x10 is 16, so the sum is 29. The other values come from reading one or more of the prefixed numbers as ordinary decimal digits (for example 23 reads 0x10 as 10).",
+"source": "notes"
+},
+{
+"q": "A student runs x = 2 ** 200 and then print(x). Which outcome is expected?",
+"options": [
+"An overflow error is raised because the value needs more than 64 bits",
+"The value is rounded and displayed in scientific notation such as 1.6e+60",
+"The value wraps around and prints 0 once it passes the machine's largest integer",
+"The exact value is printed as a 61-digit integer, because Python places no explicit limit on the size of an integer"
+],
+"answer": 3,
+"explanation": "Python integers have no explicitly defined limit, so very long integers are stored and printed unchanged. 2 ** 200 is a 61-digit whole number.",
+"source": "notes"
+},
+{
+"q": "Which line prints exactly: It's \"fine\"  (the apostrophe and the double quotes both shown)?",
+"options": [
+"print('It\\'s \"fine\"')",
+"print(\"It's \"fine\"\")",
+"print('It's \"fine\"')",
+"print(\"It's 'fine'\")"
+],
+"answer": 0,
+"explanation": "The backslash is the escape character, so \\' lets an apostrophe sit inside a single-quoted string. The first wrong option ends its string at the inner double quote, the second ends at the apostrophe, and the last prints single quotes instead of double quotes.",
+"source": "notes"
+},
+{
+"q": "What does print(\"C:\\\\temp\") output?",
+"options": [
+"C:\\\\temp",
+"C:temp",
+"C:\\temp",
+"A SyntaxError, because a backslash cannot appear in a string"
+],
+"answer": 2,
+"explanation": "Writing two backslashes inside a string prints one backslash character, so the output is C:\\temp.",
+"source": "notes"
+},
+{
+"q": "Which choice lists the data types of 3.0, \"3\", True, and None, in that order?",
+"options": [
+"Integer, String, Boolean, Boolean",
+"Floating Point, String, Boolean, Null",
+"Floating Point, Integer, Boolean, Null",
+"Floating Point, String, String, Null"
+],
+"answer": 1,
+"explanation": "3.0 has a decimal point so it is a floating point number, \"3\" is quoted text so it is a String, True is a Boolean, and None is the Null value.",
+"source": "notes"
+},
+{
+"q": "What does the following print?\nx = 7 / 2\ny = 7 // 2\nz = 7 % 2\nprint(x, y, z)",
+"options": [
+"3.5 4 1",
+"3 3 1",
+"3.5 3 1",
+"3.5 3 3"
+],
+"answer": 2,
+"explanation": "/ gives the full quotient 3.5, // drops the fractional part giving 3, and % gives the remainder 1. Floor division truncates rather than rounds, so 4 is wrong.",
+"source": "notes"
+},
+{
+"q": "What does the following print?\na = 3\nb = a\na = 5\nprint(a, b)",
+"options": [
+"5 5",
+"3 5",
+"5 3",
+"3 3"
+],
+"answer": 2,
+"explanation": "b = a copies the current value 3 into b. Reassigning a to 5 afterwards does not affect b, so the output is 5 3.",
+"source": "notes"
+},
+{
+"q": "Which list contains only valid Python variable names?",
+"options": [
+"_count, Total2, my_age_",
+"2ndPlace, total, x",
+"my-age, age, AGE",
+"total, my age, y"
+],
+"answer": 0,
+"explanation": "Names may use letters, digits, and underscores and must not begin with a digit. 2ndPlace starts with a digit, my-age contains a hyphen, and my age contains a space.",
+"source": "notes"
+},
+{
+"q": "What does the following print?\nAge = 20\nage = 25\nAGE = Age + age\nprint(AGE)",
+"options": [
+"50",
+"25",
+"45",
+"A NameError, because AGE was not defined before it was used"
+],
+"answer": 2,
+"explanation": "Variable names are case-sensitive, so Age, age, and AGE are three different variables. AGE becomes 20 + 25 = 45. The answer 50 would only occur if age and Age were the same name.",
+"source": "notes"
+},
+{
+"q": "A developer writes MAX_RETRY_COUNT = 3 near the top of a program and later writes MAX_RETRY_COUNT = 5. Which statement is accurate?",
+"options": [
+"Python has true constants, so the second assignment raises an error because the name is uppercase",
+"UPPER_SNAKE_CASE only signals by convention that a value should not change, so Python accepts the second assignment without an error",
+"The name is Pascal Case, so Python treats it as a constant and rejects the reassignment",
+"Python rejects the reassignment only when the new value has a different data type from the first"
+],
+"answer": 1,
+"explanation": "Python has no true constants. UPPER_SNAKE_CASE (for example TAX_RATE) is a convention for values that should not change, but nothing in the language prevents reassignment.",
+"source": "notes"
+},
+{
+"q": "What does the following print?\nx = 5  # x = 10\nprint(x)  # print(x * 2)",
+"options": [
+"10",
+"5 followed by 10",
+"A SyntaxError, because the text after # contains code",
+"5"
+],
+"answer": 3,
+"explanation": "Everything from # to the end of the line is a comment that Python ignores, so x stays 5 and only print(x) runs.",
+"source": "notes"
+},
+{
+"q": "In the line total = price * 3 + 2, which description is correct?",
+"options": [
+"total is the expression, and price * 3 + 2 is the statement",
+"price * 3 + 2 is an expression, and the whole line is an assignment statement",
+"The whole line is an expression because it contains operators, so it is not a statement",
+"The = sign is the expression, and price, 3 and 2 are operands of the statement"
+],
+"answer": 1,
+"explanation": "An expression combines values, variables, and operators. The assignment with = is a statement the interpreter executes, and it stores the value of the expression on its right in the name on its left.",
+"source": "notes"
+},
+{
+"q": "What does print(2 + 3 * 4 ** 2 / 8 - 1) output?",
+"options": [
+"7.0",
+"7",
+"19.0",
+"49.0"
+],
+"answer": 0,
+"explanation": "Exponentiation first: 4 ** 2 = 16. Then 3 * 16 = 48 and 48 / 8 = 6.0 (the / operator gives a float). Finally 2 + 6.0 - 1 = 7.0. Plain 7 forgets that / returns a float; 19.0 and 49.0 come from evaluating in the wrong order.",
+"source": "notes"
+},
+{
+"q": "A warehouse packs 7 items per box and has 52 items. Which pair of expressions gives the number of full boxes and the number of leftover items, in that order?",
+"options": [
+"52 / 7 and 52 // 7",
+"52 // 7 and 52 % 7",
+"52 % 7 and 52 // 7",
+"52 // 7 and 52 / 7"
+],
+"answer": 1,
+"explanation": "Floor division 52 // 7 drops the fractional part and gives 7 full boxes, and modulo 52 % 7 gives the remainder 3 leftover items.",
+"source": "notes"
+},
+{
+"q": "What does the following print?\nn = 6\nn += n\nn *= 2\nn -= 4\nn /= 8\nprint(n)",
+"options": [
+"2.5",
+"1.0",
+"2",
+"20"
+],
+"answer": 0,
+"explanation": "n goes 6, 12 (n += n doubles it), 24, 20, and finally 20 / 8 = 2.5. Each augmented assignment updates n using its current value.",
+"source": "notes"
+},
+{
+"q": "What does print(7 >= 7, 7 > 7, 3 != 3.0) output?",
+"options": [
+"True False True",
+"False False False",
+"True True False",
+"True False False"
+],
+"answer": 3,
+"explanation": "7 >= 7 is True, 7 > 7 is False, and 3 != 3.0 is False because the two values are equal. Relational operators always return a Boolean.",
+"source": "notes"
+},
+{
+"q": "Which expression is True exactly when x is an odd integer from 11 to 21 inclusive?",
+"options": [
+"x >= 11 and x <= 21 and x % 2 == 1",
+"x >= 11 or x <= 21 and x % 2 == 1",
+"x > 11 and x < 21 and x % 2 == 1",
+"x >= 11 and x <= 21 and x % 2 == 0"
+],
+"answer": 0,
+"explanation": "All three conditions must hold, so and is needed. Using or lets almost any number through, strict > and < exclude the odd endpoints 11 and 21, and % 2 == 0 tests for even numbers.",
+"source": "notes"
+},
+{
+"q": "For x = 15, what does (x > 10 and x % 2 == 0) or not (x < 20) evaluate to?",
+"options": [
+"True",
+"15",
+"False",
+"An error, because not cannot follow or"
+],
+"answer": 2,
+"explanation": "The left side is True and False, which is False (15 is odd). The right side is not (True), which is False. False or False is False.",
+"source": "notes"
+},
+{
+"q": "What does the following print?\nprint(\"A\", end=\"-\")\nprint(\"B\", end=\"\")\nprint(\"C\")\nprint(\"D\")",
+"options": [
+"A-B-C on one line and D on the next line",
+"A-BC on the first line and D on the second line",
+"A, B, C, and D each on their own line",
+"A-BCD all on a single line"
+],
+"answer": 1,
+"explanation": "The end parameter replaces the newline that print() normally adds. The first call ends with a dash, the second with nothing, and only the third call ends the line, so D appears on the next line.",
+"source": "notes"
+},
+{
+"q": "Given n = 3, what happens when print(\"Items: \" + n) runs?",
+"options": [
+"It prints Items: 3, because Python converts the integer to text during concatenation",
+"It raises a NameError, because n must be defined with a type before it is used",
+"It prints Items: followed by 3 on a new line, because + adds a line break",
+"An error occurs, because + concatenates strings and n is an integer; passing the pieces separated by commas to print() avoids it"
+],
+"answer": 3,
+"explanation": "Concatenation with + joins two strings. Mixing a string with an integer raises an error. Commas in print() are the notes' way to combine text and numbers.",
+"source": "notes"
+},
+{
+"q": "With price = 250 and qty = 3, what does print(f\"Total: {price * qty:.2f} pesos\") output?",
+"options": [
+"Total: 750 pesos",
+"Total: 750.00 pesos",
+"Total: 750.0 pesos",
+"Total: price * qty:.2f pesos"
+],
+"answer": 1,
+"explanation": "An f-string evaluates the expression in the braces (250 * 3 = 750) and applies the :.2f format, which shows two decimal places.",
+"source": "notes"
+},
+{
+"q": "What does the following print, and what is dept afterwards?\ndept = \"citcs\"\nprint(f\"{dept.upper()} {dept}\")",
+"options": [
+"It prints CITCS CITCS, because upper() changes dept itself",
+"It prints citcs citcs, because braces inside an f-string are not evaluated",
+"It prints CITCS citcs, and dept is still \"citcs\"",
+"It raises an error, because methods cannot be called inside braces"
+],
+"answer": 2,
+"explanation": "Expressions inside f-string braces are evaluated, including method calls. upper() produces an uppercase result for the display and does not change dept.",
+"source": "notes"
+},
+{
+"q": "A user types 4 for the first prompt and 5 for the second.\na = input(\"a: \")\nb = input(\"b: \")\nprint(a + b)\nprint(int(a) + int(b))\nWhat is printed?",
+"options": [
+"45, then 9",
+"9, then 9",
+"45, then 45",
+"9, then 45"
+],
+"answer": 0,
+"explanation": "User input is automatically a String, so a + b concatenates \"4\" and \"5\" into 45. Type casting with int() first gives 4 + 5 = 9.",
+"source": "notes"
+},
+{
+"q": "What does the following print?\ndata = [10, 20, 30, 40, 50, 60]\nprint(data[-2], data[len(data) - 1], data[1])",
+"options": [
+"50 60 30",
+"50 60 20",
+"40 60 20",
+"50 50 20"
+],
+"answer": 1,
+"explanation": "data[-2] counts from the end and is 50. len(data) is 6, so data[5] is 60. Lists are zero-indexed, so data[1] is 20.",
+"source": "notes"
+},
+{
+"q": "What does the following print?\nm = [['a', 'b', 'c'], [1, 2, 3]]\nprint(m[1][-1], m[0][1])",
+"options": [
+"c 2",
+"3 a",
+"3 b",
+"1 b"
+],
+"answer": 2,
+"explanation": "m[1] is the inner list [1, 2, 3], and [-1] selects its last element, 3. m[0] is ['a', 'b', 'c'], and [1] selects b.",
+"source": "notes"
+},
+{
+"q": "What does the following print?\nq = ['a', 'b', 'c', 'd']\nq.insert(2, 'x')\nq.remove('b')\nq.append('b')\nq.reverse()\nx = q.pop(1)\nprint(x, q, q.index('x'))",
+"options": [
+"d ['b', 'c', 'x', 'a'] 3",
+"c ['b', 'd', 'x', 'a'] 2",
+"d ['b', 'c', 'x', 'a'] 1",
+"d ['b', 'c', 'x', 'a'] 2"
+],
+"answer": 3,
+"explanation": "Step by step: ['a','b','x','c','d'], then ['a','x','c','d'], then ['a','x','c','d','b'], reversed to ['b','d','c','x','a']. pop(1) removes and returns 'd', leaving ['b','c','x','a'], where 'x' is at index 2.",
+"source": "notes"
+},
+{
+"q": "What does the following print?\nv = [3, 1, 3, 2, 3]\nv.remove(3)\nprint(v.count(3), v.index(3), len(v))",
+"options": [
+"3 0 5",
+"2 1 4",
+"2 0 4",
+"3 1 4"
+],
+"answer": 1,
+"explanation": "remove deletes only the first occurrence, so v becomes [1, 3, 2, 3]. It now contains two 3s, the first 3 is at index 1, and the length is 4.",
+"source": "notes"
+},
+{
+"q": "What does the following print?\nw = [5, 6, 7, 8, 9]\ndel w[1]\ndel w[-1]\nx = w.pop(0)\nprint(x, w)",
+"options": [
+"5 [7, 8, 9]",
+"5 [7, 8]",
+"5 [6, 7]",
+"7 [8]"
+],
+"answer": 1,
+"explanation": "del w[1] leaves [5, 7, 8, 9]; del w[-1] leaves [5, 7, 8]; pop(0) removes and returns 5, leaving [7, 8].",
+"source": "notes"
+},
+{
+"q": "Given ip = ('10.20.30.40', 8080, 'tcp'), which statement raises an error?",
+"options": [
+"print(ip[-1])",
+"print(ip[1])",
+"ip = ('10.20.30.41', 8080, 'tcp')",
+"ip[0] = '10.20.30.41'"
+],
+"answer": 3,
+"explanation": "A tuple is fixed-length and immutable, so a value cannot be changed in place. Indexing, including negative indices, works as it does for lists, and rebinding the name ip to a new tuple is an ordinary assignment.",
+"source": "notes"
+}
+]

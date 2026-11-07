@@ -1,0 +1,96 @@
+2.4 Radix Conversion
+Radix and other number systems: what a radix is and how to convert between any two bases
+
+RADIX
+★ Radix is the total number of unique digits used to represent numbers in a number system.
+★ Radix is also called Base.
+EASIER: Radix is the size of the "digit alphabet". Decimal has 10 symbols, so its radix is 10. Binary has 2 symbols, so its radix is 2.
+Four common radix bases: binary (base 2), decimal (base 10), octal (base 8), hexadecimal (base 16).
+Other number systems exist with different bases.
+★ In any base, a digit must be smaller than the base.
+⚙ Added example: 385 is not a valid base 8 number, because the digit 8 does not exist in base 8.
+
+RADIX SYMBOLS
+Base 3: 0,1,2
+Base 4: 0,1,2,3
+Base 5: 0,1,2,3,4
+Base 6: 0,1,2,3,4,5
+Base 7: 0,1,2,3,4,5,6
+Base 9: 0,1,2,3,4,5,6,7,8
+Base 11: 0,1,2,3,4,5,6,7,8,9,A
+Base 12: 0,1,2,3,4,5,6,7,8,9,A,B
+Base 13: 0,1,2,3,4,5,6,7,8,9,A,B,C
+The pattern continues the same way for larger bases: each new base adds the next letter.
+EASIER: Once the ten digits run out, use letters in order: A = 10, B = 11, C = 12, and so on.
+
+THE SAME PLACE-VALUE IDEA WORKS IN EVERY BASE
+★ Value of a number = the sum of (digit × base raised to its position), with positions counted from the right starting at 0.
+⚙ Added example: 243 (base 5) = 2×5² + 4×5¹ + 3×5⁰ = 2×25 + 4×5 + 3×1 = 50 + 20 + 3 = 73 (decimal)
+
+RADIX CONVERSION
+⚙ General rule of thumb: convert Radix A to Radix 10, then convert Radix 10 to Radix B.
+EASIER: For example, to convert from base 2 to base 8, first convert to base 10, then convert to base 8.
+⚙ Other than Radix 10, some Radixes can be more efficient intermediary Radixes for converting from Radix A to Radix B.
+EASIER: A matching intermediary radix can reduce the amount of conversion work needed.
+EASIER: Base 2, base 8, and base 16 match each other, because 8 = 2³ and 16 = 2⁴. So you can jump between them by grouping bits, without going through base 10.
+
+STEPS FOR CONVERTING ANY BASE TO ANY BASE VIA DECIMAL
+⚙ Step 1: Convert the starting number to decimal by multiplying each digit by its place value and adding.
+⚙ Step 2: Divide the decimal number by the new base. Write the remainder.
+⚙ Step 3: Keep dividing the quotient by the new base until the quotient is 0.
+⚙ Step 4: Read the remainders from bottom to top. Write remainders of 10 or more as letters.
+
+EXAMPLE: BASE 2 TO BASE 8 THROUGH BASE 10
+⚙ Added example: convert 101101 (base 2) to base 8.
+⚙ Step 1: 101101 (base 2) = 32 + 0 + 8 + 4 + 0 + 1 = 45 (decimal)
+⚙ Step 2: 45 ÷ 8 = 5, remainder 5
+⚙ Step 3: 5 ÷ 8 = 0, remainder 5
+⚙ Step 4: read upward: 55 (base 8)
+⚙ Answer: 101101 (base 2) = 55 (base 8)
+
+EXAMPLE: THE SAME CONVERSION WITH A MATCHING INTERMEDIARY
+⚙ Added example: convert 101101 (base 2) to base 8 by grouping bits in threes.
+⚙ Groups from the right: 101 | 101
+⚙ 101 = 5 and 101 = 5
+⚙ Answer: 55 (base 8), the same answer with less work ✓
+
+EXAMPLE: BASE 5 TO BASE 7
+⚙ Added example: convert 243 (base 5) to base 7. Neither base matches the other, so use decimal.
+⚙ Step 1: 243 (base 5) = 73 (decimal), as worked out above.
+⚙ Step 2: 73 ÷ 7 = 10, remainder 3
+⚙ Step 3: 10 ÷ 7 = 1, remainder 3
+⚙ Step 4: 1 ÷ 7 = 0, remainder 1
+⚙ Read upward: 133 (base 7)
+⚙ Check: 1×49 + 3×7 + 3 = 49 + 21 + 3 = 73 ✓
+⚙ Answer: 243 (base 5) = 133 (base 7)
+
+EXAMPLE: DECIMAL TO BASE 3
+⚙ Added example: convert 22 (decimal) to base 3.
+⚙ 22 ÷ 3 = 7, remainder 1
+⚙ 7 ÷ 3 = 2, remainder 1
+⚙ 2 ÷ 3 = 0, remainder 2
+⚙ Read upward: 211 (base 3)
+⚙ Check: 2×9 + 1×3 + 1 = 18 + 3 + 1 = 22 ✓
+
+EXAMPLE: DECIMAL TO BASE 12 (USES LETTERS)
+⚙ Added example: convert 142 (decimal) to base 12.
+⚙ 142 ÷ 12 = 11, remainder 10, which is the letter A
+⚙ 11 ÷ 12 = 0, remainder 11, which is the letter B
+⚙ Read upward: BA (base 12)
+⚙ Check: 11×12 + 10 = 132 + 10 = 142 ✓
+
+COMMON MISTAKES
+Do not use a digit that is equal to or larger than the base.
+Do not read remainders from top to bottom. Read them from the bottom up.
+Do not skip the check. Convert your answer back to decimal to confirm.
+
+QUICK SELF-TEST
+Q: What is a radix?
+★ The total number of unique digits used in a number system. It is also called the base.
+Q: Which radix is the usual middle step when converting between two bases?
+★ Radix 10, although base 2, 8, and 16 can skip it by grouping bits.
+Q: Which digits does base 6 use?
+★ 0, 1, 2, 3, 4, 5
+Q: What is 12 (decimal) in base 3?
+⚙ 12 ÷ 3 = 4 remainder 0; 4 ÷ 3 = 1 remainder 1; 1 ÷ 3 = 0 remainder 1. Read upward: 110.
+★ Answer: 110 (base 3), because 1×9 + 1×3 + 0 = 12.

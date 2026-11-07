@@ -1,0 +1,328 @@
+1.0 Logic
+Propositions, Boolean connectives, truth tables, and logical equivalence
+
+WHAT IS MATHEMATICAL LOGIC
+Mathematical logic is a tool for working with complicated compound statements.
+It includes a language for expressing compound statements.
+It includes a concise notation for writing them.
+It includes a methodology for objectively reasoning about their truth or falsity.
+It is the foundation for expressing formal proofs in all branches of mathematics.
+EASIER: Think of logic as the grammar and arithmetic of reasoning. Grammar tells you which sentences make sense, and arithmetic tells you how to work out whether they are true.
+This module has two main parts: basic definitions, and equivalence rules and derivations.
+
+WHAT IS PROPOSITIONAL LOGIC
+★ Propositional logic is the logic of compound statements built from simpler statements using so-called Boolean connectives.
+EASIER: Boolean connectives are little joining words such as NOT, AND, OR, and IF-THEN. They work like the plus and times of ordinary arithmetic, except that they combine true/false statements instead of numbers.
+Some applications in computer science are the design of digital electronic circuits, the expression of conditions in programs, and queries to databases and search engines.
+The two thinkers pictured with this topic are George Boole (1815-1864), after whom Boolean connectives are named, and Chrysippus of Soli (ca. 281 B.C. to 205 B.C.), an ancient Greek logician.
+
+PROPOSITIONS
+★ A proposition (usually named p, q, r, and so on) is a statement, meaning a declarative sentence, with a definite meaning and a truth value that is either true (T) or false (F), never both, never neither, and never somewhere in between.
+EASIER: A proposition is a sentence that you could stamp with a big TRUE or a big FALSE. It is like a light switch that is either on or off, with no dimmer.
+You might not know the actual truth value, and it might depend on the situation, but it must be exactly one of the two.
+For now, think True/False only.
+★ A compound proposition is a proposition built from simpler propositions using Boolean connectives.
+Notation: T :≡ True and F :≡ False, where the symbol :≡ means is defined as.
+
+EXAMPLES OF PROPOSITIONS
+It is raining. This is a proposition in a given situation, because at any moment it is either true or false.
+Beijing is the capital of China. This is a proposition (it is true).
+1 + 2 = 3 is a proposition (it is true).
+Added example: 1 + 2 = 5 is also a proposition. It is false, but it still has a definite truth value.
+
+EXAMPLES OF NON-PROPOSITIONS
+Who's there? is NOT a proposition. It is interrogative, meaning a question.
+La la la la la is NOT a proposition. It is a meaningless interjection.
+Just do it! is NOT a proposition. It is imperative, meaning a command.
+Yeah, Way nas di, whatever... is NOT a proposition. It is vague and has no definite meaning.
+1 + 2 is NOT a proposition. It is an expression whose value is the number 3, not true or false.
+EASIER: Expression versus proposition. An expression such as 1 + 2 is like a noun phrase (it names a number). A proposition such as 1 + 2 = 3 is a full sentence that can be true or false.
+
+THE SIX BOOLEAN OPERATORS
+Negation operator: nickname NOT. It works on one proposition (unary). Its symbol is a short hook, written as a corner-shaped sign in textbooks.
+Conjunction operator: nickname AND. It joins two propositions (binary). Its symbol is a wedge pointing up, like a capital A without its crossbar.
+Disjunction operator: nickname OR. It joins two propositions. Its symbol is a wedge pointing down, like the letter v.
+Exclusive-OR operator: nickname XOR. It joins two propositions. Its symbol is a plus sign inside a circle.
+Implication operator: nickname IMPLIES. Its symbol is a single arrow, written -> in plain text.
+Biconditional operator: nickname IFF (if and only if). Its symbol is a double-headed arrow, written <-> in plain text.
+In this plain-text version, the words NOT, AND, OR, and XOR are used in place of the symbols.
+
+THE NEGATION OPERATOR (NOT)
+★ The unary negation operator NOT transforms a proposition into its logical negation, and NOT p always has the opposite truth value of p.
+EASIER: NOT is a flip switch. True becomes false, and false becomes true.
+Example: if p = I have brown hair, then NOT p = I do not have brown hair.
+Truth table for NOT. The column holding p is the operand column. The column holding NOT p is the result column.
+⚙ Row 1: p = T gives NOT p = F.
+⚙ Row 2: p = F gives NOT p = T.
+
+NEGATING AND, NEGATING OR (DE MORGAN'S LAWS)
+Consider the statement I am both rich and happy.
+For this statement to be false, I could be either not rich or not happy.
+Let A = I am rich and B = I am happy.
+★ The negation of A AND B is NOT A OR NOT B. In words: I am not rich or I am not happy.
+★ The negation of A OR B is NOT A AND NOT B.
+Summary: the negation of A or B is not A and not B. The negation of A and B is not A or not B.
+EASIER: To negate a joined statement, push the NOT inside and swap AND with OR (or OR with AND). These two rules are called De Morgan's laws.
+Added example: the statement I am rich or happy is false only when I am neither. So its negation is I am not rich and I am not happy.
+
+THE CONJUNCTION OPERATOR (AND)
+★ The binary conjunction operator AND combines two propositions to form their logical conjunction, and p AND q is true only when both p and q are true.
+EASIER: AND is a strict teacher who says you pass only if you hand in the essay AND take the exam. Missing either one means you fail.
+Example: if p = I will have salad for lunch and q = I will have steak for dinner, then p AND q = I will have salad for lunch and I will have steak for dinner.
+Memory trick: the AND symbol points up like the letter A, and it means AND.
+Truth table for AND. The columns for p and q are the operand columns.
+⚙ Row 1: p = T, q = T gives p AND q = T.
+⚙ Row 2: p = T, q = F gives p AND q = F.
+⚙ Row 3: p = F, q = T gives p AND q = F.
+⚙ Row 4: p = F, q = F gives p AND q = F.
+⚙ Rule: a conjunction p1 AND p2 AND ... AND pn of n propositions has 2^n rows in its truth table.
+⚙ Check: with n = 1 there are 2 rows, with n = 2 there are 4 rows, with n = 3 there are 8 rows, and with n = 5 there are 32 rows.
+Also, the operations NOT and AND together are sufficient to express any Boolean truth table.
+EASIER: Sufficient means that with only these two building blocks you can construct every other connective. Operator sets with this power are called universal.
+
+THE DISJUNCTION OPERATOR (OR)
+★ The binary disjunction operator OR combines two propositions to form their logical disjunction, and p OR q is true when p is true, or q is true, or both are true. It is false only when both are false.
+Example: let p = My car has a bad engine and q = My car has a bad carburetor.
+Then p OR q = Either my car has a bad engine, or my car has a bad carburetor.
+The meaning is like and/or in English.
+Memory trick: after the downward-pointing axe of the OR symbol splits the wood, you can take 1 piece OR the other, or both.
+★ Because OR includes the possibility that both are true, it is also called inclusive or.
+EASIER: Inclusive OR is like a menu that says you may have soup, or salad, or both. Having both is allowed.
+Truth table for OR.
+⚙ Row 1: p = T, q = T gives p OR q = T.
+⚙ Row 2: p = T, q = F gives p OR q = T. This differs from AND.
+⚙ Row 3: p = F, q = T gives p OR q = T. This differs from AND.
+⚙ Row 4: p = F, q = F gives p OR q = F.
+NOT and OR together are also universal.
+
+NESTED PROPOSITIONAL EXPRESSIONS
+⚙ Rule: use parentheses to group sub-expressions, so that it is clear which connective is applied to which pieces.
+EASIER: Parentheses in logic work just like parentheses in arithmetic. (2 + 3) * 4 is different from 2 + 3 * 4, and the same kind of difference appears in logic.
+Let f = I just saw my old friend, g = he's grown, and s = I've shrunk.
+The sentence I just saw my old friend, and either he's grown or I've shrunk is written f AND (g OR s).
+EXAMPLE: TRANSLATING A NESTED SENTENCE
+⚙ Step 1: name the simple propositions: f, g, and s as above.
+⚙ Step 2: find the main connective. The sentence says and either ..., so the main connective is AND, joining f with the whole phrase either he's grown or I've shrunk.
+⚙ Step 3: the phrase either he's grown or I've shrunk is g OR s, and it must be grouped as one piece.
+⚙ Answer: f AND (g OR s).
+⚙ Check: if the grouping is dropped, (f AND g) OR s means something different, namely I saw my old friend and he's grown, or else I've shrunk.
+
+A SIMPLE EXERCISE (TRANSLATING SYMBOLS TO ENGLISH)
+Let p = It rained last night, q = The sprinklers came on last night, and r = The lawn was wet this morning.
+EXAMPLE: TRANSLATE EACH EXPRESSION INTO ENGLISH
+⚙ NOT p = It didn't rain last night.
+⚙ r AND NOT p = The lawn was wet this morning, and it didn't rain last night.
+⚙ NOT r OR p OR q = Either the lawn wasn't wet this morning, or it rained last night, or the sprinklers came on last night.
+⚙ Note: in NOT r OR p OR q, the NOT applies only to r, and it is read first.
+Added example: p AND q = It rained last night and the sprinklers came on last night.
+
+THE EXCLUSIVE OR OPERATOR (XOR)
+★ The binary exclusive-or operator XOR combines two propositions to form their logical exclusive or (some jokingly call it exjunction), and p XOR q is true when p is true or q is true, but not both.
+Example: let p = I will earn an A in this course and q = I will drop this course.
+Then p XOR q = I will either earn an A for this course, or I will drop it (but not both!).
+This operation is called exclusive or because it excludes the possibility that both p and q are true.
+EASIER: XOR is like a menu that says you may have cake OR ice cream as your dessert, but not both. Exactly one choice is allowed.
+Truth table for XOR.
+⚙ Row 1: p = T, q = T gives p XOR q = F.
+⚙ Row 2: p = T, q = F gives p XOR q = T.
+⚙ Row 3: p = F, q = T gives p XOR q = T.
+⚙ Row 4: p = F, q = F gives p XOR q = F. This differs from OR only in the first row.
+NOT and XOR together are NOT universal.
+EASIER: XOR and OR differ in exactly one row, the row where both inputs are true.
+
+THE IMPLICATION OPERATOR (IF-THEN)
+★ The implication p -> q states that p implies q. In p -> q, the proposition p is called the antecedent and the proposition q is called the consequent.
+Meaning: if p is true, then q is true; but if p is not true, then q could be either true or false.
+Example: let p = You study hard and q = You will get a good grade.
+Then p -> q = If you study hard, then you will get a good grade. (Otherwise, it could go either way.)
+EASIER: An implication is a promise. The promise is broken only when you do the first part (study hard) and the second part (a good grade) does not happen.
+⚙ Rule: p -> q is false only when p is true but q is not true.
+⚙ Rule: p -> q does not say that p causes q.
+⚙ Rule: p -> q does not require that p or q are ever true.
+Example: (1 = 0) -> pigs can fly is TRUE, because the antecedent is false.
+Truth table for implication.
+⚙ Row 1: p = T, q = T gives p -> q = T.
+⚙ Row 2: p = T, q = F gives p -> q = F. This is the only false case.
+⚙ Row 3: p = F, q = T gives p -> q = T.
+⚙ Row 4: p = F, q = F gives p -> q = T.
+EASIER: When the antecedent is false, the promise was never tested, so it cannot be broken. Logicians then count the implication as true.
+
+EXAMPLES OF IMPLICATIONS
+Decide whether each implication is true or false.
+EXAMPLE: IF THIS LECTURE ENDS, THEN THE SUN WILL RISE TOMORROW
+⚙ The antecedent (the lecture ends) is true and the consequent (the sun rises tomorrow) is true.
+⚙ Row T, T of the truth table gives T.
+⚙ Answer: True.
+EXAMPLE: IF TUESDAY IS A DAY OF THE WEEK, THEN I AM A PENGUIN
+⚙ The antecedent is true. The consequent (I am a penguin) is false.
+⚙ Row T, F of the truth table gives F.
+⚙ Answer: False.
+EXAMPLE: IF 1+1=6, THEN R. DUTERTE WAS PHIL-PRESIDENT
+⚙ The antecedent 1 + 1 = 6 is false, so the implication is true whatever the consequent is.
+⚙ Here the consequent is also true, because Rodrigo Duterte was President of the Philippines. That is row F, T, which gives T.
+⚙ Answer: True.
+EXAMPLE: IF THE MOON IS MADE OF GREEN CHEESE, THEN I AM RICHER THAN BILL GATES
+⚙ The antecedent is false. The consequent is also false.
+⚙ Row F, F of the truth table gives T.
+⚙ Answer: True.
+
+CONVERSE, INVERSE, CONTRAPOSITIVE
+★ For an implication p -> q, its converse is q -> p.
+★ For an implication p -> q, its inverse is NOT p -> NOT q.
+★ For an implication p -> q, its contrapositive is NOT q -> NOT p.
+★ Exactly one of these three has the same meaning (the same truth table) as p -> q: the contrapositive.
+EASIER: Converse means swap the two parts. Inverse means negate both parts but keep the order. Contrapositive means swap AND negate both parts.
+Added example: for If you study hard, then you will get a good grade, the converse is If you get a good grade, then you study hard.
+Added example: the inverse is If you do not study hard, then you will not get a good grade.
+Added example: the contrapositive is If you do not get a good grade, then you did not study hard.
+EXAMPLE: PROVING THAT P -> Q AND ITS CONTRAPOSITIVE ARE EQUIVALENT
+⚙ Step 1: list all four rows for p and q.
+⚙ Step 2: compute NOT q and NOT p, then compute p -> q and NOT q -> NOT p in every row.
+⚙ Row 1: p = T, q = T, NOT q = F, NOT p = F, p -> q = T, NOT q -> NOT p = (F -> F) = T.
+⚙ Row 2: p = T, q = F, NOT q = T, NOT p = F, p -> q = F, NOT q -> NOT p = (T -> F) = F.
+⚙ Row 3: p = F, q = T, NOT q = F, NOT p = T, p -> q = T, NOT q -> NOT p = (F -> T) = T.
+⚙ Row 4: p = F, q = F, NOT q = T, NOT p = T, p -> q = T, NOT q -> NOT p = (T -> T) = T.
+⚙ Step 3: compare the two result columns. Both read T, F, T, T in the four rows, so they match in every row.
+⚙ Conclusion: p -> q and its contrapositive are logically equivalent.
+Added example: the converse q -> p has results T, T, F, T in the four rows, and the inverse NOT p -> NOT q also has T, T, F, T. They match each other, but neither matches p -> q, which is T, F, T, T. So the converse and the inverse are not equivalent to the original.
+
+THE BICONDITIONAL OPERATOR (IFF)
+★ The biconditional p <-> q states that p is true if and only if (IFF) q is true, so p and q have the same truth value.
+Example: let p = Candidate X wins the election and q = Candidate X takes office after the election.
+Then p <-> q = If, and only if, Candidate X wins the election, Candidate X takes office after the election.
+EASIER: IFF is a two-way street. The first part guarantees the second, and the second guarantees the first.
+★ The truth table of p <-> q is the exact opposite of the truth table of XOR, so p <-> q means NOT (p XOR q).
+⚙ Rule: p <-> q does not imply that p and q are true, and it does not say that p and q cause each other.
+Truth table for the biconditional.
+⚙ Row 1: p = T, q = T gives p <-> q = T.
+⚙ Row 2: p = T, q = F gives p <-> q = F.
+⚙ Row 3: p = F, q = T gives p <-> q = F.
+⚙ Row 4: p = F, q = F gives p <-> q = T.
+Note that two false statements still give T, because they have the same truth value.
+
+BOOLEAN OPERATIONS SUMMARY
+We have seen 1 unary operator (out of the 4 possible) and 5 binary operators (out of the 16 possible). Their truth tables are below.
+⚙ Row 1: p = T, q = T gives NOT p = F, p AND q = T, p OR q = T, p XOR q = F, p -> q = T, p <-> q = T.
+⚙ Row 2: p = T, q = F gives NOT p = F, p AND q = F, p OR q = T, p XOR q = T, p -> q = F, p <-> q = F.
+⚙ Row 3: p = F, q = T gives NOT p = T, p AND q = F, p OR q = T, p XOR q = T, p -> q = T, p <-> q = F.
+⚙ Row 4: p = F, q = F gives NOT p = T, p AND q = F, p OR q = F, p XOR q = F, p -> q = T, p <-> q = T.
+
+SOME ALTERNATIVE NOTATIONS
+Different fields write the same connectives in different ways.
+Propositional logic uses the symbols for NOT, AND, OR, XOR, implies, and iff described earlier.
+Boolean algebra writes NOT p as p with a bar over it, p AND q as pq (written side by side), p OR q as p + q, and XOR with the circled plus sign.
+C, C++, and Java word-wise operators are: ! for NOT, && for AND, || for OR, != for XOR, and == for iff.
+C, C++, and Java bitwise operators are: ~ for NOT, & for AND, | for OR, and ^ for XOR.
+Logic gates (in electronic circuits) have a NOT gate, an AND gate, an OR gate, and an XOR gate.
+Added example: in a program, the condition (x > 0) && (y > 0) is true only when both parts are true, just like p AND q.
+
+LOGICAL EQUIVALENCE
+★ A tautology is a compound proposition that is true in every row of its truth table.
+★ Compound proposition p is logically equivalent to compound proposition q, written p <=> q, if and only if the compound proposition p <-> q is a tautology.
+★ Equivalently, p and q are logically equivalent exactly when they contain the same truth values in all rows of their truth tables.
+EASIER: Two propositions are equivalent when they are twins. In every possible situation they give the same answer.
+EASIER: The symbol <-> is a connective that builds a new proposition. The symbol <=> is a claim that two propositions always match, so it is a statement about them.
+Added example: a contradiction is the opposite of a tautology. It is false in every row, such as p AND NOT p.
+⚙ Steps for proving equivalence with truth tables: Step 1: list every combination of T and F for the simple propositions.
+⚙ Step 2: compute a column for each sub-expression, working from the inside out.
+⚙ Step 3: compute the final column for each of the two propositions.
+⚙ Step 4: compare the two final columns in every row. If they match in all rows, they are equivalent. If they differ in even one row, they are not.
+
+EXAMPLE: PROVE THAT P OR Q IS EQUIVALENT TO NOT (NOT P AND NOT Q)
+⚙ Row 1: p = T, q = T: p OR q = T, NOT p = F, NOT q = F, NOT p AND NOT q = F, NOT (NOT p AND NOT q) = T.
+⚙ Row 2: p = T, q = F: p OR q = T, NOT p = F, NOT q = T, NOT p AND NOT q = F, NOT (NOT p AND NOT q) = T.
+⚙ Row 3: p = F, q = T: p OR q = T, NOT p = T, NOT q = F, NOT p AND NOT q = F, NOT (NOT p AND NOT q) = T.
+⚙ Row 4: p = F, q = F: p OR q = F, NOT p = T, NOT q = T, NOT p AND NOT q = T, NOT (NOT p AND NOT q) = F.
+⚙ The columns for p OR q and for NOT (NOT p AND NOT q) both read T, T, T, F.
+⚙ Conclusion: p OR q is logically equivalent to NOT (NOT p AND NOT q).
+EASIER: This shows why NOT and AND together are enough to build OR.
+Added example: p -> q is equivalent to NOT p OR q. Check: Row T, T gives F OR T = T. Row T, F gives F OR F = F. Row F, T gives T OR T = T. Row F, F gives T OR F = T. This matches T, F, T, T for p -> q.
+
+EXERCISES WITH SOLUTIONS
+EXAMPLE: WRITE THE TRUTH TABLE FOR (P OR Q) -> R
+⚙ Step 1: list all 2^3 = 8 rows for P, Q, R.
+⚙ Step 2: compute the column P OR Q, then compute (P OR Q) -> R.
+⚙ Row 1: P = T, Q = T, R = T: P OR Q = T, (P OR Q) -> R = T.
+⚙ Row 2: P = T, Q = T, R = F: P OR Q = T, (P OR Q) -> R = F.
+⚙ Row 3: P = T, Q = F, R = T: P OR Q = T, (P OR Q) -> R = T.
+⚙ Row 4: P = T, Q = F, R = F: P OR Q = T, (P OR Q) -> R = F.
+⚙ Row 5: P = F, Q = T, R = T: P OR Q = T, (P OR Q) -> R = T.
+⚙ Row 6: P = F, Q = T, R = F: P OR Q = T, (P OR Q) -> R = F.
+⚙ Row 7: P = F, Q = F, R = T: P OR Q = F, (P OR Q) -> R = T.
+⚙ Row 8: P = F, Q = F, R = F: P OR Q = F, (P OR Q) -> R = T.
+⚙ Answer: the final column reads T, F, T, F, T, F, T, T.
+EXAMPLE: SHOW THAT NOT (P OR Q) IS EQUIVALENT TO NOT P AND NOT Q
+⚙ Row 1: P = T, Q = T: P OR Q = T, NOT (P OR Q) = F, NOT P = F, NOT Q = F, NOT P AND NOT Q = F.
+⚙ Row 2: P = T, Q = F: P OR Q = T, NOT (P OR Q) = F, NOT P = F, NOT Q = T, NOT P AND NOT Q = F.
+⚙ Row 3: P = F, Q = T: P OR Q = T, NOT (P OR Q) = F, NOT P = T, NOT Q = F, NOT P AND NOT Q = F.
+⚙ Row 4: P = F, Q = F: P OR Q = F, NOT (P OR Q) = T, NOT P = T, NOT Q = T, NOT P AND NOT Q = T.
+⚙ Answer: both columns read F, F, F, T, so they are equivalent. This is De Morgan's law for OR.
+EXAMPLE: CONSTRUCT A TRUTH TABLE FOR (NOT P AND Q) OR (P AND NOT Q)
+⚙ Row 1: P = T, Q = T: NOT P = F, NOT P AND Q = F, NOT Q = F, P AND NOT Q = F, whole expression = F.
+⚙ Row 2: P = T, Q = F: NOT P = F, NOT P AND Q = F, NOT Q = T, P AND NOT Q = T, whole expression = T.
+⚙ Row 3: P = F, Q = T: NOT P = T, NOT P AND Q = T, NOT Q = F, P AND NOT Q = F, whole expression = T.
+⚙ Row 4: P = F, Q = F: NOT P = T, NOT P AND Q = F, NOT Q = T, P AND NOT Q = F, whole expression = F.
+⚙ Answer: the final column reads F, T, T, F. This is exactly the truth table of P XOR Q.
+EXAMPLE: SHOW THAT NOT (P AND Q) IS EQUIVALENT TO NOT P OR NOT Q
+⚙ Row 1: P = T, Q = T: P AND Q = T, NOT (P AND Q) = F, NOT P = F, NOT Q = F, NOT P OR NOT Q = F.
+⚙ Row 2: P = T, Q = F: P AND Q = F, NOT (P AND Q) = T, NOT P = F, NOT Q = T, NOT P OR NOT Q = T.
+⚙ Row 3: P = F, Q = T: P AND Q = F, NOT (P AND Q) = T, NOT P = T, NOT Q = F, NOT P OR NOT Q = T.
+⚙ Row 4: P = F, Q = F: P AND Q = F, NOT (P AND Q) = T, NOT P = T, NOT Q = T, NOT P OR NOT Q = T.
+⚙ Answer: both columns read F, T, T, T, so they are equivalent. This is De Morgan's law for AND.
+EXAMPLE: SHOW THAT P AND (Q AND R) IS EQUIVALENT TO (P AND Q) AND R
+⚙ Row 1: P = T, Q = T, R = T: Q AND R = T, P AND (Q AND R) = T, P AND Q = T, (P AND Q) AND R = T.
+⚙ Row 2: P = T, Q = T, R = F: Q AND R = F, P AND (Q AND R) = F, P AND Q = T, (P AND Q) AND R = F.
+⚙ Row 3: P = T, Q = F, R = T: Q AND R = F, P AND (Q AND R) = F, P AND Q = F, (P AND Q) AND R = F.
+⚙ Row 4: P = T, Q = F, R = F: Q AND R = F, P AND (Q AND R) = F, P AND Q = F, (P AND Q) AND R = F.
+⚙ Row 5: P = F, Q = T, R = T: Q AND R = T, P AND (Q AND R) = F, P AND Q = F, (P AND Q) AND R = F.
+⚙ Row 6: P = F, Q = T, R = F: Q AND R = F, P AND (Q AND R) = F, P AND Q = F, (P AND Q) AND R = F.
+⚙ Row 7: P = F, Q = F, R = T: Q AND R = F, P AND (Q AND R) = F, P AND Q = F, (P AND Q) AND R = F.
+⚙ Row 8: P = F, Q = F, R = F: Q AND R = F, P AND (Q AND R) = F, P AND Q = F, (P AND Q) AND R = F.
+⚙ Answer: both columns read T, F, F, F, F, F, F, F, so they are equivalent. In words, the grouping of a chain of ANDs does not matter.
+EXAMPLE: SHOW THAT P -> Q IS NOT EQUIVALENT TO ITS CONVERSE Q -> P
+⚙ Row 1: P = T, Q = T: P -> Q = T, Q -> P = T.
+⚙ Row 2: P = T, Q = F: P -> Q = F, Q -> P = T.
+⚙ Row 3: P = F, Q = T: P -> Q = T, Q -> P = F.
+⚙ Row 4: P = F, Q = F: P -> Q = T, Q -> P = T.
+⚙ Answer: the columns differ in Row 2 and Row 3, so P -> Q and Q -> P are not logically equivalent.
+
+COMMON MISTAKES
+Treating an expression such as 1 + 2 as a proposition. It has no truth value.
+Thinking OR means exactly one. Ordinary OR is inclusive and is true when both are true. Only XOR excludes both.
+Thinking p -> q is false whenever p is false. It is actually true whenever p is false.
+Thinking p -> q means p causes q. It does not.
+Treating the converse or inverse as equivalent to the original implication. Only the contrapositive is equivalent.
+Negating A AND B as NOT A AND NOT B. The correct negation is NOT A OR NOT B.
+Forgetting that n propositions give 2^n rows, not 2n rows.
+Mixing up the connective <-> (it builds a proposition) with the claim <=> (it says two propositions are equivalent).
+
+EXAM TIPS
+List the rows in a fixed order (TT, TF, FT, FF for two letters) so you never miss or repeat a row.
+Add one column for every sub-expression instead of working the whole thing in your head.
+To prove equivalence, compare the final columns in every row. To disprove it, one differing row is enough.
+Memorize that implication is false only in the row T, F.
+For a negation of AND or OR, push NOT inside and swap AND with OR.
+
+SELF-TEST
+Q: What is a proposition?
+★ A declarative sentence with a definite meaning whose truth value is exactly true or false, never both and never neither.
+Q: How many rows does the truth table of a compound proposition with 4 different simple propositions have?
+★ 2^4 = 16 rows.
+Q: When is p OR q false?
+★ Only when both p and q are false.
+Q: When is p XOR q true?
+★ When exactly one of p and q is true, but not both.
+Q: When is p -> q false?
+★ Only when p is true and q is false.
+Q: What are the converse, inverse, and contrapositive of p -> q, and which one is equivalent to p -> q?
+★ Converse: q -> p. Inverse: NOT p -> NOT q. Contrapositive: NOT q -> NOT p. The contrapositive is the equivalent one.
+Q: What is the negation of A AND B?
+★ NOT A OR NOT B.
+Q: What does p <-> q mean in terms of XOR?
+★ p <-> q means NOT (p XOR q), so p and q have the same truth value.
+
+REFERENCES
+Course textbook: Kenneth H. Rosen, Discrete Mathematics and its Applications, McGraw-Hill, Fifth Edition, 2003.
+Other recommended resource: William Barnier and Jean B. Chan, Discrete Mathematics: With Applications, West Publishing Co., 1989.
+Other recommended resource: Mike Piff, Discrete Mathematics, An Introduction for Software Engineers, Cambridge University Press, 1992.
+Other recommended resource: Todd Feil and Joan Krone, Essential Discrete Mathematics, Prentice Hall, 2003.

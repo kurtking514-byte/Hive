@@ -1,0 +1,362 @@
+[
+{
+"q": "What does Origin examine in O-C-P-V-L?",
+"options": [
+"Creator, date, place, and connection",
+"Accuracy after comparison",
+"Audience reaction",
+"Later influence"
+],
+"answer": 0,
+"explanation": "Origin identifies who made a source, when and where, and their connection.",
+"source": "notes"
+},
+{
+"q": "A secondary source is generally",
+"options": [
+"A participant's firsthand account",
+"A later interpretation or synthesis of evidence",
+"Any archived document",
+"A source without perspective"
+],
+"answer": 1,
+"explanation": "Secondary sources interpret, explain, compare, or synthesize past evidence.",
+"source": "notes"
+},
+{
+"q": "Presentism means",
+"options": [
+"Comparing independent sources",
+"Treating witnesses as reliable",
+"Judging the past only through current assumptions",
+"Studying audience"
+],
+"answer": 2,
+"explanation": "Presentism ignores historical conditions and applies current assumptions to the past.",
+"source": "notes"
+},
+{
+"q": "A source's main argument is",
+"options": [
+"Its creator's central intended message",
+"Its publication date",
+"Every detail it contains",
+"A historian's judgment"
+],
+"answer": 0,
+"explanation": "The argument is the message the creator wants accepted.",
+"source": "notes"
+},
+{
+"q": "Corroboration is",
+"options": [
+"Removing biased sources",
+"Comparing independent evidence",
+"Simplifying a source",
+"Finding its audience"
+],
+"answer": 1,
+"explanation": "Corroboration checks evidence for agreement, conflict, and gaps.",
+"source": "notes"
+},
+{
+"q": "Customs of the Tagalogs is a",
+"options": [
+"Modern documentary",
+"Revolutionary instructional text",
+"Secondary compilation",
+"Sixteenth-century chronicle and colonial ethnographic account"
+],
+"answer": 3,
+"explanation": "Plasencia's work is a late-sixteenth-century account.",
+"source": "notes"
+},
+{
+"q": "Who prepared the 1898 Declaration of Independence?",
+"options": [
+"Juan Luna",
+"Antonio Pigafetta",
+"Ambrosio Rianzares Bautista",
+"Emilio Jacinto"
+],
+"answer": 2,
+"explanation": "Bautista prepared the Declaration; Jacinto wrote the Kartilya.",
+"source": "notes"
+},
+{
+"q": "Spoliarium is",
+"options": [
+"An eyewitness colonial photograph",
+"A 1955 flag painting",
+"A 1917 cartoon",
+"An 1884 painting of defeated gladiators later linked to nationalist memory"
+],
+"answer": 3,
+"explanation": "Luna's painting depicts defeated gladiators and later acquired nationalist interpretations.",
+"source": "notes"
+},
+{
+"q": "Amorsolo painted The Making of the Philippine Flag in",
+"options": [
+"1955",
+"1898",
+"1884",
+"1917"
+],
+"answer": 0,
+"explanation": "It was painted in 1955 as a retrospective representation.",
+"source": "notes"
+},
+{
+"q": "Which distinction is correct?",
+"options": [
+"Both cartoons and 1985 volume are secondary",
+"Original cartoons are primary; McCoy-Roces volume is secondary",
+"Original cartoons are secondary; volume is primary",
+"Both are primary"
+],
+"answer": 1,
+"explanation": "The cartoons are contemporary sources; the later volume is a compilation.",
+"source": "notes"
+},
+{
+"q": "Ethos refers to appeal through",
+"options": [
+"Emotion",
+"Credibility",
+"Reasoning",
+"Visual composition"
+],
+"answer": 1,
+"explanation": "Ethos means credibility; pathos is emotion and logos is reasoning.",
+"source": "notes"
+},
+{
+"q": "The Conley dispute helped trigger the",
+"options": [
+"1917 cartoon debate",
+"1898 declaration",
+"1923 Cabinet Crisis",
+"1986 transition"
+],
+"answer": 2,
+"explanation": "It contributed to the 1923 Cabinet Crisis.",
+"source": "notes"
+},
+{
+"q": "Which O-C-P-V-L element asks what a source cannot answer?",
+"options": [
+"Origin",
+"Content",
+"Value",
+"Limitation"
+],
+"answer": 3,
+"explanation": "Limitation identifies silences and questions not answerable by the source alone.",
+"source": "notes"
+},
+{
+"q": "A primary source is evidence",
+"options": [
+"Created during the period or by someone closely connected",
+"Always written later by a historian",
+"Without bias",
+"More reliable than any secondary work"
+],
+"answer": 0,
+"explanation": "Primary status depends on relationship to the period, not neutrality.",
+"source": "notes"
+},
+{
+"q": "Point of view means",
+"options": [
+"Publication date",
+"Position from which creator sees and explains an event",
+"All facts listed",
+"Comparison of accounts"
+],
+"answer": 1,
+"explanation": "Point of view is the creator's position and perspective.",
+"source": "notes"
+},
+{
+"q": "Which is a limitation of Plasencia?",
+"options": [
+"No social content",
+"Written in 1985",
+"Missionary-colonial perspective and focus on Tagalog areas",
+"Painted long afterward"
+],
+"answer": 2,
+"explanation": "His perspective and regional focus limit generalization.",
+"source": "notes"
+},
+{
+"q": "Which limits Pigafetta's account?",
+"options": [
+"No trade observations",
+"Made in the 2000s",
+"No Visayan encounters",
+"Translation and European assumptions"
+],
+"answer": 3,
+"explanation": "Communication barriers and expedition viewpoint could shape his descriptions.",
+"source": "notes"
+},
+{
+"q": "The Declaration argues that",
+"options": [
+"Colonial abuses justified separation and sovereignty",
+"The U.S. recognized independence in 1898",
+"The Katipunan only taught ethics",
+"Colonialism had no political effect"
+],
+"answer": 0,
+"explanation": "The document connects grievances to a claim for sovereign independence.",
+"source": "notes"
+},
+{
+"q": "Who sewed the Philippine flag in Hong Kong in 1898?",
+"options": [
+"Luna, Jacinto, and Bautista",
+"Aquino, Agoncillo, and Wood",
+"Marcela Agoncillo, Lorenza Agoncillo, and Delfina Herbosa de Natividad",
+"Plasencia, Pigafetta, and Amorsolo"
+],
+"answer": 2,
+"explanation": "These three women sewed the flag; Amorsolo painted the scene in 1955.",
+"source": "notes"
+},
+{
+"q": "The Jones Act of 1916",
+"options": [
+"Expanded elected institutions and promised eventual independence under a condition",
+"Proclaimed independence",
+"Created the Cabinet Crisis",
+"Was Aquino's speech"
+],
+"answer": 0,
+"explanation": "It expanded elected institutions and promised eventual independence once stable government was established.",
+"source": "notes"
+},
+{
+"q": "The five-part source-analysis paragraph order is",
+"options": [
+"Evidence, qualification, claim, context, reasoning",
+"Context, opinion, summary, title, evidence",
+"Claim, evidence, reasoning, context, qualification",
+"Origin, purpose, content, value, limitation"
+],
+"answer": 2,
+"explanation": "The paragraph moves from claim through evidence and reasoning to context and qualification.",
+"source": "notes"
+},
+{
+"q": "A student calls a biased source useless. Best response?",
+"options": [
+"Bias proves every statement false",
+"Only neutral sources are primary",
+"Never compare biased accounts",
+"Explain how viewpoint shapes evidence and what it can still reveal"
+],
+"answer": 3,
+"explanation": "Bias should be analyzed; it may reveal loyalties, interests, and audience.",
+"source": "notes"
+},
+{
+"q": "A 2008 documentary studied as evidence of 2000s memory is",
+"options": [
+"Primary for that question",
+"Primary for every event it shows",
+"Secondary for all questions",
+"Neither"
+],
+"answer": 0,
+"explanation": "Source type depends on the question; the film is primary evidence of its own era.",
+"source": "notes"
+},
+{
+"q": "How should a painting close reading begin?",
+"options": [
+"Assume later meaning was the sole intent",
+"Treat it as a photograph",
+"Describe visible features before interpretation",
+"Ignore light and composition"
+],
+"answer": 2,
+"explanation": "Description of visible evidence should precede interpretation.",
+"source": "notes"
+},
+{
+"q": "Which statement about eyewitness evidence is NOT true?",
+"options": [
+"It is automatically neutral and complete",
+"It can provide close detail",
+"It may be selective",
+"Its claims need evaluation"
+],
+"answer": 0,
+"explanation": "Eyewitness status does not guarantee neutrality or completeness.",
+"source": "notes"
+},
+{
+"q": "Which pair is mismatched?",
+"options": [
+"Pathos—emotion",
+"Ethos—logical reasoning",
+"Logos—reasoning",
+"Ethos—credibility"
+],
+"answer": 1,
+"explanation": "Ethos concerns credibility; logos concerns reasoning.",
+"source": "notes"
+},
+{
+"q": "Which claim about the 1917 cartoons is NOT supported?",
+"options": [
+"Uncle Sam and Little Juan appear in one",
+"They prove every Filipino shared one opinion",
+"A cartoon criticizes selective justice",
+"They reveal political criticism"
+],
+"answer": 1,
+"explanation": "A single cartoon cannot represent every Filipino view.",
+"source": "notes"
+},
+{
+"q": "Which pair is mismatched?",
+"options": [
+"Plasencia—Tagalog customs",
+"Pigafetta—Magellan expedition",
+"Amorsolo—1955 flag painting",
+"Kartilya—Bautista"
+],
+"answer": 3,
+"explanation": "The Kartilya is associated with Emilio Jacinto; Bautista prepared the Declaration.",
+"source": "notes"
+},
+{
+"q": "Which statement about historical importance is NOT true?",
+"options": [
+"It may reveal beliefs or conflicts",
+"A source matters only because it is old or famous",
+"It can influence public memory",
+"Importance depends on questions it helps answer"
+],
+"answer": 1,
+"explanation": "Age and fame alone do not establish historical importance.",
+"source": "notes"
+},
+{
+"q": "Plasencia's details about datus and barangays best support which inference?",
+"options": [
+"All communities had identical customs",
+"There was no hierarchy",
+"Spanish contact had not begun",
+"Tagalog communities had organized systems, with limits on generalization"
+],
+"answer": 3,
+"explanation": "The account supports organized Tagalog institutions but cannot represent all communities; Spanish contact had begun.",
+"source": "notes"
+}
+]

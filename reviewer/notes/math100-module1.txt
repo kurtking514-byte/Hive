@@ -1,0 +1,420 @@
+Module 1 Patterns and Sequences
+Number sequences, explicit formulas, figurate numbers, Pascal's triangle, and the golden ratio
+
+WHAT THIS MODULE COVERS
+Mathematics can be described as the study of patterns.
+This module is taught in a blended modality, which means part of it is learned online and part in class.
+There are five topics.
+Topic one is the number sequence, which has two main kinds: the arithmetic sequence and the geometric sequence.
+Topic two is the explicit formula, which lets you find any term of a sequence.
+Topic three is figurate numbers.
+Topic four is Pascal's triangle.
+Topic five is the golden ratio.
+Learning outcome 1: Analyze the pattern in a number sequence to decide whether it is an arithmetic sequence or a geometric sequence.
+Learning outcome 2: Find the explicit formula of a given number sequence.
+Learning outcome 3: Solve for the value of the nth term of a number sequence by using the explicit formula.
+In short, you will learn how to find a formula for a sequence so that you can jump straight to any nth term without listing every term before it.
+EASIER: A pattern is something that follows a rule. If you can find the rule, you can predict what comes next.
+
+KEY TERMS OF SEQUENCES
+★ Number sequence: an ordered list of numbers or objects. Example: 1, 1, 2, 3, 5, 8, ... is called the Fibonacci sequence.
+EASIER: Order matters, like people standing in a line. The list 2, 4, 6 is a different sequence from 6, 4, 2.
+★ Term: each number in a sequence. The first number is the 1st term, the second number is the 2nd term, and the nth number is the nth term.
+★ Notation: a1 means the 1st term, a2 means the 2nd term, and an means the nth term, where n is the position number of the term.
+EASIER: The small number next to the letter a is just a seat number. a3 means the number sitting in seat 3.
+★ Arithmetic sequence: a sequence where a constant number is added to the previous term to get the next term.
+Example: 2, 4, 6, 8, ... because 2 + 2 = 4, 4 + 2 = 6, and 6 + 2 = 8.
+★ Common difference (d): the constant number that is added each step. Find it by subtracting a term from the term right after it, so d = a2 - a1.
+★ Geometric sequence: a sequence where a constant number is multiplied to the previous term to get the next term.
+Example: 2, 4, 8, 16, ... because 2 x 2 = 4, 4 x 2 = 8, and 8 x 2 = 16.
+★ Common ratio (r): the constant number that is multiplied each step. Find it by dividing a term by the term right before it, so r = a2 / a1.
+EASIER: An arithmetic sequence is like climbing stairs where every step has the same height. You keep adding the same amount.
+EASIER: A geometric sequence is like a photocopier set to 200 percent. Each copy is the previous one multiplied by the same amount.
+EASIER: Memory trick: difference goes with subtracting and adding. Ratio goes with dividing and multiplying.
+Added example: 20, 17, 14, 11, ... is arithmetic with d = 17 - 20 = -3. Check: 14 - 17 = -3 and 11 - 14 = -3. A negative common difference means the terms go down.
+Added example: 81, 27, 9, 3, ... is geometric with r = 27/81 = 1/3. Check: 9/27 = 1/3 and 3/9 = 1/3. A ratio between 0 and 1 means the terms get smaller.
+
+SIMILAR TERMS THAT ARE EASY TO CONFUSE
+Arithmetic versus geometric: an arithmetic sequence adds the same number each time. A geometric sequence multiplies by the same number each time.
+Common difference versus common ratio: d comes from subtracting neighboring terms. r comes from dividing neighboring terms.
+Sequence versus term: a sequence is the whole list. A term is one number in the list.
+Listing terms versus explicit formula: listing shows terms one by one. An explicit formula gives any term directly from its position n.
+Added example: 2, 4, 6, 8 has d = 2 but no common ratio, because 4/2 = 2 and 6/4 = 3/2, which are not equal.
+Added example: 2, 4, 8, 16 has r = 2 but no common difference, because 4 - 2 = 2 and 8 - 4 = 4, which are not equal.
+
+HOW TO DECIDE IF A SEQUENCE IS ARITHMETIC OR GEOMETRIC
+⚙ Step 1: Subtract each term from the term after it.
+⚙ If you always get the same number, the sequence is arithmetic and that number is d.
+⚙ Step 2: Divide each term by the term before it.
+⚙ If you always get the same number, the sequence is geometric and that number is r.
+⚙ Step 3: If neither works, the pattern is something else, such as a quadratic sequence or the Fibonacci sequence (both appear later in this module).
+
+EXPLICIT FORMULAS
+★ Explicit formula: a formula that gives any term an directly from its term number n, without listing all the terms before it.
+EASIER: An explicit formula is like a vending machine. You press the button n and the machine gives you the term an.
+★ Explicit formula for an arithmetic sequence: an = a1 + d(n - 1)
+EASIER: Start at the first term a1 and take (n - 1) steps of size d. To reach the 1st term you take 0 steps. To reach the 4th term you take 3 steps. That is why the formula uses n - 1 and not n.
+★ Explicit formula for a geometric sequence: an = a1 * r^(n-1)
+EASIER: Start at the first term a1 and multiply by r a total of (n - 1) times. The exponent n - 1 goes on r only, not on a1.
+If the sequence is arithmetic, use an = a1 + d(n - 1). If the sequence is geometric, use an = a1 * r^(n-1).
+The notes use GF to mean general formula, which is another name for the explicit formula.
+
+EXAMPLE: ARITHMETIC SEQUENCE 2, 4, 6, 8, 10 (FIND THE EXPLICIT FORMULA)
+⚙ The terms are a1 = 2, a2 = 4 (which is 2 + 2), a3 = 6 (which is 4 + 2), a4 = 8 (which is 6 + 2), a5 = 10 (which is 8 + 2).
+⚙ Step 1: Find the first term and the common difference. a1 = 2 and d = 4 - 2 = 2.
+⚙ Confirm d is constant: 6 - 4 = 2, 8 - 6 = 2, 10 - 8 = 2. The differences match, so the sequence is arithmetic.
+⚙ Step 2: Substitute into an = a1 + d(n - 1).
+⚙ an = 2 + 2(n - 1)
+⚙ Distribute: 2(n - 1) = 2n - 2, so an = 2 + 2n - 2
+⚙ Combine like terms: 2 - 2 = 0, so an = 2n
+⚙ Final answer: an = 2n
+⚙ Check: the 3rd term is 6. Substitute n = 3: a3 = 2(3) = 6. This matches.
+⚙ Another check: n = 1 gives 2 and n = 5 gives 10. Both match.
+
+EXAMPLE: FIND THE 155TH TERM WHEN an = 2n
+⚙ Substitute n = 155 into an = 2n.
+⚙ a155 = 2(155)
+⚙ a155 = 310
+⚙ Final answer: 310 is the 155th term of the sequence.
+⚙ Second way: a155 = a1 + d(n - 1) = 2 + 2(154) = 2 + 308 = 310. This matches.
+
+EXAMPLE: ARITHMETIC SEQUENCE 15, 32, 49, 66, 83 (FIND THE EXPLICIT FORMULA)
+⚙ The terms are a1 = 15, a2 = 32 (which is 15 + 17), a3 = 49 (which is 32 + 17), a4 = 66 (which is 49 + 17), a5 = 83 (which is 66 + 17).
+⚙ Step 1: a1 = 15 and d = 32 - 15 = 17.
+⚙ Confirm d is constant: 49 - 32 = 17, 66 - 49 = 17, 83 - 66 = 17.
+⚙ Step 2: Substitute into an = a1 + d(n - 1).
+⚙ an = 15 + 17(n - 1)
+⚙ Distribute: 17(n - 1) = 17n - 17, so an = 15 + 17n - 17
+⚙ Combine like terms: 15 - 17 = -2, so an = 17n - 2
+⚙ Final answer: an = 17n - 2
+⚙ Check: the 4th term is 66. Substitute n = 4: a4 = 17(4) - 2 = 68 - 2 = 66. This matches.
+⚙ Another check: n = 1 gives 17 - 2 = 15 and n = 5 gives 85 - 2 = 83. Both match.
+
+EXAMPLE: FIND THE 10TH TERM WHEN an = 17n - 2
+⚙ Substitute n = 10 into an = 17n - 2.
+⚙ a10 = 17(10) - 2
+⚙ a10 = 170 - 2
+⚙ a10 = 168
+⚙ Final answer: 168 is the 10th term of the sequence 15, 32, 49, 66, 83, ...
+⚙ Second way: a10 = 15 + 17(9) = 15 + 153 = 168. This matches.
+
+EXAMPLE: GEOMETRIC SEQUENCE 2, 4, 8, 16, 32 (FIND THE EXPLICIT FORMULA)
+⚙ The terms are a1 = 2, a2 = 4 (which is 2 x 2), a3 = 8 (which is 4 x 2), a4 = 16 (which is 8 x 2), a5 = 32 (which is 16 x 2).
+⚙ Step 1: Find the first term and the common ratio. a1 = 2 and r = 4/2 = 2.
+⚙ Confirm r is constant: 8/4 = 2, 16/8 = 2, 32/16 = 2. The ratios match, so the sequence is geometric.
+⚙ Step 2: Substitute into an = a1 * r^(n-1).
+⚙ Final answer: an = 2 * 2^(n-1)
+⚙ Check: the 3rd term is 8. Substitute n = 3: a3 = 2 * 2^(3-1)
+⚙ Simplify the exponent: 3 - 1 = 2, so a3 = 2 * 2^2
+⚙ 2^2 = 4, so a3 = 2 * 4
+⚙ a3 = 8. This matches.
+Added example: because 2 * 2^(n-1) = 2^1 * 2^(n-1) = 2^n, the same formula can be written as an = 2^n. Check: n = 5 gives 2^5 = 32, which is a5.
+
+EXAMPLE: FIND THE 12TH TERM WHEN an = 2 * 2^(n-1)
+⚙ Substitute n = 12 into an = 2 * 2^(n-1).
+⚙ a12 = 2 * 2^(12-1)
+⚙ Simplify the exponent: 12 - 1 = 11, so a12 = 2 * 2^11
+⚙ Powers of 2: 2^1 = 2, 2^2 = 4, 2^3 = 8, 2^4 = 16, 2^5 = 32, 2^6 = 64, 2^7 = 128, 2^8 = 256, 2^9 = 512, 2^10 = 1024, 2^11 = 2048.
+⚙ a12 = 2 * 2048
+⚙ a12 = 4096
+⚙ Final answer: 4096 is the 12th term of the sequence.
+⚙ Second way: an = 2^n, so a12 = 2^12 = 4096. This matches.
+
+EXAMPLE: GEOMETRIC SEQUENCE 3, 18, 108, 648, 3888 (FIND THE EXPLICIT FORMULA)
+⚙ The terms are a1 = 3, a2 = 18 (which is 3 x 6), a3 = 108 (which is 18 x 6), a4 = 648 (which is 108 x 6), a5 = 3888 (which is 648 x 6).
+⚙ Step 1: a1 = 3 and r = 18/3 = 6.
+⚙ Confirm r is constant: 108/18 = 6, 648/108 = 6, 3888/648 = 6.
+⚙ Step 2: Substitute into an = a1 * r^(n-1).
+⚙ Final answer: an = 3 * 6^(n-1)
+⚙ Check: the 4th term is 648. Substitute n = 4: a4 = 3 * 6^(4-1)
+⚙ Simplify the exponent: 4 - 1 = 3, so a4 = 3 * 6^3
+⚙ 6^3 = 6 * 6 * 6 = 216, so a4 = 3 * 216
+⚙ a4 = 648. This matches the 4th term (the answer to the check is 648).
+
+EXAMPLE: FIND THE 8TH TERM WHEN an = 3 * 6^(n-1)
+⚙ Substitute n = 8 into an = 3 * 6^(n-1).
+⚙ a8 = 3 * 6^(8-1)
+⚙ Simplify the exponent: 8 - 1 = 7, so a8 = 3 * 6^7
+⚙ Powers of 6: 6^1 = 6, 6^2 = 36, 6^3 = 216, 6^4 = 1296, 6^5 = 7776, 6^6 = 46656, 6^7 = 279936.
+⚙ a8 = 3 * 279936
+⚙ a8 = 839808
+⚙ Final answer: 839,808 is the 8th term of the sequence.
+⚙ Second way: start from a5 = 3888 and multiply by 6 three times. 3888 * 6 = 23328, then 23328 * 6 = 139968, then 139968 * 6 = 839808. This matches.
+
+TRY THIS: LOOK FOR PATTERNS
+Find the next three terms and a general formula (GF) for each sequence.
+⚙ Item a: 1, 3, 5, ... Each term adds 2, so d = 2. The next three terms are 7, 9, 11.
+⚙ Formula: an = 1 + 2(n - 1) = 1 + 2n - 2 = 2n - 1. Check n = 3: 2(3) - 1 = 5. This matches.
+⚙ Item b: the terms are 1^2, 2^2, 3^2, ... which are 1, 4, 9, ... (these are the square numbers). The next three terms are 4^2 = 16, 5^2 = 25, 6^2 = 36.
+⚙ Formula: an = n^2. Check n = 6: 6^2 = 36. This matches.
+⚙ Item c: 1, 1, 2, 3, 5, 8, 13, 21, ... Each term is the sum of the two terms before it (this is the Fibonacci sequence). The next three terms are 13 + 21 = 34, then 21 + 34 = 55, then 34 + 55 = 89.
+⚙ Item d: 1, 4, 7, 10, 13, ... Each term adds 3, so d = 3. The next three terms are 16, 19, 22.
+⚙ Formula: an = 1 + 3(n - 1) = 1 + 3n - 3 = 3n - 2. Check n = 5: 3(5) - 2 = 13. This matches.
+⚙ Item e: 10, 30, 90, ... Each term is multiplied by 3, so r = 30/10 = 3. The next three terms are 90 * 3 = 270, 270 * 3 = 810, 810 * 3 = 2430.
+⚙ Formula: an = 10 * 3^(n-1). Check n = 6: 10 * 3^5 = 10 * 243 = 2430. This matches.
+⚙ Item f: 81, -27, 9, -3, ... r = -27/81 = -1/3. Check: 9/(-27) = -1/3 and -3/9 = -1/3. The next three terms are -3 * (-1/3) = 1, then 1 * (-1/3) = -1/3, then (-1/3) * (-1/3) = 1/9.
+⚙ Formula: an = 81 * (-1/3)^(n-1). Check n = 2: 81 * (-1/3) = -27. Check n = 5: 81 * (1/81) = 1. Both match.
+EASIER: When the ratio is negative, the signs of the terms alternate: positive, negative, positive, negative.
+
+QUADRATIC SEQUENCES
+★ Quadratic sequence: a sequence whose first differences are not constant, but whose second differences (the differences of the differences) are constant.
+★ Form of a quadratic formula: an = a*n^2 + b*n + c, where a is not 0.
+★ Rule: the number a in front of n^2 equals half of the constant second difference. So a = (second difference)/2.
+EASIER: Think of a car that keeps speeding up by the same amount. Its distance covered is not steady, and its speed is not steady either, but the change in speed is steady. That steady change is the second difference.
+Linear versus quadratic: in an arithmetic (linear) sequence the first differences are constant. In a quadratic sequence the second differences are constant.
+⚙ Step 1: Write the terms and subtract neighbors to get the first differences.
+⚙ Step 2: Subtract neighbors again to get the second differences. If they are all equal, the sequence is quadratic.
+⚙ Step 3: Compute a = (second difference)/2.
+⚙ Step 4: Subtract a*n^2 from each term (use n = 1, 2, 3, ...).
+⚙ Step 5: Look at what is left over. If it is a constant c, the formula is an = a*n^2 + c. If it is a straight-line pattern p*n + q, the formula is an = a*n^2 + p*n + q.
+⚙ Step 6: Check the formula with several values of n.
+The class shortcut f(n) = a*n^2 + (a number) works when the leftover in Step 5 is constant, as in examples a, b, and c. Example d needs an n term as well.
+To find the next terms, keep the second difference going: add the constant to the last first difference, then add that to the last term.
+
+EXAMPLE: QUADRATIC SEQUENCE 4, 13, 28, ... (FIND THE NEXT THREE TERMS AND THE FORMULA)
+⚙ Terms: 4, 13, 28.
+⚙ First differences: 13 - 4 = 9 and 28 - 13 = 15.
+⚙ Second difference: 15 - 9 = 6. The second difference is constant at 6, so the sequence is quadratic.
+⚙ Extend the first differences by adding 6 each time: 21, 27, 33.
+⚙ Next terms: 28 + 21 = 49, then 49 + 27 = 76, then 76 + 33 = 109.
+⚙ The sequence is 4, 13, 28, 49, 76, 109.
+⚙ a = 6/2 = 3, so the formula starts with 3n^2.
+⚙ Subtract 3n^2: n = 1 gives 4 - 3(1) = 1. n = 2 gives 13 - 3(4) = 13 - 12 = 1. n = 3 gives 28 - 3(9) = 28 - 27 = 1.
+⚙ The leftover is always 1, so the formula is an = 3n^2 + 1.
+⚙ Check: n = 4 gives 3(16) + 1 = 49. n = 5 gives 3(25) + 1 = 76. n = 6 gives 3(36) + 1 = 109. All match.
+
+EXAMPLE: QUADRATIC SEQUENCE 3, 9, 19, 33, ... (FIND THE NEXT THREE TERMS AND THE FORMULA)
+⚙ First differences: 9 - 3 = 6, 19 - 9 = 10, 33 - 19 = 14.
+⚙ Second differences: 10 - 6 = 4 and 14 - 10 = 4. Constant, so the sequence is quadratic.
+⚙ Extend the first differences by adding 4: 18, 22, 26.
+⚙ Next terms: 33 + 18 = 51, then 51 + 22 = 73, then 73 + 26 = 99.
+⚙ The sequence is 3, 9, 19, 33, 51, 73, 99.
+⚙ a = 4/2 = 2.
+⚙ Subtract 2n^2: n = 1 gives 3 - 2 = 1. n = 2 gives 9 - 8 = 1. n = 3 gives 19 - 18 = 1. n = 4 gives 33 - 32 = 1.
+⚙ The leftover is always 1, so the formula is an = 2n^2 + 1.
+⚙ Check: n = 5 gives 2(25) + 1 = 51. n = 6 gives 2(36) + 1 = 73. n = 7 gives 2(49) + 1 = 99. All match.
+
+EXAMPLE: QUADRATIC SEQUENCE 1, 19, 49, 91, 145, ... (FIND THE NEXT THREE TERMS AND THE FORMULA)
+⚙ First differences: 18, 30, 42, 54.
+⚙ Second differences: 12, 12, 12. Constant, so the sequence is quadratic.
+⚙ Extend the first differences by adding 12: 66, 78, 90.
+⚙ Next terms: 145 + 66 = 211, then 211 + 78 = 289, then 289 + 90 = 379.
+⚙ a = 12/2 = 6.
+⚙ Subtract 6n^2: n = 1 gives 1 - 6 = -5. n = 2 gives 19 - 24 = -5. n = 3 gives 49 - 54 = -5. n = 4 gives 91 - 96 = -5. n = 5 gives 145 - 150 = -5.
+⚙ The leftover is always -5, so the formula is an = 6n^2 - 5.
+⚙ Check: n = 6 gives 6(36) - 5 = 211. n = 7 gives 6(49) - 5 = 289. n = 8 gives 6(64) - 5 = 379. All match.
+
+EXAMPLE: QUADRATIC SEQUENCE 1, 3, 6, 10, 15, 21, ... (FIND THE NEXT THREE TERMS AND THE FORMULA)
+⚙ First differences: 2, 3, 4, 5, 6.
+⚙ Second differences: 1, 1, 1, 1. Constant, so the sequence is quadratic.
+⚙ Extend the first differences: 7, 8, 9.
+⚙ Next terms: 21 + 7 = 28, then 28 + 8 = 36, then 36 + 9 = 45.
+⚙ The sequence is 1, 3, 6, 10, 15, 21, 28, 36, 45.
+⚙ a = 1/2.
+⚙ Subtract (1/2)n^2: n = 1 gives 1 - 1/2 = 1/2. n = 2 gives 3 - 2 = 1. n = 3 gives 6 - 9/2 = 3/2. n = 4 gives 10 - 8 = 2. n = 5 gives 15 - 25/2 = 5/2.
+⚙ The leftover is 1/2, 1, 3/2, 2, 5/2, which equals (1/2)n. This leftover is not constant, so the formula needs an n term.
+⚙ Formula: an = (1/2)n^2 + (1/2)n = n(n + 1)/2.
+⚙ Check: n = 7 gives 7(8)/2 = 28. n = 8 gives 8(9)/2 = 36. n = 9 gives 9(10)/2 = 45. All match.
+These are the triangular numbers, which appear again in the figurate numbers section.
+
+ASSIGNMENT 1: DERIVE THE EXPLICIT FORMULA (ITEMS 3, 4, AND 5 SOLVED)
+The assignment gives items numbered 3, 4, and 5. Item 3 has terms -2, 3, 12, 25, 42. Item 4 has terms 8, 11, 16, 23, 32. Item 5 has terms 0, 4, 10, 18, 28.
+⚙ Item 3: First differences are 5, 9, 13, 17. Second differences are 4, 4, 4. So a = 4/2 = 2.
+⚙ Subtract 2n^2: n = 1 gives -2 - 2 = -4. n = 2 gives 3 - 8 = -5. n = 3 gives 12 - 18 = -6. n = 4 gives 25 - 32 = -7. n = 5 gives 42 - 50 = -8.
+⚙ The leftover -4, -5, -6, -7, -8 drops by 1 each time. It equals -n - 3. Check: n = 1 gives -4 and n = 2 gives -5.
+⚙ Formula: an = 2n^2 - n - 3.
+⚙ Check: n = 1 gives 2 - 1 - 3 = -2. n = 2 gives 8 - 2 - 3 = 3. n = 3 gives 18 - 3 - 3 = 12. n = 4 gives 32 - 4 - 3 = 25. n = 5 gives 50 - 5 - 3 = 42. All match.
+⚙ Next three terms: the next first differences are 21, 25, 29. So 42 + 21 = 63, then 63 + 25 = 88, then 88 + 29 = 117.
+⚙ Check with the formula: n = 6 gives 72 - 6 - 3 = 63. n = 7 gives 98 - 7 - 3 = 88. n = 8 gives 128 - 8 - 3 = 117. All match.
+⚙ Item 4: First differences are 3, 5, 7, 9. Second differences are 2, 2, 2. So a = 2/2 = 1.
+⚙ Subtract n^2: n = 1 gives 8 - 1 = 7. n = 2 gives 11 - 4 = 7. n = 3 gives 16 - 9 = 7. n = 4 gives 23 - 16 = 7. n = 5 gives 32 - 25 = 7.
+⚙ The leftover is always 7. Formula: an = n^2 + 7.
+⚙ Check: n = 1 gives 8, n = 2 gives 11, n = 3 gives 16, n = 4 gives 23, n = 5 gives 32. All match.
+⚙ Next three terms: the next first differences are 11, 13, 15. So 32 + 11 = 43, then 43 + 13 = 56, then 56 + 15 = 71.
+⚙ Check with the formula: n = 6 gives 36 + 7 = 43. n = 7 gives 49 + 7 = 56. n = 8 gives 64 + 7 = 71. All match.
+⚙ Item 5: First differences are 4, 6, 8, 10. Second differences are 2, 2, 2. So a = 1.
+⚙ Subtract n^2: n = 1 gives 0 - 1 = -1. n = 2 gives 4 - 4 = 0. n = 3 gives 10 - 9 = 1. n = 4 gives 18 - 16 = 2. n = 5 gives 28 - 25 = 3.
+⚙ The leftover -1, 0, 1, 2, 3 equals n - 2. Formula: an = n^2 + n - 2.
+⚙ Check: n = 1 gives 1 + 1 - 2 = 0. n = 2 gives 4 + 2 - 2 = 4. n = 3 gives 9 + 3 - 2 = 10. n = 4 gives 16 + 4 - 2 = 18. n = 5 gives 25 + 5 - 2 = 28. All match.
+⚙ Next three terms: the next first differences are 12, 14, 16. So 28 + 12 = 40, then 40 + 14 = 54, then 54 + 16 = 70.
+⚙ Check with the formula: n = 6 gives 36 + 6 - 2 = 40. n = 7 gives 49 + 7 - 2 = 54. n = 8 gives 64 + 8 - 2 = 70. All match.
+
+THE METHOD OF SUCCESSIVE DIFFERENCES
+★ Method of successive differences: a strategy for finding a pattern by taking differences of the sequence again and again until a row is constant (or shows a pattern), and then working backward by adding to predict the next term.
+EASIER: It is like peeling an onion. Each round of subtracting peels one layer off. When the layer is the same number over and over, you stop, then you rebuild the layers by adding.
+⚙ Step 1: Write the sequence in a row.
+⚙ Step 2: Under it, write the differences of neighboring terms. Repeat on each new row.
+⚙ Step 3: Stop when a row is constant.
+⚙ Step 4: Extend the constant row by one more copy of that number.
+⚙ Step 5: Work backward up the rows by adding, to get the next term of each row. The top row gives the next term of the sequence.
+
+EXAMPLE: SUCCESSIVE DIFFERENCES FOR 2, 57, 220, 575, 1230, 2317
+⚙ Row 1: 2, 57, 220, 575, 1230, 2317
+⚙ Row 2 (differences): 57 - 2 = 55, 220 - 57 = 163, 575 - 220 = 355, 1230 - 575 = 655, 2317 - 1230 = 1087. So row 2 is 55, 163, 355, 655, 1087.
+⚙ Row 3: 163 - 55 = 108, 355 - 163 = 192, 655 - 355 = 300, 1087 - 655 = 432. So row 3 is 108, 192, 300, 432.
+⚙ Row 4: 192 - 108 = 84, 300 - 192 = 108, 432 - 300 = 132. So row 4 is 84, 108, 132.
+⚙ Row 5: 108 - 84 = 24 and 132 - 108 = 24. Row 5 is 24, 24, which is constant, so we stop.
+⚙ Extend row 5 with one more 24.
+⚙ Row 4 next: 132 + 24 = 156.
+⚙ Row 3 next: 432 + 156 = 588.
+⚙ Row 2 next: 1087 + 588 = 1675.
+⚙ Row 1 next: 2317 + 1675 = 3992.
+⚙ Final answer: the next number in the sequence is 3992.
+
+EXAMPLE: WHEN SUCCESSIVE DIFFERENCES DO NOT HELP (FIBONACCI)
+The method is not always helpful. The Fibonacci sequence shows why.
+⚙ Row 1: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
+⚙ Row 2: 1, 1, 2, 3, 5, 8, 13, 21, 34, ... (this is the sequence again, just shifted)
+⚙ Row 3: 0, 1, 1, 2, 3, 5, 8, 13, ...
+⚙ Row 4: 1, 0, 1, 1, 2, 3, 5, 8, ...
+The rows never become constant. The sequence reproduces itself after applying successive differences, so the method gives no simplification.
+EASIER: For Fibonacci, every row looks like the original list. The onion never gets smaller.
+
+FIGURATE NUMBERS
+★ Figurate numbers: numbers that count the dots needed to build a regular shape such as a triangle, a square, or a pentagon. They are a classical source of number sequences.
+EASIER: Picture bowling pins. 1, 3, 6, 10 pins make a bigger and bigger triangle. The number of pins is a triangular number.
+Triangular numbers: 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ...
+Square numbers: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, ...
+Pentagonal numbers: 1, 5, 12, 22, 35, 51, 70, 92, 117, 145, ...
+Hexagonal numbers: 1, 6, 15, 28, 45, 66, 91, 120, 153, 190, ...
+Heptagonal numbers: 1, 7, 18, 34, 55, 81, 112, 148, 189, 235, ...
+Octagonal numbers: 1, 8, 21, 40, 65, 96, 133, 176, 225, 280, ...
+Nonagonal numbers: 1, 9, 24, 46, 75, 111, 154, 204, 261, 325, ...
+The pictures show triangles of 1, 3, 6, 10, 15 dots, squares of 1, 4, 9, 16, 25 dots, and pentagons of 1, 5, 12, 22 dots, each new shape wrapped around the one before it.
+
+FORMULAS FOR FIGURATE NUMBERS
+★ Triangular numbers: T(n) = n(n + 1)/2
+★ Square numbers: S(n) = n^2
+★ Pentagonal numbers: P(n) = n(3n - 1)/2
+★ Hexagonal numbers: H(n) = n(4n - 2)/2
+★ Heptagonal numbers: Hp(n) = n(5n - 3)/2
+★ Octagonal numbers: O(n) = n(6n - 4)/2
+★ Nonagonal numbers: No(n) = n(7n - 5)/2
+★ General N-agonal number: n((N - 2)n - (N - 4))/2, where N is the number of sides of the shape and n is the term number.
+EASIER: The big formula is a master recipe. Put in the number of sides N and the term number n, and it gives the count of dots.
+⚙ Check N = 3: (N - 2) = 1 and (N - 4) = -1, so the formula becomes n(n + 1)/2. This is the triangular formula.
+⚙ Check N = 4: (N - 2) = 2 and (N - 4) = 0, so the formula becomes n(2n)/2 = n^2. This is the square formula.
+⚙ Check N = 5: (N - 2) = 3 and (N - 4) = 1, so the formula becomes n(3n - 1)/2. This is the pentagonal formula.
+⚙ Check N = 9: (N - 2) = 7 and (N - 4) = 5, so the formula becomes n(7n - 5)/2. This is the nonagonal formula.
+⚙ Check N = 2: (N - 2) = 0 and (N - 4) = -2, so the formula becomes n(0 + 2)/2 = n. The formula even works for N = 2, which gives the biagonal numbers 1, 2, 3, 4, ...
+Similar terms: pentagonal means 5 sides, hexagonal 6, heptagonal 7, octagonal 8, nonagonal 9. Do not mix up the formulas for different shapes.
+
+EXAMPLE: NONAGONAL NUMBERS BY SUCCESSIVE DIFFERENCES
+⚙ Row 1: 1, 9, 24, 46, 75, 111, 154, 204, 261, 325, ...
+⚙ Row 2 (differences): 8, 15, 22, 29, 36, 43, 50, 57, 64, ...
+⚙ Row 3: 7, 7, 7, 7, 7, 7, 7, 7, ... The second differences are constant at 7.
+⚙ Next in row 3: 7. Next in row 2: 64 + 7 = 71. Next in row 1: 325 + 71 = 396.
+⚙ So the 11th nonagonal number is 396.
+⚙ Check with the formula: n = 11 gives 11(7 * 11 - 5)/2 = 11(72)/2 = 396. This matches.
+⚙ Use the formula for the 5th term: n = 5 gives 5(7 * 5 - 5)/2.
+⚙ 7 * 5 = 35 and 35 - 5 = 30, so this is 5(30)/2 = 150/2 = 75.
+⚙ Final answer: the 5th nonagonal number is 75.
+
+EXAMPLE: HOW MANY DOTS FORM THE 4TH PENTAGONAL NUMBER
+⚙ Use P(n) = n(3n - 1)/2 with n = 4.
+⚙ 3n = 3 * 4 = 12 and 12 - 1 = 11.
+⚙ P(4) = 4(11)/2 = 44/2 = 22.
+⚙ Final answer: 22 dots are required.
+⚙ Second way: differences of 1, 5, 12, 22 are 4, 7, 10, and 1 + 4 = 5, 5 + 7 = 12, 12 + 10 = 22. This matches.
+Added example: the 6th triangular number is 6(7)/2 = 21. The 10th square number is 10^2 = 100. The 7th hexagonal number is 7(4 * 7 - 2)/2 = 7(26)/2 = 91. The 6th octagonal number is 6(6 * 6 - 4)/2 = 6(32)/2 = 96. All match the lists above.
+Added example: the second difference of an N-agonal sequence is N - 2. Nonagonal (N = 9) has second difference 7. Pentagonal (N = 5) has differences 4, 7, 10, 13 and second difference 3. This shows every figurate sequence is a quadratic sequence.
+
+PASCAL'S TRIANGLE
+★ Pascal's triangle: one of the most interesting number patterns, named after Blaise Pascal, a famous French mathematician and philosopher.
+★ Rule for building it: start with 1 at the top, then place numbers below in a triangular pattern. Each number is the sum of the two numbers directly above it. The numbers on the two outside edges are all 1.
+EASIER: Each new number is made by adding its two upstairs neighbors. If one neighbor is missing because you are on the edge, treat it as nothing, so the edge number is just 1.
+Fill in the triangle row by row. The practice picture gives rows through 1, 3, 3, 1 and a few numbers further down, and asks you to complete the rest.
+⚙ Row 0: 1
+⚙ Row 1: 1, 1
+⚙ Row 2: 1, 2, 1 (1 + 1 = 2)
+⚙ Row 3: 1, 3, 3, 1 (1 + 2 = 3 and 2 + 1 = 3)
+⚙ Row 4: 1, 4, 6, 4, 1 (1 + 3 = 4, 3 + 3 = 6, 3 + 1 = 4)
+⚙ Row 5: 1, 5, 10, 10, 5, 1 (1 + 4 = 5, 4 + 6 = 10, 6 + 4 = 10, 4 + 1 = 5)
+⚙ Row 6: 1, 6, 15, 20, 15, 6, 1 (5 + 10 = 15, 10 + 10 = 20)
+⚙ Row 7: 1, 7, 21, 35, 35, 21, 7, 1 (6 + 15 = 21, 15 + 20 = 35)
+⚙ Row 8: 1, 8, 28, 56, 70, 56, 28, 8, 1 (7 + 21 = 28, 21 + 35 = 56, 35 + 35 = 70)
+⚙ Row 9: 1, 9, 36, 84, 126, 126, 84, 36, 9, 1 (8 + 28 = 36, 28 + 56 = 84, 56 + 70 = 126)
+⚙ Row 10: 1, 10, 45, 120, 210, 252, 210, 120, 45, 10, 1 (9 + 36 = 45, 36 + 84 = 120, 84 + 126 = 210, 126 + 126 = 252)
+★ Sierpinski property: if all the even numbers are colored white and all the odd numbers are colored black, a pattern similar to the Sierpinski gasket (a triangle made of smaller and smaller triangles) appears.
+The slides ask you to discover other interesting properties of Pascal's triangle yourself. Here are some, all added and checked.
+Added example: Symmetry. Each row reads the same forward and backward, such as 1, 4, 6, 4, 1.
+Added example: Row sums. Each row adds to a power of 2. Row 3: 1 + 3 + 3 + 1 = 8 = 2^3. Row 4: 1 + 4 + 6 + 4 + 1 = 16 = 2^4. Row 5: 1 + 5 + 10 + 10 + 5 + 1 = 32 = 2^5.
+Added example: Diagonals. The diagonal next to the edge is the counting numbers 1, 2, 3, 4, 5, ... The next diagonal is the triangular numbers 1, 3, 6, 10, 15, ...
+Added example: Powers of 11. Rows 2, 3, 4 read as 121 = 11^2, 1331 = 11^3, 14641 = 11^4. This works only for the early rows, before any entry reaches 10.
+Added example: Fibonacci in the triangle. Add numbers along the shallow diagonals: 1, then 1, then 1 + 1 = 2, then 1 + 2 = 3, then 1 + 3 + 1 = 5, then 1 + 4 + 3 = 8. These are Fibonacci numbers.
+
+FIBONACCI RABBITS
+The Fibonacci sequence comes from a story about rabbits. Start with one pair of rabbits.
+At the end of the first month, they mate, but there is still only 1 pair.
+At the end of the second month, the female produces a new pair, so now there are 2 pairs of rabbits in the field.
+At the end of the third month, the original female produces a second pair, making 3 pairs in all in the field.
+At the end of the fourth month, the original female has produced yet another new pair, and the female born two months ago produces her first pair too, making 5 pairs.
+The number of pairs each month is 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+★ Fibonacci rule: each term after the first two is the sum of the two terms right before it.
+⚙ 1 + 1 = 2, 1 + 2 = 3, 2 + 3 = 5, 3 + 5 = 8, 5 + 8 = 13, 8 + 13 = 21, 13 + 21 = 34.
+EASIER: Each month the new babies equal the number of pairs that were alive two months ago, because only those are old enough to have babies. That is why you add the last two numbers.
+
+THE GOLDEN RATIO
+★ Golden ratio (phi): a number that people have known about since the time of the ancient Greeks. Its value is approximately 1.6180339887.
+★ Phi is an irrational number, like pi and e. That means its decimal digits go on forever without repeating.
+The golden ratio is also called the golden mean, golden section, extreme and mean ratio, medial section, divine proportion, divine section, golden proportion, golden cut, and golden number.
+★ Fibonacci connection: if you divide each Fibonacci number by the number before it, the answers settle down to a particular value, which is the golden ratio, approximately 1.618034.
+⚙ 1/1 = 1
+⚙ 2/1 = 2
+⚙ 3/2 = 1.5
+⚙ 5/3 = 1.66667
+⚙ 8/5 = 1.6
+⚙ 13/8 = 1.625
+⚙ 21/13 = 1.615385
+⚙ 34/21 = 1.619048
+⚙ 55/34 = 1.617647
+⚙ 89/55 = 1.618182
+⚙ 144/89 = 1.617978
+⚙ 233/144 = 1.618056
+⚙ 377/233 = 1.618026
+⚙ 610/377 = 1.618037
+⚙ 987/610 = 1.618033
+The answers jump above and below 1.618 and the jumps get smaller, so the ratios close in on phi.
+EASIER: Think of a ball bouncing back and forth across a line, with each bounce smaller than the last. The bounces home in on the line, and the line is phi.
+Added example: phi can also be written exactly as (1 + sqrt(5))/2. Since sqrt(5) is about 2.236068, phi is about (1 + 2.236068)/2 = 3.236068/2 = 1.618034.
+The golden spiral picture uses squares whose sides are Fibonacci numbers: 5 x 5, 8 x 8, 13 x 13, and 21 x 21. A curve drawn through the squares makes a spiral. For example, 21/13 is about 1.615, which is close to phi.
+Real life patterns similar to the golden spiral appear in nature, such as in the nautilus shell and in the leaves of a cabbage. In real objects the match is usually approximate, not exact.
+There is a lot more to find. It is your task to discover more examples of the golden ratio and Pascal's triangle properties.
+
+COMMON MISTAKES
+Writing a1 + dn instead of a1 + d(n - 1). Always use n - 1, because the first term takes zero steps.
+Writing the exponent as n instead of n - 1 in a geometric formula. Check with n = 1: the answer must be a1.
+Putting the exponent on the whole product. The formula 2 * 2^(n-1) is not the same as (2 * 2)^(n-1).
+Mixing up d and r. Use subtraction for d and division for r.
+Using the arithmetic formula on a geometric sequence, or the other way around. Always test for a common difference and a common ratio first.
+Forgetting that a negative d or a negative r is allowed.
+Calling a quadratic sequence arithmetic. If the first differences are not constant, it is not arithmetic.
+Forgetting to divide the second difference by 2 when finding a in a*n^2.
+Mixing up figurate formulas, for example using the nonagonal formula n(7n - 5)/2 for octagonal numbers. The octagonal formula is n(6n - 4)/2.
+Thinking each Pascal number is the product or the difference of the numbers above it. It is the sum of the two numbers above it.
+Using successive differences on the Fibonacci sequence. It never reaches a constant row.
+
+EXAM TIPS
+Always find a1 and d (or a1 and r) first, then substitute, then simplify.
+Always check your formula by putting in a term number you already know, such as n = 1 or n = 3.
+For a quadratic sequence, find the second difference first and halve it to get a.
+When you build Pascal's triangle, check each row by adding it: row n should sum to 2^n.
+To double check a big term like a8 = 3 * 6^7, write out the powers one by one instead of guessing.
+
+SELF-TEST
+Q: Find the explicit formula of the sequence 7, 12, 17, 22, ... and the 10th term.
+★ d = 12 - 7 = 5. an = 7 + 5(n - 1) = 7 + 5n - 5 = 5n + 2. The 10th term is 5(10) + 2 = 52. Check: 7 + 5(9) = 52.
+Q: Find the 6th term of the geometric sequence 4, 12, 36, ...
+★ r = 12/4 = 3. a6 = 4 * 3^5 = 4 * 243 = 972. Check: 36 * 3 = 108, 108 * 3 = 324, 324 * 3 = 972.
+Q: Is 2, 6, 10, 14 arithmetic or geometric, and what is the common value?
+★ It is arithmetic with d = 4, because 6 - 2 = 4, 10 - 6 = 4, 14 - 10 = 4. The ratios 6/2 = 3 and 10/6 = 5/3 are not equal.
+Q: Find the explicit formula of 2, 7, 14, 23, ...
+★ First differences are 5, 7, 9 and the second difference is 2, so a = 1. Subtract n^2 to get 1, 3, 5, 7, which is 2n - 1. So an = n^2 + 2n - 1. Check: n = 4 gives 16 + 8 - 1 = 23.
+Q: Find the 5th pentagonal number.
+★ P(5) = 5(3 * 5 - 1)/2 = 5(14)/2 = 35.
+Q: What is the row of Pascal's triangle after 1, 5, 10, 10, 5, 1?
+★ 1, 6, 15, 20, 15, 6, 1.
+Q: What are the next two Fibonacci numbers after 21, 34?
+★ 21 + 34 = 55 and 34 + 55 = 89.
+Q: What number do ratios of consecutive Fibonacci numbers approach?
+★ The golden ratio phi, approximately 1.618034.

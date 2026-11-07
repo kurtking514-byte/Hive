@@ -1,0 +1,414 @@
+Module 2 Set Theory
+Sets, set operations, and Venn diagrams
+
+THE MATHEMATICIANS BEHIND SET THEORY
+Four mathematicians influenced the development of set theory and logic: Georg Cantor, John Venn, George Boole, and Augustus De Morgan.
+Georg Cantor (1845-1918) is famous for his work on the concept of infinity.
+Cantor proved that there are different levels of infinity, which means some infinite collections are bigger than others.
+Cantor showed that there are infinitely many real numbers between 1 and 2.
+Cantor showed that there are more real numbers than there are integers, even though both collections never end.
+EASIER: Infinity is not one single number. The integers 1, 2, 3, ... go on forever, but the real numbers (every point on a number line) are a bigger kind of infinity.
+John Venn (1834-1923) studied and taught logic and probability theory.
+Venn articulated (explained clearly) Boole's algebra of logic.
+Venn devised a simple way to draw set operations as pictures. These pictures are called Venn diagrams.
+George Boole (1815-1864) was a self-taught mathematician with an interest in logic.
+Boole developed an algebra of logic, which is called Boolean algebra.
+Boole's algebra features the operators and, or, and not.
+Two related operators are often listed with them: nor and exclusive or. They are different operators.
+Nor means neither one nor the other, that is, not (A or B).
+Exclusive or means A or B but not both.
+Augustus De Morgan (1806-1871) developed two laws of negation. These are De Morgan's laws, explained later in these notes.
+De Morgan furthered Boole's work of combining logic and mathematics.
+De Morgan formally stated the laws of set theory.
+EASIER: Memory trick: Cantor = infinity, Venn = pictures of sets, Boole = and/or/not algebra, De Morgan = the two negation laws.
+
+BASIC DEFINITIONS
+★ A set is a distinct collection of elements. Distinct means no element is counted twice.
+★ An element is an object contained in a set. We say "x is an element of A" when x belongs to A, and "x is not an element of A" when it does not.
+EASIER: Think of a set as a labeled box and the elements as the items inside it. A box with a label is the set, and each item in it is an element.
+Sets are named with capital letters such as A, B, and C.
+Sets are written with curly brackets, for example A = {1, 3, 2, 5}.
+On the slides the element symbol looks like a small curly Greek epsilon, and the not-an-element symbol is the same symbol with a slash through it. These notes write the words instead.
+
+EXAMPLE: ELEMENTS AND NOT-ELEMENTS
+⚙ Let A = {1, 2, 3, 4}.
+⚙ 1 is an element of A because 1 is in the list.
+⚙ 2 is an element of A because 2 is in the list.
+⚙ 6 is not an element of A because 6 is not in the list.
+⚙ z is not an element of A because z is not in the list.
+⚙ Let B = {x | x is a positive even number less than or equal to 10}. Listing the numbers gives B = {2, 4, 6, 8, 10}.
+⚙ 2 is an element of B and 4 is an element of B.
+⚙ 9 is not an element of B because 9 is odd.
+⚙ z is not an element of B because z is not a number.
+⚙ Summary example: for A = {1, 3, 2, 5}, 3 is an element of A and 7 is not an element of A.
+
+WAYS OF DESCRIBING A SET
+★ The roster (tabular) method describes a set by listing its elements, separated by commas, inside braces.
+★ The rule form (set-builder form) describes a set by a rule. {x | x is ...} is read "the set of all x such that x is ...".
+EASIER: Roster is like writing the actual guest list. Rule form is like writing the invitation condition, for example "everyone who is a multiple of 3".
+EASIER: The bar | means "such that".
+In these notes the natural numbers start at 1. The word between does not include the two end numbers.
+
+EXAMPLE: ROSTER FORM AND RULE FORM
+⚙ Roster {1, 2, 3} matches Rule {x | x is a natural number less than 4}. Natural numbers less than 4 are 1, 2, 3.
+⚙ Roster {2, 4, 6} matches Rule {x | x is an even integer between 0 and 8}. Even integers between 0 and 8 are 2, 4, 6 (0 and 8 are not included).
+⚙ Roster {0, 3, 6, 9} matches Rule {k | k is a multiple of 3 between -1 and 12}.
+⚙ Check: multiples of 3 are ..., -3, 0, 3, 6, 9, 12, ... Between -1 and 12 means bigger than -1 and smaller than 12, so we keep 0, 3, 6, 9 and leave out 12.
+⚙ Set A = {2, 4, 6, 8, 10} is the same set as A = {x | x is a positive even integer < 12}.
+⚙ Check: positive even integers less than 12 are 2, 4, 6, 8, 10. They match the roster.
+⚙ Added example: write {x | x is a positive odd integer less than 10} in roster form.
+⚙ Step 1: positive odd integers are 1, 3, 5, 7, 9, 11, ...
+⚙ Step 2: keep only those less than 10, which are 1, 3, 5, 7, 9.
+⚙ Answer: {1, 3, 5, 7, 9}.
+
+UNIVERSAL SET
+★ The universal set is the set of all things pertinent (relevant) to a given discussion. It is designated by the symbol U.
+EASIER: The universal set is the whole world of the problem. Every other set in the problem lives inside it. In a Venn diagram it is the big rectangle.
+Playing cards example: the universal set is a deck of ordinary playing cards, and each card is an element of the universal set.
+Some subsets of the deck are face cards, numbered cards, suits, and poker hands.
+Students example: U = {all students at UC}.
+Some subsets of U are A = {All BSCrim students}, B = {All COA students}, and C = {All IT students}.
+
+SUBSETS
+★ Subset: Set A is a subset of Set B if every element of A is also contained in B.
+★ Proper subset: Set A is a proper subset of Set B if A is a subset of B and B has more elements than A, so A and B are not equal.
+EASIER: All BSCrim students form a subset of all students at UC. Every BSCrim student is a UC student, but not every UC student is in BSCrim, so it is a proper subset.
+Notation: the sideways-U symbol with a line under it means "is a subset of". The sideways-U symbol without the line means "is a proper subset of". Either symbol with a slash through it means "is not a subset of".
+When A is a proper subset of B we can also say B contains A, and B is a superset of A.
+⚙ Rule: to test whether A is a subset of B, check each element of A one at a time to see if it is in B.
+⚙ Rule: if every element of A is in B, A is a subset of B. If even one element of A is missing from B, A is not a subset of B.
+⚙ Rule: if A is a subset of B and B has more elements than A, then A is a proper subset of B.
+⚙ Rule: every set is a subset of itself, but no set is a proper subset of itself.
+
+EXAMPLE: TESTING SUBSETS
+⚙ Let A = {1, 2, 3} and B = {1, 2, 3, 4, 5}.
+⚙ Step 1: 1 is in B, 2 is in B, 3 is in B, so every element of A is in B. A is a subset of B.
+⚙ Step 2: A has 3 elements and B has 5 elements, so B has more. A is a proper subset of B.
+⚙ Added example: let C = {1, 2, 6} and D = {1, 2, 3, 4, 5}.
+⚙ Step 1: 1 is in D and 2 is in D, but 6 is not in D.
+⚙ Answer: C is not a subset of D, because one element (6) is missing from D.
+
+SET EQUALITY
+★ Two sets are equal if and only if they contain precisely the same elements.
+EASIER: Sets are like grocery lists where only the items matter. The order you write them in does not matter, and writing an item twice does not add another item.
+The order in which the elements are listed is unimportant.
+Elements may be repeated in a set definition without increasing the size of the set.
+Normally we do not repeat elements, and we write the elements in ascending order, for example {1, 2, 3, 4}.
+⚙ Rule: A = B exactly when A is a subset of B and B is a subset of A.
+
+EXAMPLE: EQUAL SETS
+⚙ Let A = {1, 2, 3, 4} and B = {1, 4, 2, 3}.
+⚙ Step 1: every element of A (1, 2, 3, 4) is in B, so A is a subset of B.
+⚙ Step 2: every element of B (1, 4, 2, 3) is in A, so B is a subset of A.
+⚙ Answer: A = B and B = A.
+⚙ Let A = {1, 2, 2, 3, 4, 1, 2} and B = {1, 2, 3, 4}.
+⚙ Step 1: remove repeats from A. The distinct elements are 1, 2, 3, 4, so A = {1, 2, 3, 4}.
+⚙ Step 2: A and B contain the same elements, so A = B.
+⚙ Another example: {1, 3, 2, 3, 5, 2} = {1, 3, 2, 5}, and in ascending order this set is {1, 2, 3, 5}.
+⚙ Also {1, 2, 3, 4} = {2, 3, 1, 4} because order does not matter.
+
+CARDINALITY
+★ Cardinality is the number of elements in a set. The symbol is |A|, also written n(A).
+A finite set has a countable number of elements, so you can finish counting it.
+An infinite set has at least as many elements as the set of natural numbers, so counting never ends.
+EASIER: Cardinality is just the headcount of the set. |A| = 4 means "Set A has 4 elements".
+⚙ Rule: to find |A|, first remove any repeated elements, then count what is left.
+⚙ Rule: the cardinality of an infinite set is written |A| = infinity.
+
+EXAMPLE: CARDINALITY OF FINITE SETS
+⚙ A = {x | x is a lower case letter of the English alphabet}. There are 26 letters, so |A| = 26.
+⚙ B = {2, 3, 4, 5, 6, 7}. Counting 2, 3, 4, 5, 6, 7 gives 6 elements, so |B| = 6.
+⚙ C = {x | x is a positive even number less than 10} = {2, 4, 6, 8}. Count: 4, so |C| = 4.
+⚙ D = {x | x is a positive even number less than or equal to 10} = {2, 4, 6, 8, 10}. Count: 5, so |D| = 5.
+⚙ Notice that C and D differ only by the number 10, which is why |C| = 4 and |D| = 5.
+⚙ A = {1, 3, 2, 5} has n(A) = |A| = 4.
+⚙ Added example: A = {2, 2, 5, 5, 5, 7}. Step 1: remove repeats to get {2, 5, 7}. Step 2: count 3. So |A| = 3.
+
+EXAMPLE: CARDINALITY OF INFINITE SETS
+⚙ A = {1, 2, 3, ...} goes on forever, so |A| = infinity.
+⚙ B = {x | x is a point on a line} has infinitely many points, so |B| = infinity.
+⚙ C = {x | x is a point in a plane} has infinitely many points, so |C| = infinity.
+All three are infinite, but Cantor showed that infinities come in different sizes. The natural numbers in A can be counted one by one. The points on a line cannot, so B is a bigger infinity than A.
+
+THE EMPTY SET
+★ The empty set (also called the null set) is the set that contains no elements. Its notation is { } or the circle-with-a-slash symbol.
+★ The empty set is a subset of every set, including itself.
+EASIER: The empty set is an empty box. The box exists, but nothing is inside it.
+EASIER: The set {empty set symbol} is NOT the empty set. It is a box that contains one item (the empty box), so its cardinality is 1. The true empty set has cardinality 0.
+⚙ Rule: |{ }| = 0.
+⚙ Rule: to decide that a set is empty, show that no object can satisfy the rule.
+
+EXAMPLE: EMPTY SETS
+⚙ B = {x | x is a positive number less than 0}. No positive number is below 0, so B has no elements. B is the empty set.
+⚙ A = the set of all COVID 19 cases in a place where nobody has COVID 19. There are no cases, so A is the empty set.
+⚙ Added example: C = {x | x is an even number that is also odd}. No number is both, so C = { }.
+
+THE POWER SET
+★ The power set of A, written P(A), is the set of all subsets that can be created from A. It includes the empty set and A itself.
+★ If |A| = n, then |P(A)| = 2^n. The cardinality of the power set is 2 to the power of the cardinality of the set.
+EASIER: To build a subset, go through each element and decide "in" or "out". That is 2 choices per element. With n elements the choices multiply: 2 x 2 x ... x 2 (n times) = 2^n.
+⚙ Rule: the number of proper subsets of a set with n elements is 2^n - 1, because we leave out the set itself.
+⚙ Rule: always list the empty set and the whole set when you list all subsets.
+
+EXAMPLE: LISTING ALL SUBSETS
+⚙ List all the subsets of {1, 2, 3}.
+⚙ Step 1: subset with 0 elements: the empty set.
+⚙ Step 2: subsets with 1 element: {1}, {2}, {3}.
+⚙ Step 3: subsets with 2 elements: {1, 2}, {1, 3}, {2, 3}.
+⚙ Step 4: subset with 3 elements: {1, 2, 3}.
+⚙ Answer: the empty set, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3}. That is 1 + 3 + 3 + 1 = 8 subsets.
+⚙ Check with the formula: |{1, 2, 3}| = 3, so 2^3 = 8. It matches.
+⚙ Notice the empty set is written without brackets around it in the list. The list uses the empty set symbol itself, not {empty set symbol}.
+⚙ A = {a, b, c} has |A| = 3.
+⚙ P(A) = {{a, b}, {a, c}, {b, c}, {a}, {b}, {c}, A, the empty set}.
+⚙ |P(A)| = 8, and 2^3 = 8.
+
+EXAMPLE: HOW SUBSET COUNTS GROW
+⚙ 1 element, {A}: subsets are {A} and the empty set. Total = 2 = 2^1.
+⚙ 2 elements, {A, B}: subsets are {A, B}, {A}, {B}, and the empty set. Total = 4 = 2^2.
+⚙ 3 elements, {A, B, C}: subsets are {A, B, C}, {A, B}, {A, C}, {B, C}, {A}, {B}, {C}, and the empty set. Total = 8 = 2^3.
+⚙ 4 elements, {A, B, C, D}: the subset with 4 elements is {A, B, C, D}.
+⚙ The subsets with 3 elements are {A, B, C}, {A, B, D}, {A, C, D}, {B, C, D}. That is 4 subsets.
+⚙ The subsets with 2 elements are {A, B}, {A, C}, {A, D}, {B, C}, {B, D}, {C, D}. That is 6 subsets.
+⚙ The subsets with 1 element are {A}, {B}, {C}, {D}. That is 4 subsets.
+⚙ The subset with 0 elements is the empty set. That is 1 subset.
+⚙ Total = 1 + 4 + 6 + 4 + 1 = 16 = 2^4.
+⚙ The number of possible subsets of a set of size n is 2^n.
+⚙ Added example: a set with 5 elements has 2^5 = 32 subsets, of which 32 - 1 = 31 are proper subsets.
+
+SPECIAL SETS
+★ Special sets: Z = the integers, Z+ = the positive integers, Z- = the negative integers, N = the natural numbers, R = the real numbers, Q = the rational numbers.
+EASIER: Z comes from the German word Zahlen (numbers). Q stands for quotient, because rational numbers are fractions, which are quotients of integers. R is the whole number line.
+Zero is an integer, but it is neither positive nor negative, so 0 is in Z but not in Z+ and not in Z-.
+In this course the natural numbers N are 1, 2, 3, ... (some books also include 0).
+Do not mix up Z (integers) with R (all real numbers). Many real numbers, such as 1.5, are not integers.
+
+VENN DIAGRAMS
+★ A Venn diagram is a picture that shows relationships between sets and their elements.
+EASIER: The rectangle is the whole world U. Each circle is a set. Where circles overlap, the elements belong to both sets.
+Sets A and B are drawn as circles inside a rectangle, and the rectangle represents the universal set U.
+⚙ Step 1: draw a rectangle and label it U.
+⚙ Step 2: draw one circle for each set and label it.
+⚙ Step 3: overlap the circles if the sets share elements, keep them apart if the sets are disjoint, and draw one circle inside the other if one set is a subset of the other.
+⚙ Step 4: write the shared elements (the overlap) first, then the elements that are in only one set.
+⚙ Step 5: write elements of U that belong to no circle outside all the circles.
+
+EXAMPLE: VENN DIAGRAM EXAMPLE 1 (OVERLAPPING SETS)
+⚙ A = {x | x is in Z+ and x <= 8}, so A = {1, 2, 3, 4, 5, 6, 7, 8}.
+⚙ B = {x | x is in Z+, x is even and x <= 10}, so B = {2, 4, 6, 8, 10}.
+⚙ Step 1: find the shared elements. 2, 4, 6, 8 are in both A and B. These go in the overlap.
+⚙ Step 2: A only: 1, 3, 5, 7. B only: 10.
+⚙ A is not a subset of B because 1 is in A but not in B.
+⚙ B is not a subset of A because 10 is in B but not in A.
+
+EXAMPLE: VENN DIAGRAM EXAMPLE 2 (ONE SET INSIDE THE OTHER)
+⚙ A = {x | x is in Z+ and x <= 9}, so A = {1, 2, 3, 4, 5, 6, 7, 8, 9}.
+⚙ B = {x | x is in Z+, x is even and x <= 8}, so B = {2, 4, 6, 8}.
+⚙ Step 1: check each element of B. 2, 4, 6, 8 are all in A. So B is a subset of A, and since A has 9 elements and B has 4, B is a proper subset of A.
+⚙ Step 2: A is not a subset of B because 1 is in A but not in B.
+⚙ A contains B, so A is a proper superset of B.
+⚙ In the diagram, circle B is drawn inside circle A. Inside B: 2, 4, 6, 8. In A but outside B: 1, 3, 5, 7, 9.
+
+EXAMPLE: VENN DIAGRAM EXAMPLE 3 (DISJOINT SETS)
+⚙ A = {x | x is in Z+, x is even and x <= 10}, so A = {2, 4, 6, 8, 10}.
+⚙ B = {x | x is in Z+, x is odd and x <= 10}, so B = {1, 3, 5, 7, 9}.
+⚙ Step 1: look for shared elements. An even number is never odd, so there are none.
+⚙ A is not a subset of B and B is not a subset of A. The circles do not overlap, so A and B are disjoint.
+
+EXAMPLE: VENN DIAGRAM EXAMPLES 4, 5, 6 (THREE SETS)
+⚙ U = {1, 2, 3, 4, 5, 6, 7, 8}, A = {1, 2, 6, 7}, B = {2, 3, 4, 7}, C = {4, 5, 6, 7}.
+⚙ Step 1: in all three sets: 7.
+⚙ Step 2: in A and B only: 2. In A and C only: 6. In B and C only: 4.
+⚙ Step 3: in one set only: A only: 1. B only: 3. C only: 5.
+⚙ Step 4: in none of the sets: 8 (it goes inside U but outside every circle).
+⚙ Example 4 shades A: the shaded elements are A = {1, 2, 6, 7}.
+⚙ Example 5 shades B: the shaded elements are B = {2, 3, 4, 7}.
+⚙ Example 6 shades C: the shaded elements are C = {4, 5, 6, 7}.
+
+COMPLEMENT, UNION, INTERSECTION, AND DISJOINT SETS
+★ The complement of A, written A' (read "A prime"), is the set of all elements in the universal set U that are not in A.
+★ The union of A and B, written A union B, is the set that consists of all elements of A and all elements of B. Elements are listed only once.
+★ The intersection of A and B, written A intersect B, is the set of all elements that are in both A and B.
+★ Sets A and B are disjoint when A intersect B = the empty set, which means they have no element in common.
+EASIER: Union means "or": merge the two guest lists and cross out duplicates. Intersection means "and": only the people on both lists. Complement means "not": everyone in the world U who is not on list A.
+EASIER: A bar over the letter, as in the slides, also means complement. In these notes we write A'.
+EASIER: In a Venn diagram, union shades everything that is in A or B. Intersection shades only the overlap, which is everything in A and B.
+⚙ Rule for union: write all the elements of A, then add the elements of B that are not already listed.
+⚙ Rule for intersection: go through A one element at a time and keep it only if it is also in B.
+⚙ Rule for complement: go through U one element at a time and keep it only if it is not in A.
+⚙ Rule for disjoint sets: A and B are disjoint exactly when A intersect B has no elements.
+⚙ Rule: every element of U is in A or in A', and none is in both.
+
+EXAMPLE: UNION AND INTERSECTION
+⚙ Let A = {1, 2, 3, 4, 5} and B = {1, 3, 5, 7, 9}.
+⚙ Union: start with A = 1, 2, 3, 4, 5. Add elements of B not already listed: 7 and 9 (1, 3, 5 are already listed).
+⚙ A union B = {1, 2, 3, 4, 5, 7, 9}.
+⚙ Intersection: check 1 (in B, keep), 2 (not in B), 3 (in B, keep), 4 (not in B), 5 (in B, keep).
+⚙ A intersect B = {1, 3, 5}.
+⚙ Check with sizes: |A| = 5, |B| = 5, |A union B| = 7 and 5 + 5 - 3 = 7. It matches.
+
+EXAMPLE: COMPLEMENT AND DISJOINT SETS
+⚙ Let U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10} and A = {1, 2, 3, 4, 5}.
+⚙ Step 1: check each element of U. 1 to 5 are in A, so leave them out. 6, 7, 8, 9, 10 are not in A, so keep them.
+⚙ Answer: A' = {6, 7, 8, 9, 10}.
+⚙ Check: |A| + |A'| = 5 + 5 = 10 = |U|.
+⚙ Added example: let A = {2, 4, 6} and B = {1, 3, 5}.
+⚙ Step 1: is 2 in B? No. Is 4 in B? No. Is 6 in B? No.
+⚙ Answer: A intersect B = the empty set, so A and B are disjoint.
+
+THE COUNTING FORMULA
+★ Counting formula: n(A union B) = n(A) + n(B) - n(A intersect B).
+EASIER: If you add n(A) and n(B), the people in both groups are counted twice. Subtract the overlap once to fix it.
+⚙ Rule: n(neither) = n(U) - n(A union B).
+⚙ Rule: both = n(A) + n(B) - n(A union B). This is the counting formula rearranged.
+⚙ Rule: only A = n(A) - n(A intersect B).
+⚙ Rule for probability (Added): the probability of an event = (number of outcomes in the event) / (total number of outcomes).
+
+EXAMPLE: THE CAT AND DOG SURVEY
+⚙ 100 people were surveyed. 52 owned a cat, 36 owned a dog, and 24 owned neither. Draw a Venn diagram.
+⚙ Let U = the 100 people. Let C = cat owners and D = dog owners. The circles overlap because some people could own both.
+⚙ Step 1: people who own a dog or a cat = 100 - 24 = 76, so n(C union D) = 76.
+⚙ Step 2: add the two group sizes: 52 + 36 = 88.
+⚙ Step 3: people who own both = 88 - 76 = 12.
+⚙ Step 4: cat only = 52 - 12 = 40. Dog only = 36 - 12 = 24.
+⚙ Diagram numbers: cat only 40, both 12, dog only 24, neither 24 (outside the circles).
+⚙ Check: 40 + 12 + 24 + 24 = 100. Also 52 + 36 - 12 = 76, which matches.
+
+EXAMPLE: VENN DIAGRAM PROBLEM 1 (PHYSICS AND STATISTICS)
+⚙ In a class of 40 students, 27 like Physics and 25 like Statistics. How many like both? (We assume every student likes at least one of the two subjects.)
+⚙ Step 1: n(P union S) = 40, because everyone likes at least one.
+⚙ Step 2: both = 27 + 25 - 40 = 52 - 40 = 12.
+⚙ Answer: 12 students like both.
+⚙ Check: Physics only = 27 - 12 = 15. Statistics only = 25 - 12 = 13. Total = 15 + 13 + 12 = 40. Correct.
+
+EXAMPLE: VENN DIAGRAM PROBLEM 2 (MATHEMATICS AND HISTORY)
+⚙ In a graduating class of 100 students, 54 studied mathematics, 69 studied history, and 35 studied both. How many students took neither subject?
+⚙ Step 1: n(M union H) = 54 + 69 - 35 = 123 - 35 = 88.
+⚙ Step 2: neither = 100 - 88 = 12.
+⚙ Answer: 12 students took neither subject.
+⚙ Check: math only = 54 - 35 = 19. History only = 69 - 35 = 34. Both = 35. Neither = 12. Total = 19 + 34 + 35 + 12 = 100. Correct.
+
+EXAMPLE: DRILL PROBLEM 3 (PROBABILITY WITH MATH AND HISTORY)
+⚙ In a graduating class of 100 students, 58 studied math, 70 studied history, and 30 studied both. One student is chosen at random.
+⚙ Step 1: n(M union H) = 58 + 70 - 30 = 128 - 30 = 98.
+⚙ Step 2: math only = 58 - 30 = 28. History only = 70 - 30 = 40. Both = 30. Neither = 100 - 98 = 2.
+⚙ Part a, the student takes math or history: probability = 98/100 = 49/50 = 0.98.
+⚙ Part b, the student takes neither subject: probability = 2/100 = 1/50 = 0.02.
+⚙ Part c, the student takes history but not math: this is history only, probability = 40/100 = 2/5 = 0.40.
+⚙ Check: 28 + 40 + 30 + 2 = 100. Correct.
+
+DE MORGAN'S LAWS
+★ De Morgan's first law: (S union T)' = S' intersect T'.
+★ De Morgan's second law: (S intersect T)' = S' union T'.
+In words: the complement of a union is the intersection of the complements, and the complement of an intersection is the union of the complements.
+EASIER: Memory trick: to move the prime inside the brackets, apply the prime to each set and flip the symbol (union becomes intersection, intersection becomes union).
+⚙ Rule: complements can be taken first and the operation flipped, or the operation can be done first and then the whole result complemented. Both give the same set.
+
+EXAMPLE: CHECKING DE MORGAN'S LAWS WITH NUMBERS (ADDED EXAMPLE)
+⚙ Added example: let U = {1, 2, 3, 4, 5, 6}, S = {1, 2, 3}, T = {3, 4}.
+⚙ Step 1: S' = {4, 5, 6} and T' = {1, 2, 5, 6}.
+⚙ Step 2: S union T = {1, 2, 3, 4}, so (S union T)' = {5, 6}.
+⚙ Step 3: S' intersect T' = {5, 6} (the elements 5 and 6 are in both S' and T').
+⚙ The first law is confirmed because both sides equal {5, 6}.
+⚙ Step 4: S intersect T = {3}, so (S intersect T)' = {1, 2, 4, 5, 6}.
+⚙ Step 5: S' union T' = {4, 5, 6} together with {1, 2, 5, 6} = {1, 2, 4, 5, 6}.
+⚙ The second law is confirmed because both sides equal {1, 2, 4, 5, 6}.
+
+EXAMPLE: EXERCISE 1 (SET OPERATIONS WITH NUMBERS)
+⚙ U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}, S = {3, 5, 8, 11}, T = {3, 4, 6, 7, 8, 10, 11}, V = {2, 5, 6, 7, 8}, W = {1, 3, 5, 6}.
+⚙ Find (V' intersect S') intersect (W union T). The choices are A. { }, B. {4, 10, 11}, C. {1, 4, 10}, D. None of these.
+⚙ Step 1: V' = all of U not in V = {1, 3, 4, 9, 10, 11}.
+⚙ Step 2: S' = all of U not in S = {1, 2, 4, 6, 7, 9, 10}.
+⚙ Step 3: V' intersect S' = elements in both = {1, 4, 9, 10}. (3 is not in S' and 11 is not in S'.)
+⚙ Step 4: W union T = {1, 3, 5, 6} together with {3, 4, 6, 7, 8, 10, 11} = {1, 3, 4, 5, 6, 7, 8, 10, 11}.
+⚙ Step 5: intersect {1, 4, 9, 10} with {1, 3, 4, 5, 6, 7, 8, 10, 11}. 1 is in both, 4 is in both, 9 is not in the second set, 10 is in both.
+⚙ Answer: {1, 4, 10}, which is choice C.
+⚙ Check by De Morgan: V union S = {2, 3, 5, 6, 7, 8, 11}, and its complement is {1, 4, 9, 10}, which equals V' intersect S'.
+
+EXAMPLE: EXERCISE 2 (COMPLEMENT OF AN INTERSECTION)
+⚙ U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}, T = {3, 4, 6, 7, 8, 10, 11}, V = {2, 5, 6, 7, 8}.
+⚙ Find (V intersect T')'. The choices are A. {1, 3, 4, 6, 7, 8, 9, 10, 11}, B. {3, 4, 10, 11}, C. {1, 3, 4, 6, 8, 9, 10, 11}, D. None of these.
+⚙ Step 1: T' = all of U not in T = {1, 2, 5, 9}.
+⚙ Step 2: V intersect T' = elements in both {2, 5, 6, 7, 8} and {1, 2, 5, 9} = {2, 5}.
+⚙ Step 3: the complement of {2, 5} in U = {1, 3, 4, 6, 7, 8, 9, 10, 11}.
+⚙ Answer: {1, 3, 4, 6, 7, 8, 9, 10, 11}, which is choice A.
+⚙ Check by De Morgan: (V intersect T')' = V' union T. V' = {1, 3, 4, 9, 10, 11}. Union with T = {3, 4, 6, 7, 8, 10, 11} gives {1, 3, 4, 6, 7, 8, 9, 10, 11}. It matches.
+
+EXAMPLE: EXERCISE 3 (SHADING A' UNION B')
+⚙ Select the Venn diagram whose shaded region corresponds to A' union B'.
+⚙ The choices are: A, both circles shaded except the overlap with the outside white. B, only the overlap and the outside shaded. C, everything shaded except the overlap. D, none of these.
+⚙ Step 1: A' is the shading of everything outside circle A.
+⚙ Step 2: B' is the shading of everything outside circle B.
+⚙ Step 3: union means combine the shading from both pictures.
+⚙ Step 4: a point in the overlap is inside both A and B, so it is outside neither and stays unshaded. Every other point is outside A or outside B, so it is shaded.
+⚙ Answer: everything is shaded except the overlap, which is choice C.
+⚙ By De Morgan this is the same as (A intersect B)'.
+
+EXAMPLE: EXERCISE 4 (SHADING THE COMPLEMENT OF A INTERSECT B)
+⚙ Select the Venn diagram whose shaded region corresponds to (A intersect B)'. The choices are the same as in Exercise 3.
+⚙ Step 1: shade A intersect B, which is only the overlap of the two circles.
+⚙ Step 2: take the complement, which shades everything except the overlap.
+⚙ Answer: choice C.
+⚙ Exercises 3 and 4 give identical shading, which confirms that (A intersect B)' = A' union B'.
+
+EXAMPLE: EXERCISE 5 (DE MORGAN WITH LETTERS)
+⚙ Let U = {a, b, c, d, e, f, g}, T = {c, e}, V = {a, d, e}.
+⚙ Find (T' union V')'. The choices are A. {e}, B. {a, c, d, e}, C. {b, f, g}, D. None of these.
+⚙ Step 1: T' = all of U not in T = {a, b, d, f, g}.
+⚙ Step 2: V' = all of U not in V = {b, c, f, g}.
+⚙ Step 3: T' union V' = {a, b, c, d, f, g}.
+⚙ Step 4: the complement of {a, b, c, d, f, g} in U is {e}.
+⚙ Answer: {e}, which is choice A.
+⚙ Check by De Morgan: (T' union V')' = T intersect V. T = {c, e} and V = {a, d, e}, so T intersect V = {e}. It matches.
+
+EXAMPLE: EXERCISE 6 (SHADING B' INTERSECT (A UNION C'))
+⚙ On a three-circle Venn diagram for A, B, C, shade the region corresponding to B' intersect (A union C').
+⚙ Step 1: shade B'. This is everything outside circle B.
+⚙ Step 2: shade C'. This is everything outside circle C.
+⚙ Step 3: shade A union C'. This is all of circle A together with everything outside circle C.
+⚙ Step 4: intersect the two shadings. Keep only the regions shaded in both Step 1 and Step 3.
+⚙ Region check, using the eight regions of the diagram: B' covers A only, C only, A and C only, and outside all circles.
+⚙ A union C' covers A only, A and B only, A and C only, all three, B only, and outside all circles.
+⚙ Regions in both lists: A only, A and C only (without B), and outside all circles.
+⚙ Answer: shade A only, the part of A that overlaps C but not B, and the area outside all three circles. The unshaded regions are all of B, and C only.
+
+COMMON MISTAKES
+Writing a repeated element twice in a set, or counting a repeated element twice in the cardinality.
+Mixing up an element and a subset: 1 is an element of {1, 2}, but {1} is a subset of {1, 2}.
+Writing the empty set as {empty set symbol}. That set has one element. The empty set has none.
+Thinking the empty set is not a subset of every set. It is a subset of every set, including itself.
+Mixing up union (or, everything combined) with intersection (and, only the overlap).
+Applying De Morgan's laws without flipping the symbol, for example writing (S union T)' = S' union T'. The correct result is S' intersect T'.
+Forgetting to subtract the overlap in the counting formula, or forgetting to take away the neither group first.
+Writing 2n instead of 2^n for the number of subsets, or forgetting that the number of proper subsets is 2^n - 1.
+Treating nor as exclusive or. Nor means neither, and exclusive or means one but not both.
+Treating the word between as including the end numbers. Between 0 and 8 does not include 0 or 8.
+Mixing up Z (integers) with R (real numbers), or thinking 0 is positive.
+Thinking all infinite sets are the same size. Cantor proved they are not.
+
+EXAM TIPS
+Before you work with a set, rewrite it in roster form so you can see every element.
+Always remove repeated elements before you find a cardinality.
+For complements, first write down U. A complement cannot be found without knowing U.
+For nested operations like (V intersect T')', work from the inside out and write each step.
+To check a counting answer, add up the Venn diagram regions. They must total n(U).
+Use De Morgan's laws as a second way to check a complement answer.
+For shading questions, label the regions of the diagram and decide region by region whether each is in or out.
+
+SELF-TEST
+Q: How many subsets does a set with 6 elements have?
+★ Answer: 2^6 = 64 subsets.
+Q: Find |A| for A = {1, 2, 2, 3}.
+★ Answer: remove the repeat to get {1, 2, 3}, so |A| = 3.
+Q: Is the empty set a subset of {5, 6}?
+★ Answer: yes, the empty set is a subset of every set.
+Q: What does (S union T)' equal?
+★ Answer: S' intersect T'.
+Q: If n(A) = 20, n(B) = 15 and n(A intersect B) = 5, find n(A union B).
+★ Answer: 20 + 15 - 5 = 30.
+Q: Let U = {1, 2, 3, 4, 5, 6} and A = {2, 4, 6}. Find A'.
+★ Answer: A' = {1, 3, 5}.
+Q: What is the difference between 1 and {1}?
+★ Answer: 1 is an element (a single object), while {1} is a set that has 1 as its only element.
+Q: Write {1, 3, 5, 7, 9} in rule form.
+★ Answer: {x | x is a positive odd integer less than 10}.

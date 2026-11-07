@@ -1,0 +1,362 @@
+[
+{
+"q": "Why are 2143 and 2413 different numbers even though they use exactly the same digits?",
+"options": [
+"Decimal is positional, so a digit's value depends on the place it occupies",
+"Each digit changes its own value every time it is written",
+"The two numbers have different digit sums",
+"Larger digits always count for more regardless of position"
+],
+"answer": 0,
+"explanation": "In a positional system the same digit contributes different amounts in different places, so rearranging digits changes the number.",
+"source": "notes"
+},
+{
+"q": "Which expression correctly gives the value of the decimal number 478?",
+"options": [
+"4×10^1 + 7×10^2 + 8×10^3",
+"4×10^2 + 7×10^1 + 8×10^0",
+"4×10^3 + 7×10^2 + 8×10^1",
+"4×10^0 + 7×10^1 + 8×10^2"
+],
+"answer": 1,
+"explanation": "Positions are numbered from the right starting at 0, so 8 is at 10^0, 7 at 10^1, and 4 at 10^2.",
+"source": "notes"
+},
+{
+"q": "In the decimal number 2539, what is the place value of the digit 5, and how much does it contribute to the number?",
+"options": [
+"Place value 1000, contributes 5000",
+"Place value 10, contributes 50",
+"Place value 100, contributes 500",
+"Place value 1, contributes 5"
+],
+"answer": 2,
+"explanation": "Counting from the right at position 0, the 5 is at position 2, so its place value is 10^2 = 100 and it contributes 5×100 = 500.",
+"source": "notes"
+},
+{
+"q": "Why is the place value of the rightmost digit equal to 1 in every positional number system?",
+"options": [
+"Because the rightmost digit is always 1",
+"Because positions are numbered from 1, so the value is the base^1",
+"Because it is always the base minus one",
+"Because positions start at 0 and any base raised to the power 0 equals 1"
+],
+"answer": 3,
+"explanation": "The rightmost position is position 0, and base^0 = 1 for any base.",
+"source": "notes"
+},
+{
+"q": "Which statement best explains why computers use binary instead of a ten-level system?",
+"options": [
+"Two states (on/off) are easy to tell apart, so electrical noise is less likely to cause a misread",
+"Binary numbers are always shorter than decimal numbers",
+"Binary automatically detects and corrects all errors",
+"Transistors cannot physically hold more than one digit at a time"
+],
+"answer": 0,
+"explanation": "Transistors act as on/off switches, and two clearly separated states are far more reliable under noise than ten voltage levels.",
+"source": "notes"
+},
+{
+"q": "Convert 1011 (base 2) to decimal.",
+"options": [
+"13",
+"11",
+"9",
+"7"
+],
+"answer": 1,
+"explanation": "1×2^3 + 0×2^2 + 1×2^1 + 1×2^0 = 8 + 0 + 2 + 1 = 11.",
+"source": "notes"
+},
+{
+"q": "What is the decimal value of 10101 (base 2)?",
+"options": [
+"19",
+"25",
+"23",
+"21"
+],
+"answer": 3,
+"explanation": "1×16 + 0×8 + 1×4 + 0×2 + 1×1 = 16 + 4 + 1 = 21.",
+"source": "notes"
+},
+{
+"q": "What is 75 in binary?",
+"options": [
+"1001101",
+"1010011",
+"1001011",
+"1101001"
+],
+"answer": 2,
+"explanation": "75 = 64 + 8 + 2 + 1, so the 64, 8, 2 and 1 positions are 1: 1001011.",
+"source": "notes"
+},
+{
+"q": "What is 142 in binary?",
+"options": [
+"10001101",
+"10011110",
+"11001110",
+"10001110"
+],
+"answer": 3,
+"explanation": "142 = 128 + 8 + 4 + 2, which gives 10001110.",
+"source": "notes"
+},
+{
+"q": "Using the subtraction method, what is 100 in binary?",
+"options": [
+"1100100",
+"1100010",
+"1010100",
+"1110100"
+],
+"answer": 0,
+"explanation": "100 = 64 + 32 + 4, so the 64, 32 and 4 positions are 1: 1100100.",
+"source": "notes"
+},
+{
+"q": "While converting 18 to binary by repeated division by 2, a student records the remainders in this order: 0, 1, 0, 0, 1. What is the binary number?",
+"options": [
+"01001",
+"10010",
+"10100",
+"11000"
+],
+"answer": 1,
+"explanation": "Remainders are read from bottom to top (last remainder first), giving 10010 = 16 + 2 = 18.",
+"source": "notes"
+},
+{
+"q": "For the binary number 1000, which statement about MSB and LSB is correct?",
+"options": [
+"The MSB is the rightmost 0 and the LSB is the leftmost 1",
+"The MSB and the LSB are both 1",
+"The MSB is the leftmost 1 and the LSB is the rightmost 0",
+"There is no MSB because most of the bits are 0"
+],
+"answer": 2,
+"explanation": "The MSB is the leftmost bit (largest place value) and the LSB is the rightmost bit (smallest place value), regardless of whether they are 0 or 1.",
+"source": "notes"
+},
+{
+"q": "Which statement about binary is NOT true?",
+"options": [
+"It uses only the digits 0 and 1",
+"Its place values are powers of 2",
+"It works well with parity bits and checksums",
+"Using binary automatically gives built-in error detection with no extra methods needed"
+],
+"answer": 3,
+"explanation": "Error detection must be added on top of binary using methods like parity bits or checksums; binary itself only makes states easy to distinguish.",
+"source": "notes"
+},
+{
+"q": "Which comparison of the two decimal-to-binary methods is most accurate?",
+"options": [
+"Successive division is easy to follow and to program because it does not need powers of two known in advance",
+"Successive division is always faster to do mentally than subtraction",
+"The subtraction method gives a different answer from division for some numbers",
+"The subtraction method requires reading results from bottom to top"
+],
+"answer": 0,
+"explanation": "Division needs no memorized powers of two, so it suits programming; subtraction is often quicker mentally once powers are memorized, and both give the same result.",
+"source": "notes"
+},
+{
+"q": "Converting 75 with the subtraction method, you write 1 for 64 and have 11 left. What is the next power of two that fits into what remains?",
+"options": [
+"32",
+"8",
+"16",
+"4"
+],
+"answer": 1,
+"explanation": "32 and 16 are larger than 11, so they get 0; 8 is the next power that fits (11-8=3).",
+"source": "notes"
+},
+{
+"q": "A student converts 12 by repeated division by 2, getting remainders 0, 0, 1, 1 in that order, and writes 0011 by reading top to bottom. What is the correct binary value and what was the mistake?",
+"options": [
+"0011 is correct because the first remainder is the MSB",
+"1100 is correct; the student should have read bottom to top but read top to bottom instead",
+"1010 is correct; the student forgot a remainder",
+"1100 is correct; the student should have divided by 10 instead of 2"
+],
+"answer": 1,
+"explanation": "The last remainder is the MSB, so the remainders must be read bottom to top, giving 1100 = 8 + 4 = 12. Top to bottom gives 0011 = 3.",
+"source": "notes"
+},
+{
+"q": "Which statement about why decimal (base 10) became the everyday number system is most appropriate?",
+"options": [
+"It is proven that decimal was chosen because computers need ten digits",
+"It is the only positional system that works",
+"It is likely linked to humans having ten fingers, but this is a popular theory rather than proven fact",
+"It was adopted because the Latin word decem was invented first"
+],
+"answer": 2,
+"explanation": "Many historians think ten fingers is a major reason, but it should be treated as the likely explanation, not a certainty.",
+"source": "notes"
+},
+{
+"q": "You converted 75 to the binary number 1001011. Which calculation correctly checks the result by converting back to decimal?",
+"options": [
+"64 + 8 + 2 + 1 = 75",
+"64 + 16 + 4 + 1 = 85",
+"64 + 32 + 8 + 1 = 105",
+"64 + 8 + 4 + 2 = 78"
+],
+"answer": 0,
+"explanation": "1001011 has 1s at the 64, 8, 2 and 1 positions, and 64+8+2+1 = 75, matching the original number.",
+"source": "notes"
+},
+{
+"q": "What is 339 in binary?",
+"options": [
+"101001011",
+"110010011",
+"101010011",
+"101010101"
+],
+"answer": 2,
+"explanation": "339 = 256 + 64 + 16 + 2 + 1, so the 256, 64, 16, 2 and 1 positions are 1: 101010011.",
+"source": "notes"
+},
+{
+"q": "What is the decimal value of 110110 (base 2)?",
+"options": [
+"27",
+"54",
+"62",
+"46"
+],
+"answer": 1,
+"explanation": "1×32 + 1×16 + 0×8 + 1×4 + 1×2 + 0×1 = 32 + 16 + 4 + 2 = 54.",
+"source": "notes"
+},
+{
+"q": "In an 8-bit binary number, what is the place value of the MSB?",
+"options": [
+"256",
+"64",
+"128",
+"8"
+],
+"answer": 2,
+"explanation": "The MSB is at position 7 (counting from 0 on the right), so its place value is 2^7 = 128.",
+"source": "notes"
+},
+{
+"q": "When converting 142 by successive division by 2, what are the first three remainders in the order they are produced?",
+"options": [
+"0, 1, 1",
+"1, 1, 0",
+"0, 0, 1",
+"1, 0, 1"
+],
+"answer": 0,
+"explanation": "142÷2=71 r0; 71÷2=35 r1; 35÷2=17 r1. The first remainder is the LSB.",
+"source": "notes"
+},
+{
+"q": "Which of these binary numbers has the largest value?",
+"options": [
+"1111",
+"10101",
+"10011",
+"1110"
+],
+"answer": 1,
+"explanation": "The values are 15, 21, 19 and 14. The 5-bit number 10101 = 16 + 4 + 1 = 21 is the largest.",
+"source": "notes"
+},
+{
+"q": "Which statement about place values is NOT true?",
+"options": [
+"Positions are counted from the right, starting at 0",
+"Any number raised to the power 0 equals 1",
+"In binary, position 5 has place value 32",
+"In binary, position 3 has place value 6 because 2×3 = 6"
+],
+"answer": 3,
+"explanation": "The place value is the base raised to the position, so position 3 in binary is 2^3 = 8, not 2×3.",
+"source": "notes"
+},
+{
+"q": "A student reads 1001 (base 2) as \"one thousand and one\". What is the actual value, and what was the error?",
+"options": [
+"The value is 2, because the digits 1+0+0+1 are added",
+"The value is 1001, because binary uses the same place values as decimal",
+"The value is 17, because the place values are 16 and 1",
+"The value is 9, because the place values are powers of 2 (8 + 1), not powers of 10"
+],
+"answer": 3,
+"explanation": "Binary place values are 8, 4, 2, 1, so 1001 = 8 + 1 = 9.",
+"source": "notes"
+},
+{
+"q": "In the binary number 10110, the MSB is changed from 1 to 0. By how much does the decimal value decrease?",
+"options": [
+"16",
+"1",
+"8",
+"22"
+],
+"answer": 0,
+"explanation": "The MSB is at position 4 with place value 16, so the value drops from 22 (10110) to 6 (00110), a decrease of 16.",
+"source": "notes"
+},
+{
+"q": "Which of the following is NOT a valid binary number?",
+"options": [
+"1100",
+"1021",
+"0001",
+"1111"
+],
+"answer": 1,
+"explanation": "Binary uses only the digits 0 and 1, so the digit 2 in 1021 makes it invalid.",
+"source": "notes"
+},
+{
+"q": "A student converts 45 to binary and gets 101011. Which check shows what went wrong?",
+"options": [
+"Converting back gives 45, so the answer is correct",
+"Converting back gives 47, so the answer is too large",
+"Converting back gives 53, so the answer is too large",
+"Converting back gives 43, so the answer is wrong; the correct result is 101101"
+],
+"answer": 3,
+"explanation": "101011 = 32 + 8 + 2 + 1 = 43. The correct conversion is 45 = 32 + 8 + 4 + 1 = 101101.",
+"source": "notes"
+},
+{
+"q": "What is the decimal value of a 1 followed by ten 0s in binary (10000000000)?",
+"options": [
+"1024",
+"512",
+"2048",
+"1000"
+],
+"answer": 0,
+"explanation": "The 1 is at position 10, so the value is 2^10 = 1024, not 1000.",
+"source": "notes"
+},
+{
+"q": "Which statement is NOT true?",
+"options": [
+"A bit is one binary digit",
+"The MSB has the largest place value in the number",
+"In successive division, the first remainder produced is the MSB",
+"The binary number 100 equals decimal 4"
+],
+"answer": 2,
+"explanation": "The first remainder is the LSB; the last remainder produced is the MSB, which is why remainders are read bottom to top.",
+"source": "notes"
+}
+]

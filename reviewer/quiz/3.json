@@ -1,0 +1,362 @@
+[
+{
+"q": "Which set of Python keywords lets a program perform different actions depending on a Boolean condition?",
+"options": [
+"switch, case, default",
+"when, otherwise, unless",
+"if, elif, else",
+"try, except, finally"
+],
+"answer": 2,
+"explanation": "Conditional expressions in Python are built from if, elif, and else. switch/case/default is the style of other languages, when/otherwise/unless are not Python keywords, and try/except/finally handles errors rather than Boolean decisions.",
+"source": "notes"
+},
+{
+"q": "How many distinct values can a Python Boolean take?",
+"options": [
+"Two: True and False",
+"Three: True, False, and None",
+"Two: the integers 1 and 0 only",
+"Any integer, because every nonzero integer counts as a Boolean value"
+],
+"answer": 0,
+"explanation": "A Boolean is exactly one of two values, True or False. None is a separate value, not a Boolean. Integers can be treated as True or False inside a condition, but that does not make every integer a Boolean value.",
+"source": "notes"
+},
+{
+"q": "What does print(10 != 10) output?",
+"options": [
+"True, because != tests whether two values are the same and 10 is the same as 10",
+"Nothing, because a comparison alone cannot be printed",
+"An error, because != is not a valid Python operator",
+"False, because the two values are equal so the not-equal test fails"
+],
+"answer": 3,
+"explanation": "!= is the not-equal operator and is True only when the values differ. Since 10 equals 10, the result is False. The first option confuses != with ==, and comparisons can be printed like any other expression.",
+"source": "notes"
+},
+{
+"q": "Given test = True, what does print(not test) output?",
+"options": [
+"None, because not removes the value from the variable",
+"False",
+"An error, because not can only be applied to comparison expressions",
+"True, because not leaves a Boolean variable unchanged"
+],
+"answer": 1,
+"explanation": "not negates or reverses a Boolean value, so not True is False. It does not delete the value, it works on Boolean variables as well as comparisons, and it does not leave the value unchanged.",
+"source": "notes"
+},
+{
+"q": "The and operator is used to judge whether:",
+"options": [
+"all arguments in a set are True",
+"at least one argument in a set is True",
+"exactly one argument in a set is True",
+"no argument in a set is True"
+],
+"answer": 0,
+"explanation": "and requires all arguments to be True. At least one describes or. Exactly one and none are not what either operator tests.",
+"source": "notes"
+},
+{
+"q": "If x = True and y = False, what are the results of (x and y) and (x or y), in that order?",
+"options": [
+"True and True",
+"False and False",
+"False and True",
+"True and False"
+],
+"answer": 2,
+"explanation": "x and y needs both True, so it is False. x or y needs at least one True, so it is True. The result is False then True.",
+"source": "notes"
+},
+{
+"q": "Under which circumstance does x or y evaluate to False when x and y are Booleans?",
+"options": [
+"When at least one of x and y is True",
+"When exactly one of x and y is False",
+"When only the first value is True",
+"When both x and y are False"
+],
+"answer": 3,
+"explanation": "or is False only when every operand is False. If at least one operand is True (including the case where only the first is True), the result is True.",
+"source": "notes"
+},
+{
+"q": "x = 3 and y = 5. What is the value of z in z = x and y?",
+"options": [
+"3, because the first argument is returned whenever both are nonzero",
+"5, the second argument",
+"True, because both values are nonzero",
+"8, because and combines two nonzero values by adding them"
+],
+"answer": 1,
+"explanation": "With numbers, and returns the second argument when both are True (nonzero). Both 3 and 5 are nonzero, so z = 5. and does not return a Boolean here and never adds values.",
+"source": "notes"
+},
+{
+"q": "x = 4 and y = 0. What is the value of z in z = x and y?",
+"options": [
+"4, because the first argument is always returned by and",
+"True, because x is nonzero and so the whole expression is True",
+"0, the first False argument",
+"False, because and always returns a Boolean value"
+],
+"answer": 2,
+"explanation": "When one argument is False (0), and evaluates to the first False argument, which is y = 0. It does not always return the first argument, and with numbers it returns an operand rather than a Boolean.",
+"source": "notes"
+},
+{
+"q": "x = 0 and y = 9. What is the value of z in z = x or y?",
+"options": [
+"9, the first True argument",
+"0, because or returns the first argument that it examines",
+"True, because or always produces a Boolean result",
+"None, because the two arguments disagree in truth value"
+],
+"answer": 0,
+"explanation": "With numbers, or evaluates to the first True argument when at least one argument is True. x = 0 is False, y = 9 is True, so z = 9. It does not return None and does not convert the result to a Boolean.",
+"source": "notes"
+},
+{
+"q": "x = \"\" (an empty string) and y = 0. What is the value of z in z = x or y?",
+"options": [
+"The empty string, because x is the first argument and is returned",
+"0, the second argument",
+"False, because both values are False-like and or returns a Boolean",
+"An error, because a string and an integer cannot be combined with or"
+],
+"answer": 1,
+"explanation": "When both arguments are False, or evaluates to the second argument, so z = 0. Mixed types are allowed, and or does not convert the result to a Boolean.",
+"source": "notes"
+},
+{
+"q": "What does an IF statement do with its body?",
+"options": [
+"It repeats the body until the condition becomes False",
+"It runs the body once and then evaluates the condition to check the result",
+"It chooses the body by matching the condition against a list of values",
+"It executes the body only when the condition evaluates to True"
+],
+"answer": 3,
+"explanation": "IF evaluates the Boolean expression first and runs the body only when it is True, otherwise the body is skipped. Repeating is the job of loops, the condition is evaluated before the body, and matching against values describes match case.",
+"source": "notes"
+},
+{
+"q": "Which line shows valid IF statement syntax in Python?",
+"options": [
+"if condition: followed by an indented body",
+"if (condition) { body } using curly braces around the body",
+"if condition then body end if with a closing keyword",
+"if condition; body; with a semicolon after the condition"
+],
+"answer": 0,
+"explanation": "Python writes if condition: with a colon and an indented body. Curly braces, then/end if, and semicolons belong to other languages.",
+"source": "notes"
+},
+{
+"q": "Given n = 0, what is printed by the statement if n: print(\"yes\") else: print(\"no\")?",
+"options": [
+"yes, because n has been assigned a value",
+"Nothing, because 0 is not a valid condition",
+"no",
+"An error, because an integer cannot be used as a condition"
+],
+"answer": 2,
+"explanation": "Any integer is treated as True except 0, which is treated as False. So the IF body is skipped and the ELSE body prints no. Integers are valid conditions.",
+"source": "notes"
+},
+{
+"q": "Which string value is treated as False when used as an IF condition?",
+"options": [
+"\"False\" (the word False)",
+"\"\" (the empty string)",
+"\" \" (a string holding one space)",
+"\"0\" (a string holding the digit zero)"
+],
+"answer": 1,
+"explanation": "Only the empty string is treated as False. Any string that has a value, including the word False, a single space, or the character 0, is treated as True.",
+"source": "notes"
+},
+{
+"q": "When is the condition of an ELIF clause evaluated?",
+"options": [
+"Every time the program runs, independently of the IF statement before it",
+"Only after the IF condition has evaluated to True, as a follow-up check",
+"Only when the program has no ELSE clause available to handle the case",
+"Only if the earlier conditions in the chain were evaluated as False"
+],
+"answer": 3,
+"explanation": "ELIF checks additional conditions only if the first condition (usually the IF) is False. If the IF is True the ELIF is skipped, and the presence of an ELSE has no effect on this.",
+"source": "notes"
+},
+{
+"q": "a = 5 and b = 5. What is printed by: if b > a: print(\"b is greater than a\") elif a == b: print(\"a and b are equal\")?",
+"options": [
+"a and b are equal",
+"b is greater than a",
+"Both messages are printed",
+"Nothing is printed"
+],
+"answer": 0,
+"explanation": "b > a is False (5 is not greater than 5), so the ELIF is checked. a == b is True, so only the second message prints.",
+"source": "notes"
+},
+{
+"q": "Why is an if/elif chain generally preferred over several separate IF statements for mutually exclusive cases?",
+"options": [
+"Separate IF statements are a syntax error when they test related conditions",
+"elif branches run faster because Python compiles them into a lookup table instead of tests",
+"elif branches are skipped once an earlier condition in the chain was True",
+"Separate IF statements cannot use Boolean expressions as conditions"
+],
+"answer": 2,
+"explanation": "ELIF statements do not execute if an earlier IF is already True, so only one branch runs. Separate IF statements are legal but generally not recommended. The speed and syntax-error claims are false, and IF accepts any Boolean expression.",
+"source": "notes"
+},
+{
+"q": "An ELSE clause executes its body when:",
+"options": [
+"The IF condition is True",
+"Any one of the preceding conditions evaluates to False",
+"Execution reaches it, regardless of how the earlier conditions evaluated",
+"All preceding conditional statements evaluate to False"
+],
+"answer": 3,
+"explanation": "ELSE runs only if every preceding condition is False. Running when the IF is True is the opposite. One False condition is not enough, since another earlier branch may have been True. Reaching it does not guarantee execution.",
+"source": "notes"
+},
+{
+"q": "Where does an ELSE clause normally appear in a conditional chain?",
+"options": [
+"First, before the IF statement",
+"Between the IF statement and the first ELIF",
+"Last, after the IF and any ELIF statements",
+"Anywhere, because its position does not affect program behavior"
+],
+"answer": 2,
+"explanation": "ELSE is usually the last statement after IF and ELIF, because it handles whatever none of the previous conditions caught.",
+"source": "notes"
+},
+{
+"q": "What is a nested IF-ELSE statement?",
+"options": [
+"An IF or ELIF statement placed inside another IF or ELIF block",
+"Several independent IF statements written one after another at the same level",
+"An ELSE statement written without any preceding IF",
+"A chain of ELIF statements that ends with a default ELSE clause"
+],
+"answer": 0,
+"explanation": "Nesting means one IF or ELIF sits inside another IF or ELIF block. Statements written one after another are sequential, and an ELIF chain with an ELSE is a chained conditional, not a nested one.",
+"source": "notes"
+},
+{
+"q": "In a nested structure with an outer if condition1 that contains an inner if condition2 with its own else (and an outer else), when does the inner else execute?",
+"options": [
+"When condition1 is false, regardless of the value of condition2",
+"When condition1 is true and condition2 is false",
+"When condition1 and condition2 are both false at the same time",
+"When both condition1 and condition2 evaluate to True together"
+],
+"answer": 1,
+"explanation": "The inner block is reached only when condition1 is true, and its else runs when condition2 is false. If condition1 is false, the outer else runs. Both true runs the inner if body.",
+"source": "notes"
+},
+{
+"q": "In a nested check that prints one of three messages (positive and even, positive but odd, or not positive), using if num > 0 on the outside and num % 2 == 0 on the inside, which message prints for num = -4?",
+"options": [
+"The number is positive and is even.",
+"The number is positive but odd.",
+"No message, because the inner check is never reached for negatives",
+"The number is not positive."
+],
+"answer": 3,
+"explanation": "-4 fails the outer test num > 0, so the outer else prints The number is not positive. The even test is never reached, even though -4 is even. Because the outer else exists, a message is always printed.",
+"source": "notes"
+},
+{
+"q": "In the even/odd check, why is the test num % 2 == 0 used?",
+"options": [
+"% divides num by 2 and returns the whole-number quotient, which must be 0",
+"% raises num to the power of 2 and compares the result to 0",
+"% returns the remainder after dividing by 2, and a remainder of 0 means even",
+"% returns True for positive numbers, so == 0 identifies negative numbers"
+],
+"answer": 2,
+"explanation": "% is the remainder (modulo) operator. An even number divides by 2 with remainder 0. It does not give the quotient, does not raise to a power, and does not test sign.",
+"source": "notes"
+},
+{
+"q": "In the login program, what is printed when the username is \"admin\" and the password entered is \"letmein\"?",
+"options": [
+"Invalid password.",
+"Invalid username.",
+"Login successful.",
+"Invalid username. followed by Invalid password."
+],
+"answer": 0,
+"explanation": "The username matches, so the inner if is reached. The password does not equal admin1234password, so the inner else prints Invalid password. Only one of the three messages is ever printed.",
+"source": "notes"
+},
+{
+"q": "In the login program, what is printed when the username is \"guest\" but the password is the correct \"admin1234password\"?",
+"options": [
+"Login successful., because the password is correct",
+"Invalid password., because the username check passes by default",
+"Login successful. followed by Invalid username.",
+"Invalid username."
+],
+"answer": 3,
+"explanation": "The outer if checks the username first. \"guest\" fails it, so the outer else prints Invalid username. and the password is never examined.",
+"source": "notes"
+},
+{
+"q": "What is a common use of nested conditionals in programs that ask for input?",
+"options": [
+"Repeating a block of code a fixed number of times while a counter changes",
+"Validation and authentication when a program asks for user input",
+"Converting user-entered strings to integers before they are compared",
+"Declaring Boolean variables and assigning them initial True values"
+],
+"answer": 1,
+"explanation": "Nested conditionals check one requirement and then another, as in a login system that checks username and then password. Repetition is done by loops, and conversion and declaration are not what nesting does.",
+"source": "notes"
+},
+{
+"q": "Match case statements were introduced in which Python version, and what kind of structure are they?",
+"options": [
+"Python 3.10; a value-matching decision-control structure",
+"Python 2.7; a looping structure that repeats cases until a match is found",
+"Python 3.0; a function-definition structure that names reusable cases",
+"Python 3.6; an exception-handling structure that catches unmatched values"
+],
+"answer": 0,
+"explanation": "Match case arrived in Python 3.10 and is a value-matching decision-control structure. It does not loop, define functions, or handle exceptions.",
+"source": "notes"
+},
+{
+"q": "What is a key limitation of match case statements relative to chained conditional statements?",
+"options": [
+"It cannot compare string values, only integers can be matched",
+"It can handle at most two possible values in one statement",
+"It does not support relational or logical operators",
+"It has no way of specifying a branch for unmatched values"
+],
+"answer": 2,
+"explanation": "Match case is similar to chained conditionals but does not support relational or logical operators in the case values (an if guard can add an extra condition). It matches strings and many values, and case _ provides a branch for unmatched values.",
+"source": "notes"
+},
+{
+"q": "Which line pair shows the correct match-case syntax in Python?",
+"options": [
+"switch <expression>: followed by case <value>:",
+"match (<expression>) { case <value>: } with curly braces",
+"case <expression>: followed by match <value>:",
+"match <expression>: followed by case <value>:"
+],
+"answer": 3,
+"explanation": "Python writes match <expression>: and then indented case <value>: lines. switch is not a Python keyword here, braces are not used, and case cannot come before match.",
+"source": "notes"
+}
+]

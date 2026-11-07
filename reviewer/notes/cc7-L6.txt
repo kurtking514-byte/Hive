@@ -1,0 +1,125 @@
+Lecture 6 Interactions
+CC7 Human Computer Interaction: terms, Abowd and Beale framework, Norman's cycle, controller-display mappings, mobile interaction
+
+1. Definition and terms
+★ Interaction: the purpose of interaction is to accomplish a goal within an application domain, that is, to perform what is intended with what is available.
+★ Domain: an area of expertise, what you know and specialize in.
+★ Goal: the desired output, what you planned on achieving.
+★ Tasks: the operations performed to manipulate the domain, what you will do to reach your goal.
+⚙ Tasks involve identifying human and computer specifications.
+Human specifications: perceptual systems, memory and processing, plus human error and emotions.
+Computer specifications: input and output devices, memory, and processing.
+⚙ Tasks also involve determining an interaction framework: the Abowd and Beale framework or Norman's execution-evaluation cycle.
+★ Task analysis: identifying the problem space for the user in terms of domain, goals, intentions, and tasks.
+Task analysis uses the point of view of the user and judges what they might think.
+★ System: the computer-based system, either the software or the hardware you will be designing.
+★ Core language: the language of the computer-based system, meaning the programming language or languages you will use.
+★ User: the individual who will be using the system.
+★ Task language: the language of the user.
+EASIER: core language belongs to the machine, task language belongs to the person.
+
+2. Concept of interaction
+★ Interaction in HCI takes place between the user and the system, and the point of contact is the interface.
+⚙ The interface must translate the communication between the user and the system.
+Translation can fail at several points.
+
+3. Abowd and Beale framework
+★ The Abowd and Beale framework identifies system and user components which communicate via the input and output components.
+In the diagram, S is the system (core), U is the user (task), and input and output sit between them.
+The framework shows where user input can come from and where results are displayed.
+The user formulates a goal and a task to achieve that goal.
+⚙ Cycle order: user to input by articulation, input to system by performance, system to output by presentation, output to user by observation.
+EASIER: the loop runs user, input, system, output, back to user, with the verbs articulate, perform, present, observe.
+★ Articulation: the user expresses the task in the input language.
+Articulation requires the input language to be compatible with achieving the task.
+Articulation means the user must communicate what they want in terms the system can understand as input.
+★ Performance: the interface translates the input language into stimuli for the system, that is, from the input language to the system's core language.
+⚙ Performance uses an interpreter or a compiler, depending on the programming language.
+Performance covers what is displayed and allowed to happen and will be processed by the computer.
+★ Presentation: the system presents the results in the output language, showing the result of what it processed.
+★ Observation: the user translates the output language into personal understanding.
+⚙ The result of the output must be something the user understands.
+
+4. Abowd and Beale advantages
+It is not restricted to electronic computer systems.
+It identifies all major components involved in interaction.
+It allows comparative assessment of systems.
+It provides an abstraction of interaction.
+
+5. Norman's execution-evaluation cycle
+★ Norman's model (Norman's interaction cycle) is a theory on how to view HCIs, covering the interaction between user and system.
+★ Execution: doing tasks to achieve the goal.
+★ Evaluation: testing if tasks were executed properly, and taking note of what went wrong and what can be improved.
+⚙ Execution steps: Step 1 user establishes a goal, Step 2 user formulates their intention, Step 3 user decides on action on the interface, Step 4 user executes the action.
+⚙ Evaluation steps: Step 5 user perceives the system state, Step 6 user interprets the system response, Step 7 user evaluates the system with respect to the goal.
+EASIER: steps 1 to 4 are doing, steps 5 to 7 are checking.
+Advantage: it is a useful means of understanding the interaction clearly and intuitively.
+Advantage: it allows more detailed work to be placed within a common framework.
+Advantage: it considers the user's view.
+
+6. Norman's cycle worked examples
+Example 1 setup: you are reading at night, need more light, and are right beside an electric lamp.
+Example 1, Step 1 goal: get more light for reading.
+Example 1, Step 2 intention: switch on the lamp.
+Example 1, Step 3 action on the interface: look for the lamp, reach over to it, press the light switch.
+Example 1, Step 4: carry out the actions specified in Step 3.
+Example 1, Step 5 perceive: look at the lamp, look around the room, ask whether the light is on.
+Example 1, Step 6 interpret: is the light on or off, and if off, what could be wrong.
+Example 1, Step 7 evaluate: have you achieved your goal.
+Example 2 setup: you and classmate Marco are finishing a report the night before the presentation.
+Example 2, Step 1 goal: get a status report on Marco's contribution, by phone call, instant messenger, email, or text.
+Example 2, Step 2 intention: chat with Marco using Facebook Messenger, because the intention should include the technology to be used.
+Example 2, Step 3 action: log in to Facebook, check Marco's status, click his name if he is online, then type the message.
+Example 2, Step 3 tip: specify the actions as separate steps so they are easier to organize.
+Example 2, Step 4: log in, check Marco's status, click his name, type the message.
+Example 2, Step 5 perceive: was the password accepted, was a connection established, is Marco online or offline, was a message prompt given, how do I check what I typed, how do I know it was sent.
+Example 2, Step 6 interpret: how do I know Marco is online, how do I know he read my message.
+Example 2, Step 7 evaluate: ultimately, was I able to deliver the message.
+
+7. Gulfs of execution and evaluation
+★ Gulf of execution: the core and task languages differ, which is the difference between the user's formulation of the action to reach the goal and the actions allowed by the system.
+EASIER: can I make the system do what I mean.
+★ Gulf of evaluation: the distance between the physical presentation of the system state and the expectation of the user.
+EASIER: can I tell what the system just did.
+
+8. Assessing interactions
+⚙ Frameworks are meant to be means of judging the overall usability of an interactive system.
+All analysis is dependent on the current task.
+It is only in attempting to perform a task that we can determine if our tools are adequate.
+
+9. Controller-display relationships
+★ Display: provides operators with information about the operational status of a system.
+★ Control device: allows operators to take action to influence the state of the system.
+★ Controller-display relationship: the relationship between what a user does and how the system responds, which should be natural, seamless, efficient, and intuitive.
+Controller-display relationships are sometimes called mappings.
+There are four types of mappings: spatial, gain and transfer functions, latency, and property sensing.
+
+10. Types of mappings
+★ Spatial mapping relies on spatial memory, the ability to learn the location of objects of interest by interacting with them repeatedly.
+In using a computer, spatial memory lets users develop automaticity when accessing data.
+This means the user can use their cognitive processes to quickly understand and use a device.
+Example: a mouse moves a pointer, and moving the mouse to the right should move the pointer to the right.
+★ Gain and transfer functions: the ratio between movement of the controller and movement of the display.
+EASIER: how far the display moves for each bit of controller movement.
+Example: more effort or an uneven pointer reaction to the amount of space you move the mouse shows a poor mapping.
+The relationship between how you use the controller and how the display reacts can be nonlinear.
+Gain settings let you adjust how much force, movement, or key pressing an action needs, and the sensitivity of your device's controllers.
+Many devices now include features to tweak this sensitivity more easily.
+★ Latency: the delay between an input action and the corresponding display or output, measured in milliseconds.
+Latency is normally associated with internet connectivity but also occurs with input devices such as keyboards, mice, and wireless headphones.
+Latency is usually caused by your network hardware, your server's location, and the internet routers between your server and your devices.
+Satellite internet connections have high latency in almost every condition.
+Servers located far from your network increase your chances of latency.
+⚙ Typical audio latency on a regular wired connection is 5-10 milliseconds.
+⚙ Bluetooth latency ranges from an ideal 30-60 milliseconds up to 100-300 milliseconds for true wireless earbuds and headphones.
+★ Property sensing: sensing the force given by the user and transforming it into input for a device.
+Property sensing differs from gain and transfer mapping, which adjusts how your devices interpret your inputs.
+Property sensing focuses on how users adjust their own input to get different results from their device.
+EASIER: gain tunes how the device reads you, property sensing is the device sensing what you physically do.
+Property sensing includes adding new sensors to existing devices to detect human actions: touching, tapping, grasping, moving, pushing, flicking, and squeezing.
+★ Property in this context means the actions sensed by the controller: position, displacement, and force.
+
+11. Mobile technologies
+Mobile technologies have introduced forms of interaction that were not previously available on desktops.
+This has led to new applications and features that take advantage of these interactions.
+★ Interaction technologies now common on mobile devices: touchscreens and multitouch, accelerometers, fingerprint scanners, face scanners, and gyroscopes.

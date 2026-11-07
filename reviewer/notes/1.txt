@@ -1,0 +1,106 @@
+1 Introduction to Programming
+CC2 Introduction to Computer Programming, University of the Cordilleras
+
+PROGRAM
+★ Program: a sequence of instructions that specifies how to perform a computation.
+★ Computation types: mathematical (solving a system of equations, finding the roots of a polynomial), symbolic (searching and replacing text in a document), graphical (processing an image, playing a video).
+EASIER: A program is a recipe the computer follows, and the result can be numbers, text, or pictures.
+
+FIVE BASIC INSTRUCTIONS
+The details look different in different languages, but a few basic instructions appear in just about any language.
+★ Input: get data from the keyboard, a file, a network, or another device.
+★ Output: display data on the screen, or save it in a file, a network, or another device.
+★ Math: perform basic mathematical operations like addition and multiplication.
+★ Conditional execution: check for certain conditions and run the appropriate code.
+★ Repetition: perform some action repeatedly, usually with some variation.
+EASIER: The five basics are get data, show data, calculate, decide, and loop.
+
+PROGRAMMING AND THE PROGRAMMER
+★ Programming: the process of creating a set of instructions that a computer can follow to perform specific tasks.
+Programming involves problem-solving, logic, and creativity to design solutions that can be executed by a machine.
+★ Programmer: writes code to solve problems, automate tasks, and create software applications.
+Programmers translate human ideas into a language that computers can understand and execute.
+
+ALGORITHMS
+★ Algorithm: a finite, well-defined sequence of steps or instructions designed to perform a specific task or solve a particular problem.
+EASIER: An algorithm is a clear step-by-step plan that always ends.
+
+CHARACTERISTICS OF ALGORITHMS
+★ Input: an algorithm takes zero or more inputs, the initial data or conditions it will manipulate.
+★ Output: an algorithm produces one or more outputs, the results of the processed inputs.
+★ Finite: an algorithm must have a clear beginning and end, a finite number of steps, so it terminates after completing its task.
+★ Well-defined (definiteness): each step is precise and unambiguous, so it can be followed without confusion or need for interpretation.
+★ Effectiveness: the steps are simple enough to be performed, ideally within a reasonable amount of time and with a clear purpose.
+EASIER: Inputs can be zero, but outputs must be at least one.
+EASIER: Finite means it must stop, well-defined means no guessing, effectiveness means every step is doable.
+
+CREATING AN ALGORITHM
+⚙ Requirements gathering: the information given (input) and the results to be produced (output) must be explicitly specified, and the problem must be understood.
+⚙ Design: write an algorithm that will solve the problem according to the requirement.
+⚙ Analysis: compare an existing or new algorithm to the previous algorithm.
+⚙ Refinement and coding: a representation is chosen and a complete version of the program is made.
+⚙ Verification: consists of 3 aspects, which are program, proving, and testing and debugging.
+⚙ Order of the stages: requirements gathering, design, analysis, refinement and coding, verification.
+EASIER: Gather, design, analyze, code, verify.
+
+WORKED EXAMPLE ALGORITHM TO GO TO THE UNIVERSITY OF THE CORDILLERAS
+⚙ Steps 1 to 4: Start, wake up on time, get out of bed, go to the kitchen.
+⚙ Step 5: Check if there is food. If there is food, proceed to step 7. Else proceed to step 6.
+⚙ Steps 6 to 8: Cook breakfast, eat breakfast, brush your teeth. Step 6 is skipped when there is food.
+⚙ Steps 9 to 11: Take a shower, dress properly, go out of the house.
+⚙ Step 12: Check for transportation. If you have a private vehicle, proceed to step 14. If you have no private vehicle, proceed to step 13.
+⚙ Steps 13 to 15: Use public transportation, proceed to UC, End. Step 13 is skipped when you have a private vehicle.
+EASIER: The two decisions are whether there is food and whether you have a private vehicle.
+
+PROGRAMMING LANGUAGES
+★ Programming languages: formal languages comprising a set of instructions that can produce various kinds of output.
+Programming languages are used to implement algorithms in a form that computers can process.
+★ Two main types of programming languages: low-level languages and high-level languages.
+
+COMPILED LANGUAGES
+★ Compiled language: the source code is translated into machine code or an intermediate form (like bytecode) by a compiler before it can be executed by the computer.
+⚙ Compilation process: the compiler reads the entire source code, checks for errors, then translates the code into an executable file.
+Examples of compiled languages: C, C++, Java.
+Advantages of compiled languages: performance, error checking, executable files.
+Disadvantages of compiled languages: compilation time, lack of flexibility.
+EASIER: Compile first and run later, so it is fast and checked up front, but you wait for the build and have less flexibility.
+
+INTERPRETED LANGUAGES
+★ Interpreted language: the source code is executed line by line by an interpreter, which directly reads and executes each instruction without translating the entire program into machine code beforehand.
+⚙ Interpretation process: the interpreter translates high-level instructions into an intermediate form or machine code, then executes.
+Examples of interpreted languages: Python, JavaScript, Ruby.
+Advantages of interpreted languages: flexibility, ease of use, platform independence.
+Disadvantages of interpreted languages: performance, runtime errors.
+EASIER: The interpreter reads and runs as it goes, so mistakes show up while the program is running.
+
+FLOWCHARTS
+★ Flowchart: a visual representation of the sequence of steps and decisions needed to perform a process.
+Each step in the sequence is noted within a diagram shape.
+Steps are linked by connecting lines and directional arrows.
+This allows anyone to view the flowchart and logically follow the process from beginning to end.
+
+KEY ELEMENTS OF A FLOWCHART
+★ Oval: indicates the start or end of a program or process.
+★ Rectangle: represents a process or operation, where a specific action or command is executed.
+★ Diamond: used for decision-making, typically containing a yes/no question or true/false test.
+★ Parallelogram: indicates input or output operations, such as reading data or printing results.
+★ Arrow: shows the flow of the process or the sequence in which operations are executed.
+★ Small circle or ellipse: represents a connector, indicating the flowchart's continuation on another page or a junction in flowcharts.
+EASIER: Oval is start or end, rectangle is do something, diamond is decide, parallelogram is input or output, arrow is direction, small circle is connector.
+
+ADVANTAGES OF FLOWCHARTS
+Visual clarity: flowcharts make complex processes and algorithms easier to understand through visualization.
+Effective analysis: problem solving and analysis become more efficient.
+Documentation: flowcharts are a good form of documentation, a visual archive of various processes.
+Improved communication: flowcharts help discuss and convey ideas to team members or stakeholders.
+
+LIMITATIONS OF FLOWCHARTS
+Complexity: for very complex algorithms, flowcharts can become large and unwieldy.
+Language specific: flowcharts are high-level diagrams, and the specifics of a programming language needed for actual coding might not be captured.
+Updates: if the algorithm changes the flowchart must be updated, which can be time-consuming for intricate diagrams.
+
+WORKED EXAMPLE FLOWCHART TO GO TO THE UNIVERSITY OF THE CORDILLERAS
+Flowchart sequence: Start oval, then rectangles Wake up on Time, Get out of bed, Go to the kitchen, then the diamond Is there food?
+⚙ Food decision: No leads to Cook breakfast and then Eat breakfast, and Yes leads straight to Eat breakfast.
+After Eat breakfast the rectangles are Brush your teeth, Take a shower, Dress properly, Go out of the house, then the diamond Do you own a private car?
+⚙ Car decision: without a car the path goes through Use public transportation and then Proceed to UC, with a car it goes directly to Proceed to UC, and then the End oval.
