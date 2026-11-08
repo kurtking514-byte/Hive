@@ -2,6 +2,8 @@
 
 A study app for UC CITCS. Every course (BSIT, BSCS, BSIS) has its own space, and everyone feeds the same hive.
 
+**Open it at [tinyurl.com/hive-kk](https://tinyurl.com/hive-kk)**
+
 | Hive part | In the app |
 |---|---|
 | Hive | The whole app, for all of CITCS |
@@ -61,7 +63,7 @@ Also check the `courses`, `subjects` and `teachers` lists in `config.js`. Mark e
 ### 3. Put it online (GitHub Pages, free)
 1. Push these files to <https://github.com/kurtking514-byte/Hive>.
 2. Go to **Settings → Pages**. Set **Source** to *Deploy from a branch*, choose `main` / root, and click **Save**.
-3. After a minute it's live at `https://kurtking514-byte.github.io/Hive/` (capital H, the link is case-sensitive). Make a short link (tinyurl) for the Discord server.
+3. After a minute it's live at `https://kurtking514-byte.github.io/Hive/` (capital H, the link is case-sensitive). The short link for the Discord server is <https://tinyurl.com/hive-kk>.
 
 ### 4. Set the upload code
 Open `.../admin.html` and sign in. Under **Upload code**, choose a code (default is `CITCS`; students can type it in any capitals). Post it in the Discord server together with the link.
@@ -98,7 +100,7 @@ Each lesson needs three things in `reviewer/`.
 The reviewer opens on the **Current exam** you set on the admin page. Older exams stay one tab away.
 
 ## Updating the site later
-After changing any file, raise the number in `sw.js` (for example `hive-v25` → `hive-v26`) so phones pick up the new version.
+After changing any file, raise the number in `sw.js` (for example `hive-v26` → `hive-v27`) so phones pick up the new version.
 
 ## Test locally
 ```bash
