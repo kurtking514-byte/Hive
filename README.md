@@ -1,8 +1,14 @@
+
+
+
+
 # Hive
 
 A study app for UC CITCS. Every course (BSIT, BSCS, BSIS) has its own space, and everyone feeds the same hive.
 
 **Open it at [tinyurl.com/hive-kk](https://tinyurl.com/hive-kk)**
+
+https://github.com/user-attachments/assets/a62b0b91-19cf-477c-88de-56adb439ef37
 
 | Hive part | In the app |
 |---|---|
