@@ -1,7 +1,3 @@
-
-
-
-
 # Hive
 
 A study app for UC CITCS. Every course (BSIT, BSCS, BSIS) has its own space, and everyone feeds the same hive.
@@ -24,6 +20,11 @@ Hive has two sides. The first time someone opens it, it asks **Review** or **Upl
 - **Review:** pick a course from the honeycomb button, pick an exam tab (*Midterms*, *Finals*…), then tap a subject in the hive. Each subject has lessons with a **Notes** tab and a **Quiz** tab. Best quiz scores are remembered on the phone, and every reviewer is saved for offline use after the first visit.
 - **Upload:** students send lecture slides, modules and handouts, and you turn them into notes and quizzes.
 
+It also works like a phone app:
+
+- **Get app.** The yellow **Get app** button at the top adds Hive to the home screen. On Android it opens Chrome's install prompt, or shows the steps (⋮ → *Add to Home screen*). On iPhone it shows the Safari steps (Share → *Add to Home Screen*). Inside Discord or Messenger it first says to open the page in Safari or Chrome, since those built-in browsers can't install apps. The button hides once Hive is installed.
+- **Update.** When you push a new version, a bar appears at the bottom: *A new version of Hive is ready* with an **Update** button. Installed apps check for a new version every time they're opened again.
+
 How the upload side works:
 
 - **No student accounts.** Students type a shared **upload code** that you post in the Discord server.
@@ -36,11 +37,13 @@ How the upload side works:
 | `index.html` | The app shell: the Review / Upload choice, the reviewer and the upload page |
 | `reviewer.js` | The reviewer: hive of subjects, course picker, exam tabs, notes and quiz |
 | `reviewer/` | The reviewer content: `lessons.json`, `notes/*.txt`, `quiz/*.json` (see *Adding reviewers* below) |
-| `app.js` | The upload page (works offline, can be installed like an app) |
+| `app.js` | The upload page (works offline) |
+| `pwa.js` | The **Get app** button and its steps, and the **Update** bar |
 | `admin.html`, `admin.js` | Your page: review, open/download, approve/reject, see which subjects need files, change the code |
 | `config.js` | **The only file you edit**: Supabase keys, courses, subjects, teachers |
 | `supabase/setup.sql` | Database, storage and security rules (run once) |
-| `sw.js`, `manifest.webmanifest`, `icon.svg` | Offline support and app icon |
+| `sw.js`, `manifest.webmanifest` | Offline support, and the app's name and icons for the home screen |
+| `icon.svg`, `icon-*.png`, `apple-touch-icon.png` | App icons (the PNGs are for home screens, iPhone needs `apple-touch-icon.png`) |
 
 ## Setup (about 15 minutes, free)
 
@@ -106,7 +109,7 @@ Each lesson needs three things in `reviewer/`.
 The reviewer opens on the **Current exam** you set on the admin page. Older exams stay one tab away.
 
 ## Updating the site later
-After changing any file, raise the number in `sw.js` (for example `hive-v27` → `hive-v28`) so phones pick up the new version.
+After changing any file, raise the number in `sw.js` (for example `hive-v27` → `hive-v28`) so phones pick up the new version. Students then see the **Update** bar the next time they open Hive.
 
 ## Test locally
 ```bash
