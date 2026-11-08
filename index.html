@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#17130C">
 <link rel="manifest" href="./manifest.webmanifest">
 <link rel="icon" href="./icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="./icon.svg">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Hive">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,6 +25,7 @@
     </div>
     <div class="top-r">
       <span id="net" class="pill on" role="status">Online</span>
+      <button type="button" id="installBtn" class="mode-btn install-btn hidden" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M12 7v7"/><path d="m9 11.5 3 3 3-3"/><path d="M10.5 18.5h3"/></svg><span>Get app</span></button>
       <a id="switchMode" class="mode-btn hidden" href="#/upload"></a>
     </div>
   </header>
@@ -135,6 +136,15 @@
   </section>
 </main>
 
+<dialog id="installSheet" class="sheet" aria-labelledby="installTitle">
+  <h2 id="installTitle" class="doodle">Add Hive to your home screen</h2>
+  <p id="installFirst" class="sheet-first hidden"></p>
+  <ol id="installSteps" class="steps"></ol>
+  <p class="hint">It's free and opens like a normal app. Reviewers you've opened once work without signal.</p>
+  <button type="button" class="primary" id="installOk">Got it</button>
+</dialog>
+<div id="updateBar" class="update-bar hidden" role="status"><span>A new version of Hive is ready.</span><button type="button" id="updateBtn">Update</button></div>
+
 <script src="./config.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/tus-js-client@4.1.0/dist/tus.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fflate@0.8.2/umd/index.js"></script>
@@ -142,5 +152,6 @@
 <script src="./autofill.js"></script>
 <script src="./app.js"></script>
 <script src="./reviewer.js"></script>
+<script src="./pwa.js"></script>
 </body>
 </html>

@@ -1,15 +1,15 @@
 /* Keeps the upload page working offline. Bump CACHE when you change files. */
-const CACHE = 'hive-v26';
+const CACHE = 'hive-v27';
 const TUS = 'https://cdn.jsdelivr.net/npm/tus-js-client@4.1.0/dist/tus.min.js';
 const FFLATE = 'https://cdn.jsdelivr.net/npm/fflate@0.8.2/umd/index.js';
 const LIBS = [TUS, FFLATE];
 /* Fonts and pinned libraries from these hosts are cached the first time they load. */
 const CDN = ['https://cdn.jsdelivr.net', 'https://fonts.googleapis.com', 'https://fonts.gstatic.com'];
-const CORE = ['./', './index.html', './styles.css', './app.js', './config.js', './manifest.webmanifest', './icon.svg', './doodle.js', './autofill.js', './reviewer.js', './reviewer/lessons.json'];
+const CORE = ['./', './index.html', './styles.css', './app.js', './config.js', './manifest.webmanifest', './icon.svg', './doodle.js', './autofill.js', './reviewer.js', './pwa.js', './reviewer/lessons.json', './icon-192.png', './apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(async c => {
-    await c.addAll(CORE);
+    await c.addAll(CORE.map(u => new Request(u, { cache: 'reload' })));
     await Promise.all(LIBS.map(u => c.add(new Request(u, { mode: 'cors' })).catch(() => {})));
   }).then(() => self.skipWaiting()));
 });
