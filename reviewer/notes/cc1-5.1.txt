@@ -1,0 +1,187 @@
+5.0-5.1 Introduction and Understanding a Project
+Projects vs operations, project features, organizational structures, project managers, and PMOs
+
+MODULE OVERVIEW AND OBJECTIVES
+Project management is a vital skill at work today. Successful project execution often decides whether an organization succeeds.
+From technology to creative fields, project management gives a structured way to reach specific goals within defined limits (constraints).
+This module covers project management principles, methodologies, and practices for planning, executing, and delivering projects.
+You will learn the core concepts, the project life cycle, and various project management methodologies, so you can manage both personal and professional projects.
+⚙ Objective 1: Define what makes something a project and identify the key elements of project management.
+⚙ Objective 2: Explain the stages of the project life cycle and why they matter for successful projects.
+⚙ Objective 3: Compare project management methodologies and choose the right method for a specific type of project.
+
+KEY TERMS
+★ Project: a temporary endeavor with a unique purpose. It is carried out to reach specific goals and produce unique outcomes, often something new, improved, or customized.
+★ Endeavor: a serious effort to do something.
+★ Operations: regular work that is ongoing and repetitive, aimed at keeping the organization stable.
+★ Business as usual (BAU): the video's name for operations, meaning all the everyday, ongoing, normal activities that keep an organization running.
+★ Constraints: limits a project must work within, such as resources (time, money, materials), scope, and quality standards.
+★ Scope: what needs to be achieved, meaning what is and is not included in the project.
+★ Deliverable: the final product, service, or result a project hands over.
+★ Stakeholders: the people and groups who are affected by or interested in the project.
+★ Progressive elaboration: refining a project's original goals and plans step by step as new information appears.
+EASIER: A project is like planning a wedding: it has a start date, an end date, and one unique result. Operations are like cooking dinner every night: the same job, again and again, with no end.
+
+CONCEPT OF A PROJECT
+Projects are at the heart of business and technology innovation, such as developing a new product, launching a marketing campaign, or setting up a government service.
+★ Projects are temporary efforts to create unique products, services, or results.
+They exist across industries, from software development to building infrastructure, and help organizations adapt, grow, and succeed.
+
+KEY CHARACTERISTICS OF PROJECTS
+⚙ Temporary: projects are not permanent. They have a defined beginning and end.
+⚙ Unique output: each project gives a unique result, whether a product, service, or process.
+⚙ Goal-oriented: projects are driven by specific objectives, which set the project's direction and purpose.
+Difference: operations are repetitive and aim to keep the organization stable. Projects are aimed at change and innovation.
+Difference: operations are ongoing. Projects are finite, with a clear start and end.
+
+FEATURES OF A PROJECT
+Every project, in any industry or size, has these features. They explain why projects need special management approaches.
+⚙ Temporary: projects are time-bound, with a specific start and end. This time limit defines what can be achieved (the scope).
+⚙ Unique output: projects create unique outcomes, and no two projects are identical. Even with similar processes, each project is adapted to its own goals.
+⚙ Progressive elaboration: as the project moves forward, new information may come up, refining the original goals and plans.
+⚙ Constraints: projects face limits such as resources (time, money, materials), scope (what needs to be achieved), and quality standards.
+⚙ Resource and quality requirements: projects need careful use of resources so the final deliverable meets specific quality expectations.
+EASIER: Progressive elaboration is like zooming in on a map. At the start you see the general route; as you travel, you see more details and adjust.
+
+WHAT A PROJECT IS NOT (FROM THE VIDEO)
+★ Business as usual is not a project. Examples: answering the phone, making coffee, replying to emails, writing reports for your boss, and regular weekly meetings.
+In a company, people work in functional units (or, in government, departments), and their work has a narrow focus. Sales staff work to increase sales; IT staff maintain the IT systems.
+Examples of projects from the video: developing a new smartphone, designing and running a marketing campaign, improving business-as-usual processes, a wedding, and moving into a new house.
+
+PROJECT CHARACTERISTICS FROM THE VIDEO
+⚙ Temporary: every project has a start date and an end date. Even late projects stop at some point. If the work never stops, it is business as usual, not a project.
+⚙ Brings change: projects create outputs that business as usual uses to change. Example outputs: a new product (which may need new support and sales processes), or a more efficient process, such as moving from paper to an automated system.
+⚙ Unique: even similar projects always produce different results.
+⚙ Cross-functional: projects usually involve several departments, and in large organizations they are often global. Rolling out a new email system worldwide is far more complex than in one small department in one country.
+⚙ Risky: risk means uncertainty, the things that might go wrong. Example: what if nobody buys the new phone? Projects are always more risky than business as usual because you often do things for the first time.
+
+HOW TO TELL A PROJECT FROM OPERATIONS
+⚙ Step 1: Ask whether the work has a defined start and end. No end means it is operations (business as usual).
+⚙ Step 2: Ask whether it produces a unique result. Repeating the same result means operations.
+⚙ Step 3: Ask whether it is driven by a specific goal that brings change. Keeping things running as they are means operations.
+⚙ Step 4: If the answers are yes, yes, and yes, it is a project.
+
+EXAMPLE: CLASSIFY FOUR ACTIVITIES
+Added example:
+⚙ Replying to customer emails every day: no end, same result each day. Operations.
+⚙ Building a new mobile banking app by December: has an end, unique result, specific goal. Project.
+⚙ Running payroll every month: repeats forever. Operations.
+⚙ Moving the office to a new building: has an end, unique result, brings change. Project.
+
+EXAMPLES OF PRACTICAL PROJECTS (KOREA)
+★ E-government project: its purpose is to establish public informatization (using IT in public services) through a framework that delivers e-government services to the public efficiently.
+⚙ Application: 756 public and private informatization projects in total, including the Korean Statistical Information Service (KOSIS) and the Corporate Competitiveness Support System (as of March 2018).
+⚙ Practical examples: customer-specific administrative information sharing system, resident service integrated system, urban railway system, 911 reporting service expansion, and a health insurance fee portal.
+★ Smart factory project: its purpose is to establish factory automation and digitalization using IT systems such as IoT, MES, PLM, and SCM, to make manufacturers more competitive.
+⚙ Application: 5,003 smart factories were built by the end of 2017, with a goal of 20,000 by 2022.
+⚙ Practical examples: a customized MES system; MES/POP for inventory, process management, and lowering defect rates; a customized ERP/web control system for special manufacturing processes; and real-time facility monitoring.
+★ Next Generation Finance project: its purpose is to build an ideal integrated system of business and IT that reflects and supports the enterprise-wide strategies of financial institutions.
+⚙ Application: the system has been built, or is being built, in most commercial banks and local banks in Korea since 2000.
+⚙ Practical examples: next-generation systems of Shinhan Bank, Hana Bank, Daegu Bank, JB Jeonbuk Bank, and Kyungnam Bank; to be developed by KB Kookmin Bank, Bank of Korea, Korea Postbank, Hanwha Life Insurance, and others.
+Added example, what the abbreviations mean:
+IoT (Internet of Things): everyday devices and machines connected to the internet so they can send data.
+MES (Manufacturing Execution System): software that tracks and controls work on the factory floor.
+PLM (Product Lifecycle Management): software that manages a product's data from design to retirement.
+SCM (Supply Chain Management): managing the flow of materials and goods from suppliers to customers.
+ERP (Enterprise Resource Planning): one system that connects a company's main business processes, like finance, inventory, and HR.
+POP (Point of Production): collecting data directly where products are made.
+
+EXAMPLE: SMART FACTORY TARGET
+Added example:
+⚙ Still needed after 2017: 20,000 - 5,003 = 14,997 smart factories.
+⚙ Years from 2018 to 2022 inclusive: 5 years.
+⚙ Average needed per year: 14,997 / 5 = about 2,999, roughly 3,000 a year.
+⚙ Check: 5,003 + 5 x 2,999.4 = 20,000.
+
+PROJECT ORGANIZATIONAL STRUCTURES
+Projects are run inside organizational structures that differ in how much authority the project manager has and how flexibly resources can be assigned.
+Choosing the right structure is critical: it decides how efficiently resources are used and how well the project is controlled.
+★ The three primary types are the functional organization, the matrix organization, and the projectized organization.
+
+FUNCTIONAL ORGANIZATION
+★ Structure: departments are organized by functions (for example Marketing, IT, Finance).
+★ Project role: project work is given to functional departments, and project managers often have limited authority.
+⚙ Advantage: high efficiency within specialized departments.
+⚙ Disadvantages: limited collaboration across departments and slower decision-making.
+
+MATRIX ORGANIZATION
+★ Structure: combines functional and projectized structures. Team members report to both a functional manager and a project manager.
+⚙ Weak matrix: low authority for project managers.
+⚙ Balanced matrix: shared authority.
+⚙ Strong matrix: high authority for project managers.
+⚙ Advantage: encourages resource sharing and collaboration.
+⚙ Disadvantage: dual reporting (two bosses) can create conflicts.
+EASIER: In a matrix, you have two bosses: your department head and the project manager. Weak, balanced, and strong describe how much power the project manager has compared with the department head.
+
+PROJECTIZED ORGANIZATION
+★ Structure: the whole organization is built around projects. Project managers have full authority over resources and decisions.
+⚙ Advantages: strong focus on project goals and fast decision-making.
+⚙ Disadvantage: limited stability for employees once the project ends.
+★ Project manager authority from lowest to highest: functional, weak matrix, balanced matrix, strong matrix, projectized.
+★ The right structure depends on the organization's goals, the complexity of the project, and resource availability.
+
+EXAMPLE: IDENTIFY THE STRUCTURE
+Added example:
+⚙ A programmer reports to the IT head and also to a project manager, and both share decisions equally. Two bosses means matrix; shared authority means balanced matrix.
+⚙ A company's teams are each formed for one client project and disband when it ends, and the project manager controls the budget. This is projectized; its risk is that staff have less job stability after the project.
+⚙ A project is handed to the Finance department, and the project manager must ask the Finance head for every resource. This is functional, with limited project manager authority.
+
+RESPONSIBILITIES AND ROLES OF A PROJECT MANAGER
+★ Project manager: the person responsible for making sure project goals are met within the set constraints.
+The project manager drives the project team and plays a key role in aligning resources, managing risks, and communicating with stakeholders.
+★ Five core responsibilities: scope, schedule, cost, risk, and quality management.
+⚙ Scope management: define and control what is included in the project.
+⚙ Schedule management: set up and manage the project timeline.
+⚙ Cost management: oversee the project budget and control expenses.
+⚙ Risk management: identify, assess, and reduce (mitigate) possible risks.
+⚙ Quality management: make sure deliverables meet the required standards.
+★ Four key skills: problem-solving, communication, negotiation, and leadership.
+⚙ Problem-solving: deal with project challenges effectively.
+⚙ Communication: keep communication clear with the team and stakeholders.
+⚙ Negotiation: resolve conflicts and secure project resources.
+⚙ Leadership: inspire and guide the team toward success.
+Project managers balance the project's constraints while keeping stakeholders informed and the project on track.
+Difference: schedule management is about TIME (the timeline). Cost management is about MONEY (the budget). Scope management is about WHAT is included.
+
+PROJECT MANAGEMENT OFFICE (PMO)
+★ PMO (Project Management Office): an organizational unit that centralizes and standardizes the project management process.
+★ The PMO's role is to provide governance, set best practices, and make sure projects match strategic objectives.
+★ Governance: setting the rules and standards for how projects are run and checked.
+Types of PMO, from least to most authority:
+⚙ Supportive PMO: provides templates, training, and best practices.
+⚙ Controlling PMO: enforces compliance with standards and methodologies.
+⚙ Directive PMO: directly manages projects, with high authority over project teams.
+Roles of a PMO:
+⚙ Governance: establishes project management standards.
+⚙ Resource allocation: manages resources across multiple projects.
+⚙ Risk management: provides risk identification and mitigation support.
+⚙ Performance tracking: monitors project progress and alignment with strategic goals.
+PMOs make sure projects support organizational goals and resources are used well across the portfolio (the whole set) of projects.
+EASIER: Supportive PMO is a coach (gives tools). Controlling PMO is a referee (checks rules). Directive PMO is the boss (runs projects).
+Difference: a project manager runs ONE project. A PMO oversees standards and resources across MANY projects.
+
+COMMON MISTAKES
+Calling routine work a project. Daily emails or weekly meetings have no end date, so they are operations.
+Mixing up the matrix types. Weak means LOW project manager authority, strong means HIGH.
+Mixing up PMO types. Supportive gives tools, controlling enforces rules, directive manages projects.
+Saying functional organizations give project managers full authority. That is projectized.
+Forgetting that the projectized disadvantage is job stability after the project ends.
+
+EXAM TIPS
+Three key characteristics: temporary, unique output, goal-oriented. Five features: temporary, unique output, progressive elaboration, constraints, resource and quality requirements.
+Three structures: functional, matrix (weak, balanced, strong), projectized.
+Five PM responsibilities: scope, schedule, cost, risk, quality. Four skills: problem-solving, communication, negotiation, leadership.
+Three PMO types: supportive, controlling, directive. Four PMO roles: governance, resource allocation, risk management, performance tracking.
+Korea examples: e-government (756 projects, KOSIS), smart factory (5,003 by 2017, goal 20,000 by 2022), next generation finance (banks since 2000).
+
+SELF-TEST
+Q: What is a project?
+★ A temporary endeavor with a unique purpose.
+Q: What is the refining of goals and plans as new information appears called?
+★ Progressive elaboration.
+Q: In which structure do team members report to two managers?
+★ Matrix organization.
+Q: Which PMO type directly manages projects?
+★ Directive PMO.
+Q: Which project manager responsibility controls the budget?
+★ Cost management.

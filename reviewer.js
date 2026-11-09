@@ -216,6 +216,15 @@ $('#examTabs').addEventListener('click', e => {
 });
 
 /* ---------------- subject: lessons + Notes | Quiz ---------------- */
+/* A plain mouse wheel only scrolls up/down, so over the lesson chips it scrolls them sideways instead. */
+$('#lessonRow').addEventListener('wheel', e => {
+  const row = e.currentTarget;
+  if (Math.abs(e.deltaX) > Math.abs(e.deltaY) || row.scrollWidth <= row.clientWidth) return;
+  const max = row.scrollWidth - row.clientWidth;
+  if ((e.deltaY < 0 && row.scrollLeft <= 0) || (e.deltaY > 0 && row.scrollLeft >= max)) return; // at an end: let the page scroll
+  e.preventDefault();
+  row.scrollLeft += e.deltaY;
+}, { passive: false });
 let cur = { subj: '', lesson: '', tab: 'notes' };
 async function renderSubject(subj, lessonId, tab) {
   const all = (await lessons()).filter(l => l.subject === subj), s = subjectInfo(subj);

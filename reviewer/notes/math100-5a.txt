@@ -1,0 +1,331 @@
+5A Summary Statistics
+Measures of central tendency, measures of relative standing, and measures of variability for ungrouped data
+
+KEY TERMS
+★ Measure of central tendency: a single value that is typical or representative of all the values in a group. It is the value the scores tend to cluster around.
+★ Mean (x-bar): the most popular measure of central tendency, usually called the average. It is the sum of the values divided by the number of values.
+★ Weighted mean: an average that gives more importance (weight) to some values than others.
+★ Median (Mdn): the point in a distribution with 50 percent of the scores on each side of it. It is the midpoint.
+★ Mode (Mo): the score with the highest frequency, meaning the value that occurs most often.
+★ Measures of relative standing (point measures): values that divide a distribution into a number of equal parts.
+★ Quartile: divides a distribution into four equal parts.
+★ Decile: divides a distribution into ten equal parts. Decile means one-tenth.
+★ Percentile: divides a distribution into 100 equal parts.
+★ Percentile rank: the percent of values that fall below a given value.
+★ Measures of variability (dispersion): quantities that measure the spread of the observations in a data set.
+★ Range: the difference between the highest value and the lowest value.
+★ Interquartile range (IQR): the range of the middle 50 percent of the data, Q3 minus Q1.
+★ Variance (sigma^2 for a population, s^2 for a sample): the mean of the squared deviations of the observations from their mean.
+★ Standard deviation (sigma for a population, s for a sample): the positive square root of the variance.
+★ Coefficient of variation (CV): the standard deviation divided by the mean, written as a percent.
+★ Outlier: a value that is exceptionally high or low compared with the rest of the data.
+EASIER: Central tendency asks "what is a typical value?" Relative standing asks "where does this value rank?" Variability asks "how spread out are the values?"
+
+SYMBOLS USED
+★ x-bar: the sample mean.
+★ mu: the population mean.
+★ n: the number of values in a sample. N: the number of values in a population.
+★ sum(x): the total of all the values. sum(x^2): the total of each value squared.
+★ sigma: population standard deviation. s: sample standard deviation.
+Difference: sum(x^2) squares each value first, then adds. (sum(x))^2 adds first, then squares the total. They are not equal.
+
+WHY A SINGLE TYPICAL VALUE IS USED
+A factory manager asking for the daily number of garments over three months does not want about 90 different figures.
+The foreman can give the average production per day instead, one figure that characterizes general production even though production differs from day to day.
+
+USES AND PROPERTIES OF THE MEAN
+⚙ The mean is computed using all the values of the data.
+⚙ The mean is used to compute other statistics, such as the variance.
+⚙ The mean of a data set is unique (there is only one) and is not necessarily one of the data values.
+⚙ The mean is affected by extremely high or low values, so it may not be the right average in those situations.
+⚙ The mean is used for interval and ratio data, so it is also called an interval statistic.
+
+USES AND PROPERTIES OF THE MEDIAN
+⚙ The median is used to find the center or middle value of a data set.
+⚙ The median is used to decide whether a value falls in the upper half or lower half of the distribution.
+⚙ The median is affected less than the mean by extremely high or low values.
+⚙ The median is used for ordinal (ranked) data, so it is also called an ordinal statistic.
+
+USES AND PROPERTIES OF THE MODE
+⚙ The mode is used when the most typical case is wanted.
+⚙ The mode is the easiest average to compute.
+⚙ The mode can be used for nominal data such as gender, political affiliation, or religious preference.
+Difference: mean is for interval and ratio data, median is for ordinal data, mode works even for nominal data.
+EASIER: If one billionaire joins a group, the mean income jumps a lot, the median barely moves, and the mode does not change.
+
+COMPUTING THE MEAN FOR UNGROUPED DATA
+★ Sample mean: x-bar = sum(x) / n
+★ Population mean: mu = sum(x) / N
+★ Mean from a frequency table: mu = sum(fx) / N, where f is how many times each value x appears.
+
+EXAMPLE: MEAN FROM A FREQUENCY TABLE
+A survey of 100 families in a Makati village asked how many cars they own.
+⚙ 20 families own 1 car: fx = 20 x 1 = 20
+⚙ 40 families own 2 cars: fx = 40 x 2 = 80
+⚙ 25 families own 3 cars: fx = 25 x 3 = 75
+⚙ 15 families own 4 cars: fx = 15 x 4 = 60
+⚙ N = 20 + 40 + 25 + 15 = 100 and sum(fx) = 20 + 80 + 75 + 60 = 235
+⚙ mu = 235 / 100 = 2.35
+★ The mean number of cars per family is 2.35.
+
+EXAMPLE: MEAN OF TEN SCORES
+Scores of 10 students in Math Ed 503: 10, 5, 4, 3, 11, 7, 9, 12, 8, 6.
+⚙ sum(x) = 10 + 5 + 4 + 3 + 11 + 7 + 9 + 12 + 8 + 6 = 75
+⚙ x-bar = 75 / 10 = 7.5
+★ The mean score is 7.5.
+
+EXAMPLE: FINDING A MISSING SCORE FOR A TARGET MEAN
+What must the 11th student score so that the mean of all 11 scores is 8?
+⚙ Let s be the 11th score. Then 8 = (75 + s) / 11
+⚙ Multiply both sides by 11: 88 = 75 + s
+⚙ s = 88 - 75 = 13
+⚙ Check: (75 + 13) / 11 = 88 / 11 = 8
+★ The 11th student must score 13.
+
+WEIGHTED MEAN
+The weighted mean is used when a typical value is needed but some values should count more than others.
+Each item gets a number called a weight in proportion to its importance.
+★ Weighted mean: x-bar(w) = sum(w x) / sum(w)
+⚙ x is the value of each item, w is its weight, sum(w x) is the sum of each value times its weight, and sum(w) is the sum of the weights.
+
+EXAMPLE: WEIGHTED MEAN OF SUBJECT MARKS
+A student got 40, 50, 60, 80, and 45 in Math, Statistics, Physics, Chemistry, and Biology, with weights 5, 2, 4, 3, and 1.
+⚙ Math: 5 x 40 = 200
+⚙ Statistics: 2 x 50 = 100
+⚙ Physics: 4 x 60 = 240
+⚙ Chemistry: 3 x 80 = 240
+⚙ Biology: 1 x 45 = 45
+⚙ sum(w x) = 200 + 100 + 240 + 240 + 45 = 825 and sum(w) = 5 + 2 + 4 + 3 + 1 = 15
+⚙ x-bar(w) = 825 / 15 = 55
+★ The weighted mean is 55 marks per subject.
+
+EXAMPLE: COMBINED AVERAGE OF TWO GROUPS
+In a class of 25, 10 students averaged 80 and the other 15 averaged 60. What is the class average?
+⚙ Step 1: multiply each average by its number of students and add: 80 x 10 + 60 x 15 = 800 + 900 = 1700
+⚙ Step 2: total number of students = 25
+⚙ Step 3: weighted average = 1700 / 25 = 68
+★ The class average is 68.
+Common mistake: averaging 80 and 60 directly gives 70, which ignores that more students scored 60.
+
+COMPUTING THE MEDIAN FOR UNGROUPED DATA
+⚙ Step 1: arrange the values in ascending (or descending) order.
+⚙ Step 2: find the position of the median: (N + 1) / 2
+⚙ Odd number of values: the median is the middle value.
+⚙ Even number of values: the median is the average of the two middle values.
+
+EXAMPLE: MEDIAN OF AN ODD SET
+Seven customers spent (in dollars): 15, 18, 10, 4, 27, 5, 32.
+⚙ Sorted: 4, 5, 10, 15, 18, 27, 32
+⚙ Position: (7 + 1) / 2 = 4th value
+★ The median is $15.
+
+EXAMPLE: MEDIAN OF AN EVEN SET
+An eighth customer who spent $25 is added.
+⚙ Sorted: 4, 5, 10, 15, 18, 25, 27, 32
+⚙ Position: (8 + 1) / 2 = 4.5, so average the 4th and 5th values
+⚙ Median = (15 + 18) / 2 = 16.5
+★ The median is $16.50.
+⚙ Set 1, 3, 6, 6, 6, 8, 10 has 7 values; the 4th value is 6, so the median is 6.
+⚙ Set 12, 14, 15, 16, 16, 16, 17, 18, 20, 21 has 10 values; the 5th and 6th values are 16 and 16, so the median is (16 + 16) / 2 = 16.
+
+COMPUTING THE MODE FOR UNGROUPED DATA
+For ungrouped data the mode is found by inspection: count which value appears most often.
+⚙ A distribution can have more than one mode.
+⚙ If all values appear the same number of times, there is no mode.
+★ Bimodal: a distribution with two modes.
+⚙ Children per family in 10 families: 3, 5, 6, 5, 5, 4, 5, 5, 1, 5. The value 5 appears 6 times, so the mode is 5.
+⚙ Set 23, 27, 20, 36, 34, 31: every value appears once, so there is no mode.
+⚙ Set 10, 11, 9, 9, 7, 9, 5: the value 9 appears 3 times, so the mode is 9.
+⚙ A set of five 3s, ten 2s, seven 5s, and ten 4s: 2 and 4 both appear ten times, so the modes are 2 and 4 (bimodal).
+
+MEASURES OF RELATIVE STANDING
+★ Quartiles Q1, Q2, Q3 cut the data into four equal parts.
+⚙ Q1: one-fourth of the group lies below it and three-fourths lie above it.
+⚙ Q2: equal to the median; half lies below and half lies above.
+⚙ Q3: three-fourths of the group lies below it and one-fourth lies above it.
+★ Deciles D1 to D9 cut the data into ten equal parts. They are used to divide a group into ten subgroups by some trait such as ability, but deciles are seldom used in statistical work.
+★ Percentiles P1 to P99 cut the data into 100 equal parts. P50 is the median.
+⚙ Percentiles show standing compared with others. If a score of 55 equals P65, that person did better than 65 percent of test takers, and 35 percent did better.
+⚙ Percentiles are used as a ranking or comparison standard.
+⚙ Percentiles are used to transmute (convert) raw scores into school marks.
+The slide also shows a percentile formula for grouped data, Pk = L + i x ((k n / 100 - cf) / f). This module computes only ungrouped data.
+Difference: Q2 = D5 = P50 = median. They are four names for the same point.
+
+POSITION FORMULAS FOR UNGROUPED DATA
+⚙ Step 1: arrange the data in ascending order.
+⚙ Step 2: find the position.
+★ Quartile position: k(n + 1) / 4, where k = 1, 2, 3
+★ Decile position: k(n + 1) / 10, where k = 1 to 9
+★ Percentile position: k(n + 1) / 100, where k = 1 to 99
+⚙ Step 3: if the position is a whole number, take that value.
+⚙ Step 4: if the position has a decimal, interpolate: value = (value at whole part) + (decimal part) x (next value - value at whole part).
+EASIER: A position of 2.6 means "start at the 2nd value and go 60 percent of the way to the 3rd value."
+
+EXAMPLE: QUARTILES, DECILES, AND PERCENTILES OF AN ODD SET
+Data: 3, 5, 2, 7, 6, 4, 9. Sorted: 2, 3, 4, 5, 6, 7, 9. Here n = 7, so n + 1 = 8.
+⚙ Q1 position = 1(8) / 4 = 2, so Q1 = 2nd value = 3. 25 percent of the data are below 3.
+⚙ Q3 position = 3(8) / 4 = 6, so Q3 = 6th value = 7. 75 percent of the data are below 7.
+⚙ D2 position = 2(8) / 10 = 1.6, so D2 = 2 + 0.6(3 - 2) = 2.6. 20 percent of the data are below 2.6.
+⚙ D7 position = 7(8) / 10 = 5.6, so D7 = 6 + 0.6(7 - 6) = 6.6. 70 percent of the data are below 6.6.
+⚙ P32 position = 32(8) / 100 = 2.56, so P32 = 3 + 0.56(4 - 3) = 3.56. 32 percent of the data are below 3.56.
+⚙ P85 position = 85(8) / 100 = 6.8, so P85 = 7 + 0.8(9 - 7) = 8.6. 85 percent of the data are below 8.6.
+
+EXAMPLE: QUARTILES, DECILES, AND PERCENTILES OF AN EVEN SET
+Data: 3, 5, 2, 7, 6, 4, 9, 1. Sorted: 1, 2, 3, 4, 5, 6, 7, 9. Here n = 8, so n + 1 = 9.
+⚙ Q1 position = 1(9) / 4 = 2.25, so Q1 = 2 + 0.25(3 - 2) = 2.25.
+⚙ Q3 position = 3(9) / 4 = 6.75, so Q3 = 6 + 0.75(7 - 6) = 6.75.
+⚙ D2 position = 2(9) / 10 = 1.8, so D2 = 1 + 0.8(2 - 1) = 1.8.
+⚙ D7 position = 7(9) / 10 = 6.3, so D7 = 6 + 0.3(7 - 6) = 6.3.
+⚙ P32 position = 32(9) / 100 = 2.88, so P32 = 2 + 0.88(3 - 2) = 2.88.
+⚙ P85 position = 85(9) / 100 = 7.65, so P85 = 7 + 0.65(9 - 7) = 8.3. 85 percent of the data are below 8.3.
+Note: the 7.65 in P85 is the position, not the value. The 7th value is 7 and the 8th is 9, so the value is 8.3.
+
+PERCENTILE RANK
+★ Percentile rank of x = ((number of values below x + 0.5) / total number of values) x 100%
+
+EXAMPLE: PERCENTILE RANK OF A SCORE
+Ten students took a 20-point test: 18, 15, 12, 6, 8, 2, 3, 5, 20, 10. Find the percentile rank of 12.
+⚙ Sorted: 2, 3, 5, 6, 8, 10, 12, 15, 18, 20
+⚙ Values below 12: 2, 3, 5, 6, 8, 10, which is 6 values
+⚙ Percentile rank = ((6 + 0.5) / 10) x 100% = 65%
+★ A score of 12 did better than 65 percent of the class.
+
+EXAMPLE: VALUE AT THE 75TH PERCENTILE
+Scores: 60, 55, 30, 80, 45, 57, 68, 81, 72, 37, 44, 32, 39, 41, 56.
+⚙ Sorted: 30, 32, 37, 39, 41, 44, 45, 55, 56, 57, 60, 68, 72, 80, 81 (n = 15)
+⚙ Position of P75 = 75(15 + 1) / 100 = 75(16) / 100 = 12
+⚙ The 12th value is 68.
+★ P75 = 68. A student who scored 68 did better than 75 percent of the class.
+Difference: percentile rank starts from a score and gives a percent. Finding a percentile starts from a percent and gives a score.
+
+MEASURES OF VARIABILITY
+Averages show a typical value, but the actual values differ from each other and from the average.
+How well the mean or median represents the data depends on how spread out the data are.
+A data set has high dispersion when it has values much higher and lower than the mean.
+Figure 1 example: in both semesters the mean and median tutorial group size is 5 students, but semester 2 group sizes (3 to 7) are more spread out than semester 1 (4 to 6).
+Dispersion can be measured with the range, the interquartile range, the variance, and the standard deviation.
+
+RANGE
+★ Range for ungrouped data: R = HV - LV (highest value minus lowest value).
+For grouped data, the range is the upper limit of the highest interval minus the lower limit of the lowest interval.
+⚙ The range is quick to find but gives only a rough measure of spread.
+⚙ The larger the range, the more dispersed the observations.
+⚙ The range uses only the lowest and highest values.
+⚙ The range is useful for showing the spread in a data set and comparing the spread of similar data sets.
+⚙ Figure 1: semester 1 range = 6 - 4 = 2. Semester 2 range = 7 - 3 = 4.
+
+EXAMPLE: COMPARING SPREAD WITH THE RANGE
+Table 1 shows marks of 14 students (A to N).
+⚙ Coursework: 27, 44, 39, 23, 41, 48, 37, 34, 40, 43, 30, 43, 29, 27
+⚙ Examination: 12, 47, 26, 25, 38, 45, 35, 35, 41, 39, 32, 25, 18, 30
+⚙ Coursework range = 48 - 23 = 25
+⚙ Examination range = 47 - 12 = 35
+★ The examination marks varied more than the coursework marks (35 is greater than 25).
+The slide reads the lowest coursework mark as 27 and the highest exam mark as 45, but the table shows 23 (student D) and 47 (student B). The conclusion is the same.
+
+OUTLIERS AND THE RANGE
+Since the range uses only the two extreme values, one outlier can make it misleading.
+⚙ If one student got 0 for coursework, the coursework range becomes 48 - 0 = 48, which does not describe the rest of the class.
+To reduce the effect of outliers, the interquartile range is often used instead.
+
+INTERQUARTILE RANGE
+★ IQR = Q3 - Q1
+⚙ The IQR measures the spread of the middle half (central 50 percent) of the data, so extreme values do not affect it.
+⚙ The IQR is based on and related to the median.
+⚙ The lower quartile lies halfway between the median and the lowest value. The upper quartile lies halfway between the median and the highest value.
+⚙ Like the range, the IQR uses only two values. The standard deviation is a more powerful measure because it uses every value.
+
+EXAMPLE: IQR OF 20 EXAM MARKS
+Marks in order: 43, 48, 50, 50, 52, 53, 56, 58, 59, 60, 62, 65, 66, 68, 70, 71, 74, 76, 78, 80.
+⚙ Median: halfway between the 10th and 11th values = (60 + 62) / 2 = 61
+⚙ Lower quartile: halfway between the 5th and 6th values = (52 + 53) / 2 = 52.5
+⚙ Upper quartile: halfway between the 15th and 16th values = (70 + 71) / 2 = 70.5
+⚙ IQR = 70.5 - 52.5 = 18
+⚙ Range = 80 - 43 = 37
+This example finds the quartiles as the middle of each half of the data. The k(n + 1) / 4 position formula would give slightly different quartiles (Q1 = 52.25, Q3 = 70.75), so use the method your teacher asks for.
+
+VARIANCE
+★ Population variance: sigma^2 = sum(x^2) / N - mu^2
+★ Sample variance: s^2 = sum((x - x-bar)^2) / (n - 1)
+⚙ The variance is always non-negative.
+⚙ It is easy to manipulate for further mathematical work.
+⚙ It uses all observations.
+⚙ Its unit is the square of the data's unit (for example, cm^2 if the data are in cm).
+Difference: population variance divides by N. Sample variance divides by n - 1.
+
+STANDARD DEVIATION
+★ Population SD: sigma = sqrt(sigma^2). Sample SD: s = sqrt(s^2).
+⚙ The standard deviation is never negative because it measures distance.
+⚙ The smallest possible SD is 0, which happens only when every value is the same.
+⚙ It is affected by outliers, because it is based on distance from the mean, and the mean is affected by outliers.
+⚙ It uses all observations and is easy to manipulate mathematically.
+⚙ It has the same unit as the original data.
+⚙ The more concentrated the data are around the mean, the smaller the SD.
+A small SD is a goal in manufacturing and quality control: a car part that must be 2 cm wide should vary very little, or many parts will not fit.
+A large SD is not always bad. Salaries of everyone from intern to CEO vary a lot; salaries of interns alone vary less. The second set is not better, just less variable.
+Difference: variance is in squared units. Standard deviation is in the same units as the data.
+
+COEFFICIENT OF VARIATION
+★ Population CV = (sigma / mu) x 100%. Sample CV = (s / x-bar) x 100%.
+⚙ The CV is unitless (it has no unit).
+⚙ It can compare the spread of two or more groups measured in the same or different units.
+EASIER: SD tells how spread out data are in their own units. CV tells how big that spread is compared with the mean, so you can compare heights in cm with weights in kg.
+
+EXAMPLE: FULL SPREAD ANALYSIS OF SIX SCORES
+Six students in Educ-502 scored 7, 5, 9, 7, 8, and 6.
+⚙ Mean: (7 + 5 + 9 + 7 + 8 + 6) / 6 = 42 / 6 = 7
+⚙ Range: 9 - 5 = 4
+⚙ Sorted: 5, 6, 7, 7, 8, 9. Lower half 5, 6, 7 has middle 6, so Q1 = 6. Upper half 7, 8, 9 has middle 8, so Q3 = 8.
+⚙ IQR = 8 - 6 = 2
+⚙ Squares: 49, 25, 81, 49, 64, 36, so sum(x^2) = 304
+⚙ Population variance: sigma^2 = 304 / 6 - 7^2 = 50.67 - 49 = 1.67
+⚙ Deviations from 7: 0, -2, 2, 0, 1, -1. Squared: 0, 4, 4, 0, 1, 1. Sum = 10
+⚙ Sample variance: s^2 = 10 / (6 - 1) = 10 / 5 = 2
+⚙ Population SD: sigma = sqrt(1.67) = 1.29
+⚙ Sample SD: s = sqrt(2) = 1.41
+⚙ Population CV = (1.29 / 7) x 100% = 18.43%
+⚙ Sample CV = (1.41 / 7) x 100% = 20.14%
+Check: the two variance formulas agree if you divide the same sum of squared deviations by N: 10 / 6 = 1.67.
+Using unrounded SDs gives CVs of 18.44% and 20.20%; the slide rounds the SD first.
+
+EXAMPLE: SAMPLE SD AND CV OF FIVE VALUES
+Added example: a sample of 4, 8, 6, 10, 12.
+⚙ Mean: (4 + 8 + 6 + 10 + 12) / 5 = 40 / 5 = 8
+⚙ Deviations: -4, 0, -2, 2, 4. Squared: 16, 0, 4, 4, 16. Sum = 40
+⚙ s^2 = 40 / (5 - 1) = 10
+⚙ s = sqrt(10) = 3.16
+⚙ CV = (3.16 / 8) x 100% = 39.5%
+⚙ Check with the population formula: sum(x^2) = 16 + 64 + 36 + 100 + 144 = 360, and 360 / 5 - 8^2 = 72 - 64 = 8, which equals 40 / 5.
+
+COMMON MISTAKES
+⚙ Finding the median, quartiles, or percentiles without sorting the data first.
+⚙ Reporting the position as the value. A position of 7.65 is not the answer; interpolate between the 7th and 8th values.
+⚙ Averaging two group means directly instead of weighting them by group size.
+⚙ Dividing a sample variance by n instead of n - 1.
+⚙ Forgetting to take the square root to get the standard deviation from the variance.
+⚙ Confusing sum(x^2) with (sum(x))^2.
+⚙ Saying a set with all values appearing equally often has every value as a mode. It has no mode.
+⚙ Reading extreme values from a table without checking every entry.
+
+EXAM TIPS
+⚙ Write the sorted data first in every median, quartile, decile, and percentile problem.
+⚙ Positions: (N + 1) / 2 for the median, k(n + 1) / 4 for quartiles, k(n + 1) / 10 for deciles, k(n + 1) / 100 for percentiles.
+⚙ Check the variance type: population (N, mu) or sample (n - 1, x-bar).
+⚙ Variance has squared units; SD has the data's units; CV has no unit.
+⚙ Use the median when there are outliers, the mode for nominal data, and the IQR when outliers distort the range.
+
+SELF-TEST
+Q: Find the median of 9, 2, 7, 4, 5, 8.
+★ Sorted: 2, 4, 5, 7, 8, 9. Median = (5 + 7) / 2 = 6.
+Q: Which average works for nominal data such as gender?
+★ The mode.
+Q: Two quizzes have weights 1 and 3 and scores 80 and 90. What is the weighted mean?
+★ (1 x 80 + 3 x 90) / (1 + 3) = (80 + 270) / 4 = 350 / 4 = 87.5.
+Q: What is the formula for the interquartile range?
+★ IQR = Q3 - Q1.
+Q: What does sample variance divide by?
+★ n - 1.
+Q: What is the smallest possible standard deviation, and when does it happen?
+★ 0, when every value in the data set is the same.
+Q: Why is the coefficient of variation useful?
+★ It is unitless, so it can compare spread between groups measured in different units.

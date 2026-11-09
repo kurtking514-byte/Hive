@@ -1,0 +1,246 @@
+4.0 Representing Numbers and Letters with Binary
+Introduction: how computers turn 1s and 0s into numbers, text, and everything else
+
+KEY TERMS
+★ Binary: a number system with only two digits, 0 and 1. It is also called base-2.
+★ Decimal: a number system with ten digits, 0 through 9. It is also called base-10. "Deci" means ten.
+★ Positional notation: each column (place) has its own multiplier, and a digit's value is the digit times its column's multiplier.
+★ Bit: one binary digit, either 1 or 0. The word comes from "binary digit".
+★ Byte: a group of 8 bits.
+★ 8-bit, 32-bit, 64-bit computer: a computer that does most of its operations in chunks of 8, 32, or 64 bits.
+★ Memory address: a label (a number) for a location in a computer's memory, used to store and retrieve values.
+★ Floating point number: a number that is not a whole number, like 12.7 or 3.14. It is called "floating" because the decimal point can float around in the middle of the number.
+★ IEEE 754: the most common standard for representing floating point numbers.
+★ Significand: the digits part of a number written in scientific-notation style. In 0.6259 x 10^3, the significand is 0.6259 (often written .6259).
+★ Exponent: the power part of that form. In 0.6259 x 10^3, the exponent is 3.
+★ ASCII: American Standard Code for Information Interchange, a 7-bit text code invented in 1963.
+★ Interoperability: the ability of different computers, built by different companies, to exchange data.
+★ Mojibake: a Japanese word meaning "scrambled text", the garbled text you get when text is read with the wrong encoding.
+★ Unicode: one universal encoding scheme for the characters of every language, devised to replace all the separate national schemes.
+EASIER: A bit is one switch. A byte is a row of 8 switches. An encoding (like ASCII or Unicode) is the agreed list that says which number means which letter.
+
+PLACE VALUE IN DECIMAL (BASE 10)
+Each column has a different multiplier. From right to left: 1, 10, 100, 1000, and so on.
+★ In base 10, each multiplier is ten times larger than the column to its right.
+The reason: each column has ten possible digits, 0 through 9. After 9 you must carry 1 to the next column.
+Example: 263 means 2 one-hundreds, 6 tens, and 3 ones.
+⚙ 263 = (2 x 100) + (6 x 10) + (3 x 1) = 200 + 60 + 3 = 263
+EASIER: The digit tells you how many. The column tells you how many of what.
+
+PLACE VALUE IN BINARY (BASE 2)
+★ In base 2, each multiplier is two times larger than the column to its right.
+The reason: there are only two possible digits, 0 and 1. After 1 you must carry to the next column.
+Instead of hundreds, tens, and ones, binary columns are fours, twos, and ones, then eights, sixteens, and so on.
+★ 8-bit column multipliers, left to right: 128, 64, 32, 16, 8, 4, 2, 1.
+EASIER: Start at 1 on the right and keep doubling as you move left: 1, 2, 4, 8, 16, 32, 64, 128.
+Decimal and binary work exactly the same way. Only the base (10 or 2) changes.
+
+HOW TO CONVERT BINARY TO DECIMAL
+⚙ Step 1: Write the column multipliers above the bits, starting with 1 on the far right and doubling as you go left.
+⚙ Step 2: Multiply each bit by its column multiplier (a 1 keeps the multiplier, a 0 gives 0).
+⚙ Step 3: Add all the results. The total is the decimal value.
+
+EXAMPLE: BINARY 101 TO DECIMAL
+⚙ Columns: 4, 2, 1
+⚙ 101 = (1 x 4) + (0 x 2) + (1 x 1)
+⚙ = 4 + 0 + 1 = 5
+⚙ Answer: 101 in binary = 5 in base ten.
+
+EXAMPLE: BINARY 10110111 TO DECIMAL
+⚙ Columns: 128, 64, 32, 16, 8, 4, 2, 1
+⚙ Bits:    1,   0,  1,  1,  0, 1, 1, 1
+⚙ (1 x 128) + (0 x 64) + (1 x 32) + (1 x 16) + (0 x 8) + (1 x 4) + (1 x 2) + (1 x 1)
+⚙ = 128 + 0 + 32 + 16 + 0 + 4 + 2 + 1 = 183
+⚙ Check by adding only the columns that have a 1: 128 + 32 = 160, 160 + 16 = 176, 176 + 4 = 180, 180 + 2 = 182, 182 + 1 = 183.
+⚙ Answer: 10110111 in binary = 183 in decimal.
+
+HOW TO CONVERT DECIMAL TO BINARY
+Added example: the lecture only goes from binary to decimal. This is the reverse method.
+⚙ Step 1: Divide the decimal number by 2. Write down the remainder (0 or 1).
+⚙ Step 2: Divide the quotient by 2 again and write the remainder. Repeat until the quotient is 0.
+⚙ Step 3: Read the remainders from the last one to the first one (bottom to top). That is the binary number.
+
+EXAMPLE: DECIMAL 45 TO BINARY
+Added example:
+⚙ 45 / 2 = 22 remainder 1
+⚙ 22 / 2 = 11 remainder 0
+⚙ 11 / 2 = 5 remainder 1
+⚙ 5 / 2 = 2 remainder 1
+⚙ 2 / 2 = 1 remainder 0
+⚙ 1 / 2 = 0 remainder 1
+⚙ Read bottom to top: 101101
+⚙ Check: 32 + 8 + 4 + 1 = 45. Answer: 45 in decimal = 101101 in binary.
+
+ADDING NUMBERS WITH CARRYING
+Math with binary is not hard. It uses the same column-by-column carrying as decimal.
+⚙ Step 1: Start with the rightmost column (the ones column).
+⚙ Step 2: Add the digits in that column plus any carry.
+⚙ Step 3: Write the sum digit for that column. If the total is too big for one digit, carry 1 to the next column on the left.
+⚙ Step 4: Move one column left and repeat until every column (and the last carry) is done.
+★ Binary addition rules: 0 + 0 = 0, 0 + 1 = 1, 1 + 1 = 10 (write 0, carry 1), 1 + 1 + 1 = 11 (write 1, carry 1).
+EASIER: In binary there is no symbol "2". So when a column adds up to 2, you write 0 and carry 1, just like writing 0 and carrying 1 when a decimal column adds up to 10.
+
+EXAMPLE: DECIMAL 183 + 19
+⚙ Ones column: 3 + 9 = 12. Write 2, carry 1 to the tens column.
+⚙ Tens column: 8 + 1 + 1 (carried) = 10. Write 0, carry 1 to the hundreds column.
+⚙ Hundreds column: 1 + 1 (carried) = 2. Write 2.
+⚙ Answer: 183 + 19 = 202.
+
+EXAMPLE: THE SAME SUM IN BINARY, 10110111 + 00010011
+⚙ 183 = 10110111 and 19 = 00010011 (16 + 2 + 1 = 19).
+⚙ Column 1 (ones): 1 + 1 = 2, which is 10 in binary. Write 0, carry 1.
+⚙ Column 2 (twos): 1 + 1 + 1 (carried) = 3, which is 11 in binary. Write 1, carry 1.
+⚙ Column 3 (fours): 1 + 0 + 1 (carried) = 2. Write 0, carry 1.
+⚙ Column 4 (eights): 0 + 0 + 1 (carried) = 1. Write 1, carry 0.
+⚙ Column 5 (sixteens): 1 + 1 = 2. Write 0, carry 1.
+⚙ Column 6 (thirty-twos): 1 + 0 + 1 (carried) = 2. Write 0, carry 1.
+⚙ Column 7 (sixty-fours): 0 + 0 + 1 (carried) = 1. Write 1, carry 0.
+⚙ Column 8 (one-twenty-eights): 1 + 0 = 1. Write 1.
+⚙ Result read left to right: 11001010
+⚙ Check: 128 + 64 + 8 + 2 = 202. Same answer as the decimal sum.
+
+BITS, BYTES, AND RANGES
+★ With n bits you can make 2^n different values. The lowest is 0 and the highest is 2^n - 1.
+★ An 8-bit number goes from 0 to 255. The highest value, 255, needs all 8 bits set to 1 (11111111).
+⚙ 8 bits: 2^8 = 256 different values (0 to 255).
+8-bit computers, 8-bit graphics, and 8-bit audio did most of their work in chunks of 8 bits.
+Because 256 values is not a lot, 8-bit games were limited to 256 different colors for their graphics.
+★ A byte is 8 bits. Because 8 bits is such a common size, it got its own name.
+⚙ To change bytes to bits, multiply by 8. Example: 10 bytes = 10 x 8 = 80 bits.
+EASIER: Count the possible patterns, not the biggest number. 8 bits make 256 patterns, but since one pattern is 0, the biggest number is 255.
+Common mistake: saying 8 bits can hold up to 256. They hold 256 values, but the largest is 255.
+
+DATA SIZE PREFIXES
+These prefixes show different scales of data, like kilo in kilogram.
+★ Kilobyte (KB): a thousand bytes, which is 8000 bits.
+★ Megabyte (MB): a million bytes.
+★ Gigabyte (GB): a billion bytes.
+★ Terabyte (TB): a trillion bytes. One terabyte is 8 trillion ones and zeros (bits).
+★ In binary, a kilobyte is 2^10 bytes, which is 1024 bytes.
+Both 1000 and 1024 are used for a kilobyte. 1000 is correct, but it is not the only correct definition.
+Added example: to avoid this confusion, the binary 1024-byte unit is officially called a kibibyte (KiB). Most people still just say kilobyte.
+EASIER: Kilo means about a thousand. Computers like powers of 2, and 2^10 = 1024 is the power of 2 closest to 1000.
+⚙ Bytes to bits example: 1 TB = 1,000,000,000,000 bytes x 8 = 8,000,000,000,000 bits (8 trillion).
+
+32-BIT AND 64-BIT NUMBERS
+Most computers today are 32-bit or 64-bit: they operate in chunks of 32 or 64 bits.
+★ The largest number 32 bits can represent is just under 4.3 billion. In binary, that is thirty-two 1s.
+⚙ 2^32 - 1 = 4,294,967,295
+32-bit color graphics allow millions of colors. That is why today's photos (like Instagram photos) look smooth.
+Added example: in 32-bit color, 24 bits store the color (2^24 = about 16.7 million colors) and the other 8 bits are often used for transparency.
+★ 64-bit numbers are needed for very big values. The largest signed 64-bit number is about 9.2 quintillion (2^63 - 1).
+Added example: an unsigned 64-bit number (no sign bit) can reach about 18.4 quintillion (2^64 - 1).
+★ Computers need 64-bit memory addresses because memory has grown to gigabytes and terabytes (trillions of bytes), which is more locations than 32-bit addresses can label.
+EASIER: A memory address is like a house number. A town with trillions of houses needs longer house numbers.
+
+POSITIVE AND NEGATIVE NUMBERS
+Not every number is positive, so computers need a way to show the sign.
+★ Sign bit: the first (leftmost) bit stores the sign. 1 means negative, 0 means positive.
+⚙ In a 32-bit signed number: 1 bit for the sign + 31 bits for the number itself.
+★ This gives a range of roughly plus or minus two billion (2^31 is about 2.1 billion).
+That range is big, but not enough for many tasks. There are about 7 billion people on Earth, and the US national debt was almost 20 trillion dollars when the video was made. This is why 64-bit numbers are useful.
+Added example: the lecture describes the simple "sign bit plus number" method, called sign-magnitude. Most real computers use two's complement for whole numbers. The leftmost bit still tells the sign (1 means negative), but the other bits are not just the plain number. The exact 32-bit two's complement range is -2,147,483,648 to 2,147,483,647.
+EASIER: The first bit is a plus or minus sign written as a bit. Giving up one bit for the sign cuts the biggest possible number roughly in half.
+
+EXAMPLE: SIGN BIT IN 8 BITS (SIGN-MAGNITUDE)
+Added example:
+⚙ 00000101: sign bit 0 means positive. The other 7 bits, 0000101, equal 4 + 1 = 5. Value: +5.
+⚙ 10000101: sign bit 1 means negative. The other 7 bits equal 5. Value: -5.
+⚙ With 7 bits left for the number, the largest size is 2^7 - 1 = 127, so the range is -127 to +127.
+
+FLOATING POINT NUMBERS (IEEE 754)
+Computers must also handle numbers that are not whole numbers, like 12.7 and 3.14, or stardate 43989.1.
+Several methods have been made to represent floating point numbers. The most common one is the IEEE 754 standard.
+★ IEEE 754 stores decimal values in a way similar to scientific notation.
+⚙ Example: 625.9 can be written as 0.6259 x 10^3. The significand is .6259 and the exponent is 3.
+★ 32-bit floating point layout: 1 bit for the sign, then 8 bits for the exponent, then 23 bits for the significand.
+⚙ Check: 1 + 8 + 23 = 32 bits.
+EASIER: Sign, then size, then digits. The exponent says how big the number is (where the point goes). The significand holds the actual digits.
+Added example: the 0.6259 x 10^3 example uses base 10 to make the idea easy. Real IEEE 754 hardware does the same thing in base 2, with powers of 2 instead of powers of 10.
+
+REPRESENTING TEXT
+Computers do not have a special kind of storage for letters. They simply use numbers to represent letters.
+The simplest idea: number the alphabet, A = 1, B = 2, C = 3, and so on.
+Francis Bacon, the famous English writer, used five-bit sequences to encode the letters of the English alphabet and send secret messages in the 1600s.
+★ Five bits can store 2^5 = 32 values. That is enough for the 26 letters, but not enough for punctuation, digits, and both upper and lower case letters.
+
+ASCII
+★ ASCII stands for American Standard Code for Information Interchange. It was invented in 1963.
+★ ASCII is a 7-bit code, so it can store 2^7 = 128 different values.
+It can encode capital letters, lowercase letters, the digits 0 through 9, and symbols like the @ sign and punctuation marks.
+★ ASCII examples: lowercase a = 97, capital A = 65, colon (:) = 58, closed parenthesis ")" = 41.
+ASCII also had special command codes, like the newline character, which tells the computer where to wrap a line to the next row.
+In older systems, without a newline character the line of text would literally continue off the edge of the screen.
+Because ASCII was such an early standard, it became widely used and let computers from different companies exchange data. This is interoperability.
+★ ASCII's major limitation: it was really only designed for English.
+EASIER: ASCII is a shared dictionary of 128 number-to-character pairs. Since everyone used the same dictionary, files could move between different brands of computers.
+Common mistake: mixing up a and A. Capital A is 65 and lowercase a is 97. Lowercase letters are 32 higher than their capitals.
+
+EXAMPLE: DECODING ASCII
+Added example:
+⚙ 01000001 in binary = 64 + 1 = 65 = capital A.
+⚙ 01100001 in binary = 64 + 32 + 1 = 97 = lowercase a.
+⚙ Capital B = 66 and capital C = 67, because the letters are numbered in order after A = 65.
+
+NATIONAL CHARACTER CODES AND MOJIBAKE
+A byte has 8 bits, not 7. So codes 128 through 255, which ASCII did not use, became popular for "national" characters.
+In the US, the extra codes were used for more symbols, like mathematical notation, graphical elements, and common accented characters.
+The Latin characters (codes 0 to 127) were the same everywhere, but each country used the extra codes differently.
+Russian computers used them for Cyrillic characters. Greek computers used them for Greek letters, and so on.
+These national codes worked well inside one country. But an email written in Latvian, opened on a Turkish computer, came out completely incomprehensible.
+Things broke completely with the rise of computing in Asia. Languages like Chinese and Japanese have thousands of characters, and 8 bits (256 values) could not hold them.
+Each country invented its own multi-byte encoding scheme, and all of them were mutually incompatible.
+★ The Japanese name for this garbled-text problem is mojibake, meaning "scrambled text".
+EASIER: Same number, different dictionary. Code 200 might be a Greek letter on one computer and a Cyrillic letter on another, so the text turns into nonsense.
+
+UNICODE
+★ Unicode was devised in the early 1990s (the video says 1992) to replace all the different international schemes with one universal encoding scheme.
+★ Unicode has space for over a million codes, enough for every character from every language ever used.
+At the time of the video it covered more than 120,000 characters in over 100 types of script, plus mathematical symbols and graphical characters like Emoji. The number keeps growing with each new version.
+Unicode can be stored in 16-bit units (called UTF-16). Characters that do not fit in one 16-bit unit use two of them, because 16 bits alone give only 2^16 = 65,536 codes, not over a million.
+Added example: today the most common way to store Unicode on the web is UTF-8, which uses 1 to 4 bytes per character and matches ASCII for the first 128 codes.
+EASIER: Instead of every country having its own dictionary, the whole world now shares one giant dictionary.
+Difference: ASCII is 7-bit with 128 codes and English only. Unicode has room for over a million codes and covers every language.
+Difference: national 8-bit codes reused 128 to 255 differently in each country. Unicode gives every character its own unique number.
+
+EVERYTHING IS BITS
+Just as ASCII encodes letters as binary numbers, other file formats encode other things.
+MP3 files use binary numbers to encode sounds. GIF files use binary numbers to encode the colors of pixels.
+★ Under the hood, everything (text messages, videos, web pages, even the operating system) is just long sequences of 1s and 0s.
+
+SIMILAR TERMS THAT GET CONFUSED
+Bit vs byte: a bit is one 0 or 1. A byte is 8 bits.
+Number of values vs largest value: n bits give 2^n values, but the largest value is 2^n - 1.
+Kilobyte 1000 vs 1024: 1000 bytes is the decimal meaning. 1024 bytes (2^10) is the binary meaning.
+Significand vs exponent: the significand holds the digits (.6259). The exponent says where the point goes (3).
+Sign bit value: 0 means positive and 1 means negative, not the other way around.
+ASCII vs Unicode: ASCII is English-only with 128 codes. Unicode is universal.
+
+COMMON MISTAKES
+Starting the binary columns at 2 instead of 1. The rightmost column is always the ones column.
+Reading decimal-to-binary remainders from top to bottom. Read them from the bottom (last remainder) up.
+Forgetting the carry in binary addition, especially 1 + 1 + 1 = 11 (write 1, carry 1).
+Multiplying bytes by 10 instead of 8 when converting to bits.
+Putting the exponent first in the IEEE 754 layout. The order is sign, exponent, significand.
+
+EXAM TIPS
+Memorize the 8-bit column values: 128, 64, 32, 16, 8, 4, 2, 1. They add up to 255.
+Memorize the bit splits: 32-bit signed integer is 1 + 31. 32-bit float is 1 + 8 + 23.
+Memorize the ASCII anchors: A = 65, a = 97, colon = 58, ")" = 41.
+Always check a conversion by converting back the other way.
+
+SELF-TEST
+Q: What is 1101 in binary as a decimal number?
+★ 8 + 4 + 0 + 1 = 13
+Q: How many different values can 8 bits represent?
+★ 256 (2^8), from 0 to 255.
+Q: How many bits are in 10 bytes?
+★ 80 bits.
+Q: In a 32-bit float, how many bits store the exponent?
+★ 8 bits.
+Q: What is the ASCII code for a capital A?
+★ 65
+Q: What is mojibake?
+★ Scrambled text caused by incompatible encodings.
+Q: What is 22 in decimal written in binary?
+★ 10110 (16 + 4 + 2 = 22).

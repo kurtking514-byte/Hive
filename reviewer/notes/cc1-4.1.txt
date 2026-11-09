@@ -1,0 +1,222 @@
+4.1 Character Encoding Standards
+ASCII, ISO, JIS, EBCDIC, Unicode, EUC, and zoned decimal numbers
+
+KEY TERMS
+★ Character data: letters, digits, and symbols. Inside a computer they are stored as combinations of 0 and 1.
+★ Encoding: giving each character a number so the computer can store it. Example: A becomes 1, B becomes 2, and so on.
+★ Character code: a bit pattern linked to a character. A character code standard is the full list of these links.
+★ In early computers, 1 character was linked to a bit pattern of 8 bits (1 byte).
+★ The six main character codes: ASCII, ISO, JIS, EBCDIC, Unicode, and EUC.
+★ Character corruption (garbled characters): when two computers exchange data using different character codes, the receiving side shows characters that are different from the original data.
+EASIER: A character code is a shared dictionary of number-to-character pairs. If the sender and receiver use different dictionaries, the message turns into nonsense.
+The grade-school secret code (A = 1, B = 2, C = 3) is the right idea, but it is too simple for computers. It has no lowercase letters, digits, or punctuation.
+
+ASCII
+★ ASCII: American Standard Code for Information Interchange. It is pronounced "ass-key".
+★ ASCII was set by the American standards body now called ANSI (American National Standards Institute). It was first published in 1963 by that body, then named the American Standards Association, after work that started around 1960 to 1962.
+★ ASCII codes use 7 code bits, which give 2^7 = 128 characters (codes 0 to 127).
+★ When stored in one 8-bit byte, ASCII uses 7 code bits for the character plus 1 parity bit that detects errors.
+★ Parity bit: an extra bit added so that errors in the other bits can be detected.
+EASIER: The parity bit is a quick checksum. If one bit flips during sending, the count of 1s comes out wrong and the receiver knows something broke.
+ASCII is used in PCs, but it has no definitions for characters unique to other languages, such as Japanese, Chinese, Korean, or Arabic.
+Some sources (including the video) say ASCII uses one byte and so has 256 codes. Correction: ASCII itself defines only 128 codes. Codes 128 to 255 are "extended" sets added later by other standards.
+Java uses Unicode, not ASCII, to store characters as numbers.
+
+THE ASCII TABLE
+Each ASCII character can be written four ways: decimal (Dec), hexadecimal (Hex), octal (Oct), and binary (7 bits).
+⚙ Example row: A = Dec 65 = Hex 41 = Oct 101 = Binary 1000001.
+★ Codes 0 to 31 and 127 are control codes (they do something instead of printing a symbol).
+★ Code 32 is the space. Codes 33 to 126 are printable characters.
+Control codes 0 to 7: NUL 0 (null character), SOH 1 (start of header), STX 2 (start of text), ETX 3 (end of text), EOT 4 (end of transmission), ENQ 5 (enquiry), ACK 6 (acknowledge), BEL 7 (bell, ring).
+Control codes 8 to 15: BS 8 (backspace), HT 9 (horizontal tab), LF 10 (line feed), VT 11 (vertical tab), FF 12 (form feed), CR 13 (carriage return), SO 14 (shift out), SI 15 (shift in).
+Control codes 16 to 23: DLE 16 (data link escape), DC1 17, DC2 18, DC3 19, DC4 20 (device control 1 to 4), NAK 21 (negative acknowledge), SYN 22 (synchronize), ETB 23 (end transmission block).
+Control codes 24 to 31: CAN 24 (cancel), EM 25 (end of medium), SUB 26 (substitute), ESC 27 (escape), FS 28 (file separator), GS 29 (group separator), RS 30 (record separator), US 31 (unit separator).
+Last control code: DEL 127 (delete).
+Symbols 32 to 47: space 32, ! 33, " 34, # 35, $ 36, % 37, & 38, ' 39, ( 40, ) 41, * 42, + 43, comma 44, - 45, period 46, / 47.
+★ Digits 0 to 9 are codes 48 to 57 (Hex 30 to 39). The digit 5 is code 53.
+Symbols 58 to 64: colon 58, semicolon 59, less than 60, = 61, greater than 62, ? 63, @ 64.
+★ Capital letters A to Z are codes 65 to 90 (Hex 41 to 5A).
+Symbols 91 to 96: [ 91, backslash 92, ] 93, caret ^ 94, underscore _ 95, backtick ` 96.
+★ Lowercase letters a to z are codes 97 to 122 (Hex 61 to 7A).
+Symbols 123 to 126: { 123, vertical bar | 124, } 125, tilde ~ 126.
+★ A lowercase letter is always 32 more than its capital. Example: A = 65, a = 97.
+EASIER: Remember three anchors and count from them: 0 is 48, A is 65, a is 97.
+
+HOW TO FIND AN ASCII CODE
+⚙ Step 1: Pick the anchor for the character's group (digit 48, capital 65, lowercase 97).
+⚙ Step 2: Add the character's position in its group, starting from 0. Example: D is 3 after A.
+⚙ Step 3: Convert the decimal code to hex, octal, or binary if asked.
+
+EXAMPLE: ENCODE THE WORD "HI" (CAPITAL H, LOWERCASE I) IN ASCII
+⚙ H is 7 letters after A, so H = 65 + 7 = 72.
+⚙ 72 in hex: 72 / 16 = 4 remainder 8, so Hex 48.
+⚙ 72 in octal: 72 / 8 = 9 remainder 0, 9 / 8 = 1 remainder 1, 1 / 8 = 0 remainder 1, so Oct 110.
+⚙ 72 in binary: 64 + 8 = 72, so 1001000.
+⚙ i is 8 letters after a, so i = 97 + 8 = 105, which is Hex 69, Oct 151, Binary 1101001.
+⚙ Check: 105 = 64 + 32 + 8 + 1, and 1101001 has 1s in those columns. Answer: Hi = 72 105.
+
+EXAMPLE: DECODE ASCII 1001101
+Added example:
+⚙ 1001101 = 64 + 8 + 4 + 1 = 77.
+⚙ 77 - 65 = 12, and the letter 12 after A is M.
+⚙ Answer: 1001101 is capital M (Hex 4D).
+
+EXAMPLE: ADDING AN EVEN PARITY BIT
+Added example: with even parity, the parity bit is chosen so the total number of 1s in all 8 bits is even.
+⚙ A = 1000001 has two 1s, which is already even, so the parity bit is 0. Stored byte: 01000001.
+⚙ C = 1000011 has three 1s, which is odd, so the parity bit is 1. Stored byte: 11000011.
+⚙ If C arrives as 11000111, it has five 1s (odd), so the receiver knows an error happened.
+
+ISO CODE
+★ ISO code: a 7-bit character code defined by ISO (International Organization for Standardization) on the basis of ASCII in 1967. This standard is known as ISO 646.
+★ ISO code forms the basis of character codes used in different countries all over the world.
+★ ISO-8859-8-I is the IANA charset name for the character encoding ISO/IEC 8859-8 (the part of the ISO 8859 family for Hebrew).
+EASIER: ISO took ASCII and made it an international standard that each country could adjust for its own letters.
+Added example: the ISO 8859 family are 8-bit codes. ISO 8859-1 (Latin-1) covers Western European languages, and ISO 8859-8 covers Hebrew.
+IANA (Internet Assigned Numbers Authority) keeps the official list of character set names used on the internet.
+
+JIS CODE
+★ JIS code: a character code set by JISC (Japanese Industrial Standards Committee) under the Industrial Standardization Act, to represent Japanese-specific characters.
+★ JIS code is based on the ISO code and is defined as JIS (Japanese Industrial Standards).
+EASIER: JIS is Japan's version of the ISO code, with Japanese characters added.
+
+EBCDIC
+★ EBCDIC: Extended Binary Coded Decimal Interchange Code. It is an 8-bit character code.
+★ EBCDIC was developed by IBM Corporation (United States) for its own computers.
+★ Third-generation computers (1960s) were mostly IBM computers, so EBCDIC became the de facto industry standard for large computers (mainframes).
+★ De facto standard: a standard by actual widespread use, not by official approval.
+EASIER: EBCDIC became the standard because almost everyone was using IBM machines, not because a standards body chose it.
+Difference: ASCII is 7-bit and was set by a standards body. EBCDIC is 8-bit and was set by one company, IBM.
+
+READING THE EBCDIC TABLE
+The EBCDIC table has the 1st hex digit across the top (columns 0 to F) and the 2nd hex digit down the side (rows 0 to F).
+⚙ Code = 1st hex digit (column) followed by 2nd hex digit (row). Example: column C, row 1 holds A, so A = C1.
+★ EBCDIC capitals: A to I = C1 to C9, J to R = D1 to D9, S to Z = E2 to E9.
+★ EBCDIC lowercase: a to i = 81 to 89, j to r = 91 to 99, s to z = A2 to A9.
+★ EBCDIC digits: 0 to 9 = F0 to F9.
+★ EBCDIC space (SP) = 40.
+Unlike ASCII, the letters in EBCDIC are not in one unbroken run. There are gaps after I and after R.
+Column 4 symbols: SP 40, cent sign 4A, period 4B, less than 4C, ( 4D, + 4E, vertical bar 4F.
+Column 5 symbols: & 50, ! 5A, $ 5B, * 5C, ) 5D, semicolon 5E, not sign 5F.
+Column 6 symbols: - 60, / 61, comma 6B, % 6C, underscore 6D, greater than 6E, ? 6F.
+Column 7 symbols: colon 7A, # 7B, @ 7C, apostrophe 7D, = 7E, double quote 7F.
+Column 0 control codes: NUL 00, SOH 01, STX 02, ETX 03, PF 04, HT 05, LC 06, DEL 07, SMM 0A, VT 0B, FF 0C, CR 0D, SO 0E, SI 0F.
+Column 1 control codes: DLE 10, DC1 11, DC2 12, TM 13, RES 14, NL 15, BS 16, IL 17, CAN 18, EM 19, CC 1A, CU1 1B, IFS 1C, IGS 1D, IRS 1E, IUS 1F.
+Column 2 control codes: DS 20, SOS 21, FS 22, BYP 24, LF 25, ETB 26, ESC 27, SM 2A, CU2 2B, ENQ 2D, ACK 2E, BEL 2F.
+Column 3 control codes: SYN 32, PN 34, RS 35, UC 36, EOT 37, CU3 3B, DC4 3C, NAK 3D, SUB 3F.
+
+EXAMPLE: ENCODE CAT IN EBCDIC
+Added example:
+⚙ C is the 3rd letter of the A to I group, so C = C3.
+⚙ A = C1.
+⚙ T is the 2nd letter of the S to Z group, which starts at E2, so T = E3.
+⚙ Answer: CAT = C3 C1 E3 in hex, which is 11000011 11000001 11100011 in binary.
+⚙ Compare ASCII: CAT = 43 41 54 in hex. The same word gives different bytes, which is why mixing codes garbles text.
+
+UNICODE
+★ Unicode: a universal character code developed and proposed by U.S. companies such as Apple, IBM, and Microsoft, for smooth exchange of computer data.
+★ Unicode was first proposed as a 2-byte universal uniform code.
+★ Unicode supports the characters of many countries, such as alphabets, kanji and hiragana/katakana (Japanese), Hangul (Korean), and Arabic letters.
+★ Unicode was standardized by ISO as an international standard (ISO/IEC 10646).
+★ UCS-2 uses 2 bytes per character. UCS-4 uses 4 bytes per character.
+★ Code point: the unique identifier Unicode assigns to each character, written U+ followed by hex digits. Example: U+0041 is A.
+EASIER: A code point is a character's ID number. UTF-8 and UTF-16 are two different ways of packing that ID number into bytes.
+In the past each country made its own encoding, which was a mess. Computer makers and computer scientists worked together to make one encoding for all the world's languages: Unicode.
+ASCII's 128 codes (or 256 with extensions) cannot hold the Korean syllabary or Japanese and Chinese characters. Those need at least two bytes.
+★ UTF-8: stores a code point in 1 to 4 bytes. Code points 0 to 127 use 1 byte and match ASCII exactly.
+★ UTF-16: stores a code point in one 16-bit unit (2 bytes), or two units for rare characters. For common characters it is the same as UCS-2.
+⚙ A (U+0041): UTF-8 = 01000001 (1 byte). UTF-16 = 00000000 01000001 (2 bytes).
+⚙ Euro sign (U+20AC): UTF-8 = 11100010 10000010 10101100 (3 bytes). UTF-16 = 00100000 10101100 (2 bytes).
+Difference: the code point is the character's number. UTF-8 and UTF-16 are byte formats for storing that number.
+Difference: UCS-2 is fixed at 2 bytes. UCS-4 is fixed at 4 bytes. UTF-8 changes size from 1 to 4 bytes.
+
+EXAMPLE: HOW THE EURO SIGN BECOMES UTF-8
+Added example:
+⚙ Step 1: U+20AC in binary is 0010 0000 1010 1100 (16 bits).
+⚙ Step 2: Code points from U+0800 to U+FFFF use the 3-byte pattern 1110xxxx 10xxxxxx 10xxxxxx (16 x slots).
+⚙ Step 3: Split the 16 bits into 4, 6, and 6 bits: 0010, 000010, 101100.
+⚙ Step 4: Fill the slots: 1110 0010, 10 000010, 10 101100.
+⚙ Answer: 11100010 10000010 10101100, which is E2 82 AC in hex.
+⚙ Check: removing the pattern bits (1110, 10, 10) and joining 0010 000010 101100 gives back 0010000010101100 = 20AC.
+
+EUC (EXTENDED UNIX CODE)
+★ EUC: Extended Unix Code. It was defined by AT&T Corporation for internationalization support of UNIX.
+★ UNIX is an OS (operating system), the software that controls a computer.
+★ In EUC, an alphanumeric character uses 1 byte, and a kanji or kana character uses 2 bytes.
+★ EUC kanji codes are made by adding hexadecimal 80 to each byte of the JIS kanji code.
+★ Adding 80 hex makes the most significant bit of each kanji byte 1, so single-byte alphanumerics (MSB 0) and kanji (MSB 1) can be told apart.
+EASIER: Adding 80 hex is like flipping on the first bit as a flag that says "this byte is part of a kanji".
+Kana are the Japanese syllable scripts (hiragana and katakana). Kanji are Chinese-origin characters used in Japanese.
+
+EXAMPLE: JIS KANJI TO EUC
+Added example:
+⚙ The kanji for "Asia" has JIS code 30 21 (hex).
+⚙ Add 80 to each byte: 30 + 80 = B0, and 21 + 80 = A1.
+⚙ EUC code: B0 A1.
+⚙ Check the first bit: B0 = 10110000 and A1 = 10100001. Both start with 1, so they are kanji bytes. An ASCII letter like A = 41 = 01000001 starts with 0.
+
+ZONED DECIMAL NUMBERS
+★ Zoned decimal: a format that stores 1 digit of a decimal number in 1 byte. It is not a character code, but it is grouped with codes that represent character data.
+★ Lower 4 bits of each byte: the digit in binary-coded decimal (BCD), for example 0110 for 6.
+★ Upper 4 bits of each byte: the zone bits.
+★ The sign is stored in the upper 4 bits of the lowest (rightmost) digit, in place of its zone bits.
+★ EBCDIC zoned decimal: zone bits are 1111 (F). Sign bits are 1100 (C) for positive (+) and 1101 (D) for negative (-).
+★ ASCII or JIS zoned decimal: zone bits are 0011 (3). The sign bits usually use the same values as EBCDIC (C and D), but this differs by manufacturer because there is no uniform definition.
+EASIER: Each byte is half label, half digit. The label is F (or 3) for normal digits. On the last digit, the label is swapped for C (plus) or D (minus).
+Binary-coded decimal (BCD): writing each decimal digit as its own 4-bit binary number, 0000 for 0 up to 1001 for 9.
+Difference: ASCII zoned digits look like 3x (the same as the ASCII codes for digits, 30 to 39). EBCDIC zoned digits look like Fx (the same as the EBCDIC codes for digits, F0 to F9).
+
+HOW TO WRITE A NUMBER IN ZONED DECIMAL (EBCDIC)
+⚙ Step 1: Give each digit its own byte.
+⚙ Step 2: Put the digit's 4-bit BCD value in the lower 4 bits of its byte.
+⚙ Step 3: Put the zone bits 1111 in the upper 4 bits of every byte except the last.
+⚙ Step 4: In the last (rightmost) byte, put the sign bits in the upper 4 bits: 1100 for plus, 1101 for minus.
+
+EXAMPLE: +672 IN ZONED DECIMAL (EBCDIC)
+⚙ Digit 6: 1111 0110
+⚙ Digit 7: 1111 0111
+⚙ Digit 2 with plus sign: 1100 0010
+⚙ Answer: 1111 0110 1111 0111 1100 0010, which is F6 F7 C2 in hex (3 bytes).
+
+EXAMPLE: -1905 IN ZONED DECIMAL (EBCDIC)
+⚙ Digit 1: 1111 0001
+⚙ Digit 9: 1111 1001
+⚙ Digit 0: 1111 0000
+⚙ Digit 5 with minus sign: 1101 0101
+⚙ Answer: 1111 0001 1111 1001 1111 0000 1101 0101, which is F1 F9 F0 D5 in hex (4 bytes).
+
+EXAMPLE: DECODE F2 F0 C4
+Added example:
+⚙ F2: zone F, digit 2.
+⚙ F0: zone F, digit 0.
+⚙ C4: sign C means plus, digit 4.
+⚙ Answer: +204.
+
+COMMON MISTAKES
+Putting the sign on the first digit. The sign always goes on the lowest (rightmost) digit.
+Mixing up C and D. C (1100) is plus and D (1101) is minus.
+Using zone 1111 for ASCII zoned decimal. ASCII and JIS use 0011 (3); EBCDIC uses 1111 (F).
+Saying ASCII has 256 codes. ASCII has 128 (7 bits); the 8th bit is parity or an extension.
+Reading the EBCDIC table row first. The column (1st hex digit) comes first: A is C1, not 1C.
+Adding 80 hex only once to a two-byte JIS kanji code. It is added to each byte (so 30 21 becomes B0 A1).
+Confusing UCS-2 and UCS-4 sizes: UCS-2 is 2 bytes, UCS-4 is 4 bytes.
+
+EXAM TIPS
+Know who made each code: ASCII by ANSI, ISO code by ISO in 1967, JIS by JISC, EBCDIC by IBM, Unicode by companies like Apple, IBM, and Microsoft, EUC by AT&T.
+Know the bit sizes: ASCII and ISO code are 7-bit, EBCDIC is 8-bit, Unicode UCS-2 is 2 bytes and UCS-4 is 4 bytes.
+Know the zoned decimal nibbles: F zone, C plus, D minus (EBCDIC), 3 zone (ASCII and JIS).
+Always check an encoding by decoding it back.
+
+SELF-TEST
+Q: What is the ASCII code of capital A in decimal and hex?
+★ 65 decimal, 41 hex.
+Q: Which company developed EBCDIC?
+★ IBM.
+Q: What is the EBCDIC code for the letter J?
+★ D1
+Q: What does EUC add to each byte of a JIS kanji code?
+★ Hexadecimal 80.
+Q: Write -38 in EBCDIC zoned decimal (hex).
+★ F3 D8
+Q: What is the Unicode code point for A?
+★ U+0041

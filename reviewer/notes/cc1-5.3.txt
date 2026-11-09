@@ -1,0 +1,163 @@
+5.3 Project Management Methodology
+PMBOK, ISO 21500, PRINCE2, Agile (Scrum, Kanban, XP), and the ten project management knowledge areas
+
+KEY TERMS
+★ Project management methodology: a structured approach to planning, executing, and completing projects. It gives frameworks, principles, and practices that guide managers and teams.
+★ PMBOK (Project Management Body of Knowledge): a globally recognized guide of standards and best practices for project management, issued by the Project Management Institute (PMI).
+★ ISO 21500: an international standard for project management, published by the International Organization for Standardization (ISO).
+★ PRINCE2 (PRojects IN Controlled Environments): a process-driven methodology first developed by the UK government. It stresses business justification and a controlled, flexible structure.
+★ Agile: an iterative approach that divides project work into smaller, manageable pieces called iterations or sprints. Each one produces a working product or feature that is reviewed and adjusted from stakeholder feedback.
+★ Iteration (sprint): one short cycle of Agile work that ends with something usable.
+★ Agile Manifesto: the 2001 document by a group of software developers that states Agile's core values and principles.
+★ Scrum: an Agile framework that organizes work into sprints of usually 2 to 4 weeks, each producing a potentially shippable product increment.
+★ Kanban: an Agile framework that visualizes the workflow and limits work in progress, with continuous flow instead of fixed sprints.
+★ Extreme Programming (XP): an Agile framework focused on technical practices such as test-driven development, pair programming, and continuous integration.
+★ Knowledge areas: the ten areas of project management that must be planned and managed, from integration to stakeholders.
+★ Scope creep: uncontrolled changes to the project scope.
+★ PMP (Project Management Professional): the globally recognized certification connected to PMBOK and PMI.
+EASIER: A methodology is like a recipe style. PMBOK is a big cookbook of best practices, ISO 21500 is the official international standard, PRINCE2 is a strict step-by-step recipe with checkpoints, and Agile is tasting and adjusting the dish as you cook.
+
+WHY METHODOLOGIES ARE USED
+Methodologies standardize processes, promote consistency, and increase the chance of project success.
+By following an established methodology, managers and teams agree on processes, maintain quality, and meet objectives efficiently.
+Three widely recognized methodologies are PMBOK, ISO 21500, and PRINCE2. Agile is an alternative approach.
+
+PMBOK (PROJECT MANAGEMENT BODY OF KNOWLEDGE)
+PMBOK is issued by the Project Management Institute (PMI).
+★ PMBOK organizes project management into five process groups and ten knowledge areas.
+⚙ Process group 1: Initiating. Define and authorize the project.
+⚙ Process group 2: Planning. Establish the project scope, objectives, and procedures.
+⚙ Process group 3: Executing. Complete the work defined in the project plan.
+⚙ Process group 4: Monitoring and Controlling. Track and regulate project performance.
+⚙ Process group 5: Closing. Conclude all project activities and formally close the project.
+⚙ Knowledge areas: Integration, Scope, Time (Schedule), Cost, Quality, Resource, Communication, Risk, Procurement, and Stakeholder Management.
+PMBOK's approach emphasizes consistency and is widely applicable across industries.
+⚙ Benefit: gives a structured framework for projects of any size or complexity.
+⚙ Benefit: its globally recognized certification (PMP) increases a project manager's credibility.
+
+ISO 21500 STANDARD
+ISO 21500 is published by the International Organization for Standardization (ISO).
+It aligns closely with PMBOK but emphasizes aligning projects with organizational strategy.
+⚙ Core principle: Alignment with Organizational Goals. Projects should contribute to strategic objectives.
+⚙ Core principle: Standardization and Adaptability. A structured approach that still allows flexibility for a project's specific needs.
+⚙ Core principle: Project Life Cycle. Covers phases similar to PMBOK: Initiating, Planning, Implementing, Controlling, and Closing.
+⚙ Benefit: focuses on organizational alignment through project activities.
+⚙ Benefit: gives a globally accepted standard, which makes projects easier to compare and improves quality.
+Difference: PMBOK (from PMI) is a guide of best practices. ISO 21500 (from ISO) is an international standard whose main emphasis is fitting projects to the organization's strategy.
+
+PRINCE2 (PROJECTS IN CONTROLLED ENVIRONMENTS)
+PRINCE2 is process-driven and was first developed by the UK government.
+It emphasizes business justification and a controlled, flexible project structure.
+⚙ Key component: Seven Principles. Core guidelines, including continued business justification, defined roles, and learning from experience.
+⚙ Key component: Seven Themes. Important areas such as business case, risk, quality, and change.
+⚙ Key component: Seven Processes. The project stages, from starting up a project to closing a project.
+Added example: the full seven principles are continued business justification, learn from experience, defined roles and responsibilities, manage by stages, manage by exception, focus on products, and tailor to suit the project.
+Added example: the full seven themes are business case, organization, quality, plans, risk, change, and progress.
+Added example: the full seven processes are starting up a project, directing a project, initiating a project, controlling a stage, managing product delivery, managing a stage boundary, and closing a project.
+⚙ Advantage: Business Case Focus. Projects must have a justified purpose.
+⚙ Advantage: Process-Driven. Clear processes and roles help teams understand their responsibilities.
+⚙ Advantage: Scalability. PRINCE2 can be tailored to the project's size and complexity.
+PRINCE2 is highly valued in government and the public sector, and it promotes transparency and control over each phase.
+EASIER: Remember PRINCE2 as "7, 7, 7": seven principles (the rules), seven themes (the topics to watch), seven processes (the steps).
+
+AGILE METHODOLOGY
+Agile is an alternative to traditional project management.
+Instead of a strict sequence of steps, Agile emphasizes flexibility, iterative progress, and customer collaboration.
+It works best where requirements are likely to change, such as software and game development.
+Traditional methods assume the factors affecting a project are predictable, so most planning happens before the project starts. Agile does not require all planning at the beginning; the product evolves through the life cycle.
+In Agile the team cycles through planning, executing, and evaluating again and again. At the end of each interval the team meets, evaluates, and reassesses what to do next.
+⚙ Benefit: its iterative nature allows a rapid response to changing requirements.
+⚙ Benefit: stakeholder involvement throughout the project keeps the product aligned with user needs.
+The video adds that Agile's iterative nature reduces risk and gives a better end product when unexpected events happen.
+Difference: traditional methods plan most things up front and follow a fixed sequence. Agile plans a little, builds, gets feedback, and adjusts in repeated cycles.
+
+EXAMPLE: THE AGILE BURGER
+⚙ Iteration 1: a chef and team make a first burger and a customer rates it 5 out of 10, saying bacon would help.
+⚙ Iteration 2: the chef adds bacon and the rating rises to 6 out of 10.
+⚙ Later iterations: cheese, mushrooms, and pickles are added after more feedback, and satisfaction keeps rising.
+⚙ Result: through short feedback loops the burger becomes the "world's best burger", because each version moves closer to what customers want.
+EASIER: Agile means delivering a small version, asking for feedback, and improving it, instead of building the whole thing once and hoping it is right.
+
+AGILE MANIFESTO
+The Agile Manifesto was introduced in 2001 by a group of software developers. Its values focus on flexibility, collaboration, and delivering working products quickly.
+⚙ Value 1: Individuals and Interactions. Collaboration and communication among team members and stakeholders.
+⚙ Value 2: Working Software. Deliver a functional product rather than focusing on extensive documentation.
+⚙ Value 3: Customer Collaboration. Customers are actively involved throughout the project.
+⚙ Value 4: Responding to Change. Scope and approach can be adjusted as requirements evolve.
+Added example: the Manifesto writes them as individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract negotiation, and responding to change over following a plan.
+★ Agile has twelve guiding principles, including customer satisfaction, welcoming changing requirements, frequent delivery, sustainable development, and continuous attention to technical excellence.
+Difference: the Manifesto has four values and twelve principles. Do not mix the two numbers.
+
+EXAMPLES OF AGILE METHODOLOGIES
+These Agile frameworks help teams adapt quickly, stay engaged with stakeholders, and deliver improvements in increments.
+★ Scrum: work is organized into sprints, short cycles of usually 2 to 4 weeks, each producing a potentially shippable product increment.
+⚙ Scrum role: Scrum Master. Facilitates the process and removes obstacles.
+⚙ Scrum role: Product Owner. Defines the project requirements and priorities.
+⚙ Scrum role: Development Team. Completes the work and creates the deliverables.
+★ Kanban: focuses on visualizing the workflow and limiting work in progress to improve efficiency.
+⚙ Kanban Board: a tool with columns for the stages of work, for example To Do, In Progress, and Done.
+⚙ Kanban allows continuous flow instead of fixed sprints.
+★ Extreme Programming (XP): emphasizes technical practices such as test-driven development, pair programming, and continuous integration. It is designed to improve software quality and responsiveness to customer requirements.
+Difference: Scrum works in fixed-length sprints. Kanban has no sprints; work flows continuously across the board.
+Difference: the Scrum Master runs the process and clears obstacles. The Product Owner decides what to build and in what priority.
+EASIER: Scrum is a 2 to 4 week race with a finish line each time. Kanban is a conveyor belt that never stops. XP is a set of coding habits for writing better software.
+
+THE TEN PROJECT MANAGEMENT KNOWLEDGE AREAS
+The ten key areas cover every dimension of a project, from integration to risk. Stakeholders have needs and expectations, and the knowledge areas help managers plan and run the project to meet them.
+Integration sits in the center because all the other areas are connected to it.
+⚙ Project Integration Management: coordinates all project elements. It creates and maintains the project plan, manages project changes, and keeps every part aligned with the overall objectives.
+⚙ Scope Management: defines the work required and prevents scope creep. It involves scope planning, definition, verification, and control.
+⚙ Schedule (Time) Management: creates and controls the timeline. It involves defining tasks, sequencing them, estimating durations, and building a schedule that is monitored throughout.
+⚙ Cost Management: budgeting and financial control so the project finishes within the allocated budget. It involves cost estimating, budgeting, and monitoring costs.
+⚙ Resource Management: uses the team and other resources efficiently. It covers human resources (team management) and physical resources (materials, equipment).
+⚙ Communication Management: sets protocols for distributing information among stakeholders so everyone stays informed and aligned.
+⚙ Quality Management: makes sure deliverables meet the defined quality standards. It involves quality planning, assurance, and control.
+⚙ Procurement Management: acquiring goods and services from external vendors. It includes contract negotiation, supplier selection, and vendor management.
+⚙ Risk Management: identifies, assesses, and mitigates risks. Being proactive reduces uncertainty and prepares the team for possible issues.
+⚙ Stakeholder Management: identifies and engages the people or groups affected by the project and addresses their needs and expectations.
+The video adds that good tools and techniques support each area, for example a work breakdown structure for scope and a schedule for time, and using them well across all projects leads to portfolio and enterprise success.
+EASIER: Procurement is another word for purchasing or buying.
+
+EXAMPLE: KNOWLEDGE AREAS IN A HOUSE RENOVATION
+⚙ Scope: the project covers renovating the kitchen, bathroom, and deck.
+⚙ Time: the old kitchen must be removed before the new one is installed.
+⚙ Cost: work out the budget and keep the project within it.
+⚙ Quality: if the specifications say stainless steel appliances, check that stainless steel appliances arrive.
+⚙ Resource: assign workers to tasks and manage their performance.
+⚙ Communication: make sure everyone communicates effectively throughout.
+⚙ Risk: a worker could get injured, so plan to prevent and handle it.
+⚙ Procurement: buy cabinetry, appliances, tiles, wood, and hire tradespeople.
+⚙ Stakeholder: the homeowner, contractor, suppliers, tradespeople, and sometimes the local government or council.
+⚙ Integration: check that the scope fits the time available, costs match the scope and quality, and the right people are in place.
+
+COMMON MISTAKES
+⚙ Saying PMBOK is published by ISO. PMBOK is from PMI; ISO 21500 is from ISO.
+⚙ Leaving out Integration when listing the ten knowledge areas. The lecture's PMBOK bullet lists only nine; Integration is the tenth.
+⚙ Saying PRINCE2 means "Project Integration in Controlled Environments". It means PRojects IN Controlled Environments.
+⚙ Saying Kanban uses sprints. Kanban uses continuous flow; Scrum uses sprints.
+⚙ Mixing up the Product Owner (requirements and priorities) and the Scrum Master (process and obstacles).
+⚙ Saying the Agile Manifesto has twelve values. It has four values and twelve principles.
+⚙ Confusing Procurement Management (buying from outside vendors) with Resource Management (using the team and materials you have).
+
+EXAM TIPS
+⚙ Match the source: PMBOK to PMI, ISO 21500 to ISO, PRINCE2 to the UK government, Agile Manifesto to software developers in 2001.
+⚙ "Organizational strategy" points to ISO 21500. "Business justification" points to PRINCE2. "Consistency across industries" points to PMBOK.
+⚙ Numbers to remember: PMBOK has 5 process groups and 10 knowledge areas; PRINCE2 has 7 principles, 7 themes, 7 processes; Agile has 4 values and 12 principles; Scrum sprints are usually 2 to 4 weeks.
+⚙ "Scope creep" points to Scope Management. "Vendors" or "contracts" point to Procurement Management.
+⚙ Test-driven development, pair programming, and continuous integration point to XP.
+
+SELF-TEST
+Q: Which organization issues PMBOK?
+★ The Project Management Institute (PMI).
+Q: What does ISO 21500 emphasize beyond PMBOK?
+★ Aligning projects with organizational strategy.
+Q: What do the letters PRINCE2 stand for?
+★ PRojects IN Controlled Environments.
+Q: What are the four Agile values?
+★ Individuals and interactions, working software, customer collaboration, and responding to change.
+Q: Which Agile framework uses a board with To Do, In Progress, and Done columns?
+★ Kanban.
+Q: What is scope creep?
+★ Uncontrolled changes to the project scope.
+Q: Which knowledge area coordinates all the others?
+★ Project Integration Management.

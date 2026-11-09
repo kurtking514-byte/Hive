@@ -1,0 +1,241 @@
+4.4 Converting Analog to Digital Data
+A/D conversion, PCM, sound, still images, moving images, and compression
+
+KEY TERMS
+★ Analog to Digital Conversion (A/D conversion, ADC): the process of turning continuous analog signals into digital form. Its steps are sampling, quantization, and encoding.
+★ Sampling: turning an analog signal into a series of discrete time points by measuring it at regular intervals.
+★ Quantization: mapping each sampled amplitude to a fixed set of values, by rounding it to the nearest level in a defined range.
+★ Quantization error: the slight inaccuracy caused by rounding during quantization.
+★ Encoding: giving each quantized level a unique binary code, so the signal becomes a sequence of bits.
+★ Quantization bit rate: the number of bits used as a code for each sample. The PCM video calls this bit depth.
+★ PCM (Pulse Code Modulation): the technique of A/D conversion that encodes an analog signal into a digital signal using sampling, quantizing, and encoding.
+★ D/A conversion: turning a digital signal (code) back into an analog signal (such as sound), by doing the encoding steps in reverse.
+★ Frequency: the number of vibrations in 1 second. Its unit is hertz (Hz).
+EASIER: Sampling draws vertical lines at regular times. Quantizing draws horizontal lines and snaps each sample to the nearest one. Encoding writes each line's number in binary.
+
+THE ANALOG TO DIGITAL CONVERSION PROCESS
+ADC breaks an analog signal down and rebuilds it as a series of discrete values. This lets complex signals be processed, stored, and sent in computer systems.
+⚙ Step 1, Sampling: convert the analog signal into discrete time points. For accuracy, the sampling rate should be at least twice the highest frequency of the signal (the Nyquist Theorem).
+⚙ Step 2, Quantization: round each sampled amplitude to the nearest level in a fixed set of values. This step adds quantization error.
+⚙ Step 3, Encoding: assign each level a unique binary code, making a sequence of bits that can be stored, processed, or transmitted.
+Difference: sampling chops the signal in TIME. Quantization chops it in VALUE (amplitude). Encoding only rewrites the values in binary and adds no error of its own.
+
+SOUND PROCESSING
+★ Sound processing: handling analog sound as digital data.
+★ PCM is the technique of A/D conversion used to encode analog sound into a digital signal.
+The analog signal is sampled at regular intervals. The sampling frequency (which sets the sampling interval) is chosen using the Nyquist Theorem.
+★ If the highest frequency of the analog signal is f, the original signal can be recovered if sampling is done at a frequency of 2f or above.
+★ Sampling interval: the time between two samples.
+
+EXAMPLE: THE LECTURE'S SAMPLED WAVE
+⚙ Step 1, sampling: six samples are taken at equal intervals. Their values are 4.5, 7.8, 7.0, 4.2, 5.6, and 2.3.
+⚙ Step 2, quantization: each value is rounded to the nearest whole number: 5, 8, 7, 4, 6, 2.
+⚙ Step 3, encoding with 4 bits: 5 = 0101, 8 = 1000, 7 = 0111, 4 = 0100, 6 = 0110, 2 = 0010.
+⚙ Answer: 0101 1000 0111 0100 0110 0010.
+⚙ Added example, quantization error of each sample: 0.5, 0.2, 0.0, 0.2, 0.4, 0.3 (the gap between the sample and its rounded value).
+⚙ Check: 4 bits can hold 2^4 = 16 levels (0 to 15), so the largest value, 8, fits.
+
+HOW TO FIND THE BITS PER SECOND OF PCM SOUND
+⚙ Step 1: Sampling frequency = highest frequency x 2 (the Nyquist minimum).
+⚙ Step 2: Bits per second = sampling frequency x quantization bit rate.
+⚙ Step 3 (if there is more than one channel, as in stereo): multiply by the number of channels.
+
+EXAMPLE: 2,000 HZ SOUND WITH 8-BIT PCM
+⚙ The highest frequency is 2,000 Hz, and the quantization bit rate is 8 bits.
+⚙ Sampling frequency = 2,000 Hz x 2 = 4,000 Hz, so sampling is done 4,000 times per second.
+⚙ Bits in 1 second = 4,000 times per second x 8 bits per time = 32,000 bits per second.
+⚙ Added example: 10 seconds of this sound = 32,000 x 10 = 320,000 bits = 320,000 / 8 = 40,000 bytes.
+
+EXAMPLE: TELEPHONE AND CD AUDIO
+Added example:
+⚙ Telephone: 8,000 samples per second x 8 bits = 64,000 bits per second (64 kbps).
+⚙ CD audio: 44,100 samples per second x 16 bits x 2 channels = 1,411,200 bits per second.
+
+IMPROVING SOUND QUALITY AND D/A CONVERSION
+★ The amount of digital data after encoding depends on the sampling frequency (sampling interval) and the quantization bit rate.
+★ D/A conversion restores a digital signal (code) to an analog signal by doing the encoding procedure in reverse.
+★ To restore sound closer to the original, either raise the sampling frequency (shorten the sampling interval, so there are more samples) or raise the quantization bit rate (so the levels are finer).
+EASIER: More vertical lines (higher sampling frequency) or more horizontal lines (more bits) both make the staircase hug the real curve more closely. Both also make the file bigger.
+
+PCM DETAILS FROM THE VIDEO
+★ The result of sampling (a series of separate sample heights) is called PAM, Pulse Amplitude Modulation.
+★ Sample rate: the number of samples per second, measured in hertz. 1 sample per second = 1 Hz, 1,000 per second = 1 kHz, 1 million per second = 1 MHz.
+⚙ Telephone: 8 kHz (8,000 samples per second).
+⚙ Voice over IP (internet calls): 16 kHz, double the telephone rate.
+⚙ Audio CD and MP3: about 44 kHz (exactly 44,100 samples per second).
+⚙ Very high-quality audio uses higher rates still. The video says Blu-ray is close to 1 MHz, but Blu-ray audio actually goes up to 192 kHz.
+After sampling, each sample is a real number, and a line segment holds infinitely many real numbers. A computer needs a finite set of values that can become binary, which is what quantizing provides.
+★ Bit depth: the number of bits in each sample. Common bit depths are 8-bit, 16-bit, and 24-bit.
+⚙ 8-bit depth: 2^8 = 256 levels.
+⚙ 16-bit depth: 2^16 = 65,536 levels.
+⚙ 24-bit depth: 2^24 = 16,777,216 levels (about 16.8 million).
+⚙ With 8 bits, the top level is 255 = 11111111 and the bottom level is 0 = 00000000.
+Quantizing rounds the flat tops of the samples to a manageable number of levels. Encoding then turns each sample, in time order, into its binary number, so a 10-minute call becomes a very long stream of 0s and 1s.
+
+SOUND FILE FORMATS
+★ MIDI (Musical Instruments Digital Interface): a format for connecting electronic musical instruments and PCs to exchange music data. It stores the playing (rendition) information for playing back the sound, not the sound itself.
+★ MP3 (MPEG1 Audio Layer3): a high-quality sound compression and decompression format using the sound technology of MPEG (standardized by ISO). Used for internet music distribution and portable players.
+★ WAV (RIFF Waveform Audio Format): a sound data format mainly used in Windows. Various data formats, such as ADPCM and WMA, can be stored in this container format.
+★ ADPCM (Adaptive Differential Pulse Code Modulation): a sound signal compression method that applies the PCM technique.
+★ WMA (Windows Media Audio): a streaming technique for music distribution originally developed by Microsoft, now also used as a sound compression technique.
+EASIER: MIDI is sheet music for a computer (which notes to play). WAV and MP3 are recordings of the actual sound.
+
+STILL IMAGE PROCESSING
+★ Still image processing: handling images that do not move. Its basic parts are the color representation method and image quality.
+★ RGB: the three primary colors of light (red, green, blue). RGB, or ARGB (Alpha for transparency, plus Red, Green, Blue), is used for color on displays.
+★ CMY: the three primary colors of color (cyan, magenta, yellow). CMY is used for color on printers.
+★ CMYK: CMY plus black (Key). Adding black to the three primary colors of color is common in printing.
+Difference: RGB is light added together on screens. CMY and CMYK are inks on paper.
+★ Resolution: the density of the pixels (dots) that make up an image, given in dpi (dots per inch).
+★ Gradation: the number of color stages that can be represented in each pixel.
+Added example: a 4 x 6 inch photo printed at 300 dpi needs 4 x 300 = 1,200 by 6 x 300 = 1,800 pixels.
+
+PIXELS AND RGB (FROM THE VIDEO)
+★ The first digital image was made in 1957 by early computer engineer Russell Kirsch, who scanned a photo of his infant son. That is how the pixel was born.
+★ Pixel: a tiny dot of light on a screen. Each pixel is really several tiny lights of red, green, and blue.
+From far away the pixels make an image. Up close they are just small lights turning on and off.
+★ In the video, resolution means the dimensions of a screen in pixels, such as 640 by 480. Density means how tightly the pixels are packed. Phones pack many pixels into a small space, which makes images sharper.
+★ An image file stores each pixel as a triplet of red, green, and blue values. Each value goes from 0 (very dark) to 255 (very bright).
+★ Each color channel uses 8 bits (1 byte), so 0 to 255 gives 256 intensities per channel, and one pixel uses 24 bits.
+Image files such as JPEG, GIF, and PNG hold millions of these RGB triplets, all stored as bits.
+Digital artists often write colors in hexadecimal because it is shorter: 2 hex digits per channel, 6 for the whole color.
+
+EXAMPLE: TURQUOISE IN BINARY AND HEX
+⚙ Turquoise in decimal: Red 64, Green 224, Blue 208.
+⚙ Red 64 = 01000000. Green 224 = 128 + 64 + 32 = 11100000. Blue 208 = 128 + 64 + 16 = 11010000.
+⚙ That is 24 binary digits for one pixel.
+⚙ In hex: 0100 0000 = 40, 1110 0000 = E0, 1101 0000 = D0. So turquoise is 40 E0 D0.
+⚙ Check: E0 = 14 x 16 = 224 and D0 = 13 x 16 = 208.
+
+EXAMPLE: MAKING AN IMAGE DARKER
+⚙ Rule from the video: output = (R - 50, G - 50, B - 50), and no value can go below 0.
+⚙ Turquoise (64, 224, 208) becomes (14, 174, 158).
+⚙ Added example: (30, 100, 200) becomes (0, 50, 150), because 30 - 50 would be negative, so it stops at 0.
+
+EXAMPLE: SIZE OF AN UNCOMPRESSED IMAGE
+Added example:
+⚙ A 640 x 480 image has 640 x 480 = 307,200 pixels.
+⚙ At 24 bits (3 bytes) per pixel: 307,200 x 3 = 921,600 bytes.
+⚙ Check: 307,200 x 24 = 7,372,800 bits, and 7,372,800 / 8 = 921,600 bytes.
+
+STILL IMAGE FILE FORMATS
+★ BMP (Bit MaP): represents characters and images as a set of dots. Its flaw is that it usually has more data than other formats.
+★ TIFF (Tagged Image File Format): handles bitmap images of various formats by adding tags (identifiers).
+★ JPEG (Joint Photographic Experts Group): an international full-color standard defined by JPEG, an institution of ISO. It lets you adjust image quality and data amount by setting the amount of compression.
+★ JPEG has a very high compression rate, so it is used more than other still image formats. It has lossless and lossy modes, but the lossy mode is generally used.
+★ GIF (Graphic Interchange Format): a lossless compression format that supports 256 colors. Its data amount is comparatively small, and it is used on the WWW.
+★ PNG (Portable Network Graphics): a full-color, lossless format that is an expansion of GIF. It has more data than JPEG.
+★ Exif (Exchangeable Image File Format): a format that saves extra information (metadata), such as when the photo was taken, with images from digital cameras.
+Difference: GIF is lossless but only 256 colors. PNG is lossless and full color. JPEG is full color and usually lossy, with the smallest files of the three.
+
+MOVING IMAGE PROCESSING
+★ Moving image processing: handling images that move. The computer shows a series of still images in sequence.
+★ Frame: each still image in a moving image.
+★ Frame rate: the number of frames shown in 1 second, measured in fps (frames per second).
+The lecture's diagram shows five frames (images) displayed one after another in continuity.
+
+VIDEO RESOLUTION, COLOR DEPTH, AND FRAME RATE (FROM THE VIDEO)
+A video is basically a set of digital photos stacked in sequence. Video uses the same camera settings as photography: aperture, shutter speed, and ISO.
+★ Video resolution: the number of pixels in the video, written as width x height. More pixels usually means a sharper image.
+⚙ SD (standard definition) = 640 x 480. Now seen as very low quality.
+⚙ HD = 1280 x 720. Fairly low quality by today's standards.
+⚙ Full HD (1080, 1080p) = 1920 x 1080. The suggested minimum today.
+⚙ Ultra HD (4K) = 3840 x 2160. Some cameras offer 2K in between, and high-end ones offer 6K, 8K, or even 12K.
+★ A 4K frame is about four times the size of a 1080 frame, so files grow four times faster and are four times harder to edit.
+⚙ Check: 3840 x 2160 = 8,294,400 pixels and 1920 x 1080 = 2,073,600 pixels. 8,294,400 / 2,073,600 = 4.
+★ Color depth: how much color data is stored for each pixel.
+⚙ 8-bit color depth: about 16.7 million colors (8 bits for each of red, green, and blue, so 2^24).
+⚙ 10-bit or 12-bit color depth: more than a billion colors.
+★ Banding: visible stripes in smooth gradients, caused by too little color data (for example 8-bit) to make a smooth change between close colors.
+⚙ 24 fps: the most common frame rate for movies. Netflix originals often use 23.98 fps, which everyone calls 24.
+⚙ 25 fps: common for international TV broadcasts.
+⚙ 30 fps: TV in North America and several other countries.
+⚙ 60 fps: used for things like video game live streams. 120 fps: used so footage can be slowed down later.
+Higher frame rates look so smooth they can feel fake (hyper-realism), so 24 or 25 fps is the usual choice.
+★ More frames means more data. 120 fps uses 120 / 24 = 5 times the data of 24 fps.
+★ Raw video data per second = resolution x color depth x frame rate.
+★ Video bitrate: the data throughput of a video in bits per second. Higher bitrate means better quality but larger files.
+⚙ YouTube's suggested starting points: 4K at 24 fps, 35 to 45 megabits per second; 1080, as low as 8 megabits per second.
+Video compression saves data by not re-describing pixels that stay the same from frame to frame. Scenes with little motion compress easily; fast action needs a higher bitrate.
+Keep the frame rate the same when editing and exporting. Do not mix 24 fps with 30 or 60 fps footage, because they do not divide evenly and motion turns choppy.
+
+EXAMPLE: RAW DATA OF FULL HD VIDEO
+Added example:
+⚙ Pixels per frame: 1920 x 1080 = 2,073,600.
+⚙ Bits per frame at 24-bit color: 2,073,600 x 24 = 49,766,400 bits.
+⚙ Bits per second at 30 fps: 49,766,400 x 30 = 1,492,992,000 bits, about 1.49 gigabits per second.
+⚙ Compared with an 8 megabit per second upload, compression cuts the data by roughly 1,492,992,000 / 8,000,000 = about 187 times.
+
+MOVING IMAGE FILE FORMATS
+★ MPEG (Moving Picture Experts Group): an international standard for moving image data, defined by MPEG, an institution of ISO. Several standards are defined for different image qualities.
+⚙ MPEG-1: compression and decompression of images with video-level quality.
+⚙ MPEG-2: compression and decompression of television pictures and high-vision (HDTV) pictures.
+⚙ MPEG-4: compression and decompression made for cellular (mobile) communication.
+⚙ MPEG-7: a notation system for metadata, made for high-speed search engines.
+★ QuickTime: a moving image compression and decompression format used in Apple's QuickTime. It uses the motion JPEG method (JPEG images played back continuously) and can also be used in Windows.
+★ VRML (Virtual Reality Modeling Language): a file format for displaying 3D graphic data as pictures.
+★ AVI (Audio Video Interleaving): a moving image format mainly used in Windows. It uses RIFF (Resource Interchange File Format), a format for multimedia files.
+
+COMPRESSION AND DECOMPRESSION OF INFORMATION
+Multimedia files are much larger than text-only files. Large files need a lot of storage space and put a heavy load on the network when sent.
+To store data efficiently and reduce network load, the size of information is reduced by fixed rules (procedures).
+★ Compression: reducing the size (amount of data) of information.
+★ Decompression: restoring compressed information.
+★ Lossless compression: compression that allows a complete return to the original data.
+★ Lossy compression: compression that does not allow a complete return to the original data.
+For images, people hardly notice small differences, so lossy compression is not a big problem there.
+★ Lossy compression can reach a higher compression rate than lossless, meaning it can shrink the data more.
+★ Compression rate: a measure of how much the amount of data is reduced.
+EASIER: Lossless is like folding clothes neatly into a suitcase: unfold them and nothing is missing. Lossy is like leaving some clothes behind to fit a smaller bag.
+
+LOSSY VS LOSSLESS (FROM THE VIDEO)
+★ Lossy compression removes as much data as possible. It can lower image quality, but a balanced setting is hardly noticeable.
+★ Lossy compression cannot be undone. The process is irreversible.
+★ Lossless compression removes no important image data. It strips metadata and non-essential information, so the file gets only slightly smaller, with no quality loss, and the original can be restored.
+⚙ Lossy is usually best for website photos (online shops, portfolios, blogs) because pages load faster, which helps user experience (UX) and search ranking (SEO). Google recommends lossy compression for speed.
+⚙ Lossless is usually best for text-heavy images and pictures with transparent backgrounds.
+Tools that compress images include Photoshop, WordPress plugins (Imagify, WP Smush, ShortPixel), and the free website TinyPNG. WordPress also compresses JPEG uploads automatically.
+
+EXAMPLE: PERCENT REDUCTION OF A COMPRESSED IMAGE
+⚙ The video's image went from 347 KB to 163 KB.
+⚙ Amount saved: 347 - 163 = 184 KB.
+⚙ Percent reduction: 184 / 347 x 100 = about 53%. The video rounds this to 52%.
+⚙ Check: 347 x 0.53 = about 184, and 347 - 184 = 163.
+
+COMPRESSION FILE FORMATS
+★ JPEG: international standard for compressing full-color still images.
+★ MPEG: international standard for compressing moving images.
+★ ZIP: a file compression format supported by free software and products like WinZip. It compresses single files and also archives (packs several files into one compressed file). It is the international de facto (industry) standard.
+★ GZIP (GNU ZIP): a file compression format mainly used in UNIX. Despite its name, it is not compatible with ZIP and has no archive function.
+★ LZH: a file compression format supported by the free software LHA. It is mainly used in Japan.
+★ MR (Modified Read) and MMR (Modified Modified Read): compression formats (encoding formats) mainly used for facsimile (fax).
+Difference: ZIP can archive many files into one. GZIP compresses but cannot archive.
+
+COMMON MISTAKES
+Changing the order of ADC. It is always sampling, then quantization, then encoding.
+Forgetting to double the highest frequency before multiplying by the bit rate.
+Thinking encoding causes error. Only quantization (rounding) causes quantization error.
+Saying RGB is for printers. RGB is for displays; CMY and CMYK are for printers.
+Calling GIF full color. GIF has only 256 colors; PNG is full color.
+Thinking 4K is twice 1080. It is twice as wide and twice as tall, so four times the pixels.
+Thinking lossy files can be restored exactly. Only lossless compression can be fully restored.
+
+EXAM TIPS
+Bits per second = sampling frequency x quantization bit rate, and sampling frequency = 2 x highest frequency.
+Levels = 2^(bit depth): 8-bit 256, 16-bit 65,536, 24-bit about 16.8 million.
+Match each format to its job: MIDI rendition data, MP3 compressed audio, WAV Windows sound container, BMP dots, TIFF tags, JPEG full color lossy, GIF 256 colors, PNG full color lossless, Exif camera metadata, AVI Windows video using RIFF, ZIP de facto archive, GZIP UNIX, LZH Japan, MR/MMR fax.
+Know the MPEG numbers: 1 video level, 2 TV and HDTV, 4 cellular, 7 metadata.
+
+SELF-TEST
+Q: What are the three steps of A/D conversion, in order?
+★ Sampling, quantization, encoding.
+Q: The highest frequency is 3,000 Hz and the quantization bit rate is 8 bits. How many bits per second?
+★ 3,000 x 2 = 6,000 samples per second, and 6,000 x 8 = 48,000 bits per second.
+Q: How many colors does GIF support?
+★ 256 colors.
+Q: Which color model is used for printers?
+★ CMY, or CMYK with black added.
+Q: What does fps stand for?
+★ Frames per second.
+Q: Which compression type allows a complete return to the original data?
+★ Lossless compression.

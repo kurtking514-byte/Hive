@@ -318,5 +318,115 @@
   "quiz": 30,
   "course": "BSCS",
   "exam": "Midterm"
+ },
+ {
+  "id": "cc1-4.0",
+  "subject": "CC1",
+  "tab": "Lesson 4.0",
+  "title": "Representing Numbers and Letters with Binary",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
+ },
+ {
+  "id": "cc1-4.1",
+  "subject": "CC1",
+  "tab": "Lesson 4.1",
+  "title": "Character Encoding Standards",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
+ },
+ {
+  "id": "cc1-4.2",
+  "subject": "CC1",
+  "tab": "Lesson 4.2",
+  "title": "Analog Data and Digital Data",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
+ },
+ {
+  "id": "cc1-4.3",
+  "subject": "CC1",
+  "tab": "Lesson 4.3",
+  "title": "Nyquist Theorem",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
+ },
+ {
+  "id": "cc1-4.4",
+  "subject": "CC1",
+  "tab": "Lesson 4.4",
+  "title": "Converting Analog to Digital Data",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
+ },
+ {
+  "id": "cc1-5.1",
+  "subject": "CC1",
+  "tab": "Lesson 5.0-5.1",
+  "title": "Introduction and Understanding a Project",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
+ },
+ {
+  "id": "cc1-5.2",
+  "subject": "CC1",
+  "tab": "Lesson 5.2",
+  "title": "Project Life Cycle",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
+ },
+ {
+  "id": "cc1-5.3",
+  "subject": "CC1",
+  "tab": "Lesson 5.3",
+  "title": "Project Management Methodology",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
+ },
+ {
+  "id": "math100-5a",
+  "subject": "MATH100",
+  "tab": "Module 5A",
+  "title": "Summary Statistics",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
+ },
+ {
+  "id": "math100-5b",
+  "subject": "MATH100",
+  "tab": "Module 5B",
+  "title": "Linear Regression and Correlation",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
+ },
+ {
+  "id": "math100-lp",
+  "subject": "MATH100",
+  "tab": "Linear Programming",
+  "title": "Linear Programming",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
  }
 ]

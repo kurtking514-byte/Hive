@@ -1,0 +1,144 @@
+5.2 Project Life Cycle
+The five phases (process groups) of a project, what happens in each, and what each one produces
+
+KEY TERMS
+★ Project life cycle: the series of phases a project goes through from inception (the start) to completion, while staying within constraints of time, cost, and quality.
+★ Process groups: the five phases of the life cycle: Initiating, Planning, Executing (Implementing), Controlling and Monitoring, and Closing.
+★ Project Charter: the document that formally authorizes the project. It states the project's purpose, objectives, high-level requirements, budget, timeline, and major stakeholders.
+★ Stakeholder Register: the document listing all stakeholders with their roles, interests, and influence on the project.
+★ Sponsor: the person who starts and supports the project, usually a senior executive.
+★ Project Management Plan: the main planning output. It explains how the project will be carried out, managed, and controlled.
+★ Work Breakdown Structure (WBS): a hierarchical breakdown of the project scope into smaller, manageable sections.
+★ Baseline: the approved original plan for scope, schedule, and cost. Actual progress is measured against it.
+★ Deliverable: a product or result the project produces. It can be tangible (a building, an app) or intangible (training, a new process).
+★ Change request: a formal request to change the project. It is evaluated, then approved or rejected.
+★ Change control: the process of reviewing change requests and approving or rejecting them.
+★ Key Performance Indicators (KPIs): measurable targets used to check whether the team and the project are performing well.
+★ Kickoff meeting: the first meeting with the whole project team, where the project information is shared so work can begin.
+★ Lessons learned: what went well and what went wrong in the project, written down to improve future projects.
+EASIER: Think of a class field trip. Initiating is getting the principal's approval. Planning is the itinerary and budget. Executing is the trip itself. Monitoring and Controlling is the teacher counting heads and checking the schedule during the trip. Closing is going home, the reflection paper, and thanking everyone.
+
+OVERVIEW OF THE PROJECT LIFE CYCLE
+The project life cycle is the series of phases a project goes through from inception to completion.
+These phases are often sequential, meaning one follows the other, but they can overlap.
+Each phase has its own activities and its own outputs (documents or results).
+⚙ Phase 1: Initiating
+⚙ Phase 2: Planning
+⚙ Phase 3: Executing (also called Implementing)
+⚙ Phase 4: Controlling and Monitoring (also called Monitoring and Control)
+⚙ Phase 5: Closing
+EASIER: Memory trick "I Plan Every Monday Carefully": Initiating, Planning, Executing, Monitoring and Controlling, Closing.
+Difference: Executing and Monitoring and Controlling run at the same time. You do the work and check the work together, not one after the other.
+
+SUMMARY OF EACH PHASE
+⚙ Initiation: defines the vision, goals, and objectives; outlines milestones and the timeline; identifies risks and roadblocks.
+⚙ Planning: makes the estimated budget and resource plan; answers what, how, and when; clarifies the scope.
+⚙ Execution: monitors status as actions are taken; engages stakeholders and the team in open communication; relies on predetermined systems (systems set up during planning).
+⚙ Monitoring and Control: tracks team performance against KPIs and goals; compares the projected budget and scope against actual progress; monitors deliverable quality.
+⚙ Closure: reflects on wins and losses; delivers the final deliverables and outcomes; gives the team a chance for reflection and discussion.
+
+PHASE 1: INITIATING
+Initiating is the official start of the project.
+It answers two questions: "What is this project aiming to accomplish?" and "Who are the key players involved?"
+Before anything starts, the project manager gets all the details from the sponsor: the scope, expected timelines, business justification (why the project is worth doing), and who should be on the project.
+⚙ Activity: Develop the Project Charter. It formally authorizes the project and outlines the objectives, key stakeholders, budget, and timeline.
+⚙ Activity: Identify Stakeholders. Find everyone involved or affected, and document their needs and expectations.
+⚙ Output: Project Charter (purpose, objectives, high-level requirements, major stakeholders).
+⚙ Output: Stakeholder Register (roles, interests, and influence of each stakeholder).
+EASIER: Initiating is getting the green light. No charter means the project is not officially approved yet.
+
+PHASE 2: PLANNING
+Planning is the most extensive (longest and most detailed) phase.
+Its purpose is to decide how the project will be carried out, managed, and controlled.
+⚙ Scope planning: define what is and is not included in the project.
+⚙ Time planning: set the schedule, milestones, deadlines, and dependencies (which tasks must wait for others).
+⚙ Cost planning: estimate the budget.
+⚙ Quality planning: set the quality standards the deliverables must meet.
+⚙ Risk planning: identify possible problems and plan responses.
+⚙ Resource planning: plan human, physical, and financial resources.
+⚙ Communication planning: decide who gets what information, when, and how.
+⚙ Output: Project Management Plan (how the project will be carried out, managed, and controlled).
+⚙ Output: Work Breakdown Structure, or WBS (the scope broken into manageable sections).
+⚙ Output: Baseline plans for scope, schedule, and cost (the approved reference used to measure progress).
+The video adds that planning ends with a kickoff meeting, where the project manager hands the team everything they need to start.
+Difference: in the lecture, the Project Charter is an output of Initiating. The video calls its planning summary document a "charter" too. For the exam, follow the lecture: the charter comes from Initiating.
+EASIER: The WBS is like breaking "clean the house" into rooms, then into tasks like "sweep the kitchen", until each piece is small enough to assign.
+
+PHASE 3: EXECUTING
+Executing is the action-oriented phase, where the actual work is done.
+Planning and executing can overlap: during execution the team fills in fine details that planning did not have, and unexpected issues come up. Project documents are live and must be updated.
+⚙ Activity: Resource Allocation. Assign people, equipment, and money to tasks.
+⚙ Activity: Team Development. Build the team's skills and teamwork.
+⚙ Activity: Communication. Keep stakeholders and the team informed.
+⚙ Activity: Quality Assurance. Monitor the processes so the work meets quality standards.
+⚙ Output: Project Deliverables (tangible or intangible results).
+⚙ Output: Performance Reports (how the work is progressing).
+⚙ Output: Change Requests (requests to change the project, which are evaluated and then approved or rejected).
+
+PHASE 4: CONTROLLING AND MONITORING
+Controlling and Monitoring runs at the same time as Executing.
+It makes sure the project stays on track: that time, scope, and budget are being followed.
+The video calls it the "easy stage" only if the earlier phases were done well; it is mostly small adjustments to keep things on track.
+⚙ Activity: Performance Tracking. Measure progress with time, cost, and quality metrics.
+⚙ Activity: Risk Monitoring. Watch known risks and spot new ones.
+⚙ Activity: Change Control. Review change requests and approve or reject them.
+⚙ Activity: Quality Control. Inspect the deliverables to check they meet the standards.
+⚙ Output: Status Reports (progress compared against the baseline).
+⚙ Output: Updated Project Plans.
+⚙ Output: Risk and Issue Logs.
+Difference: Quality Assurance (Executing) checks the processes. Quality Control (Monitoring and Controlling) inspects the deliverables.
+Difference: Change Requests are created during Executing. Change Control (deciding on them) happens in Monitoring and Controlling.
+
+PHASE 5: CLOSING
+In Closing, the project manager confirms that all deliverables are completed to the stakeholders' satisfaction and all documentation is finalized.
+⚙ Activity: Final Deliverable Handover. Give the finished deliverables to the client or business owner, who must be satisfied with the requirements.
+⚙ Activity: Project Closure Documentation. Record the outcomes, achievements, and lessons learned.
+⚙ Activity: Stakeholder Feedback. Ask stakeholders how the project went.
+⚙ Output: Final Project Report.
+⚙ Output: Lessons Learned Document.
+⚙ Output: Project Closure Documents (confirm the project is complete and can be archived).
+The video adds an after-action review (looking back on how everything worked, so the learnings become steps for the next project) and a celebration to end on a positive note.
+
+EXAMPLE: CLASSIFYING ACTIVITIES BY PHASE
+Added example: a school is building an online enrollment system.
+⚙ The dean signs a document approving the project and its budget: Initiating (Project Charter).
+⚙ The team lists the registrar, students, and IT staff with their interests: Initiating (Stakeholder Register).
+⚙ The team splits the system into modules: login, subject selection, payment, then into tasks: Planning (WBS).
+⚙ The team sets the deadline, budget, and quality standards: Planning (baselines and Project Management Plan).
+⚙ Programmers build the payment module: Executing (deliverable).
+⚙ The registrar asks to add an online ID upload feature: Executing (change request).
+⚙ The project manager compares actual spending to the planned budget: Monitoring and Controlling (status report against the baseline).
+⚙ The manager approves the ID upload feature after checking the cost: Monitoring and Controlling (change control).
+⚙ Testers check that the finished system works correctly: Monitoring and Controlling (quality control).
+⚙ The system is handed to the registrar and the team writes what went well and badly: Closing (handover and lessons learned).
+
+COMMON MISTAKES
+⚙ Thinking the Project Charter is made in Planning. In the lecture it is the first output of Initiating.
+⚙ Thinking the phases always happen strictly one after another. They are often sequential but can overlap, and Executing and Monitoring and Controlling run together.
+⚙ Mixing up Quality Assurance (processes, Executing) and Quality Control (deliverables, Monitoring and Controlling).
+⚙ Putting the WBS in Initiating. The WBS is a Planning output.
+⚙ Putting Lessons Learned in Executing. The Lessons Learned Document is a Closing output.
+⚙ Forgetting that Planning is the most extensive phase, not Executing.
+
+EXAM TIPS
+⚙ Memorize the five phases in order: Initiating, Planning, Executing, Monitoring and Controlling, Closing.
+⚙ Link each output to its phase: Charter and Stakeholder Register (Initiating); Project Management Plan, WBS, and Baselines (Planning); Deliverables, Performance Reports, and Change Requests (Executing); Status Reports, Updated Plans, and Risk and Issue Logs (Monitoring and Controlling); Final Report, Lessons Learned, and Closure Documents (Closing).
+⚙ The life cycle stays within three constraints: time, cost, and quality.
+⚙ "Against the baseline" or "against KPIs" points to Monitoring and Controlling.
+⚙ "Formally authorizes" points to the Project Charter.
+
+SELF-TEST
+Q: What are the five phases of the project life cycle in order?
+★ Initiating, Planning, Executing, Monitoring and Controlling, Closing.
+Q: Which document formally authorizes a project?
+★ The Project Charter.
+Q: Which phase is the most extensive?
+★ Planning.
+Q: What is a Work Breakdown Structure?
+★ A hierarchical breakdown of the project scope into smaller, manageable sections.
+Q: Which phase runs at the same time as Executing?
+★ Controlling and Monitoring.
+Q: What is the difference between Quality Assurance and Quality Control?
+★ Quality Assurance monitors the processes during Executing. Quality Control inspects the deliverables during Monitoring and Controlling.
+Q: Name the three outputs of Closing.
+★ Final Project Report, Lessons Learned Document, and Project Closure Documents.

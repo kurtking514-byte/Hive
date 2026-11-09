@@ -1,0 +1,153 @@
+4.3 Nyquist Theorem
+Sampling, the Nyquist rate, aliasing, and anti-aliasing filters
+
+KEY TERMS
+★ Nyquist Theorem: the rule that defines the minimum rate at which an analog signal should be sampled to capture its information accurately, without distortion or loss. It is fundamental to digital signal processing.
+★ Sampling: measuring the amplitude (height) of an analog signal at regular intervals, creating a series of discrete data points that can be processed and stored in digital form.
+★ Frequency: how many times a wave repeats per second, measured in hertz (Hz). 1 kHz = 1,000 Hz.
+★ Highest frequency component: the fastest-repeating part inside a signal. The Nyquist Theorem is based on this value.
+★ Nyquist Rate: the minimum sampling rate needed, which is double the highest frequency in the analog signal.
+★ Sampling Rate: the actual rate at which an analog signal is sampled. It must meet or exceed the Nyquist Rate to ensure accuracy.
+★ Aliasing: a type of distortion that happens when an analog signal is sampled below the Nyquist Rate. High-frequency parts of the signal are wrongly represented as lower frequencies.
+★ Undersampling: sampling below the Nyquist Rate. Its consequence is aliasing.
+★ Anti-aliasing filter: a filter applied to the analog signal before sampling that removes frequencies above the Nyquist limit.
+★ Low-pass filter: a filter that lets frequencies below a certain threshold pass and blocks higher frequencies.
+★ Nyquist limit: the highest frequency a given sampling rate can capture accurately, which is half the sampling rate.
+EASIER: Sampling is like taking photos of a spinning fan. Take photos too slowly and the fan looks like it spins slowly or even backwards. That fake slow motion is aliasing.
+
+SAMPLING
+To convert an analog signal into a digital format, it must be sampled.
+Sampling captures the essential details of an analog signal, but it needs an appropriate rate to avoid distortion.
+The Nyquist Theorem matters because it gives the minimum rate needed for an accurate digital representation.
+
+THE NYQUIST THEOREM
+★ The Nyquist Theorem was formulated by engineer and mathematician Harry Nyquist.
+★ Statement: to accurately capture all the information in an analog signal, it must be sampled at a rate of at least twice its highest frequency component.
+★ Formula: Nyquist Rate = 2 x highest frequency.
+If the sampling rate is below this threshold, the digital signal will not accurately represent the original and may contain distortions called aliasing.
+The video calls it the Nyquist-Shannon sampling theorem (Claude Shannon also proved it) and says the rate must be faster than twice the highest frequency.
+Clarification: "at least twice" is the usual classroom rule. Strictly, sampling at exactly twice can still miss a wave (for example, if every sample lands where the wave crosses zero), so real systems sample a little faster than twice.
+EASIER: To see a wave go up and down, you need at least one sample on the way up and one on the way down in every cycle. That means at least 2 samples per cycle.
+Difference: the Nyquist Rate is the minimum you must reach (2 x highest frequency). The sampling rate is what you actually use. Sampling rate must be greater than or equal to the Nyquist Rate.
+Difference: the Nyquist Rate is twice the signal's highest frequency. The Nyquist limit is half the sampling rate. They answer opposite questions.
+
+EXAMPLE: FIND THE NYQUIST RATE
+⚙ A signal's maximum frequency is 5,000 Hz.
+⚙ Nyquist Rate = 2 x 5,000 = 10,000 samples per second (10 kHz).
+⚙ Added example: human hearing tops out at about 20 kHz, so its Nyquist Rate is 2 x 20 = 40 kHz.
+⚙ Added example: telephone voice tops out at 3,400 Hz, so its Nyquist Rate is 2 x 3,400 = 6,800 Hz.
+
+HOW TO CHECK IF A SAMPLING RATE IS ENOUGH
+⚙ Step 1: Find the highest frequency in the signal.
+⚙ Step 2: Double it to get the Nyquist Rate.
+⚙ Step 3: Compare the sampling rate with the Nyquist Rate.
+⚙ Step 4: If the sampling rate is greater than or equal to the Nyquist Rate, it is enough. If it is lower, aliasing can happen.
+
+EXAMPLE: CHECK CD AUDIO AND TELEPHONE VOICE
+Added example:
+⚙ CD audio: highest frequency 20 kHz, Nyquist Rate 40 kHz. CDs sample at 44.1 kHz, and 44.1 is greater than 40, so it is enough.
+⚙ Telephone: highest frequency 3,400 Hz, Nyquist Rate 6,800 Hz. Telephony samples at 8,000 Hz, and 8,000 is greater than 6,800, so it is enough.
+⚙ Undersampled case: a 15 kHz tone sampled at 25 kHz. Nyquist Rate = 30 kHz, and 25 is less than 30, so aliasing will happen.
+
+HOW TO FIND THE NYQUIST LIMIT
+⚙ Nyquist limit = sampling rate / 2.
+⚙ CD audio: 44.1 kHz / 2 = 22.05 kHz, which the lecture rounds to about 22 kHz.
+⚙ Telephone: 8,000 Hz / 2 = 4,000 Hz. Voice up to 3,400 Hz fits under it.
+EASIER: The Nyquist limit is the ceiling. Any frequency above it cannot be captured correctly at that sampling rate.
+
+ALIASING: THE CONSEQUENCE OF UNDERSAMPLING
+★ In undersampling, high-frequency parts of a signal are incorrectly shown as lower frequencies, which loses accuracy.
+Instead of capturing all the peaks and troughs, the sampling may only catch every other peak, so the wave looks slower (lower in frequency) or distorted as digital data.
+The lecture's figure has three parts:
+⚙ (a) A sine wave of frequency f0, sampled at 2 f0 (circles) and at 4/3 f0 (crosses).
+⚙ (b) The wave rebuilt from the 2 f0 samples: it has the same frequency as the original, because there is a sample at every peak and every trough.
+⚙ (c) The wave rebuilt from the 4/3 f0 samples: it is a much slower wave. 4/3 f0 is below the Nyquist Rate of 2 f0, so aliasing happened.
+Added example: the slow wave in (c) has frequency f0 / 3, because the original f0 and the sampling rate 4/3 f0 differ by 4/3 f0 - f0 = 1/3 f0.
+
+THE VIDEO'S EXPERIMENT: WHICH WAVES FIT THE SAME SAMPLES
+A 1 Hz cosine wave is sampled at 7 Hz, giving 7 equally spaced samples each second.
+Many other sinusoids pass through exactly the same samples, so samples alone cannot prove which wave was the original.
+★ The other waves that fit sit at (multiples of the sampling rate) plus or minus the original frequency.
+⚙ Sampled at 7 Hz: 7 - 1 = 6 Hz, 7 + 1 = 8 Hz, 14 - 1 = 13 Hz, 14 + 1 = 15 Hz, and infinitely many more.
+⚙ Sampled at 4 Hz: 4 - 1 = 3 Hz, 4 + 1 = 5 Hz, 8 - 1 = 7 Hz, and so on (all the odd numbers).
+In both cases the original 1 Hz is still the lowest frequency that fits, so picking the lowest-frequency wave gives back the original.
+⚙ Sampled at 1.5 Hz: waves of 2 Hz and 2.5 Hz fit, but so does 1.5 - 1 = 0.5 Hz, which is lower than the original.
+★ Once the sampling rate drops below twice the signal's frequency, a lower-frequency wave also fits the samples, so the original can no longer be picked out. That is aliasing.
+EASIER: When you sample fast enough, the slowest wave through the dots is the real one. Sample too slowly and a fake, even slower wave also connects the dots.
+
+HOW TO FIND AN ALIAS (APPARENT) FREQUENCY
+Added example: this is the method behind the video's numbers.
+⚙ Step 1: Check that the sampling rate is below twice the signal frequency (otherwise there is no aliasing).
+⚙ Step 2: Find the multiple of the sampling rate that is closest to the signal frequency.
+⚙ Step 3: Subtract to get the difference. That difference is the frequency you will wrongly see.
+
+EXAMPLE: A 900 HZ TONE SAMPLED AT 1,200 HZ
+Added example:
+⚙ Step 1: Nyquist Rate = 2 x 900 = 1,800 Hz. 1,200 is less than 1,800, so aliasing happens.
+⚙ Step 2: The closest multiple of 1,200 to 900 is 1,200 itself.
+⚙ Step 3: 1,200 - 900 = 300 Hz.
+⚙ Answer: the tone appears as 300 Hz.
+⚙ Check: 300 Hz is below the Nyquist limit of 1,200 / 2 = 600 Hz, which is where aliases always land.
+
+THE FREQUENCY DOMAIN VIEW (FROM THE VIDEO)
+★ Frequency domain: a graph that shows which frequencies make up a signal, instead of how it changes over time.
+★ Fourier transform: the math tool that finds a signal's frequency domain. It also works in reverse.
+A pure sine wave shows up as two spikes (at plus and minus its frequency) that together stand for one single frequency.
+Most other signals, like a sinc function, are made of a continuous spread of frequencies.
+A periodic function (one that repeats) is made of sinusoids at separate (discrete) frequencies. This is called a Fourier series.
+The Fourier transform of a sinc function is a rectangular function, and the Fourier transform of a rectangular function is a sinc function.
+★ Sampling makes copies of the signal's frequency picture around every integer multiple of the sampling rate (for example 7, 14, 21 Hz and the negative values, forever).
+Mathematically, sampling multiplies the signal by a row of spikes (Dirac delta functions), and multiplying in time means convolution (sliding one function against another) in the frequency domain.
+★ To rebuild the original signal, apply a low-pass filter to the sampled signal. It removes the higher copies and leaves the original frequency picture centered at zero.
+★ If you sample too slowly, the copies move closer together until they overlap and add together. That overlap is aliasing, and filtering can no longer give back the original.
+Example from the video: a 1 Hz cosine sampled at 1.5 Hz leaves a spike at 0.5 Hz, lower than the original, because the copies crossed.
+Why sample at all: once a signal is turned into samples, a computer can process it, and a computer program is much easier to change than a circuit built to handle a continuous signal like a voice.
+
+ANTI-ALIASING FILTERS
+★ To guard against aliasing, anti-aliasing filters are often applied to the analog signal before it is sampled.
+★ They remove frequencies above the Nyquist limit, so only frequencies that can be captured accurately get sampled.
+★ They are usually low-pass filters: they let frequencies below a threshold pass and block higher frequencies that would cause aliasing if sampled.
+The result is a cleaner, more accurate digital version of the analog signal.
+⚙ Example: before music is digitized, an anti-aliasing filter removes frequencies above 22 kHz, which would interfere with the 44.1 kHz CD sampling rate.
+Difference: an anti-aliasing filter works on the analog signal BEFORE sampling. The reconstruction low-pass filter in the video works on the sampled signal AFTER sampling.
+
+HOW A SIGNAL IS DIGITIZED SAFELY
+⚙ Step 1: Pass the analog signal through an anti-aliasing (low-pass) filter.
+⚙ Step 2: Sample the filtered signal at or above the Nyquist Rate.
+⚙ Step 3: Process and store the samples in digital form.
+
+APPLICATIONS
+⚙ Audio processing: CDs sample at 44.1 kHz, capturing frequencies up to about 22 kHz. This covers human hearing (about 20 Hz to 20 kHz) and follows the Nyquist Theorem, so the audio is digitized without aliasing.
+⚙ Image and video sampling: images are digitized by sampling spatial frequencies (how quickly detail changes across the picture). High-resolution imaging needs sampling rates that avoid aliasing, especially for fine details such as textures in high-definition video.
+⚙ Telecommunications: in digital telephony, the voice range of 300 Hz to 3,400 Hz is sampled at 8,000 Hz (8 kHz), following the Nyquist Theorem, so voice is sent digitally without frequency distortion.
+The video's example: audio recording software like Audacity is preset to 44.1 kHz, slightly more than double the 20 kHz maximum that humans can hear.
+
+EXAMPLE: MINIMUM SAMPLES FOR A RECORDING
+Added example:
+⚙ A signal's highest frequency is 5 kHz, and it is recorded for 2 seconds.
+⚙ Nyquist Rate = 2 x 5,000 = 10,000 samples per second.
+⚙ Minimum samples = 10,000 x 2 = 20,000 samples.
+
+COMMON MISTAKES
+Using the average or lowest frequency. The Nyquist Rate uses the HIGHEST frequency.
+Halving instead of doubling. Nyquist Rate = 2 x highest frequency. Half the sampling rate is the Nyquist limit, a different value.
+Thinking a sampling rate just above the signal frequency is enough. It must be at least twice the highest frequency.
+Putting the anti-aliasing filter after sampling. It must come before, on the analog signal.
+Thinking aliasing makes waves look faster. It makes high frequencies look like LOWER frequencies.
+
+EXAM TIPS
+Know the numbers: 5,000 Hz needs 10 kHz; CD 44.1 kHz covers up to about 22 kHz; hearing is 20 Hz to 20 kHz; telephone voice 300 to 3,400 Hz sampled at 8 kHz.
+Nyquist Rate = 2 x highest frequency. Nyquist limit = sampling rate / 2.
+Undersampling causes aliasing. Anti-aliasing filters (low-pass) stop it before sampling.
+
+SELF-TEST
+Q: A signal's highest frequency is 8 kHz. What is its Nyquist Rate?
+★ 16 kHz.
+Q: What distortion happens when sampling below the Nyquist Rate?
+★ Aliasing.
+Q: What kind of filter is usually used as an anti-aliasing filter?
+★ A low-pass filter.
+Q: Who formulated the Nyquist Theorem?
+★ Harry Nyquist.
+Q: What is the Nyquist limit of an 8 kHz sampling rate?
+★ 4 kHz.

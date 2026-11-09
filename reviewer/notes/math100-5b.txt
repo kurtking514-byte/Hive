@@ -1,0 +1,230 @@
+5B Linear Regression and Correlation
+The least squares regression line, predicting values, and the Pearson correlation coefficient r
+
+KEY TERMS
+★ Linear regression: a method that estimates the value of the dependent variable for a given value of the independent variable, using a straight line.
+★ Independent variable (x): the variable that is controlled, manipulated, or changed. It is also called the explanatory variable and is plotted on the x-axis.
+★ Dependent variable (y): the outcome, which depends on x. It is the predicted score and is plotted on the y-axis.
+★ Regression line (least squares regression line): the straight line that best fits the points, chosen so the errors between actual and estimated values are as small as possible.
+★ Least squares method: the method used to find the regression line by minimizing the errors (the differences between actual and estimated y values).
+★ y-intercept (a): the value of y when x = 0, where the line crosses the y-axis.
+★ Slope (b): how much y changes when x increases by 1.
+★ Scatter diagram (scatter plot): a graph of the data pairs as points, used to see the relationship between x and y.
+★ Correlation: a statistical tool that measures whether two or more quantitative variables are related, and if so, how close or significant the relationship is.
+★ Correlation coefficient (r): the number that measures the strength of a correlation. Its value is from -1 to 1.
+★ Pearson product moment correlation coefficient: another name for r, named after Karl Pearson, who developed it about 1900.
+★ Positive relationship: as x increases, y also increases. The line goes upward and the slope is positive.
+★ Negative relationship: as x increases, y decreases. The line goes downward and the slope is negative.
+EASIER: Regression draws the best straight line through the dots so you can predict y. Correlation gives one number, r, that says how tightly the dots follow a straight line.
+
+OBJECTIVES OF MODULE 5
+⚙ Use a variety of statistical tools to process and manage numerical data.
+⚙ Use linear regression and correlation to predict the value of a variable given certain conditions.
+⚙ Advocate (support) the use of statistical data in making important decisions.
+
+INDEPENDENT AND DEPENDENT VARIABLES
+The independent variable is what we control or change. The dependent variable is the outcome we measure.
+In "study time and grades", study time is independent and grades are dependent, because grades depend on how much you study.
+Difference: x is the cause or input you change. y is the result you predict.
+⚙ "Is tardiness a factor of academic performance?" Independent: tardiness. Dependent: academic performance.
+⚙ "Is age a factor in driving accidents?" Independent: age. Dependent: driving accidents.
+⚙ "Is there a relationship between grades in Algebra and grades in Calculus?" Independent: Algebra grades. Dependent: Calculus grades.
+⚙ "Is the amount of money spent on food a factor of obesity in children?" Independent: money spent on food. Dependent: obesity.
+⚙ "Will you die younger if you smoke?" Independent: smoking. Dependent: age at death (lifespan).
+⚙ "Is height a factor for self-esteem?" Independent: height. Dependent: self-esteem.
+EASIER: Read the question as "Does x affect y?" The thing that is "a factor" is x.
+
+POSITIVE AND NEGATIVE RELATIONSHIPS
+⚙ Study time (x) and grades (y): more study time gives higher grades, a positive relationship with an upward line.
+⚙ Time on Facebook (x) and grades (y): more time on Facebook gives lower grades, a negative relationship with a downward line and a negative slope.
+In this module all regression lines are straight lines. Curved lines are possible but are not covered.
+
+THE REGRESSION EQUATION
+★ Least squares regression line: y = a + b x
+⚙ y is the predicted score (dependent variable, outcome).
+⚙ a is the y-intercept.
+⚙ b is the slope of the line.
+⚙ x is the independent variable.
+★ a = ((sum y)(sum x^2) - (sum x)(sum xy)) / (N(sum x^2) - (sum x)^2)
+★ b = (N(sum xy) - (sum x)(sum y)) / (N(sum x^2) - (sum x)^2)
+★ Shortcut for a once b is known: a = y-bar - b(x-bar), where y-bar = (sum y) / N and x-bar = (sum x) / N.
+⚙ N is the number of data pairs.
+Some books and videos write the line as y-hat = b0 + b1 x. Here b0 is the intercept (our a) and b1 is the slope (our b).
+Difference: sum x^2 means square each x and then add. (sum x)^2 means add all the x values and then square the total.
+Difference: sum xy means multiply each x by its own y and then add. (sum x)(sum y) means add each column first and then multiply the two totals.
+
+STEPS TO FIND THE REGRESSION LINE BY HAND
+⚙ Step 1: count the number of pairs, N.
+⚙ Step 2: make a table with columns x, y, x^2, and xy (add y^2 if you also need r).
+⚙ Step 3: add each column to get sum x, sum y, sum x^2, and sum xy.
+⚙ Step 4: compute b with its formula.
+⚙ Step 5: compute a with its formula, or with a = y-bar - b(x-bar).
+⚙ Step 6: write the equation y = a + b x.
+⚙ Step 7: to predict, substitute the given x into the equation.
+
+EXAMPLE: REGRESSION LINE FOR EIGHT PAIRS
+x: 1, 3, 4, 6, 8, 9, 11, 14. y: 1, 2, 4, 4, 5, 7, 8, 9.
+⚙ Table rows (x, y, x^2, xy): (1, 1, 1, 1), (3, 2, 9, 6), (4, 4, 16, 16), (6, 4, 36, 24), (8, 5, 64, 40), (9, 7, 81, 63), (11, 8, 121, 88), (14, 9, 196, 126)
+⚙ N = 8, sum x = 56, sum y = 40, sum x^2 = 524, sum xy = 364
+⚙ Denominator: 8(524) - 56^2 = 4192 - 3136 = 1056
+⚙ a numerator: (40)(524) - (56)(364) = 20960 - 20384 = 576
+⚙ a = 576 / 1056 = 0.5454... which rounds to 0.55
+⚙ b numerator: 8(364) - (56)(40) = 2912 - 2240 = 672
+⚙ b = 672 / 1056 = 0.6363... which rounds to 0.64
+⚙ Check with the shortcut: x-bar = 56 / 8 = 7, y-bar = 40 / 8 = 5, a = 5 - 0.6364(7) = 5 - 4.4545 = 0.5455
+★ Regression equation: y = 0.55 + 0.64x
+⚙ Predict x = 0: y = 0.55 + 0.64(0) = 0.55
+⚙ Predict x = 1: y = 0.55 + 0.64(1) = 1.19
+⚙ Predict x = 3: y = 0.55 + 0.64(3) = 0.55 + 1.92 = 2.47
+⚙ Predict x = 16: y = 0.55 + 0.64(16) = 0.55 + 10.24 = 10.79
+The scatter diagram plots each (x, y) pair as a point; the points rise from left to right, showing a positive relationship.
+
+EXAMPLE: REGRESSION LINE FOR FOUR PAIRS
+x: 1, 3, 4, 6. y: 3, 7, 9, 13.
+⚙ Table rows (x, y, x^2, xy): (1, 3, 1, 3), (3, 7, 9, 21), (4, 9, 16, 36), (6, 13, 36, 78)
+⚙ N = 4, sum x = 14, sum y = 32, sum x^2 = 62, sum xy = 138
+⚙ Denominator: 4(62) - 14^2 = 248 - 196 = 52
+⚙ a = ((32)(62) - (14)(138)) / 52 = (1984 - 1932) / 52 = 52 / 52 = 1
+⚙ b = (4(138) - (14)(32)) / 52 = (552 - 448) / 52 = 104 / 52 = 2
+★ Regression equation: y = 1 + 2x
+⚙ Predict x = 0: y = 1 + 2(0) = 1
+⚙ Predict x = 1: y = 1 + 2(1) = 3
+⚙ Predict x = 3: y = 1 + 2(3) = 7
+⚙ Predict x = 16: y = 1 + 2(16) = 33
+Added example: every data point fits this line exactly (for example x = 4 gives 1 + 8 = 9), so the correlation here is perfect, r = 1.
+
+EXAMPLE: REGRESSION LINE FROM THE VIDEO
+x: 1, 3, 10, 16, 26, 36. y: 42, 50, 75, 100, 150, 200. The video uses x as the age of a cow and y as its weight.
+⚙ N = 6
+⚙ sum x = 1 + 3 + 10 + 16 + 26 + 36 = 92
+⚙ sum y = 42 + 50 + 75 + 100 + 150 + 200 = 617
+⚙ sum x^2 = 1 + 9 + 100 + 256 + 676 + 1296 = 2338
+⚙ sum xy = 42 + 150 + 750 + 1600 + 3900 + 7200 = 13642
+⚙ b = (6(13642) - (92)(617)) / (6(2338) - 92^2) = (81852 - 56764) / (14028 - 8464) = 25088 / 5564 = 4.51
+⚙ x-bar = 92 / 6 = 15.3333 and y-bar = 617 / 6 = 102.8333
+⚙ a = 102.8333 - 4.5090(15.3333) = 102.8333 - 69.1378 = 33.6955, which rounds to 33.70
+⚙ Check with the a formula: ((617)(2338) - (92)(13642)) / 5564 = (1442546 - 1255064) / 5564 = 187482 / 5564 = 33.6955
+★ Regression equation: y = 33.70 + 4.51x
+⚙ Predict x = 12: y = 33.6955 + 4.5090(12) = 33.6955 + 54.108 = 87.80
+The video rounds x-bar to 15.3 and gets a = 33.83 and a prediction of 87.95. Without that early rounding, a = 33.70 and the prediction is 87.80. Round only at the end.
+
+CORRELATION
+★ Correlation describes the degree of relationship between two sets of variables.
+★ The strength of a correlation is measured by r.
+⚙ r = 1: maximum (perfect) positive correlation.
+⚙ r = -1: maximum (perfect) negative correlation.
+⚙ r = 0: zero correlation, meaning no linear relationship.
+★ A value of r = 0 does not always mean there is no correlation; there could be a nonlinear (curved) relationship.
+Scatter plot examples on the slide: perfect positive (r = 1.0), strong positive (r = 0.80), zero (r = 0), perfect negative (r = -1.0), moderate negative (r = -0.43), and strong correlation with an outlier (r = 0.71).
+Added example: the sign of r shows direction (positive or negative) and the size of r, ignoring the sign, shows strength.
+
+INTERPRETING R (SEVILLA, 1994)
+⚙ 0.00 to 0.19: no correlation exists.
+⚙ 0.20 to 0.39: slight correlation exists.
+⚙ 0.40 to 0.59: substantial correlation exists.
+⚙ 0.60 to 0.79: significant correlation exists.
+⚙ 0.80 to 0.99: very significant correlation exists.
+⚙ 1.00: perfect correlation exists.
+EASIER: Memory trick "No Slight Substance, Significant, Very Significant, Perfect": each step is 0.20 wide, then 1.00 is perfect.
+The slide's scatter plot labels (strong, moderate) come from a different scale than Sevilla's. In this module, interpret r with the Sevilla table.
+
+PEARSON PRODUCT MOMENT CORRELATION
+⚙ It is one of the most widely used correlation measures.
+⚙ It is a parametric test: it assumes the sample comes from a normally distributed population.
+⚙ It is used when the data are at the interval or ratio level of measurement.
+★ r = (N(sum xy) - (sum x)(sum y)) / sqrt([N(sum x^2) - (sum x)^2][N(sum y^2) - (sum y)^2])
+⚙ N is the number of data pairs, and x and y are the individual data.
+⚙ Pay close attention to the difference between sum xy and (sum x)(sum y). Tabulate the calculation.
+Difference: the numerator of r is the same as the numerator of b. The b formula divides by the x part only; r divides by the square root of the x part times the y part.
+
+STEPS TO COMPUTE R BY HAND
+⚙ Step 1: make a table with columns x, y, xy, x^2, y^2.
+⚙ Step 2: add every column.
+⚙ Step 3: compute the numerator N(sum xy) - (sum x)(sum y).
+⚙ Step 4: compute N(sum x^2) - (sum x)^2 and N(sum y^2) - (sum y)^2.
+⚙ Step 5: multiply those two and take the square root.
+⚙ Step 6: divide the numerator by the square root.
+⚙ Step 7: interpret r with the Sevilla table.
+
+EXAMPLE: ALGEBRA AND CALCULUS GRADES
+Ten students' grades. Algebra (x): 85, 79, 83, 88, 76, 81, 87, 77, 90, 95. Calculus (y): 80, 75, 78, 83, 78, 81, 79, 75, 85, 88.
+⚙ N = 10, sum x = 841, sum y = 802, sum x^2 = 71059, sum y^2 = 64478, sum xy = 67650
+⚙ Numerator: 10(67650) - (841)(802) = 676500 - 674482 = 2018
+⚙ x part: 10(71059) - 841^2 = 710590 - 707281 = 3309
+⚙ y part: 10(64478) - 802^2 = 644780 - 643204 = 1576
+⚙ Denominator: sqrt(3309 x 1576) = sqrt(5214984) = 2283.63
+⚙ r = 2018 / 2283.63 = 0.8837
+★ r = 0.8837, a very significant correlation between grades in Algebra and Calculus.
+
+EXAMPLE: HEIGHTS OF FATHERS AND ELDEST SONS
+Heights in inches of 12 fathers (x) and their eldest sons (y).
+⚙ Fathers: 65, 63, 67, 64, 68, 62, 70, 66, 68, 67, 69, 71
+⚙ Sons: 68, 66, 68, 65, 69, 66, 68, 65, 71, 67, 68, 70
+⚙ N = 12, sum x = 800, sum y = 811, sum xy = 54107, sum x^2 = 53418, sum y^2 = 54849
+⚙ Numerator: 12(54107) - (800)(811) = 649284 - 648800 = 484
+⚙ x part: 12(53418) - 800^2 = 641016 - 640000 = 1016
+⚙ y part: 12(54849) - 811^2 = 658188 - 657721 = 467
+⚙ Denominator: sqrt(1016 x 467) = sqrt(474472) = 688.82
+⚙ r = 484 / 688.82 = 0.7027, about 0.7
+★ r = 0.70, a significant correlation between the height of the father and the height of the eldest son.
+Generally, the taller the father, the taller the son.
+
+EXAMPLE: INTELLIGENCE TEST SCORES AND MATH GRADES
+Twelve freshmen. Find r, the regression line, and interpret.
+⚙ Rows (x, y, xy, x^2, y^2): (65, 85, 5525, 4225, 7225), (50, 74, 3700, 2500, 5476), (55, 76, 4180, 3025, 5776), (65, 90, 5850, 4225, 8100)
+⚙ Rows continued: (55, 85, 4675, 3025, 7225), (70, 87, 6090, 4900, 7569), (65, 94, 6110, 4225, 8836), (70, 98, 6860, 4900, 9604)
+⚙ Rows continued: (55, 81, 4455, 3025, 6561), (70, 91, 6370, 4900, 8281), (50, 76, 3800, 2500, 5776), (55, 74, 4070, 3025, 5476)
+⚙ N = 12, sum x = 725, sum y = 1011, sum xy = 61685, sum x^2 = 44475, sum y^2 = 85905
+⚙ Numerator: 12(61685) - (725)(1011) = 740220 - 732975 = 7245
+⚙ x part: 12(44475) - 725^2 = 533700 - 525625 = 8075
+⚙ y part: 12(85905) - 1011^2 = 1030860 - 1022121 = 8739
+⚙ r = 7245 / sqrt(8075 x 8739) = 7245 / sqrt(70567425) = 7245 / 8400.44 = 0.86
+★ r = 0.86, a very significant relationship between intelligence test scores and math performance.
+⚙ b = 7245 / 8075 = 0.8972, about 0.90
+⚙ a = ((1011)(44475) - (725)(61685)) / 8075 = (44964225 - 44721625) / 8075 = 242600 / 8075 = 30.04
+⚙ Check: x-bar = 725 / 12 = 60.42, y-bar = 1011 / 12 = 84.25, and 84.25 - 0.8972(60.42) = 30.04
+★ Regression equation: y = 30.04 + 0.90x
+The slide asks for this equation but does not show it; the answer above was computed and checked both ways.
+
+USING THE CASIO FX-991EX OR FX-570EX (CLASSWIZ)
+⚙ Step 1: press MENU, then 6 for Statistics.
+⚙ Step 2: choose 2 for y = a + bx (linear).
+⚙ Step 3: enter the x column first, going down, then move to the y column and enter the y values.
+⚙ Step 4: press OPTN, then 4 for Regression Calc.
+⚙ Step 5: read a, b, and r from the screen and write y = a + bx.
+⚙ If a frequency column appears, you can leave it (it fills in 1 for each row) or turn it off with SHIFT, SETUP, Statistics, Frequency Off.
+In the video's example the calculator gives y = 380.99 + 3.37x and r = 0.151, which is close to 0, so there is very little correlation.
+EASIER: The calculator is the fastest way to check a hand computation in an exam, but show the table and formulas if your teacher asks for the solution.
+
+COMMON MISTAKES
+⚙ Confusing sum x^2 with (sum x)^2, or sum xy with (sum x)(sum y).
+⚙ Swapping the variables: x must be the independent variable and y the dependent one.
+⚙ Rounding a, b, or the means too early, which changes the final answer.
+⚙ Forgetting the square root in the denominator of r.
+⚙ Saying r = 0 proves there is no relationship. It only means no linear relationship.
+⚙ Treating a negative r as weak. The sign gives direction; the size gives strength.
+⚙ Using N as the number of individual values instead of the number of pairs.
+
+EXAM TIPS
+⚙ Always build the full table: x, y, x^2, y^2, xy, then the sums.
+⚙ The numerator N(sum xy) - (sum x)(sum y) is used in both b and r, so compute it once.
+⚙ Check a with a = y-bar - b(x-bar).
+⚙ Check r is between -1 and 1. If not, there is an arithmetic error.
+⚙ Learn the Sevilla ranges, especially 0.60 to 0.79 (significant) and 0.80 to 0.99 (very significant).
+⚙ Pearson r needs interval or ratio data from a normally distributed population.
+
+SELF-TEST
+Q: In y = a + bx, what are a and b?
+★ a is the y-intercept and b is the slope.
+Q: Using y = 1 + 2x, predict y when x = 10.
+★ y = 1 + 2(10) = 21.
+Q: What does r = -1 mean?
+★ A perfect negative correlation: as x increases, y decreases exactly along a straight line.
+Q: How is r = 0.45 interpreted using Sevilla?
+★ Substantial correlation (0.40 to 0.59).
+Q: Who developed the Pearson product moment correlation coefficient, and when?
+★ Karl Pearson, about 1900.
+Q: What level of measurement does Pearson r require?
+★ Interval or ratio data.
+Q: In "Is age a factor in driving accidents?", which is the independent variable?
+★ Age.

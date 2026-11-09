@@ -1,0 +1,154 @@
+Linear Programming
+Graphical solution of maximization and minimization problems using corner points and the objective function line
+
+KEY TERMS
+★ Linear programming (LP): a method for finding the best (maximum or minimum) value of a linear objective while meeting a set of linear restrictions.
+★ LP model: the written problem, made of the objective function, the constraints, and the non-negativity constraints.
+★ Decision variables: the unknowns (usually X and Y) that tell what quantity to buy, produce, sell, transport, and so on.
+★ Objective function: the expression to maximize or minimize, such as Z = 2X + 5Y. Z stands for its value.
+★ Constraints: restrictions that limit how the objective can be reached, such as X + 2Y <= 16.
+★ Non-negativity constraints: X >= 0 and Y >= 0, because real quantities cannot be negative.
+★ s.t.: short for "subject to". It introduces the list of constraints.
+★ Feasible region: the area on the graph that satisfies all the constraints at the same time.
+★ Feasible solution: any point inside or on the edge of the feasible region.
+★ Corner point (extreme point): a point where boundary lines of the feasible region meet.
+★ Optimal solution: the feasible solution that gives the best value of the objective function (largest for maximization, smallest for minimization).
+EASIER: The constraints build a fence. The feasible region is the yard inside the fence. The best answer is always at one of the fence's corners.
+
+THE PARTS OF AN LP MODEL
+Video 1 model:
+⚙ Max Z = 2X + 5Y (objective function)
+⚙ s.t. X + 2Y <= 16 (constraint C1)
+⚙ 5X + 3Y <= 45 (constraint C2)
+⚙ X, Y >= 0 (non-negativity constraints)
+In LP you either maximize the objective (for example profit) or minimize it (for example cost).
+Difference: the objective function is what you want to make best. Constraints are the limits you must obey while doing it.
+★ The graphical method works only for problems with 2 decision variables, because a graph has only two axes.
+
+KEY RULES
+★ The optimal solution occurs at a corner (extreme) point of the feasible region.
+⚙ A "<=" constraint is satisfied below its line, toward the origin.
+⚙ A ">=" constraint is satisfied above its line, away from the origin.
+⚙ Because of the non-negativity constraints, graph only in the first quadrant, where X and Y are both 0 or more.
+⚙ A constraint like Y <= 4 is a horizontal line at Y = 4, satisfied below it, whatever X is.
+⚙ How far to draw each axis: go a little past the largest X intercept and the largest Y intercept.
+Difference: maximization picks the corner with the largest Z. Minimization picks the corner with the smallest Z.
+
+GRAPHING A CONSTRAINT LINE
+⚙ Step 1: change the inequality to an equation, for example X + 2Y = 16.
+⚙ Step 2: set X = 0 and solve for Y: 2Y = 16, so Y = 8. Point (0, 8).
+⚙ Step 3: set Y = 0 and solve for X: X = 16. Point (16, 0).
+⚙ Step 4: plot both points and join them with a straight line.
+⚙ Step 5: shade the side that satisfies the inequality.
+EASIER: Each constraint gives two intercepts: cover up X to find the Y intercept, cover up Y to find the X intercept.
+
+SOLVING FOR AN INTERSECTION POINT
+Reading a corner by eye ("eyeballing") is not reliable, especially on a hand-drawn graph. Solve the two line equations simultaneously instead.
+★ Elimination method: multiply one equation so a variable has the same coefficient in both, then subtract to cancel it.
+★ Substitution method: write one variable in terms of the other from one equation, then substitute into the other equation.
+⚙ After finding one variable, substitute it back into either original equation to get the other.
+
+CORNER POINT METHOD (EXTREME POINT APPROACH)
+⚙ Step 1: write the LP model (objective function, constraints, non-negativity).
+⚙ Step 2: find two points for each constraint line.
+⚙ Step 3: graph the lines in the first quadrant and shade the feasible region.
+⚙ Step 4: label the corner points.
+⚙ Step 5: find the coordinates of each corner, solving simultaneously where two lines cross.
+⚙ Step 6: substitute each corner into the objective function.
+⚙ Step 7: choose the corner with the best Z (largest for Max, smallest for Min).
+
+EXAMPLE: MAXIMIZATION BY CORNER POINTS
+Max Z = 2X + 5Y s.t. X + 2Y <= 16 (C1), 5X + 3Y <= 45 (C2), X, Y >= 0.
+⚙ C1 points: X = 0 gives Y = 8; Y = 0 gives X = 16. Points (0, 8) and (16, 0).
+⚙ C2 points: X = 0 gives 3Y = 45, Y = 15; Y = 0 gives 5X = 45, X = 9. Points (0, 15) and (9, 0).
+⚙ Both are "<=" constraints, so the feasible region is below both lines, toward the origin.
+⚙ Corner points: 1 = (0, 0), 2 = (0, 8), 3 = where C1 and C2 cross, 4 = (9, 0).
+⚙ Corner 3 by elimination: multiply C1 by 5: 5X + 10Y = 80
+⚙ Subtract C2 (5X + 3Y = 45): 7Y = 35, so Y = 5
+⚙ Substitute into C1: X + 2(5) = 16, X + 10 = 16, X = 6. Corner 3 = (6, 5)
+⚙ Check in C2: 5(6) + 3(5) = 30 + 15 = 45. Correct.
+⚙ Corner 1: Z = 2(0) + 5(0) = 0
+⚙ Corner 2: Z = 2(0) + 5(8) = 40
+⚙ Corner 3: Z = 2(6) + 5(5) = 12 + 25 = 37
+⚙ Corner 4: Z = 2(9) + 5(0) = 18
+★ Optimal solution: X = 0, Y = 8, with maximum Z = 40.
+Note: (16, 0) and (0, 15) are not corners of the feasible region, because each one breaks the other constraint.
+
+OBJECTIVE FUNCTION LINE METHOD
+Instead of testing every corner, draw a line for the objective function and slide it.
+⚙ Step 1: graph the constraints and shade the feasible region.
+⚙ Step 2: set the objective function equal to any convenient number. An easy choice is the product of the X and Y coefficients.
+⚙ Step 3: find two points of that line and draw it (usually as a dotted line).
+⚙ Step 4: slide the line parallel to itself. For minimization move it toward the origin; for maximization move it away from the origin.
+⚙ Step 5: the last corner the line touches before leaving the feasible region is the optimal point.
+⚙ Step 6: solve for that corner's coordinates and substitute them into the objective function.
+If the chosen number makes the line too small or too large for the graph, multiply or divide it by a suitable value.
+Difference: the corner point method computes Z at every corner. The objective function line method finds the best corner first, then computes Z only there.
+
+EXAMPLE: MINIMIZATION BY THE OBJECTIVE FUNCTION LINE
+Min Z = 5X + 7Y s.t. X + 3Y >= 6 (C1), 5X + 2Y >= 10 (C2), Y <= 4 (C3), X, Y >= 0.
+⚙ C1 points: X = 0 gives Y = 2; Y = 0 gives X = 6. Points (0, 2) and (6, 0).
+⚙ C2 points: X = 0 gives Y = 5; Y = 0 gives X = 2. Points (0, 5) and (2, 0).
+⚙ C3: a horizontal line at Y = 4.
+⚙ C1 and C2 are ">=" constraints, satisfied above their lines away from the origin. C3 is satisfied below Y = 4.
+⚙ Corner points: A (C2 meets C3), B (C1 meets C2), C (C1 meets the X axis at (6, 0)).
+⚙ Objective line: 5 x 7 = 35, so draw 5X + 7Y = 35. X = 0 gives Y = 5; Y = 0 gives X = 7.
+⚙ Minimization, so slide the line toward the origin. It passes A and C and last touches B, so B is optimal.
+⚙ Solve C1 and C2 by substitution. From C1: X = 6 - 3Y
+⚙ Substitute into C2: 5(6 - 3Y) + 2Y = 10, so 30 - 15Y + 2Y = 10
+⚙ -13Y = 10 - 30 = -20, so Y = 20 / 13 = 1.54
+⚙ X = 6 - 3(20 / 13) = 6 - 60 / 13 = 18 / 13 = 1.38
+⚙ Z = 5(18 / 13) + 7(20 / 13) = (90 + 140) / 13 = 230 / 13 = 17.7
+★ Optimal solution: X = 1.38, Y = 1.54, with minimum Z = 17.7.
+Added example: checking the other corners confirms it. A: 5X + 2(4) = 10 gives X = 0.4, so A = (0.4, 4) and Z = 5(0.4) + 7(4) = 2 + 28 = 30. C = (6, 0) gives Z = 5(6) + 7(0) = 30. Both are larger than 17.7.
+This feasible region is open to the right (unbounded). A minimization problem can still have an optimal corner, because the cost only grows as you move away from the origin.
+
+EXAMPLE: WORD PROBLEM TO LP MODEL
+Added example: a bakery makes cakes (X) and pies (Y). Each cake earns 50 pesos profit and each pie 40 pesos. A cake needs 2 oven hours and 1 labor hour; a pie needs 1 oven hour and 2 labor hours. There are 10 oven hours and 11 labor hours. How many of each maximize profit?
+⚙ Decision variables: X = number of cakes, Y = number of pies.
+⚙ Objective: Max Z = 50X + 40Y
+⚙ Oven constraint: 2X + Y <= 10
+⚙ Labor constraint: X + 2Y <= 11
+⚙ Non-negativity: X, Y >= 0
+⚙ Oven line points: (0, 10) and (5, 0). Labor line points: (0, 5.5) and (11, 0).
+⚙ Corners: (0, 0), (0, 5.5), (5, 0), and where the lines cross.
+⚙ Intersection: multiply the oven equation by 2: 4X + 2Y = 20. Subtract X + 2Y = 11: 3X = 9, so X = 3
+⚙ Substitute: 2(3) + Y = 10, so Y = 4. Check labor: 3 + 2(4) = 11. Correct.
+⚙ Z at (0, 0) = 0
+⚙ Z at (0, 5.5) = 40(5.5) = 220
+⚙ Z at (5, 0) = 50(5) = 250
+⚙ Z at (3, 4) = 50(3) + 40(4) = 150 + 160 = 310
+★ Make 3 cakes and 4 pies for a maximum profit of 310 pesos.
+
+COMMON MISTAKES
+⚙ Shading the wrong side: "<=" is toward the origin, ">=" is away from it.
+⚙ Using a point that is not a corner of the feasible region, such as an intercept that breaks another constraint.
+⚙ Eyeballing an intersection instead of solving the two equations.
+⚙ Moving the objective line the wrong way: toward the origin for Min, away for Max.
+⚙ Choosing the largest Z in a minimization problem.
+⚙ Forgetting the non-negativity constraints, or including negative coordinates.
+⚙ Rounding the intersection too early before computing Z.
+⚙ Trying the graphical method with three decision variables.
+
+EXAM TIPS
+⚙ Write the model in this order: objective function, s.t., constraints, non-negativity.
+⚙ Label constraints C1, C2, C3 so you can name which lines meet at each corner.
+⚙ Always check an intersection by substituting it into both equations.
+⚙ Make a table of corners and Z values; it shows the answer clearly.
+⚙ State the final answer in full: the values of X and Y, and the optimal Z.
+
+SELF-TEST
+Q: What are the three parts of an LP model?
+★ The objective function, the constraints, and the non-negativity constraints.
+Q: Where does the optimal solution of an LP problem occur?
+★ At a corner (extreme) point of the feasible region.
+Q: Which side of a ">=" constraint line is feasible?
+★ The side above the line, away from the origin.
+Q: Find the intercepts of 3X + 4Y = 24.
+★ X = 0 gives Y = 6; Y = 0 gives X = 8. Points (0, 6) and (8, 0).
+Q: In the objective function line method for maximization, which way do you move the line?
+★ Away from the origin, parallel to itself.
+Q: Why is the graphical method limited?
+★ It works only with 2 decision variables.
+Q: Solve X + Y = 7 and X - Y = 1.
+★ Add the equations: 2X = 8, so X = 4, then Y = 7 - 4 = 3. Check: 4 - 3 = 1.
