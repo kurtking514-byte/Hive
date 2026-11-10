@@ -1,0 +1,233 @@
+Lecture 7 Context
+User interface, user experience, graphic design elements, and the design principles of learnability, flexibility, and robustness
+
+OBJECTIVES
+⚙ Objective 1: Definition (of context and its terms).
+⚙ Objective 2: User Interface.
+⚙ Objective 3: User Experience.
+⚙ Objective 4: Graphic design elements and principles.
+
+CONTEXT
+★ Context: also known as paradigm. It focuses on how the HCI (human-computer interaction) will be formed.
+★ Context investigates effective strategies for building interactive, usable systems.
+EASIER: Context is the "big plan" for how people and a system will interact, so the system ends up easy and pleasant to use.
+
+USER INTERFACE (UI)
+★ User Interface (UI): focuses on the look, feel, presentation, and interactivity of the system.
+⚙ Laying out the parts of the system, depending on the hardware (for example a phone screen versus a desktop monitor).
+⚙ Using highly recognizable icons and designs.
+★ Goal of UI: allow for intuitive use of the system.
+★ UI is closely tied with graphic design.
+EASIER: UI is what you see and touch: the buttons, colors, icons, and layout.
+
+USER EXPERIENCE (UX)
+★ User Experience (UX): focuses on how the user interacts with the system.
+⚙ How easy it is to go to a specific page.
+⚙ How easy it is to navigate between pages.
+⚙ Whether the user can use the system without the assistance of anyone else.
+★ Goal of UX: allow for a pleasant experience in using the system.
+★ UI is a part of UX.
+⚙ UI is graphic design: presenting information aesthetically (in a good-looking way).
+⚙ UX is system analysis: identifying features and constraints, and quality assurance.
+Difference: UI is how the system looks. UX is how using the system feels and flows. UI sits inside UX.
+EASIER: In a restaurant, UI is the menu design and plating; UX is the whole visit, from finding a seat to paying the bill.
+
+GRAPHIC DESIGN
+★ Graphic design: the art, science, and profession of presenting information using visual elements.
+
+ELEMENTS OF GRAPHIC DESIGN
+⚙ Color and texture
+⚙ Line, shape, and form
+⚙ Space and size
+⚙ Typography (the style and arrangement of text)
+
+FACTORS OF GRAPHIC DESIGN
+⚙ Balance
+⚙ Proximity and alignment
+⚙ Contrast
+⚙ Repetition and movement
+⚙ White space
+Difference: elements are the building blocks (color, line, space, typography). Factors are how you arrange them (balance, alignment, contrast, repetition, white space).
+Added example: proximity means placing related items close together; white space is the empty area that keeps a design from looking crowded.
+
+EXAMPLE: BOTTOM NAVIGATION
+⚙ UX: identify the most used actions.
+⚙ UX: make those actions easily accessible.
+⚙ UX: make sure actions cannot be accidentally pressed.
+⚙ UI: use icons that best represent the actions, with additional text labels (for example Home, History, Profile).
+⚙ UI: small sizing, but still big enough to be tapped.
+
+EXAMPLE: SIGNUP FORMS
+⚙ UX: a textbox is one line to show that a short answer is expected (versus a text area for long answers).
+⚙ UX: sample answers are provided.
+⚙ UX: the steps are arranged from top to bottom.
+⚙ UI: all textboxes have equal width.
+⚙ UI: each label is on the left side of its textbox.
+⚙ UI: a blue button indicates "Save".
+
+GRAPHIC DESIGN PRINCIPLES
+The lecture covers three main principles: learnability, flexibility, and robustness.
+⚙ Learnability factors: predictability, synthesizability, familiarity, generalizability, consistency.
+⚙ Flexibility factors: multithreading, task migratability, task substitutivity, customizability.
+⚙ Robustness factors: observability, recoverability, responsiveness.
+
+LEARNABILITY
+★ Learnability: the ease with which new users can begin effective interaction and achieve maximal performance.
+★ The better the learnability of an application, the less training and time it takes for a person to use it.
+⚙ It is vital that users can pick up how to use the application quickly.
+⚙ Common designs are the ones familiar to users.
+⚙ Many web, desktop or laptop, and mobile apps share design methods.
+⚙ Learnability focuses on recognition instead of recall (seeing a familiar design rather than remembering how to do something).
+⚙ Most mobile applications have a bottom navigation (for example Instagram, Reddit, and Twitter).
+
+PREDICTABILITY
+★ Predictability: the user's ability to foresee the operations that can be performed next.
+⚙ The user must be able to determine the outcome of present or future interaction with the system.
+⚙ It requires the user's knowledge of the interaction to be sufficient.
+★ Predictability is often referred to as operation visibility.
+⚙ It is concerned with showing the availability of operations.
+⚙ If an operation can be performed, there should be a clear indication of this to the user.
+⚙ User actions should be matched by a response.
+⚙ Example: navigation buttons. Items (slides, images, videos) move left to right and back, and the number of dots shows the number of items.
+⚙ Example: when saving a file from a web browser, a prompt shows the file name, type of file, and source, with options to save or cancel.
+⚙ Example: blue buttons, used in Google apps (mobile app frameworks, Google Chrome), indicate that the button is the next step, such as "Print". It is the commonly done step, but not all of the time.
+
+SYNTHESIZABILITY
+★ Synthesizability: support for the user to assess the effect of past operations on the current state.
+★ Immediate honesty: the system gives the user an observable and informative notification about the changes, so the user can immediately tell their actions caused observable changes.
+⚙ Immediate honesty example: when transferring files between folders, the pasted items are highlighted in the new folder, and the old folder shows "This folder is empty".
+★ Eventual honesty: the user has to discover on their own the changes they made in the system.
+⚙ A user not familiar with the system's operations may have trouble synthesizing (working out) the consequences of the operations.
+⚙ Eventual honesty example: the Command Prompt. It needs specific knowledge of the commands and gives no feedback (notification, text, sound) showing success or failure, so the user must double check that the action was done.
+Difference: immediate honesty tells you right away what changed. Eventual honesty makes you check for yourself.
+
+FAMILIARITY
+★ Familiarity: measures how the user's prior knowledge and experience can be applied to a new system.
+⚙ The use of appearance can improve familiarity: the appearance of an object gives familiarity with its behavior.
+★ Guessability: matching the user's expectations with how objects in the real world function.
+★ Metaphor: gives the user another avenue (way) to better understand the system.
+★ Affordance: the principle where the appearance of objects in a system suggests how they can be manipulated.
+⚙ Example: most save icons are based on the floppy disk (diskette), which was first used for storage.
+⚙ Example: volume sliders in digital soundboards copy the sliders on physical soundboards.
+EASIER: A button that looks raised "affords" pressing, just like a real button invites you to push it.
+
+GENERALIZABILITY
+★ Generalizability: a form of consistency among different applications that lets users of one application easily adapt to another similar application.
+★ It means extending specific interaction knowledge to new situations.
+⚙ It determines how easy it is to learn to perform new tasks, given a user's current experience of a system or UI.
+⚙ UI standards and guidelines assist and enforce generalizability.
+⚙ Example: Adobe Photoshop (raster, pixel-based) and Adobe Illustrator (vector) have different uses but similar tools, so users of both can use them interchangeably. Paint has similar tools too.
+⚙ Example: most MMORPGs (online multiplayer games) have the user press "Enter" to enable the chat.
+Difference: familiarity uses knowledge from the real world or past experience. Generalizability uses knowledge from one application in another similar application.
+
+CONSISTENCY
+★ Consistency: likeness in input and output behavior arising from similar situations or task objectives.
+⚙ Consistency is used to support generalizability.
+⚙ "Sameness" should be applied to terminology, formatting, and input and output behavior.
+⚙ The same icons and labels should mean the same thing.
+⚙ Example: Facebook's navigation is at the top on both mobile and desktop, with the same color scheme and similar layout.
+⚙ Bad example: placing the "Submit" button in different places can confuse the user, even within the same application.
+Difference: consistency is sameness within a system or across its versions. Generalizability is carrying skills across different applications.
+
+FLEXIBILITY
+★ Flexibility: extends the ways a user and the system exchange information.
+⚙ It allows a system to adapt to different types of users and different uses of a system.
+⚙ It helps improve a system's usability.
+
+MULTITHREADING
+★ Multithreading: the ability of a system to support user interaction for more than one task at a time.
+⚙ Within a user interface, a thread can be considered a specific task being performed.
+⚙ Multithreading can be described as concurrent or interleaved.
+★ Interleaved system: permits work on a single task at a given time.
+⚙ Interleaved example: a word processor allows multiple documents to be open, but only one can be worked on at any instant.
+⚙ Interleaved example: multiple windows can be open at the same time but cannot be actively accessed at the same time.
+★ Concurrent system: allows multiple tasks to be actioned at the same time.
+⚙ Concurrent example: in most operating systems, a document can be edited in MS Word while music plays in the background and a file is being downloaded.
+⚙ Concurrent example: Discord, where a user can chat or voice call while playing a game.
+Difference: interleaved means many tasks open, one active at a time. Concurrent means many tasks running at the same time.
+
+TASK MIGRATABILITY
+★ Task migratability: passing the responsibility of executing tasks between the user and the system.
+⚙ It gives a system the ability to help the user without directly making changes to a file or document.
+⚙ Example: a spell checker checks words against its own dictionary and gives suggestions, but does not automatically correct spelling mistakes.
+⚙ It is not recommended to let a spell checker carry out this task without the user's assistance.
+
+TASK SUBSTITUTIVITY
+★ Task substitutivity: allows equivalent values of input and output to be substituted for each other.
+⚙ It can blur the distinction between output and input.
+⚙ Example: a drawing application may let the user type the start and end coordinates of a line, or let the user draw the line first and then show the end point coordinates (as in Photoshop's line tool).
+
+CUSTOMIZABILITY
+★ Customizability: modifiability by the user (adaptability) or by the system (adaptivity).
+⚙ The user can modify the user interface.
+⚙ The UI should support individual preferences.
+⚙ Ways to customize a UI: themes and colors, notifications, account information.
+⚙ Example: phone settings let the user change wallpaper, brightness, font style, and font size.
+Difference: adaptability is when the user makes the change. Adaptivity is when the system makes the change by itself.
+
+ROBUSTNESS
+★ Robustness: the ability to withstand or overcome adverse conditions or rigorous testing; the ability to be durable.
+⚙ It focuses on supporting users so they can achieve their goals efficiently.
+⚙ It is the level of support given to the user.
+⚙ It determines the successful achievement and assessment of goal-directed behavior.
+⚙ It allows the user to navigate the system on their own.
+
+OBSERVABILITY
+★ Observability: the user should be able to evaluate and understand the internal state of the system from its perceivable representation.
+⚙ The user should understand what is going on in the background in the simplest ways possible.
+⚙ If the user cannot understand the state of the product, the user's opinion of the product will be negative.
+⚙ Example: a time-consuming operation should display its current status by text, a graphic element, or both.
+⚙ Loading UI elements (a spinner or a progress bar) reassure the user that the process is still working and has not crashed or failed.
+⚙ Example: webpage errors describe why the page did not load.
+★ 3xx codes: the client must take additional action to complete the request.
+★ 4xx codes: client errors (for example 404, page not found).
+★ 5xx codes: server errors (for example 500, the server cannot handle the request).
+
+RECOVERABILITY
+★ Recoverability: the user should be able to reach a desired goal after recognizing errors in a previous interaction.
+⚙ Users should be flexible with errors based on previous experience.
+★ Forward recovery (negotiation): the user accepts the current state of the system and negotiates from the present state toward the required state, working with or around the error instead of treating it like a roadblock.
+⚙ Forward example: the username is kept when the password is rejected, so the user only re-enters the password.
+★ Backward recovery (undo): the user removes the undesired outcome of the previous interaction by returning to a previous state.
+⚙ Backward recovery does not repeat the mistake and removes processes that may repeat it.
+⚙ Backward example: the undo button in most document processors, such as Excel and Word.
+⚙ Backward example: Microsoft Word's document recovery feature recovers documents that were autosaved.
+Difference: forward recovery moves ahead from the current state. Backward recovery goes back to an earlier state.
+
+RESPONSIVENESS
+★ Responsiveness: a measure of the rate of communication between the user and the system.
+⚙ Indicating changes of state within the system is important.
+⚙ A short, instantaneous response time is more desirable.
+⚙ Example: touch functions should show the needed animations. This is mostly for mobile, but also for touchpads and mice.
+⚙ Example: in virtual reality, when the user moves their head, the display should move too, and the precision of the VR screen is important for responsiveness.
+
+COMMON MISTAKES
+⚙ Saying UX is a part of UI. It is the other way around: UI is a part of UX.
+⚙ Mixing up elements of graphic design (color, line, space, typography) with factors (balance, proximity, contrast, repetition, white space).
+⚙ Confusing predictability (knowing what will happen next) with synthesizability (understanding what already happened).
+⚙ Calling the Command Prompt immediate honesty. It is eventual honesty, because it gives no feedback.
+⚙ Mixing up interleaved (one active task at a time) and concurrent (many at once).
+⚙ Calling the undo button forward recovery. Undo is backward recovery.
+⚙ Calling 4xx server errors. 4xx are client errors; 5xx are server errors.
+
+EXAM TIPS
+⚙ Memorize the three principles and their factors: learnability (predictability, synthesizability, familiarity, generalizability, consistency), flexibility (multithreading, task migratability, task substitutivity, customizability), robustness (observability, recoverability, responsiveness).
+⚙ Link each example to its factor: dots on a slider (predictability), floppy save icon (familiarity), Enter to chat (generalizability), spell checker (task migratability), loading bar (observability), undo (backward recovery).
+⚙ Know the three familiarity concepts: guessability, metaphor, affordance.
+⚙ Adaptability is done by the user; adaptivity is done by the system.
+
+SELF-TEST
+Q: What is another name for context in HCI?
+★ Paradigm.
+Q: Which is a part of the other, UI or UX?
+★ UI is a part of UX.
+Q: Name the four elements of graphic design.
+★ Color and texture; line, shape, and form; space and size; typography.
+Q: What is predictability often called?
+★ Operation visibility.
+Q: Which type of honesty does the Command Prompt show?
+★ Eventual honesty.
+Q: What type of multithreading lets a word processor open many documents but edit only one at a time?
+★ Interleaved.
+Q: What kind of error does a 5xx code show?
+★ A server error.

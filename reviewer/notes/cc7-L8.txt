@@ -1,0 +1,172 @@
+Lecture 8 Measuring UX
+Usability, metrics, performance and issue-based metrics, self-reported and behavioral metrics, and usability testing with the SUS
+
+OBJECTIVES
+⚙ Objective 1: Definition (usability, metrics, testing).
+⚙ Objective 2: Usability Metrics.
+⚙ Objective 3: Performance Metrics.
+⚙ Objective 4: Issue-Based Metrics.
+⚙ Objective 5: Self-Reported Metrics.
+⚙ Objective 6: Behavioral and Psychological Metrics.
+⚙ Objective 7: Usability Testing.
+
+DEFINITIONS
+★ Usability: a measure of how well a specific user in a specific context can use a product or design to achieve a defined goal.
+⚙ Usability is measured throughout the development process, not only at the end.
+★ Metrics: the general term for the measurements or criteria used during testing. They are used to decide whether something is successful or not.
+★ Testing: a set of procedures to make sure the system is functional based on certain requirements. It investigates whether the design is easy to use and intuitive for the target user.
+EASIER: Usability is "how easy is it to use?", metrics are the numbers and checks that answer it, and testing is the activity of collecting them.
+
+USABILITY ELEMENTS
+⚙ Effectiveness (useful): the product does what the user needs.
+⚙ Efficiency (usable): the user can reach the goal without wasted effort.
+⚙ Engagement (used): the product is pleasant enough that people use it.
+⚙ Error tolerance: the product prevents errors and helps the user recover from them.
+⚙ Ease of learning (learnability): the product is quick to learn.
+EASIER: Remember them as the five Es: Effectiveness, Efficiency, Engagement, Error tolerance, Ease of learning.
+
+USABILITY METRICS
+★ Usability metrics: measure how easy a system is to use with a group of users.
+⚙ They involve repeated observation of users completing tasks through different types of designs.
+
+PERFORMANCE METRICS
+★ Performance metrics: used to determine the size (magnitude) of specific issues and how many people are likely to encounter the same issue.
+★ Task success: whether participants can complete a task or not.
+★ Time on task: the time it takes to perform a task. It is also known as task completion time or task time.
+★ Errors: a possible outcome of a performance issue; an incorrect action on the part of the user.
+★ Efficiency: the amount of effort required to complete a task.
+⚙ Cognitive effort: deciding what action to take.
+⚙ Physical effort: the activity required to complete the action (for example clicks, typing, scrolling).
+★ Learnability (as a metric): how much time and effort is needed to become proficient.
+Difference: time on task measures only time. Efficiency measures effort, which can be mental (cognitive) or physical.
+Difference: task success is "did they finish?". Errors is "what wrong actions did they make on the way?".
+
+ISSUE-BASED METRICS
+★ Issue-based metrics: focus on identifying what is and is not an issue, the product and the usability questions that arise, and participant behavior.
+
+ISSUE-BASED BIASES
+Biases are factors that can distort what issues are found.
+⚙ Participant bias: demographics, role of the participant, capabilities of the participant, number of participants, level of feedback from the participant.
+⚙ Task bias: clearly defined versus open-ended tasks; self-generated versus manually operated tasks.
+⚙ Method bias: input and output devices, data gathering procedure, algorithms used, features and constraints focused on.
+⚙ Artifact bias: hardware specifications, software specifications, system performance.
+⚙ Environment bias: equipment in relation to the room, size of the room, external forces (for example noise or interruptions).
+⚙ Moderator bias: establishment of rapport (a friendly connection), comfort of the user.
+EASIER: The six sources of bias are who is tested (participant), what they do (task), how it is measured (method), what device or software is used (artifact), where it happens (environment), and who runs it (moderator).
+
+SELF-REPORTED METRICS
+★ Self-reported metrics: information about the user's perception of the system and their interactions with it.
+⚙ Collection method: Likert scale.
+★ Likert scale: a statement to which the response is the level of agreement (for example very unsatisfied, unsatisfied, neutral, satisfied, very satisfied).
+⚙ Collection method: pairs of bipolar adjectives (opposite words such as useful and useless, comfortable and uncomfortable). The slide groups them into subscales: creativity, function, and comfort.
+⚙ Collection method: open-ended questions.
+Added example: rating a system between pairs of opposite adjectives is commonly called a semantic differential scale.
+
+COLLECTION METHODS: PROS AND CONS
+⚙ Oral: easiest method for quick ratings; but the observer must take notes.
+⚙ Written: good for quick ratings and longer surveys; but answers need to be manually entered.
+⚙ Online: good for quick ratings and longer surveys; but needs computer access.
+
+BIASES IN SELF-REPORTING
+★ Selection bias: selecting participants with specific attributes for testing, so the sample is not truly randomized.
+★ Reporting bias: selectively revealing or suppressing (hiding) information.
+★ Social desirability bias: the tendency to give more positive feedback in person or on the phone.
+Difference: selection bias is about who is picked. Reporting bias is about what they choose to tell. Social desirability bias is about saying nice things to please the tester.
+
+AVOIDING BIAS
+⚙ The person collecting the data should be different from the test monitor.
+★ Observer-expectancy effect: the collector of results can subconsciously influence the people participating in an experiment.
+⚙ Make the survey anonymous. This prevents prejudices and selection bias.
+⚙ Examples of prejudices: ageism, classism, racism, sexism.
+
+ANALYSIS OF SELF-REPORTS
+★ Quantitative data: assign a numeric value to each response, compute averages, and focus on the top 2 and bottom 2 responses.
+★ Qualitative data: summarize responses from open-ended questions, identify keywords through apriori coding, then group the keywords into themes.
+Added example: apriori coding means deciding the code words or categories before reading the responses.
+Difference: quantitative data are numbers you can average. Qualitative data are words you summarize into themes.
+
+BEHAVIORAL AND PSYCHOLOGICAL METRICS
+★ Verbal behaviors: usually expressed by the user during oral testing; done and observed through speech.
+★ Non-verbal behaviors: usually described by affective states (emotions); they require observation.
+Data capture observation can use:
+⚙ Facial expressions
+⚙ Eye tracking
+⚙ Scan paths (the path the eyes follow across the screen)
+⚙ Skin conductance (changes in sweat that show arousal or stress)
+⚙ Posture
+⚙ Pressure
+⚙ Brain signals
+⚙ Motion
+Difference: verbal behavior is what users say. Non-verbal behavior is what their face and body show.
+
+USABILITY TESTING
+★ Usability testing: focuses on the functionality of the features, operations, and constraints of a system.
+⚙ Step 1: Planning.
+⚙ Step 2: Set user tasks.
+⚙ Step 3: Recruit testers.
+⚙ Step 4: Facilitate (moderate) the testing.
+Usability testing methods:
+⚙ In-person
+⚙ Remote
+⚙ Guerrilla
+Added example: in-person testing has the tester and user in the same place; remote testing is done online from different places; guerrilla testing is quick, informal testing with people found in public places such as a cafe.
+
+SYSTEM USABILITY SCALE (SUS)
+★ System Usability Scale (SUS): a survey tool to measure the usability of a system. It is multi-purpose and has ten questions with five responses each (1 strongly disagree to 5 strongly agree).
+⚙ Q1: I think that I would like to use this system frequently.
+⚙ Q2: I found the system unnecessarily complex.
+⚙ Q3: I thought the system was easy to use.
+⚙ Q4: I think that I would need the support of a technical person to be able to use this system.
+⚙ Q5: I found the various functions in this system were well integrated.
+⚙ Q6: I thought there was too much inconsistency in this system.
+⚙ Q7: I would imagine that most people would learn to use this system very quickly.
+⚙ Q8: I found the system very awkward to use.
+⚙ Q9: I felt very confident using the system.
+⚙ Q10: I needed to learn a lot of things before I could get going with this system.
+Interpreting scores:
+⚙ The numbers are added together.
+⚙ The sum is multiplied by 2.5 to convert the original score of 0 to 40 into 0 to 100.
+⚙ A new number is created and interpreted.
+★ SUS above 68: above average. SUS below 68: below average.
+⚙ The best way to interpret results is to "normalize" the scores into a percentile ranking.
+Added example: to get the 0 to 40 total, each odd item (positive statements) scores its response minus 1, and each even item (negative statements) scores 5 minus its response, so every item gives 0 to 4.
+
+EXAMPLE: COMPUTING A SUS SCORE
+Added example: a user answers Q1 to Q10 with 4, 2, 4, 1, 4, 2, 5, 1, 4, 2.
+⚙ Odd items (Q1, Q3, Q5, Q7, Q9) answered 4, 4, 4, 5, 4 give 3, 3, 3, 4, 3, which total 16.
+⚙ Even items (Q2, Q4, Q6, Q8, Q10) answered 2, 1, 2, 1, 2 give 3, 4, 3, 4, 3, which total 17.
+⚙ Total = 16 + 17 = 33 out of 40.
+⚙ SUS = 33 x 2.5 = 82.5
+★ 82.5 is above 68, so the system's usability is above average.
+
+COMMON MISTAKES
+⚙ Thinking usability is measured only at the end. It is measured throughout development.
+⚙ Mixing up time on task (time) with efficiency (effort).
+⚙ Putting moderator rapport under environment bias. It is moderator bias; room size is environment bias.
+⚙ Confusing selection bias (who is picked) with social desirability bias (being overly positive in person).
+⚙ Letting the test monitor also collect the data, which risks the observer-expectancy effect.
+⚙ Forgetting to multiply the SUS total by 2.5.
+⚙ Reading a SUS of 68 or below as above average. Above 68 is above average.
+
+EXAM TIPS
+⚙ Know the seven objectives as the lecture's outline: definition, usability, performance, issue-based, self-reported, behavioral and psychological metrics, usability testing.
+⚙ Memorize the five performance metrics: task success, time on task, errors, efficiency, learnability.
+⚙ Memorize the six bias sources: participant, task, method, artifact, environment, moderator.
+⚙ Memorize the usability testing steps in order: planning, set user tasks, recruit testers, facilitate.
+⚙ SUS: 10 questions, 5 responses, 0 to 40 times 2.5 gives 0 to 100, and 68 is the average.
+
+SELF-TEST
+Q: What is usability?
+★ A measure of how well a specific user in a specific context can use a product or design to achieve a defined goal.
+Q: What is time on task also called?
+★ Task completion time or task time.
+Q: Which bias makes people give more positive feedback in person or on the phone?
+★ Social desirability bias.
+Q: What effect is avoided by having someone other than the test monitor collect data?
+★ The observer-expectancy effect.
+Q: What are the steps of usability testing?
+★ Planning, set user tasks, recruit testers, facilitate or moderate testing.
+Q: How is a SUS total of 0 to 40 converted to 0 to 100?
+★ Multiply it by 2.5.
+Q: A system scores 60 on the SUS. How is it interpreted?
+★ Below average, because it is below 68.

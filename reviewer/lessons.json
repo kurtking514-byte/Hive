@@ -428,5 +428,25 @@
   "quiz": 30,
   "course": "BSCS",
   "exam": "Finals"
+ },
+ {
+  "id": "cc7-L7",
+  "subject": "CC7",
+  "tab": "Lecture 7",
+  "title": "Context",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
+ },
+ {
+  "id": "cc7-L8",
+  "subject": "CC7",
+  "tab": "Lecture 8",
+  "title": "Measuring UX",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
  }
 ]
