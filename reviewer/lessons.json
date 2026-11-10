@@ -448,5 +448,25 @@
   "quiz": 30,
   "course": "BSCS",
   "exam": "Finals"
+ },
+ {
+  "id": "eng100-module5",
+  "subject": "ENG100",
+  "tab": "Module 5",
+  "title": "Varieties of the English Language",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
+ },
+ {
+  "id": "eng100-module6",
+  "subject": "ENG100",
+  "tab": "Module 6",
+  "title": "Communication for Various Purposes",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
  }
 ]

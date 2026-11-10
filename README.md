@@ -109,7 +109,7 @@ Each lesson needs three things in `reviewer/`.
 The reviewer opens on the **Current exam** you set on the admin page. Older exams stay one tab away.
 
 ## Updating the site later
-After changing any file, raise the number in `sw.js` (for example `hive-v29` → `hive-v30`) so phones pick up the new version. Students then see the **Update** bar the next time they open Hive.
+After changing any file, raise the number in `sw.js` (for example `hive-v30` → `hive-v31`) so phones pick up the new version. Students then see the **Update** bar the next time they open Hive.
 
 ## Test locally
 ```bash
