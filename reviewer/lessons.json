@@ -468,5 +468,25 @@
   "quiz": 30,
   "course": "BSCS",
   "exam": "Finals"
+ },
+ {
+  "id": "pathfit1-module4",
+  "subject": "PATHFIT1",
+  "tab": "Module 4",
+  "title": "Everyday Fitness: Aerobic, Strength, and Flexibility Training",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
+ },
+ {
+  "id": "pathfit1-module5",
+  "subject": "PATHFIT1",
+  "tab": "Module 5",
+  "title": "Functional Fitness and Tabata Challenge",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
  }
 ]
