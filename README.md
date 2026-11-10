@@ -2,7 +2,8 @@
 
 A study app for UC CITCS. Every course (BSIT, BSCS, BSIS) has its own space, and everyone feeds the same hive.
 
-**Open it at [tinyurl.com/hive-kk](https://tinyurl.com/hive-kk)**
+**Open it at [hive.kurtking.site](https://hive.kurtking.site)**  
+<sub>The old links, tinyurl.com/hive-kk and kurtking514-byte.github.io/Hive, still work and lead to the same app.</sub>
 
 https://github.com/user-attachments/assets/a62b0b91-19cf-477c-88de-56adb439ef37
 
@@ -72,10 +73,15 @@ Also check the `courses`, `subjects` and `teachers` lists in `config.js`. Mark e
 ### 3. Put it online (GitHub Pages, free)
 1. Push these files to <https://github.com/kurtking514-byte/Hive>.
 2. Go to **Settings → Pages**. Set **Source** to *Deploy from a branch*, choose `main` / root, and click **Save**.
-3. After a minute it's live at `https://kurtking514-byte.github.io/Hive/` (capital H, the link is case-sensitive). The short link for the Discord server is <https://tinyurl.com/hive-kk>.
+3. After a minute it's live at `https://kurtking514-byte.github.io/Hive/` (capital H, the link is case-sensitive).
+4. **Own domain** (`hive.kurtking.site`, bought on Namecheap):
+   - In Namecheap → **Advanced DNS**, add a **CNAME Record** with Host `hive` and Value `kurtking514-byte.github.io.`. The `@` and `www` records belong to the portfolio, so leave them alone.
+   - In GitHub → **Settings → Pages → Custom domain**, enter `hive.kurtking.site` and save. This adds the `CNAME` file to the repo, so don't delete that file.
+   - When the padlock certificate is ready, tick **Enforce HTTPS**.
+   - tinyurl.com/hive-kk still points to the github.io link, which forwards to the domain, so the video and old posts keep working.
 
 ### 4. Set the upload code
-Open `.../admin.html` and sign in. Under **Upload code**, choose a code (default is `CITCS`; students can type it in any capitals). Post it in the Discord server together with the link.
+Open <https://hive.kurtking.site/admin.html> and sign in. Under **Upload code**, choose a code (the starting one is `CITCS`; students can type it in any capitals). Post it in the Discord server together with the link.
 
 ## Day to day
 - **Admin page:** filter by *Pending*, open each file, then **Approve** (keep), **Reject** (wrong, blurry or off-topic) or **Mark used** once it's in a reviewer.
