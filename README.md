@@ -77,7 +77,7 @@ Also check the `courses`, `subjects` and `teachers` lists in `config.js`. Mark e
 4. **Own domain** (`hive.kurtking.site`, bought on Namecheap):
    - In Namecheap → **Advanced DNS**, add a **CNAME Record** with Host `hive` and Value `kurtking514-byte.github.io.`. The `@` and `www` records belong to the portfolio, so leave them alone.
    - In GitHub → **Settings → Pages → Custom domain**, enter `hive.kurtking.site` and save. This adds the `CNAME` file to the repo, so don't delete that file.
-   - When the padlock certificate is ready, tick **Enforce HTTPS**.
+   - Once GitHub has issued the padlock certificate (it can take up to a day), tick **Enforce HTTPS** so `http://` links switch to `https://`. Installing and offline mode only work on `https://`.
    - tinyurl.com/hive-kk still points to the github.io link, which forwards to the domain, so the video and old posts keep working.
 
 ### 4. Set the upload code
