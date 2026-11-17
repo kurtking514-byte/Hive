@@ -1,0 +1,122 @@
+Module 5 Agrarian Reform Policies
+The history of agrarian reform, RA 6657 and CARP, and current updates (summarized)
+
+THE BIG IDEA
+Agrarian reform is not one law or a one-time handing out of land. It is a long historical process responding to unequal control of land.
+⚙ Reading lens: historical problem, then policy response, then implementation, then consequences, then remaining issues.
+
+KEY TERMS
+★ Land reform: mainly changes who owns or controls the land (for example, transferring land from a landlord to a tenant).
+★ Agrarian reform: broader than land transfer. It includes rights, support services, justice, productivity, and rural development.
+★ Formula: Agrarian Reform = Land + Rights + Support + Justice + Productivity.
+Difference: land reform asks "who owns the land?" Agrarian reform also asks "can the farmer stay secure and productive after getting it?"
+★ Land tenure: the way land is owned, held, rented, or controlled.
+★ Tenant: a farmer who works land owned by another person.
+★ Landlord: an owner who controls land worked by tenants or laborers.
+★ Hacienda: a large estate or plantation.
+★ CLOA: Certificate of Land Ownership Award.
+★ ARB: Agrarian Reform Beneficiary.
+⚙ Historical analysis lenses: Continuity (what stayed the same), Change (what is new), Cause (why), Consequence (who gained or lost), Evidence (laws, dates, data).
+
+HISTORY OF AGRARIAN REFORM, PERIOD BY PERIOD
+⚙ Pre-colonial: land was tied to community use, kinship, and barangay customs, not privately titled property.
+⚙ Spanish period: encomienda, haciendas, and friar lands; tribute and forced labor; many peasants became tenants. Land meant religious, political, and social power.
+⚙ Revolution and First Republic: land grievances and anti-friar feelings fed the Revolution, but independence did not end unequal landownership.
+⚙ American period: new land laws, registration, and bureaucracy. Legal reform still gave unequal results because poor farmers lacked money, documents, and literacy.
+⚙ Commonwealth: tenant unrest, crop-sharing disputes, and debt bondage; the government used social justice language but elites stayed powerful.
+⚙ Japanese occupation: war disrupted farming; the Hukbalahap rose in the anti-Japanese struggle.
+⚙ Postwar Republic: the Huk Rebellion; land became a question of peace and stability, not just economics.
+
+AMERICAN PERIOD LAWS
+⚙ Friar Lands Act: the government bought and resold friar lands, but many tenants could not afford them.
+⚙ Public Land Act: regulated public land; people with money and knowledge benefited more.
+⚙ Torrens title system: formal land registration; customary users often lacked the needed documents.
+★ Lesson: a legal reform can still produce unequal outcomes when access to money, documents, and literacy is unequal.
+
+EARLY REPUBLIC LAWS (MAGSAYSAY ERA)
+⚙ RA 1199, Agricultural Tenancy Act: regulated tenancy relations and recognized tenant rights.
+⚙ RA 1160, NARRA: supported resettlement and land settlement, linking land access to peace-building.
+⚙ RA 1400, Land Reform Act: created the Land Tenure Administration and expanded government purchase of estates.
+These laws helped but did not end land inequality.
+
+RA 3844 AND PD 27
+★ RA 3844, Agricultural Land Reform Code of 1963 (Macapagal era): abolished share tenancy in favor of agricultural leasehold and treated tenancy as a structural problem.
+★ PD 27 (1972, Marcos era): the Tenant Emancipation Decree. It transferred land to tenant-farmers on rice and corn lands only, through Operation Land Transfer, Certificates of Land Transfer, and Emancipation Patents.
+⚙ PD 27's weakness: it covered only rice and corn, leaving out other crops and plantation workers.
+EASIER: Share tenancy means the tenant gives a share of the harvest to the landlord. Leasehold means the tenant pays a fixed rent instead.
+
+THE ROAD TO CARP
+⚙ 1972: PD 27, rice and corn tenant emancipation.
+⚙ 1987: the 1987 Constitution places agrarian reform under social justice after EDSA.
+⚙ 1987: Proclamation No. 131 and EO 229 give a transition framework.
+⚙ 1988: RA 6657 establishes CARP.
+
+RA 6657 AND CARP
+★ RA 6657: the Comprehensive Agrarian Reform Law of 1988, which created the Comprehensive Agrarian Reform Program (CARP).
+★ Why "comprehensive": it covers public and private agricultural lands regardless of crop and tenancy arrangement, unlike PD 27.
+⚙ CARP covers: Lands, Beneficiaries, Mechanisms (acquisition, valuation, compensation, distribution), Support services, and Justice (dispute resolution).
+⚙ Beneficiaries include agricultural lessees and share tenants, regular farmworkers, seasonal farmworkers, other farmworkers, actual tillers of public lands, and qualified cooperatives. Beneficiary status is a legal matter, not based only on poverty.
+★ Covered land: within CARP's legal scope. Exempted land: removed from coverage for a specific use or legal ground. Excluded land: outside CARP because of its classification.
+⚙ CARP process Step 1: Identify the landholding.
+⚙ Step 2: Acquire and value the land.
+⚙ Step 3: Compensate the landowner.
+⚙ Step 4: Award the land to qualified ARBs.
+⚙ Step 5: Provide post-distribution support.
+★ Landowner retention limit: 5 hectares. Qualified children may get additional area.
+★ Just compensation: CARP is not confiscation; landowners are paid according to legal valuation and due process.
+⚙ Beneficiary duties: farm the land productively, follow transfer and conversion rules, pay amortization (unless condoned), and join support programs.
+
+GOVERNMENT INSTITUTIONS IN CARP
+⚙ DAR (Department of Agrarian Reform): identifies land, screens beneficiaries, and distributes land.
+⚙ Land Bank: land valuation and payment.
+⚙ PARC (Presidential Agrarian Reform Council): policy coordination.
+⚙ DAR adjudication bodies: resolve agrarian disputes.
+⚙ Registry of Deeds and LRA: register titles and land records.
+
+SUPPORT SERVICES AND DISPUTES
+★ Land alone is not enough. Support services: credit, farm machinery, irrigation, training, organizations, and market access.
+⚙ Common disputes: coverage, valuation, beneficiary qualification, installation (actually occupying the land), and conversion (changing land to non-farm use).
+★ Ownership is the beginning of reform, not the whole reform.
+
+CARP STRENGTHS AND CHALLENGES
+⚙ Strengths: broader coverage than PD 27, more beneficiary categories, a social justice framework, institutions, and support services.
+⚙ Challenges: land conversion, legal delays, elite resistance, support gaps, collective CLOAs, and continuing poverty risks.
+★ Passing a reform law does not automatically change the social structure.
+★ RA 9700, CARPER (2009): extended and amended CARP because distribution was still incomplete.
+
+HACIENDA LUISITA
+★ Hacienda Luisita: a large sugar estate in Tarlac and a major test case of CARP.
+★ Stock Distribution Option: farmworkers received corporate shares instead of land parcels. Critics said shares are not the same as real control over land.
+⚙ The Supreme Court's involvement shows that reform depends on courts, agencies, landholders, and beneficiaries, not just the law.
+
+CURRENT UPDATES
+★ Project SPLIT: splits collective CLOAs into individual titles or e-titles for clearer ownership. The DAR-World Bank project is extended up to 2027.
+★ RA 11953, New Agrarian Emancipation Act: condones (cancels) qualified ARBs' unpaid amortizations, interest, penalties, and surcharges.
+⚙ RA 11953 figures: P57.557 billion in debt, 610,054 ARBs, and 1.17 million hectares.
+⚙ 2026 DAR targets: 80% of ARB organizations managing profitable businesses, and a 3.5% increase in palay yield.
+Difference: earlier CARP focused on distributing land; today's focus is clearer titles, debt relief, productivity, and organizations.
+
+COMMUNICATING HISTORICAL ANALYSIS
+⚙ Techniques: Cause-Effect, Compare-Contrast, Problem-Solution, Continuity-Change, Evidence-Based Claim.
+⚙ Genres: infographic, explainer video, mini-podcast, policy brief, historical essay.
+⚙ Five-part structure: Context, Cause, Evidence, Consequence or Analysis, Message.
+⚙ Standards: historical accuracy, evidence, analysis, genre effectiveness, clarity.
+
+EXAM TIPS
+⚙ Match the law to the name: RA 3844 = Agricultural Land Reform Code (1963); PD 27 = Tenant Emancipation Decree (1972); RA 6657 = CARP (1988); RA 9700 = CARPER (2009); RA 11953 = New Agrarian Emancipation Act.
+⚙ PD 27 = rice and corn only. CARP = all agricultural lands regardless of crop.
+⚙ Retention limit = 5 hectares. CLOA = Certificate of Land Ownership Award. ARB = Agrarian Reform Beneficiary.
+
+SELF-TEST
+Q: What does CLOA stand for?
+★ Certificate of Land Ownership Award.
+Q: Which law created CARP?
+★ RA 6657, the Comprehensive Agrarian Reform Law of 1988.
+Q: What crops did PD 27 cover?
+★ Rice and corn only.
+Q: What is the landowner retention limit under CARP?
+★ 5 hectares.
+Q: Which project splits collective CLOAs into individual titles?
+★ Project SPLIT.
+Q: What does RA 11953 do?
+★ It condones the unpaid agrarian reform debts of qualified ARBs.

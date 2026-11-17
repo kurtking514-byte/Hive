@@ -548,5 +548,15 @@
   "quiz": 30,
   "course": "BSCS",
   "exam": "Finals"
+ },
+ {
+  "id": "hist100-m5",
+  "subject": "HIST100",
+  "tab": "Module 5",
+  "title": "Agrarian Reform Policies",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
  }
 ]
