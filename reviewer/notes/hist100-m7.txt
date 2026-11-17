@@ -1,0 +1,152 @@
+Module 7 Taxation in the Philippines
+Tax concepts, history, legal bases, the tax reform program, the TRAIN Law, and types of taxes (summarized)
+
+WHAT TAXATION IS
+★ Taxation: the power and process by which government imposes compulsory charges to raise public revenue. Taxes are not voluntary donations.
+★ The power to tax is an inherent power of sovereignty, but it is not unlimited; it must follow law and the Constitution.
+★ Lifeblood idea: without revenue, government cannot run. But this does not justify unlimited taxation.
+
+THE THREE INHERENT POWERS OF THE STATE
+⚙ Taxation: raises revenue for public purposes (income tax, VAT, excise). Limit: legal, fair, public purpose.
+⚙ Police power: regulates behavior for public welfare (health rules, traffic laws, zoning). Limit: must not be arbitrary.
+⚙ Eminent domain: takes private property for public use (land for roads). Limit: public use and just compensation.
+EASIER: Taxation = how government gets money. Police power = how it regulates behavior. Eminent domain = when it can take property.
+
+WHY GOVERNMENTS TAX
+⚙ Fund public services and infrastructure (roads, schools, health, courts, disaster response).
+⚙ Redistribute resources through social programs.
+⚙ Influence behavior (excise, health, and environmental taxes).
+⚙ Support economic stability and development.
+⚙ Strengthen government and create a basis for accountability.
+
+TAXES VS OTHER CHARGES
+⚙ Tax: compulsory, for public revenue, not tied to one direct service.
+⚙ License or regulatory fee: for regulation or permission (business permit).
+⚙ Toll: for using a particular facility (expressway toll).
+⚙ Special assessment: for a property benefit from a public improvement (road or drainage).
+⚙ Penalty: punishment for violating a rule (late filing surcharge).
+⚙ Debt: from a contract or private relationship (a loan).
+⚙ Characteristics of a tax: imposed by law, payable in money, compulsory and enforceable, and for a public purpose.
+
+PRINCIPLES OF A GOOD TAX SYSTEM
+⚙ Fiscal adequacy: raises enough revenue.
+⚙ Theoretical justice: fair and based on ability to pay.
+⚙ Administrative feasibility: practical to assess and collect.
+⚙ Transparency: people understand why and how they pay.
+⚙ Accountability: collection is tied to lawful spending.
+
+FAIRNESS AND TAX TERMS
+★ Horizontal equity: people in similar situations get similar tax treatment.
+★ Vertical equity: people with greater ability to pay may pay more.
+★ Progressive tax: the rate rises as ability to pay rises (graduated income tax brackets).
+★ Proportional tax: the same rate for everyone (a flat rate).
+★ Regressive tax: lower-income groups carry a heavier burden relative to income (consumption taxes can feel this way).
+★ Tax incidence: who actually bears the cost. Statutory incidence = who legally pays; economic incidence = who ends up carrying it (for example, consumers paying VAT through prices).
+★ Tax base: what is taxed. Tax rate: the percentage applied. Tax burden: the practical weight of taxes.
+★ Tax avoidance: legal ways to reduce taxes. Tax evasion: illegal non-payment, like hiding income or falsifying records.
+⚙ Compliance cycle: register, keep records, file returns, pay on time, respond to audits.
+
+HISTORY OF PHILIPPINE TAXATION
+⚙ Pre-colonial: datus received tribute, labor, or goods for protection and community needs.
+⚙ Spanish: tribute and cedula (personal tax and a symbol of colonial authority), polo y servicios (forced labor of Filipino males), bandala (forced sales), monopolies, and customs duties.
+⚙ Revolution and First Republic: a new government needed funds for soldiers, offices, and diplomacy.
+⚙ American period: modern bureaucratic revenue administration; the Bureau of Internal Revenue traces its origins here.
+⚙ Commonwealth, war, postwar: war disrupted taxes; after independence, taxes funded reconstruction.
+Milestones:
+⚙ 1977 NIRC: internal revenue laws codified.
+⚙ 1988 VAT: VAT became a major consumption tax.
+⚙ 1997 NIRC: the new Tax Code, base of many modern rules.
+⚙ 2005 EVAT: Expanded VAT.
+⚙ 2017 to present: TRAIN, CREATE, EOPT, valuation reform, and digital services VAT.
+★ Taxation history is a history of power: who collects, who pays, who benefits, and who decides.
+
+LEGAL BASES OF TAXATION
+⚙ 1987 Constitution: grants and limits taxing power.
+⚙ NIRC (National Internal Revenue Code): governs major national taxes.
+⚙ Local Government Code: basis of local taxes, fees, and charges.
+⚙ Customs laws: duties on imports.
+⚙ Revenue regulations and rulings: implement tax laws.
+★ Article VI, Section 28: taxation must be uniform and equitable, and Congress shall evolve a progressive system of taxation.
+⚙ Revenue and tariff bills must originate in the House of Representatives.
+⚙ No one may be imprisoned for debt or non-payment of a poll tax.
+⚙ Constitutional limits: due process, equal protection and uniformity, progressive taxation, exemptions for charitable, religious, and educational property.
+⚙ Inherent limits: public purpose, territoriality, international comity, and no tax on government instrumentalities unless the law says so.
+
+TAX INSTITUTIONS
+⚙ Congress: makes tax laws.
+⚙ Department of Finance: oversees fiscal policy.
+⚙ BIR (Bureau of Internal Revenue): collects national internal revenue taxes.
+⚙ BOC (Bureau of Customs): collects customs duties.
+⚙ LGUs: collect local taxes.
+⚙ Court of Tax Appeals: the specialized court for tax disputes.
+⚙ Taxpayer remedies in order: assessment notice, administrative protest, decision, then judicial review at the Court of Tax Appeals.
+
+THE COMPREHENSIVE TAX REFORM PROGRAM (CTRP)
+★ CTRP: a multi-package reform to make taxes simpler, fairer, and more efficient while raising revenue.
+⚙ TRAIN (RA 10963): lower personal income tax; adjusted consumption and excise taxes.
+⚙ Tax amnesty (RA 11213): settle unpaid taxes, such as estate tax amnesty.
+⚙ CREATE (RA 11534) and CREATE MORE (RA 12066): lowered corporate income tax and reworked incentives.
+⚙ Sin taxes (RA 11346, RA 11467): higher taxes on tobacco, alcohol, heated tobacco, and vapes for health and revenue.
+⚙ Real property valuation (RA 12001): standardize property valuation.
+⚙ Ease of Paying Taxes (RA 11976): simpler, digital compliance.
+⚙ Digital services VAT (RA 12023): VAT on digital services like streaming and online platforms.
+⚙ Trade-offs: more revenue and simpler filing versus higher prices and heavier effects on low-income households.
+
+THE TRAIN LAW
+★ TRAIN: RA 10963, the Tax Reform for Acceleration and Inclusion Law, Package 1 of the CTRP. It amended the NIRC.
+⚙ It lowered personal income tax for many workers and raised revenue through VAT and excise changes.
+TRAIN income tax brackets (2023 onward, annual taxable income):
+⚙ Not over P250,000: 0%.
+⚙ Over P250,000 to P400,000: 15% of the excess over P250,000.
+⚙ Over P400,000 to P800,000: P22,500 + 20% of the excess over P400,000.
+⚙ Over P800,000 to P2,000,000: P102,500 + 25% of the excess over P800,000.
+⚙ Over P2,000,000 to P8,000,000: P402,500 + 30% of the excess over P2,000,000.
+⚙ Over P8,000,000: P2,202,500 + 35% of the excess over P8,000,000.
+EXAMPLE: COMPUTING TAX UNDER TRAIN
+⚙ P300,000: 15% of P50,000 = P7,500.
+⚙ P600,000: P22,500 + 20% of P200,000 = P62,500.
+⚙ P1,000,000: P102,500 + 25% of P200,000 = P152,500.
+⚙ Excise taxes under TRAIN: petroleum, automobiles, minerals, tobacco, and sugar-sweetened beverages.
+⚙ Estate tax: on property transferred after death. Donor's tax: on gifts during life.
+⚙ Benefits: higher take-home pay, more revenue for infrastructure and social programs.
+⚙ Criticisms: higher prices from indirect taxes; poor households feel consumption taxes even if they pay little income tax.
+★ Mitigation: the Unconditional Cash Transfer program for poor households, plus fuel-related assistance.
+
+TYPES OF TAXES
+★ Direct tax: charged directly to the person who bears it (income tax, estate tax, donor's tax, real property tax).
+★ Indirect tax: collected from one party but passed on through prices (VAT, excise tax, customs duties).
+★ National taxes: imposed by national law, collected by BIR or BOC (income tax, VAT, excise, estate, donor's, documentary stamp tax, customs).
+★ Local taxes: imposed by LGUs (real property tax, local business tax, community tax).
+⚙ Income tax: on taxable income (compensation, business, professional, corporate).
+⚙ VAT: tax on value added at each stage of production and distribution.
+⚙ Percentage tax: for selected non-VAT taxpayers, often smaller businesses.
+⚙ Excise tax: on selected goods like fuel, alcohol, tobacco, and sweetened drinks.
+⚙ Withholding tax: a collection method; the payer withholds part of a payment and remits it to government. It can be creditable or final.
+⚙ Capital gains tax: on gains from selected property or share sales.
+⚙ Documentary stamp tax: on specified documents and transactions.
+⚙ Classification map: by burden (direct or indirect), by level (national or local), by base, by purpose, and by administration.
+
+MULTIDISCIPLINARY LENSES
+⚙ Historical, Legal, Economic, Social or Equity, Public Administration, Communication.
+★ Taxation is a shared system: law gives it authority, history explains its roots, economics shows its burden, administration makes it work, and citizenship demands fairness.
+
+EXAM TIPS
+⚙ Know the 3 inherent powers and how they differ.
+⚙ TRAIN = RA 10963, Package 1. CREATE = RA 11534. Ease of Paying Taxes = RA 11976. Digital VAT = RA 12023.
+⚙ Direct (income, estate, donor's, real property) vs indirect (VAT, excise, customs).
+⚙ Avoidance is legal; evasion is illegal.
+⚙ Revenue bills start in the House of Representatives.
+
+SELF-TEST
+Q: Which inherent power lets government take private property for public use with just compensation?
+★ Eminent domain.
+Q: Is VAT a direct or indirect tax?
+★ Indirect.
+Q: What is the TRAIN Law's Republic Act number?
+★ RA 10963.
+Q: Under TRAIN, how much tax is due on P300,000?
+★ P7,500.
+Q: Which court handles tax disputes?
+★ The Court of Tax Appeals.
+Q: What is the difference between tax avoidance and tax evasion?
+★ Avoidance is legal reduction of taxes; evasion is illegal non-payment.

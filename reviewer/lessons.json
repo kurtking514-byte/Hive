@@ -568,5 +568,15 @@
   "quiz": 30,
   "course": "BSCS",
   "exam": "Finals"
+ },
+ {
+  "id": "hist100-m7",
+  "subject": "HIST100",
+  "tab": "Module 7",
+  "title": "Taxation in the Philippines",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
  }
 ]
