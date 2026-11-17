@@ -488,5 +488,15 @@
   "quiz": 30,
   "course": "BSCS",
   "exam": "Finals"
+ },
+ {
+  "id": "cc2-unit5",
+  "subject": "CC2",
+  "tab": "Unit 5",
+  "title": "Functions",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
  }
 ]
