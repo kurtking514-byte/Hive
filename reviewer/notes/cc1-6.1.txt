@@ -1,0 +1,135 @@
+6.0-6.1 Introduction and Markup Languages
+How code becomes a program, the three language categories, and markup languages such as HTML and XML
+
+MODULE OVERVIEW AND OBJECTIVES
+Languages are the cornerstone of communication between humans and also between humans and machines. In computing, they let us instruct computers, design websites, and build applications.
+At the most basic level, computers run on binary code (sequences of 0s and 1s). Writing complex programs in binary is impractical, so languages were developed that abstract machine code into more manageable forms.
+⚙ Objective 1: Understand the purpose and structure of markup languages and apply them in web development.
+⚙ Objective 2: Explain the role of stylesheet languages in web design and use them to enhance the presentation of web content.
+⚙ Objective 3: Differentiate between markup, stylesheet, and programming languages, and use a programming language to add functionality to web projects.
+
+FROM SOURCE CODE TO EXECUTABLE PROGRAM
+The diagram in the lesson shows how high-level code becomes a program:
+⚙ Step 1: Source code is written in a high-level language.
+⚙ Step 2: A compiler or interpreter translates it.
+⚙ Step 3: The result is object code (intermediary code).
+⚙ Step 4: A linker joins the object code into binary code.
+⚙ Step 5: The binary code is the executable program.
+★ Source code: the program as written by a person in a high-level language.
+★ Object code: the intermediary code produced by the compiler or interpreter.
+★ Linker: combines object code into the final binary code.
+★ Executable program: the binary code (0s and 1s) the computer can run.
+
+THE THREE LANGUAGE CATEGORIES
+★ Markup languages: structure content on the web and in data interchange formats, such as HTML and XML.
+★ Style sheet languages: control the visual presentation of web content, such as CSS, for a better user experience.
+★ Programming languages: create software that drives modern technology, adding logic and functionality.
+⚙ Markup languages use tags to define elements, so content is both human-readable and machine-processable. This is like structuring an essay with headings, bullet points, and paragraphs, or data with rows and columns.
+⚙ Style sheet languages separate content from presentation (color schemes, typography, layout), making visual changes easier to maintain.
+EASIER: Markup is the skeleton (what each part is), style sheets are the clothes (how it looks), and programming is the muscles (what it does).
+
+WHAT A MARKUP LANGUAGE IS
+★ Markup language: a system for annotating a document in a way that is syntactically distinguishable from the text.
+★ Tags: the annotations in a markup language. They tell software how the text should be displayed or interpreted.
+⚙ Markup languages define the structure and layout of content, making it easier for humans and machines to understand and process.
+⚙ Unlike programming languages, which execute computations and logic, markup languages focus on the organization and presentation of data.
+⚙ In HTML, <p> denotes a paragraph and <h1> signifies a main heading. Browsers use these tags to render the page.
+
+HISTORICAL EVOLUTION OF MARKUP LANGUAGES
+The timeline in the lesson:
+⚙ GML, Generalized Markup Language: 1960 to 1970.
+⚙ SGML, Standard Generalized Markup Language: 1986.
+⚙ HTML, Hypertext Markup Language: 1993.
+⚙ XML, eXtensible Markup Language: 1998.
+⚙ XHTML, eXtensible Hypertext Markup Language: 2000 to 2001.
+From the reading:
+★ SGML: developed in the 1980s as a comprehensive system for defining markup languages for documents. It was robust but often considered too complex for everyday use.
+★ HTML (HyperText Markup Language): introduced by Tim Berners-Lee in 1990 as a simpler system. It changed how information was shared on the World Wide Web by making it easy to create and link documents.
+★ HTML5: the latest HTML standard, with enhanced multimedia support and improved semantic elements.
+★ XML (Extensible Markup Language): emerged in the late 1990s as a simplified subset of SGML. It lets users define their own custom tags, so it is highly extensible and used for data interchange and configuration files.
+★ Markdown: created in 2004. It provides a lightweight syntax for formatting text that can easily be converted to HTML.
+Note: the reading says HTML was introduced in 1990, while the timeline table lists 1993. Tim Berners-Lee created HTML around 1990 and the first public HTML specification came out in 1993, so both dates appear. Answer with whichever your teacher's question points to: "introduced by Tim Berners-Lee" is 1990, the table's official release year is 1993.
+Difference: HTML has a fixed set of tags for displaying web pages. XML lets you invent your own tags for storing and exchanging data.
+
+STRUCTURE AND SYNTAX OF MARKUP
+★ Element: the fundamental building block, defined by tags. An opening tag marks the beginning, a closing tag marks the end, and the content goes in between.
+⚙ <p>This is a paragraph.</p>
+⚙ <h1>Welcome to My Website</h1>
+★ Tag: written in angle brackets, like <tagname>. A closing tag adds a slash, like </tagname>.
+★ Attribute: gives additional details about an element and is written inside the opening tag.
+⚙ <img src="image.jpg" alt="Description of the image">
+⚙ <a href="https://www.example.com" target="_blank">Visit Example.com</a>
+⚙ In the img tag, src is the source file and alt is the alternative text.
+★ Nesting: elements can contain other elements, creating a hierarchical structure.
+⚙ <ul>
+⚙   <li>First item</li>
+⚙   <li>Second item</li>
+⚙ </ul>
+★ Self-closing tag: an element that does not need a closing tag, such as <br>, which inserts a line break.
+★ Comment: <!-- This is a comment and will not be displayed in the browser -->
+
+EXAMPLE: A BASIC HTML DOCUMENT
+⚙ <!DOCTYPE html>
+⚙ <html>
+⚙   <head>
+⚙     <title>Page Title</title>
+⚙   </head>
+⚙   <body>
+⚙     <h1>This is a Heading</h1>
+⚙     <p>This is a paragraph.</p>
+⚙   </body>
+⚙ </html>
+⚙ <head> holds information about the page, such as the title shown on the browser tab.
+⚙ <body> holds the visible content: the heading and the paragraph.
+⚙ Every opening tag is closed in the reverse order it was opened: title closes before head, and body closes before html.
+Added example: the lesson's browser screenshot shows a page with the heading "My First Heading" and the text "My first paragraph.", which come from an <h1> and a <p>.
+
+APPLICATIONS OF MARKUP LANGUAGES
+⚙ Web development: HTML creates web pages and defines headings, paragraphs, images, and links. XML is used for data storage and transfer in web services.
+⚙ Data interchange: XML is a standard format for exchanging data between systems, used for configuration files, data storage, and transmission.
+⚙ Documentation and publishing: Markdown simplifies formatting for documentation, readme files, blogs, and static websites.
+⚙ Separating content from presentation lets the structure or the style be changed independently.
+
+MARKUP VS PROGRAMMING LANGUAGES
+★ Markup languages are declarative: they describe and format data, saying what the content is and how it should be structured.
+★ Programming languages are imperative or functional: they implement logic and perform computations, saying how to perform tasks and manipulate data.
+⚙ Example: HTML defines the structure of a web page, but JavaScript (a programming language) can change that structure, respond to user interactions, and perform calculations.
+Difference: declarative says what you want. Imperative says how to do it step by step.
+
+BEST PRACTICES IN MARKUP
+⚙ Use semantic elements: tags that describe the content, like <article>, <section>, and <nav>, improve accessibility and SEO.
+⚙ Proper nesting: elements must be nested correctly without overlapping, which prevents rendering issues.
+⚙ Consistent formatting: consistent indentation and spacing make code readable.
+⚙ Validation: use validation tools to check for syntax errors and compliance with standards.
+⚙ Comments: explain complex sections or give context.
+Added example: overlapping tags like <b><i>text</b></i> are improper nesting. The correct form is <b><i>text</i></b>, closing the inner tag first.
+
+COMMON MISTAKES
+⚙ Calling HTML a programming language. It is a markup language; it structures content and does not compute.
+⚙ Mixing up XML and HTML: XML lets you define custom tags; HTML uses predefined tags.
+⚙ Putting attributes in the closing tag. Attributes go inside the opening tag.
+⚙ Overlapping tags instead of nesting them properly.
+⚙ Writing a closing tag for <br>. It is self-closing.
+⚙ Mixing up the order: GML, then SGML, then HTML, then XML, then XHTML.
+
+EXAM TIPS
+⚙ Know the five steps from source code to executable: source code, compiler or interpreter, object code, linker, binary executable.
+⚙ Know the three categories: markup (structure), style sheet (presentation), programming (logic).
+⚙ Know who and when: SGML 1986, HTML by Tim Berners-Lee (1990, table says 1993), XML 1998, Markdown 2004.
+⚙ Be able to spot elements, tags, attributes, nesting, and self-closing tags in a code sample.
+
+SELF-TEST
+Q: What are the annotations in a markup language called?
+★ Tags.
+Q: Who introduced HTML?
+★ Tim Berners-Lee.
+Q: Which markup language lets users define their own custom tags?
+★ XML.
+Q: In <img src="image.jpg" alt="Description of the image">, what are src and alt?
+★ Attributes.
+Q: Is a markup language declarative or imperative?
+★ Declarative.
+Q: Which program joins object code into binary code?
+★ The linker.
+Q: Name three semantic HTML elements from the lesson.
+★ <article>, <section>, and <nav>.
