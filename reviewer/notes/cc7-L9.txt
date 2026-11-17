@@ -1,0 +1,187 @@
+Lecture 9 Quality Testing
+Types of testing, why testing matters, software refactoring, software maintenance, and quality management (QA vs QC, ISO 9001, TQM, Six Sigma)
+
+LECTURE TOPICS
+⚙ Introduction to Quality Testing
+⚙ Types of Testing
+⚙ Importance of Testing
+⚙ Software Refactoring
+⚙ Software Maintenance
+⚙ Quality Management
+
+QUALITY TESTING
+★ Quality testing: the process of evaluating a software product to ensure it meets specified requirements and works as intended.
+★ Role in HCI: in human-computer interaction, quality testing focuses on user experience, usability, and accessibility, to ensure the software is user-friendly and effective.
+EASIER: Quality testing is checking the app before users get it: does it do what it promised, and is it easy and pleasant for every kind of user?
+
+TYPES OF TESTING
+⚙ Functional Testing
+⚙ Usability Testing
+⚙ Performance Testing
+⚙ Accessibility Testing
+⚙ Regression Testing
+
+FUNCTIONAL TESTING
+★ Functional testing: verifies that the software functions as intended and meets requirements.
+It is crucial for validating that each feature operates as intended and that the user can achieve their goals effectively.
+⚙ Methods: testing individual components and features of the system to ensure they operate correctly.
+⚙ Outcomes: confirms that the software provides the desired functionalities without errors.
+EASIER: Does each button and feature actually do its job? Example: clicking "Save" really saves the file.
+
+USABILITY TESTING
+★ Usability testing: focuses on user interaction with the software, assessing how easy and intuitive the interface is.
+It lets users interact with the initial system. It is usually done in controlled spaces where moderators oversee the process.
+⚙ Methods: observing users as they interact with the software, gathering feedback on their experiences, and identifying areas of confusion or difficulty.
+⚙ Outcomes: helps improve the user interface and ensures users can accomplish their tasks efficiently.
+EASIER: Watch real people use it and see where they get stuck.
+Difference: functional testing asks "does the feature work?" Usability testing asks "can a person easily use it?" A feature can work perfectly and still be confusing.
+
+PERFORMANCE TESTING
+★ Performance testing: evaluates how the software performs under various conditions, including load testing and stress testing.
+It ensures the software can handle expected user traffic and maintain responsiveness.
+⚙ Methods: simulating user activity to observe how the system handles multiple simultaneous users or high data volumes.
+⚙ Outcomes: identifies potential bottlenecks and ensures the system remains responsive and stable.
+★ Bottleneck: a point in the system that slows everything down, like a narrow neck of a bottle.
+Added example: load testing checks the system under the expected number of users; stress testing pushes it beyond that limit to see when and how it breaks.
+EASIER: Does the enrollment site stay fast when thousands of students log in at once?
+
+ACCESSIBILITY TESTING
+★ Accessibility testing: ensures the software is usable by people with disabilities, adhering to accessibility standards.
+It ensures the system considers all users, eliminating bias and making it inclusive.
+⚙ Methods: checking compliance with accessibility standards (like WCAG) and using assistive technologies to evaluate the user experience.
+⚙ Outcomes: ensures that all users, regardless of ability, can access and use the software effectively.
+★ WCAG: Web Content Accessibility Guidelines, the common standard for accessible web content.
+Added example: assistive technologies include screen readers for blind users and keyboard-only navigation for users who cannot use a mouse.
+
+REGRESSION TESTING
+★ Regression testing: ensures that new changes do not negatively affect existing functionality.
+It is crucial whenever code is modified, such as during bug fixes, enhancements, or new feature implementations.
+⚙ Methods: full testing checks the full functionality; partial testing evaluates only the parts that have been changed.
+⚙ Outcomes: ensures the changes work alongside the parts that have not been changed. It can also identify new bugs introduced by recent changes.
+EASIER: After fixing one thing, check that you did not break something else. "Regression" means going backward.
+
+WHY DO TESTING
+⚙ Ensures Quality: identifies bugs and issues early in the development process, leading to higher-quality software.
+⚙ Enhances User Experience: improves usability and satisfaction, since a well-tested product is more likely to meet user needs, leading to a positive experience.
+⚙ Cost-Effectiveness: detecting issues early significantly reduces the cost of fixing bugs later. Finding and fixing issues early is less costly than addressing them after deployment.
+⚙ Reduces Risk: minimizes the likelihood of software failures that could lead to user frustration or business losses, by addressing potential failures before deployment.
+★ Deployment: releasing the software so real users can use it.
+
+SOFTWARE REFACTORING
+★ Software refactoring: the process of restructuring existing code without changing its external behavior.
+EASIER: Cleaning and reorganizing your room without throwing anything out. The user sees the same program; only the code inside is tidier.
+Benefits of refactoring:
+⚙ Enhances readability: the code becomes easier to read and understand, which is crucial for current and future developers who will work on the software.
+⚙ Reduces complexity: in some cases it can improve performance by optimizing algorithms or reducing unnecessary computations.
+⚙ Improves maintainability: well-structured code is easier to modify and extend, reducing the risk of introducing bugs during updates or enhancements.
+Common refactoring techniques:
+⚙ Renaming variables or methods
+⚙ Breaking down long methods into smaller tasks
+⚙ Removing duplicate code
+⚙ Introducing design patterns
+⚙ Simplifying conditions
+Added example: renaming a variable x to totalPrice, or splitting one 200-line function into calculateTotal() and printReceipt().
+Difference: refactoring changes how the code is written, not what the program does. Adding a new feature is not refactoring.
+
+SOFTWARE MAINTENANCE
+★ Software maintenance: the ongoing process of modifying and updating software after its initial release to correct faults, improve performance, or adapt to a changing environment.
+It ensures the software continues to meet user needs and adapts to technological advancements.
+
+TYPES OF SOFTWARE MAINTENANCE
+★ Corrective maintenance: fixing identified defects or bugs reported by users or discovered through testing. It is reactive: it responds to issues raised by users.
+★ Perfective maintenance: enhancing software features or performance based on user feedback.
+★ Adaptive maintenance: updating the software to accommodate changes in the environment or technology. This includes upgrades, hardware changes, or new technology standards.
+★ Preventive maintenance: aims to prevent future issues by making improvements or updates to the software. This includes refactoring code, optimizing performance, or updating documentation.
+EASIER: Corrective fixes what broke. Perfective makes it better because users asked. Adaptive keeps it working in a new environment. Preventive stops problems before they happen.
+Difference: corrective is reactive (after a problem appears). Preventive is proactive (before a problem appears).
+Note: the slide's speaker notes call perfective "proactive, anticipating errors and acting upon it before it happens". That description fits preventive maintenance; perfective is driven by user feedback to enhance features.
+Added example: fixing a crash when users upload photos is corrective; adding dark mode because users asked is perfective; updating the app for a new Android version is adaptive; cleaning up old code so it will not fail later is preventive.
+
+CHALLENGES OF SOFTWARE MAINTENANCE
+⚙ Complexity of Existing Code: maintaining older code can be challenging, especially if it was poorly documented or lacks clarity.
+⚙ Evolving Requirements: as user needs change, adapting software to meet new requirements can complicate maintenance efforts.
+⚙ Resource Allocation: balancing maintenance tasks with new development can strain resources and impact project timelines.
+⚙ Technical Debt: accumulated technical debt makes maintenance more difficult and costly, as it may require extensive changes to improve code quality.
+★ Technical debt: the future cost of taking shortcuts in code now. Like a loan, it grows the longer it is left unpaid.
+
+IMPORTANCE OF SOFTWARE MAINTENANCE
+⚙ User Satisfaction: timely maintenance means users encounter fewer problems, leading to higher satisfaction and trust.
+⚙ Cost Efficiency: addressing issues early reduces the costs of major overhauls or complete replacements later.
+⚙ Risk Management: proactive maintenance helps identify and mitigate risks before they escalate into significant problems.
+⚙ Regulatory Compliance: in certain industries, maintaining software to comply with regulatory standards is essential for legal and operational reasons.
+
+QUALITY MANAGEMENT
+★ Quality management: a structured approach to ensuring that all aspects of a software project meet quality standards throughout the development lifecycle.
+⚙ Key components: planning, assurance, control, improvement processes, and documentation.
+⚙ Frameworks and standards such as ISO 9001 can guide quality management practices.
+
+QUALITY ASSURANCE VS QUALITY CONTROL
+★ Quality Assurance (QA): focuses on the processes used to produce the software. It involves systematic activities and audits to ensure the processes are effective and lead to high-quality outcomes.
+★ Quality Control (QC): involves the actual testing and inspection of products or services to ensure they meet quality standards. It is reactive, identifying defects in the final product.
+EASIER: QA checks the recipe and the kitchen routine. QC tastes the finished dish.
+Difference: QA is about the process and prevents defects. QC is about the product and finds defects.
+
+ISO 9001 STANDARD
+★ ISO 9001:2015: an international standard that specifies requirements for a quality management system (QMS). It focuses on meeting customer expectations and delivering satisfaction.
+★ QMS: quality management system.
+A company with this certification shows that its processes are effective and its staff are well-trained to deliver a quality product or service time after time.
+
+TOTAL QUALITY MANAGEMENT (TQM)
+★ Total Quality Management (TQM): a holistic approach that seeks to improve quality in all aspects of an organization through continuous improvement and the involvement of all employees.
+★ Holistic: looking at the whole organization, not just one department.
+The 8 primary elements of TQM:
+⚙ Customer Focus: understanding and meeting customer needs and satisfaction.
+⚙ Total Employee Involvement: all employees at every level should be actively engaged in the quality process.
+⚙ Process-centered: analyze and optimize processes to ensure efficiency and effectiveness.
+⚙ Integrated System: aligning all departments and functions toward a common goal of quality improvement.
+⚙ Continuous Improvement: consistently seeking ways to enhance processes, products, and services.
+⚙ Fact-based Decision Making: decisions should be based on data and factual information rather than intuition or assumptions.
+⚙ Leadership Commitment: strong leadership is crucial for establishing a quality culture within the organization.
+⚙ Communications: acts as a vital link between all elements of TQM.
+Note: the TQM diagram on the slide lists "Strategic and Systematic Approach" in place of Leadership Commitment. For the exam, use the slide's text list above.
+EASIER: Remember TQM as "everyone, always, with data": every employee, continuous improvement, fact-based decisions.
+
+SIX SIGMA
+★ Six Sigma: a data-driven methodology that focuses on reducing defects and variability in processes. It uses statistical tools and techniques to achieve quality improvements.
+★ A process operating at six sigma has a failure rate of only 0.00034%, so it produces virtually no defects.
+★ Why "Six Sigma": sigma is one standard deviation in a data set. The idea is that six such deviations should occur before the process results in a defect.
+Added example: 0.00034% is the same as 3.4 defects per million opportunities.
+
+THE 5 PHASES OF SIX SIGMA (DMAIC)
+⚙ Define: define the problem in terms of customer needs. What do you want to achieve? What resources do you need?
+⚙ Measure: measure the problem in numbers, quantify it. Fix the limits of "Y". How can you quantify this?
+⚙ Analyze: analyze the process to discover the influencing variables (the cause of the problem). Does the process help achieve what you need?
+⚙ Improve: improve the process implementations; implement and verify the solution. How do changes in "X" impact "Y"?
+⚙ Control: control the changes and environment; maintain the solution. Is the goal being met constantly?
+EASIER: Y is the result you care about; X is the thing you change to affect it. DMAIC: Define, Measure, Analyze, Improve, Control.
+
+COMMON MISTAKES
+⚙ Mixing up functional and usability testing: functional checks that features work; usability checks that people can easily use them.
+⚙ Thinking refactoring changes what the program does. It keeps the external behavior the same.
+⚙ Mixing up perfective (enhance from user feedback) and preventive (stop future problems, such as refactoring or updating documentation).
+⚙ Mixing up QA (process) and QC (product, reactive).
+⚙ Mixing up regression testing (old features still work after a change) with performance testing (speed and stability under load).
+⚙ Putting Measure before Define, or Improve before Analyze, in DMAIC.
+
+EXAM TIPS
+⚙ Know the 5 testing types with their methods and outcomes.
+⚙ Know the 4 reasons for testing: quality, user experience, cost-effectiveness, reduced risk.
+⚙ Know the 5 refactoring techniques and 3 benefits.
+⚙ Know the 4 maintenance types, 4 challenges, and 4 reasons maintenance is important.
+⚙ Know all 8 TQM elements, the 0.00034% Six Sigma figure, and the DMAIC order.
+
+SELF-TEST
+Q: Which testing type checks that a bug fix did not break existing features?
+★ Regression testing.
+Q: Which standard is used in accessibility testing?
+★ WCAG.
+Q: What is restructuring code without changing its external behavior called?
+★ Software refactoring.
+Q: Updating software to work with a new operating system is which type of maintenance?
+★ Adaptive maintenance.
+Q: Which focuses on the process, QA or QC?
+★ QA.
+Q: What does DMAIC stand for?
+★ Define, Measure, Analyze, Improve, Control.
+Q: What is the failure rate of a six sigma process?
+★ 0.00034%.
