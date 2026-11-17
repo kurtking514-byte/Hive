@@ -538,5 +538,15 @@
   "quiz": 30,
   "course": "BSCS",
   "exam": "Finals"
+ },
+ {
+  "id": "hist100-m4",
+  "subject": "HIST100",
+  "tab": "Module 4",
+  "title": "One Past but Many Histories",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
  }
 ]

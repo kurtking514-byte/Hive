@@ -1,0 +1,135 @@
+Module 4 One Past but Many Histories
+Controversies and conflicting views: the First Mass, the Cavite Mutiny, the Rizal Retraction, and the Cry (summarized)
+
+PAST VS HISTORY
+★ The past: actual events that already happened. They cannot be replayed or revisited.
+★ History: a disciplined reconstruction and interpretation of the past using surviving traces (documents, testimonies, maps, records, objects).
+★ Key idea: there is one past, but there can be several histories of it. The best interpretation explains the evidence most convincingly, with the fewest contradictions.
+EASIER: The past is the actual game; history is the replay pieced together from different camera angles, some of them missing.
+
+WHY CONTROVERSIES HAPPEN
+⚙ Incomplete evidence: documents lost, damaged, mistranslated, or written long after.
+⚙ Conflicting witnesses: people see and remember differently, and accounts change over time.
+⚙ Power and bias: sources reflect political, religious, institutional, or social interests. Bias does not make a source useless; it tells you what to check.
+⚙ Public memory: monuments, holidays, textbooks, and traditions can favor one version. Commemoration is not proof.
+
+PRIMARY SOURCES
+★ Primary source: material created during or near the event, or by people directly connected to it. It is called primary because of its closeness to the event, not because it is automatically true.
+⚙ Eyewitness accounts: Pigafetta, Valenzuela, Masangkay, Alvarez.
+⚙ Official records: colonial reports, proclamations, surveillance records.
+⚙ Newspaper reports: reports on the Rizal retraction.
+⚙ Maps and logbooks: expedition route, latitude, nautical notes.
+⚙ Letters, affidavits, testimony: Balaguer and other testimonies.
+★ Primary sources are historical receipts, but they still need criticism.
+
+THE A-T-P-A-C-C SOURCE LENS
+⚙ Author: who created it?
+⚙ Time: when was it created (during, shortly after, or decades later)?
+⚙ Purpose: why was it created (record, persuade, justify, defend, accuse, commemorate)?
+⚙ Audience: for whom was it written?
+⚙ Context: what circumstances surrounded it?
+⚙ Corroboration: do independent sources confirm it?
+★ All sources have a perspective. Identify it, corroborate it, and decide how much weight it deserves.
+
+THE HISTORICAL ARGUMENT FORMULA
+⚙ Claim: your answer to the question ("I argue that...").
+⚙ Evidence: source-based proof ("This is supported by...").
+⚙ Reasoning: why the evidence supports the claim ("This matters because...").
+⚙ Counterclaim: the strongest opposing view ("However, others argue...").
+⚙ Rebuttal: why your position is still stronger ("This view is limited because...").
+★ No evidence = opinion. Evidence + reasoning = historical argument.
+
+CASE 1: BUTUAN OR LIMASAWA (THE 1521 EASTER SUNDAY MASS)
+⚙ The Magellan-Elcano expedition held a Mass on Easter Sunday, March 31, 1521, at an island the sources call Mazaua.
+⚙ The question is not whether the Mass happened, but where Mazaua is on a modern map.
+★ Butuan side: long-standing local and religious tradition and early commemorations (Butuan or Agusan area).
+★ Limasawa side (Southern Leyte): route, latitude, geography, maps, and expedition records fit better. This is the current dominant position, upheld by historical panels.
+★ Antonio Pigafetta: eyewitness chronicler; described Mazaua, the Easter ceremony, local rulers, and the planting of a cross.
+★ Francisco Albo: the pilot whose log gives route and latitude information for Mazaua.
+⚙ Limitation: 16th-century navigation was not perfectly exact; local traditions can change over time; official consensus is not itself primary evidence.
+★ Neither source simply says "Mazaua = Limasawa" or "Mazaua = Butuan". Historians interpret the geographic clues.
+
+CASE 2: THE TWO FACES OF THE 1872 CAVITE MUTINY
+⚙ Date and place: January 20, 1872, at the Cavite Arsenal (Fort San Felipe).
+⚙ Filipino soldiers and workers mutinied after losing privileges such as exemption from tribute and forced labor.
+★ Spanish or colonial version: a broad separatist conspiracy against Spain. Associated with Governor-General Rafael de Izquierdo and Jose Montero y Vidal. It justified arrests and repression. Risk: official bias and fear of reform.
+★ Filipino version: a localized mutiny over labor and military grievances, later magnified by the government to punish reformists. Associated with T. H. Pardo de Tavera. Risk: later nationalist framing and distance in time.
+★ GOMBURZA: Fathers Mariano Gomez, Jose Burgos, and Jacinto Zamora, executed on February 17, 1872 after the mutiny.
+⚙ Their execution became a symbol of colonial injustice. Rizal dedicated El Filibusterismo to them.
+★ The aftermath became bigger than the mutiny itself and helped awaken Filipino nationalism.
+Difference: Spanish version = big conspiracy, priests were instigators. Filipino version = local grievances, priests were victims of a frame-up.
+
+CASE 3: THE RIZAL RETRACTION
+⚙ Rizal was executed on December 30, 1896. The alleged retraction is dated December 29, 1896.
+⚙ In it, Rizal supposedly returned to the Catholic faith, rejected Masonry, and withdrew writings against the Church.
+Pro-retraction evidence:
+⚙ Jesuit testimony, especially Fr. Vicente Balaguer, S.J.
+⚙ Contemporary newspaper reports.
+⚙ The retraction document reportedly discovered in 1935.
+⚙ Reports of confession, religious rites, and marriage to Josephine Bracken.
+Anti-retraction questions:
+⚙ The original document was missing for a long time (custody problem).
+⚙ Different versions of the text do not match.
+⚙ Some testimonies were written later and may reflect institutional interest.
+⚙ Rizal's lifelong writings and convictions make a sudden retraction hard to accept without strong proof.
+★ Provenance: where the document came from and whether its chain of custody can be traced.
+★ Authorship: whether the handwriting and signature are really Rizal's.
+★ Voluntariness: whether the act was free from pressure.
+★ Cuerpo de Vigilancia: Spanish surveillance records of Rizal's final hours, a newer source that can challenge earlier accounts.
+★ Rule: the existence of a text is not automatic proof of every claim about it.
+
+CASE 4: THE CRY OF THE REVOLUTION
+★ The Cry: the symbolic start of the Revolution against Spain, led by Andres Bonifacio and the Katipunan, linked with the tearing of cedulas.
+⚙ First problem: definition. The "Cry" could mean the decision to revolt, a meeting, Bonifacio's speech, the tearing of cedulas, a shout, or the first armed clash.
+⚙ Second problem: place names. Old Balintawak and Caloocan covered wider areas than today, and the Katipuneros kept moving.
+Conflicting accounts:
+⚙ Pio Valenzuela: August 23, 1896, Pugad Lawin.
+⚙ Guillermo Masangkay: August 26, 1896, Balintawak (house of Apolonio Samson).
+⚙ Santiago Alvarez: August 24 to 25, 1896, Bahay Toro.
+⚙ Lt. Olegario Diaz: August 25, 1896, Balintawak.
+⚙ Other research: August 24 to 26 around Kangkong, Pasong Tamo, or Banlat.
+★ In 1963, official commemoration shifted to August 23 at Pugad Lawin, Quezon City (Proclamation No. 149).
+★ Official recognition is not the same as primary-source proof.
+★ Best practice: definition first, evidence second, position third.
+
+WHAT THE FOUR CASES TEACH
+⚙ First Mass: matching a place name to geography; skill is corroborating route and source details.
+⚙ Cavite Mutiny: separating the event from colonial framing; skill is reading bias, purpose, and power.
+⚙ Rizal Retraction: checking document authenticity and testimony; skill is provenance and witness reliability.
+⚙ The Cry: reconciling memory, place names, dates, and definitions; skill is comparing witnesses and defining terms.
+⚙ Common method: identify the question, examine source origin and purpose, compare independent evidence, weigh strengths and limits, then argue with evidence.
+
+EVIDENCE RANKING RUBRIC
+⚙ Closeness: was it made during or near the event?
+⚙ Firsthand access: was the author a witness?
+⚙ Purpose: was it made to record, persuade, defend, or commemorate?
+⚙ Corroboration: do independent sources agree?
+⚙ Specificity: does it give details that can be checked?
+⚙ Limits: what question does it fail to answer?
+★ A source can be valuable and limited at the same time.
+
+COMMON MISTAKES
+⚙ Treating sources that agree as automatically reliable.
+⚙ Listing both sides without weighing the evidence.
+⚙ Using emotion, nationalism, religion, popularity, or official recognition instead of evidence.
+⚙ Naming a source without explaining what it proves.
+⚙ Attacking the other side instead of answering its evidence.
+★ Being critical does not mean being disrespectful.
+
+EXAM TIPS
+⚙ Know each case's key dates: March 31, 1521; January 20, 1872; February 17, 1872; December 29 and 30, 1896; August 23, 1896.
+⚙ Match witnesses to places: Valenzuela = Pugad Lawin; Masangkay = Balintawak; Alvarez = Bahay Toro.
+⚙ Match historians: Izquierdo and Montero y Vidal = Spanish version; Pardo de Tavera = Filipino version.
+⚙ Know A-T-P-A-C-C and Claim, Evidence, Reasoning, Counterclaim, Rebuttal.
+
+SELF-TEST
+Q: What is the current dominant site of the 1521 Easter Sunday Mass?
+★ Limasawa.
+Q: Who is the eyewitness chronicler of the Magellan expedition?
+★ Antonio Pigafetta.
+Q: Who are GOMBURZA?
+★ Fathers Mariano Gomez, Jose Burgos, and Jacinto Zamora.
+Q: Which Jesuit's testimony supports the retraction?
+★ Fr. Vicente Balaguer.
+Q: Which witness placed the Cry at Pugad Lawin on August 23?
+★ Pio Valenzuela.
