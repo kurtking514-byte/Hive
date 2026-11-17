@@ -508,5 +508,15 @@
   "quiz": 30,
   "course": "BSCS",
   "exam": "Finals"
+ },
+ {
+  "id": "math100-6",
+  "subject": "MATH100",
+  "tab": "Module 6",
+  "title": "Solving and Graphing Linear Inequalities",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
  }
 ]

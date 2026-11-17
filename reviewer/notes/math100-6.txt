@@ -1,0 +1,172 @@
+Module 6 Solving and Graphing Linear Inequalities
+Inequality signs, one-step and two-step inequalities, the sign-switch rule, graphing in the coordinate plane, and word problems
+
+KEY TERMS
+★ Inequality: like an equation, but instead of an equal sign (=) it uses one of the signs <, ≤, >, or ≥.
+★ < : less than.
+★ ≤ : less than or equal to.
+★ > : greater than.
+★ ≥ : greater than or equal to.
+★ Solution of an inequality: every value that makes it true. "x < 5" means x can be any value less than 5, such as 4, 0, or -10.
+★ Boundary line: the line y = mx + b you draw when graphing y > mx + b, y < mx + b, and so on.
+★ Test point: a point not on the boundary line, substituted into the inequality to decide which side to shade.
+★ Slope-intercept form: y = mx + b, where m is the slope and b is the y-intercept.
+★ Standard form of a linear inequality: ax + by ≥ c (or with <, ≤, >).
+EASIER: An equation has one answer like x = 5. An inequality has a whole range of answers like "everything below 5".
+
+PROPERTIES FOR SOLVING INEQUALITIES
+★ Addition property: you may add the same number to both sides. x - 15 < 73 becomes x < 88.
+★ Subtraction property: you may subtract the same number from both sides. y + 15 < 25 becomes y < 10.
+★ Division property: you may divide both sides by the same positive number. 5x > 20 becomes x > 4.
+★ Multiplication property: you may multiply both sides by the same positive number, such as the reciprocal of the coefficient. x/5 > 10 becomes x > 50.
+★ The sign-switch rule: if you multiply or divide both sides by a negative number, you must switch the inequality sign.
+⚙ < switches to >.
+⚙ > switches to <.
+⚙ ≤ switches to ≥.
+⚙ ≥ switches to ≤.
+⚙ Example: -5x < 20. Divide by -5 and switch: x > -4.
+⚙ Example: -7x < 21. Divide by -7 and switch: x > -3.
+⚙ Example: -x/5 > 2. Multiply by -5 and switch: x < -10.
+Note: the slides label some steps "APE" (addition property) and "DPE" (division property).
+Difference: adding or subtracting a negative number never switches the sign. Only multiplying or dividing by a negative does.
+
+SOLVING TWO-STEP INEQUALITIES
+Solving inequalities follows the same steps as solving equations.
+⚙ Step 1: undo addition or subtraction (move the constant to the other side).
+⚙ Step 2: undo multiplication or division (divide by the coefficient, or multiply by its reciprocal).
+⚙ Step 3: if you multiplied or divided by a negative, switch the sign.
+Example: 3x + 4 < 13
+⚙ Subtract 4 from both sides: 3x < 9
+⚙ Divide both sides by 3: x < 3
+Example: 2x - 14 > 4
+⚙ Add 14: 2x > 18
+⚙ Divide by 2: x > 9
+Example: 2y - 10 ≥ 30
+⚙ Add 10: 2y ≥ 40
+⚙ Divide by 2: y ≥ 20
+Example: x/4 + 3 ≤ 7
+⚙ Subtract 3: x/4 ≤ 4
+⚙ Multiply by 4: x ≤ 16
+
+PRACTICE SET WITH ANSWERS
+⚙ x + 5 ≥ 13 gives x ≥ 8.
+⚙ 5 + x < 7 gives x < 2.
+⚙ Exercise 1: x + 6 ≤ 7 gives x ≤ 1.
+⚙ Exercise 2: 3 ≤ x - 5 gives 8 ≤ x, which is the same as x ≥ 8.
+⚙ Exercise 3: -3x ≥ -15. Divide by -3 and switch: x ≤ 5.
+⚙ Exercise 4: x - 9 > -5 gives x > 4.
+⚙ Exercise 5: (1/2)x ≥ -3. Multiply by 2: x ≥ -6.
+⚙ Exercise 6: -3 > x/(-7). Multiply by -7 and switch: 21 < x, which is x > 21.
+⚙ Exercise 7: 5 + x ≥ 7 gives x ≥ 2.
+⚙ Exercise 8: x/3 > 5. Multiply by 3: x > 15.
+Added example: 8 ≤ x and x ≥ 8 mean the same thing. Read it with x first to avoid flipping it by mistake.
+
+WORD PROBLEMS IN ONE VARIABLE
+⚙ "At least" means ≥. "At most" means ≤. "Less than" means <. "More than" means >.
+EXAMPLE: ETHAN'S BOOK
+Ethan is reading a 482-page book and has read 80 pages. How many pages per hour must he read to finish in less than 6 hours?
+⚙ Let x = pages per hour. Pages left: 482 - 80 = 402.
+⚙ Inequality: 402 / x < 6
+⚙ Multiply by x (positive): 402 < 6x
+⚙ Divide by 6: x > 67
+★ He must read more than 67 pages per hour.
+Note: the slide solves it as x = 402 / 6 = 67. 67 pages per hour takes exactly 6 hours, so to finish in less than 6 hours he must read more than 67.
+EXAMPLE: STEFF'S ACCOUNT
+Steff has P3800; P750 is for rent; she wants to keep at least P500. How much can she withdraw?
+⚙ Let w = amount withdrawn: 3800 - 750 - w ≥ 500
+⚙ 3800 - 750 - 500 ≥ w
+⚙ 2550 ≥ w
+★ w ≤ 2550: she can withdraw at most P2550.
+EXAMPLE: SEAN'S TRANSLATIONS
+Sean earns P15 per page plus P100 per month and works 3 months. He wants at least P1500.
+⚙ Let x = number of pages: 15x + 3(100) ≥ 1500
+⚙ 15x + 300 ≥ 1500
+⚙ 15x ≥ 1200
+⚙ x ≥ 80
+★ He must translate at least 80 pages.
+
+GRAPHING LINEAR INEQUALITIES IN TWO VARIABLES
+★ Type of line: < or > uses a dotted (dashed) line, because points on the line are not solutions.
+★ Type of line: ≤ or ≥ uses a solid line, because points on the line are solutions.
+★ Shading: y > mx + b or y ≥ mx + b, shade above the line.
+★ Shading: y < mx + b or y ≤ mx + b, shade below the line.
+⚙ Step 1: solve for y if needed (slope-intercept form).
+⚙ Step 2: graph the boundary line y = mx + b, solid or dotted.
+⚙ Step 3: shade above or below, or use a test point.
+★ Test point rule: substitute a point not on the line. If it makes the inequality true, shade its side; if false, shade the other side. (0, 0) is the easiest test point unless the line passes through the origin.
+⚙ Vertical lines: x > -2 is a dotted vertical line at x = -2, shaded to the right. x < -2 is shaded to the left.
+⚙ Horizontal lines: y < 6 is a dotted horizontal line at y = 6, shaded below.
+EASIER: The equal bar under ≤ or ≥ means "the line counts", so draw it solid.
+
+EXAMPLE: GRAPHING ABOVE AND BELOW ONE LINE
+Graph y > x - 2 and y < x - 2.
+⚙ Draw y = x - 2 as a dotted line (the sign is >, no equal part).
+⚙ Since y >, shade above the line.
+⚙ For y < x - 2, use the same dotted line and shade below.
+⚙ For y ≥ x - 2 or y ≤ x - 2, the line would be solid.
+
+EXAMPLE: GRAPHING FROM STANDARD FORM
+Graph 3x - 4y > 12.
+⚙ Solve for y: -4y > -3x + 12
+⚙ Divide by -4 and switch the sign: y < (3/4)x - 3
+⚙ Dashed line (strict <), slope 3/4, y-intercept -3.
+⚙ Test (0, 0): 3(0) - 4(0) > 12 gives 0 > 12, false.
+★ Shade the side that does not contain the origin, which is below the line.
+
+MORE GRAPHING EXAMPLES FROM THE SLIDES
+⚙ y > -(1/2)x + 3: dotted line, shade above.
+⚙ y < (2/5)x: slope 2/5, y-intercept 0. The line passes through the origin, so use a test point other than (0, 0). Dashed line, shade below.
+⚙ y ≥ -(3/2)x + 1, which is 3x + 2y ≥ 2: solid line. Test (0, 0): 0 ≥ 2 is false, so shade the side away from the origin (above the line).
+⚙ 4x - 2y < 7: solve -2y < -4x + 7, divide by -2 and switch: y > 2x - 3.5. Dashed line, shade above (the side with the origin, since 0 < 7 is true).
+⚙ Matching a graph: a solid line with shading below matches y ≤ (1/3)x + 2 (choice b on the slide).
+Note: on that slide the drawn line is steeper than a slope of 1/3, but the solid line and the shading below it point to y ≤ (1/3)x + 2.
+
+WORD PROBLEMS IN TWO VARIABLES
+EXAMPLE: NECKLACES AND EARRINGS
+Necklaces sell for P8 and earrings for P5. Steffany and Jethro want to raise at least P100.
+⚙ Let x = necklaces, y = earrings: 8x + 5y ≥ 100 (standard form).
+⚙ Slope-intercept form: 5y ≥ -8x + 100, so y ≥ -(8/5)x + 20.
+⚙ Intercepts: x = 0 gives y = 20; y = 0 gives x = 12.5.
+⚙ Solid line, shade above.
+⚙ Check (10, 15): 8(10) + 5(15) = 155 ≥ 100, true, so it is in the shaded region.
+⚙ Check (5, 5): 8(5) + 5(5) = 65, less than 100, so it is not.
+★ Not every point in the region makes sense. (21.25, 10.5) is in the region, but you cannot sell 21.25 necklaces, so use whole-number combinations.
+EXAMPLE: SCHOOL DANCE TICKETS (A SYSTEM)
+The ninth graders want at least P500 profit, expect at most 300 students, and earn P3 per advance ticket and P4 per door ticket.
+⚙ Let x = advance tickets, y = door tickets.
+⚙ Profit: 3x + 4y ≥ 500. Intercepts: x = 166.67 (y = 0) and y = 125 (x = 0).
+⚙ Attendance: x + y ≤ 300. Intercepts: x = 300 and y = 300.
+⚙ If 30 people buy advance tickets, about 120 door tickets is one realistic solution.
+⚙ Justify: 3(30) + 4(120) = 90 + 480 = 570 ≥ 500, true. 30 + 120 = 150 ≤ 300, true.
+★ A solution of a system must make every inequality true.
+Added example: the smallest whole number of door tickets with 30 advance tickets: 90 + 4y ≥ 500, so 4y ≥ 410 and y ≥ 102.5, which means at least 103 door tickets.
+
+COMMON MISTAKES
+⚙ Forgetting to switch the sign after multiplying or dividing by a negative.
+⚙ Switching the sign when adding or subtracting a negative. That never switches it.
+⚙ Drawing a solid line for < or >. Strict signs use a dotted line.
+⚙ Shading the wrong side after solving for y with a negative coefficient (3x - 4y > 12 becomes y <, so shade below).
+⚙ Using (0, 0) as a test point when the line passes through the origin.
+⚙ Writing an equation (=) in a word problem that says "at least" or "less than".
+⚙ Accepting non-whole answers in real-life counts like necklaces or tickets.
+
+EXAM TIPS
+⚙ Solve exactly like an equation, then ask: did I multiply or divide by a negative?
+⚙ Dotted for < and >, solid for ≤ and ≥. Above for > and ≥, below for < and ≤ (once y is alone).
+⚙ Always check your shading with a test point.
+⚙ Translate words: at least is ≥, at most is ≤.
+⚙ In a system, check a solution in every inequality.
+
+SELF-TEST
+Q: Solve -4x ≥ 12.
+★ Divide by -4 and switch: x ≤ -3.
+Q: Solve 2x + 7 < 19.
+★ 2x < 12, so x < 6.
+Q: What kind of line do you draw for y ≥ 3x - 1, and where do you shade?
+★ A solid line, shade above.
+Q: Write 6x - 3y < 9 in slope-intercept form.
+★ -3y < -6x + 9, divide by -3 and switch: y > 2x - 3.
+Q: Is (2, 1) a solution of y > x - 2?
+★ 1 > 2 - 2 = 0 is true, so yes.
+Q: A phone plan costs P200 plus P5 per GB. With a P500 budget, how many GB can you use?
+★ 200 + 5g ≤ 500, so 5g ≤ 300 and g ≤ 60. At most 60 GB.
