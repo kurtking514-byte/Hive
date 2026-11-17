@@ -578,5 +578,15 @@
   "quiz": 30,
   "course": "BSCS",
   "exam": "Finals"
+ },
+ {
+  "id": "hist100-m8",
+  "subject": "HIST100",
+  "tab": "Module 8",
+  "title": "Other Issues in Philippine History",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
  }
 ]
