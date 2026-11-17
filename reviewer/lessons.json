@@ -528,5 +528,15 @@
   "quiz": 30,
   "course": "BSCS",
   "exam": "Finals"
+ },
+ {
+  "id": "hist100-m2",
+  "subject": "HIST100",
+  "tab": "Module 2",
+  "title": "Filipino Cultural Heritage",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
  }
 ]
