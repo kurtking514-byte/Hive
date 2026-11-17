@@ -558,5 +558,15 @@
   "quiz": 30,
   "course": "BSCS",
   "exam": "Finals"
+ },
+ {
+  "id": "hist100-m6",
+  "subject": "HIST100",
+  "tab": "Module 6",
+  "title": "The Philippine Constitution",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
  }
 ]
