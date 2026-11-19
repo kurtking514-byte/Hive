@@ -24,7 +24,7 @@
 "source": "notes"
 },
 {
-"q": "What does print(10 != 10) output?",
+"q": "What does `print(10 != 10)` output?",
 "options": [
 "True, because != tests whether two values are the same and 10 is the same as 10",
 "Nothing, because a comparison alone cannot be printed",
@@ -36,7 +36,7 @@
 "source": "notes"
 },
 {
-"q": "Given test = True, what does print(not test) output?",
+"q": "Given `test = True`, what does `print(not test)` output?",
 "options": [
 "None, because not removes the value from the variable",
 "False",
@@ -60,7 +60,7 @@
 "source": "notes"
 },
 {
-"q": "If x = True and y = False, what are the results of (x and y) and (x or y), in that order?",
+"q": "If `x = True` and `y = False`, what are the results of `x and y` and `x or y`, in that order?",
 "options": [
 "True and True",
 "False and False",
@@ -72,7 +72,7 @@
 "source": "notes"
 },
 {
-"q": "Under which circumstance does x or y evaluate to False when x and y are Booleans?",
+"q": "Under which circumstance does `x or y` evaluate to False when `x` and `y` are Booleans?",
 "options": [
 "When at least one of x and y is True",
 "When exactly one of x and y is False",
@@ -84,7 +84,8 @@
 "source": "notes"
 },
 {
-"q": "x = 3 and y = 5. What is the value of z in z = x and y?",
+"q": "What is the value of `z` after this code?",
+"code": "x = 3\ny = 5\nz = x and y",
 "options": [
 "3, because the first argument is returned whenever both are nonzero",
 "5, the second argument",
@@ -96,7 +97,8 @@
 "source": "notes"
 },
 {
-"q": "x = 4 and y = 0. What is the value of z in z = x and y?",
+"q": "What is the value of `z` after this code?",
+"code": "x = 4\ny = 0\nz = x and y",
 "options": [
 "4, because the first argument is always returned by and",
 "True, because x is nonzero and so the whole expression is True",
@@ -108,7 +110,8 @@
 "source": "notes"
 },
 {
-"q": "x = 0 and y = 9. What is the value of z in z = x or y?",
+"q": "What is the value of `z` after this code?",
+"code": "x = 0\ny = 9\nz = x or y",
 "options": [
 "9, the first True argument",
 "0, because or returns the first argument that it examines",
@@ -120,7 +123,8 @@
 "source": "notes"
 },
 {
-"q": "x = \"\" (an empty string) and y = 0. What is the value of z in z = x or y?",
+"q": "What is the value of `z` after this code?",
+"code": "x = \"\"  # an empty string\ny = 0\nz = x or y",
 "options": [
 "The empty string, because x is the first argument and is returned",
 "0, the second argument",
@@ -146,19 +150,20 @@
 {
 "q": "Which line shows valid IF statement syntax in Python?",
 "options": [
-"if condition: followed by an indented body",
-"if (condition) { body } using curly braces around the body",
-"if condition then body end if with a closing keyword",
-"if condition; body; with a semicolon after the condition"
+"`if condition:` followed by an indented body",
+"`if (condition) { body }` using curly braces around the body",
+"`if condition then body end if` with a closing keyword",
+"`if condition; body;` with a semicolon after the condition"
 ],
 "answer": 0,
 "explanation": "Python writes if condition: with a colon and an indented body. Curly braces, then/end if, and semicolons belong to other languages.",
 "source": "notes"
 },
 {
-"q": "Given n = 0, what is printed by the statement if n: print(\"yes\") else: print(\"no\")?",
+"q": "What does this code print?",
+"code": "n = 0\nif n:\n    print(\"yes\")\nelse:\n    print(\"no\")",
 "options": [
-"yes, because n has been assigned a value",
+"yes, because `n` has been assigned a value",
 "Nothing, because 0 is not a valid condition",
 "no",
 "An error, because an integer cannot be used as a condition"
@@ -170,10 +175,10 @@
 {
 "q": "Which string value is treated as False when used as an IF condition?",
 "options": [
-"\"False\" (the word False)",
-"\"\" (the empty string)",
-"\" \" (a string holding one space)",
-"\"0\" (a string holding the digit zero)"
+"`\"False\"` (the word False)",
+"`\"\"` (the empty string)",
+"`\" \"` (a string holding one space)",
+"`\"0\"` (a string holding the digit zero)"
 ],
 "answer": 1,
 "explanation": "Only the empty string is treated as False. Any string that has a value, including the word False, a single space, or the character 0, is treated as True.",
@@ -192,7 +197,8 @@
 "source": "notes"
 },
 {
-"q": "a = 5 and b = 5. What is printed by: if b > a: print(\"b is greater than a\") elif a == b: print(\"a and b are equal\")?",
+"q": "What does this code print?",
+"code": "a = 5\nb = 5\nif b > a:\n    print(\"b is greater than a\")\nelif a == b:\n    print(\"a and b are equal\")",
 "options": [
 "a and b are equal",
 "b is greater than a",
@@ -252,7 +258,8 @@
 "source": "notes"
 },
 {
-"q": "In a nested structure with an outer if condition1 that contains an inner if condition2 with its own else (and an outer else), when does the inner else execute?",
+"q": "In this structure, when does the inner `else` run?",
+"code": "if condition1:\n    if condition2:\n        ...\n    else:\n        ...   # inner else\nelse:\n    ...       # outer else",
 "options": [
 "When condition1 is false, regardless of the value of condition2",
 "When condition1 is true and condition2 is false",
@@ -264,7 +271,8 @@
 "source": "notes"
 },
 {
-"q": "In a nested check that prints one of three messages (positive and even, positive but odd, or not positive), using if num > 0 on the outside and num % 2 == 0 on the inside, which message prints for num = -4?",
+"q": "Which message prints when `num = -4`?",
+"code": "num = -4\nif num > 0:\n    if num % 2 == 0:\n        print(\"The number is positive and is even.\")\n    else:\n        print(\"The number is positive but odd.\")\nelse:\n    print(\"The number is not positive.\")",
 "options": [
 "The number is positive and is even.",
 "The number is positive but odd.",
@@ -276,7 +284,8 @@
 "source": "notes"
 },
 {
-"q": "In the even/odd check, why is the test num % 2 == 0 used?",
+"q": "In this even/odd check, why is the test `num % 2 == 0` used?",
+"code": "if num > 0:\n    if num % 2 == 0:\n        print(\"The number is positive and is even.\")\n    else:\n        print(\"The number is positive but odd.\")\nelse:\n    print(\"The number is not positive.\")",
 "options": [
 "% divides num by 2 and returns the whole-number quotient, which must be 0",
 "% raises num to the power of 2 and compares the result to 0",
@@ -288,7 +297,8 @@
 "source": "notes"
 },
 {
-"q": "In the login program, what is printed when the username is \"admin\" and the password entered is \"letmein\"?",
+"q": "In this login program, what is printed when the username is `admin` and the password is `letmein`?",
+"code": "username = input(\"Username: \")\npassword = input(\"Password: \")\nif username == \"admin\":\n    if password == \"admin1234password\":\n        print(\"Login successful.\")\n    else:\n        print(\"Invalid password.\")\nelse:\n    print(\"Invalid username.\")",
 "options": [
 "Invalid password.",
 "Invalid username.",
@@ -300,7 +310,8 @@
 "source": "notes"
 },
 {
-"q": "In the login program, what is printed when the username is \"guest\" but the password is the correct \"admin1234password\"?",
+"q": "In this login program, what is printed when the username is `guest` but the password is the correct `admin1234password`?",
+"code": "username = input(\"Username: \")\npassword = input(\"Password: \")\nif username == \"admin\":\n    if password == \"admin1234password\":\n        print(\"Login successful.\")\n    else:\n        print(\"Invalid password.\")\nelse:\n    print(\"Invalid username.\")",
 "options": [
 "Login successful., because the password is correct",
 "Invalid password., because the username check passes by default",
@@ -350,10 +361,10 @@
 {
 "q": "Which line pair shows the correct match-case syntax in Python?",
 "options": [
-"switch <expression>: followed by case <value>:",
-"match (<expression>) { case <value>: } with curly braces",
-"case <expression>: followed by match <value>:",
-"match <expression>: followed by case <value>:"
+"`switch <expression>:` followed by `case <value>:`",
+"`match (<expression>) { case <value>: }` with curly braces",
+"`case <expression>:` followed by `match <value>:`",
+"`match <expression>:` followed by `case <value>:`"
 ],
 "answer": 3,
 "explanation": "Python writes match <expression>: and then indented case <value>: lines. switch is not a Python keyword here, braces are not used, and case cannot come before match.",

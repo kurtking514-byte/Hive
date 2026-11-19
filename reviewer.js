@@ -306,8 +306,19 @@ function pyHtml(src) {
     return esc(other);
   });
 }
-const codeBlock = src => `<pre class="code"><code>${src.replace(/\r\n?/g, '\n').replace(/\n+$/, '').split('\n')
-  .map(l => `<span class="ln">${pyHtml(l) || ' '}</span>`).join('')}</code></pre>`;
+function htmlHtml(src) {   // HTML snippets: tags in honey, attribute values green, comments grey
+  return src.replace(/(<!--.*?-->)|(<\/?[\w!-]+)((?:[^<>'"]|'[^']*'|"[^"]*")*?)(\/?>)|([^<]+|<)/g, (m, com, open, attrs, close, text) => {
+    if (com) return `<span class="t-com">${esc(com)}</span>`;
+    if (open) return `<span class="t-kw">${esc(open)}</span>` +
+      esc(attrs).replace(/(&#39;.*?&#39;|&quot;.*?&quot;)/g, '<span class="t-str">$1</span>') + `<span class="t-kw">${esc(close)}</span>`;
+    return esc(text);
+  });
+}
+const codeBlock = src => {
+  const hl = /^\s*</.test(src) ? htmlHtml : pyHtml;
+  return `<pre class="code"><code>${src.replace(/\r\n?/g, '\n').replace(/\n+$/, '').split('\n')
+    .map(l => `<span class="ln">${hl(l) || ' '}</span>`).join('')}</code></pre>`;
+};
 const rich = s => esc(s).replace(/`([^`]+)`/g, '<code class="ic">$1</code>');
 
 const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };

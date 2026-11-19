@@ -1,6 +1,6 @@
 [
 {
-"q": "A program runs x = 10 and then x = \"ten\" with no error. Which statement best explains this?",
+"q": "A program runs `x = 10` and then `x = \"ten\"` with no error. Which statement best explains this?",
 "options": [
 "Python converts the integer 10 into a string automatically before the second assignment is executed",
 "The second assignment is an error that Python ignores because the first value was already stored",
@@ -12,7 +12,7 @@
 "source": "notes"
 },
 {
-"q": "What does print(0b101 + 0o10 + 0x10) output?",
+"q": "What does `print(0b101 + 0o10 + 0x10)` output?",
 "options": [
 "23",
 "25",
@@ -24,7 +24,7 @@
 "source": "notes"
 },
 {
-"q": "A student runs x = 2 ** 200 and then print(x). Which outcome is expected?",
+"q": "A student runs `x = 2 ** 200` and then `print(x)`. Which outcome is expected?",
 "options": [
 "An overflow error is raised because the value needs more than 64 bits",
 "The value is rounded and displayed in scientific notation such as 1.6e+60",
@@ -36,23 +36,23 @@
 "source": "notes"
 },
 {
-"q": "Which line prints exactly: It's \"fine\"  (the apostrophe and the double quotes both shown)?",
+"q": "Which line prints exactly: It's \"fine\" (the apostrophe and the double quotes both shown)?",
 "options": [
-"print('It\\'s \"fine\"')",
-"print(\"It's \"fine\"\")",
-"print('It's \"fine\"')",
-"print(\"It's 'fine'\")"
+"`print('It\\'s \"fine\"')`",
+"`print(\"It's \"fine\"\")`",
+"`print('It's \"fine\"')`",
+"`print(\"It's 'fine'\")`"
 ],
 "answer": 0,
 "explanation": "The backslash is the escape character, so \\' lets an apostrophe sit inside a single-quoted string. The first wrong option ends its string at the inner double quote, the second ends at the apostrophe, and the last prints single quotes instead of double quotes.",
 "source": "notes"
 },
 {
-"q": "What does print(\"C:\\\\temp\") output?",
+"q": "What does `print(\"C:\\\\temp\")` output?",
 "options": [
-"C:\\\\temp",
-"C:temp",
-"C:\\temp",
+"`C:\\\\temp`",
+"`C:temp`",
+"`C:\\temp`",
 "A SyntaxError, because a backslash cannot appear in a string"
 ],
 "answer": 2,
@@ -60,7 +60,7 @@
 "source": "notes"
 },
 {
-"q": "Which choice lists the data types of 3.0, \"3\", True, and None, in that order?",
+"q": "Which choice lists the data types of `3.0`, `\"3\"`, `True`, and `None`, in that order?",
 "options": [
 "Integer, String, Boolean, Boolean",
 "Floating Point, String, Boolean, Null",
@@ -72,7 +72,8 @@
 "source": "notes"
 },
 {
-"q": "What does the following print?\nx = 7 / 2\ny = 7 // 2\nz = 7 % 2\nprint(x, y, z)",
+"q": "What does this code print?",
+"code": "x = 7 / 2\ny = 7 // 2\nz = 7 % 2\nprint(x, y, z)",
 "options": [
 "3.5 4 1",
 "3 3 1",
@@ -84,7 +85,8 @@
 "source": "notes"
 },
 {
-"q": "What does the following print?\na = 3\nb = a\na = 5\nprint(a, b)",
+"q": "What does this code print?",
+"code": "a = 3\nb = a\na = 5\nprint(a, b)",
 "options": [
 "5 5",
 "3 5",
@@ -98,17 +100,18 @@
 {
 "q": "Which list contains only valid Python variable names?",
 "options": [
-"_count, Total2, my_age_",
-"2ndPlace, total, x",
-"my-age, age, AGE",
-"total, my age, y"
+"`_count`, `Total2`, `my_age_`",
+"`2ndPlace`, `total`, `x`",
+"`my-age`, `age`, `AGE`",
+"`total`, `my age`, `y`"
 ],
 "answer": 0,
 "explanation": "Names may use letters, digits, and underscores and must not begin with a digit. 2ndPlace starts with a digit, my-age contains a hyphen, and my age contains a space.",
 "source": "notes"
 },
 {
-"q": "What does the following print?\nAge = 20\nage = 25\nAGE = Age + age\nprint(AGE)",
+"q": "What does this code print?",
+"code": "Age = 20\nage = 25\nAGE = Age + age\nprint(AGE)",
 "options": [
 "50",
 "25",
@@ -120,7 +123,7 @@
 "source": "notes"
 },
 {
-"q": "A developer writes MAX_RETRY_COUNT = 3 near the top of a program and later writes MAX_RETRY_COUNT = 5. Which statement is accurate?",
+"q": "A developer writes `MAX_RETRY_COUNT = 3` near the top of a program and later writes `MAX_RETRY_COUNT = 5`. Which statement is accurate?",
 "options": [
 "Python has true constants, so the second assignment raises an error because the name is uppercase",
 "UPPER_SNAKE_CASE only signals by convention that a value should not change, so Python accepts the second assignment without an error",
@@ -132,7 +135,8 @@
 "source": "notes"
 },
 {
-"q": "What does the following print?\nx = 5  # x = 10\nprint(x)  # print(x * 2)",
+"q": "What does this code print?",
+"code": "x = 5  # x = 10\nprint(x)  # print(x * 2)",
 "options": [
 "10",
 "5 followed by 10",
@@ -144,7 +148,7 @@
 "source": "notes"
 },
 {
-"q": "In the line total = price * 3 + 2, which description is correct?",
+"q": "In the line `total = price * 3 + 2`, which description is correct?",
 "options": [
 "total is the expression, and price * 3 + 2 is the statement",
 "price * 3 + 2 is an expression, and the whole line is an assignment statement",
@@ -156,7 +160,7 @@
 "source": "notes"
 },
 {
-"q": "What does print(2 + 3 * 4 ** 2 / 8 - 1) output?",
+"q": "What does `print(2 + 3 * 4 ** 2 / 8 - 1)` output?",
 "options": [
 "7.0",
 "7",
@@ -170,17 +174,18 @@
 {
 "q": "A warehouse packs 7 items per box and has 52 items. Which pair of expressions gives the number of full boxes and the number of leftover items, in that order?",
 "options": [
-"52 / 7 and 52 // 7",
-"52 // 7 and 52 % 7",
-"52 % 7 and 52 // 7",
-"52 // 7 and 52 / 7"
+"`52 / 7` and `52 // 7`",
+"`52 // 7` and `52 % 7`",
+"`52 % 7` and `52 // 7`",
+"`52 // 7` and `52 / 7`"
 ],
 "answer": 1,
 "explanation": "Floor division 52 // 7 drops the fractional part and gives 7 full boxes, and modulo 52 % 7 gives the remainder 3 leftover items.",
 "source": "notes"
 },
 {
-"q": "What does the following print?\nn = 6\nn += n\nn *= 2\nn -= 4\nn /= 8\nprint(n)",
+"q": "What does this code print?",
+"code": "n = 6\nn += n\nn *= 2\nn -= 4\nn /= 8\nprint(n)",
 "options": [
 "2.5",
 "1.0",
@@ -192,7 +197,7 @@
 "source": "notes"
 },
 {
-"q": "What does print(7 >= 7, 7 > 7, 3 != 3.0) output?",
+"q": "What does `print(7 >= 7, 7 > 7, 3 != 3.0)` output?",
 "options": [
 "True False True",
 "False False False",
@@ -204,19 +209,19 @@
 "source": "notes"
 },
 {
-"q": "Which expression is True exactly when x is an odd integer from 11 to 21 inclusive?",
+"q": "Which expression is True exactly when `x` is an odd integer from 11 to 21 inclusive?",
 "options": [
-"x >= 11 and x <= 21 and x % 2 == 1",
-"x >= 11 or x <= 21 and x % 2 == 1",
-"x > 11 and x < 21 and x % 2 == 1",
-"x >= 11 and x <= 21 and x % 2 == 0"
+"`x >= 11 and x <= 21 and x % 2 == 1`",
+"`x >= 11 or x <= 21 and x % 2 == 1`",
+"`x > 11 and x < 21 and x % 2 == 1`",
+"`x >= 11 and x <= 21 and x % 2 == 0`"
 ],
 "answer": 0,
 "explanation": "All three conditions must hold, so and is needed. Using or lets almost any number through, strict > and < exclude the odd endpoints 11 and 21, and % 2 == 0 tests for even numbers.",
 "source": "notes"
 },
 {
-"q": "For x = 15, what does (x > 10 and x % 2 == 0) or not (x < 20) evaluate to?",
+"q": "For `x = 15`, what does `(x > 10 and x % 2 == 0) or not (x < 20)` evaluate to?",
 "options": [
 "True",
 "15",
@@ -228,7 +233,8 @@
 "source": "notes"
 },
 {
-"q": "What does the following print?\nprint(\"A\", end=\"-\")\nprint(\"B\", end=\"\")\nprint(\"C\")\nprint(\"D\")",
+"q": "What does this code print?",
+"code": "print(\"A\", end=\"-\")\nprint(\"B\", end=\"\")\nprint(\"C\")\nprint(\"D\")",
 "options": [
 "A-B-C on one line and D on the next line",
 "A-BC on the first line and D on the second line",
@@ -240,7 +246,7 @@
 "source": "notes"
 },
 {
-"q": "Given n = 3, what happens when print(\"Items: \" + n) runs?",
+"q": "Given `n = 3`, what happens when `print(\"Items: \" + n)` runs?",
 "options": [
 "It prints Items: 3, because Python converts the integer to text during concatenation",
 "It raises a NameError, because n must be defined with a type before it is used",
@@ -252,7 +258,8 @@
 "source": "notes"
 },
 {
-"q": "With price = 250 and qty = 3, what does print(f\"Total: {price * qty:.2f} pesos\") output?",
+"q": "With `price = 250` and `qty = 3`, what does this print?",
+"code": "print(f\"Total: {price * qty:.2f} pesos\")",
 "options": [
 "Total: 750 pesos",
 "Total: 750.00 pesos",
@@ -264,7 +271,8 @@
 "source": "notes"
 },
 {
-"q": "What does the following print, and what is dept afterwards?\ndept = \"citcs\"\nprint(f\"{dept.upper()} {dept}\")",
+"q": "What does this code print, and what is `dept` afterwards?",
+"code": "dept = \"citcs\"\nprint(f\"{dept.upper()} {dept}\")",
 "options": [
 "It prints CITCS CITCS, because upper() changes dept itself",
 "It prints citcs citcs, because braces inside an f-string are not evaluated",
@@ -276,7 +284,8 @@
 "source": "notes"
 },
 {
-"q": "A user types 4 for the first prompt and 5 for the second.\na = input(\"a: \")\nb = input(\"b: \")\nprint(a + b)\nprint(int(a) + int(b))\nWhat is printed?",
+"q": "A user types 4 for the first prompt and 5 for the second. What is printed?",
+"code": "a = input(\"a: \")\nb = input(\"b: \")\nprint(a + b)\nprint(int(a) + int(b))",
 "options": [
 "45, then 9",
 "9, then 9",
@@ -288,7 +297,8 @@
 "source": "notes"
 },
 {
-"q": "What does the following print?\ndata = [10, 20, 30, 40, 50, 60]\nprint(data[-2], data[len(data) - 1], data[1])",
+"q": "What does this code print?",
+"code": "data = [10, 20, 30, 40, 50, 60]\nprint(data[-2], data[len(data) - 1], data[1])",
 "options": [
 "50 60 30",
 "50 60 20",
@@ -300,7 +310,8 @@
 "source": "notes"
 },
 {
-"q": "What does the following print?\nm = [['a', 'b', 'c'], [1, 2, 3]]\nprint(m[1][-1], m[0][1])",
+"q": "What does this code print?",
+"code": "m = [['a', 'b', 'c'], [1, 2, 3]]\nprint(m[1][-1], m[0][1])",
 "options": [
 "c 2",
 "3 a",
@@ -312,7 +323,8 @@
 "source": "notes"
 },
 {
-"q": "What does the following print?\nq = ['a', 'b', 'c', 'd']\nq.insert(2, 'x')\nq.remove('b')\nq.append('b')\nq.reverse()\nx = q.pop(1)\nprint(x, q, q.index('x'))",
+"q": "What does this code print?",
+"code": "q = ['a', 'b', 'c', 'd']\nq.insert(2, 'x')\nq.remove('b')\nq.append('b')\nq.reverse()\nx = q.pop(1)\nprint(x, q, q.index('x'))",
 "options": [
 "d ['b', 'c', 'x', 'a'] 3",
 "c ['b', 'd', 'x', 'a'] 2",
@@ -324,7 +336,8 @@
 "source": "notes"
 },
 {
-"q": "What does the following print?\nv = [3, 1, 3, 2, 3]\nv.remove(3)\nprint(v.count(3), v.index(3), len(v))",
+"q": "What does this code print?",
+"code": "v = [3, 1, 3, 2, 3]\nv.remove(3)\nprint(v.count(3), v.index(3), len(v))",
 "options": [
 "3 0 5",
 "2 1 4",
@@ -336,7 +349,8 @@
 "source": "notes"
 },
 {
-"q": "What does the following print?\nw = [5, 6, 7, 8, 9]\ndel w[1]\ndel w[-1]\nx = w.pop(0)\nprint(x, w)",
+"q": "What does this code print?",
+"code": "w = [5, 6, 7, 8, 9]\ndel w[1]\ndel w[-1]\nx = w.pop(0)\nprint(x, w)",
 "options": [
 "5 [7, 8, 9]",
 "5 [7, 8]",
@@ -348,12 +362,13 @@
 "source": "notes"
 },
 {
-"q": "Given ip = ('10.20.30.40', 8080, 'tcp'), which statement raises an error?",
+"q": "Given this tuple, which statement raises an error?",
+"code": "ip = ('10.20.30.40', 8080, 'tcp')",
 "options": [
-"print(ip[-1])",
-"print(ip[1])",
-"ip = ('10.20.30.41', 8080, 'tcp')",
-"ip[0] = '10.20.30.41'"
+"`print(ip[-1])`",
+"`print(ip[1])`",
+"`ip = ('10.20.30.41', 8080, 'tcp')`",
+"`ip[0] = '10.20.30.41'`"
 ],
 "answer": 3,
 "explanation": "A tuple is fixed-length and immutable, so a value cannot be changed in place. Indexing, including negative indices, works as it does for lists, and rebinding the name ip to a new tuple is an ordinary assignment.",
