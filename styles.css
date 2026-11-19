@@ -365,6 +365,21 @@ a.primary,.btn-block{display:block;text-align:center;text-decoration:none}
 .q-top{display:flex;justify-content:space-between}
 .q-text{font-family:"Josefin Sans",var(--font-body);font-weight:700;font-size:21px;line-height:1.35;margin:16px 0 14px}
 .opts{display:grid;gap:10px}
+/* code in questions: line numbers, Python colours in the hive palette */
+.code{margin:0 0 16px;padding:12px 0;background:#0F0C07;border:2px solid var(--rule);border-radius:12px;overflow-x:auto;
+  font:500 clamp(13px,3.7vw,15px)/1.65 ui-monospace,"Cascadia Code",Menlo,Consolas,monospace;tab-size:4;counter-reset:ln}
+.code code{display:block;min-width:max-content}
+.code .ln{display:block;padding:0 16px 0 0;white-space:pre}
+.code .ln::before{counter-increment:ln;content:counter(ln);display:inline-block;width:2em;margin-right:12px;padding-right:8px;
+  text-align:right;color:var(--soft);opacity:.5;border-right:1px solid var(--rule)}
+.t-kw{color:var(--honey);font-weight:700}
+.t-fn{color:#8FD3FF}
+.t-str{color:var(--ok)}
+.t-num{color:#FFB38A}
+.t-com{color:var(--soft);font-style:italic}
+code.ic{font:600 .88em ui-monospace,"Cascadia Code",Menlo,Consolas,monospace;background:rgba(246,235,213,.1);
+  border:1px solid var(--rule);border-radius:6px;padding:1px 6px;white-space:pre-wrap}
+.q-text code.ic{font-size:.8em}
 .opt{display:flex;gap:12px;align-items:flex-start;text-align:left;width:100%;background:var(--card);border:2px solid var(--line);
   border-radius:var(--hand-flat);padding:12px 14px;font:600 16px/1.45 var(--font-body);color:var(--ink)}
 .opt:hover:not(:disabled){background:var(--honey-fill)}

@@ -293,6 +293,23 @@ function notesHtml(text, lesson) {
 
 /* Quiz: one question at a time, answer shows right away with the explanation.
    Progress is kept per lesson, so leaving and coming back continues where you were. */
+/* Code in quizzes: a question's "code" field is shown as a real code block,
+   and `backticks` anywhere in a question, option or explanation become inline code. */
+const PY_KW = new Set('def return if elif else for while in not and or break continue pass import from as class try except finally with lambda None True False global is'.split(' '));
+const PY_FN = new Set('print input range len int float str list dict tuple set sum min max abs type round sorted'.split(' '));
+function pyHtml(src) {
+  return src.replace(/(#.*$)|('(?:[^'\\]|\\.)*'|"(?:[^"\\]|\\.)*")|\b(\d+(?:\.\d+)?)\b|\b([A-Za-z_]\w*)\b|([^#'"\w]+|.)/gm, (m, com, str, num, word, other) => {
+    if (com) return `<span class="t-com">${esc(com)}</span>`;
+    if (str) return `<span class="t-str">${esc(str)}</span>`;
+    if (num) return `<span class="t-num">${num}</span>`;
+    if (word) return PY_KW.has(word) ? `<span class="t-kw">${word}</span>` : PY_FN.has(word) ? `<span class="t-fn">${word}</span>` : word;
+    return esc(other);
+  });
+}
+const codeBlock = src => `<pre class="code"><code>${src.replace(/\r\n?/g, '\n').replace(/\n+$/, '').split('\n')
+  .map(l => `<span class="ln">${pyHtml(l) || ' '}</span>`).join('')}</code></pre>`;
+const rich = s => esc(s).replace(/`([^`]+)`/g, '<code class="ic">$1</code>');
+
 const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 function quizState(lesson, qs, fresh) {
   let q = st.quiz[lesson.id];
@@ -316,12 +333,13 @@ function renderQuiz(qs, lesson, fresh) {
   box.innerHTML = `<div class="quiz">
     <div class="q-top"><span class="meta">Question ${q.at + 1} of ${qs.length}</span><span class="meta">Score ${q.score}</span></div>
     <div class="bar"><i style="width:${q.at / qs.length * 100}%"></i></div>
-    <p class="q-text">${esc(item.q)}</p>
+    <p class="q-text">${rich(item.q)}</p>
+    ${item.code ? codeBlock(item.code) : ''}
     <div class="opts">${item.options.map((o, i) => {
       const cls = !answered ? '' : i === item.answer ? ' right' : i === q.picked ? ' wrong' : ' dim';
-      return `<button type="button" class="opt${cls}" data-opt="${i}" ${answered ? 'disabled' : ''}><span class="opt-l">${'ABCDEF'[i]}</span><span>${esc(o)}</span></button>`;
+      return `<button type="button" class="opt${cls}" data-opt="${i}" ${answered ? 'disabled' : ''}><span class="opt-l">${'ABCDEF'[i]}</span><span>${rich(o)}</span></button>`;
     }).join('')}</div>
-    ${answered ? `<div class="explain ${q.picked === item.answer ? 'ok' : 'no'}" role="status"><b>${q.picked === item.answer ? 'Correct!' : 'Not quite.'}</b> ${esc(item.explanation || '')}</div>
+    ${answered ? `<div class="explain ${q.picked === item.answer ? 'ok' : 'no'}" role="status"><b>${q.picked === item.answer ? 'Correct!' : 'Not quite.'}</b> ${rich(item.explanation || '')}</div>
       <button type="button" class="primary hand doodle" data-q="next">${q.at + 1 < qs.length ? 'Next question' : 'See my score'}</button>` : ''}
   </div>`;
   if (answered) box.querySelector('[data-q=next]').focus({ preventScroll: true });

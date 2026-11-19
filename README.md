@@ -111,6 +111,12 @@ Each lesson needs three things in `reviewer/`.
       "answer": 0,
       "explanation": "A computer accepts input, follows a mechanical procedure, and produces output." }]
    ```
+   For code questions, put the program in `code` (real line breaks as `\n`, 4 spaces per indent). It's shown as a coloured block with line numbers. Short bits of code in `q`, `options` or `explanation` go in `backticks`:
+   ```json
+   { "q": "What does `print(y)` show after this code?",
+     "code": "def sample(x):\n    x[0] = 10\n\ny = [5, 6, 7]\nsample(y)\nprint(y)",
+     "options": ["`[10, 6, 7]`", "…"], "answer": 0, "explanation": "…" }
+   ```
 
 The reviewer opens on the **Current exam** you set on the admin page. Older exams stay one tab away.
 

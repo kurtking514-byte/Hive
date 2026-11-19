@@ -252,7 +252,8 @@
 "source": "notes"
 },
 {
-"q": "Consider this code (/ separates lines, each leading dot is one indent level): i = 0 / while i < 8: / .if i == 3 or i == 4: / ..i += 1 / ..continue / .print(i) / .i += 1. What is the sum of all the values printed?",
+"q": "Consider this code. What is the sum of all the values printed?",
+"code": "i = 0\nwhile i < 8:\n    if i == 3 or i == 4:\n        i += 1\n        continue\n    print(i)\n    i += 1",
 "options": [
 "25",
 "28",
@@ -264,7 +265,8 @@
 "source": "notes"
 },
 {
-"q": "A student wants the sum of the integers 1 through 6 and writes: total = 0 / for i in range(1, 6): / .total += i / print(total). The program prints 15, not 21. Which rule was misapplied?",
+"q": "A student wants the sum of the integers 1 through 6 and writes this code. It prints 15, not 21. Which rule was misapplied?",
+"code": "total = 0\nfor i in range(1, 6):\n    total += i\nprint(total)",
 "options": [
 "range(start, stop) excludes the start value, so 1 was skipped",
 "range(start, stop) excludes the stop value, so 6 was never added and the call should be range(1, 7)",
@@ -276,7 +278,8 @@
 "source": "notes"
 },
 {
-"q": "What does this code print? (/ separates lines, each leading dot is one indent level) count = 1 / total = 0 / while count < 20: / .total += count / .count *= 2 / print(total, count)",
+"q": "What does this code print?",
+"code": "count = 1\ntotal = 0\nwhile count < 20:\n    total += count\n    count *= 2\nprint(total, count)",
 "options": [
 "31 16",
 "63 64",
@@ -288,7 +291,8 @@
 "source": "notes"
 },
 {
-"q": "Consider this code (/ separates lines, each leading dot is one indent level): i = 0 / while i < 3: / .course = input('Enter code') / .if course == 'CC2': / ..break / .i += 1 / else: / .print('Successful 3 iterations.') The user enters CC1 and then CC2. What are the final value of i and the output?",
+"q": "The user enters CC1 and then CC2. What are the final value of `i` and the output?",
+"code": "i = 0\nwhile i < 3:\n    course = input('Enter code')\n    if course == 'CC2':\n        break\n    i += 1\nelse:\n    print('Successful 3 iterations.')",
 "options": [
 "i is 1 and nothing is printed",
 "i is 2 and the message is printed",
@@ -300,7 +304,8 @@
 "source": "notes"
 },
 {
-"q": "How many times is print executed by this code? (/ separates lines, each leading dot is one indent level) for a in range(1, 4): / .for b in range(a): / ..print(a, b)",
+"q": "How many times is `print` executed by this code?",
+"code": "for a in range(1, 4):\n    for b in range(a):\n        print(a, b)",
 "options": [
 "10",
 "9",
@@ -312,7 +317,8 @@
 "source": "notes"
 },
 {
-"q": "A student wants the sum of the even numbers from 0 to 20 and writes: total = 0 / i = 0 / while i <= 20: / .if i % 2 == 0: / ..total += i / ..i += 1 / print(total). The program never ends. Which statement identifies the error?",
+"q": "A student wants the sum of the even numbers from 0 to 20 and writes this code. The program never ends. Which statement identifies the error?",
+"code": "total = 0\ni = 0\nwhile i <= 20:\n    if i % 2 == 0:\n        total += i\n        i += 1\nprint(total)",
 "options": [
 "The condition should be i < 20 because 20 is odd",
 "The update i += 1 is indented inside the if block, so for the first odd i the counter is never updated and the loop never ends",
@@ -324,7 +330,8 @@
 "source": "notes"
 },
 {
-"q": "What is the output of this code? (/ separates lines, each leading dot is one indent level) myList = [2, 4, 6, 8, 10] / for i in myList: / .if i == 6: / ..print('Gotcha') / ..break / .else: / ..print('Looking')",
+"q": "What is the output of this code?",
+"code": "myList = [2, 4, 6, 8, 10]\nfor i in myList:\n    if i == 6:\n        print('Gotcha')\n        break\n    else:\n        print('Looking')",
 "options": [
 "Looking, Looking, Gotcha, Looking, Looking",
 "Looking, Looking, Looking, Gotcha",
@@ -348,7 +355,8 @@
 "source": "notes"
 },
 {
-"q": "What is the output of this code? (/ separates lines, each leading dot is one indent level) x = 10 / while x < 5: / .print(x) / .x += 1 / print('done')",
+"q": "What is the output of this code?",
+"code": "x = 10\nwhile x < 5:\n    print(x)\n    x += 1\nprint('done')",
 "options": [
 "10 then done",
 "done",
