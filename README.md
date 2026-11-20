@@ -24,7 +24,7 @@ Hive has two sides. The first time someone opens it, it asks **Review** or **Upl
 It also works like a phone app:
 
 - **Get app.** The yellow **Get app** button at the top adds Hive to the home screen. On Android it opens Chrome's install prompt, or shows the steps (⋮ → *Add to Home screen*). On iPhone it shows the Safari steps (Share → *Add to Home Screen*). Inside Discord or Messenger it first says to open the page in Safari or Chrome, since those built-in browsers can't install apps. The button hides once Hive is installed.
-- **Update.** When you push a new version, a bar appears at the bottom: *A new version of Hive is ready* with an **Update** button. Installed apps check for a new version every time they're opened again.
+- **Update.** When you push a new version, a bar appears at the bottom: *A new version of Hive is ready* with an **Update** button. Installed apps check for a new version every time they're opened again. The new version downloads every lesson before it takes over, so nobody has to open lessons online again to keep them offline, and no hard refresh is needed.
 
 How the upload side works:
 
@@ -121,7 +121,7 @@ Each lesson needs three things in `reviewer/`.
 The reviewer opens on the **Current exam** you set on the admin page. Older exams stay one tab away.
 
 ## Updating the site later
-After changing any file, raise the number in `sw.js` (for example `hive-v34` → `hive-v35`) so phones pick up the new version. Students then see the **Update** bar the next time they open Hive.
+After changing any file, raise the number in `sw.js` (for example `hive-v36` → `hive-v37`) so phones pick up the new version. Students then see the **Update** bar the next time they open Hive.
 
 ## Test locally
 ```bash
