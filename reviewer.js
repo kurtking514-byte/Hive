@@ -30,7 +30,6 @@ async function lessons() {
   if (LESSONS) return LESSONS;
   try { LESSONS = await (await fetch('./reviewer/lessons.json')).json(); }
   catch (e) { LESSONS = []; }
-  saveForOffline();
   return LESSONS;
 }
 const cache = {};
@@ -38,17 +37,6 @@ async function getText(path) {
   if (cache[path] !== undefined) return cache[path];
   const r = await fetch(path); if (!r.ok) throw new Error(r.status);
   return (cache[path] = path.endsWith('.json') ? await r.json() : await r.text());
-}
-/* Fetch every lesson once in the background so the whole reviewer works with no signal later. */
-function saveForOffline() {
-  if (!navigator.onLine || st.offlineSaved === LESSONS.length || !('serviceWorker' in navigator)) return;
-  const run = async () => {
-    for (const l of LESSONS) {
-      try { if (l.notes) await fetch(`./reviewer/notes/${l.id}.txt`); if (l.quiz) await fetch(`./reviewer/quiz/${l.id}.json`); } catch (e) { return; }
-    }
-    st.offlineSaved = LESSONS.length; save();
-  };
-  if (window.requestIdleCallback) requestIdleCallback(run, { timeout: 5000 }); else setTimeout(run, 2500);
 }
 const subjectInfo = id => SUBJECTS.find(s => s.id === id) || { id, name: '', courses: 'all' };
 

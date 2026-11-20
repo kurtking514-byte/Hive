@@ -1,5 +1,5 @@
 /* Keeps the upload page working offline. Bump CACHE when you change files. */
-const CACHE = 'hive-v34';
+const CACHE = 'hive-v35';
 const TUS = 'https://cdn.jsdelivr.net/npm/tus-js-client@4.1.0/dist/tus.min.js';
 const FFLATE = 'https://cdn.jsdelivr.net/npm/fflate@0.8.2/umd/index.js';
 const LIBS = [TUS, FFLATE];
@@ -7,10 +7,39 @@ const LIBS = [TUS, FFLATE];
 const CDN = ['https://cdn.jsdelivr.net', 'https://fonts.googleapis.com', 'https://fonts.gstatic.com'];
 const CORE = ['./', './index.html', './styles.css', './app.js', './config.js', './manifest.webmanifest', './icon.svg', './doodle.js', './autofill.js', './reviewer.js', './pwa.js', './reviewer/lessons.json', './icon-192.png', './apple-touch-icon.png'];
 
+/* Every lesson's notes and quiz, read from lessons.json. */
+async function lessonFiles(c) {
+  const r = await c.match('./reviewer/lessons.json'); if (!r) return [];
+  const list = await r.clone().json().catch(() => []);
+  return list.flatMap(l => [l.notes && `./reviewer/notes/${l.id}.txt`, l.quiz && `./reviewer/quiz/${l.id}.json`]).filter(Boolean);
+}
+
+/* A new version downloads the whole reviewer before it takes over, so after an update every
+   lesson still works offline. A file that can't be downloaded right now is carried over from
+   the old version instead of being lost. */
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(async c => {
     await c.addAll(CORE.map(u => new Request(u, { cache: 'reload' })));
     await Promise.all(LIBS.map(u => c.add(new Request(u, { mode: 'cors' })).catch(() => {})));
+    const files = await lessonFiles(c);
+    for (let i = 0; i < files.length; i += 6) {
+      await Promise.all(files.slice(i, i + 6).map(async u => {
+        try {
+          const res = await fetch(u, { cache: 'reload' });
+          if (res.ok) return c.put(u, res);
+        } catch (err) {}
+        const old = await caches.match(u, { ignoreSearch: true });
+        if (old) await c.put(u, old);
+      }));
+    }
+    // fonts saved by the old version come along too, so text keeps its look offline
+    for (const k of await caches.keys()) {
+      if (k === CACHE) continue;
+      const oc = await caches.open(k);
+      for (const req of await oc.keys()) {
+        if (CDN.includes(new URL(req.url).origin) && !(await c.match(req))) await c.put(req, await oc.match(req));
+      }
+    }
   }).then(() => self.skipWaiting()));
 });
 
