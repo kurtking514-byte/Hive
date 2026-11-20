@@ -1,5 +1,5 @@
 /* Keeps the upload page working offline. Bump CACHE when you change files. */
-const CACHE = 'hive-v35';
+const CACHE = 'hive-v36';
 const TUS = 'https://cdn.jsdelivr.net/npm/tus-js-client@4.1.0/dist/tus.min.js';
 const FFLATE = 'https://cdn.jsdelivr.net/npm/fflate@0.8.2/umd/index.js';
 const LIBS = [TUS, FFLATE];
@@ -60,7 +60,9 @@ self.addEventListener('fetch', e => {
 
   e.respondWith(caches.open(CACHE).then(async cache => {
     const cached = await cache.match(req, { ignoreSearch: mine });
-    const fresh = fetch(req).then(res => {
+    // own files always ask GitHub whether they changed, instead of taking the browser's
+    // 10-minute copy (an unchanged file costs a tiny "not modified" reply, not a re-download)
+    const fresh = fetch(mine ? new Request(req.url, { cache: 'no-cache', credentials: 'same-origin' }) : req).then(res => {
       if (res.ok || res.type === 'opaque') cache.put(req, res.clone());
       return res;
     }).catch(() => null);
