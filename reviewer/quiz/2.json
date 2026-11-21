@@ -20,7 +20,7 @@
 "29"
 ],
 "answer": 3,
-"explanation": "0b101 is 5, 0o10 is 8 and 0x10 is 16, so the sum is 29. The other values come from reading one or more of the prefixed numbers as ordinary decimal digits (for example 23 reads 0x10 as 10).",
+"explanation": "`0b101` is 5, `0o10` is 8 and `0x10` is 16, so the sum is 29. The other values come from reading one or more of the prefixed numbers as ordinary decimal digits (for example 23 reads `0x10` as 10).",
 "source": "notes"
 },
 {
@@ -32,7 +32,7 @@
 "The exact value is printed as a 61-digit integer, because Python places no explicit limit on the size of an integer"
 ],
 "answer": 3,
-"explanation": "Python integers have no explicitly defined limit, so very long integers are stored and printed unchanged. 2 ** 200 is a 61-digit whole number.",
+"explanation": "Python integers have no explicitly defined limit, so very long integers are stored and printed unchanged. `2 ** 200` is a 61-digit whole number.",
 "source": "notes"
 },
 {
@@ -44,7 +44,7 @@
 "`print(\"It's 'fine'\")`"
 ],
 "answer": 0,
-"explanation": "The backslash is the escape character, so \\' lets an apostrophe sit inside a single-quoted string. The first wrong option ends its string at the inner double quote, the second ends at the apostrophe, and the last prints single quotes instead of double quotes.",
+"explanation": "The backslash is the escape character, so `\\'` lets an apostrophe sit inside a single-quoted string. The first wrong option ends its string at the inner double quote, the second ends at the apostrophe, and the last prints single quotes instead of double quotes.",
 "source": "notes"
 },
 {
@@ -68,7 +68,7 @@
 "Floating Point, String, String, Null"
 ],
 "answer": 1,
-"explanation": "3.0 has a decimal point so it is a floating point number, \"3\" is quoted text so it is a String, True is a Boolean, and None is the Null value.",
+"explanation": "`3.0` has a decimal point so it is a floating point number, `\"3\"` is quoted text so it is a String, `True` is a Boolean, and `None` is the Null value.",
 "source": "notes"
 },
 {
@@ -81,7 +81,7 @@
 "3.5 3 3"
 ],
 "answer": 2,
-"explanation": "/ gives the full quotient 3.5, // drops the fractional part giving 3, and % gives the remainder 1. Floor division truncates rather than rounds, so 4 is wrong.",
+"explanation": "`/` gives the full quotient 3.5, `//` drops the fractional part giving 3, and `%` gives the remainder 1. Floor division truncates rather than rounds, so 4 is wrong.",
 "source": "notes"
 },
 {
@@ -94,7 +94,7 @@
 "3 3"
 ],
 "answer": 2,
-"explanation": "b = a copies the current value 3 into b. Reassigning a to 5 afterwards does not affect b, so the output is 5 3.",
+"explanation": "`b = a` copies the current value 3 into b. Reassigning a to 5 afterwards does not affect b, so the output is 5 3.",
 "source": "notes"
 },
 {
@@ -106,7 +106,7 @@
 "`total`, `my age`, `y`"
 ],
 "answer": 0,
-"explanation": "Names may use letters, digits, and underscores and must not begin with a digit. 2ndPlace starts with a digit, my-age contains a hyphen, and my age contains a space.",
+"explanation": "Names may use letters, digits, and underscores and must not begin with a digit. `2ndPlace` starts with a digit, `my-age` contains a hyphen, and `my age` contains a space.",
 "source": "notes"
 },
 {
@@ -119,7 +119,7 @@
 "A NameError, because AGE was not defined before it was used"
 ],
 "answer": 2,
-"explanation": "Variable names are case-sensitive, so Age, age, and AGE are three different variables. AGE becomes 20 + 25 = 45. The answer 50 would only occur if age and Age were the same name.",
+"explanation": "Variable names are case-sensitive, so `Age`, `age`, and `AGE` are three different variables. `AGE` becomes 20 + 25 = 45. The answer 50 would only occur if `age` and `Age` were the same name.",
 "source": "notes"
 },
 {
@@ -131,7 +131,7 @@
 "Python rejects the reassignment only when the new value has a different data type from the first"
 ],
 "answer": 1,
-"explanation": "Python has no true constants. UPPER_SNAKE_CASE (for example TAX_RATE) is a convention for values that should not change, but nothing in the language prevents reassignment.",
+"explanation": "Python has no true constants. `UPPER_SNAKE_CASE` (for example `TAX_RATE`) is a convention for values that should not change, but nothing in the language prevents reassignment.",
 "source": "notes"
 },
 {
@@ -144,7 +144,7 @@
 "5"
 ],
 "answer": 3,
-"explanation": "Everything from # to the end of the line is a comment that Python ignores, so x stays 5 and only print(x) runs.",
+"explanation": "Everything from `#` to the end of the line is a comment that Python ignores, so x stays 5 and only `print(x)` runs.",
 "source": "notes"
 },
 {
@@ -156,7 +156,7 @@
 "The = sign is the expression, and price, 3 and 2 are operands of the statement"
 ],
 "answer": 1,
-"explanation": "An expression combines values, variables, and operators. The assignment with = is a statement the interpreter executes, and it stores the value of the expression on its right in the name on its left.",
+"explanation": "An expression combines values, variables, and operators. The assignment with `=` is a statement the interpreter executes, and it stores the value of the expression on its right in the name on its left.",
 "source": "notes"
 },
 {
@@ -168,7 +168,7 @@
 "49.0"
 ],
 "answer": 0,
-"explanation": "Exponentiation first: 4 ** 2 = 16. Then 3 * 16 = 48 and 48 / 8 = 6.0 (the / operator gives a float). Finally 2 + 6.0 - 1 = 7.0. Plain 7 forgets that / returns a float; 19.0 and 49.0 come from evaluating in the wrong order.",
+"explanation": "Exponentiation first: `4 ** 2 = 16`. Then `3 * 16 = 48` and `48 / 8 = 6.0` (the `/` operator gives a float). Finally `2 + 6.0 - 1 = 7.0`. Plain 7 forgets that `/` returns a float; 19.0 and 49.0 come from evaluating in the wrong order.",
 "source": "notes"
 },
 {
@@ -180,7 +180,7 @@
 "`52 // 7` and `52 / 7`"
 ],
 "answer": 1,
-"explanation": "Floor division 52 // 7 drops the fractional part and gives 7 full boxes, and modulo 52 % 7 gives the remainder 3 leftover items.",
+"explanation": "Floor division `52 // 7` drops the fractional part and gives 7 full boxes, and modulo `52 % 7` gives the remainder 3 leftover items.",
 "source": "notes"
 },
 {
@@ -193,7 +193,7 @@
 "20"
 ],
 "answer": 0,
-"explanation": "n goes 6, 12 (n += n doubles it), 24, 20, and finally 20 / 8 = 2.5. Each augmented assignment updates n using its current value.",
+"explanation": "n goes 6, 12 (`n += n` doubles it), 24, 20, and finally `20 / 8 = 2.5`. Each augmented assignment updates n using its current value.",
 "source": "notes"
 },
 {
@@ -205,7 +205,7 @@
 "True False False"
 ],
 "answer": 3,
-"explanation": "7 >= 7 is True, 7 > 7 is False, and 3 != 3.0 is False because the two values are equal. Relational operators always return a Boolean.",
+"explanation": "`7 >= 7` is True, `7 > 7` is False, and `3 != 3.0` is False because the two values are equal. Relational operators always return a Boolean.",
 "source": "notes"
 },
 {
@@ -217,7 +217,7 @@
 "`x >= 11 and x <= 21 and x % 2 == 0`"
 ],
 "answer": 0,
-"explanation": "All three conditions must hold, so and is needed. Using or lets almost any number through, strict > and < exclude the odd endpoints 11 and 21, and % 2 == 0 tests for even numbers.",
+"explanation": "All three conditions must hold, so `and` is needed. Using `or` lets almost any number through, strict `>` and `<` exclude the odd endpoints 11 and 21, and `% 2 == 0` tests for even numbers.",
 "source": "notes"
 },
 {
@@ -229,7 +229,7 @@
 "An error, because not cannot follow or"
 ],
 "answer": 2,
-"explanation": "The left side is True and False, which is False (15 is odd). The right side is not (True), which is False. False or False is False.",
+"explanation": "The left side is `True and False`, which is False (15 is odd). The right side is `not (True)`, which is False. `False or False` is False.",
 "source": "notes"
 },
 {
@@ -242,7 +242,7 @@
 "A-BCD all on a single line"
 ],
 "answer": 1,
-"explanation": "The end parameter replaces the newline that print() normally adds. The first call ends with a dash, the second with nothing, and only the third call ends the line, so D appears on the next line.",
+"explanation": "The `end` parameter replaces the newline that `print()` normally adds. The first call ends with a dash, the second with nothing, and only the third call ends the line, so D appears on the next line.",
 "source": "notes"
 },
 {
@@ -254,7 +254,7 @@
 "An error occurs, because + concatenates strings and n is an integer; passing the pieces separated by commas to print() avoids it"
 ],
 "answer": 3,
-"explanation": "Concatenation with + joins two strings. Mixing a string with an integer raises an error. Commas in print() are the notes' way to combine text and numbers.",
+"explanation": "Concatenation with `+` joins two strings. Mixing a string with an integer raises an error. Commas in `print()` are the notes' way to combine text and numbers.",
 "source": "notes"
 },
 {
@@ -267,7 +267,7 @@
 "Total: price * qty:.2f pesos"
 ],
 "answer": 1,
-"explanation": "An f-string evaluates the expression in the braces (250 * 3 = 750) and applies the :.2f format, which shows two decimal places.",
+"explanation": "An f-string evaluates the expression in the braces (`250 * 3 = 750`) and applies the `:.2f` format, which shows two decimal places.",
 "source": "notes"
 },
 {
@@ -280,7 +280,7 @@
 "It raises an error, because methods cannot be called inside braces"
 ],
 "answer": 2,
-"explanation": "Expressions inside f-string braces are evaluated, including method calls. upper() produces an uppercase result for the display and does not change dept.",
+"explanation": "Expressions inside f-string braces are evaluated, including method calls. `upper()` produces an uppercase result for the display and does not change `dept`.",
 "source": "notes"
 },
 {
@@ -293,7 +293,7 @@
 "9, then 45"
 ],
 "answer": 0,
-"explanation": "User input is automatically a String, so a + b concatenates \"4\" and \"5\" into 45. Type casting with int() first gives 4 + 5 = 9.",
+"explanation": "User input is automatically a String, so `a + b` concatenates `\"4\"` and `\"5\"` into 45. Type casting with `int()` first gives 4 + 5 = 9.",
 "source": "notes"
 },
 {
@@ -306,7 +306,7 @@
 "50 50 20"
 ],
 "answer": 1,
-"explanation": "data[-2] counts from the end and is 50. len(data) is 6, so data[5] is 60. Lists are zero-indexed, so data[1] is 20.",
+"explanation": "`data[-2]` counts from the end and is 50. `len(data)` is 6, so `data[5]` is 60. Lists are zero-indexed, so `data[1]` is 20.",
 "source": "notes"
 },
 {
@@ -319,7 +319,7 @@
 "1 b"
 ],
 "answer": 2,
-"explanation": "m[1] is the inner list [1, 2, 3], and [-1] selects its last element, 3. m[0] is ['a', 'b', 'c'], and [1] selects b.",
+"explanation": "`m[1]` is the inner list `[1, 2, 3]`, and `[-1]` selects its last element, 3. `m[0]` is `['a', 'b', 'c']`, and `[1]` selects b.",
 "source": "notes"
 },
 {
@@ -332,7 +332,7 @@
 "d ['b', 'c', 'x', 'a'] 2"
 ],
 "answer": 3,
-"explanation": "Step by step: ['a','b','x','c','d'], then ['a','x','c','d'], then ['a','x','c','d','b'], reversed to ['b','d','c','x','a']. pop(1) removes and returns 'd', leaving ['b','c','x','a'], where 'x' is at index 2.",
+"explanation": "Step by step: `['a','b','x','c','d']`, then `['a','x','c','d']`, then `['a','x','c','d','b']`, reversed to `['b','d','c','x','a']`. `pop(1)` removes and returns `'d'`, leaving `['b','c','x','a']`, where `'x'` is at index 2.",
 "source": "notes"
 },
 {
@@ -345,7 +345,7 @@
 "3 1 4"
 ],
 "answer": 1,
-"explanation": "remove deletes only the first occurrence, so v becomes [1, 3, 2, 3]. It now contains two 3s, the first 3 is at index 1, and the length is 4.",
+"explanation": "`remove` deletes only the first occurrence, so `v` becomes `[1, 3, 2, 3]`. It now contains two 3s, the first 3 is at index 1, and the length is 4.",
 "source": "notes"
 },
 {
@@ -358,7 +358,7 @@
 "7 [8]"
 ],
 "answer": 1,
-"explanation": "del w[1] leaves [5, 7, 8, 9]; del w[-1] leaves [5, 7, 8]; pop(0) removes and returns 5, leaving [7, 8].",
+"explanation": "`del w[1]` leaves `[5, 7, 8, 9]`; `del w[-1]` leaves `[5, 7, 8]`; `pop(0)` removes and returns 5, leaving `[7, 8]`.",
 "source": "notes"
 },
 {
@@ -371,7 +371,7 @@
 "`ip[0] = '10.20.30.41'`"
 ],
 "answer": 3,
-"explanation": "A tuple is fixed-length and immutable, so a value cannot be changed in place. Indexing, including negative indices, works as it does for lists, and rebinding the name ip to a new tuple is an ordinary assignment.",
+"explanation": "A tuple is fixed-length and immutable, so a value cannot be changed in place. Indexing, including negative indices, works as it does for lists, and rebinding the name `ip` to a new tuple is an ordinary assignment.",
 "source": "notes"
 }
 ]
