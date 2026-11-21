@@ -8,7 +8,7 @@
 "They are identical, and `&&` is just an older syntax for `&`"
 ],
 "answer": 0,
-"explanation": "Bitwise operators act on each corresponding bit pair, while && and || act on whole boolean expressions.",
+"explanation": "Bitwise operators act on each corresponding bit pair, while `&&` and `||` act on whole boolean expressions.",
 "source": "notes"
 },
 {
@@ -44,7 +44,7 @@
 "In 8-bit the overflow bits are XORed back into the result"
 ],
 "answer": 0,
-"explanation": "Bits beyond the representational capacity are deleted, so 00101111 << 6 keeps only 11000000 (192) in 8 bits, but 47 x 2^6 = 3008 fits in 16 bits.",
+"explanation": "Bits beyond the representational capacity are deleted, so `00101111 << 6` keeps only 11000000 (192) in 8 bits, but 47 x 2^6 = 3008 fits in 16 bits.",
 "source": "notes"
 },
 {
@@ -188,7 +188,7 @@
 "Shifting an odd number right loses the remainder"
 ],
 "answer": 2,
-"explanation": "XOR outputs 1 only when the two bits differ, so 1 ^ 1 = 0.",
+"explanation": "XOR outputs 1 only when the two bits differ, so `1 ^ 1 = 0`.",
 "source": "notes"
 },
 {
@@ -212,7 +212,7 @@
 "`3 << 2` versus `2 << 3`"
 ],
 "answer": 3,
-"explanation": "AND, OR and XOR are commutative, but a shift is not: 3 << 2 = 12 while 2 << 3 = 16.",
+"explanation": "AND, OR and XOR are commutative, but a shift is not: `3 << 2 = 12` while `2 << 3 = 16`.",
 "source": "notes"
 },
 {
@@ -356,7 +356,7 @@
 "`6 & 3` is 2 and `6 && 3` is 3"
 ],
 "answer": 3,
-"explanation": "110 AND 011 = 010, which is 2, while && is a logical operator that returns its last operand, 3, when both operands are truthy.",
+"explanation": "110 AND 011 = 010, which is 2, while `&&` is a logical operator that returns its last operand, 3, when both operands are truthy.",
 "source": "extra"
 }
 ]
