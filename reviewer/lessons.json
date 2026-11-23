@@ -650,6 +650,16 @@
   "exam": "Finals"
  },
  {
+  "id": "nstp1-ht",
+  "subject": "NSTP1",
+  "tab": "Human Transformation",
+  "title": "Human Transformation",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
+ },
+ {
   "id": "eng100-speech",
   "subject": "ENG100",
   "tab": "Speech Writing",
