@@ -117,6 +117,7 @@ Each lesson needs three things in `reviewer/`.
      "code": "def sample(x):\n    x[0] = 10\n\ny = [5, 6, 7]\nsample(y)\nprint(y)",
      "options": ["`[10, 6, 7]`", "…"], "answer": 0, "explanation": "…" }
    ```
+   Math goes between dollar signs, in notes and in `q`, `options` and `explanation`, and is drawn by [KaTeX](https://katex.org): `$1011_{2}$`, `$2^{n}$`, `$a_{n} = a_{1} + d(n - 1)$`, `$\dfrac{\sum x}{n}$`. In JSON every backslash is doubled (`"$\\sqrt{2}$"`). A `$` followed by a space or a digit right after the closing `$` stays plain text, so prices like $15 are safe. A stacked fraction at the end of a line gets its own line. KaTeX only loads when a lesson has math, and is saved for offline use. If one option of a question has math, give the other options math too (or none), so the look of the right answer doesn't give it away.
 
 The reviewer opens on the **Current exam** you set on the admin page. Older exams stay one tab away.
 
