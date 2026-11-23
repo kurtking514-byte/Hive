@@ -9,12 +9,12 @@ KEY TERMS
 ★ The six main character codes: ASCII, ISO, JIS, EBCDIC, Unicode, and EUC.
 ★ Character corruption (garbled characters): when two computers exchange data using different character codes, the receiving side shows characters that are different from the original data.
 EASIER: A character code is a shared dictionary of number-to-character pairs. If the sender and receiver use different dictionaries, the message turns into nonsense.
-The grade-school secret code (A = 1, B = 2, C = 3) is the right idea, but it is too simple for computers. It has no lowercase letters, digits, or punctuation.
+The grade-school secret code ($\mathrm{A} = 1$, $\mathrm{B} = 2$, $\mathrm{C} = 3$) is the right idea, but it is too simple for computers. It has no lowercase letters, digits, or punctuation.
 
 ASCII
 ★ ASCII: American Standard Code for Information Interchange. It is pronounced "ass-key".
 ★ ASCII was set by the American standards body now called ANSI (American National Standards Institute). It was first published in 1963 by that body, then named the American Standards Association, after work that started around 1960 to 1962.
-★ ASCII codes use 7 code bits, which give 2^7 = 128 characters (codes 0 to 127).
+★ ASCII codes use 7 code bits, which give $2^{7} = 128$ characters (codes 0 to 127).
 ★ When stored in one 8-bit byte, ASCII uses 7 code bits for the character plus 1 parity bit that detects errors.
 ★ Parity bit: an extra bit added so that errors in the other bits can be detected.
 EASIER: The parity bit is a quick checksum. If one bit flips during sending, the count of 1s comes out wrong and the receiver knows something broke.
@@ -24,7 +24,7 @@ Java uses Unicode, not ASCII, to store characters as numbers.
 
 THE ASCII TABLE
 Each ASCII character can be written four ways: decimal (Dec), hexadecimal (Hex), octal (Oct), and binary (7 bits).
-⚙ Example row: A = Dec 65 = Hex 41 = Oct 101 = Binary 1000001.
+⚙ Example row: $\mathrm{A}$ = Dec 65 = Hex 41 = Oct 101 = Binary 1000001.
 ★ Codes 0 to 31 and 127 are control codes (they do something instead of printing a symbol).
 ★ Code 32 is the space. Codes 33 to 126 are printable characters.
 Control codes 0 to 7: NUL 0 (null character), SOH 1 (start of header), STX 2 (start of text), ETX 3 (end of text), EOT 4 (end of transmission), ENQ 5 (enquiry), ACK 6 (acknowledge), BEL 7 (bell, ring).
@@ -39,7 +39,7 @@ Symbols 58 to 64: colon 58, semicolon 59, less than 60, = 61, greater than 62, ?
 Symbols 91 to 96: [ 91, backslash 92, ] 93, caret ^ 94, underscore _ 95, backtick ` 96.
 ★ Lowercase letters a to z are codes 97 to 122 (Hex 61 to 7A).
 Symbols 123 to 126: { 123, vertical bar | 124, } 125, tilde ~ 126.
-★ A lowercase letter is always 32 more than its capital. Example: A = 65, a = 97.
+★ A lowercase letter is always 32 more than its capital. Example: $\mathrm{A} = 65$, a = 97.
 EASIER: Remember three anchors and count from them: 0 is 48, A is 65, a is 97.
 
 HOW TO FIND AN ASCII CODE
@@ -63,8 +63,8 @@ Added example:
 
 EXAMPLE: ADDING AN EVEN PARITY BIT
 Added example: with even parity, the parity bit is chosen so the total number of 1s in all 8 bits is even.
-⚙ A = 1000001 has two 1s, which is already even, so the parity bit is 0. Stored byte: 01000001.
-⚙ C = 1000011 has three 1s, which is odd, so the parity bit is 1. Stored byte: 11000011.
+⚙ $\mathrm{A} = 1000001$ has two 1s, which is already even, so the parity bit is 0. Stored byte: 01000001.
+⚙ $\mathrm{C} = 1000011$ has three 1s, which is odd, so the parity bit is 1. Stored byte: 11000011.
 ⚙ If C arrives as 11000111, it has five 1s (odd), so the receiver knows an error happened.
 
 ISO CODE
@@ -90,16 +90,16 @@ Difference: ASCII is 7-bit and was set by a standards body. EBCDIC is 8-bit and 
 
 READING THE EBCDIC TABLE
 The EBCDIC table has the 1st hex digit across the top (columns 0 to F) and the 2nd hex digit down the side (rows 0 to F).
-⚙ Code = 1st hex digit (column) followed by 2nd hex digit (row). Example: column C, row 1 holds A, so A = C1.
-★ EBCDIC capitals: A to I = C1 to C9, J to R = D1 to D9, S to Z = E2 to E9.
-★ EBCDIC lowercase: a to i = 81 to 89, j to r = 91 to 99, s to z = A2 to A9.
-★ EBCDIC digits: 0 to 9 = F0 to F9.
+⚙ Code = 1st hex digit (column) followed by 2nd hex digit (row). Example: column C, row 1 holds A, so $\mathrm{A} = \mathrm{C1}$.
+★ EBCDIC capitals: A to I = $\mathrm{C1}$ to C9, J to R = $\mathrm{D1}$ to D9, S to Z = $\mathrm{E2}$ to E9.
+★ EBCDIC lowercase: a to i = 81 to 89, j to r = 91 to 99, s to z = $\mathrm{A2}$ to A9.
+★ EBCDIC digits: 0 to $9 = \mathrm{F0}$ to F9.
 ★ EBCDIC space (SP) = 40.
 Unlike ASCII, the letters in EBCDIC are not in one unbroken run. There are gaps after I and after R.
-Column 4 symbols: SP 40, cent sign 4A, period 4B, less than 4C, ( 4D, + 4E, vertical bar 4F.
+Column 4 symbols: SP 40, cent sign 4A, period 4B, less than 4C, ( 4D, + $\mathrm{4E}$, vertical bar 4F.
 Column 5 symbols: & 50, ! 5A, $ 5B, * 5C, ) 5D, semicolon 5E, not sign 5F.
 Column 6 symbols: - 60, / 61, comma 6B, % 6C, underscore 6D, greater than 6E, ? 6F.
-Column 7 symbols: colon 7A, # 7B, @ 7C, apostrophe 7D, = 7E, double quote 7F.
+Column 7 symbols: colon 7A, # 7B, @ 7C, apostrophe 7D, = $\mathrm{7E}$, double quote 7F.
 Column 0 control codes: NUL 00, SOH 01, STX 02, ETX 03, PF 04, HT 05, LC 06, DEL 07, SMM 0A, VT 0B, FF 0C, CR 0D, SO 0E, SI 0F.
 Column 1 control codes: DLE 10, DC1 11, DC2 12, TM 13, RES 14, NL 15, BS 16, IL 17, CAN 18, EM 19, CC 1A, CU1 1B, IFS 1C, IGS 1D, IRS 1E, IUS 1F.
 Column 2 control codes: DS 20, SOS 21, FS 22, BYP 24, LF 25, ETB 26, ESC 27, SM 2A, CU2 2B, ENQ 2D, ACK 2E, BEL 2F.
@@ -107,10 +107,10 @@ Column 3 control codes: SYN 32, PN 34, RS 35, UC 36, EOT 37, CU3 3B, DC4 3C, NAK
 
 EXAMPLE: ENCODE CAT IN EBCDIC
 Added example:
-⚙ C is the 3rd letter of the A to I group, so C = C3.
-⚙ A = C1.
-⚙ T is the 2nd letter of the S to Z group, which starts at E2, so T = E3.
-⚙ Answer: CAT = C3 C1 E3 in hex, which is 11000011 11000001 11100011 in binary.
+⚙ C is the 3rd letter of the A to I group, so $\mathrm{C} = \mathrm{C3}$.
+⚙ $\mathrm{A} = \mathrm{C1}$.
+⚙ T is the 2nd letter of the S to Z group, which starts at E2, so T = $\mathrm{E3}$.
+⚙ Answer: CAT = $\mathrm{C3}$ C1 E3 in hex, which is 11000011 11000001 11100011 in binary.
 ⚙ Compare ASCII: CAT = 43 41 54 in hex. The same word gives different bytes, which is why mixing codes garbles text.
 
 UNICODE
@@ -137,7 +137,7 @@ Added example:
 ⚙ Step 3: Split the 16 bits into 4, 6, and 6 bits: 0010, 000010, 101100.
 ⚙ Step 4: Fill the slots: 1110 0010, 10 000010, 10 101100.
 ⚙ Answer: 11100010 10000010 10101100, which is E2 82 AC in hex.
-⚙ Check: removing the pattern bits (1110, 10, 10) and joining 0010 000010 101100 gives back 0010000010101100 = 20AC.
+⚙ Check: removing the pattern bits (1110, 10, 10) and joining 0010 000010 101100 gives back $0010000010101100 = \mathrm{20AC}$.
 
 EUC (EXTENDED UNIX CODE)
 ★ EUC: Extended Unix Code. It was defined by AT&T Corporation for internationalization support of UNIX.
@@ -151,9 +151,9 @@ Kana are the Japanese syllable scripts (hiragana and katakana). Kanji are Chines
 EXAMPLE: JIS KANJI TO EUC
 Added example:
 ⚙ The kanji for "Asia" has JIS code 30 21 (hex).
-⚙ Add 80 to each byte: 30 + 80 = B0, and 21 + 80 = A1.
+⚙ Add 80 to each byte: $30 + 80 = \mathrm{B0}$, and $21 + 80 = \mathrm{A1}$.
 ⚙ EUC code: B0 A1.
-⚙ Check the first bit: B0 = 10110000 and A1 = 10100001. Both start with 1, so they are kanji bytes. An ASCII letter like A = 41 = 01000001 starts with 0.
+⚙ Check the first bit: $\mathrm{B0} = 10110000$ and $\mathrm{A1} = 10100001$. Both start with 1, so they are kanji bytes. An ASCII letter like $\mathrm{A} = 41 = 01000001$ starts with 0.
 
 ZONED DECIMAL NUMBERS
 ★ Zoned decimal: a format that stores 1 digit of a decimal number in 1 byte. It is not a character code, but it is grouped with codes that represent character data.

@@ -33,7 +33,7 @@ EXAMPLE: THE LECTURE'S SAMPLED WAVE
 ⚙ Step 3, encoding with 4 bits: 5 = 0101, 8 = 1000, 7 = 0111, 4 = 0100, 6 = 0110, 2 = 0010.
 ⚙ Answer: 0101 1000 0111 0100 0110 0010.
 ⚙ Added example, quantization error of each sample: 0.5, 0.2, 0.0, 0.2, 0.4, 0.3 (the gap between the sample and its rounded value).
-⚙ Check: 4 bits can hold 2^4 = 16 levels (0 to 15), so the largest value, 8, fits.
+⚙ Check: 4 bits can hold $2^{4} = 16$ levels (0 to 15), so the largest value, 8, fits.
 
 HOW TO FIND THE BITS PER SECOND OF PCM SOUND
 ⚙ Step 1: Sampling frequency = highest frequency x 2 (the Nyquist minimum).
@@ -44,7 +44,7 @@ EXAMPLE: 2,000 HZ SOUND WITH 8-BIT PCM
 ⚙ The highest frequency is 2,000 Hz, and the quantization bit rate is 8 bits.
 ⚙ Sampling frequency = 2,000 Hz x 2 = 4,000 Hz, so sampling is done 4,000 times per second.
 ⚙ Bits in 1 second = 4,000 times per second x 8 bits per time = 32,000 bits per second.
-⚙ Added example: 10 seconds of this sound = 32,000 x 10 = 320,000 bits = 320,000 / 8 = 40,000 bytes.
+⚙ Added example: 10 seconds of this sound = 32,000 × 10 = 320,000 bits = 320,000 / 8 = 40,000 bytes.
 
 EXAMPLE: TELEPHONE AND CD AUDIO
 Added example:
@@ -66,9 +66,9 @@ PCM DETAILS FROM THE VIDEO
 ⚙ Very high-quality audio uses higher rates still. The video says Blu-ray is close to 1 MHz, but Blu-ray audio actually goes up to 192 kHz.
 After sampling, each sample is a real number, and a line segment holds infinitely many real numbers. A computer needs a finite set of values that can become binary, which is what quantizing provides.
 ★ Bit depth: the number of bits in each sample. Common bit depths are 8-bit, 16-bit, and 24-bit.
-⚙ 8-bit depth: 2^8 = 256 levels.
-⚙ 16-bit depth: 2^16 = 65,536 levels.
-⚙ 24-bit depth: 2^24 = 16,777,216 levels (about 16.8 million).
+⚙ 8-bit depth: $2^{8} = 256$ levels.
+⚙ 16-bit depth: $2^{16} = 65{,}536$ levels.
+⚙ 24-bit depth: $2^{24} = 16{,}777{,}216$ levels (about 16.8 million).
 ⚙ With 8 bits, the top level is 255 = 11111111 and the bottom level is 0 = 00000000.
 Quantizing rounds the flat tops of the samples to a manageable number of levels. Encoding then turns each sample, in time order, into its binary number, so a 10-minute call becomes a very long stream of 0s and 1s.
 
@@ -88,7 +88,7 @@ STILL IMAGE PROCESSING
 Difference: RGB is light added together on screens. CMY and CMYK are inks on paper.
 ★ Resolution: the density of the pixels (dots) that make up an image, given in dpi (dots per inch).
 ★ Gradation: the number of color stages that can be represented in each pixel.
-Added example: a 4 x 6 inch photo printed at 300 dpi needs 4 x 300 = 1,200 by 6 x 300 = 1,800 pixels.
+Added example: a 4 × 6 inch photo printed at 300 dpi needs 4 × 300 = 1,200 by 6 × 300 = 1,800 pixels.
 
 PIXELS AND RGB (FROM THE VIDEO)
 ★ The first digital image was made in 1957 by early computer engineer Russell Kirsch, who scanned a photo of his infant son. That is how the pixel was born.
@@ -104,19 +104,19 @@ EXAMPLE: TURQUOISE IN BINARY AND HEX
 ⚙ Turquoise in decimal: Red 64, Green 224, Blue 208.
 ⚙ Red 64 = 01000000. Green 224 = 128 + 64 + 32 = 11100000. Blue 208 = 128 + 64 + 16 = 11010000.
 ⚙ That is 24 binary digits for one pixel.
-⚙ In hex: 0100 0000 = 40, 1110 0000 = E0, 1101 0000 = D0. So turquoise is 40 E0 D0.
-⚙ Check: E0 = 14 x 16 = 224 and D0 = 13 x 16 = 208.
+⚙ In hex: 0100 0000 = 40, $1110 0000 = \mathrm{E0}$, $1101 0000 = \mathrm{D0}$. So turquoise is 40 E0 D0.
+⚙ Check: $\mathrm{E0} = 14 × 16 = 224$ and $\mathrm{D0} = 13 × 16 = 208$.
 
 EXAMPLE: MAKING AN IMAGE DARKER
-⚙ Rule from the video: output = (R - 50, G - 50, B - 50), and no value can go below 0.
+⚙ Rule from the video: output = (R - 50, G - 50, $\mathrm{B} - 50$), and no value can go below 0.
 ⚙ Turquoise (64, 224, 208) becomes (14, 174, 158).
 ⚙ Added example: (30, 100, 200) becomes (0, 50, 150), because 30 - 50 would be negative, so it stops at 0.
 
 EXAMPLE: SIZE OF AN UNCOMPRESSED IMAGE
 Added example:
-⚙ A 640 x 480 image has 640 x 480 = 307,200 pixels.
-⚙ At 24 bits (3 bytes) per pixel: 307,200 x 3 = 921,600 bytes.
-⚙ Check: 307,200 x 24 = 7,372,800 bits, and 7,372,800 / 8 = 921,600 bytes.
+⚙ A 640 × 480 image has 640 × 480 = 307,200 pixels.
+⚙ At 24 bits (3 bytes) per pixel: 307,200 × 3 = 921,600 bytes.
+⚙ Check: 307,200 × 24 = 7,372,800 bits, and 7,372,800 / 8 = 921,600 bytes.
 
 STILL IMAGE FILE FORMATS
 ★ BMP (Bit MaP): represents characters and images as a set of dots. Its flaw is that it usually has more data than other formats.
@@ -137,14 +137,14 @@ The lecture's diagram shows five frames (images) displayed one after another in 
 VIDEO RESOLUTION, COLOR DEPTH, AND FRAME RATE (FROM THE VIDEO)
 A video is basically a set of digital photos stacked in sequence. Video uses the same camera settings as photography: aperture, shutter speed, and ISO.
 ★ Video resolution: the number of pixels in the video, written as width x height. More pixels usually means a sharper image.
-⚙ SD (standard definition) = 640 x 480. Now seen as very low quality.
-⚙ HD = 1280 x 720. Fairly low quality by today's standards.
-⚙ Full HD (1080, 1080p) = 1920 x 1080. The suggested minimum today.
-⚙ Ultra HD (4K) = 3840 x 2160. Some cameras offer 2K in between, and high-end ones offer 6K, 8K, or even 12K.
+⚙ SD (standard definition) = 640 × 480. Now seen as very low quality.
+⚙ HD = 1280 × 720. Fairly low quality by today's standards.
+⚙ Full HD (1080, 1080p) = 1920 × 1080. The suggested minimum today.
+⚙ Ultra HD (4K) = 3840 × 2160. Some cameras offer 2K in between, and high-end ones offer 6K, 8K, or even 12K.
 ★ A 4K frame is about four times the size of a 1080 frame, so files grow four times faster and are four times harder to edit.
-⚙ Check: 3840 x 2160 = 8,294,400 pixels and 1920 x 1080 = 2,073,600 pixels. 8,294,400 / 2,073,600 = 4.
+⚙ Check: 3840 × 2160 = 8,294,400 pixels and 1920 × 1080 = 2,073,600 pixels. 8,294,400 / 2,073,600 = 4.
 ★ Color depth: how much color data is stored for each pixel.
-⚙ 8-bit color depth: about 16.7 million colors (8 bits for each of red, green, and blue, so 2^24).
+⚙ 8-bit color depth: about 16.7 million colors (8 bits for each of red, green, and blue, so $2^{24}$).
 ⚙ 10-bit or 12-bit color depth: more than a billion colors.
 ★ Banding: visible stripes in smooth gradients, caused by too little color data (for example 8-bit) to make a smooth change between close colors.
 ⚙ 24 fps: the most common frame rate for movies. Netflix originals often use 23.98 fps, which everyone calls 24.
@@ -161,9 +161,9 @@ Keep the frame rate the same when editing and exporting. Do not mix 24 fps with 
 
 EXAMPLE: RAW DATA OF FULL HD VIDEO
 Added example:
-⚙ Pixels per frame: 1920 x 1080 = 2,073,600.
-⚙ Bits per frame at 24-bit color: 2,073,600 x 24 = 49,766,400 bits.
-⚙ Bits per second at 30 fps: 49,766,400 x 30 = 1,492,992,000 bits, about 1.49 gigabits per second.
+⚙ Pixels per frame: 1920 × 1080 = 2,073,600.
+⚙ Bits per frame at 24-bit color: 2,073,600 × 24 = 49,766,400 bits.
+⚙ Bits per second at 30 fps: 49,766,400 × 30 = 1,492,992,000 bits, about 1.49 gigabits per second.
 ⚙ Compared with an 8 megabit per second upload, compression cuts the data by roughly 1,492,992,000 / 8,000,000 = about 187 times.
 
 MOVING IMAGE FILE FORMATS
@@ -199,8 +199,8 @@ Tools that compress images include Photoshop, WordPress plugins (Imagify, WP Smu
 EXAMPLE: PERCENT REDUCTION OF A COMPRESSED IMAGE
 ⚙ The video's image went from 347 KB to 163 KB.
 ⚙ Amount saved: 347 - 163 = 184 KB.
-⚙ Percent reduction: 184 / 347 x 100 = about 53%. The video rounds this to 52%.
-⚙ Check: 347 x 0.53 = about 184, and 347 - 184 = 163.
+⚙ Percent reduction: 184 / 347 × 100 = about 53%. The video rounds this to 52%.
+⚙ Check: 347 × 0.53 = about 184, and 347 - 184 = 163.
 
 COMPRESSION FILE FORMATS
 ★ JPEG: international standard for compressing full-color still images.
@@ -222,7 +222,7 @@ Thinking lossy files can be restored exactly. Only lossless compression can be f
 
 EXAM TIPS
 Bits per second = sampling frequency x quantization bit rate, and sampling frequency = 2 x highest frequency.
-Levels = 2^(bit depth): 8-bit 256, 16-bit 65,536, 24-bit about 16.8 million.
+Levels = $2^{bit depth}$: 8-bit 256, 16-bit 65,536, 24-bit about 16.8 million.
 Match each format to its job: MIDI rendition data, MP3 compressed audio, WAV Windows sound container, BMP dots, TIFF tags, JPEG full color lossy, GIF 256 colors, PNG full color lossless, Exif camera metadata, AVI Windows video using RIFF, ZIP de facto archive, GZIP UNIX, LZH Japan, MR/MMR fax.
 Know the MPEG numbers: 1 video level, 2 TV and HDTV, 4 cellular, 7 metadata.
 
@@ -230,7 +230,7 @@ SELF-TEST
 Q: What are the three steps of A/D conversion, in order?
 ★ Sampling, quantization, encoding.
 Q: The highest frequency is 3,000 Hz and the quantization bit rate is 8 bits. How many bits per second?
-★ 3,000 x 2 = 6,000 samples per second, and 6,000 x 8 = 48,000 bits per second.
+★ 3,000 × 2 = 6,000 samples per second, and 6,000 × 8 = 48,000 bits per second.
 Q: How many colors does GIF support?
 ★ 256 colors.
 Q: Which color model is used for printers?

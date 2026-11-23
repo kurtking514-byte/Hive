@@ -91,7 +91,7 @@ Added example:
 ⚙ Still needed after 2017: 20,000 - 5,003 = 14,997 smart factories.
 ⚙ Years from 2018 to 2022 inclusive: 5 years.
 ⚙ Average needed per year: 14,997 / 5 = about 2,999, roughly 3,000 a year.
-⚙ Check: 5,003 + 5 x 2,999.4 = 20,000.
+⚙ Check: 5,003 + 5 × 2,999.4 = 20,000.
 
 PROJECT ORGANIZATIONAL STRUCTURES
 Projects are run inside organizational structures that differ in how much authority the project manager has and how flexibly resources can be assigned.

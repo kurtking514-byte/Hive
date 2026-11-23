@@ -33,9 +33,9 @@ Difference: the Nyquist Rate is twice the signal's highest frequency. The Nyquis
 
 EXAMPLE: FIND THE NYQUIST RATE
 ⚙ A signal's maximum frequency is 5,000 Hz.
-⚙ Nyquist Rate = 2 x 5,000 = 10,000 samples per second (10 kHz).
-⚙ Added example: human hearing tops out at about 20 kHz, so its Nyquist Rate is 2 x 20 = 40 kHz.
-⚙ Added example: telephone voice tops out at 3,400 Hz, so its Nyquist Rate is 2 x 3,400 = 6,800 Hz.
+⚙ Nyquist Rate = 2 × 5,000 = 10,000 samples per second (10 kHz).
+⚙ Added example: human hearing tops out at about 20 kHz, so its Nyquist Rate is 2 × 20 = 40 kHz.
+⚙ Added example: telephone voice tops out at 3,400 Hz, so its Nyquist Rate is 2 × 3,400 = 6,800 Hz.
 
 HOW TO CHECK IF A SAMPLING RATE IS ENOUGH
 ⚙ Step 1: Find the highest frequency in the signal.
@@ -83,7 +83,7 @@ Added example: this is the method behind the video's numbers.
 
 EXAMPLE: A 900 HZ TONE SAMPLED AT 1,200 HZ
 Added example:
-⚙ Step 1: Nyquist Rate = 2 x 900 = 1,800 Hz. 1,200 is less than 1,800, so aliasing happens.
+⚙ Step 1: Nyquist Rate = 2 × 900 = 1,800 Hz. 1,200 is less than 1,800, so aliasing happens.
 ⚙ Step 2: The closest multiple of 1,200 to 900 is 1,200 itself.
 ⚙ Step 3: 1,200 - 900 = 300 Hz.
 ⚙ Answer: the tone appears as 300 Hz.
@@ -125,8 +125,8 @@ The video's example: audio recording software like Audacity is preset to 44.1 kH
 EXAMPLE: MINIMUM SAMPLES FOR A RECORDING
 Added example:
 ⚙ A signal's highest frequency is 5 kHz, and it is recorded for 2 seconds.
-⚙ Nyquist Rate = 2 x 5,000 = 10,000 samples per second.
-⚙ Minimum samples = 10,000 x 2 = 20,000 samples.
+⚙ Nyquist Rate = 2 × 5,000 = 10,000 samples per second.
+⚙ Minimum samples = 10,000 × 2 = 20,000 samples.
 
 COMMON MISTAKES
 Using the average or lowest frequency. The Nyquist Rate uses the HIGHEST frequency.

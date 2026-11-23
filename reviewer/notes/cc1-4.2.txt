@@ -103,14 +103,14 @@ Added example: these are the standard steps behind the stepped waveform and PCM.
 ★ Sampling: measuring the analog signal at regular time intervals.
 ★ Sample rate: how many samples are taken per second, measured in hertz (Hz).
 ★ Quantization: rounding each sample to the nearest allowed level.
-★ With n bits per sample, there are 2^n levels.
+★ With n bits per sample, there are $2^{n}$ levels.
 ⚙ Step 1: Sample the signal at regular time intervals.
 ⚙ Step 2: Quantize each sample by rounding it to the nearest allowed level.
 ⚙ Step 3: Encode each level as a binary number.
 Difference: sampling chops the signal in time (when we measure). Quantization chops it in value (which level we round to).
 
 EXAMPLE: DIGITIZE FIVE SAMPLES WITH 3 BITS
-Added example: levels are 0 V to 7 V in steps of 1 V. With 3 bits there are 2^3 = 8 levels, numbered 0 to 7.
+Added example: levels are 0 V to 7 V in steps of 1 V. With 3 bits there are $2^{3} = 8$ levels, numbered 0 to 7.
 ⚙ Samples taken every 1 ms: 0.4 V, 1.7 V, 2.6 V, 3.2 V, 4.8 V.
 ⚙ Round each to the nearest level: 0.4 to 0, 1.7 to 2, 2.6 to 3, 3.2 to 3, 4.8 to 5.
 ⚙ Encode in 3-bit binary: 0 = 000, 2 = 010, 3 = 011, 3 = 011, 5 = 101.
@@ -119,16 +119,16 @@ Added example: levels are 0 V to 7 V in steps of 1 V. With 3 bits there are 2^3 
 
 EXAMPLE: SAMPLE COUNT AND SAMPLE INTERVAL
 Added example:
-⚙ Number of samples = sample rate x time. At 8,000 Hz for 3 seconds: 8,000 x 3 = 24,000 samples.
+⚙ Number of samples = sample rate x time. At 8,000 Hz for 3 seconds: 8,000 × 3 = 24,000 samples.
 ⚙ Time between samples = 1 / sample rate. At 8,000 Hz: 1 / 8,000 = 0.000125 s = 0.125 ms.
 ⚙ Check: 24,000 samples x 0.000125 s = 3 s.
 
 EXAMPLE: CD AUDIO BIT RATE
 Added example: CD audio (PCM) uses 44,100 samples per second, 16 bits per sample, and 2 channels (stereo).
-⚙ Step 1: Bits per second for one channel = 44,100 x 16 = 705,600.
-⚙ Step 2: Both channels = 705,600 x 2 = 1,411,200 bits per second.
+⚙ Step 1: Bits per second for one channel = 44,100 × 16 = 705,600.
+⚙ Step 2: Both channels = 705,600 × 2 = 1,411,200 bits per second.
 ⚙ Step 3: In bytes = 1,411,200 / 8 = 176,400 bytes per second.
-⚙ Check: 44,100 x 32 bits (16 x 2) = 1,411,200.
+⚙ Check: 44,100 × 32 bits (16 × 2) = 1,411,200.
 
 EXAMPLE: HOW FAST HOUSE AC CHANGES
 Added example: the time for one full cycle (the period) is 1 / frequency.
@@ -158,4 +158,4 @@ Q: What is the region between the low and high voltage bands called?
 Q: What must happen to an accelerometer's output before an Arduino can use it?
 ★ It must be converted from analog to digital.
 Q: How many levels does a 4-bit digitizer have?
-★ 2^4 = 16 levels.
+★ $2^{4} = 16$ levels.
