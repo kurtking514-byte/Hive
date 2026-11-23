@@ -26,13 +26,13 @@
 {
 "q": "Why does exactly one octal digit correspond to exactly 3 binary digits?",
 "options": [
-"Because 8 = 2^3",
+"Because $8 = 2^{3}$",
 "Because octal numbers always have 3 digits",
-"Because 8 = 3^2",
+"Because $8 = 3^{2}$",
 "Because octal uses only 3 different symbols"
 ],
 "answer": 0,
-"explanation": "Octal is base 8 and 8 = 2^3, so each octal digit holds exactly 3 bits.",
+"explanation": "Octal is base 8 and $8 = 2^{3}$, so each octal digit holds exactly 3 bits.",
 "source": "notes"
 },
 {
@@ -56,11 +56,11 @@
 "Each hex digit stands for exactly 4 bits, so long binary strings become much shorter"
 ],
 "answer": 3,
-"explanation": "Because 16 = 2^4, one hex digit replaces exactly 4 bits, which makes long binary values compact and easy to convert.",
+"explanation": "Because $16 = 2^{4}$, one hex digit replaces exactly 4 bits, which makes long binary values compact and easy to convert.",
 "source": "extra"
 },
 {
-"q": "Why should the base be written with an answer, for example 11 (base 8) or 11 (base 16)?",
+"q": "Why should the base be written with an answer, for example $11_{8}$ or $11_{16}$?",
 "options": [
 "It makes the calculation faster",
 "The same digits mean different values in different bases",
@@ -80,7 +80,7 @@
 "8, 4, 2, 1"
 ],
 "answer": 3,
-"explanation": "A 4-bit group uses the weights 8, 4, 2, 1 from left to right, because 16 = 2^4.",
+"explanation": "A 4-bit group uses the weights 8, 4, 2, 1 from left to right, because $16 = 2^{4}$.",
 "source": "notes"
 },
 {
@@ -92,7 +92,7 @@
 "256"
 ],
 "answer": 3,
-"explanation": "Positions count from the right starting at 0, so the leftmost digit of 3 digits has weight 16^2 = 256. The value 4096 is 16^3, which belongs to a 4-digit number.",
+"explanation": "Positions count from the right starting at 0, so the leftmost digit of 3 digits has weight $16^{2} = 256$. The value 4096 is $16^{3}$, which belongs to a 4-digit number.",
 "source": "notes"
 },
 {
@@ -116,11 +116,11 @@
 "255"
 ],
 "answer": 3,
-"explanation": "The largest two-digit hex number is FF = 15x16 + 15 = 255. The value 256 needs a third digit (100 in hex).",
+"explanation": "The largest two-digit hex number is $\\mathrm{FF} = 15×16 + 15 = 255$. The value 256 needs a third digit (100 in hex).",
 "source": "extra"
 },
 {
-"q": "To check that 56 (base 8) equals 101110 (base 2), both are converted to decimal. What value should both give?",
+"q": "To check that $56_{8}$ equals $101110_{2}$, both are converted to decimal. What value should both give?",
 "options": [
 "56",
 "46",
@@ -128,7 +128,7 @@
 "50"
 ],
 "answer": 1,
-"explanation": "56 (base 8) = 5x8 + 6 = 46, and 101110 (base 2) = 32 + 8 + 4 + 2 = 46.",
+"explanation": "$56_{8} = 5×8 + 6 = 46$, and $101110_{2} = 32 + 8 + 4 + 2 = 46$.",
 "source": "notes"
 },
 {
@@ -164,7 +164,7 @@
 "D20"
 ],
 "answer": 0,
-"explanation": "Remainders are read from the last to the first, so 2 then D, giving 2D (base 16). Check: 2x16 + 13 = 45.",
+"explanation": "Remainders are read from the last to the first, so 2 then D, giving $\\mathrm{2D}_{16}$. Check: 2×16 + 13 = 45.",
 "source": "notes"
 },
 {
@@ -200,7 +200,7 @@
 "Decimal 24 is written 40 in octal"
 ],
 "answer": 3,
-"explanation": "Decimal 24 is 3x8, so it is written 30 in octal. 40 (base 8) is decimal 32.",
+"explanation": "Decimal 24 is 3×8, so it is written 30 in octal. $40_{8}$ is decimal 32.",
 "source": "notes"
 },
 {
@@ -212,11 +212,11 @@
 "Decimal 17 is written 11 in hexadecimal"
 ],
 "answer": 2,
-"explanation": "Decimal 16 is 1x16 + 0, so it is written 10 in hexadecimal. The number 16 (base 16) equals decimal 22.",
+"explanation": "Decimal 16 is 1×16 + 0, so it is written 10 in hexadecimal. The number $16_{16}$ equals decimal 22.",
 "source": "notes"
 },
 {
-"q": "Which pair gives the decimal values of 35 (base 8) and 35 (base 16), in that order?",
+"q": "Which pair gives the decimal values of $35_{8}$ and $35_{16}$, in that order?",
 "options": [
 "29 and 29",
 "53 and 29",
@@ -224,11 +224,11 @@
 "35 and 35"
 ],
 "answer": 2,
-"explanation": "35 (base 8) = 3x8 + 5 = 29 and 35 (base 16) = 3x16 + 5 = 53. The same digits give different values in different bases.",
+"explanation": "$35_{8} = 3×8 + 5 = 29$ and $35_{16} = 3×16 + 5 = 53$. The same digits give different values in different bases.",
 "source": "notes"
 },
 {
-"q": "A student converts 1101101 (base 2) to octal. Which result is correct?",
+"q": "A student converts $1101101_{2}$ to octal. Which result is correct?",
 "options": [
 "664",
 "331",
@@ -236,11 +236,11 @@
 "155"
 ],
 "answer": 3,
-"explanation": "Group from the right: 1 | 101 | 101, padding the leftmost group to 001, which gives 1 | 5 | 5 = 155 (base 8). Grouping from the left gives the wrong answer 664.",
+"explanation": "Group from the right: 1 | 101 | 101, padding the leftmost group to 001, which gives 1 | 5 | $5 = 155_{8}$. Grouping from the left gives the wrong answer 664.",
 "source": "notes"
 },
 {
-"q": "A student converts 643 (base 8) to binary and writes 110 100 11, joined as 11010011. What is the mistake?",
+"q": "A student converts $643_{8}$ to binary and writes 110 100 11, joined as 11010011. What is the mistake?",
 "options": [
 "6 should be written as 011",
 "Each octal digit must be exactly 3 bits, so 3 should be 011",
@@ -252,19 +252,19 @@
 "source": "notes"
 },
 {
-"q": "Convert 3F (base 16) to octal using binary as the middle step.",
+"q": "Convert $\\mathrm{3F}_{16}$ to octal using binary as the middle step.",
 "options": [
-"63 (base 8)",
-"3F (base 8)",
-"77 (base 8)",
-"111 (base 8)"
+"$63_{8}$",
+"$\\mathrm{3F}_{8}$",
+"$77_{8}$",
+"$111_{8}$"
 ],
 "answer": 2,
-"explanation": "3F = 0011 1111 = 111111, which regroups in threes as 111 | 111 = 77 (base 8). Both equal decimal 63.",
+"explanation": "$\\mathrm{3F} = 0011 1111 = 111111$, which regroups in threes as 111 | $111 = 77_{8}$. Both equal decimal 63.",
 "source": "notes"
 },
 {
-"q": "Convert 53 (base 8) to hexadecimal using binary as the middle step.",
+"q": "Convert $53_{8}$ to hexadecimal using binary as the middle step.",
 "options": [
 "B2",
 "2B",
@@ -272,7 +272,7 @@
 "1B"
 ],
 "answer": 1,
-"explanation": "5 = 101 and 3 = 011, giving 101011, which regroups in fours as 0010 | 1011 = 2B. Check: 5x8 + 3 = 43 and 2x16 + 11 = 43.",
+"explanation": "5 = 101 and 3 = 011, giving 101011, which regroups in fours as 0010 | $1011 = \\mathrm{2B}$. Check: 5×8 + 3 = 43 and 2×16 + 11 = 43.",
 "source": "notes"
 },
 {
@@ -284,7 +284,7 @@
 "D0"
 ],
 "answer": 1,
-"explanation": "200 / 16 = 12 R8 and 12 / 16 = 0 R12. Reading upward gives C then 8, so C8 (base 16).",
+"explanation": "200 / 16 = 12 R8 and 12 / 16 = 0 R12. Reading upward gives C then 8, so $\\mathrm{C8}_{16}$.",
 "source": "notes"
 },
 {
@@ -300,7 +300,7 @@
 "source": "notes"
 },
 {
-"q": "Convert 4071 (base 8) to binary.",
+"q": "Convert $4071_{8}$ to binary.",
 "options": [
 "100000011001",
 "100000101001",
@@ -312,7 +312,7 @@
 "source": "notes"
 },
 {
-"q": "Convert 1110 0010 1001 1111 (base 2) to hexadecimal.",
+"q": "Convert $1110\\,0010\\,1001\\,1111_{2}$ to hexadecimal.",
 "options": [
 "E29F",
 "E2F9",
@@ -324,7 +324,7 @@
 "source": "notes"
 },
 {
-"q": "Which pair correctly gives 11111111 (base 2) in octal and in hexadecimal?",
+"q": "Which pair correctly gives $11111111_{2}$ in octal and in hexadecimal?",
 "options": [
 "377 and FF",
 "377 and F",
@@ -332,11 +332,11 @@
 "FF and 377"
 ],
 "answer": 0,
-"explanation": "For octal, group in threes as 011 | 111 | 111 = 377. For hex, group in fours as 1111 | 1111 = FF. Both equal decimal 255.",
+"explanation": "For octal, group in threes as 011 | 111 | 111 = 377. For hex, group in fours as 1111 | $1111 = \\mathrm{FF}$. Both equal decimal 255.",
 "source": "notes"
 },
 {
-"q": "What is 154 (base 8) in decimal?",
+"q": "What is $154_{8}$ in decimal?",
 "options": [
 "108",
 "118",
@@ -344,11 +344,11 @@
 "154"
 ],
 "answer": 0,
-"explanation": "1x8^2 + 5x8^1 + 4x8^0 = 64 + 40 + 4 = 108.",
+"explanation": "1×8^2 + 5×8^1 + 4×8^0 = 64 + 40 + 4 = 108.",
 "source": "notes"
 },
 {
-"q": "What is 472 (base 8) in decimal?",
+"q": "What is $472_{8}$ in decimal?",
 "options": [
 "122",
 "256",
@@ -356,7 +356,7 @@
 "1138"
 ],
 "answer": 2,
-"explanation": "4x8^2 + 7x8^1 + 2x8^0 = 256 + 56 + 2 = 314. The value 1138 is 472 read as a base 16 number.",
+"explanation": "4×8^2 + 7×8^1 + 2×8^0 = 256 + 56 + 2 = 314. The value 1138 is 472 read as a base 16 number.",
 "source": "notes"
 }
 ]

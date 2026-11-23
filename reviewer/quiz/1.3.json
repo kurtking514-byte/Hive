@@ -116,7 +116,7 @@
 "128"
 ],
 "answer": 2,
-"explanation": "With n bits you can distinguish 2^n possibilities, and 2^6 = 64.",
+"explanation": "With n bits you can distinguish $2^{n}$ possibilities, and $2^{6} = 64$.",
 "source": "notes"
 },
 {
@@ -128,13 +128,13 @@
 "5"
 ],
 "answer": 3,
-"explanation": "log2 20 is about 4.32, and since 2^4 = 16 is less than 20, you must round up to 5.",
+"explanation": "$\\log_2 20$ is about 4.32, and since $2^{4} = 16$ is less than 20, you must round up to 5.",
 "source": "notes"
 },
 {
-"q": "A die roll holds about 2.58 bits of information (log2 6). Why does a single roll need 3 questions in the worst case?",
+"q": "A die roll holds about 2.58 bits of information ($\\log_2 6$). Why does a single roll need 3 questions in the worst case?",
 "options": [
-"Because log2 6 is exactly 3",
+"Because $\\log_2 6$ is exactly 3",
 "Because a die has 8 sides",
 "Because questions must be asked in pairs",
 "Because you cannot ask a fraction of a question, so 2.58 rounds up to 3"
@@ -176,7 +176,7 @@
 "16"
 ],
 "answer": 0,
-"explanation": "A tree of depth d can distinguish up to 2^d values, and 2^5 = 32.",
+"explanation": "A tree of depth d can distinguish up to $2^{d}$ values, and $2^{5} = 32$.",
 "source": "notes"
 },
 {
@@ -200,7 +200,7 @@
 "1024"
 ],
 "answer": 0,
-"explanation": "One byte is 8 bits, so it can distinguish 2^8 = 256 values.",
+"explanation": "One byte is 8 bits, so it can distinguish $2^{8} = 256$ values.",
 "source": "notes"
 },
 {
@@ -212,7 +212,7 @@
 "65536"
 ],
 "answer": 3,
-"explanation": "2 bytes are 16 bits, and 2^16 = 65536.",
+"explanation": "2 bytes are 16 bits, and $2^{16} = 65536$.",
 "source": "notes"
 },
 {
@@ -248,19 +248,19 @@
 "10"
 ],
 "answer": 3,
-"explanation": "2^10 = 1024, so log2 1024 = 10 bits.",
+"explanation": "$2^{10} = 1024$, so $\\log_2 1024$ = 10 bits.",
 "source": "notes"
 },
 {
 "q": "Two students disagree: one says 5 yes/no questions always suffice to identify one of 40 equally likely values, the other says 6 are needed. Who is right?",
 "options": [
-"The first, since 40 is close to 32",
-"The second, since 2^5 = 32 is less than 40 and 2^6 = 64 is enough",
+"The first, since 40 is close to $2^{5} = 32$",
+"The second, since $2^{5} = 32$ is less than 40 and $2^{6} = 64$ is enough",
 "Neither, since 40 values need 20 questions",
-"The first, since log2 40 is below 5"
+"The first, since $\\log_2 40$ is below 5"
 ],
 "answer": 1,
-"explanation": "log2 40 is about 5.32, so it rounds up to 6; 5 questions can separate only 32 values.",
+"explanation": "$\\log_2 40$ is about 5.32, so it rounds up to 6; 5 questions can separate only 32 values.",
 "source": "notes"
 },
 {
@@ -272,7 +272,7 @@
 "The width of the bottom row"
 ],
 "answer": 2,
-"explanation": "Depth is the longest path from root to leaf, and a tree of depth d can distinguish up to 2^d values.",
+"explanation": "Depth is the longest path from root to leaf, and a tree of depth d can distinguish up to $2^{d}$ values.",
 "source": "notes"
 },
 {
@@ -288,12 +288,12 @@
 "source": "notes"
 },
 {
-"q": "A student claims a binary tree of depth 3 can distinguish 9 values because 3 x 3 = 9. What is wrong with this claim?",
+"q": "A student claims a binary tree of depth 3 can distinguish 9 values because 3 × 3 = 9. What is wrong with this claim?",
 "options": [
 "Nothing, the claim is correct",
-"A tree of depth 3 distinguishes up to 2^3 = 8 values, not 3 x 3",
+"A tree of depth 3 distinguishes up to $2^{3} = 8$ values, not 3 × 3",
 "A tree of depth 3 distinguishes only 3 values",
-"A tree of depth 3 distinguishes 2 x 3 = 6 values"
+"A tree of depth 3 distinguishes $2 × 3 = 6$ values"
 ],
 "answer": 1,
 "explanation": "Each added level doubles the capacity, so capacity is a power of 2, not a product of the depth with itself.",
@@ -308,7 +308,7 @@
 "1,073,741,824"
 ],
 "answer": 2,
-"explanation": "Traditionally 1 megabyte = 2^20 bytes = 1,048,576 bytes.",
+"explanation": "Traditionally 1 megabyte = $2^{20}$ bytes = 1,048,576 bytes.",
 "source": "notes"
 },
 {
@@ -320,7 +320,7 @@
 "3,221,225,472"
 ],
 "answer": 0,
-"explanation": "3 x 1,048,576 = 3,145,728 bytes.",
+"explanation": "3 × 1,048,576 = 3,145,728 bytes.",
 "source": "notes"
 },
 {
@@ -332,7 +332,7 @@
 "8192"
 ],
 "answer": 1,
-"explanation": "2 x 1024 = 2048 bytes, and 2048 x 8 = 16384 bits.",
+"explanation": "2 × 1024 = 2048 bytes, and 2048 × 8 = 16384 bits.",
 "source": "notes"
 },
 {

@@ -92,7 +92,7 @@
 "216"
 ],
 "answer": 1,
-"explanation": "Place values are 6^0, 6^1, 6^2 from the right, so the third digit has value 6^2 = 36.",
+"explanation": "Place values are $6^{0}$, $6^{1}$, $6^{2}$ from the right, so the third digit has value $6^{2} = 36$.",
 "source": "extra"
 },
 {
@@ -104,7 +104,7 @@
 "4 binary digits"
 ],
 "answer": 3,
-"explanation": "Since 16 = 2^4, each hex digit maps to exactly 4 bits, which is why base 2 and base 16 convert easily.",
+"explanation": "Since $16 = 2^{4}$, each hex digit maps to exactly 4 bits, which is why base 2 and base 16 convert easily.",
 "source": "extra"
 },
 {
@@ -168,7 +168,7 @@
 "source": "extra"
 },
 {
-"q": "Using Radix 10 as the intermediary, what is 1010 (base 2) in base 8?",
+"q": "Using Radix 10 as the intermediary, what is $1010_{2}$ in base 8?",
 "options": [
 "12",
 "10",
@@ -176,7 +176,7 @@
 "22"
 ],
 "answer": 0,
-"explanation": "1010 (base 2) is 10 in decimal, and 10 divided by 8 is 1 remainder 2, giving 12 (base 8).",
+"explanation": "$1010_{2}$ is 10 in decimal, and 10 divided by 8 is 1 remainder 2, giving $12_{8}$.",
 "source": "notes"
 },
 {
@@ -194,10 +194,10 @@
 {
 "q": "Which of the following is NOT a valid number in the base shown?",
 "options": [
-"3120 (base 4)",
-"5421 (base 6)",
-"9A1 (base 11)",
-"806 (base 6)"
+"$3120_{4}$",
+"$5421_{6}$",
+"$\\mathrm{9A1}_{11}$",
+"$806_{6}$"
 ],
 "answer": 3,
 "explanation": "Base 6 uses only the digits 0 to 5, so the digit 8 makes 806 invalid in base 6.",
@@ -218,17 +218,17 @@
 {
 "q": "Which pair of numbers has the same value?",
 "options": [
-"12 (base 3) and 6 (base 7)",
-"20 (base 4) and 12 (base 5)",
-"31 (base 5) and 20 (base 8)",
-"22 (base 3) and 9 (base 10)"
+"$12_{3}$ and $6_{7}$",
+"$20_{4}$ and $12_{5}$",
+"$31_{5}$ and $20_{8}$",
+"$22_{3}$ and $9_{10}$"
 ],
 "answer": 2,
-"explanation": "31 (base 5) = 15 + 1 = 16 and 20 (base 8) = 16, while the other pairs are 5 and 6, 8 and 7, and 8 and 9.",
+"explanation": "$31_{5} = 15 + 1 = 16$ and $20_{8} = 16$, while the other pairs are 5 and 6, 8 and 7, and 8 and 9.",
 "source": "notes"
 },
 {
-"q": "A student converts 213 (base 4) to decimal by computing 2*4 + 1*4 + 3 = 15. What is the error and the correct value?",
+"q": "A student converts $213_{4}$ to decimal by computing 2×4 + 1×4 + 3 = 15. What is the error and the correct value?",
 "options": [
 "The digits were read in the wrong order; the correct value is 15",
 "The digits should simply be added; the correct value is 6",
@@ -236,7 +236,7 @@
 "Digit 3 is not allowed in base 4, so the number is invalid"
 ],
 "answer": 2,
-"explanation": "Each digit must be multiplied by a power of the base: 2*16 + 1*4 + 3 = 39.",
+"explanation": "Each digit must be multiplied by a power of the base: 2×16 + 1×4 + 3 = 39.",
 "source": "notes"
 },
 {
@@ -252,7 +252,7 @@
 "source": "notes"
 },
 {
-"q": "What is 3412 (base 5) in decimal?",
+"q": "What is $3412_{5}$ in decimal?",
 "options": [
 "472",
 "492",
@@ -260,11 +260,11 @@
 "412"
 ],
 "answer": 2,
-"explanation": "3*125 + 4*25 + 1*5 + 2 = 375 + 100 + 5 + 2 = 482.",
+"explanation": "3×125 + 4×25 + 1×5 + 2 = 375 + 100 + 5 + 2 = 482.",
 "source": "notes"
 },
 {
-"q": "A student converts 110101 (base 2) to base 8 by grouping the bits in threes instead of going through base 10. What is the result?",
+"q": "A student converts $110101_{2}$ to base 8 by grouping the bits in threes instead of going through base 10. What is the result?",
 "options": [
 "56",
 "63",
@@ -272,11 +272,11 @@
 "53"
 ],
 "answer": 2,
-"explanation": "Grouping gives 110 = 6 and 101 = 5, so the result is 65 (base 8), which equals 53 in decimal.",
+"explanation": "Grouping gives 110 = 6 and 101 = 5, so the result is $65_{8}$, which equals 53 in decimal.",
 "source": "extra"
 },
 {
-"q": "Converting 11111010 (base 2) to base 16 by grouping four bits at a time gives which result?",
+"q": "Converting $11111010_{2}$ to base 16 by grouping four bits at a time gives which result?",
 "options": [
 "AF",
 "FB",
@@ -284,11 +284,11 @@
 "FA"
 ],
 "answer": 3,
-"explanation": "1111 is F and 1010 is A, so the result is FA (base 16), which equals 250 in decimal.",
+"explanation": "1111 is F and 1010 is A, so the result is $\\mathrm{FA}_{16}$, which equals 250 in decimal.",
 "source": "extra"
 },
 {
-"q": "Using Radix 10 as the intermediary, what is 412 (base 5) in base 8?",
+"q": "Using Radix 10 as the intermediary, what is $412_{5}$ in base 8?",
 "options": [
 "153",
 "135",
@@ -296,11 +296,11 @@
 "163"
 ],
 "answer": 0,
-"explanation": "412 (base 5) = 4*25 + 5 + 2 = 107, and 107/8 = 13 r3, 13/8 = 1 r5, so the result is 153 (base 8).",
+"explanation": "$412_{5} = 4×25 + 5 + 2 = 107$, and 107/8 = 13 r3, 13/8 = 1 r5, so the result is $153_{8}$.",
 "source": "notes"
 },
 {
-"q": "Using Radix 10 as the intermediary, what is 3B (base 12) in base 8?",
+"q": "Using Radix 10 as the intermediary, what is $\\mathrm{3B}_{12}$ in base 8?",
 "options": [
 "57",
 "75",
@@ -308,19 +308,19 @@
 "67"
 ],
 "answer": 0,
-"explanation": "3B (base 12) = 3*12 + 11 = 47, and 47/8 = 5 r7, giving 57 (base 8).",
+"explanation": "$\\mathrm{3B}_{12} = 3×12 + 11 = 47$, and 47/8 = 5 r7, giving $57_{8}$.",
 "source": "notes"
 },
 {
 "q": "Which of the following numbers has the greatest decimal value?",
 "options": [
-"33 (base 4)",
-"24 (base 5)",
-"15 (base 9)",
-"1100 (base 2)"
+"$33_{4}$",
+"$24_{5}$",
+"$15_{9}$",
+"$1100_{2}$"
 ],
 "answer": 0,
-"explanation": "The values are 15, 14, 14 and 12 in decimal, so 33 (base 4) is the greatest.",
+"explanation": "The values are 15, 14, 14 and 12 in decimal, so $33_{4}$ is the greatest.",
 "source": "notes"
 },
 {
@@ -332,7 +332,7 @@
 "64"
 ],
 "answer": 0,
-"explanation": "The largest base 5 digit is 4, so 444 (base 5) = 4*25 + 4*5 + 4 = 100 + 20 + 4 = 124.",
+"explanation": "The largest base 5 digit is 4, so $444_{5} = 4×25 + 4×5 + 4 = 100 + 20 + 4 = 124$.",
 "source": "notes"
 },
 {
@@ -348,7 +348,7 @@
 "source": "notes"
 },
 {
-"q": "What is 58 (base 10) in base 12?",
+"q": "What is $58_{10}$ in base 12?",
 "options": [
 "A4",
 "46",
@@ -356,7 +356,7 @@
 "4A"
 ],
 "answer": 3,
-"explanation": "58/12 = 4 r10, and 10 is written A, so the result is 4A; check: 4*12 + 10 = 58.",
+"explanation": "58/12 = 4 r10, and 10 is written A, so the result is 4A; check: 4×12 + 10 = 58.",
 "source": "notes"
 }
 ]

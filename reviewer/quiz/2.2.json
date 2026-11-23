@@ -44,7 +44,7 @@
 "-128 to +127"
 ],
 "answer": 3,
-"explanation": "The range is -2^(n-1) to +(2^(n-1) - 1), which for n = 8 is -128 to +127.",
+"explanation": "The range is $-2^{n-1}$ to +$(2^{n-1} - 1)$, which for n = 8 is -128 to +127.",
 "source": "notes"
 },
 {

@@ -44,7 +44,7 @@
 "In 8-bit the overflow bits are XORed back into the result"
 ],
 "answer": 0,
-"explanation": "Bits beyond the representational capacity are deleted, so `00101111 << 6` keeps only 11000000 (192) in 8 bits, but 47 x 2^6 = 3008 fits in 16 bits.",
+"explanation": "Bits beyond the representational capacity are deleted, so `00101111 << 6` keeps only 11000000 (192) in 8 bits, but $47 × 2^{6} = 3008$ fits in 16 bits.",
 "source": "notes"
 },
 {
@@ -104,7 +104,7 @@
 "16"
 ],
 "answer": 1,
-"explanation": "5 bits give 2^5 = 32 different values, which is why 5-6-5 saves memory compared with 8 bits per channel.",
+"explanation": "5 bits give $2^{5} = 32$ different values, which is why 5-6-5 saves memory compared with 8 bits per channel.",
 "source": "extra"
 },
 {
@@ -170,10 +170,10 @@
 {
 "q": "Using `(A << 24) | (R << 16) | (G << 8) | B`, what 32-bit value in base 16 is produced for Alpha = 255, Red = 0, Green = 128 and Blue = 64?",
 "options": [
-"FF800040 (base 16)",
-"40800000 (base 16)",
-"FF008040 (base 16)",
-"008040FF (base 16)"
+"$\\mathrm{FF800040}_{16}$",
+"$40800000_{16}$",
+"$\\mathrm{FF008040}_{16}$",
+"$\\mathrm{008040FF}_{16}$"
 ],
 "answer": 2,
 "explanation": "255, 0, 128 and 64 are FF, 00, 80 and 40 in base 16, placed in the order A, R, G, B.",
@@ -266,10 +266,10 @@
 {
 "q": "Using `(R << 16) | (G << 8) | B`, what is RGB(18, 52, 86) packed into one hexadecimal value?",
 "options": [
-"563412 (base 16)",
-"125634 (base 16)",
-"341256 (base 16)",
-"123456 (base 16)"
+"$563412_{16}$",
+"$125634_{16}$",
+"$341256_{16}$",
+"$123456_{16}$"
 ],
 "answer": 3,
 "explanation": "18, 52 and 86 are 12, 34 and 56 in base 16, and the shifts place them in the byte order R, G, B.",

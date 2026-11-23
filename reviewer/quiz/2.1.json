@@ -14,13 +14,13 @@
 {
 "q": "Which expression correctly gives the value of the decimal number 478?",
 "options": [
-"4×10^1 + 7×10^2 + 8×10^3",
-"4×10^2 + 7×10^1 + 8×10^0",
-"4×10^3 + 7×10^2 + 8×10^1",
-"4×10^0 + 7×10^1 + 8×10^2"
+"$4×10^{1} + 7×10^{2} + 8×10^{3}$",
+"$4×10^{2} + 7×10^{1} + 8×10^{0}$",
+"$4×10^{3} + 7×10^{2} + 8×10^{1}$",
+"$4×10^{0} + 7×10^{1} + 8×10^{2}$"
 ],
 "answer": 1,
-"explanation": "Positions are numbered from the right starting at 0, so 8 is at 10^0, 7 at 10^1, and 4 at 10^2.",
+"explanation": "Positions are numbered from the right starting at 0, so 8 is at $10^{0}$, 7 at $10^{1}$, and 4 at $10^{2}$.",
 "source": "notes"
 },
 {
@@ -32,7 +32,7 @@
 "Place value 1, contributes 5"
 ],
 "answer": 2,
-"explanation": "Counting from the right at position 0, the 5 is at position 2, so its place value is 10^2 = 100 and it contributes 5×100 = 500.",
+"explanation": "Counting from the right at position 0, the 5 is at position 2, so its place value is $10^{2} = 100$ and it contributes 5×100 = 500.",
 "source": "notes"
 },
 {
@@ -60,7 +60,7 @@
 "source": "notes"
 },
 {
-"q": "Convert 1011 (base 2) to decimal.",
+"q": "Convert $1011_{2}$ to decimal.",
 "options": [
 "13",
 "11",
@@ -68,11 +68,11 @@
 "7"
 ],
 "answer": 1,
-"explanation": "1×2^3 + 0×2^2 + 1×2^1 + 1×2^0 = 8 + 0 + 2 + 1 = 11.",
+"explanation": "$1×2^{3} + 0×2^{2} + 1×2^{1} + 1×2^{0} = 8 + 0 + 2 + 1 = 11$.",
 "source": "notes"
 },
 {
-"q": "What is the decimal value of 10101 (base 2)?",
+"q": "What is the decimal value of $10101_{2}$?",
 "options": [
 "19",
 "25",
@@ -228,7 +228,7 @@
 "source": "notes"
 },
 {
-"q": "What is the decimal value of 110110 (base 2)?",
+"q": "What is the decimal value of $110110_{2}$?",
 "options": [
 "27",
 "54",
@@ -248,7 +248,7 @@
 "8"
 ],
 "answer": 2,
-"explanation": "The MSB is at position 7 (counting from 0 on the right), so its place value is 2^7 = 128.",
+"explanation": "The MSB is at position 7 (counting from 0 on the right), so its place value is $2^{7} = 128$.",
 "source": "notes"
 },
 {
@@ -284,11 +284,11 @@
 "In binary, position 3 has place value 6 because 2×3 = 6"
 ],
 "answer": 3,
-"explanation": "The place value is the base raised to the position, so position 3 in binary is 2^3 = 8, not 2×3.",
+"explanation": "The place value is the base raised to the position, so position 3 in binary is $2^{3} = 8$, not 2×3.",
 "source": "notes"
 },
 {
-"q": "A student reads 1001 (base 2) as \"one thousand and one\". What is the actual value, and what was the error?",
+"q": "A student reads $1001_{2}$ as \"one thousand and one\". What is the actual value, and what was the error?",
 "options": [
 "The value is 2, because the digits 1+0+0+1 are added",
 "The value is 1001, because binary uses the same place values as decimal",
@@ -344,7 +344,7 @@
 "1000"
 ],
 "answer": 0,
-"explanation": "The 1 is at position 10, so the value is 2^10 = 1024, not 1000.",
+"explanation": "The 1 is at position 10, so the value is $2^{10} = 1024$, not 1000.",
 "source": "notes"
 },
 {

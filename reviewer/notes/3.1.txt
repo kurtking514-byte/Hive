@@ -276,14 +276,14 @@ Packing and unpacking uses logical shifts. AND operations are used for masking. 
 ⚙ Unpack: Red = (color >> 16) & 0xFF. Shift the wanted channel down to the right end, then mask off everything else with AND.
 EXAMPLE: PACK AND UNPACK AN ORANGE COLOUR
 ⚙ Added example: Alpha = 255 (FF), Red = 255 (FF), Green = 128 (80), Blue = 0 (00).
-⚙ Alpha << 24 = FF000000
-⚙ Red << 16 = 00FF0000
+⚙ Alpha << $24 = \mathrm{FF000000}$
+⚙ Red << $16 = \mathrm{00FF0000}$
 ⚙ Green << 8 = 00008000
 ⚙ Blue = 00000000
 ⚙ OR them together: FFFF8000
-⚙ Unpack Red: FFFF8000 >> 16 = FFFF, then & FF = FF = 255 ✓
-⚙ Unpack Green: FFFF8000 >> 8 = FFFF80, then & FF = 80 = 128 ✓
-⚙ Unpack Blue: FFFF8000 & FF = 00 = 0 ✓
+⚙ Unpack Red: FFFF8000 >> $16 = \mathrm{FFFF}$, then & $\mathrm{FF} = \mathrm{FF} = 255$ ✓
+⚙ Unpack Green: FFFF8000 >> $8 = \mathrm{FFFF80}$, then & $\mathrm{FF} = 80 = 128$ ✓
+⚙ Unpack Blue: FFFF8000 & $\mathrm{FF} = 00 = 0$ ✓
 Visual Basic.NET demonstrates manually manipulating channels to create a specific color.
 JavaScript can convert separate RGB values into a single hexadecimal color code.
 ⚙ Added example: (255 << 16) | (128 << 8) | 0 = 16744448, which is FF8000 in hex, so the CSS colour is #FF8000.
@@ -292,8 +292,8 @@ Shifts are used in web development. Techniques convert between different formats
 ★ RGB 5-6-5 uses fewer bits to save memory. It packs one colour into 16 bits: 5 bits red, 6 bits green, 5 bits blue.
 ⚙ Pack: color = (Red5 << 11) | (Green6 << 5) | Blue5
 ⚙ Shrink an 8-bit channel to fewer bits by shifting right: 255 >> 3 = 31 (5 bits), and 255 >> 2 = 63 (6 bits).
-⚙ Added example: white = (31 << 11) | (63 << 5) | 31 = 63488 + 2016 + 31 = 65535 = FFFF in hex.
-⚙ Added example: pure red = (31 << 11) | 0 | 0 = 63488 = F800 in hex.
+⚙ Added example: white = (31 << 11) | (63 << 5) | $31 = 63488 + 2016 + 31 = 65535 = \mathrm{FFFF}$ in hex.
+⚙ Added example: pure red = (31 << 11) | 0 | $0 = 63488 = \mathrm{F800}$ in hex.
 
 COMMON MISTAKES
 Do not confuse & with &&, or | with ||. The single symbols work bit by bit. The double symbols work on whole true/false values.

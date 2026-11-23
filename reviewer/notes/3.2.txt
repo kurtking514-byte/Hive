@@ -22,8 +22,8 @@ EASIER: Think of an odometer. When a wheel reaches the base, it rolls back to 0 
 ⚙ Step 8: Discard any overflown bits, meaning digits that do not fit in the fixed width of the system.
 
 BINARY ADDITION
-Decimal positional weights are 10⁰, 10¹, 10². A carry occurs when a column sum reaches the base (10).
-★ Binary uses base 2. Binary positional weights are 2⁰, 2¹, 2², 2³.
+Decimal positional weights are $10^{0}$, $10^{1}$, $10^{2}$. A carry occurs when a column sum reaches the base (10).
+★ Binary uses base 2. Binary positional weights are $2^{0}$, $2^{1}$, $2^{2}$, $2^{3}$.
 ★ Any sum greater than 1 requires a carry.
 ⚙ 0 + 0 = 0 (carry 0)
 ⚙ 0 + 1 = 1 (carry 0)
@@ -49,30 +49,30 @@ OCTAL ADDITION
 If a digit sum exceeds 7, convert it into carry and sum values. A sum of 8 or greater generates a carry of 1.
 Values like 8, 9, etc. are not valid single digits in base 8.
 ★ Formula: Sum = (Carry × 8) + Remainder.
-EASIER: In base 8, each single digit can only be 0 through 7. A total of 8 becomes 10 (base 8): write 0 and carry 1.
+EASIER: In base 8, each single digit can only be 0 through 7. A total of 8 becomes $10_{8}$: write 0 and carry 1.
 EXAMPLE: 243 + 212 (NO CARRIES)
 ⚙ Column 0: 3 + 2 = 5
 ⚙ Column 1: 4 + 1 = 5
 ⚙ Column 2: 2 + 2 = 4
-⚙ Answer: 243 + 212 = 455 (base 8). No sum exceeds 7.
+⚙ Answer: $243 + 212 = 455_{8}$. No sum exceeds 7.
 EXAMPLE: 567 + 243 (WITH CARRIES)
 ⚙ Column 0: 7 + 3 = 10. 10 = 1×8 + 2, so write 2, carry 1
 ⚙ Column 1: 6 + 4 + 1 (carry) = 11. 11 = 1×8 + 3, so write 3, carry 1
 ⚙ Column 2: 5 + 2 + 1 (carry) = 8. 8 = 1×8 + 0, so write 0, carry 1
 ⚙ Column 3: only the carry 1 is left, write 1
-⚙ Answer: 567 + 243 = 1032 (base 8)
-⚙ Check: 567 (base 8) = 375, 243 (base 8) = 163, 375 + 163 = 538, and 1032 (base 8) = 512 + 24 + 2 = 538 ✓
+⚙ Answer: $567 + 243 = 1032_{8}$
+⚙ Check: $567_{8} = 375$, $243_{8} = 163$, 375 + 163 = 538, and $1032_{8} = 512 + 24 + 2 = 538$ ✓
 EXAMPLE: PRACTICE 1776 + 345 (BASE 8) ANSWERED
 ⚙ Column 0: 6 + 5 = 11. 11 = 1×8 + 3, so write 3, carry 1
 ⚙ Column 1: 7 + 4 + 1 (carry) = 12. 12 = 1×8 + 4, so write 4, carry 1
 ⚙ Column 2: 7 + 3 + 1 (carry) = 11. 11 = 1×8 + 3, so write 3, carry 1
 ⚙ Column 3: 1 + 1 (carry) = 2, write 2
-⚙ Answer: 1776 + 345 = 2343 (base 8)
-⚙ Check: 1776 (base 8) = 1022, 345 (base 8) = 229, 1022 + 229 = 1251, and 2343 (base 8) = 1024 + 192 + 32 + 3 = 1251 ✓
+⚙ Answer: $1776 + 345 = 2343_{8}$
+⚙ Check: $1776_{8} = 1022$, $345_{8} = 229$, 1022 + 229 = 1251, and $2343_{8} = 1024 + 192 + 32 + 3 = 1251$ ✓
 
 HEXADECIMAL ADDITION
 ★ Hexadecimal uses base 16. Digits are 0-9 and letters A-F.
-★ Hex letter values: A = 10, B = 11, C = 12, D = 13, E = 14, F = 15.
+★ Hex letter values: $\mathrm{A} = 10$, $\mathrm{B} = 11$, $\mathrm{C} = 12$, $\mathrm{D} = 13$, $\mathrm{E} = 14$, $\mathrm{F} = 15$.
 Hexadecimal uses 16 distinct digits.
 If a digit sum equals or exceeds 16, generate a carry.
 ⚙ Divide the sum by 16. The quotient becomes the carry. The remainder becomes the new digit.
@@ -82,27 +82,27 @@ EXAMPLE: 5689 + 4574 (NO CARRIES)
 ⚙ Column 1: 8 + 7 = 15, which is F
 ⚙ Column 2: 6 + 5 = 11, which is B
 ⚙ Column 3: 5 + 4 = 9
-⚙ Answer: 5689 + 4574 = 9BFD (base 16). This example has no carries, because no column reached 16.
-⚙ Check: 5689 (base 16) = 22153, 4574 (base 16) = 17780, and the sum is 39933 = 9BFD (base 16) ✓
-EXAMPLE: DA + DA (WITH CARRIES)
-⚙ Column 0: A + A = 10 + 10 = 20. 20 = 1×16 + 4, so write 4, carry 1
-⚙ Column 1: D + D + 1 (carry) = 13 + 13 + 1 = 27. 27 = 1×16 + 11, so write B, carry 1
+⚙ Answer: $5689 + 4574 = \mathrm{9BFD}_{16}$. This example has no carries, because no column reached 16.
+⚙ Check: $5689_{16} = 22153$, $4574_{16} = 17780$, and the sum is $39933 = \mathrm{9BFD}_{16}$ ✓
+EXAMPLE: $\mathrm{DA} + \mathrm{DA}$ (WITH CARRIES)
+⚙ Column 0: $\mathrm{A} + \mathrm{A} = 10 + 10 = 20$. 20 = 1×16 + 4, so write 4, carry 1
+⚙ Column 1: $\mathrm{D} + \mathrm{D} + 1$ (carry) = 13 + 13 + 1 = 27. 27 = 1×16 + 11, so write B, carry 1
 ⚙ Column 2: only the carry 1 is left, write 1
-⚙ Answer: DA + DA = 1B4 (base 16)
-⚙ Check: DA = 218, 218 + 218 = 436, and 1B4 = 256 + 176 + 4 = 436 ✓
+⚙ Answer: $\mathrm{DA} + \mathrm{DA} = \mathrm{1B4}_{16}$
+⚙ Check: $\mathrm{DA} = 218$, 218 + 218 = 436, and $\mathrm{1B4} = 256 + 176 + 4 = 436$ ✓
 EXAMPLE: PRACTICE 89 + 189 ANSWERED
 ⚙ Column 0: 9 + 9 = 18. 18 = 1×16 + 2, so write 2, carry 1
 ⚙ Column 1: 8 + 8 + 1 (carry) = 17. 17 = 1×16 + 1, so write 1, carry 1
 ⚙ Column 2: 0 + 1 + 1 (carry) = 2, write 2
-⚙ Answer: 89 + 189 = 212 (base 16)
-⚙ Check: 137 + 393 = 530, and 212 (base 16) = 512 + 16 + 2 = 530 ✓
-EXAMPLE: PRACTICE DAF + BAF ANSWERED
-⚙ Column 0: F + F = 15 + 15 = 30. 30 = 1×16 + 14, so write E, carry 1
-⚙ Column 1: A + A + 1 (carry) = 10 + 10 + 1 = 21. 21 = 1×16 + 5, so write 5, carry 1
-⚙ Column 2: D + B + 1 (carry) = 13 + 11 + 1 = 25. 25 = 1×16 + 9, so write 9, carry 1
+⚙ Answer: $89 + 189 = 212_{16}$
+⚙ Check: 137 + 393 = 530, and $212_{16} = 512 + 16 + 2 = 530$ ✓
+EXAMPLE: PRACTICE $\mathrm{DAF} + \mathrm{BAF}$ ANSWERED
+⚙ Column 0: $\mathrm{F} + \mathrm{F} = 15 + 15 = 30$. 30 = 1×16 + 14, so write E, carry 1
+⚙ Column 1: $\mathrm{A} + \mathrm{A} + 1$ (carry) = 10 + 10 + 1 = 21. 21 = 1×16 + 5, so write 5, carry 1
+⚙ Column 2: $\mathrm{D} + \mathrm{B} + 1$ (carry) = 13 + 11 + 1 = 25. 25 = 1×16 + 9, so write 9, carry 1
 ⚙ Column 3: only the carry 1 is left, write 1
-⚙ Answer: DAF + BAF = 195E (base 16)
-⚙ Check: 3503 + 2991 = 6494, and 195E = 4096 + 2304 + 80 + 14 = 6494 ✓
+⚙ Answer: $\mathrm{DAF} + \mathrm{BAF} = \mathrm{195E}_{16}$
+⚙ Check: 3503 + 2991 = 6494, and $\mathrm{195E} = 4096 + 2304 + 80 + 14 = 6494$ ✓
 
 SUBTRACTION
 ★ Subtracting numbers in different bases means subtracting corresponding digits right to left.
@@ -156,25 +156,25 @@ EXAMPLE: 743 − 564 (BASE 8)
 ⚙ Column 0: 3 − 4 is not possible. Borrow from column 1, which has 4 and becomes 3. Column 0 becomes 3 + 8 = 11. Then 11 − 4 = 7
 ⚙ Column 1: now 3 − 6 is not possible. Borrow from column 2, which has 7 and becomes 6. Column 1 becomes 3 + 8 = 11. Then 11 − 6 = 5
 ⚙ Column 2: now 6 − 5 = 1
-⚙ Answer: 743 − 564 = 157 (base 8)
-⚙ Check: 743 (base 8) = 483, 564 (base 8) = 372, 483 − 372 = 111, and 157 (base 8) = 64 + 40 + 7 = 111 ✓
+⚙ Answer: $743 − 564 = 157_{8}$
+⚙ Check: $743_{8} = 483$, $564_{8} = 372$, 483 − 372 = 111, and $157_{8} = 64 + 40 + 7 = 111$ ✓
 EXAMPLE: A SECOND OCTAL SUBTRACTION WITH RESULT 337
-The notes give only the result of this example, 337 (base 8), and do not show the numbers that were subtracted.
-⚙ Added example: one subtraction with this result is 1000 − 441 (base 8). It also shows borrowing across a zero.
+The notes give only the result of this example, $337_{8}$, and do not show the numbers that were subtracted.
+⚙ Added example: one subtraction with this result is $1000 − 441_{8}$. It also shows borrowing across a zero.
 ⚙ Column 0: 0 − 1 is not possible. Columns 1 and 2 are zero, so borrow from column 3, which has 1 and becomes 0.
 ⚙ Column 2 receives 8, lends 1 to column 1 and keeps 7. Column 1 receives 8, lends 1 to column 0 and keeps 7. Column 0 becomes 8.
 ⚙ Column 0: 8 − 1 = 7
 ⚙ Column 1: 7 − 4 = 3
 ⚙ Column 2: 7 − 4 = 3
 ⚙ Column 3: 0 − 0 = 0
-⚙ Answer: 1000 − 441 = 337 (base 8)
-⚙ Check: 512 − 289 = 223, and 337 (base 8) = 192 + 24 + 7 = 223 ✓
+⚙ Answer: $1000 − 441 = 337_{8}$
+⚙ Check: 512 − 289 = 223, and $337_{8} = 192 + 24 + 7 = 223$ ✓
 EXAMPLE: PRACTICE 511 − 33 (BASE 8) ANSWERED
 ⚙ Column 0: 1 − 3 is not possible. Borrow from column 1, which has 1 and becomes 0. Column 0 becomes 1 + 8 = 9. Then 9 − 3 = 6
 ⚙ Column 1: now 0 − 3 is not possible. Borrow from column 2, which has 5 and becomes 4. Column 1 becomes 0 + 8 = 8. Then 8 − 3 = 5
 ⚙ Column 2: now 4 − 0 = 4
-⚙ Answer: 511 − 33 = 456 (base 8)
-⚙ Check: 329 − 27 = 302, and 456 (base 8) = 256 + 40 + 6 = 302 ✓
+⚙ Answer: $511 − 33 = 456_{8}$
+⚙ Check: 329 − 27 = 302, and $456_{8} = 256 + 40 + 6 = 302$ ✓
 EXAMPLE: PRACTICE 6000 − 777 (BASE 8) ANSWERED
 ⚙ Column 0: 0 − 7 is not possible. Columns 1 and 2 are zero, so borrow from column 3, which has 6 and becomes 5.
 ⚙ Column 2 receives 8, lends 1 and keeps 7. Column 1 receives 8, lends 1 and keeps 7. Column 0 becomes 8.
@@ -182,37 +182,37 @@ EXAMPLE: PRACTICE 6000 − 777 (BASE 8) ANSWERED
 ⚙ Column 1: 7 − 7 = 0
 ⚙ Column 2: 7 − 7 = 0
 ⚙ Column 3: 5 − 0 = 5
-⚙ Answer: 6000 − 777 = 5001 (base 8)
-⚙ Check: 3072 − 511 = 2561, and 5001 (base 8) = 2560 + 1 = 2561 ✓
+⚙ Answer: $6000 − 777 = 5001_{8}$
+⚙ Check: 3072 − 511 = 2561, and $5001_{8} = 2560 + 1 = 2561$ ✓
 
 HEXADECIMAL SUBTRACTION
 Direct subtraction applies when the digit being subtracted is smaller than the top digit.
 When the top digit is smaller, borrow from the next position.
 ★ In hexadecimal, the borrow equals 16 (decimal). Each position represents a power of 16.
-Convert letters to decimal equivalents when completing subtraction. For example, B = 11 and C = 12.
+Convert letters to decimal equivalents when completing subtraction. For example, $\mathrm{B} = 11$ and $\mathrm{C} = 12$.
 The notes describe one example without borrowing and one example with borrowing that uses letters A-F. The numbers were not included, so these examples are added.
-EXAMPLE: 7B − 3A (NO BORROWING)
-⚙ Added example: Column 0: B − A = 11 − 10 = 1
+EXAMPLE: $\mathrm{7B} − \mathrm{3A}$ (NO BORROWING)
+⚙ Added example: Column 0: $\mathrm{B} − \mathrm{A} = 11 − 10 = 1$
 ⚙ Column 1: 7 − 3 = 4
-⚙ Answer: 7B − 3A = 41 (base 16)
-⚙ Check: 123 − 58 = 65, and 41 (base 16) = 64 + 1 = 65 ✓
-EXAMPLE: B2 − 4C (WITH BORROWING)
-⚙ Added example: Column 0: 2 − C is not possible, because C = 12. Borrow from column 1, which has B and becomes A. Column 0 becomes 2 + 16 = 18. Then 18 − 12 = 6
-⚙ Column 1: now A − 4 = 10 − 4 = 6
-⚙ Answer: B2 − 4C = 66 (base 16)
-⚙ Check: 178 − 76 = 102, and 66 (base 16) = 96 + 6 = 102 ✓
-EXAMPLE: 3C2 − 1AF (WITH BORROWING AND LETTERS)
-⚙ Added example: Column 0: 2 − F is not possible, because F = 15. Borrow from column 1, which has C and becomes B. Column 0 becomes 2 + 16 = 18. Then 18 − 15 = 3
-⚙ Column 1: now B − A = 11 − 10 = 1
+⚙ Answer: $\mathrm{7B} − \mathrm{3A} = 41_{16}$
+⚙ Check: 123 − 58 = 65, and $41_{16} = 64 + 1 = 65$ ✓
+EXAMPLE: $\mathrm{B2} − \mathrm{4C}$ (WITH BORROWING)
+⚙ Added example: Column 0: $2 − \mathrm{C}$ is not possible, because $\mathrm{C} = 12$. Borrow from column 1, which has B and becomes A. Column 0 becomes 2 + 16 = 18. Then 18 − 12 = 6
+⚙ Column 1: now $\mathrm{A} − 4 = 10 − 4 = 6$
+⚙ Answer: $\mathrm{B2} − \mathrm{4C} = 66_{16}$
+⚙ Check: 178 − 76 = 102, and $66_{16} = 96 + 6 = 102$ ✓
+EXAMPLE: $\mathrm{3C2} − \mathrm{1AF}$ (WITH BORROWING AND LETTERS)
+⚙ Added example: Column 0: $2 − \mathrm{F}$ is not possible, because $\mathrm{F} = 15$. Borrow from column 1, which has C and becomes B. Column 0 becomes 2 + 16 = 18. Then 18 − 15 = 3
+⚙ Column 1: now $\mathrm{B} − \mathrm{A} = 11 − 10 = 1$
 ⚙ Column 2: 3 − 1 = 2
-⚙ Answer: 3C2 − 1AF = 213 (base 16)
-⚙ Check: 962 − 431 = 531, and 213 (base 16) = 512 + 16 + 3 = 531 ✓
+⚙ Answer: $\mathrm{3C2} − \mathrm{1AF} = 213_{16}$
+⚙ Check: 962 − 431 = 531, and $213_{16} = 512 + 16 + 3 = 531$ ✓
 EXAMPLE: PRACTICE PROBLEMS WITH ANSWERS
 The notes say there are three hexadecimal subtraction problems but do not list them. Here are three added ones.
-⚙ Added example: 9F − 2A. Column 0: F − A = 15 − 10 = 5. Column 1: 9 − 2 = 7. Answer: 75 (base 16).
-⚙ Added example: 500 − 1. Borrow across the zeros: column 2 becomes 4, column 1 becomes F, column 0 becomes 16. Then 16 − 1 = F, F − 0 = F, 4 − 0 = 4. Answer: 4FF (base 16).
-⚙ Added example: C3 − 6E. Column 0: 3 − E is not possible. Borrow from column 1, which has C and becomes B. Column 0 becomes 3 + 16 = 19. Then 19 − 14 = 5. Column 1: B − 6 = 11 − 6 = 5. Answer: 55 (base 16).
-⚙ Checks: 159 − 42 = 117 = 75 (base 16). 1280 − 1 = 1279 = 4FF (base 16). 195 − 110 = 85 = 55 (base 16). ✓
+⚙ Added example: $\mathrm{9F} − \mathrm{2A}$. Column 0: $\mathrm{F} − \mathrm{A} = 15 − 10 = 5$. Column 1: 9 − 2 = 7. Answer: $75_{16}$.
+⚙ Added example: 500 − 1. Borrow across the zeros: column 2 becomes 4, column 1 becomes F, column 0 becomes 16. Then $16 − 1 = \mathrm{F}$, $\mathrm{F} − 0 = \mathrm{F}$, 4 − 0 = 4. Answer: $\mathrm{4FF}_{16}$.
+⚙ Added example: $\mathrm{C3} − \mathrm{6E}$. Column 0: $3 − \mathrm{E}$ is not possible. Borrow from column 1, which has C and becomes B. Column 0 becomes 3 + 16 = 19. Then 19 − 14 = 5. Column 1: $\mathrm{B} − 6 = 11 − 6 = 5$. Answer: $55_{16}$.
+⚙ Checks: $159 − 42 = 117 = 75_{16}$. $1280 − 1 = 1279 = \mathrm{4FF}_{16}$. $195 − 110 = 85 = 55_{16}$. ✓
 
 MULTIPLICATION
 ★ Multiplying numbers in different bases means multiplying each multiplier digit by the multiplicand.
@@ -235,15 +235,15 @@ EASIER: Put a 0 (some people use a cross mark) at the right end of each new row 
 
 BINARY MULTIPLICATION
 ★ Binary multiplication rules: 0 × 0 = 0, 0 × 1 = 0, 1 × 0 = 0, and 1 × 1 = 1.
-Binary positional weights: 2⁰, 2¹, 2², …
+Binary positional weights: $2^{0}$, $2^{1}$, $2^{2}$, …
 EASIER: In binary, each row is either a copy of the multiplicand (when the multiplier digit is 1) or all zeros (when the multiplier digit is 0).
 EXAMPLE: 110 (BASE 2) × 11 (BASE 2)
-110 (base 2) = 6 in decimal. 11 (base 2) = 3 in decimal.
+$110_{2} = 6$ in decimal. $11_{2} = 3$ in decimal.
 ⚙ Step 1: multiplier digit in column 0 is 1, so the first row is 110.
 ⚙ Step 2: multiplier digit in column 1 is 1, so the second row is 110 shifted one place left: 1100.
 ⚙ Step 3: align the rows by weight: 0110 and 1100.
 ⚙ Step 4: add using binary addition: 110 + 1100 = 10010.
-⚙ Answer: 110 × 11 = 10010 (base 2)
+⚙ Answer: $110 × 11 = 10010_{2}$
 ⚙ Check: 6 × 3 = 18, and 10010 = 16 + 2 = 18 ✓
 Convert binary numbers to decimal to verify results. This reduces errors with large binary strings.
 For exams, direct multiplication can skip weight calculations. Correct alignment of bits is still required before final addition.
@@ -251,7 +251,7 @@ EXAMPLE: PRACTICE 1101 × 11 ANSWERED
 ⚙ Row 1 (digit 1 in column 0): 1101
 ⚙ Row 2 (digit 1 in column 1, shifted one place): 11010
 ⚙ Add: 1101 + 11010 = 100111
-⚙ Answer: 1101 × 11 = 100111 (base 2)
+⚙ Answer: $1101 × 11 = 100111_{2}$
 ⚙ Check: 13 × 3 = 39, and 100111 = 32 + 4 + 2 + 1 = 39 ✓
 EXAMPLE: A ZERO IN THE MULTIPLIER
 ⚙ Added example: 101 × 101. Multiplier digits from the right are 1, 0, 1.
@@ -259,22 +259,22 @@ EXAMPLE: A ZERO IN THE MULTIPLIER
 ⚙ Row 2 (digit 0, column 1): 000, shifted: 0000
 ⚙ Row 3 (digit 1, column 2): 101 shifted two places: 10100
 ⚙ Add: 101 + 0000 + 10100 = 11001
-⚙ Answer: 101 × 101 = 11001 (base 2). Check: 5 × 5 = 25, and 11001 = 16 + 8 + 1 = 25 ✓
+⚙ Answer: $101 × 101 = 11001_{2}$. Check: 5 × 5 = 25, and 11001 = 16 + 8 + 1 = 25 ✓
 
 OCTAL MULTIPLICATION
 ★ Octal multiplication uses base 8.
 Results must remain within the valid octal range (0-7) in each place.
 Multiplication follows standard methods using base 8.
 EASIER: When a product is too large for one octal digit, use a carry. The remainder stays in the current position; the quotient moves to the next.
-⚙ Example of the idea: 14 (base 10) is represented as 16 (base 8), because 1 × 8 + 6 = 14.
+⚙ Example of the idea: $14_{10}$ is represented as $16_{8}$, because 1 × 8 + 6 = 14.
 ⚙ If a product exceeds 7, divide by 8. The remainder is the digit to write. The quotient is the carry to the next column.
 EXAMPLE: 72 (BASE 8) × 12 (BASE 8)
 ⚙ Row 1, multiply 72 by 2: 2 × 2 = 4, write 4, carry 0
 ⚙ Then 2 × 7 = 14. 14 = 1×8 + 6, so write 6, carry 1. Write the carry 1. Row 1 = 164
 ⚙ Row 2, multiply 72 by 1: 72. Shift one place left: 720
 ⚙ Add: column 0: 4 + 0 = 4. Column 1: 6 + 2 = 8, write 0, carry 1. Column 2: 1 + 7 + 1 = 9, write 1, carry 1. Column 3: carry 1.
-⚙ Answer: 72 × 12 = 1104 (base 8)
-⚙ Check: 58 × 10 = 580, and 1104 (base 8) = 512 + 64 + 4 = 580 ✓
+⚙ Answer: $72 × 12 = 1104_{8}$
+⚙ Check: 58 × 10 = 580, and $1104_{8} = 512 + 64 + 4 = 580$ ✓
 EXAMPLE: 357 (BASE 8) × 23 (BASE 8)
 ⚙ Row 1, multiply 357 by 3: 3 × 7 = 21 = 2×8 + 5, write 5, carry 2
 ⚙ 3 × 5 = 15, plus carry 2 = 17 = 2×8 + 1, write 1, carry 2
@@ -283,16 +283,16 @@ EXAMPLE: 357 (BASE 8) × 23 (BASE 8)
 ⚙ 2 × 5 = 10, plus carry 1 = 11 = 1×8 + 3, write 3, carry 1
 ⚙ 2 × 3 = 6, plus carry 1 = 7, write 7. Row 2 = 736. Shift one place left: 7360
 ⚙ Add: column 0: 5 + 0 = 5. Column 1: 1 + 6 = 7. Column 2: 3 + 3 = 6. Column 3: 1 + 7 = 8, write 0, carry 1. Column 4: carry 1.
-⚙ Answer: 357 × 23 = 10675 (base 8)
-⚙ Check: 239 × 19 = 4541, and 10675 (base 8) = 4096 + 384 + 56 + 5 = 4541 ✓
+⚙ Answer: $357 × 23 = 10675_{8}$
+⚙ Check: 239 × 19 = 4541, and $10675_{8} = 4096 + 384 + 56 + 5 = 4541$ ✓
 EXAMPLE: PRACTICE PROBLEMS WITH ANSWERS
 The notes say there are two octal multiplication problems but do not list them. Here are two added ones.
-⚙ Added example: 46 × 5 (base 8). 5 × 6 = 30 = 3×8 + 6, write 6, carry 3. 5 × 4 = 20, plus carry 3 = 23 = 2×8 + 7, write 7, carry 2. Write the carry 2. Answer: 276 (base 8).
-⚙ Check: 38 × 5 = 190, and 276 (base 8) = 128 + 56 + 6 = 190 ✓
-⚙ Added example: 143 × 25 (base 8). Row 1 (× 5): 3 × 5 = 15 = 1×8 + 7, write 7, carry 1. 4 × 5 = 20, plus carry 1 = 21 = 2×8 + 5, write 5, carry 2. 1 × 5 = 5, plus carry 2 = 7. Row 1 = 757.
+⚙ Added example: $46 × 5_{8}$. 5 × 6 = 30 = 3×8 + 6, write 6, carry 3. 5 × 4 = 20, plus carry 3 = 23 = 2×8 + 7, write 7, carry 2. Write the carry 2. Answer: $276_{8}$.
+⚙ Check: 38 × 5 = 190, and $276_{8} = 128 + 56 + 6 = 190$ ✓
+⚙ Added example: $143 × 25_{8}$. Row 1 (× 5): 3 × 5 = 15 = 1×8 + 7, write 7, carry 1. 4 × 5 = 20, plus carry 1 = 21 = 2×8 + 5, write 5, carry 2. 1 × 5 = 5, plus carry 2 = 7. Row 1 = 757.
 ⚙ Row 2 (× 2): 3 × 2 = 6. 4 × 2 = 8 = 1×8 + 0, write 0, carry 1. 1 × 2 = 2, plus carry 1 = 3. Row 2 = 306, shifted: 3060.
-⚙ Add 757 + 3060: column 0: 7. Column 1: 5 + 6 = 11, write 3, carry 1. Column 2: 7 + 0 + 1 = 8, write 0, carry 1. Column 3: 0 + 3 + 1 = 4. Answer: 4037 (base 8).
-⚙ Check: 99 × 21 = 2079, and 4037 (base 8) = 2048 + 0 + 24 + 7 = 2079 ✓
+⚙ Add 757 + 3060: column 0: 7. Column 1: 5 + 6 = 11, write 3, carry 1. Column 2: 7 + 0 + 1 = 8, write 0, carry 1. Column 3: 0 + 3 + 1 = 4. Answer: $4037_{8}$.
+⚙ Check: 99 × 21 = 2079, and $4037_{8} = 2048 + 0 + 24 + 7 = 2079$ ✓
 
 HEXADECIMAL MULTIPLICATION
 Multiply digits similarly to decimal multiplication.
@@ -304,10 +304,10 @@ EXAMPLE: 94 × 12 (BASE 16)
 ⚙ 2 × 9 = 18 = 1×16 + 2, write 2, carry 1. Write the carry 1. Row 1 = 128
 ⚙ Row 2, multiply 94 by 1: 94. Shift one place left: 940
 ⚙ Add 128 + 940: column 0: 8 + 0 = 8. Column 1: 2 + 4 = 6. Column 2: 1 + 9 = 10, which is A.
-⚙ Answer: 94 × 12 = A68 (base 16)
-⚙ Check: 148 × 18 = 2664, and A68 = 2560 + 96 + 8 = 2664 ✓
-EXAMPLE: ABC × 23 (BASE 16)
-⚙ Letter values: A = 10, B = 11, C = 12
+⚙ Answer: $94 × 12 = \mathrm{A68}_{16}$
+⚙ Check: 148 × 18 = 2664, and $\mathrm{A68} = 2560 + 96 + 8 = 2664$ ✓
+EXAMPLE: $\mathrm{ABC} × 23$ (BASE 16)
+⚙ Letter values: $\mathrm{A} = 10$, $\mathrm{B} = 11$, $\mathrm{C} = 12$
 ⚙ Row 1, multiply ABC by 3: 3 × 12 = 36 = 2×16 + 4, write 4, carry 2
 ⚙ 3 × 11 = 33, plus carry 2 = 35 = 2×16 + 3, write 3, carry 2
 ⚙ 3 × 10 = 30, plus carry 2 = 32 = 2×16 + 0, write 0, carry 2. Write the carry 2. Row 1 = 2034
@@ -315,20 +315,20 @@ EXAMPLE: ABC × 23 (BASE 16)
 ⚙ 2 × 11 = 22, plus carry 1 = 23 = 1×16 + 7, write 7, carry 1
 ⚙ 2 × 10 = 20, plus carry 1 = 21 = 1×16 + 5, write 5, carry 1. Write the carry 1. Row 2 = 1578. Shift one place left: 15780
 ⚙ Add 2034 + 15780 with hexadecimal addition: column 0: 4 + 0 = 4. Column 1: 3 + 8 = 11, which is B. Column 2: 0 + 7 = 7. Column 3: 2 + 5 = 7. Column 4: 1.
-⚙ Answer: ABC × 23 = 177B4 (base 16)
-⚙ Check: 2748 × 35 = 96180, and 177B4 = 65536 + 28672 + 1792 + 176 + 4 = 96180 ✓
+⚙ Answer: $\mathrm{ABC} × 23 = \mathrm{177B4}_{16}$
+⚙ Check: 2748 × 35 = 96180, and $\mathrm{177B4} = 65536 + 28672 + 1792 + 176 + 4 = 96180$ ✓
 EXAMPLE: PRACTICE 818 × 21 ANSWERED
 ⚙ Row 1, multiply 818 by 1: 818
 ⚙ Row 2, multiply 818 by 2: 2 × 8 = 16 = 1×16 + 0, write 0, carry 1. 2 × 1 = 2, plus carry 1 = 3, write 3. 2 × 8 = 16, write 0, carry 1. Write the carry 1. Row 2 = 1030, shifted: 10300
 ⚙ Add 818 + 10300: column 0: 8. Column 1: 1. Column 2: 8 + 3 = 11, which is B. Column 3: 0. Column 4: 1.
-⚙ Answer: 818 × 21 = 10B18 (base 16)
-⚙ Check: 2072 × 33 = 68376, and 10B18 = 65536 + 0 + 2816 + 16 + 8 = 68376 ✓
-EXAMPLE: PRACTICE DF × 54 ANSWERED
-⚙ Row 1, multiply DF by 4: 4 × 15 = 60 = 3×16 + 12, write C, carry 3. 4 × 13 = 52, plus carry 3 = 55 = 3×16 + 7, write 7, carry 3. Write the carry 3. Row 1 = 37C
-⚙ Row 2, multiply DF by 5: 5 × 15 = 75 = 4×16 + 11, write B, carry 4. 5 × 13 = 65, plus carry 4 = 69 = 4×16 + 5, write 5, carry 4. Write the carry 4. Row 2 = 45B, shifted: 45B0
-⚙ Add 37C + 45B0: column 0: C + 0 = C. Column 1: 7 + B = 7 + 11 = 18 = 1×16 + 2, write 2, carry 1. Column 2: 3 + 5 + 1 = 9. Column 3: 4.
-⚙ Answer: DF × 54 = 492C (base 16)
-⚙ Check: 223 × 84 = 18732, and 492C = 16384 + 2304 + 32 + 12 = 18732 ✓
+⚙ Answer: $818 × 21 = \mathrm{10B18}_{16}$
+⚙ Check: 2072 × 33 = 68376, and $\mathrm{10B18} = 65536 + 0 + 2816 + 16 + 8 = 68376$ ✓
+EXAMPLE: PRACTICE $\mathrm{DF} × 54$ ANSWERED
+⚙ Row 1, multiply DF by 4: 4 × 15 = 60 = 3×16 + 12, write C, carry 3. 4 × 13 = 52, plus carry 3 = 55 = 3×16 + 7, write 7, carry 3. Write the carry 3. Row $1 = \mathrm{37C}$
+⚙ Row 2, multiply DF by 5: 5 × 15 = 75 = 4×16 + 11, write B, carry 4. 5 × 13 = 65, plus carry 4 = 69 = 4×16 + 5, write 5, carry 4. Write the carry 4. Row $2 = \mathrm{45B}$, shifted: 45B0
+⚙ Add $\mathrm{37C} + \mathrm{45B0}$: column 0: $\mathrm{C} + 0 = \mathrm{C}$. Column 1: $7 + \mathrm{B} = 7 + 11 = 18 = 1×16 + 2$, write 2, carry 1. Column 2: 3 + 5 + 1 = 9. Column 3: 4.
+⚙ Answer: $\mathrm{DF} × 54 = \mathrm{492C}_{16}$
+⚙ Check: 223 × 84 = 18732, and $\mathrm{492C} = 16384 + 2304 + 32 + 12 = 18732$ ✓
 
 DIVISION
 ★ Dividing numbers in different bases means dividing the dividend by the divisor from left to right.
@@ -353,20 +353,20 @@ EXAMPLE: 101010 (BASE 2) ÷ 110 (BASE 2)
 ⚙ Bring down the next bit (1) to make 1001 (9). 1001 ÷ 110 = 1. Write 1. Subtract: 1001 − 110 = 011.
 ⚙ Bring down the last bit (0) to make 0110 (6). 110 ÷ 110 = 1. Write 1. Subtract: 110 − 110 = 000.
 ⚙ Quotient digits: 1, 1, 1. Remainder: 0.
-⚙ Answer: 101010 ÷ 110 = 111 (base 2)
-Verify by converting the numbers to decimal: 42 ÷ 6 = 7. The binary quotient is 111 (base 2).
+⚙ Answer: $101010 ÷ 110 = 111_{2}$
+Verify by converting the numbers to decimal: 42 ÷ 6 = 7. The binary quotient is $111_{2}$.
 EXAMPLE: PRACTICE 101 ÷ 11 ANSWERED
 ⚙ 10 (2) is smaller than 11 (3). Take 101 (5). 101 ÷ 11 = 1. Write 1. Subtract: 101 − 011 = 010.
 ⚙ No more bits to bring down.
-⚙ Answer: 101 ÷ 11 = 1 with remainder 10 (base 2)
-⚙ Check: 5 ÷ 3 = 1 remainder 2, and 10 (base 2) = 2 ✓
+⚙ Answer: 101 ÷ 11 = 1 with remainder $10_{2}$
+⚙ Check: 5 ÷ 3 = 1 remainder 2, and $10_{2} = 2$ ✓
 EXAMPLE: PRACTICE 111000 ÷ 111 ANSWERED
 ⚙ Take 111 (7). 111 ÷ 111 = 1. Write 1. Subtract: 111 − 111 = 000.
 ⚙ Bring down 0: 0 is smaller than 111. Write 0.
 ⚙ Bring down 0: 0 is smaller than 111. Write 0.
 ⚙ Bring down 0: 0 is smaller than 111. Write 0.
-⚙ Answer: 111000 ÷ 111 = 1000 (base 2), remainder 0
-⚙ Check: 56 ÷ 7 = 8, and 1000 (base 2) = 8 ✓
+⚙ Answer: $111000 ÷ 111 = 1000_{2}$, remainder 0
+⚙ Check: 56 ÷ 7 = 8, and $1000_{2} = 8$ ✓
 
 OCTAL DIVISION
 ★ Octal division uses base 8.
@@ -375,41 +375,41 @@ Octal long division mimics standard decimal long division. Borrowing from a high
 Create a multiplication table for the divisor beforehand. This helps manage octal calculations and avoid errors.
 EASIER: A divisor multiplication table helps you quickly choose each quotient digit.
 EXAMPLE: 1104 (BASE 8) ÷ 12 (BASE 8)
-⚙ Added example: multiples of the divisor 12 (base 8): 12 × 1 = 12, 12 × 2 = 24, 12 × 3 = 36, 12 × 4 = 50, 12 × 5 = 62, 12 × 6 = 74, 12 × 7 = 106
+⚙ Added example: multiples of the divisor $12_{8}$: 12 × 1 = 12, 12 × 2 = 24, 12 × 3 = 36, 12 × 4 = 50, 12 × 5 = 62, 12 × 6 = 74, 12 × 7 = 106
 ⚙ Take leftmost digits until the number is at least 12. 1 and 11 are too small. 110 is big enough.
 ⚙ The biggest multiple not above 110 is 106 (× 7). Write 7. Subtract: 110 − 106 = 2.
 ⚙ Bring down the 4 to make 24. 24 is exactly 12 × 2. Write 2. Subtract: 24 − 24 = 0.
-⚙ Answer: 1104 ÷ 12 = 72 (base 8), remainder 0
-⚙ Check: 580 ÷ 10 = 58, and 72 (base 8) = 56 + 2 = 58 ✓
+⚙ Answer: $1104 ÷ 12 = 72_{8}$, remainder 0
+⚙ Check: 580 ÷ 10 = 58, and $72_{8} = 56 + 2 = 58$ ✓
 Fractional octal division involves decimal points (octal points).
 ⚙ Step 1: Shift decimal points to clear them from divisor and dividend. Temporarily remove the decimal points.
 ⚙ Step 2: Perform standard octal long division.
 ⚙ Step 3: Re-insert the decimal point based on the original positions. Adjust the quotient afterward.
 EASIER: For fractional values, remove decimal points first, then restore them afterward.
-⚙ Added example: 12.4 ÷ 2 (base 8). Remove the point: 124 ÷ 2. 12 ÷ 2 = 5 (since 12 (base 8) = 10 and 10 ÷ 2 = 5), remainder 0. Bring down 4: 4 ÷ 2 = 2. Quotient 52.
-⚙ Re-insert the point where it was in the dividend, one digit from the right: 5.2 (base 8).
-⚙ Check: 12.4 (base 8) = 10.5, 10.5 ÷ 2 = 5.25, and 5.2 (base 8) = 5 + 2/8 = 5.25 ✓
-⚙ Added example: when both numbers have points, shift both by the same amount. 1.6 ÷ 0.2 (base 8) becomes 16 ÷ 2 = 7 (base 8), since 16 (base 8) = 14 and 14 ÷ 2 = 7. The quotient stays 7.
-⚙ Check: 1.6 (base 8) = 1.75, 0.2 (base 8) = 0.25, and 1.75 ÷ 0.25 = 7 ✓
+⚙ Added example: $12.4 ÷ 2_{8}$. Remove the point: 124 ÷ 2. 12 ÷ 2 = 5 (since $12_{8} = 10$ and 10 ÷ 2 = 5), remainder 0. Bring down 4: 4 ÷ 2 = 2. Quotient 52.
+⚙ Re-insert the point where it was in the dividend, one digit from the right: $5.2_{8}$.
+⚙ Check: $12.4_{8} = 10.5$, 10.5 ÷ 2 = 5.25, and $5.2_{8} = 5 + 2/8 = 5.25$ ✓
+⚙ Added example: when both numbers have points, shift both by the same amount. $1.6 ÷ 0.2_{8}$ becomes $16 ÷ 2 = 7_{8}$, since $16_{8} = 14$ and 14 ÷ 2 = 7. The quotient stays 7.
+⚙ Check: $1.6_{8} = 1.75$, $0.2_{8} = 0.25$, and 1.75 ÷ 0.25 = 7 ✓
 
 HEXADECIMAL DIVISION
-EXAMPLE: B41F (BASE 16) ÷ A (BASE 16)
-⚙ SETUP: A = 10 and B = 11 in decimal.
-⚙ Step 1: Determine how many times A goes into B (or 11 (base 10)). The quotient digit is 1 and the remainder is 1.
-⚙ Step 2: Bring down 4 to work with 14 (base 16), which is 20 (base 10). A goes into 20 exactly twice. The quotient digit is 2 and the remainder is 0.
+EXAMPLE: B41F (BASE $16) ÷ \mathrm{A}$ (BASE 16)
+⚙ SETUP: $\mathrm{A} = 10$ and $\mathrm{B} = 11$ in decimal.
+⚙ Step 1: Determine how many times A goes into B (or $11_{10}$). The quotient digit is 1 and the remainder is 1.
+⚙ Step 2: Bring down 4 to work with $14_{16}$, which is $20_{10}$. A goes into 20 exactly twice. The quotient digit is 2 and the remainder is 0.
 ⚙ Step 3: Bring down 1 to work with 01, which is 1. A does not go into 1, so the quotient digit is 0 and the remainder is 1.
-⚙ Step 4: Bring down F to work with 1F (base 16), which is 31 (base 10). A goes into 31 three times (30), so the quotient digit is 3 and the remainder is 1.
-⚙ Convert values such as 1F (base 16) = 31 (base 10) to complete the calculation.
+⚙ Step 4: Bring down F to work with $\mathrm{1F}_{16}$, which is $31_{10}$. A goes into 31 three times (30), so the quotient digit is 3 and the remainder is 1.
+⚙ Convert values such as $\mathrm{1F}_{16} = 31_{10}$ to complete the calculation.
 ⚙ Final result: 1203 with a remainder of 1 in base 16.
-⚙ Check: B41F (base 16) = 46111, and 46111 ÷ 10 = 4611 remainder 1. 1203 (base 16) = 4096 + 512 + 3 = 4611 ✓
+⚙ Check: $\mathrm{B41F}_{16} = 46111$, and 46111 ÷ 10 = 4611 remainder 1. $1203_{16} = 4096 + 512 + 3 = 4611$ ✓
 EXAMPLE: A FRACTIONAL HEX QUOTIENT
-⚙ Added example: 1 ÷ 2 (base 16). 2 does not go into 1, so the whole part is 0, remainder 1.
-⚙ Multiply the remainder by the base: 1 × 16 = 16, which is 10 (base 16). Now 16 ÷ 2 = 8, remainder 0.
-⚙ Answer: 0.8 (base 16). Check: 8/16 = 0.5 ✓
+⚙ Added example: $1 ÷ 2_{16}$. 2 does not go into 1, so the whole part is 0, remainder 1.
+⚙ Multiply the remainder by the base: 1 × 16 = 16, which is $10_{16}$. Now 16 ÷ 2 = 8, remainder 0.
+⚙ Answer: $0.8_{16}$. Check: 8/16 = 0.5 ✓
 
 COMMON MISTAKES
 Do not carry or borrow 10 in other bases. Carry and borrow the base: 2, 8, or 16.
-Do not forget to carry when a column equals the base exactly. For example, 8 in octal is 10 (base 8).
+Do not forget to carry when a column equals the base exactly. For example, 8 in octal is $10_{8}$.
 Do not use the digits 8 or 9 in octal, or letters beyond F in hexadecimal.
 Do not forget to shift each new row of a multiplication one place left.
 Do not forget to subtract 1 from the place you borrowed from.
@@ -421,12 +421,12 @@ Q: What is 1010 + 0111 in binary?
 ★ Answer: 10001 (10 + 7 = 17 ✓)
 Q: What is 17 + 5 in octal?
 ⚙ Column 0: 7 + 5 = 12 = 1×8 + 4, write 4, carry 1. Column 1: 1 + 0 + 1 = 2.
-★ Answer: 24 (base 8). Check: 15 + 5 = 20, and 24 (base 8) = 20 ✓
-Q: What is A + 7 in hex?
-★ 10 + 7 = 17 = 1×16 + 1, so the answer is 11 (base 16).
+★ Answer: $24_{8}$. Check: 15 + 5 = 20, and $24_{8} = 20$ ✓
+Q: What is $\mathrm{A} + 7$ in hex?
+★ 10 + 7 = 17 = 1×16 + 1, so the answer is $11_{16}$.
 Q: What is the borrowed value in octal? In binary? In hexadecimal?
 ★ 8 in octal, 2 in binary, 16 in hexadecimal.
 Q: What is 110 × 11 in binary?
 ★ 10010 (6 × 3 = 18).
-Q: What is the hex quotient and remainder of B41F ÷ A?
-★ Quotient 1203 and remainder 1 (base 16).
+Q: What is the hex quotient and remainder of $\mathrm{B41F} ÷ \mathrm{A}$?
+★ Quotient 1203 and remainder $1_{16}$.
