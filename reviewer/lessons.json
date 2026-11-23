@@ -588,5 +588,15 @@
   "quiz": 30,
   "course": "BSCS",
   "exam": "Finals"
+ },
+ {
+  "id": "math100-8",
+  "subject": "MATH100",
+  "tab": "Module 8",
+  "title": "Cryptography",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
  }
 ]
