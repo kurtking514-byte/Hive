@@ -630,6 +630,16 @@
   "exam": "Finals"
  },
  {
+  "id": "nstp1-l2",
+  "subject": "NSTP1",
+  "tab": "Lesson 2",
+  "title": "Voters' Education",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
+ },
+ {
   "id": "nstp1-m3",
   "subject": "NSTP1",
   "tab": "Lesson 4",
