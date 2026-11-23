@@ -620,6 +620,16 @@
   "exam": "Finals"
  },
  {
+  "id": "nstp1-l1",
+  "subject": "NSTP1",
+  "tab": "Lesson 1",
+  "title": "NSTP Laws and Policies",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
+ },
+ {
   "id": "nstp1-m3",
   "subject": "NSTP1",
   "tab": "Lesson 4",
