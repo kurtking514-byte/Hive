@@ -510,6 +510,16 @@
   "exam": "Finals"
  },
  {
+  "id": "math100-lp",
+  "subject": "MATH100",
+  "tab": "Linear Programming",
+  "title": "Linear Programming",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
+ },
+ {
   "id": "cc7-L9",
   "subject": "CC7",
   "tab": "Lecture 9",
