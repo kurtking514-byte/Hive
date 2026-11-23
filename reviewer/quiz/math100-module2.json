@@ -116,7 +116,7 @@
 "Subtract the neither count from N to get n(A union B), add n(A) and n(B), then subtract n(A union B) from that sum"
 ],
 "answer": 3,
-"explanation": "First n(A union B) = N - neither. Then n(A) + n(B) counts the overlap twice, so subtracting n(A union B) leaves the overlap exactly once. The other orders produce numbers that are not the overlap. For example, with N = 100, n(A) = 52, n(B) = 36 and 24 in neither, the correct steps give 76, then 88, then 12.",
+"explanation": "First n(A union B) = N - neither. Then n(A) + n(B) counts the overlap twice, so subtracting n(A union B) leaves the overlap exactly once. The other orders produce numbers that are not the overlap. For example, with $N = 100$, $n(A) = 52$, $n(B) = 36$ and 24 in neither, the correct steps give 76, then 88, then 12.",
 "source": "notes"
 },
 {
@@ -152,7 +152,7 @@
 "13"
 ],
 "answer": 3,
-"explanation": "Students who like tea or coffee: 60 - 10 = 50. Then both = 35 + 28 - 50 = 63 - 50 = 13. Check: tea only 22, coffee only 15, both 13, neither 10, and 22 + 15 + 13 + 10 = 60. The value 63 is the plain sum, 3 comes from ignoring the neither group (63 - 60), and 50 is only n(T union C).",
+"explanation": "Students who like tea or coffee: $60 - 10 = 50$. Then both = $35 + 28 - 50 = 63 - 50 = 13$. Check: tea only 22, coffee only 15, both 13, neither 10, and $22 + 15 + 13 + 10 = 60$. The value 63 is the plain sum, 3 comes from ignoring the neither group $(63 - 60)$, and 50 is only n(T union C).",
 "source": "notes"
 },
 {
@@ -164,7 +164,7 @@
 "25"
 ],
 "answer": 2,
-"explanation": "A set with n elements has 2^n subsets, so 2^5 = 2 x 2 x 2 x 2 x 2 = 32. The value 31 is the number of proper subsets (2^5 - 1), 10 comes from wrongly using 2n, and 25 comes from wrongly using n^2.",
+"explanation": "A set with n elements has $2^{n}$ subsets, so $2^{5} = 2 × 2 × 2 × 2 × 2 = 32$. The value 31 is the number of proper subsets $(2^{5} - 1)$, 10 comes from wrongly using 2n, and 25 comes from wrongly using $n^{2}$.",
 "source": "notes"
 },
 {
@@ -188,7 +188,7 @@
 "2"
 ],
 "answer": 1,
-"explanation": "A union B = {2, 3, 4, 6, 8, 9, 10, 12}, which has 8 elements. Check with the counting formula: A intersect B = {6, 12}, so |A union B| = 6 + 4 - 2 = 8. The value 10 comes from adding 6 + 4 without subtracting the overlap, 6 is only |A|, and 2 is only |A intersect B|.",
+"explanation": "A union B = {2, 3, 4, 6, 8, 9, 10, 12}, which has 8 elements. Check with the counting formula: A intersect B = {6, 12}, so |A union B| = $6 + 4 - 2 = 8$. The value 10 comes from adding $6 + 4$ without subtracting the overlap, 6 is only |A|, and 2 is only |A intersect B|.",
 "source": "notes"
 },
 {
@@ -260,19 +260,19 @@
 "n(U) - n(A intersect B)"
 ],
 "answer": 0,
-"explanation": "The elements in neither set are those of U that lie outside A union B, so n(neither) = n(U) - n(A union B). Check with n(U) = 100, n(A) = 54, n(B) = 69 and 35 in both: n(A union B) = 88 and neither = 12. The other formulas give 100 - 54 - 69 = -23, 88 - 100 = -12, and 100 - 35 = 65.",
+"explanation": "The elements in neither set are those of U that lie outside A union B, so n(neither) = n(U) - n(A union B). Check with $n(U) = 100$, $n(A) = 54$, $n(B) = 69$ and 35 in both: n(A union B) = 88 and neither = 12. The other formulas give $100 - 54 - 69 = -23$, $88 - 100 = -12$, and $100 - 35 = 65$.",
 "source": "notes"
 },
 {
 "q": "A set has n elements. Which expression gives the number of its proper subsets?",
 "options": [
-"2^n",
-"2^n - 1",
-"2n - 1",
-"n^2 - 1"
+"$2^{n}$",
+"$2^{n} - 1$",
+"$2n - 1$",
+"$n^{2} - 1$"
 ],
 "answer": 1,
-"explanation": "A set with n elements has 2^n subsets, and the set itself is the one subset that is not proper, so there are 2^n - 1 proper subsets. For {1, 2, 3}: 8 - 1 = 7, namely the empty set, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}. The value 2^n includes the set itself, and for n = 3 the other expressions give 5 and 8.",
+"explanation": "A set with n elements has $2^{n}$ subsets, and the set itself is the one subset that is not proper, so there are $2^{n} - 1$ proper subsets. For {1, 2, 3}: $8 - 1 = 7$, namely the empty set, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}. The value $2^{n}$ includes the set itself, and for $n = 3$ the other expressions give 5 and 8.",
 "source": "notes"
 },
 {
@@ -296,7 +296,7 @@
 "Subtract n(M) from n(H); add n(both); subtract that result from N"
 ],
 "answer": 0,
-"explanation": "First n(M union H) = n(M) + n(H) - n(both), then neither = N - n(M union H). With N = 100, n(M) = 54, n(H) = 69 and 35 in both: 54 + 69 - 35 = 88 and 100 - 88 = 12. The second order gives 100 - 35 - 54 - 69 = -58, the third gives 123 - 100 + 35 = 58, and the fourth gives 69 - 54 + 35 = 50 and then 100 - 50 = 50.",
+"explanation": "First n(M union H) = n(M) + n(H) - n(both), then neither = N - n(M union H). With $N = 100$, $n(M) = 54$, $n(H) = 69$ and 35 in both: $54 + 69 - 35 = 88$ and $100 - 88 = 12$. The second order gives $100 - 35 - 54 - 69 = -58$, the third gives $123 - 100 + 35 = 58$, and the fourth gives $69 - 54 + 35 = 50$ and then $100 - 50 = 50$.",
 "source": "notes"
 },
 {
@@ -320,7 +320,7 @@
 "A finite set has a countable number of elements, so counting it eventually ends."
 ],
 "answer": 1,
-"explanation": "Cantor showed that infinities come in different sizes: the natural numbers can be counted one by one, but the real numbers are a bigger infinity. The other statements are true: |A| + |A'| = |U| gives 4 + 6 = 10, |{ }| = 0, and a finite set can be counted to the end.",
+"explanation": "Cantor showed that infinities come in different sizes: the natural numbers can be counted one by one, but the real numbers are a bigger infinity. The other statements are true: |A| + |A'| = |U| gives $4 + 6 = 10$, |{ }| = 0, and a finite set can be counted to the end.",
 "source": "notes"
 },
 {
@@ -338,13 +338,13 @@
 {
 "q": "In a graduating class of 90 students, 50 studied mathematics, 60 studied history, and 25 studied both. One student is chosen at random. What is the probability that the student studied history but not mathematics?",
 "options": [
-"5/18",
-"7/18",
-"2/3",
-"1/18"
+"$5/18$",
+"$7/18$",
+"$2/3$",
+"$1/18$"
 ],
 "answer": 1,
-"explanation": "History only = 60 - 25 = 35, so the probability is 35/90 = 7/18. Check the regions: math only 25, history only 35, both 25, and neither 90 - (50 + 60 - 25) = 5, which total 90. The value 5/18 is 25/90 (math only or both), 2/3 is 60/90 (all history students, including those who also took math), and 1/18 is 5/90 (neither).",
+"explanation": "History only = $60 - 25 = 35$, so the probability is $35/90 = 7/18$. Check the regions: math only 25, history only 35, both 25, and neither $90 - (50 + 60 - 25) = 5$, which total 90. The value $5/18$ is $25/90$ (math only or both), $2/3$ is $60/90$ (all history students, including those who also took math), and $1/18$ is $5/90$ (neither).",
 "source": "notes"
 },
 {

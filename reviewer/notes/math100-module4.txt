@@ -33,10 +33,10 @@ EASIER: Hard does not mean problem. A long, difficult computation can still be a
 
 EXAMPLE: AN EXERCISE VERSUS A PROBLEM
 Added example: Compare the two tasks below.
-⚙ Task A: Solve 2x + 6 = 14 right after learning how to solve linear equations.
-⚙ Step 1: Subtract 6 from both sides: 2x + 6 - 6 = 14 - 6, so 2x = 8.
-⚙ Step 2: Divide both sides by 2: 2x/2 = 8/2, so x = 4.
-⚙ Check: 2*4 + 6 = 8 + 6 = 14, which matches the right side.
+⚙ Task A: Solve $2x + 6 = 14$ right after learning how to solve linear equations.
+⚙ Step 1: Subtract 6 from both sides: $2x + 6 - 6 = 14 - 6$, so $2x = 8$.
+⚙ Step 2: Divide both sides by 2: $2x/2 = 8/2$, so $x = 4$.
+⚙ Check: $2 \cdot 4 + 6 = 8 + 6 = 14$, which matches the right side.
 ⚙ Task A is an exercise, because the method is known and every step is clear from the start.
 ⚙ Task B: Place the digits 1, 2, 3, 4, and 5 in a plus-shaped figure so that the sums across and down are the same (this is Prb-2 below).
 ⚙ Task B is a problem, because no single known technique tells you where to start. You must investigate first.
@@ -91,7 +91,7 @@ Construct a table: organize the information in rows and columns so patterns and 
 Experiment / Identify all possibilities: try the cases in an organized way until you have found every option.
 Guess and check: make a sensible guess, test it, and use the result to make a better guess.
 Work backward: start from the end result and undo the steps in reverse order.
-Write an open sentence: turn the problem into a math sentence with a letter or blank, such as 2x + 6 = 14. It becomes true or false once the blank is filled in.
+Write an open sentence: turn the problem into a math sentence with a letter or blank, such as $2x + 6 = 14$. It becomes true or false once the blank is filled in.
 Solve a simpler or similar problem: try smaller numbers or an easier version to find the idea, then return to the real problem.
 Change your point of view / logical reasoning: look at the problem from another angle, or use logic to rule out impossible choices.
 
@@ -157,11 +157,11 @@ From the lecture slides. The problem: Mr. Dong Y. Lhates was 5 minutes late to h
 ⚙ Estimate: 5 minutes is a small part of a 120-minute period (about 1 out of 24), so over 234 days the answer should be roughly 234 divided by 24, which is close to 10 periods.
 ⚙ Step 2 (Plan): The strategy is multiplication and division.
 ⚙ Plan: change 2 hours to minutes, find the total minutes missed, then divide by the length of one period.
-⚙ Step 3 (Do): Change 2 hours to minutes: 2 * 60 = 120 minutes.
-⚙ Total minutes missed: 5 * 234 = 1170 minutes, because 5 * 200 = 1000 and 5 * 34 = 170, and 1000 + 170 = 1170.
-⚙ Number of periods: 1170 / 120 = 9.75, because 120 * 9 = 1080, then 1170 - 1080 = 90, and 90 / 120 = 0.75.
-⚙ Step 4 (Check): Multiply back: 9.75 * 120 = 1080 + 90 = 1170, which matches the total minutes.
-⚙ Second check: each meeting loses 5/120 = 1/24 of a period, and 234/24 = 9.75 because 24 * 9 = 216, then 234 - 216 = 18, and 18/24 = 0.75.
+⚙ Step 3 (Do): Change 2 hours to minutes: $2  \cdot  60 = 120$ minutes.
+⚙ Total minutes missed: $5  \cdot  234 = 1170$ minutes, because $5  \cdot  200 = 1000$ and $5  \cdot  34 = 170$, and $1000 + 170 = 1170$.
+⚙ Number of periods: $1170 / 120 = 9.75$, because $120  \cdot  9 = 1080$, then $1170 - 1080 = 90$, and $90 / 120 = 0.75$.
+⚙ Step 4 (Check): Multiply back: $9.75  \cdot  120 = 1080 + 90 = 1170$, which matches the total minutes.
+⚙ Second check: each meeting loses $5/120 = 1/24$ of a period, and $234/24 = 9.75$ because $24  \cdot  9 = 216$, then $234 - 216 = 18$, and $18/24 = 0.75$.
 ⚙ The answer is close to the estimate of 10, so it makes sense.
 ⚙ Final answer: Mr. Dong Y. Lhates will miss 9.75 math class periods, which is 9 whole periods plus 90 minutes.
 
@@ -170,20 +170,20 @@ From the lecture slides. The problem: Copy the figure and place the digits 1, 2,
 The figure has five circles in a plus shape: one at the top, three in the middle row (left, center, right), and one at the bottom. The center circle belongs to both the row and the column.
 ⚙ Step 1 (See): We must place each digit 1 to 5 exactly once so that the row sum (left + center + right) equals the column sum (top + center + bottom). We must also decide whether more than one solution exists.
 ⚙ Step 2 (Plan): Use guess and check, organized by the digit placed in the center.
-⚙ Step 3 (Do): Try the center as 3. Put 2, 3, 4 across and 1, 3, 5 down. Across: 2 + 3 + 4 = 9. Down: 1 + 3 + 5 = 9. The sums match.
-⚙ Try the center as 1. Put 3, 1, 4 across and 5, 1, 2 down. Across: 3 + 1 + 4 = 8. Down: 5 + 1 + 2 = 8. The sums match.
-⚙ Try the center as 5. Put 1, 5, 4 across and 2, 5, 3 down. Across: 1 + 5 + 4 = 10. Down: 2 + 5 + 3 = 10. The sums match.
+⚙ Step 3 (Do): Try the center as 3. Put 2, 3, 4 across and 1, 3, 5 down. Across: $2 + 3 + 4 = 9$. Down: $1 + 3 + 5 = 9$. The sums match.
+⚙ Try the center as 1. Put 3, 1, 4 across and 5, 1, 2 down. Across: $3 + 1 + 4 = 8$. Down: $5 + 1 + 2 = 8$. The sums match.
+⚙ Try the center as 5. Put 1, 5, 4 across and 2, 5, 3 down. Across: $1 + 5 + 4 = 10$. Down: $2 + 5 + 3 = 10$. The sums match.
 ⚙ Step 4 (Check): Every digit 1 to 5 is used exactly once in each arrangement, and each arrangement has equal sums, so each one is a valid solution.
 ⚙ Final answer: Yes, there is more than one solution. The slides show three with common sums 9, 8, and 10.
 Added example: Find every possible solution of Prb-2 using parity (even or odd) and symmetry.
 ⚙ Step 1: The four outer circles hold the four digits that are not in the center. Let the two row ends add to S and the two column ends add to S, because the row and column sums are equal and share the same center.
-⚙ Step 2: So the four outer digits add to 2 * S, which must be an even number.
-⚙ Step 3: The total of 1 + 2 + 3 + 4 + 5 is 15. The outer digits add to 15 minus the center digit. For this to be even, the center must be odd.
+⚙ Step 2: So the four outer digits add to $2  \cdot  S$, which must be an even number.
+⚙ Step 3: The total of $1 + 2 + 3 + 4 + 5$ is 15. The outer digits add to 15 minus the center digit. For this to be even, the center must be odd.
 ⚙ Step 4: So the center is 1, 3, or 5. A center of 2 fails because the outer digits 1, 3, 4, 5 add to 13, which is odd. A center of 4 fails because the outer digits 1, 2, 3, 5 add to 11, which is odd.
-⚙ Center 1: outer digits 2, 3, 4, 5 add to 14, so S = 7. Pairs adding to 7 are 2 and 5, and 3 and 4. Common sum = 1 + 7 = 8.
-⚙ Center 3: outer digits 1, 2, 4, 5 add to 12, so S = 6. Pairs adding to 6 are 1 and 5, and 2 and 4. Common sum = 3 + 6 = 9.
-⚙ Center 5: outer digits 1, 2, 3, 4 add to 10, so S = 5. Pairs adding to 5 are 1 and 4, and 2 and 3. Common sum = 5 + 5 = 10.
-⚙ Counting: for each valid center, choose which pair goes in the row (2 ways), order that pair left to right (2 ways), and order the other pair top to bottom (2 ways). That gives 2 * 2 * 2 = 8 placements per center.
+⚙ Center 1: outer digits 2, 3, 4, 5 add to 14, so $S = 7$. Pairs adding to 7 are 2 and 5, and 3 and 4. Common sum = $1 + 7 = 8$.
+⚙ Center 3: outer digits 1, 2, 4, 5 add to 12, so $S = 6$. Pairs adding to 6 are 1 and 5, and 2 and 4. Common sum = $3 + 6 = 9$.
+⚙ Center 5: outer digits 1, 2, 3, 4 add to 10, so $S = 5$. Pairs adding to 5 are 1 and 4, and 2 and 3. Common sum = $5 + 5 = 10$.
+⚙ Counting: for each valid center, choose which pair goes in the row (2 ways), order that pair left to right (2 ways), and order the other pair top to bottom (2 ways). That gives $2  \cdot  2  \cdot  2 = 8$ placements per center.
 ⚙ Total: 3 centers * 8 placements = 24 placements if every different placement is counted.
 ⚙ Check: the symmetry of the figure explains the counting, since swapping the row pair and the column pair gives another solution with the same sum.
 
@@ -199,32 +199,32 @@ From the lecture slides. The problem: How many rectangles are there in a figure 
 ⚙ Rectangles that are 5 boxes wide: there are 3.
 ⚙ Rectangles that are 6 boxes wide: there are 2.
 ⚙ Rectangles that are 7 boxes wide: there is 1.
-⚙ Total: 7 + 6 + 5 + 4 + 3 + 2 + 1 = 28, because 7 + 6 = 13, 13 + 5 = 18, 18 + 4 = 22, 22 + 3 = 25, 25 + 2 = 27, and 27 + 1 = 28.
-⚙ Step 4 (Check): The shortcut n(n + 1)/2 with n = 7 gives 7 * 8 / 2 = 56 / 2 = 28, which agrees.
+⚙ Total: $7 + 6 + 5 + 4 + 3 + 2 + 1 = 28$, because $7 + 6 = 13$, $13 + 5 = 18$, $18 + 4 = 22$, $22 + 3 = 25$, $25 + 2 = 27$, and $27 + 1 = 28$.
+⚙ Step 4 (Check): The shortcut n(n + 1)/2 with $n = 7$ gives $7  \cdot  8 / 2 = 56 / 2 = 28$, which agrees.
 ⚙ Final answer: There are 28 rectangles. In the slide drawing the numbers beside the bars go from 7 for the one-box bar down to 1 for the whole-row bar, which is the same counting.
-★ For a row of n equal boxes, the number of rectangles is n + (n - 1) + ... + 2 + 1, which equals n(n + 1)/2.
+★ For a row of n equal boxes, the number of rectangles is n + (n - 1) + ... + $2 + 1$, which equals n(n + 1)/2.
 EASIER: Each possible starting edge and ending edge of a rectangle makes one rectangle. A row of n boxes has n + 1 vertical lines, and choosing 2 of them gives n(n + 1)/2 rectangles.
 Added example: How many rectangles are in a row of 5 boxes?
-⚙ Count by width: 5 + 4 + 3 + 2 + 1 = 15.
-⚙ Check with the shortcut: 5 * 6 / 2 = 30 / 2 = 15. Both methods agree.
+⚙ Count by width: $5 + 4 + 3 + 2 + 1 = 15$.
+⚙ Check with the shortcut: $5  \cdot  6 / 2 = 30 / 2 = 15$. Both methods agree.
 
 EXAMPLE: USE A VARIABLE AND WRITE AN OPEN SENTENCE
 Added example: A notebook and a pencil cost 35 pesos together. The notebook costs 15 pesos more than the pencil. Find each price.
 ⚙ Step 1 (See): We need two prices. Given: the total is 35 and the notebook costs 15 more.
 ⚙ Step 2 (Plan): Let p be the price of the pencil in pesos. Then the notebook costs p + 15.
-⚙ Step 3 (Do): Write the open sentence: p + (p + 15) = 35.
-⚙ Combine like terms: 2p + 15 = 35.
-⚙ Subtract 15 from both sides: 2p = 20.
-⚙ Divide both sides by 2: p = 10.
-⚙ Notebook price: p + 15 = 10 + 15 = 25.
-⚙ Step 4 (Check): 10 + 25 = 35, which matches the total. 25 - 10 = 15, which matches the difference.
+⚙ Step 3 (Do): Write the open sentence: $p + (p + 15) = 35$.
+⚙ Combine like terms: $2p + 15 = 35$.
+⚙ Subtract 15 from both sides: $2p = 20$.
+⚙ Divide both sides by 2: $p = 10$.
+⚙ Notebook price: $p + 15 = 10 + 15 = 25$.
+⚙ Step 4 (Check): $10 + 25 = 35$, which matches the total. $25 - 10 = 15$, which matches the difference.
 ⚙ Final answer: the pencil costs 10 pesos and the notebook costs 25 pesos.
 
 EXAMPLE: WORK BACKWARD
 Added example: I think of a number, multiply it by 3, subtract 4, and get 20. What is my number?
-⚙ Step 1: Undo the last operation. The last step was subtract 4, so add 4: 20 + 4 = 24.
-⚙ Step 2: Undo the first operation. The first step was multiply by 3, so divide by 3: 24 / 3 = 8.
-⚙ Check: Start with 8. Multiply by 3: 8 * 3 = 24. Subtract 4: 24 - 4 = 20, which matches.
+⚙ Step 1: Undo the last operation. The last step was subtract 4, so add 4: $20 + 4 = 24$.
+⚙ Step 2: Undo the first operation. The first step was multiply by 3, so divide by 3: $24 / 3 = 8$.
+⚙ Check: Start with 8. Multiply by 3: $8  \cdot  3 = 24$. Subtract 4: $24 - 4 = 20$, which matches.
 ⚙ Final answer: the number is 8.
 
 EXAMPLE: GUESS AND CHECK
@@ -238,21 +238,21 @@ Added example: Find two whole numbers whose sum is 12 and whose product is 35.
 
 EXAMPLE: LOOK FOR A PATTERN AND CONSTRUCT A TABLE
 Added example: Find the 10th term of the list 3, 7, 11, 15, and so on.
-⚙ Step 1: Build a table with the term number n and the value. n = 1 gives 3, n = 2 gives 7, n = 3 gives 11, n = 4 gives 15.
-⚙ Step 2: Find the differences: 7 - 3 = 4, 11 - 7 = 4, 15 - 11 = 4. The list goes up by 4 each time.
+⚙ Step 1: Build a table with the term number n and the value. $n = 1$ gives 3, $n = 2$ gives 7, $n = 3$ gives 11, $n = 4$ gives 15.
+⚙ Step 2: Find the differences: $7 - 3 = 4$, $11 - 7 = 4$, $15 - 11 = 4$. The list goes up by 4 each time.
 ⚙ Step 3: Write the rule: the nth term is 4n - 1.
-⚙ Check the rule: n = 1 gives 4 * 1 - 1 = 3, and n = 4 gives 4 * 4 - 1 = 15. Both match.
-⚙ Step 4: For n = 10, the term is 4 * 10 - 1 = 39.
-⚙ Second check: starting at 3 and adding 4 nine times gives 3 + 9 * 4 = 3 + 36 = 39.
+⚙ Check the rule: $n = 1$ gives $4  \cdot  1 - 1 = 3$, and $n = 4$ gives $4  \cdot  4 - 1 = 15$. Both match.
+⚙ Step 4: For $n = 10$, the term is $4  \cdot  10 - 1 = 39$.
+⚙ Second check: starting at 3 and adding 4 nine times gives $3 + 9  \cdot  4 = 3 + 36 = 39$.
 ⚙ Final answer: the 10th term is 39.
 
 EXAMPLE: PURSUE PARITY
 Added example: Can five odd numbers add up to 20?
-⚙ Step 1: An odd number plus an odd number is even. For example 3 + 5 = 8.
+⚙ Step 1: An odd number plus an odd number is even. For example $3 + 5 = 8$.
 ⚙ Step 2: So four odd numbers add to an even number, because two pairs of odd numbers each give an even sum, and even + even = even.
 ⚙ Step 3: Adding the fifth odd number to an even sum gives an odd sum.
 ⚙ Step 4: So the sum of any five odd numbers is odd, and 20 is even.
-⚙ Check with a real case: 1 + 3 + 5 + 7 + 9 = 25, which is odd.
+⚙ Check with a real case: $1 + 3 + 5 + 7 + 9 = 25$, which is odd.
 ⚙ Final answer: No, five odd numbers can never add up to 20.
 
 EXAMPLE: ARGUE BY CONTRADICTION
@@ -266,7 +266,7 @@ Added example: Show that there is no largest whole number.
 COMMON MISTAKES
 Confusing an exercise with a problem. An exercise has an obvious path. A problem does not.
 Starting to calculate before understanding what the problem asks. Always do Step 1 first.
-Forgetting to change units. In Problem 1, using 1 hour as 60 minutes instead of using 2 hours as 120 minutes gives 1170 / 60 = 19.5 periods, which is wrong.
+Forgetting to change units. In Problem 1, using 1 hour as 60 minutes instead of using 2 hours as 120 minutes gives $1170 / 60 = 19.5$ periods, which is wrong.
 Stopping as soon as an answer is found. Always do Step 4 and check that the answer makes sense.
 Giving up when the first strategy fails. Switch to another strategy instead.
 Treating a heuristic as a guaranteed method. A heuristic is a helpful guide, not a guarantee.
@@ -289,10 +289,10 @@ Q: How is a mathematical exercise different from a mathematical problem?
 Q: What does the word heuristics mean and what does it refer to?
 ★ It comes from a Greek word meaning find or discover, and it refers to experience-based techniques such as a rule of thumb, an educated guess, an intuitive judgment, or common sense.
 Q: How many class periods are missed if a student is 5 minutes late to every meeting of 2-hour periods over 234 days?
-★ 5 * 234 = 1170 minutes, and 1170 / 120 = 9.75 periods.
+★ $5  \cdot  234 = 1170$ minutes, and $1170 / 120 = 9.75$ periods.
 Q: In the plus-shaped figure with digits 1 to 5, can the center digit be 2?
 ★ No. The outer digits would be 1, 3, 4, 5 with total 13, which is odd and cannot be split into two equal-sum pairs.
 Q: How many rectangles are in a row of 7 boxes?
-★ 7 + 6 + 5 + 4 + 3 + 2 + 1 = 28, which also equals 7 * 8 / 2.
+★ $7 + 6 + 5 + 4 + 3 + 2 + 1 = 28$, which also equals $7  \cdot  8 / 2$.
 Q: What should you do in Step 4 (Look back)?
 ★ Check all steps and calculations and ask whether the answer makes sense, whether all questions were answered, what you learned, and whether another or easier way exists.

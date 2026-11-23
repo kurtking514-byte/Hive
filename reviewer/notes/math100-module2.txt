@@ -94,16 +94,16 @@ EASIER: Sets are like grocery lists where only the items matter. The order you w
 The order in which the elements are listed is unimportant.
 Elements may be repeated in a set definition without increasing the size of the set.
 Normally we do not repeat elements, and we write the elements in ascending order, for example {1, 2, 3, 4}.
-⚙ Rule: A = B exactly when A is a subset of B and B is a subset of A.
+⚙ Rule: $A = B$ exactly when A is a subset of B and B is a subset of A.
 
 EXAMPLE: EQUAL SETS
 ⚙ Let A = {1, 2, 3, 4} and B = {1, 4, 2, 3}.
 ⚙ Step 1: every element of A (1, 2, 3, 4) is in B, so A is a subset of B.
 ⚙ Step 2: every element of B (1, 4, 2, 3) is in A, so B is a subset of A.
-⚙ Answer: A = B and B = A.
+⚙ Answer: $A = B$ and $B = A$.
 ⚙ Let A = {1, 2, 2, 3, 4, 1, 2} and B = {1, 2, 3, 4}.
 ⚙ Step 1: remove repeats from A. The distinct elements are 1, 2, 3, 4, so A = {1, 2, 3, 4}.
-⚙ Step 2: A and B contain the same elements, so A = B.
+⚙ Step 2: A and B contain the same elements, so $A = B$.
 ⚙ Another example: {1, 3, 2, 3, 5, 2} = {1, 3, 2, 5}, and in ascending order this set is {1, 2, 3, 5}.
 ⚙ Also {1, 2, 3, 4} = {2, 3, 1, 4} because order does not matter.
 
@@ -145,9 +145,9 @@ EXAMPLE: EMPTY SETS
 
 THE POWER SET
 ★ The power set of A, written P(A), is the set of all subsets that can be created from A. It includes the empty set and A itself.
-★ If |A| = n, then |P(A)| = 2^n. The cardinality of the power set is 2 to the power of the cardinality of the set.
-EASIER: To build a subset, go through each element and decide "in" or "out". That is 2 choices per element. With n elements the choices multiply: 2 x 2 x ... x 2 (n times) = 2^n.
-⚙ Rule: the number of proper subsets of a set with n elements is 2^n - 1, because we leave out the set itself.
+★ If |A| = n, then |P(A)| = $2^{n}$. The cardinality of the power set is 2 to the power of the cardinality of the set.
+EASIER: To build a subset, go through each element and decide "in" or "out". That is 2 choices per element. With n elements the choices multiply: $2 × 2 × \dots × 2$ (n times) $= 2^{n}$.
+⚙ Rule: the number of proper subsets of a set with n elements is $2^{n} - 1$, because we leave out the set itself.
 ⚙ Rule: always list the empty set and the whole set when you list all subsets.
 
 EXAMPLE: LISTING ALL SUBSETS
@@ -156,25 +156,25 @@ EXAMPLE: LISTING ALL SUBSETS
 ⚙ Step 2: subsets with 1 element: {1}, {2}, {3}.
 ⚙ Step 3: subsets with 2 elements: {1, 2}, {1, 3}, {2, 3}.
 ⚙ Step 4: subset with 3 elements: {1, 2, 3}.
-⚙ Answer: the empty set, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3}. That is 1 + 3 + 3 + 1 = 8 subsets.
-⚙ Check with the formula: |{1, 2, 3}| = 3, so 2^3 = 8. It matches.
+⚙ Answer: the empty set, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3}. That is $1 + 3 + 3 + 1 = 8$ subsets.
+⚙ Check with the formula: |{1, 2, 3}| = 3, so $2^{3} = 8$. It matches.
 ⚙ Notice the empty set is written without brackets around it in the list. The list uses the empty set symbol itself, not {empty set symbol}.
 ⚙ A = {a, b, c} has |A| = 3.
 ⚙ P(A) = {{a, b}, {a, c}, {b, c}, {a}, {b}, {c}, A, the empty set}.
-⚙ |P(A)| = 8, and 2^3 = 8.
+⚙ |P(A)| = 8, and $2^{3} = 8$.
 
 EXAMPLE: HOW SUBSET COUNTS GROW
-⚙ 1 element, {A}: subsets are {A} and the empty set. Total = 2 = 2^1.
-⚙ 2 elements, {A, B}: subsets are {A, B}, {A}, {B}, and the empty set. Total = 4 = 2^2.
-⚙ 3 elements, {A, B, C}: subsets are {A, B, C}, {A, B}, {A, C}, {B, C}, {A}, {B}, {C}, and the empty set. Total = 8 = 2^3.
+⚙ 1 element, {A}: subsets are {A} and the empty set. Total = $2 = 2^{1}$.
+⚙ 2 elements, {A, B}: subsets are {A, B}, {A}, {B}, and the empty set. Total = $4 = 2^{2}$.
+⚙ 3 elements, {A, B, C}: subsets are {A, B, C}, {A, B}, {A, C}, {B, C}, {A}, {B}, {C}, and the empty set. Total = $8 = 2^{3}$.
 ⚙ 4 elements, {A, B, C, D}: the subset with 4 elements is {A, B, C, D}.
 ⚙ The subsets with 3 elements are {A, B, C}, {A, B, D}, {A, C, D}, {B, C, D}. That is 4 subsets.
 ⚙ The subsets with 2 elements are {A, B}, {A, C}, {A, D}, {B, C}, {B, D}, {C, D}. That is 6 subsets.
 ⚙ The subsets with 1 element are {A}, {B}, {C}, {D}. That is 4 subsets.
 ⚙ The subset with 0 elements is the empty set. That is 1 subset.
-⚙ Total = 1 + 4 + 6 + 4 + 1 = 16 = 2^4.
-⚙ The number of possible subsets of a set of size n is 2^n.
-⚙ Added example: a set with 5 elements has 2^5 = 32 subsets, of which 32 - 1 = 31 are proper subsets.
+⚙ Total = $1 + 4 + 6 + 4 + 1 = 16 = 2^{4}$.
+⚙ The number of possible subsets of a set of size n is $2^{n}$.
+⚙ Added example: a set with 5 elements has $2^{5} = 32$ subsets, of which $32 - 1 = 31$ are proper subsets.
 
 SPECIAL SETS
 ★ Special sets: Z = the integers, Z+ = the positive integers, Z- = the negative integers, N = the natural numbers, R = the real numbers, Q = the rational numbers.
@@ -194,24 +194,24 @@ Sets A and B are drawn as circles inside a rectangle, and the rectangle represen
 ⚙ Step 5: write elements of U that belong to no circle outside all the circles.
 
 EXAMPLE: VENN DIAGRAM EXAMPLE 1 (OVERLAPPING SETS)
-⚙ A = {x | x is in Z+ and x <= 8}, so A = {1, 2, 3, 4, 5, 6, 7, 8}.
-⚙ B = {x | x is in Z+, x is even and x <= 10}, so B = {2, 4, 6, 8, 10}.
+⚙ A = {x | x is in Z+ and $x \le  8$}, so A = {1, 2, 3, 4, 5, 6, 7, 8}.
+⚙ B = {x | x is in Z+, x is even and $x \le  10$}, so B = {2, 4, 6, 8, 10}.
 ⚙ Step 1: find the shared elements. 2, 4, 6, 8 are in both A and B. These go in the overlap.
 ⚙ Step 2: A only: 1, 3, 5, 7. B only: 10.
 ⚙ A is not a subset of B because 1 is in A but not in B.
 ⚙ B is not a subset of A because 10 is in B but not in A.
 
 EXAMPLE: VENN DIAGRAM EXAMPLE 2 (ONE SET INSIDE THE OTHER)
-⚙ A = {x | x is in Z+ and x <= 9}, so A = {1, 2, 3, 4, 5, 6, 7, 8, 9}.
-⚙ B = {x | x is in Z+, x is even and x <= 8}, so B = {2, 4, 6, 8}.
+⚙ A = {x | x is in Z+ and $x \le  9$}, so A = {1, 2, 3, 4, 5, 6, 7, 8, 9}.
+⚙ B = {x | x is in Z+, x is even and $x \le  8$}, so B = {2, 4, 6, 8}.
 ⚙ Step 1: check each element of B. 2, 4, 6, 8 are all in A. So B is a subset of A, and since A has 9 elements and B has 4, B is a proper subset of A.
 ⚙ Step 2: A is not a subset of B because 1 is in A but not in B.
 ⚙ A contains B, so A is a proper superset of B.
 ⚙ In the diagram, circle B is drawn inside circle A. Inside B: 2, 4, 6, 8. In A but outside B: 1, 3, 5, 7, 9.
 
 EXAMPLE: VENN DIAGRAM EXAMPLE 3 (DISJOINT SETS)
-⚙ A = {x | x is in Z+, x is even and x <= 10}, so A = {2, 4, 6, 8, 10}.
-⚙ B = {x | x is in Z+, x is odd and x <= 10}, so B = {1, 3, 5, 7, 9}.
+⚙ A = {x | x is in Z+, x is even and $x \le  10$}, so A = {2, 4, 6, 8, 10}.
+⚙ B = {x | x is in Z+, x is odd and $x \le  10$}, so B = {1, 3, 5, 7, 9}.
 ⚙ Step 1: look for shared elements. An even number is never odd, so there are none.
 ⚙ A is not a subset of B and B is not a subset of A. The circles do not overlap, so A and B are disjoint.
 
@@ -241,61 +241,62 @@ EASIER: In a Venn diagram, union shades everything that is in A or B. Intersecti
 
 EXAMPLE: UNION AND INTERSECTION
 ⚙ Let A = {1, 2, 3, 4, 5} and B = {1, 3, 5, 7, 9}.
-⚙ Union: start with A = 1, 2, 3, 4, 5. Add elements of B not already listed: 7 and 9 (1, 3, 5 are already listed).
+⚙ Union: start with $A = 1$, 2, 3, 4, 5. Add elements of B not already listed: 7 and 9 (1, 3, 5 are already listed).
 ⚙ A union B = {1, 2, 3, 4, 5, 7, 9}.
 ⚙ Intersection: check 1 (in B, keep), 2 (not in B), 3 (in B, keep), 4 (not in B), 5 (in B, keep).
 ⚙ A intersect B = {1, 3, 5}.
-⚙ Check with sizes: |A| = 5, |B| = 5, |A union B| = 7 and 5 + 5 - 3 = 7. It matches.
+⚙ Check with sizes: |A| = 5, |B| = 5, |A union B| = 7 and $5 + 5 - 3 = 7$. It matches.
 
 EXAMPLE: COMPLEMENT AND DISJOINT SETS
 ⚙ Let U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10} and A = {1, 2, 3, 4, 5}.
 ⚙ Step 1: check each element of U. 1 to 5 are in A, so leave them out. 6, 7, 8, 9, 10 are not in A, so keep them.
 ⚙ Answer: A' = {6, 7, 8, 9, 10}.
-⚙ Check: |A| + |A'| = 5 + 5 = 10 = |U|.
+⚙ Check: |A| + |A'| = $5 + 5 = 10$ = |U|.
 ⚙ Added example: let A = {2, 4, 6} and B = {1, 3, 5}.
 ⚙ Step 1: is 2 in B? No. Is 4 in B? No. Is 6 in B? No.
 ⚙ Answer: A intersect B = the empty set, so A and B are disjoint.
 
 THE COUNTING FORMULA
-★ Counting formula: n(A union B) = n(A) + n(B) - n(A intersect B).
+★ Counting formula: $n(A \cup B) = n(A) + n(B) - n(A \cap B)$.
+EASIER: n( ) means how many elements. ∪ is union (in A or B) and ∩ is intersection (in both). Adding n(A) and n(B) counts the overlap twice, so subtract it once.
 EASIER: If you add n(A) and n(B), the people in both groups are counted twice. Subtract the overlap once to fix it.
 ⚙ Rule: n(neither) = n(U) - n(A union B).
 ⚙ Rule: both = n(A) + n(B) - n(A union B). This is the counting formula rearranged.
-⚙ Rule: only A = n(A) - n(A intersect B).
+⚙ Rule: only $A = n(A) - n$(A intersect B).
 ⚙ Rule for probability (Added): the probability of an event = (number of outcomes in the event) / (total number of outcomes).
 
 EXAMPLE: THE CAT AND DOG SURVEY
 ⚙ 100 people were surveyed. 52 owned a cat, 36 owned a dog, and 24 owned neither. Draw a Venn diagram.
 ⚙ Let U = the 100 people. Let C = cat owners and D = dog owners. The circles overlap because some people could own both.
-⚙ Step 1: people who own a dog or a cat = 100 - 24 = 76, so n(C union D) = 76.
-⚙ Step 2: add the two group sizes: 52 + 36 = 88.
-⚙ Step 3: people who own both = 88 - 76 = 12.
-⚙ Step 4: cat only = 52 - 12 = 40. Dog only = 36 - 12 = 24.
+⚙ Step 1: people who own a dog or a cat = $100 - 24 = 76$, so n(C union D) = 76.
+⚙ Step 2: add the two group sizes: $52 + 36 = 88$.
+⚙ Step 3: people who own both = $88 - 76 = 12$.
+⚙ Step 4: cat only = $52 - 12 = 40$. Dog only = $36 - 12 = 24$.
 ⚙ Diagram numbers: cat only 40, both 12, dog only 24, neither 24 (outside the circles).
-⚙ Check: 40 + 12 + 24 + 24 = 100. Also 52 + 36 - 12 = 76, which matches.
+⚙ Check: $40 + 12 + 24 + 24 = 100$. Also $52 + 36 - 12 = 76$, which matches.
 
 EXAMPLE: VENN DIAGRAM PROBLEM 1 (PHYSICS AND STATISTICS)
 ⚙ In a class of 40 students, 27 like Physics and 25 like Statistics. How many like both? (We assume every student likes at least one of the two subjects.)
 ⚙ Step 1: n(P union S) = 40, because everyone likes at least one.
-⚙ Step 2: both = 27 + 25 - 40 = 52 - 40 = 12.
+⚙ Step 2: both = $27 + 25 - 40 = 52 - 40 = 12$.
 ⚙ Answer: 12 students like both.
-⚙ Check: Physics only = 27 - 12 = 15. Statistics only = 25 - 12 = 13. Total = 15 + 13 + 12 = 40. Correct.
+⚙ Check: Physics only = $27 - 12 = 15$. Statistics only = $25 - 12 = 13$. Total = $15 + 13 + 12 = 40$. Correct.
 
 EXAMPLE: VENN DIAGRAM PROBLEM 2 (MATHEMATICS AND HISTORY)
 ⚙ In a graduating class of 100 students, 54 studied mathematics, 69 studied history, and 35 studied both. How many students took neither subject?
-⚙ Step 1: n(M union H) = 54 + 69 - 35 = 123 - 35 = 88.
-⚙ Step 2: neither = 100 - 88 = 12.
+⚙ Step 1: n(M union H) = $54 + 69 - 35 = 123 - 35 = 88$.
+⚙ Step 2: neither = $100 - 88 = 12$.
 ⚙ Answer: 12 students took neither subject.
-⚙ Check: math only = 54 - 35 = 19. History only = 69 - 35 = 34. Both = 35. Neither = 12. Total = 19 + 34 + 35 + 12 = 100. Correct.
+⚙ Check: math only = $54 - 35 = 19$. History only = $69 - 35 = 34$. Both = 35. Neither = 12. Total = $19 + 34 + 35 + 12 = 100$. Correct.
 
 EXAMPLE: DRILL PROBLEM 3 (PROBABILITY WITH MATH AND HISTORY)
 ⚙ In a graduating class of 100 students, 58 studied math, 70 studied history, and 30 studied both. One student is chosen at random.
-⚙ Step 1: n(M union H) = 58 + 70 - 30 = 128 - 30 = 98.
-⚙ Step 2: math only = 58 - 30 = 28. History only = 70 - 30 = 40. Both = 30. Neither = 100 - 98 = 2.
-⚙ Part a, the student takes math or history: probability = 98/100 = 49/50 = 0.98.
-⚙ Part b, the student takes neither subject: probability = 2/100 = 1/50 = 0.02.
-⚙ Part c, the student takes history but not math: this is history only, probability = 40/100 = 2/5 = 0.40.
-⚙ Check: 28 + 40 + 30 + 2 = 100. Correct.
+⚙ Step 1: n(M union H) = $58 + 70 - 30 = 128 - 30 = 98$.
+⚙ Step 2: math only = $58 - 30 = 28$. History only = $70 - 30 = 40$. Both = 30. Neither = $100 - 98 = 2$.
+⚙ Part a, the student takes math or history: probability = $98/100 = 49/50 = 0.98$.
+⚙ Part b, the student takes neither subject: probability = $2/100 = 1/50 = 0.02$.
+⚙ Part c, the student takes history but not math: this is history only, probability = $40/100 = 2/5 = 0.40$.
+⚙ Check: $28 + 40 + 30 + 2 = 100$. Correct.
 
 DE MORGAN'S LAWS
 ★ De Morgan's first law: (S union T)' = S' intersect T'.
@@ -380,7 +381,7 @@ Thinking the empty set is not a subset of every set. It is a subset of every set
 Mixing up union (or, everything combined) with intersection (and, only the overlap).
 Applying De Morgan's laws without flipping the symbol, for example writing (S union T)' = S' union T'. The correct result is S' intersect T'.
 Forgetting to subtract the overlap in the counting formula, or forgetting to take away the neither group first.
-Writing 2n instead of 2^n for the number of subsets, or forgetting that the number of proper subsets is 2^n - 1.
+Writing 2n instead of $2^{n}$ for the number of subsets, or forgetting that the number of proper subsets is $2^{n} - 1$.
 Treating nor as exclusive or. Nor means neither, and exclusive or means one but not both.
 Treating the word between as including the end numbers. Between 0 and 8 does not include 0 or 8.
 Mixing up Z (integers) with R (real numbers), or thinking 0 is positive.
@@ -397,15 +398,15 @@ For shading questions, label the regions of the diagram and decide region by reg
 
 SELF-TEST
 Q: How many subsets does a set with 6 elements have?
-★ Answer: 2^6 = 64 subsets.
+★ Answer: $2^{6} = 64$ subsets.
 Q: Find |A| for A = {1, 2, 2, 3}.
 ★ Answer: remove the repeat to get {1, 2, 3}, so |A| = 3.
 Q: Is the empty set a subset of {5, 6}?
 ★ Answer: yes, the empty set is a subset of every set.
 Q: What does (S union T)' equal?
 ★ Answer: S' intersect T'.
-Q: If n(A) = 20, n(B) = 15 and n(A intersect B) = 5, find n(A union B).
-★ Answer: 20 + 15 - 5 = 30.
+Q: If $n(A) = 20$, $n(B) = 15$ and n(A intersect B) = 5, find n(A union B).
+★ Answer: $20 + 15 - 5 = 30$.
 Q: Let U = {1, 2, 3, 4, 5, 6} and A = {2, 4, 6}. Find A'.
 ★ Answer: A' = {1, 3, 5}.
 Q: What is the difference between 1 and {1}?
