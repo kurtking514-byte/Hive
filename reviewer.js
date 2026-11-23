@@ -243,7 +243,7 @@ async function renderSubject(subj, lessonId, tab) {
   const box = $('#lessonBody');
   box.innerHTML = '<p class="meta">Loading…</p>';
   try {
-    if (tab === 'notes') box.innerHTML = notesHtml(await getText(`./reviewer/notes/${lesson.id}.txt`), lesson);
+    if (tab === 'notes') { box.innerHTML = notesHtml(await getText(`./reviewer/notes/${lesson.id}.txt`), lesson); renderMath(box); }
     else renderQuiz(await getText(`./reviewer/quiz/${lesson.id}.json`), lesson);
   } catch (e) {
     box.innerHTML = `<p class="meta">${navigator.onLine ? "Couldn't load this lesson." : 'This lesson isn’t saved on your phone yet. Open it once with signal.'}</p>`;
@@ -258,7 +258,8 @@ function kind(t, i) {
   if (t[0] === '★') return 'def';
   if (t[0] === '⚙') return 'prac';
   if (/^EASIER:/i.test(t)) return 'easy';
-  if ((t.match(/[A-Za-z]/g) || []).length >= 4 && t === t.toUpperCase() && t.length <= 100) return 'h';
+  const words = t.replace(MATH, '');           // math like $a_n$ doesn't stop a line from being a heading
+  if ((words.match(/[A-Za-z]/g) || []).length >= 4 && words === words.toUpperCase() && t.length <= 100) return 'h';
   if (/^\d+\.\s/.test(t) && t.length <= 70 && !/[.:;]$/.test(t)) return 'h';
   return 'p';
 }
@@ -269,11 +270,11 @@ function notesHtml(text, lesson) {
     if (k === 'skip') return;
     if (k === 'sp') { if (!lastSp) h += '<div class="sp"></div>'; lastSp = true; return; }
     lastSp = false;
-    if (k === 'h') h += `<h3 class="n-h">${esc(t)}</h3>`;
-    else if (k === 'def') h += `<p class="n-def">${esc(t.replace(/^★\s*/, ''))}</p>`;
-    else if (k === 'prac') h += `<p class="n-prac">${esc(t.replace(/^⚙\s*/, ''))}</p>`;
-    else if (k === 'easy') h += `<p class="n-easy"><b>Easier:</b> ${esc(t.replace(/^EASIER:\s*/i, ''))}</p>`;
-    else h += `<p>${esc(t)}</p>`;
+    if (k === 'h') h += `<h3 class="n-h">${txt(t)}</h3>`;
+    else if (k === 'def') h += `<p class="n-def">${txt(t.replace(/^★\s*/, ''))}</p>`;
+    else if (k === 'prac') h += `<p class="n-prac">${txt(t.replace(/^⚙\s*/, ''))}</p>`;
+    else if (k === 'easy') h += `<p class="n-easy"><b>Easier:</b> ${txt(t.replace(/^EASIER:\s*/i, ''))}</p>`;
+    else h += `<p>${txt(t)}</p>`;
   });
   return `<article class="notes">${h}</article>` +
     (lesson.quiz ? `<a class="primary hand doodle btn-block" href="#/s/${encodeURIComponent(lesson.subject)}/${encodeURIComponent(lesson.id)}/quiz">Take the quiz</a>` : '');
@@ -307,7 +308,61 @@ const codeBlock = src => {
   return `<pre class="code"><code>${src.replace(/\r\n?/g, '\n').replace(/\n+$/, '').split('\n')
     .map(l => `<span class="ln">${hl(l) || ' '}</span>`).join('')}</code></pre>`;
 };
-const rich = s => esc(s).replace(/`([^`]+)`/g, '<code class="ic">$1</code>');
+const rich = s => withMath(s, x => esc(x).replace(/`([^`]+)`/g, '<code class="ic">$1</code>'));
+
+/* Math: $...$ in notes, questions, options and explanations is drawn by KaTeX (exponents,
+   subscripts, fractions). A $ followed by a space or closed before a digit is left alone,
+   so prices like $15 stay plain text. KaTeX only loads when a lesson has math. */
+const MATH = /\$([^\s$](?:[^$\n]*?[^\s$])?)\$(?!\d)/g;
+function withMath(s, fmt) {
+  s = String(s ?? ''); let out = '', i = 0;
+  for (const m of s.matchAll(MATH)) {
+    /* a stacked fraction that ends the line gets a line of its own */
+    const big = /\\dfrac/.test(m[1]) && !/\w/.test(s.slice(m.index + m[0].length));
+    out += fmt(s.slice(i, m.index)) + `<span class="tex${big ? ' big' : ''}">${esc(m[1])}</span>`; i = m.index + m[0].length;
+  }
+  return out + fmt(s.slice(i));
+}
+const txt = s => withMath(s, esc);
+const KATEX = 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/';
+let katexP = null;
+function loadKatex() {
+  if (window.katex) return Promise.resolve(window.katex);
+  return katexP || (katexP = new Promise((ok, no) => {
+    if (!document.getElementById('katexCss')) {
+      document.head.append(Object.assign(document.createElement('link'), { id: 'katexCss', rel: 'stylesheet', href: KATEX + 'katex.min.css', crossOrigin: 'anonymous' }));
+    }
+    const js = Object.assign(document.createElement('script'), { src: KATEX + 'katex.min.js', crossOrigin: 'anonymous' });
+    js.onload = () => ok(window.katex);
+    js.onerror = () => { katexP = null; js.remove(); no(); };
+    document.head.append(js);
+  }));
+}
+async function renderMath(box) {
+  const els = box.querySelectorAll('.tex:not(.done)'); if (!els.length) return;
+  try {
+    const k = await loadKatex();
+    els.forEach(el => { try { k.render(el.textContent, el, { throwOnError: false, strict: false }); } catch (e) {} el.classList.add('done'); });
+    /* a formula too wide for a phone gets its own line that scrolls sideways (measured once the math fonts are in) */
+    const fit = () => {
+      els.forEach(el => {
+        const room = el.parentElement.clientWidth;
+        if ([...el.querySelectorAll('.base')].some(b => b.getBoundingClientRect().width > room)) el.classList.add('wide');
+        /* shrink it a little to fit when that's enough; past that it scrolls */
+        el.style.fontSize = '';
+        for (let s = 1, i = 0; i < 4 && s > 0.72 && el.scrollWidth > el.clientWidth + 4; i++) {
+          s = Math.max(0.72, s * el.clientWidth / el.scrollWidth * 0.98);
+          el.style.fontSize = s.toFixed(3) + 'em';
+        }
+      });
+      /* quiz options share one size, so a shrunk formula can't point at the answer */
+      const opts = [...box.querySelectorAll('.opt .tex')];
+      const min = Math.min(...opts.map(el => parseFloat(el.style.fontSize) || 1));
+      if (min < 1) opts.forEach(el => { el.style.fontSize = min + 'em'; });
+    };
+    fit(); document.fonts?.ready.then(fit);
+  } catch (e) { els.forEach(el => el.classList.add('done', 'raw')); }   // offline with no copy saved: show the plain text
+}
 
 const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 function quizState(lesson, qs, fresh) {
@@ -341,6 +396,7 @@ function renderQuiz(qs, lesson, fresh) {
     ${answered ? `<div class="explain ${q.picked === item.answer ? 'ok' : 'no'}" role="status"><b>${q.picked === item.answer ? 'Correct!' : 'Not quite.'}</b> ${rich(item.explanation || '')}</div>
       <button type="button" class="primary hand doodle" data-q="next">${q.at + 1 < qs.length ? 'Next question' : 'See my score'}</button>` : ''}
   </div>`;
+  renderMath(box);
   if (answered) box.querySelector('[data-q=next]').focus({ preventScroll: true });
 }
 $('#lessonBody').addEventListener('click', async e => {

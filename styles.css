@@ -401,3 +401,11 @@ code.ic{font:600 .88em ui-monospace,"Cascadia Code",Menlo,Consolas,monospace;bac
 @media (prefers-reduced-motion:reduce){
   /* the course float is part of Hive's character, so it plays even here; it's slow and doesn't spin */
   *:not(.ch-pop button,.ch-trigger,.ch-pop svg path){transition:none!important;animation:none!important}}
+
+/* math drawn by KaTeX: hidden for the moment before it is drawn, plain text if KaTeX can't load */
+.tex:not(.done){visibility:hidden}
+.tex.raw{font:600 .92em ui-monospace,"Cascadia Code",Menlo,Consolas,monospace}
+.tex .katex{font-size:1.08em}
+.q-text .tex .katex{font-size:1em}
+.tex.wide,.tex.big{display:block;overflow-x:auto;overflow-y:hidden;padding:6px 0;scrollbar-width:none}
+.tex.wide::-webkit-scrollbar,.tex.big::-webkit-scrollbar{display:none}

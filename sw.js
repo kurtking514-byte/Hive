@@ -2,7 +2,12 @@
 const CACHE = 'hive-v38';
 const TUS = 'https://cdn.jsdelivr.net/npm/tus-js-client@4.1.0/dist/tus.min.js';
 const FFLATE = 'https://cdn.jsdelivr.net/npm/fflate@0.8.2/umd/index.js';
-const LIBS = [TUS, FFLATE];
+/* KaTeX draws the math in lessons. Saved up front (with the fonts most math uses) so math
+   lessons work offline even if they were never opened with signal. */
+const KATEX = 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/';
+const KATEX_FILES = ['katex.min.js', 'katex.min.css', ...['Main-Regular', 'Main-Bold', 'Math-Italic', 'AMS-Regular', 'Size1-Regular', 'Size2-Regular']
+  .map(f => `fonts/KaTeX_${f}.woff2`)].map(f => KATEX + f);
+const LIBS = [TUS, FFLATE, ...KATEX_FILES];
 /* Fonts and pinned libraries from these hosts are cached the first time they load. */
 const CDN = ['https://cdn.jsdelivr.net', 'https://fonts.googleapis.com', 'https://fonts.gstatic.com'];
 const CORE = ['./', './index.html', './styles.css', './app.js', './config.js', './manifest.webmanifest', './icon.svg', './doodle.js', './autofill.js', './reviewer.js', './pwa.js', './reviewer/lessons.json', './icon-192.png', './apple-touch-icon.png'];
