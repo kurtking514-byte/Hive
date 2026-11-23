@@ -1,0 +1,165 @@
+6.3 Programming Languages
+History, types, syntax and semantics, compiled versus interpreted, and popular languages
+
+WHAT A PROGRAMMING LANGUAGE IS
+★ Programming language: a formal language made of a set of instructions that produce various kinds of output.
+⚙ Programming languages are used to implement algorithms and manipulate data structures, so developers can create software applications, scripts, and systems.
+⚙ They bridge the gap between human logic and machine execution, letting us instruct computers to perform specific tasks.
+★ Syntax: the form of a language, meaning how code must be written to be correctly interpreted.
+★ Semantics: the meaning of a language, which makes sure the code behaves as intended.
+EASIER: Syntax is grammar and spelling. Semantics is what the sentence actually means. "The cat ate the fish" and "The fish ate the cat" both have correct grammar but mean different things.
+Difference: markup languages describe content, style sheet languages describe how it looks, and programming languages perform logic and computations.
+
+HISTORICAL EVOLUTION
+The evolution of programming languages follows advances in computing technology and the need for more efficient and expressive tools.
+★ Machine language: the earliest programming, written in binary code (0s and 1s) that the computer's hardware could execute directly. It was tedious and error-prone.
+★ Assembly language: introduced symbolic representations called mnemonics for machine code instructions, making programming slightly more accessible.
+★ Assembler: the program that translates assembly code into machine code.
+Added example: in assembly, an instruction like MOV AX, 5 means "move the number 5 into register AX". The word MOV is a mnemonic, which is easier to remember than its binary code.
+★ High-level languages: developed to simplify programming by using syntax closer to human language.
+⚙ FORTRAN (1957): designed for scientific and engineering calculations.
+⚙ LISP (1958): one of the earliest functional programming languages, used in artificial intelligence research.
+⚙ COBOL (1959): developed for business data processing.
+★ Structured programming languages:
+⚙ ALGOL (1960): introduced code blocks and structured programming constructs.
+⚙ Pascal (1970): emphasized structured programming and data structuring, widely used in education.
+★ Object-oriented programming (OOP) languages:
+⚙ Smalltalk (1972): pioneered the OOP paradigm.
+⚙ C++ (1985): extended the C language with OOP features.
+⚙ Java (1995): designed for cross-platform compatibility, heavily influenced by C++ but simpler and with automatic memory management.
+★ Modern languages:
+⚙ Python (1991): emphasizes readability and simplicity.
+⚙ Ruby (1995): focuses on simplicity and productivity.
+⚙ JavaScript (1995): integral to web development, enabling dynamic content.
+EASIER: Machine language is speaking to the computer in its own 0s and 1s. Assembly gives each instruction a short nickname. High-level languages let you write almost in English.
+
+TIMELINE OF PROGRAMMING LANGUAGES
+The timeline chart in the lesson groups languages by decade:
+⚙ 1950s: Fortran 1957, Lisp 1958, COBOL 1959.
+⚙ 1960s: ALGOL 60 in 1960, BASIC 1964.
+⚙ 1970s: Pascal 1970, C 1972, Smalltalk 1972, SQL 1974.
+⚙ 1980s: C++ 1980, Objective-C 1986, Perl 1987.
+⚙ 1990s: Python 1990, Java 1995, JavaScript 1995, Ruby 1995, PHP 1995.
+⚙ 2000s: C# 2000, Scala 2004, Go 2009.
+⚙ 2010s: Rust 2010, Dart 2011, TypeScript 2012, Swift 2014.
+⚙ The arrows in the chart show influence: ALGOL 60 led to C and Pascal, C led to C++ and Objective-C, and Java influenced Scala and C#.
+Note: the reading says Python came out in 1991 and C++ in 1985, but the chart shows 1990 and 1980. Python was first released in 1991, after work began in 1989. C++ began as "C with Classes" in 1979, was renamed C++ in 1983, and was released in 1985. Use the reading's dates (1991 and 1985) unless a question points to the chart.
+
+TYPES OF PROGRAMMING LANGUAGES
+★ Low-level languages: closer to machine code, giving fine-grained control over hardware.
+⚙ Machine language: binary code executed directly by the CPU.
+⚙ Assembly language: uses symbolic instructions and needs an assembler to convert it to machine code.
+★ High-level languages: more abstract and easier for humans to read and write.
+⚙ Compiled languages: translated into machine code before execution, such as C and C++.
+⚙ Interpreted languages: executed line by line by an interpreter at runtime, such as Python and Ruby.
+⚙ Hybrid languages: use both compilation and interpretation. Java compiles to bytecode, which the JVM then interprets or just-in-time compiles.
+★ Domain-specific languages (DSLs): designed for specific tasks, such as SQL for database queries and MATLAB for numerical computations.
+Difference: a general-purpose language like Python can build almost anything. A DSL like SQL is made for one kind of job.
+Difference: low-level means close to the hardware and hard for people to read. High-level means close to human language and easy to read.
+
+SYNTAX AND SEMANTICS
+★ Syntax: the set of rules that define which combinations of symbols are correctly structured programs.
+⚙ Variables and data types: variables store data values, and data types specify the kind of data, such as integers or strings.
+⚙ Operators: symbols that perform operations on variables and values, such as +, -, *, and /.
+⚙ Control structures: direct the flow of the program, such as loops and conditionals.
+★ Semantics: the meaning of the syntactical elements and statements.
+⚙ Static semantics: the proper use of language constructs, checked without running the program, such as type checking.
+⚙ Dynamic semantics: defines how and when the parts of a language produce program behavior while it runs.
+Added example: print("Hello" is a syntax error, because the closing parenthesis is missing, so the program cannot run at all.
+Added example: average = (a + b) / 3 for two numbers has correct syntax, but its meaning is wrong. It runs and gives a wrong answer, which is a semantic (logic) error.
+Difference: a syntax error stops the program from running. A semantic error lets it run but makes it do the wrong thing.
+
+EXAMPLE: TRACING A SHORT PROGRAM
+This Python program uses a variable, an operator, and a control structure:
+⚙ x = 4
+⚙ y = x * 3
+⚙ if y > 10:
+⚙     print("big")
+⚙ else:
+⚙     print("small")
+⚙ Step 1: x stores 4, an integer.
+⚙ Step 2: The operator * multiplies: y = 4 × 3 = 12.
+⚙ Step 3: The conditional checks 12 > 10, which is true.
+⚙ Step 4: The program runs the first branch.
+★ Output: big
+⚙ Check: if x were 3, y would be 9, and 9 > 10 is false, so it would print small.
+
+EXAMPLE: TRACING A LOOP
+⚙ total = 0
+⚙ for n in [2, 4, 6]:
+⚙     total = total + n
+⚙ print(total)
+⚙ Step 1: total starts at 0.
+⚙ Step 2: n = 2, so total = 0 + 2 = 2.
+⚙ Step 3: n = 4, so total = 2 + 4 = 6.
+⚙ Step 4: n = 6, so total = 6 + 6 = 12.
+⚙ Step 5: The loop ends and print shows the total.
+★ Output: 12
+⚙ Check: 2 + 4 + 6 = 12.
+
+COMPILED VS INTERPRETED LANGUAGES
+★ Compiled language: source code is translated into machine code by a compiler before execution.
+⚙ Advantages: faster execution and optimization of code.
+⚙ Disadvantages: less flexible during development, and the executables are platform-dependent.
+⚙ Examples: C, C++, Go.
+★ Interpreted language: source code is executed line by line by an interpreter at runtime.
+⚙ Advantages: platform independence, and ease of testing and debugging.
+⚙ Disadvantages: slower execution than compiled code.
+⚙ Examples: Python, Ruby, JavaScript.
+★ Just-in-time (JIT) compilation: a hybrid approach that combines compilation and interpretation by compiling code on the fly during execution.
+⚙ Examples: Java (compiles to bytecode, then the JVM interprets it) and .NET languages.
+EASIER: A compiler is like translating a whole book before anyone reads it, so reading is fast later. An interpreter is like a live translator who translates each sentence as it is spoken, which is slower but lets you change things right away.
+Difference: platform-dependent means a compiled executable made for Windows will not run on a Mac. Platform-independent means the same code runs anywhere the interpreter exists.
+
+EXAMPLE: HOW EACH KIND RUNS A PROGRAM
+⚙ Compiled, Step 1: write the source code in C.
+⚙ Compiled, Step 2: the compiler translates the whole program into machine code.
+⚙ Compiled, Step 3: the resulting executable runs directly, fast, on that platform.
+⚙ Interpreted, Step 1: write the source code in Python.
+⚙ Interpreted, Step 2: the interpreter reads and executes it line by line while the program runs.
+⚙ Hybrid, Step 1: write the source code in Java.
+⚙ Hybrid, Step 2: the Java compiler turns it into bytecode.
+⚙ Hybrid, Step 3: the JVM interprets the bytecode or compiles it just in time on whatever platform it is on.
+
+POPULAR PROGRAMMING LANGUAGES AND THEIR APPLICATIONS
+★ Python: high-level, interpreted, dynamic typing, easy syntax.
+⚙ Python applications: web development (Django, Flask), data science (pandas, NumPy), machine learning (TensorFlow, PyTorch), automation, and scripting.
+★ Java: object-oriented and platform-independent through the Java Virtual Machine (JVM).
+⚙ Java applications: enterprise applications, Android app development, and server-side applications.
+★ JavaScript: high-level, interpreted, event-driven, and supports functional and object-oriented styles.
+⚙ JavaScript applications: client-side web development, server-side development (Node.js), and mobile app development (React Native).
+★ C++: compiled, high-performance, and supports procedural and object-oriented programming.
+⚙ C++ applications: system and software development, game development, and real-time simulations.
+★ C#: object-oriented, developed by Microsoft as part of the .NET framework.
+⚙ C# applications: Windows applications, game development (Unity), and enterprise software.
+Difference: Java and JavaScript are different languages. Java is compiled to bytecode for the JVM; JavaScript is interpreted and mainly runs web pages.
+Added example: JavaScript adds functionality to a web page, such as a button that shows a message: <button onclick="alert('Hello!')">Click me</button>. HTML makes the button, CSS styles it, and JavaScript makes it do something.
+
+COMMON MISTAKES
+⚙ Mixing up assembly and machine language. Machine language is binary; assembly uses mnemonics and needs an assembler.
+⚙ Thinking correct syntax means a correct program. A program can run and still have a semantic error.
+⚙ Listing platform independence as an advantage of compiled languages. It is an advantage of interpreted languages.
+⚙ Mixing up FORTRAN (scientific) and COBOL (business).
+⚙ Calling Java purely compiled or purely interpreted. It is a hybrid: bytecode plus the JVM.
+⚙ Treating Java and JavaScript as the same language.
+
+EXAM TIPS
+⚙ Know the eras in order: machine, assembly, high-level, structured, object-oriented, modern.
+⚙ Know each early language's purpose and year: FORTRAN 1957, LISP 1958, COBOL 1959, ALGOL 1960, Pascal 1970, Smalltalk 1972.
+⚙ Know the advantages, disadvantages, and examples of compiled and interpreted languages.
+⚙ Know which language fits which job: Python for data science and machine learning, Java for Android, JavaScript for the web, C++ for games and systems, C# for Windows and Unity.
+⚙ Be able to trace a short program with variables, operators, a loop, or a conditional.
+
+SELF-TEST
+Q: What translates assembly code into machine code?
+★ An assembler.
+Q: Which language pioneered object-oriented programming?
+★ Smalltalk (1972).
+Q: Is SQL a general-purpose language or a DSL?
+★ A domain-specific language, for database queries.
+Q: Name one advantage and one disadvantage of compiled languages.
+★ Faster execution; executables are platform-dependent.
+Q: What does Java compile its source code into?
+★ Bytecode, which the JVM interprets or compiles just in time.
+Q: A program runs but gives the wrong answer. Is that a syntax or a semantic error?
+★ A semantic error.

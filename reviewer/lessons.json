@@ -608,5 +608,15 @@
   "quiz": 30,
   "course": "BSCS",
   "exam": "Finals"
+ },
+ {
+  "id": "cc1-6.3",
+  "subject": "CC1",
+  "tab": "Lesson 6.3",
+  "title": "Programming Languages",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
  }
 ]
