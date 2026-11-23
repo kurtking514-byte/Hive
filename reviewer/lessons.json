@@ -520,20 +520,20 @@
   "exam": "Finals"
  },
  {
-  "id": "hist100-m2",
+  "id": "hist100-m4",
   "subject": "HIST100",
-  "tab": "Module 2",
-  "title": "Filipino Cultural Heritage",
+  "tab": "Module 3",
+  "title": "One Past but Many Histories",
   "notes": true,
   "quiz": 30,
   "course": "BSCS",
   "exam": "Finals"
  },
  {
-  "id": "hist100-m4",
+  "id": "hist100-m2",
   "subject": "HIST100",
   "tab": "Module 4",
-  "title": "One Past but Many Histories",
+  "title": "Filipino Cultural Heritage",
   "notes": true,
   "quiz": 30,
   "course": "BSCS",
