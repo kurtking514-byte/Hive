@@ -102,7 +102,9 @@ async function renderReview() {
     `<button type="button" role="tab" class="doodle" data-exam="${e}" aria-selected="${e === examSel}">${examLabel(e)}${e === now ? '<i>now</i>' : ''}</button>`).join('');
 
   const ids = [...new Set([...SUBJECTS.map(s => s.id), ...L.map(l => l.subject)])];
-  const visible = ids.map(subjectInfo).filter(s => sc === 'all' || isShared(s) || s.courses.includes(sc));
+  const visible = ids.map(subjectInfo)
+    .filter(s => sc === 'all' || isShared(s) || s.courses.includes(sc))
+    .filter(s => !s.exams || s.exams.includes(examSel));   // e.g. NSTP1 has no Midterm exam
   /* Subjects are cells in a hive: rows nest into each other's gaps, and the shape is
      mirror-symmetric (same rule as the course picker). Subjects with notes come first;
      ones with nothing yet are empty dashed cells that lead to Upload. */
