@@ -628,5 +628,15 @@
   "quiz": 30,
   "course": "BSCS",
   "exam": "Midterm"
+ },
+ {
+  "id": "eng100-speech",
+  "subject": "ENG100",
+  "tab": "Speech Writing",
+  "title": "Speech Writing and Delivery",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
  }
 ]
