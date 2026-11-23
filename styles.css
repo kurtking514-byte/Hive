@@ -358,6 +358,7 @@ button.install-btn:hover{background:var(--honey-fill)}
 .n-easy{background:var(--honey-fill);border-left:4px solid var(--honey);border-radius:0 12px 12px 0;padding:10px 14px}
 .n-easy b{color:var(--honey)}
 .n-prac{border:2px dashed var(--rule);border-radius:12px;padding:10px 14px}
+.n-prac .ind{display:inline-block}
 a.primary,.btn-block{display:block;text-align:center;text-decoration:none}
 .btn-block{margin:22px 0 8px}
 

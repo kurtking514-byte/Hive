@@ -272,7 +272,11 @@ function notesHtml(text, lesson) {
     lastSp = false;
     if (k === 'h') h += `<h3 class="n-h">${txt(t)}</h3>`;
     else if (k === 'def') h += `<p class="n-def">${txt(t.replace(/^★\s*/, ''))}</p>`;
-    else if (k === 'prac') h += `<p class="n-prac">${txt(t.replace(/^⚙\s*/, ''))}</p>`;
+    else if (k === 'prac') {
+      /* spaces after "⚙ " are code indentation (Python blocks, nested tags), so keep them visible */
+      const ind = (t.match(/^⚙ ( +)/) || ['', ''])[1].length;
+      h += `<p class="n-prac">${ind ? `<span class="ind" style="width:${ind / 2}em"></span>` : ''}${txt(t.replace(/^⚙\s*/, ''))}</p>`;
+    }
     else if (k === 'easy') h += `<p class="n-easy"><b>Easier:</b> ${txt(t.replace(/^EASIER:\s*/i, ''))}</p>`;
     else h += `<p>${txt(t)}</p>`;
   });
