@@ -1,0 +1,143 @@
+Module 7 The Math of Money
+Simple interest, compound interest, and how they compare
+
+KEY TERMS
+★ Interest: the "rent" that a borrower pays a lender to use the lender's money.
+EASIER: If you borrow a friend's bike, you might give something back for using it. Interest is what you pay for using someone else's money.
+★ Principal (P): the present value, the amount of money first borrowed or deposited.
+★ Interest rate (r): the percent of the principal charged or earned per year. Always change it to a decimal before using it in a formula (6% becomes 0.06).
+★ Time (t): how long the money is borrowed or saved, in years.
+★ Future value or accumulated value (A): the total amount at the end, principal plus interest.
+★ Simple interest: interest paid only on the original amount deposited, not on past interest.
+★ Compound interest: "interest on interest". The interest is added to the principal, and this new total becomes the principal for the next period, so past interest also earns interest.
+★ Compounding period: how often interest is added to the principal (annually, semi-annually, quarterly, monthly, or daily).
+★ Effective rate of interest: the equivalent simple rate of interest that would give the same amount as the compounding did.
+★ Time value of money: money you have now is worth more than the same amount later, because money you have now can earn interest.
+Difference: simple interest grows by the same amount every year. Compound interest grows by a bigger amount every year, because each year's interest is computed on a bigger total.
+There are two types of interest: simple interest and compound interest.
+
+SIMPLE INTEREST FORMULAS
+★ Simple interest: $I = Prt$
+★ Future value: $A = P + I = P(1 + rt)$
+⚙ I is the amount of interest, P is the principal, r is the yearly rate as a decimal, t is the time in years, and A is the future value.
+EASIER: Prt just means principal times rate times time. Multiply the three, and that is the interest. Add it to the principal to get the total.
+⚙ Months must be changed to years: 4 months is $\frac{4}{12}$ of a year, and 18 months is $\frac{18}{12} = 1.5$ years.
+
+EXAMPLE: SIMPLE INTEREST ON P3000
+P3000 earns simple interest at 6% per year for 2 years. Find the interest and the total.
+⚙ Step 1: $P = 3000$, $r = 0.06$, $t = 2$.
+⚙ Step 2: $I = Prt = 3000 × 0.06 × 2 = 360$
+⚙ Step 3: $A = P + I = 3000 + 360 = 3360$
+★ The interest is P360 and the total after 2 years is P3360.
+⚙ Check with the other formula: $A = 3000(1 + 0.06 × 2) = 3000(1.12) = 3360$.
+
+EXAMPLE: FINDING THE PRINCIPAL
+How much must be in an account to earn P100 simple interest in 4 months at 6.4%?
+⚙ Step 1: $I = 100$, $r = 0.064$, $t = \frac{4}{12}$ year.
+⚙ Step 2: $100 = P × 0.064 × \frac{4}{12}$
+⚙ Step 3: $0.064 × \frac{4}{12} = 0.021333...$, so $P = \dfrac{100}{0.021333...}$
+⚙ Step 4: $P = 4687.50$
+★ You need P4687.50.
+⚙ Check: $4687.50 × 0.064 × \frac{4}{12} = 100$.
+
+EXAMPLE: FINDING THE TIME
+How long must P200 stay in an account at 4% simple interest to earn P10?
+⚙ Step 1: $I = 10$, $P = 200$, $r = 0.04$.
+⚙ Step 2: $10 = 200 × 0.04 × t$, so $10 = 8t$.
+⚙ Step 3: $t = \dfrac{10}{8} = 1.25$
+★ It takes 1.25 years (1 year and 3 months).
+⚙ Check: $200 × 0.04 × 1.25 = 10$.
+
+EXAMPLE: SIMPLE INTEREST FOR 18 MONTHS
+P9500 at 7% simple interest for 18 months (from the pair work).
+⚙ Step 1: $t = \frac{18}{12} = 1.5$ years.
+⚙ Step 2: $I = 9500 × 0.07 × 1.5 = 997.50$
+⚙ Step 3: $A = 9500 + 997.50 = 10497.50$
+★ The interest is P997.50 and the total is P10,497.50.
+
+COMPOUND INTEREST FORMULA
+★ Compound interest: $A = P\left(1 + \dfrac{r}{n}\right)^{nt}$
+⚙ A is the amount accumulated, P is the principal, r is the yearly rate as a decimal, n is the number of times interest is added each year, and t is the number of years.
+EASIER: Divide the yearly rate by n to get the rate for one period. Multiply n by t to count how many periods there are. Then grow the principal by that small rate, that many times.
+The slide labels n as "compoundings per period" and t as "number of periods". When the rate is a yearly rate, n is the number of compoundings per year and t is the number of years.
+★ Compound interest earned: $I = A - P$
+⚙ Annually: $n = 1$. Semi-annually: $n = 2$ (twice a year, every 180 days). Quarterly: $n = 4$ (every 90 days). Monthly: $n = 12$ (every 30 days). Daily: $n = 360$ in the lecture's solutions.
+Note: one slide says daily means 365 times a year and another uses 360. The worked solution uses 360, so follow your teacher. For P1000 at 7% for 10 years, both give P2013.62.
+★ The more compounding periods, the greater the compound interest.
+⚙ To evaluate: first work out $\frac{r}{n}$, add 1, raise to the power nt, then multiply by P. Do not round until the last step.
+
+EXAMPLE: P1000 AT 7% FOR 10 YEARS
+$P = 1000$, $r = 0.07$, $t = 10$. Only n changes.
+⚙ Annually, $n = 1$: $A = 1000(1 + 0.07)^{10} = 1000(1.967151) = 1967.15$
+⚙ Semi-annually, $n = 2$: $A = 1000\left(1 + \frac{0.07}{2}\right)^{20} = 1000(1.035)^{20} = 1989.79$
+⚙ Quarterly, $n = 4$: $A = 1000\left(1 + \frac{0.07}{4}\right)^{40} = 1000(1.0175)^{40} = 2001.60$
+⚙ Daily, $n = 360$: $A = 1000\left(1 + \frac{0.07}{360}\right)^{3600} = 2013.62$
+★ More compounding periods give more money: P1967.15, then P1989.79, then P2001.60, then P2013.62.
+
+EXAMPLE: P500 AT 8% COMPOUNDED QUARTERLY FOR 2 YEARS
+⚙ Step 1: $P = 500$, $r = 0.08$, $n = 4$, $t = 2$.
+⚙ Step 2: $\frac{r}{n} = \frac{0.08}{4} = 0.02$ and $nt = 4 × 2 = 8$.
+⚙ Step 3: $A = 500(1.02)^{8} = 500(1.171659) = 585.83$
+★ The amount is P585.83, so the interest made is $585.83 - 500 = 85.83$.
+
+EFFECTIVE RATE OF INTEREST
+★ The effective rate is found by taking the interest made with compounding and putting it into the simple interest formula, then solving for r.
+⚙ For the P500 example: $I = Prt$ becomes $85.83 = 500 × r × 2$.
+⚙ $85.83 = 1000r$, so $r = 0.08583 = 8.583\%$.
+EASIER: The bank said 8%, but because of compounding you really earned as much as a simple 8.583% would give.
+
+PRACTICE PROBLEMS (TRY THESE)
+⚙ Problem 1: P750 at 6.5% for 5 years compounded annually: $A = 750(1.065)^{5} = 1027.56$
+⚙ Problem 2: P25,000 at 8% for 3 years compounded annually: $A = 25000(1.08)^{3} = 31492.80$
+⚙ Problem 3: P680 at 5.5% for 1.5 years compounded monthly: $A = 680\left(1 + \frac{0.055}{12}\right)^{18} = 738.34$
+⚙ Problem 4: P1500 at 4.5% for 2 years compounded monthly: $A = 1500\left(1 + \frac{0.045}{12}\right)^{24} = 1640.99$
+EASIER: In Problem 3, the exponent is $nt = 12 × 1.5 = 18$. In Problem 4, it is $12 × 2 = 24$.
+⚙ Pair work: P12,000 at 4% compounded quarterly for 5 years: $\frac{0.04}{4} = 0.01$ and $nt = 20$, so $A = 12000(1.01)^{20} = 14642.28$.
+
+SIMPLE VERSUS COMPOUND INTEREST
+P1000 at 7% per year, both kinds side by side.
+⚙ Year 0: simple 1,000.00 and compound 1,000.00
+⚙ Year 1: simple 1,070.00 and compound 1,070.00 (the same after one year)
+⚙ Year 2: simple 1,140.00 and compound 1,144.90
+⚙ Year 3: simple 1,210.00 and compound 1,225.04
+⚙ Year 7: simple 1,490.00 and compound 1,605.78
+⚙ Year 23: simple 2,610.00 and compound 4,740.53
+⚙ Year 30: simple 3,100.00 and compound 7,612.26
+★ Simple interest grows in a straight line, by P70 each year. Compound interest grows faster and faster, like a curve bending upward.
+EASIER: Simple interest after 30 years: $1000(1 + 0.07 × 30) = 3100$. Compound: $1000(1.07)^{30} = 7612.26$. Same rate, more than double the money.
+★ If you are earning, choose compound interest. If you are paying, simple interest costs less.
+★ Time is on your side: the longer you save, the greater the effect of compound interest. But the longer you borrow, the quicker your debts grow.
+"Money makes money, and the money that money makes, makes more money." (Benjamin Franklin)
+"Compound interest is the eighth wonder of the world. He who understands it, earns it ... he who doesn't ... pays it." (attributed to Albert Einstein)
+
+LOANS IN DAILY LIFE
+⚙ Common loans: home loans, education loans, car loans, and business loans.
+⚙ Installment buying is paying for something in parts over time, which usually means paying interest.
+★ A loan's total cost is higher than the principal because the borrower also pays interest for using the lender's money.
+
+EXIT TICKET ANSWERS
+Q: Which formula should be used for P15,000 at 4% compounded quarterly for 2 years? Why?
+★ The compound interest formula, because the interest is compounded quarterly. $A = 15000(1.01)^{8} = 16242.85$.
+Q: In one sentence, why can a loan's total cost be higher than the principal?
+★ Because the borrower pays interest on top of the principal for using the lender's money.
+
+COMMON MISTAKES
+⚙ Using 6 instead of 0.06 for 6%. Always write the rate as a decimal.
+⚙ Using months as years. 4 months is $\frac{4}{12}$ of a year, not 4.
+⚙ Forgetting to divide r by n in compound interest.
+⚙ Using t instead of nt as the exponent.
+⚙ Giving A when the question asks for the interest. Interest is $A - P$.
+⚙ Rounding $1 + \frac{r}{n}$ too early. Keep all the digits until the end.
+
+EXAM TIPS
+⚙ First decide: simple or compound? "Compounded" means use $A = P\left(1 + \frac{r}{n}\right)^{nt}$.
+⚙ Write down P, r, n, and t before you substitute.
+⚙ Check that more compounding periods gave a bigger answer.
+
+SELF-TEST
+Q: Find the simple interest on P5000 at 5% for 3 years.
+★ $I = 5000 × 0.05 × 3 = 750$, so the interest is P750.
+Q: Find A for P2000 at 6% compounded semi-annually for 3 years.
+★ $\frac{0.06}{2} = 0.03$ and $nt = 6$, so $A = 2000(1.03)^{6} = 2388.10$.
+Q: What is n for quarterly compounding?
+★ $n = 4$.

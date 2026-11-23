@@ -590,6 +590,16 @@
   "exam": "Finals"
  },
  {
+  "id": "math100-7",
+  "subject": "MATH100",
+  "tab": "Module 7",
+  "title": "The Math of Money",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
+ },
+ {
   "id": "math100-8",
   "subject": "MATH100",
   "tab": "Module 8",
