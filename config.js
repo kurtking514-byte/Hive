@@ -27,6 +27,7 @@ window.APP_CONFIG = {
     { id: "ENG100", name: "Purposive Communication", courses: "all" },
     { id: "HIST100", name: "Readings in Philippine History", courses: "all" },
     { id: "MATH100", name: "Mathematics in the Modern World", courses: "all" },
+    { id: "NSTP1", name: "National Service Training Program 1", courses: "all" },
     { id: "PATHFIT1", name: "Movement Competency Training", courses: "all" }
     /* Example of a course-only subject:
     , { id: "IT101", name: "Some BSIT-only subject", courses: ["BSIT"] } */
