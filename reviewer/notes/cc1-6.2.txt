@@ -1,0 +1,147 @@
+6.2 Style Sheet Languages
+What CSS is, how its rules are written, how it is linked to HTML, and how to use it well
+
+WHAT A STYLE SHEET LANGUAGE IS
+★ Style sheet language: a computer language used to describe the presentation of structured documents.
+⚙ Markup languages like HTML define the structure and content. Style sheet languages specify how that content should be rendered on different media, such as screens, printers, or speech synthesizers.
+★ CSS (Cascading Style Sheets): the predominant style sheet language used on the web. It lets developers apply styles like colors, fonts, spacing, and layouts to HTML documents.
+⚙ Without CSS, all web pages would appear as unstyled, basic text and images.
+⚙ CSS makes visually engaging and responsive designs that improve user engagement and accessibility.
+EASIER: HTML says "this is a heading". CSS says "make that heading blue, large, and centered".
+Difference: markup (HTML) is the structure and content. A style sheet (CSS) is the presentation, meaning how the content looks.
+
+HISTORICAL EVOLUTION OF CSS
+The need for a style sheet language grew as the web matured and people wanted more pleasing and user-friendly websites.
+★ Early web styling: styling was done directly inside HTML using attributes like font, color, and bgcolor. This quickly became unwieldy as websites grew more complex.
+EASIER: Imagine changing the font of 500 pages by editing every single tag by hand. That is why a separate style language was needed.
+★ Introduction of CSS: Cascading Style Sheets were proposed by Håkon Wium Lie and Bert Bos in 1996. CSS gave a clear separation between content and presentation, making websites easier to maintain and update.
+Note: Håkon Wium Lie first proposed CSS in 1994, and CSS1 became an official W3C standard in 1996. The lesson gives 1996, the year CSS1 was released.
+⚙ CSS1 (1996): introduced basic styling, focusing on fonts, colors, and text attributes.
+⚙ CSS2 (1998): added advanced features like positioning, z-index, and media types.
+⚙ CSS2.1 (2011): refined the specifications of CSS2, correcting errors and ambiguities.
+⚙ CSS3 (2011 to present): introduced modularization, so different features like transitions, animations, and flexbox layouts can be developed independently.
+★ Modularization: splitting CSS into separate modules that are developed and released on their own, instead of one big specification.
+EASIER: CSS1 gave the basics, CSS2 let you place things, CSS2.1 fixed CSS2, and CSS3 broke CSS into separately updated modules.
+The lesson's diagram shows CSS as three rings:
+⚙ CSS1 (center): CSS syntax, cascade, font properties, color and background, text properties, box properties, and pseudo classes.
+⚙ CSS2.1 (middle ring): selectors, media types, box model, visual effects, generated content, tables, and paged media.
+⚙ CSS3 (outer ring): modules such as color level 3, namespaces, selectors level 3, media queries, style attributes, background and borders, multi column, speech, syntax level 3, flexible layout, basic UI, masking, grid layout, transforms, transitions, web animations, and selectors level 4.
+
+STRUCTURE AND SYNTAX OF CSS
+CSS syntax is made of rules that target HTML elements and define how they should be styled.
+★ Selector: identifies which HTML elements the styles apply to. Selectors can target elements by type, class, ID, attribute, or position in the document.
+★ Type selector: selects elements by their tag name, such as h1 or p.
+★ Class selector: selects elements by their class attribute. It starts with a dot, such as .highlight.
+★ ID selector: selects a unique element by its id attribute. It starts with a hash sign, such as #main-header.
+★ Attribute selector: selects elements based on their attributes and attribute values.
+Difference: a class can be shared by many elements, so .highlight can style many paragraphs. An id is unique, so #main-header styles only one element.
+⚙ /* Type selector */
+⚙ h1 { color: blue; }
+⚙ /* Class selector */
+⚙ .highlight { background-color: yellow; }
+⚙ /* ID selector */
+⚙ #main-header { font-size: 24px; }
+Added example: an attribute selector such as a[target="_blank"] { color: green; } colors only the links that open in a new tab.
+★ Declaration: sets a property and its value for the selected elements. The property and value are separated by a colon, and the declaration ends with a semicolon.
+⚙ p { font-family: Arial, sans-serif; line-height: 1.5; }
+⚙ In this rule, font-family and line-height are properties, and Arial, sans-serif and 1.5 are their values.
+★ Ruleset: a selector combined with its declarations to form a complete CSS rule.
+⚙ selector { property: value; }
+⚙ Comments in CSS are written between /* and */, such as /* Additional properties */.
+EASIER: The selector says WHO, the property says WHAT to change, and the value says HOW.
+
+EXAMPLE: WRITING A RULESET
+Make every h2 heading green with a font size of 20px.
+⚙ Step 1: Choose the selector. All h2 elements means a type selector: h2.
+⚙ Step 2: Open curly braces after the selector: h2 {
+⚙ Step 3: Write the first declaration with a colon and a semicolon: color: green;
+⚙ Step 4: Write the second declaration: font-size: 20px;
+⚙ Step 5: Close the braces: }
+★ Answer: h2 { color: green; font-size: 20px; }
+⚙ Check: one selector, two declarations, each with a colon and a semicolon.
+
+EXAMPLE: WHICH RULE WINS (SPECIFICITY)
+The lesson's CSS has three rules:
+⚙ p { color: black; }
+⚙ .special { color: blue; }
+⚙ #unique { color: red; }
+A p element has both class="special" and id="unique". What color is its text?
+⚙ Step 1: All three rules select this element: it is a p, it has class special, and it has id unique.
+⚙ Step 2: The rules conflict, because all three set color.
+⚙ Step 3: The ID selector has the higher specificity, so its rule wins.
+★ Answer: the text is red.
+★ Specificity: how specific a selector is. When rules conflict, the more specific selector wins.
+Added example: from weakest to strongest, the order is type selector, then class selector, then ID selector, then an inline style attribute. If two rules have the same specificity, the one written later wins.
+Added example: for <p class="note" style="color: orange;"> with p { color: black; } and .note { color: green; }, the inline style wins, so the text is orange.
+
+LINKING CSS TO HTML
+CSS can be applied to an HTML document in three main ways.
+★ External stylesheet: the CSS rules go in a separate .css file that is linked to the HTML with a <link> tag inside the <head> section. It is the recommended method for larger websites.
+⚙ <head>
+⚙   <link rel="stylesheet" href="styles.css">
+⚙ </head>
+★ Internal stylesheet: the CSS rules go inside a <style> tag in the <head> of the HTML document. It suits single-page websites or page-level styles.
+⚙ <head>
+⚙   <style>
+⚙     body { background-color: #f0f0f0; }
+⚙   </style>
+⚙ </head>
+★ Inline style: styles are applied directly to an HTML element using the style attribute. It is generally discouraged because of poor separation of concerns and maintainability issues.
+⚙ <p style="color: red;">This is a red paragraph.</p>
+EASIER: External is one shared wardrobe for the whole house. Internal is a closet for one room. Inline is sewing the color onto one shirt.
+Difference: <link> points to a separate file. <style> holds the rules inside the page. The style attribute sits on a single tag.
+⚙ In the link tag, rel="stylesheet" says the linked file is a stylesheet, and href gives the file name.
+
+EXAMPLE: STYLING A WEBSITE WITH AN EXTERNAL STYLESHEET
+A site has 20 pages that must all use a gray background.
+⚙ Step 1: Create a file named styles.css.
+⚙ Step 2: Write the rule in it: body { background-color: #f0f0f0; }
+⚙ Step 3: In the <head> of each page, add <link rel="stylesheet" href="styles.css">.
+⚙ Step 4: To change the color later, edit only styles.css, and all 20 pages change.
+★ Answer: one external stylesheet linked from every page.
+
+APPLICATIONS OF CSS
+⚙ Enhance aesthetics: control colors, fonts, and overall visual themes for appealing websites.
+⚙ Improve user experience: responsive designs that adjust to desktops, tablets, and smartphones.
+⚙ Accessibility: styles that help users with disabilities, such as high-contrast modes or larger fonts.
+⚙ Print styles: define how documents look when printed, using media queries that target the print media type.
+
+BEST PRACTICES IN CSS
+⚙ Organize your styles: group related styles together and comment sections for clarity.
+⚙ Use external stylesheets: keep CSS separate from HTML for reusability and cleaner code.
+⚙ Adopt naming conventions: use consistent class and ID names, such as the BEM (Block, Element, Modifier) methodology, to improve readability and reduce conflicts.
+⚙ Optimize for performance: minimize CSS file size by removing unnecessary code and using tools that compress stylesheets.
+⚙ Test across browsers: make sure styles render correctly in different web browsers and devices.
+⚙ Leverage preprocessors: tools like Sass or LESS let you write more efficient CSS with variables, nesting, and functions.
+★ BEM: a naming convention whose letters stand for Block, Element, Modifier.
+★ Preprocessor: a tool such as Sass or LESS that adds variables, nesting, and functions, then produces normal CSS.
+
+COMMON MISTAKES
+⚙ Forgetting the semicolon between declarations, as in color: blue font-size: 24px; The two declarations run together and fail.
+⚙ Using = instead of a colon, as in color = red. CSS uses a colon.
+⚙ Mixing up the symbols: a dot (.) is for a class and a hash (#) is for an ID.
+⚙ Writing .highlight in CSS but id="highlight" in HTML. A class selector only matches class="highlight".
+⚙ Putting the <link> tag in the <body>. It belongs in the <head>.
+⚙ Styling every element with inline style attributes. This is hard to maintain.
+⚙ Calling CSS a programming language. It is a style sheet language; it describes how content looks.
+
+EXAM TIPS
+⚙ Know the versions: CSS1 1996, CSS2 1998, CSS2.1 2011, CSS3 2011 to present, and what each added.
+⚙ Know who proposed CSS: Håkon Wium Lie and Bert Bos.
+⚙ Know the three linking methods, their tags, and when each is used.
+⚙ Be able to read a rule and name its selector, properties, and values.
+⚙ When rules conflict, the ID selector beats the class selector, which beats the type selector.
+
+SELF-TEST
+Q: What does CSS stand for?
+★ Cascading Style Sheets.
+Q: Which selector starts with a dot?
+★ The class selector.
+Q: Which CSS version added positioning and z-index?
+★ CSS2 (1998).
+Q: Which tag links an external stylesheet, and where does it go?
+★ The <link> tag, inside <head>.
+Q: A p has class="special" and id="unique". Rules give .special blue and #unique red. What color is the text?
+★ Red, because the ID selector is more specific.
+Q: What does BEM stand for?
+★ Block, Element, Modifier.
