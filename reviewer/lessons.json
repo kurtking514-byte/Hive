@@ -132,7 +132,7 @@
  {
   "id": "eng100-lesson1",
   "subject": "ENG100",
-  "tab": "Lesson 1",
+  "tab": "Module 1",
   "title": "Communication Process, Principles, and Ethics",
   "notes": true,
   "quiz": 30,
@@ -142,7 +142,7 @@
  {
   "id": "eng100-lesson2",
   "subject": "ENG100",
-  "tab": "Lesson 2",
+  "tab": "Module 2",
   "title": "Communication and Globalization",
   "notes": true,
   "quiz": 30,
@@ -152,7 +152,7 @@
  {
   "id": "eng100-lesson3",
   "subject": "ENG100",
-  "tab": "Lesson 3",
+  "tab": "Module 3",
   "title": "Local and Global Communication in Multicultural Settings",
   "notes": true,
   "quiz": 30,
@@ -162,7 +162,7 @@
  {
   "id": "eng100-lecture4",
   "subject": "ENG100",
-  "tab": "Lecture 4",
+  "tab": "Module 4",
   "title": "Register and Tone in Spoken and Written Communication",
   "notes": true,
   "quiz": 30,
