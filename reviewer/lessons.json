@@ -618,5 +618,15 @@
   "quiz": 30,
   "course": "BSCS",
   "exam": "Finals"
+ },
+ {
+  "id": "nstp1-m3",
+  "subject": "NSTP1",
+  "tab": "Module 3",
+  "title": "Drug Prevention and Rehabilitation",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Midterm"
  }
 ]
