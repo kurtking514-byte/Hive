@@ -1,0 +1,362 @@
+[
+{
+"q": "A spell-checker scans a document and highlights every word that is not in its dictionary. Which type of computation is this?",
+"options": [
+"Symbolic, because it searches text",
+"Mathematical, because it compares words by value",
+"Input only, because it reads the document",
+"Graphical, because it marks words on the screen"
+],
+"answer": 0,
+"explanation": "Searching and replacing text in a document is the course's example of a symbolic computation. Highlighting is just display, and nothing is being solved numerically.",
+"source": "notes"
+},
+{
+"q": "Which pairing of a task and its type of computation is correct?",
+"options": [
+"Find and replace in a document: mathematical",
+"Playing a video: symbolic",
+"Solving a system of equations: symbolic",
+"Applying a filter to a photo: graphical"
+],
+"answer": 3,
+"explanation": "Image processing and video playback are graphical, equation solving is mathematical, and find and replace is symbolic. The wrong options swap the types.",
+"source": "notes"
+},
+{
+"q": "A thermostat program reads a sensor temperature each second, averages the last three readings, switches the heater on if the average is below the target, and repeats this indefinitely. Which basic instructions does it use?",
+"options": [
+"Input, math, conditional execution, repetition, and output",
+"Math, conditional execution, and repetition only, with no input or output",
+"Input, conditional execution, and output only, with no math or repetition",
+"Input, math, and output only, with no decision or repeated action"
+],
+"answer": 0,
+"explanation": "Reading the sensor is input, averaging is math, comparing with the target is conditional execution, doing it every second is repetition, and switching the heater is output to a device. Dropping any one of these leaves part of the behavior unexplained.",
+"source": "notes"
+},
+{
+"q": "Which statement about the inputs and outputs of an algorithm is correct?",
+"options": [
+"It takes exactly one input and produces exactly one output",
+"It takes zero or more inputs and produces one or more outputs",
+"It takes one or more inputs and produces zero or more outputs",
+"It takes zero or more inputs and produces zero or more outputs"
+],
+"answer": 1,
+"explanation": "Inputs may be absent, but an algorithm with no output produces no result at all, so it needs at least one output. The wrong options reverse or loosen these counts.",
+"source": "notes"
+},
+{
+"q": "Which procedure can still qualify as an algorithm even though it takes no input?",
+"options": [
+"One that waits for the user to type a number and then prints it",
+"One that prints the squares 1, 4, 9, ..., 100 and then stops",
+"One that produces no output and then stops",
+"One that prints the number 1 over and over without ever stopping"
+],
+"answer": 1,
+"explanation": "An algorithm may have zero inputs but must give at least one output and must finish. The last option never terminates and the third produces no output.",
+"source": "notes"
+},
+{
+"q": "A procedure takes a positive integer n and repeatedly subtracts 2 until the value equals 0, then stops. For which input does it fail an algorithm characteristic, and which one?",
+"options": [
+"n = 8, because it never terminates and so is not finite",
+"n = 8, because its steps are ambiguous and so it is not well-defined",
+"n = 7, because its steps are too complex and so it lacks effectiveness",
+"n = 7, because it never terminates and so is not finite"
+],
+"answer": 3,
+"explanation": "For n = 8 the values are 6, 4, 2, 0 and it stops. For n = 7 the values are 5, 3, 1, -1, ... and never equal 0, so the procedure never ends. Each step is simple and precise, so only finiteness fails.",
+"source": "notes"
+},
+{
+"q": "Which instruction would make an algorithm fail the well-defined characteristic?",
+"options": [
+"Add 5 to x",
+"If x is greater than 10, go to step 6",
+"Pick a good number and add it to x",
+"Print the value of x"
+],
+"answer": 2,
+"explanation": "Each step must be precise and unambiguous. 'A good number' requires interpretation. The other instructions are exact.",
+"source": "notes"
+},
+{
+"q": "Which instruction would make an algorithm fail the effectiveness characteristic?",
+"options": [
+"Add 1 to the counter each time the loop body is executed once",
+"Compare the two numbers and report which one is the larger of them",
+"Examine every possible chess game and choose the best move",
+"Print the final result on the screen for the user to read"
+],
+"answer": 2,
+"explanation": "Effectiveness requires steps simple enough to be performed in a reasonable amount of time. Examining every possible chess game is not realistic. The other steps are simple.",
+"source": "notes"
+},
+{
+"q": "Which statement correctly distinguishes the finite characteristic from effectiveness?",
+"options": [
+"Finite is about the steps being unambiguous, while effectiveness is about the algorithm taking zero or more inputs before it starts",
+"Finite is about ending after a limited number of steps, while effectiveness is about each step being simple enough to perform",
+"Finite is about producing at least one output, while effectiveness is about the algorithm ending after a limited number of steps",
+"Finite is about each step being simple enough to perform, while effectiveness is about the algorithm ending after a limited number of steps"
+],
+"answer": 1,
+"explanation": "Finite means a clear beginning and end with a limited number of steps. Effectiveness means each step is doable in reasonable time with a clear purpose. Unambiguity is the well-defined characteristic.",
+"source": "notes"
+},
+{
+"q": "A developer starts writing code immediately without knowing what data will be given or what results must be produced. Which stage of creating an algorithm was skipped?",
+"options": [
+"Requirements gathering",
+"Verification by testing and debugging",
+"Refinement and coding of the program",
+"Analysis of the previous algorithm"
+],
+"answer": 0,
+"explanation": "Requirements gathering specifies the input and the output and builds an understanding of the problem. The developer is already coding, so that stage has not been skipped, and verification and analysis come later.",
+"source": "notes"
+},
+{
+"q": "A team writes a new approach and compares it with their earlier version to see whether it is an improvement. Which stage is this?",
+"options": [
+"Design",
+"Verification",
+"Requirements gathering",
+"Analysis"
+],
+"answer": 3,
+"explanation": "Analysis compares an existing or new algorithm to the previous algorithm. Design is writing the algorithm to meet the requirement, and verification is about proving and testing.",
+"source": "notes"
+},
+{
+"q": "Which of the following is NOT one of the three aspects of verification?",
+"options": [
+"Testing and debugging the program",
+"Requirements gathering",
+"The program aspect of verification",
+"Proving that the algorithm is correct"
+],
+"answer": 1,
+"explanation": "Verification consists of program, proving, and testing and debugging. Requirements gathering is a separate, earlier stage.",
+"source": "notes"
+},
+{
+"q": "A team performs these activities: (P) test and debug, (Q) choose a representation and write the full program, (R) specify the inputs and outputs, (S) write the algorithm, (T) compare it with the previous algorithm. Which order matches the stages of creating an algorithm?",
+"options": [
+"R, S, Q, T, P",
+"R, T, S, Q, P",
+"R, S, T, Q, P",
+"S, R, T, Q, P"
+],
+"answer": 2,
+"explanation": "The stages are requirements gathering (R), design (S), analysis (T), refinement and coding (Q), then verification (P). The other orders swap neighboring stages.",
+"source": "notes"
+},
+{
+"q": "A student argues that design and refinement and coding are the same stage. Which response is correct?",
+"options": [
+"They are the same stage, because both of them produce a complete runnable program that satisfies the stated requirement",
+"Design writes an algorithm meeting the requirement, while refinement and coding builds a complete program in a chosen representation",
+"Design compares an algorithm with a previous one, while refinement and coding specifies the inputs and outputs of the problem",
+"Design chooses a representation and builds a complete program, while refinement and coding only compares algorithms with earlier ones"
+],
+"answer": 1,
+"explanation": "Design is about writing the algorithm to meet the requirement. Refinement and coding comes after analysis and produces the complete program in a chosen representation. Comparing algorithms is analysis.",
+"source": "notes"
+},
+{
+"q": "In the example algorithm to go to the University of the Cordilleras (steps 1 to 15, with step 5 jumping to step 7 when there is food, and step 12 jumping to step 14 when there is a private vehicle), how many numbered steps are executed by a student who has food and a private vehicle?",
+"options": [
+"15",
+"14",
+"13",
+"12"
+],
+"answer": 2,
+"explanation": "Steps 1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 14, 15 are executed, which is 13. Step 6 (cook breakfast) and step 13 (public transportation) are skipped.",
+"source": "notes"
+},
+{
+"q": "In the same algorithm, step 7 (eat breakfast) can be reached in two ways. Which are they?",
+"options": [
+"From step 12 when there is a private vehicle, or from step 13 after taking public transportation",
+"Directly from step 5 when there is food, or from step 6 after cooking breakfast",
+"From step 4 when the student reaches the kitchen, or from step 8 after brushing teeth",
+"Only from step 6, because step 5 always sends the student to cook"
+],
+"answer": 1,
+"explanation": "Step 5a sends you to step 7 when there is food, and otherwise step 6 runs and then flows into step 7. Step 5 does not always lead to cooking.",
+"source": "notes"
+},
+{
+"q": "A flowchart for an intricate algorithm continues onto a second page, and elsewhere two branches merge back before the same step. Which shape serves both purposes?",
+"options": [
+"An oval used as the start or end of the flowchart",
+"A diamond used as a yes/no decision shape",
+"A small circle or ellipse used as a connector",
+"A parallelogram used as an input or output step"
+],
+"answer": 2,
+"explanation": "Small circles or ellipses are connectors that show a continuation on another page or a junction. Ovals mark the start or end, diamonds are for decisions, and parallelograms are for input or output.",
+"source": "notes"
+},
+{
+"q": "A program written in a compiled language has a syntax error on line 200 of a 300-line source file. What is the expected outcome when the compiler processes it?",
+"options": [
+"An executable file is produced and the error is ignored until the program is run",
+"Lines 1 to 199 run normally and the program fails when line 200 is reached",
+"The compiler translates lines 201 to 300 and skips line 200",
+"The compiler reports the error and produces no executable file, so no line runs"
+],
+"answer": 3,
+"explanation": "A compiler reads the entire source code, checks for errors, and only then translates it into an executable. Running up to the faulty line is how an interpreter behaves.",
+"source": "notes"
+},
+{
+"q": "A student writes: 'Compiled languages are more flexible than interpreted ones because their code is checked before it runs.' Which correction is accurate?",
+"options": [
+"The statement is correct, because checking the code before it runs is exactly what makes a language more flexible to use",
+"Compiled languages have no error checking at all, because only interpreters ever check code for errors before running",
+"Flexibility and error checking are both listed as disadvantages of compiled languages",
+"Checking before running is error checking, a compiled-language advantage, while lack of flexibility is a disadvantage"
+],
+"answer": 3,
+"explanation": "Compiled languages give performance, error checking, and executable files, but have compilation time and lack of flexibility. Flexibility is an advantage of interpreted languages.",
+"source": "notes"
+},
+{
+"q": "A developer wants to share one script with Windows, macOS, and Linux users, each having an interpreter installed, without producing separate builds. Which advantage of interpreted languages does this use?",
+"options": [
+"Executable files",
+"Platform independence",
+"Performance",
+"Error checking before running"
+],
+"answer": 1,
+"explanation": "Platform independence lets the same source run wherever an interpreter exists. Performance and executable files are compiled-language advantages, and interpreted languages are weaker on performance.",
+"source": "notes"
+},
+{
+"q": "A team is building a real-time game engine that needs maximum speed and will ship as a standalone program. Which choice best matches the course material?",
+"options": [
+"A compiled language, for its performance and executable files, accepting longer compilation time",
+"An interpreted language, because it executes line by line and therefore never has any delay before running",
+"An interpreted language, because runtime errors cannot occur in it",
+"A compiled language, because it removes the need for any compilation time"
+],
+"answer": 0,
+"explanation": "Compiled languages offer performance and executable files, at the cost of compilation time and flexibility. Interpreted languages are weaker on performance and can show runtime errors.",
+"source": "notes"
+},
+{
+"q": "Java is listed as a compiled language even though its compiled output is not always machine code. Which part of the definition of a compiled language covers this?",
+"options": [
+"Compiled languages do not require any translation, because the computer can run the source code directly",
+"The source code must be translated line by line while the program is executing, so no compiler is needed",
+"The compiled output must always be machine code for one specific processor, never any kind of intermediate form such as bytecode",
+"Source code may be translated into machine code or an intermediate form, such as bytecode, before execution"
+],
+"answer": 3,
+"explanation": "The definition allows machine code or an intermediate form like bytecode, so Java fits. Line by line execution describes interpreters.",
+"source": "notes"
+},
+{
+"q": "Which comparison of how compilers and interpreters process code is correct?",
+"options": [
+"Neither translates anything, because both run the high-level source code directly on the hardware without conversion",
+"A compiler executes the code one line at a time as it reads it, while an interpreter first produces a complete executable file before anything runs",
+"Both read the entire code, check it for errors, and produce an executable file before running anything at all",
+"A compiler reads everything, checks for errors, and produces an executable file, while an interpreter translates and executes as it goes"
+],
+"answer": 3,
+"explanation": "The compilation process is read, check, translate into an executable. The interpretation process is translate high-level instructions into an intermediate form or machine code and then execute.",
+"source": "notes"
+},
+{
+"q": "Which set contains exactly one compiled language and two interpreted languages?",
+"options": [
+"JavaScript, Ruby, and Python",
+"C, Python, and Ruby",
+"C++, Java, and C",
+"Java, C++, and Python"
+],
+"answer": 1,
+"explanation": "C is compiled, while Python and Ruby are interpreted. Java and C++ are both compiled, JavaScript, Ruby, and Python are all interpreted, and C++, Java, and C are all compiled.",
+"source": "notes"
+},
+{
+"q": "Which statement about programming languages is correct?",
+"options": [
+"They are formal languages with a set of instructions, used to implement algorithms in a form computers can process",
+"They are diagrams made of shapes and arrows that describe the steps and decisions of a process",
+"They can produce only one kind of output, such as text shown on the screen of a computer",
+"They are natural languages with a flexible grammar that computers interpret by guessing the intended meaning of each sentence they receive"
+],
+"answer": 0,
+"explanation": "Programming languages are formal languages comprising instructions that can produce various kinds of output. Diagrams of shapes and arrows are flowcharts.",
+"source": "notes"
+},
+{
+"q": "A manager asks for a report to be emailed every Friday with the week's sales totals, and a developer writes a script that does it. Which aspect of programming does this best show?",
+"options": [
+"An interpreter translating high-level instructions into machine code",
+"The verification stage proving that the finished program is completely correct",
+"A programmer translating a human idea into code that automates a task",
+"A flowchart that makes writing any code unnecessary for the task"
+],
+"answer": 2,
+"explanation": "Programmers write code to solve problems, automate tasks, and create software, translating human ideas into a language computers can execute.",
+"source": "notes"
+},
+{
+"q": "In a flowchart, the steps are: Start; Read a number n; Is n even?; Set total = n * 2; Print total; End. Which assignment of shapes is correct?",
+"options": [
+"Oval, parallelogram, diamond, rectangle, parallelogram, oval",
+"Oval, parallelogram, rectangle, rectangle, parallelogram, oval",
+"Oval, parallelogram, diamond, parallelogram, rectangle, oval",
+"Oval, rectangle, diamond, rectangle, rectangle, oval"
+],
+"answer": 0,
+"explanation": "Start and End are ovals, reading and printing are input and output (parallelograms), the question is a decision (diamond), and the calculation is a process (rectangle). Printing a result is output, not a plain process.",
+"source": "notes"
+},
+{
+"q": "Suppose the arrows are removed from a flowchart but all of its shapes remain. What is lost?",
+"options": [
+"The meaning of each individual shape and its purpose",
+"The decision questions written inside the diamonds",
+"The sequence in which the operations are executed",
+"The labels on the start and end ovals"
+],
+"answer": 2,
+"explanation": "Arrows show the flow of the process and the order of execution. Shapes keep their individual meaning, but without arrows you cannot follow the process from beginning to end.",
+"source": "notes"
+},
+{
+"q": "A team maintains a 400-shape flowchart of an intricate algorithm and spends days redrawing it after every change. Which two limitations of flowcharts does this show?",
+"options": [
+"Documentation and effective analysis",
+"Language specific and visual clarity",
+"Improved communication and complexity",
+"Complexity and updates"
+],
+"answer": 3,
+"explanation": "Large flowcharts become unwieldy (complexity), and every algorithm change forces an update that is time-consuming for intricate diagrams. The other options mix in advantages.",
+"source": "notes"
+},
+{
+"q": "Why can a flowchart not be used instead of the program when actual coding begins?",
+"options": [
+"A compiler cannot run any process that is drawn as a diagram, regardless of the language",
+"It cannot show the order of operations",
+"It is a high-level diagram and may not capture the specifics of a programming language",
+"It cannot represent decisions or conditions"
+],
+"answer": 2,
+"explanation": "Flowcharts are high-level diagrams, so language details needed for actual coding might not be captured. They can show decisions and order perfectly well.",
+"source": "notes"
+}
+]

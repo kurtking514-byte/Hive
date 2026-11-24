@@ -1,0 +1,212 @@
+Lesson 5.0 Functions
+CC2 Introduction to Computer Programming: defining and calling functions, parameters, return values, *args, **kwargs, nested and recursive functions
+
+WHAT FUNCTIONS ARE
+★ Function: organized, reusable, modular code that performs a set of specific actions.
+⚙ Functions simplify coding, prevent redundant (repeated) logic, and make code easier to follow.
+★ Built-in functions: functions Python already has, such as print(), input(), and len().
+★ User-defined functions: functions you create yourself to do more specific jobs.
+EASIER: A function is a named mini-program. You write it once and run it whenever you call its name.
+
+DEFINING A FUNCTION WITH DEF
+★ def statement: the most common way to define a function in Python. It is a single clause compound statement.
+⚙ def function_name(parameters):
+⚙     statement(s)
+★ function_name: the identifier (name) of the function. Running the def statement binds this name to the function object, so it can be called later.
+★ parameters: an optional list of identifiers that get bound to the values supplied as arguments when the function is called. Several parameters are separated by commas.
+★ statement(s): the function body. It is a nonempty sequence of statements executed each time the function is called, so a function body cannot be empty.
+⚙ The colon after the parentheses and the indentation of the body are required.
+Added example: defining a function does not run its body. The body runs only when the function is called.
+
+CALLING A FUNCTION
+⚙ To call a function, type its name followed by parentheses, with any arguments inside.
+⚙ def greeting():
+⚙     print("Hello and Good day!")
+⚙ greeting()     # Outputs Hello and Good day!
+With a parameter, you must give an argument when calling:
+⚙ def greeting_two(name):
+⚙     print("Hello " + name + "!")
+⚙ greeting_two("Jose")     # Outputs Hello Jose!
+A function can be called many times with different arguments:
+⚙ def addNumbers(x, y):
+⚙     print(x+y)
+⚙ addNumbers(7, 11)     # Outputs 18
+⚙ addNumbers(13, 4)     # Outputs 17
+⚙ addNumbers(12, 8)     # Outputs 20
+
+DEFAULT PARAMETER VALUES
+★ Default value: a value given to a parameter in the def line. The function can then be called without an argument for that parameter.
+⚙ def greeting(name="User"):
+⚙     print("Hello " + name + "!")
+⚙ greeting()          # Outputs Hello User!
+⚙ greeting("Ana")     # Outputs Hello Ana!
+⚙ def greeting(section="CITCS"):
+⚙     print("Hello " + section)
+⚙ greeting()          # Outputs Hello CITCS
+⚙ greeting("1A")      # Outputs Hello 1A
+Added example: a parameter with a default must come after parameters without one. def h(a=1, b): is a SyntaxError.
+
+ARGUMENTS AND PARAMETERS
+★ Argument (actual parameter): the actual value or variable passed to a function when it is called.
+★ Parameter (formal parameter): the receiving variable used inside the function.
+⚙ In Python, arguments are passed by assignment: the parameter is assigned the argument's value.
+Difference: the parameter is in the def line (x in def example(x)). The argument is in the call (1 in example(1)).
+Kinds of arguments:
+★ Positional argument: matched to parameters by position. example(1, 2) gives x = 1, y = 2.
+⚙ A variable can be an argument: z = 1, then example(z).
+★ Keyword argument: matched by parameter name. example(x=1, y=2) and example(y=2, x=1) both give x = 1, y = 2, so the order of keyword arguments does not matter.
+⚙ Giving more arguments than parameters is an error: def example(x) called as example(1, 7) raises a TypeError (one parameter, two arguments).
+Added example: positional arguments must come before keyword arguments. example(x=1, 2) is a SyntaxError.
+
+RETURN VALUES
+★ return keyword: sends a value back to the caller. Python functions can return values of any type, and you do not declare a return type.
+⚙ One function can return different types depending on the input.
+⚙ def function_returns(x):
+⚙     if x > 0:
+⚙         return "Number is Positive"
+⚙     elif x < 0:
+⚙         return "Number is Negative"
+⚙     else:
+⚙         return 0
+⚙ print(function_returns(1))     # Prints Number is Positive
+⚙ print(function_returns(-1))    # Prints Number is Negative
+⚙ print(function_returns(0))     # Prints 0
+★ Once Python reaches return, it stops executing the function and gives the value to the caller. Code after return is not executed.
+⚙ def addNumbers(x, y):
+⚙     return x+y
+⚙     print(x*y)      # Not executed, the function already returned
+⚙ print(addNumbers(13, 4))     # Outputs 17
+
+RETURNING NONE AND THE PASS STATEMENT
+★ A function that reaches the end without a return statement always returns None.
+★ pass: a placeholder statement that does nothing. Use it because a function body cannot be empty.
+⚙ def function_none():
+⚙     pass
+⚙ print(function_none())     # Prints None
+Printing versus returning:
+⚙ def addNumbers(x, y):
+⚙     print(x+y)
+⚙ print(addNumbers(13, 4))
+⚙ Output line 1: 17 (printed inside the function)
+⚙ Output line 2: None (the function returned nothing)
+⚙ def addNumbers(x, y):
+⚙     return x+y
+⚙ print(addNumbers(13, 4))     # Outputs 17 only
+Difference: print shows a value on the screen. return hands the value back so it can be stored, printed, or used in another expression.
+
+ARBITRARY NUMBER OF ARGUMENTS (*ARGS)
+★ *args: prefixing a parameter with one asterisk lets the function take zero or more positional arguments. They are collected into a tuple.
+⚙ def multi_args(*args):
+⚙     for i in args:
+⚙         print(i)
+⚙ def example(*x):
+⚙     print(x)
+⚙ example(1, 7)     # Outputs (1, 7)
+Passing a list:
+⚙ sample_list = [5, 8, 10, 12, 15]
+⚙ multi_args(sample_list)      # Outputs [5, 8, 10, 12, 15] (the whole list is one argument)
+⚙ multi_args(*sample_list)     # Outputs 5, 8, 10, 12, 15, each on its own line (the * unpacks the list)
+⚙ You can also pass one element with an index: multi_args(sample_list[0]) prints 5.
+Rules for *args:
+⚙ You cannot give *args a default value: def multi_args(*args=[1,2,3]) is a syntax error.
+⚙ You cannot pass *args by name: multi_args(*args=[1,2,3]) and example(*x = 1) are errors.
+Note: the slide calls multi_args(*args=[1,2,3]) a TypeError. When run in Python it is actually a SyntaxError. Writing multi_args(args=[1,2,3]) without the star is the version that gives a TypeError (unexpected keyword argument).
+Added example: example() with no arguments prints (), an empty tuple.
+
+MUTABILITY AND FUNCTION ARGUMENTS
+★ Mutating a parameter will mutate the argument, if the argument's type is mutable.
+⚙ def sample(x):
+⚙     x[0] = 10
+⚙     print(x)
+⚙ y = [5, 6, 7]
+⚙ sample(y)     # Prints [10, 6, 7]
+⚙ print(y)      # Prints [10, 6, 7], y was changed too
+★ Reassigning the parameter will not reassign the argument.
+⚙ def sample(x):
+⚙     x[0] = 10           # Mutates the list labelled by both x and y
+⚙     x = [20, 30, 40]    # x now labels a different list
+⚙     x[1] = 15           # Mutates x's new list, not y's list
+⚙     print(x)            # Prints [20, 15, 40]
+⚙ y = [5, 6, 7]
+⚙ sample(y)
+⚙ print(y)                # Prints [10, 6, 7]
+★ Immutable types: integers, strings, tuples. All operations make copies.
+★ Mutable types: lists, dictionaries, sets. Operations may or may not mutate.
+EASIER: x and y are two name tags on the same list. Changing the list through x changes what y sees. Moving the x tag to a new list does not move the y tag.
+Added example: def s(t): t = t + "!" leaves w = "hi" unchanged after s(w), because strings are immutable and t was only reassigned.
+
+ARBITRARY KEYWORD ARGUMENTS (**KWARGS)
+★ **kwargs: prefixing a parameter with two asterisks lets the function take any number of keyword arguments. They are collected into a dictionary of key-value pairs.
+⚙ def multi_args(**kwargs):
+⚙     for name, value in kwargs.items():
+⚙         print(name, value)
+⚙ Pass variables directly: multi_args(value1=1, value2=2, value3=3) prints value1 1, value2 2, value3 3, each on its own line.
+⚙ Or pass a dictionary with **. Declare the dictionary first:
+⚙ dictionary_sample = {'data1': 1, 'data2': 2, 'data3': 3}
+⚙ multi_args(**dictionary_sample)     # Prints data1 1, data2 2, data3 3
+⚙ def example(**x):
+⚙     print(x)
+⚙ example(num1 = 1, num2 = 7)     # Prints {'num1': 1, 'num2': 7}
+Difference: *args collects extra positional values into a tuple. **kwargs collects extra name=value pairs into a dictionary.
+
+NESTED FUNCTIONS
+★ Nested function: a function defined inside another function, similar to nested lists or nested if statements.
+⚙ Parameters passed to the outer function can be used by the inner function.
+⚙ def func1(x):
+⚙     def func2():
+⚙         print("Hello " + x + "!")
+⚙     func2()
+⚙ func1("Jim")     # Outputs Hello Jim!
+Added example: func2 can only be called inside func1. Calling func2() from outside gives a NameError.
+
+RECURSION
+★ Recursion: the process of defining something in terms of itself. In Python, it is a function that calls itself.
+★ Recursive function: a function that calls itself.
+★ Base case: the condition where the function stops calling itself (here, number == 1).
+⚙ def factorial(number):
+⚙     if number == 1:
+⚙         return 1
+⚙     else:
+⚙         return number * factorial(number-1)
+⚙ factorial(5)     # Returns 120
+Added example: the steps of factorial(4):
+⚙ factorial(4) = 4 * factorial(3)
+⚙ factorial(3) = 3 * factorial(2)
+⚙ factorial(2) = 2 * factorial(1)
+⚙ factorial(1) = 1 (base case)
+⚙ Back up: 2 * 1 = 2, 3 * 2 = 6, 4 * 6 = 24
+★ factorial(4) returns 24.
+Added example: without a base case, the function calls itself forever until Python raises a RecursionError.
+
+COMMON MISTAKES
+⚙ Writing a function with an empty body. Use pass as a placeholder.
+⚙ Expecting a value from a function that only prints. Without return, it returns None.
+⚙ Putting code after return and expecting it to run.
+⚙ Calling a function with more arguments than parameters (TypeError).
+⚙ Giving *args a default value or passing it by name.
+⚙ Forgetting the * when you want each list item as a separate argument: multi_args(sample_list) passes the whole list as one value.
+⚙ Thinking reassigning a parameter changes the caller's variable. Only mutating a mutable object does.
+⚙ Writing a recursive function with no base case.
+
+EXAM TIPS
+⚙ Know the three parts of def function_name(parameters): statement(s).
+⚙ Argument is the actual parameter (in the call); parameter is the formal parameter (in the def).
+⚙ Trace output line by line: watch for print inside the function plus print of the returned value (17 then None).
+⚙ *args gives a tuple; **kwargs gives a dictionary.
+⚙ Mutable: lists, dictionaries, sets. Immutable: integers, strings, tuples.
+
+SELF-TEST
+Q: What does a function return if it has no return statement?
+★ None.
+Q: What statement can be used as a placeholder for an empty function body?
+★ pass.
+Q: What is the output of example(1, 7) if def example(*x): print(x)?
+★ (1, 7)
+Q: Is example(y=2, x=1) valid for def example(x, y)?
+★ Yes. Keyword arguments can be in any order; x = 1 and y = 2.
+Q: What does factorial(5) return?
+★ 120.
+Q: After y = [5, 6, 7] and a function that sets x[0] = 10 on its parameter, what is y?
+★ [10, 6, 7], because lists are mutable.
+Q: What type does **kwargs collect the arguments into?
+★ A dictionary.

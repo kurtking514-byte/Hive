@@ -728,5 +728,55 @@
   "quiz": 30,
   "course": "BSCS",
   "exam": "Finals"
+ },
+ {
+  "id": "bsit-cc2-1",
+  "subject": "CC2",
+  "tab": "Lesson 1",
+  "title": "Introduction to Programming Languages",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Midterm"
+ },
+ {
+  "id": "bsit-cc2-2",
+  "subject": "CC2",
+  "tab": "Lessons 1.1–2.3",
+  "title": "Python Variables, Data Types, Sequences, I/O and Operators",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Midterm"
+ },
+ {
+  "id": "bsit-cc2-3",
+  "subject": "CC2",
+  "tab": "Lessons 3.0–3.2",
+  "title": "Decision Control Structure",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Midterm"
+ },
+ {
+  "id": "bsit-cc2-4",
+  "subject": "CC2",
+  "tab": "Lesson 4.0",
+  "title": "Iterative Control Structure",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Midterm"
+ },
+ {
+  "id": "bsit-cc2-5",
+  "subject": "CC2",
+  "tab": "Lesson 5.0",
+  "title": "Functions",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Finals"
  }
 ]
