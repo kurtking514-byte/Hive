@@ -778,5 +778,55 @@
   "quiz": 30,
   "course": "BSIT",
   "exam": "Finals"
+ },
+ {
+  "id": "bsit-pathfit1-m1",
+  "subject": "PATHFIT1",
+  "tab": "Module 1",
+  "title": "Fundamental Movement Skills",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Midterm"
+ },
+ {
+  "id": "bsit-pathfit1-m2",
+  "subject": "PATHFIT1",
+  "tab": "Module 2",
+  "title": "Living Well Through Movement: The PE Primer",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Midterm"
+ },
+ {
+  "id": "bsit-pathfit1-m3",
+  "subject": "PATHFIT1",
+  "tab": "Module 3",
+  "title": "Move for Life: Understanding Exercise and the MMFIT Framework",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Midterm"
+ },
+ {
+  "id": "bsit-pathfit1-m4",
+  "subject": "PATHFIT1",
+  "tab": "Module 4",
+  "title": "Everyday Fitness: Aerobic, Strength, and Flexibility Training",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Finals"
+ },
+ {
+  "id": "bsit-pathfit1-m5",
+  "subject": "PATHFIT1",
+  "tab": "Module 5",
+  "title": "Functional Fitness and Tabata Challenge",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Finals"
  }
 ]

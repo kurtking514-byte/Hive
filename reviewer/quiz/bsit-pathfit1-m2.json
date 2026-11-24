@@ -1,0 +1,362 @@
+[
+{
+"q": "At its core, Physical Education is best described as which of the following?",
+"options": [
+"The organization of competitive sports leagues and exercise routines for students who show athletic talent",
+"A health program whose sole purpose is the prevention of disease through diet and body-weight control",
+"The intentional study, practice, and appreciation of human movement as a vehicle for personal growth and lifelong wellness",
+"A state of complete physical, mental, and social well-being rather than merely the absence of disease"
+],
+"answer": 2,
+"explanation": "PE is the intentional study, practice, and appreciation of human movement. It is far more than organized sports or exercise routines, so the first option is wrong. The second option narrows PE to disease prevention. The fourth option is the WHO definition of health, not of PE.",
+"source": "notes"
+},
+{
+"q": "Which set correctly names the four expanded dimensions of Physical Education?",
+"options": [
+"Cognitive, psychomotor, affective, and social",
+"Cognitive, physiological, emotional, and cultural",
+"Psychomotor, spiritual, financial, and social",
+"Cognitive, psychomotor, cultural, and environmental"
+],
+"answer": 0,
+"explanation": "The four expanded dimensions are cognitive (thinking), psychomotor (movement skills), affective (feelings and values), and social (relationships). The other sets contain dimensions that are not part of this classification.",
+"source": "notes"
+},
+{
+"q": "Which definition of health was given by the World Health Organization in 1948?",
+"options": [
+"A set of attributes that relate to the ability to perform physical activities effectively",
+"A state of physical well-being that is limited to the absence of disease and injury",
+"The capacity of a muscle to produce force during a relatively short period of time",
+"A state of complete physical, mental, and social well-being, not merely the absence of disease"
+],
+"answer": 3,
+"explanation": "The WHO defined health as complete physical, mental, and social well-being, not merely the absence of disease. The first option defines fitness, the second wrongly limits health to the absence of disease, and the third defines muscular strength.",
+"source": "notes"
+},
+{
+"q": "Which provision of the 1987 Philippine Constitution directs the State to promote physical education and encourage sports programs, league competitions, and amateur sports?",
+"options": [
+"Article XIV, Section 18",
+"Article XIV, Section 19",
+"Article II, Section 17",
+"Article XIII, Section 19"
+],
+"answer": 1,
+"explanation": "Article XIV, Section 19 is the provision that promotes PE and sports for a healthy and alert citizenry. The other citations point to different provisions of the Constitution.",
+"source": "notes"
+},
+{
+"q": "Exercises done with the intention of improving one's physical health and maintaining a healthy lifestyle belong to which concept?",
+"options": [
+"Health-related fitness",
+"Skill-related fitness",
+"Physical literacy",
+"Body composition"
+],
+"answer": 0,
+"explanation": "Health-related fitness covers exercises aimed at physical health and a healthy lifestyle. Skill-related fitness concerns performance in games and sports. Body composition is only one component of health-related fitness.",
+"source": "notes"
+},
+{
+"q": "Which pairing of a legal basis and its key provision is mismatched?",
+"options": [
+"RA 5708 (Schools Physical Education and Sports Development Act) - mandates an integrated PE and sports program in all schools",
+"RA 10533 (Enhanced Basic Education Act of 2013) - strengthens PE within the K-12 curriculum",
+"UNESCO International Charter of Physical Education and Sport (1978) - promotes national policies to prevent noncommunicable diseases",
+"WHO Global Action Plan on Physical Activity (2018-2030) - promotes national policies for physical activity across all age groups"
+],
+"answer": 2,
+"explanation": "Promoting national policies to prevent noncommunicable diseases and improve mental health describes the WHO Global Action Plan on Physical Activity (2018-2030). The UNESCO Charter (1978) declares PE and sport a fundamental human right. The other three pairings are correct.",
+"source": "notes"
+},
+{
+"q": "Which term refers to the ability of the lungs, heart, and blood vessels to deliver enough oxygen to the cells to meet the needs of long-term physical activity?",
+"options": [
+"Muscular endurance",
+"Cardiovascular endurance",
+"Power",
+"Body composition"
+],
+"answer": 1,
+"explanation": "This is the definition of cardiovascular endurance. Muscular endurance concerns repeated muscle contractions, power combines strength and speed, and body composition describes the proportion of fat, bone, and muscle.",
+"source": "notes"
+},
+{
+"q": "Which sequence lists the Philippine legal bases of PE from the earliest to the most recent?",
+"options": [
+"RA 10533 (2013), RA 5708 (1969), 1987 Constitution, CMO No. 39 (2021)",
+"1987 Constitution, RA 5708 (1969), RA 10533 (2013), CMO No. 39 (2021)",
+"RA 5708 (1969), RA 10533 (2013), 1987 Constitution, CMO No. 39 (2021)",
+"RA 5708 (1969), 1987 Constitution, RA 10533 (2013), CMO No. 39 (2021)"
+],
+"answer": 3,
+"explanation": "The chronological order is RA 5708 (1969), the 1987 Constitution, RA 10533 (2013), and CMO No. 39, s. 2021. The other sequences misplace the 1969 law or the 1987 Constitution.",
+"source": "notes"
+},
+{
+"q": "Which term is defined as the capacity of a muscle to produce force during a relatively short period of time?",
+"options": [
+"Muscular strength",
+"Muscular endurance",
+"Cardiovascular endurance",
+"Flexibility"
+],
+"answer": 0,
+"explanation": "Muscular strength is the capacity to produce force in a relatively short time, such as one heavy lift. Muscular endurance involves many repeated contractions over time.",
+"source": "notes"
+},
+{
+"q": "Which statement comparing health and fitness is NOT true?",
+"options": [
+"Health has a holistic scope that includes emotional, mental, social, and physical well-being, while fitness focuses on physical performance.",
+"The goal of health is enhanced physical performance and endurance, while the goal of fitness is sustainable well-being and disease prevention.",
+"Fitness is usually measured quantitatively, for example by VO2 max, strength tests, and flexibility scores.",
+"Health is often measured qualitatively, for example by mood, energy, and absence of illness."
+],
+"answer": 1,
+"explanation": "The goals are swapped in the second statement. Health aims at sustainable well-being and disease prevention, while fitness aims at enhanced physical performance and endurance. The other statements are accurate.",
+"source": "notes"
+},
+{
+"q": "Which list contains exactly the five health-related fitness components?",
+"options": [
+"Cardiovascular endurance, muscular strength, power, flexibility, body composition",
+"Cardiovascular endurance, muscular strength, muscular endurance, balance, body composition",
+"Cardiovascular endurance, muscular strength, muscular endurance, flexibility, body composition",
+"Speed, agility, flexibility, muscular endurance, body composition"
+],
+"answer": 2,
+"explanation": "The five health-related components are cardiovascular endurance, muscular strength, muscular endurance, flexibility, and body composition. Power, balance, speed, and agility are skill-related components.",
+"source": "notes"
+},
+{
+"q": "Which term refers to the ability of muscles to perform repeated contractions over time?",
+"options": [
+"Muscular strength",
+"Cardiovascular endurance",
+"Flexibility",
+"Muscular endurance"
+],
+"answer": 3,
+"explanation": "Muscular endurance is the ability of muscles to perform repeated contractions over time. Muscular strength is a single maximum force effort over a short time.",
+"source": "notes"
+},
+{
+"q": "A national swimmer has excellent strength and endurance in competition but suffers from chronic stress, poor sleep, and disordered eating. Which description fits this athlete?",
+"options": [
+"Healthy but not fit",
+"Fit but not healthy",
+"Both fit and healthy",
+"Neither fit nor healthy"
+],
+"answer": 1,
+"explanation": "Excellent strength and endurance show fitness, but chronic stress, poor sleep, and disordered eating undermine holistic health. This is the fit-but-not-healthy case.",
+"source": "notes"
+},
+{
+"q": "Physical Education is described as a multidimensional discipline that integrates which four elements?",
+"options": [
+"Movement science, pedagogy, health promotion, and character development",
+"Movement science, nutrition science, competitive training, and sports management",
+"Pedagogy, athletics, recreation, and public relations",
+"Biomechanics, psychology, event management, and character development"
+],
+"answer": 0,
+"explanation": "PE integrates movement science, pedagogy, health promotion, and character development. The other sets include fields that are not part of this definition.",
+"source": "notes"
+},
+{
+"q": "Which list contains exactly the six skill-related fitness components?",
+"options": [
+"Speed, agility, balance, coordination, flexibility, reaction time",
+"Speed, agility, balance, muscular strength, power, reaction time",
+"Speed, agility, balance, coordination, power, reaction time",
+"Speed, agility, coordination, power, reaction time, body composition"
+],
+"answer": 2,
+"explanation": "The six skill-related components are speed, agility, balance, coordination, power, and reaction time. Flexibility, muscular strength, and body composition are health-related components.",
+"source": "notes"
+},
+{
+"q": "Which statement about power is NOT true?",
+"options": [
+"Power is the ability to perform one maximum effort in the shortest possible time.",
+"Strength and speed are the two components that combine to create power.",
+"Power is crucial for explosive movements such as jumping or sprinting.",
+"Power depends mainly on cardiovascular endurance rather than on strength and speed."
+],
+"answer": 3,
+"explanation": "Power combines muscular strength and speed. It does not depend mainly on cardiovascular endurance, which is a separate health-related component.",
+"source": "notes"
+},
+{
+"q": "Which term is defined as the ability of a joint or group of joints to move through their full range of motion without pain or restriction?",
+"options": [
+"Balance",
+"Flexibility",
+"Agility",
+"Coordination"
+],
+"answer": 1,
+"explanation": "This is the definition of flexibility. Balance keeps the body steady, agility is rapid change of body direction, and coordination is using body parts together smoothly.",
+"source": "notes"
+},
+{
+"q": "Which sequence correctly orders the steps for classifying an activity into a fitness component?",
+"options": [
+"Describe what the body is doing; match it to a component definition; decide whether it is health-related or skill-related; check it against the look-alike component",
+"Decide whether it is health-related or skill-related; describe what the body is doing; match it to a component definition; check it against the look-alike component",
+"Match it to a component definition; describe what the body is doing; check it against the look-alike component; decide whether it is health-related or skill-related",
+"Check it against the look-alike component; describe what the body is doing; decide whether it is health-related or skill-related; match it to a component definition"
+],
+"answer": 0,
+"explanation": "You must first describe the activity, then match it to a definition, then decide the group (health-related or skill-related), and finally check against the look-alike component. Skipping or reordering the steps makes classification unreliable.",
+"source": "notes"
+},
+{
+"q": "Which issuance sets the implementation of PATHFIT courses as the new standard for tertiary-level physical education in the Philippines?",
+"options": [
+"RA 10533, the Enhanced Basic Education Act of 2013",
+"RA 5708, the Schools Physical Education and Sports Development Act",
+"Article XIV, Section 19 of the 1987 Constitution",
+"CMO No. 39, s. 2021"
+],
+"answer": 3,
+"explanation": "CMO No. 39, s. 2021 contains the PATHFIT guidelines for college-level PE. RA 10533 concerns K-12, RA 5708 concerns schools in general, and the Constitution gives the broad mandate.",
+"source": "notes"
+},
+{
+"q": "Which definition best describes physical fitness?",
+"options": [
+"A state of complete physical, mental, and social well-being, not merely the absence of disease",
+"The intentional study, practice, and appreciation of human movement",
+"A set of attributes that relate to the ability to perform physical activities effectively",
+"How much of the body is made up of fat, bone, and muscle"
+],
+"answer": 2,
+"explanation": "Fitness is a set of attributes that relate to the ability to perform physical activities effectively. The first option defines health, the second defines PE, and the fourth defines body composition.",
+"source": "notes"
+},
+{
+"q": "Which pair of skill-related component and definition is mismatched?",
+"options": [
+"Speed - moving quickly from one point to another",
+"Reaction time - using different parts of the body together smoothly, efficiently, and under control",
+"Agility - shifting or changing the orientation of the body rapidly from one point to another",
+"Balance - keeping the body in place whether standing still or moving"
+],
+"answer": 1,
+"explanation": "Using different parts of the body together smoothly, efficiently, and under control defines coordination. Reaction time is the rate at which a person reacts to an external stimulus. The other pairs are correct.",
+"source": "notes"
+},
+{
+"q": "A volleyball player sees the opponent's spike leave the hand and immediately moves to receive it, with the outcome decided in a matter of milliseconds. Which skill-related component is mainly demonstrated?",
+"options": [
+"Reaction time",
+"Speed",
+"Agility",
+"Coordination"
+],
+"answer": 0,
+"explanation": "The key feature is the quick response to an external stimulus (the spike), which is reaction time. Speed is quick movement from point to point, agility is changing body direction, and coordination is smooth use of body parts together.",
+"source": "notes"
+},
+{
+"q": "Which term refers to how much of the body is made up of fat, bone, and muscle?",
+"options": [
+"Muscular strength",
+"Flexibility",
+"Cardiovascular endurance",
+"Body composition"
+],
+"answer": 3,
+"explanation": "Body composition describes the proportion of fat, bone, and muscle in the body and reflects nutritional status and physical health. The other components concern force, joint movement, and oxygen delivery.",
+"source": "notes"
+},
+{
+"q": "Which set lists the four reasons Physical Education is important in education?",
+"options": [
+"Supports holistic development, builds lifelong habits, replaces academic subjects, aligns with global and national goals",
+"Promotes competition, builds lifelong habits, promotes equity and inclusion, aligns with global and national goals",
+"Supports holistic development, builds lifelong habits, promotes equity and inclusion, aligns with global and national goals",
+"Supports holistic development, reduces academic workload, builds elite athletes, promotes equity and inclusion"
+],
+"answer": 2,
+"explanation": "The four reasons are supporting holistic development, building lifelong habits, promoting equity and inclusion, and aligning with global and national goals. PE complements academic subjects rather than replacing them, and it does not focus on competition or elite athletes alone.",
+"source": "notes"
+},
+{
+"q": "Which dimension of Physical Education nurtures values such as discipline, resilience, and sportsmanship, and provides a space for emotional regulation, goal-setting, and self-confidence building?",
+"options": [
+"Affective dimension",
+"Cognitive dimension",
+"Psychomotor dimension",
+"Social dimension"
+],
+"answer": 0,
+"explanation": "The affective dimension nurtures values such as discipline, resilience, sportsmanship, and teamwork, and provides space for emotional regulation, goal-setting, and self-confidence building. The cognitive dimension covers anatomy, physiology, biomechanics, and health literacy, the psychomotor dimension covers motor skills and physical competence, and the social dimension covers collaboration, communication, and respect for diversity.",
+"source": "notes"
+},
+{
+"q": "Which of the following is NOT one of the six importance areas of the legal foundations in PE?",
+"options": [
+"Accountability and quality assurance for curriculum standards, teachers, and programs",
+"Replacement of academic subjects with competitive sports training",
+"Sustainability and policy continuity across administrations and reforms",
+"Civic development and nation-building through discipline and teamwork"
+],
+"answer": 1,
+"explanation": "The six areas are institutional legitimacy and curriculum priority; equity, inclusion, and universal access; health promotion and public policy alignment; civic development and nation-building; accountability and quality assurance; and sustainability and policy continuity. Legal foundations elevate PE within the curriculum and do not replace academic subjects.",
+"source": "notes"
+},
+{
+"q": "Which term is defined as the capacity to perform during games and sports, needed to carry out the more technical parts of a wide range of sports?",
+"options": [
+"Health-related fitness",
+"Physical literacy",
+"Skill-related fitness",
+"Psychomotor dimension"
+],
+"answer": 2,
+"explanation": "This is the definition of skill-related fitness, which enhances athletic performance and movement efficiency. Health-related fitness focuses on health and disease prevention.",
+"source": "notes"
+},
+{
+"q": "A student has no illness, good mental health, and balanced meals, but becomes breathless after a short flight of stairs and cannot touch the knees when bending forward. Which description fits this student?",
+"options": [
+"Fit but not healthy",
+"Both fit and healthy",
+"Neither fit nor healthy",
+"Healthy but not fit"
+],
+"answer": 3,
+"explanation": "Good health indicators (no illness, good mental health, balanced nutrition) combined with weak stamina and flexibility describe a person who is healthy but not fit.",
+"source": "notes"
+},
+{
+"q": "Which sequence correctly orders the steps for checking health versus fitness for one person?",
+"options": [
+"Check the fitness indicators; check the health indicators; compare the two results; name the result",
+"Name the result; compare the two results; check the fitness indicators; check the health indicators",
+"Check the health indicators; name the result; check the fitness indicators; compare the two results",
+"Compare the two results; check the fitness indicators; name the result; check the health indicators"
+],
+"answer": 0,
+"explanation": "You must gather both sets of indicators first, then compare them, and only then name the result (fit but not healthy, healthy but not fit, or both). Naming or comparing before gathering the evidence is illogical.",
+"source": "notes"
+},
+{
+"q": "Which term refers to the capacity to shift or change the orientation of the body rapidly from one point to another?",
+"options": [
+"Speed",
+"Agility",
+"Balance",
+"Power"
+],
+"answer": 1,
+"explanation": "Agility is the rapid change of body orientation or direction. Speed is quickness in moving from one point to another, balance is keeping the body steady, and power combines strength and speed.",
+"source": "notes"
+}
+]

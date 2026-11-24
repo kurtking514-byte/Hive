@@ -1,0 +1,362 @@
+[
+{
+"q": "Which statement best defines fundamental movement skills?",
+"options": [
+"Highly specialized techniques performed only by competitive athletes in organized sports",
+"Basic body movements that form the foundation for more complex sport, dance, and daily-life skills",
+"Exercises performed only to improve cardiorespiratory endurance and aerobic capacity",
+"Movements performed exclusively with equipment such as balls, rackets, and bats"
+],
+"answer": 1,
+"explanation": "Fundamental means basic, so fundamental movement skills are the basic movements that serve as the foundation for more complex skills. They are not specialized athlete techniques, not only endurance exercises, and not limited to equipment use.",
+"source": "notes"
+},
+{
+"q": "Which skill group consists of movements done by moving from one place to another?",
+"options": [
+"Locomotor",
+"Non-locomotor",
+"Manipulative",
+"Rhythmic"
+],
+"answer": 0,
+"explanation": "Locomotor skills travel from one place to another. Non-locomotor skills are done stationary, and manipulative skills involve objects. Rhythmic is not one of the three skill groups.",
+"source": "notes"
+},
+{
+"q": "Movements performed while the body stays in one place (stationary) belong to which skill group?",
+"options": [
+"Locomotor",
+"Manipulative",
+"Non-locomotor",
+"Propulsive"
+],
+"answer": 2,
+"explanation": "Non-locomotor skills are done stationary. Locomotor skills involve traveling, and manipulative skills involve objects. Propulsive is not one of the three skill groups.",
+"source": "notes"
+},
+{
+"q": "Movements that include objects to perform a skill are classified as which skill group?",
+"options": [
+"Locomotor",
+"Non-locomotor",
+"Stationary",
+"Manipulative"
+],
+"answer": 3,
+"explanation": "Manipulative skills use objects such as balls. Locomotor skills involve traveling and non-locomotor skills are done stationary. Stationary is not a skill group name.",
+"source": "notes"
+},
+{
+"q": "Which skill is the transfer of weight from one foot to the other while moving forward or backward, with one foot always in contact with the ground?",
+"options": [
+"Running",
+"Walking",
+"Jogging",
+"Galloping"
+],
+"answer": 1,
+"explanation": "This is the definition of walking. Running has a moment when both feet are off the ground, jogging is simply faster than walking, and galloping has both feet leaving the ground.",
+"source": "notes"
+},
+{
+"q": "Which locomotor skill is done by propelling oneself rapidly on foot?",
+"options": [
+"Walking",
+"Jogging",
+"Running",
+"Leaping"
+],
+"answer": 2,
+"explanation": "Running is rapid propulsion on foot. Walking is slower, jogging is faster than walking but slower than running, and leaping has a long flight phase with a landing on the opposite foot.",
+"source": "notes"
+},
+{
+"q": "Which locomotor skill keeps the body low to the ground with a sliding movement, without lifting the belly from the ground?",
+"options": [
+"Crawling",
+"Creeping",
+"Shuffling",
+"Leaping"
+],
+"answer": 0,
+"explanation": "Crawling keeps the belly on the ground. Creeping is on all-fours with the belly lifted, shuffling is a step-and-drag pattern on the feet, and leaping is a long flight with a one-foot take-off.",
+"source": "notes"
+},
+{
+"q": "Moving around on all-fours (hands and feet), either on the knees or on the toes, is called:",
+"options": [
+"Crawling",
+"Galloping",
+"Hopping",
+"Creeping"
+],
+"answer": 3,
+"explanation": "Creeping is all-fours movement with the belly lifted. Crawling keeps the belly on the ground, and galloping and hopping are done on the feet only.",
+"source": "notes"
+},
+{
+"q": "A combination of a step and a hop (step-hop pattern), first on one foot and then on the other, is called:",
+"options": [
+"Galloping",
+"Shuffling",
+"Skipping",
+"Hopping"
+],
+"answer": 2,
+"explanation": "Skipping is the step-hop pattern on alternate feet. Shuffling uses a backward draw instead of a hop, galloping keeps one foot leading, and hopping takes off and lands on the same foot.",
+"source": "notes"
+},
+{
+"q": "Which locomotor skill is similar to skipping but uses a draw (drag) backwards instead of a hop?",
+"options": [
+"Shuffling",
+"Galloping",
+"Leaping",
+"Jogging"
+],
+"answer": 0,
+"explanation": "Shuffling replaces the hop of skipping with a backward drag of the foot on the floor. Galloping and leaping do not follow a step-and-drag pattern, and jogging is a speed between walking and running.",
+"source": "notes"
+},
+{
+"q": "Rotating a body part while the base stays stationary describes which non-locomotor skill?",
+"options": [
+"Turning",
+"Twisting",
+"Swaying",
+"Bending"
+],
+"answer": 1,
+"explanation": "Twisting rotates a body part while the base stays still. Turning is a circular movement of the whole body including the base, swaying shifts weight side to side, and bending moves a joint from straight to curved.",
+"source": "notes"
+},
+{
+"q": "Which non-locomotor skill is moving a body part side to side or forward and back, like a pendulum?",
+"options": [
+"Swaying",
+"Lifting",
+"Stretching",
+"Swinging"
+],
+"answer": 3,
+"explanation": "Swinging is pendulum-like movement of a body part. Swaying is smooth weight shifting from side to side, lifting is elevating a part of the body, and stretching is straightening or extending from the joints.",
+"source": "notes"
+},
+{
+"q": "Which set contains only locomotor skills?",
+"options": [
+"Jogging, galloping, leaping, jumping and landing",
+"Hopping, bending, skipping, shuffling",
+"Walking, swaying, crawling, creeping",
+"Running, twisting, galloping, leaping"
+],
+"answer": 0,
+"explanation": "Jogging, galloping, leaping, and jumping and landing are all locomotor skills. Bending, swaying, and twisting are non-locomotor skills.",
+"source": "notes"
+},
+{
+"q": "Which set contains only non-locomotor skills?",
+"options": [
+"Bending, hopping, lifting, swaying",
+"Twisting, turning, creeping, swinging",
+"Bending, stretching, lifting, turning",
+"Stretching, swaying, shuffling, twisting"
+],
+"answer": 2,
+"explanation": "Bending, stretching, lifting, and turning are all non-locomotor. Hopping, creeping, and shuffling are locomotor skills.",
+"source": "notes"
+},
+{
+"q": "How many movement skills are listed under the locomotor group, counting jumping and landing as one skill?",
+"options": [
+"Nine",
+"Eleven",
+"Seven",
+"Thirteen"
+],
+"answer": 1,
+"explanation": "The locomotor skills are walking, running, jogging, crawling, creeping, hopping, skipping, shuffling, leaping, galloping, and jumping and landing, which makes eleven. Seven is the number of non-locomotor skills.",
+"source": "notes"
+},
+{
+"q": "Which group of skills belongs under sending or propelling objects?",
+"options": [
+"Catching, trapping, throwing, kicking",
+"Dribbling, rolling, striking, volleying",
+"Throwing, catching, kicking, hitting",
+"Throwing, kicking, striking or hitting, volleying"
+],
+"answer": 3,
+"explanation": "The sending or propelling skills are throwing, kicking, striking or hitting, and volleying. Catching and trapping are receiving skills, and dribbling and rolling are continuous control skills.",
+"source": "notes"
+},
+{
+"q": "Which skills fall under receiving and controlling objects?",
+"options": [
+"Catching and trapping",
+"Dribbling and rolling",
+"Throwing and volleying",
+"Kicking and striking"
+],
+"answer": 0,
+"explanation": "Catching and trapping are the receiving and controlling skills. Dribbling and rolling are continuous control skills, while throwing, volleying, kicking, and striking send objects away.",
+"source": "notes"
+},
+{
+"q": "Which skills are classified as continuous control skills?",
+"options": [
+"Catching and trapping",
+"Throwing and kicking",
+"Dribbling (hands or feet) and rolling",
+"Striking and volleying"
+],
+"answer": 2,
+"explanation": "Dribbling with the hands or feet and rolling are continuous control skills. Catching and trapping are receiving skills, and the other pairs are sending skills.",
+"source": "notes"
+},
+{
+"q": "Which sequence correctly describes the guide procedure for skipping?",
+"options": [
+"Hop on the grounded foot, step the other foot forward, then lift the first foot",
+"Step one foot forward and lift the other foot, hop on the foot on the ground, then repeat on the other foot",
+"Step one foot forward, drag the grounded foot backwards, then repeat on the other foot",
+"Take off from both feet, land on one foot, then switch feet"
+],
+"answer": 1,
+"explanation": "Skipping follows step, lift, hop on the grounded foot, then the same on the other foot. Dragging the foot backwards is shuffling, and the other options are not skipping patterns.",
+"source": "notes"
+},
+{
+"q": "Which sequence correctly describes the guide procedure for shuffling?",
+"options": [
+"Step one foot forward and lift the other foot, hop on the foot on the ground, then repeat on the other foot",
+"Lead with one foot, chase its heel with the toes of the back foot, then land on both feet together in a wide stance",
+"Drag the lifted foot backwards in the air, then step the other foot forward, and repeat the same pattern on the other foot",
+"Step one foot forward and lift the other foot, drag the foot on the floor backwards a little distance, then repeat on the other foot"
+],
+"answer": 3,
+"explanation": "Shuffling is step and lift, then drag the grounded foot backwards over a little distance, then repeat on the other foot. The first option is skipping and the second is a faulty galloping description.",
+"source": "notes"
+},
+{
+"q": "Which description correctly gives the foot action of galloping?",
+"options": [
+"One foot leads and the toes of the back foot chase the lead heel; both feet leave the ground and land on the back foot, followed by the lead foot",
+"One foot leads and the back foot chases it; both feet leave the ground and land on the lead foot first, followed by the back foot",
+"The performer takes off from one foot and lands on that same foot",
+"The performer takes off from one foot, stays in the air a long time, and lands on the opposite foot"
+],
+"answer": 0,
+"explanation": "In galloping, the back foot lands first, followed by the lead foot. Landing on the lead foot first reverses the order, hopping lands on the same foot, and leaping lands on the opposite foot after a long flight.",
+"source": "notes"
+},
+{
+"q": "Which description correctly states the proper performance of jumping and landing?",
+"options": [
+"Take off from one foot only and land on the opposite foot with the feet close together",
+"Take off from both feet and land on one foot with a narrow stance",
+"Take off from one or both feet and land on both feet with a shoulder-width base of support",
+"Take off from one foot and land on that same foot with a wide stance"
+],
+"answer": 2,
+"explanation": "Jumping and landing takes off from one or both feet and lands on both feet, with a shoulder-width base of support. The other options describe leaping or hopping, or a wrong stance.",
+"source": "notes"
+},
+{
+"q": "Which statement about walking is NOT true?",
+"options": [
+"Weight is transferred from one foot to the other while moving forward or backward",
+"Both feet leave the ground during each stride",
+"One foot is always in contact with the ground",
+"The arms swing freely in opposite directions"
+],
+"answer": 1,
+"explanation": "In walking, one foot is always in contact with the ground, so both feet never leave the ground together. That happens in running. The other three statements are true.",
+"source": "notes"
+},
+{
+"q": "Which locomotor skill-and-description pair is mismatched?",
+"options": [
+"Hopping: take-off and landing on the same foot",
+"Leaping: take-off on one foot, long flight, landing on the opposite foot",
+"Jogging: faster than walking and slower than running",
+"Galloping: a combination of a step and a hop on alternate feet"
+],
+"answer": 3,
+"explanation": "A combination of a step and a hop on alternate feet is skipping. Galloping is not a hop or a skip. The other three pairs are correct.",
+"source": "notes"
+},
+{
+"q": "Which statement about galloping is NOT true?",
+"options": [
+"It can be performed fast enough to turn into a run",
+"It mimics the rhythm and gait of a horse",
+"The knees are slightly bent during the movement",
+"It is neither a hop nor a skip in form"
+],
+"answer": 0,
+"explanation": "Galloping should never become quick enough for the movement to become a run. The other statements are true: it mimics a horse, the knees are slightly bent, and it is not a hop or a skip.",
+"source": "notes"
+},
+{
+"q": "Which non-locomotor skill-and-description pair is mismatched?",
+"options": [
+"Bending: moving around a joint from a straight to a curved position",
+"Stretching or extending: straightening or extending a body part from the joints",
+"Swaying: moving a body part side to side or forward and back like a pendulum",
+"Lifting or raising: elevating a part of the body, usually the arms and legs"
+],
+"answer": 2,
+"explanation": "Moving a body part like a pendulum is swinging. Swaying is shifting weight smoothly from one side to the other. The other pairs are correct.",
+"source": "notes"
+},
+{
+"q": "Which manipulative skill is incorrectly paired with its subgroup?",
+"options": [
+"Throwing: sending or propelling objects",
+"Trapping: sending or propelling objects",
+"Catching: receiving and controlling objects",
+"Rolling: continuous control skills"
+],
+"answer": 1,
+"explanation": "Trapping belongs to receiving and controlling objects, not sending. Throwing is a sending skill, catching is a receiving skill, and rolling is a continuous control skill.",
+"source": "notes"
+},
+{
+"q": "A student spins her entire body, including her feet, in a circle while staying in one spot. Which non-locomotor skill is this?",
+"options": [
+"Twisting",
+"Swaying",
+"Swinging",
+"Turning"
+],
+"answer": 3,
+"explanation": "Turning is a circular movement of the whole body including the base. Twisting would keep the feet stationary, swaying shifts weight side to side, and swinging moves a body part like a pendulum.",
+"source": "notes"
+},
+{
+"q": "A dancer smoothly shifts her weight from her left foot to her right foot and back without leaving her spot. Which skill is she performing?",
+"options": [
+"Swinging",
+"Swaying",
+"Turning",
+"Bending"
+],
+"answer": 1,
+"explanation": "Smoothly shifting weight from one side to the other is swaying. Swinging moves a body part like a pendulum, turning rotates the whole body including the base, and bending moves a joint from straight to curved.",
+"source": "notes"
+},
+{
+"q": "A learner bounces a basketball repeatedly with one hand while standing in one spot. How is this movement best classified?",
+"options": [
+"Manipulative skill, continuous control (dribbling)",
+"Non-locomotor skill, because the body stays in place",
+"Locomotor skill, because the ball travels",
+"Manipulative skill, sending (throwing)"
+],
+"answer": 0,
+"explanation": "An object is used, so the skill is manipulative, and repeated bouncing is dribbling, a continuous control skill. Staying in place does not make it non-locomotor, because object use takes priority. Throwing is a single sending action.",
+"source": "notes"
+}
+]
