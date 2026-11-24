@@ -1,0 +1,398 @@
+Unit 2 Hardware and Architecture
+Components, the instruction cycle, the memory hierarchy, buses and I/O, storage, accelerators, power, and cooling
+
+UNIT GOALS
+Goal 1: Identify the processor, memory, storage, buses, ports, and I/O.
+Goal 2: Describe how instructions and data move through a basic system.
+Goal 3: Compare closely related hardware terms using stated characteristics.
+Goal 4: Recognize hardware evidence in a device specification.
+
+HARDWARE
+★ Hardware provides the physical resources that software uses to transform data.
+A device still depends on people, procedures, and connectivity, but this unit follows the physical path of data.
+★ Hardware: the electronic, electrical, and mechanical components that input, process, store, output, or communicate represented data.
+EASIER: Hardware is every physical part of a computer, the parts you could touch if you opened it.
+Visible hardware includes the keyboard, display, camera, and ports.
+Hidden hardware usually includes processor cores, registers, buses, storage controllers, and memory cells.
+When you open an application, many parts become active together: storage, RAM, cache, registers, the processor, the display, and the paths that connect them.
+
+ARCHITECTURE AND ORGANIZATION
+★ Architecture: the features of a system that are visible to software; it states what a system can do.
+★ Architecture covers the instruction set, data sizes, addressing, and program-visible registers.
+★ Organization: how the hardware realizes (actually builds and carries out) the architecture.
+★ Organization covers caches, buses, control signals, and the physical implementation.
+Difference: architecture is what software can see and use; organization is how the hardware is built underneath to deliver it.
+EASIER: Architecture is a restaurant's menu (what you can order); organization is the kitchen (how the food actually gets made).
+Added example: processors from different makers can share the same architecture (the same instruction set) but have different organization (different caches and internal design), so the same program can run on both.
+
+FIVE COMPONENT GROUPS
+⚙ Input: captures data or commands.
+⚙ Memory: holds active data and instructions.
+⚙ Processor: controls and transforms.
+⚙ Storage: preserves data over time.
+⚙ Output: presents or acts on results.
+★ Interconnects carry data, addresses, and control signals among the component groups.
+★ Memory holds the instructions that are active right now; storage preserves them after power is removed.
+Difference: memory is for what is being used now; storage is for keeping things over time.
+EASIER: Memory is your desk while you work; storage is the cabinet where you keep files for later.
+
+MOTHERBOARD AND SYSTEM ON A CHIP
+★ Motherboard: the main circuit board that physically supports and electrically connects major computer components.
+Typical motherboard connections: processor socket or package, memory slots, storage interfaces, expansion links, firmware, power connectors, ports, and device controllers.
+EASIER: The motherboard is like the roads and sockets of a town that every building plugs into.
+★ SoC (system on a chip): combines several computing components within one integrated circuit package.
+Common SoC integrations: CPU cores, graphics, memory controllers, security functions, media engines, and communication interfaces may share one chip.
+Difference: a motherboard connects separate parts on one board; an SoC puts many of those parts inside one chip package.
+Added example: most smartphones and tablets are built around an SoC.
+
+INSTRUCTIONS AND BIT PATTERNS
+★ Instruction: a coded command in a processor's instruction set that specifies an operation and often identifies required data.
+Conceptual examples of instructions: load a value, add two values, compare values, store a result, and move to another instruction when a condition is true.
+★ Instructions and data are both represented as bit patterns (strings of 0s and 1s).
+★ Instruction bits represent an operation and its operands or locations; their meaning depends on the processor's instruction set.
+★ Data bits represent numbers, text, images, audio, addresses, or other values; their meaning depends on format and context.
+EASIER: An operand is the value, or the location of the value, that an operation works on; in "add 2 and 3", the 2 and the 3 are the operands.
+EASIER: The same 0s and 1s can mean different things; what they mean depends on whether they are read as an instruction or as data, and in what format.
+
+THE BASIC INSTRUCTION CYCLE
+⚙ Step 1: Fetch, retrieve the next instruction.
+⚙ Step 2: Decode, interpret its operation.
+⚙ Step 3: Execute, perform the operation.
+⚙ Step 4: Store (also called write-back), preserve the result or state.
+★ The cycle repeats while a program runs.
+EASIER: Think of a cook: get the next recipe card (fetch), read it (decode), cook it (execute), then put the dish on the plate (store).
+
+FETCH
+★ Fetch: the processor obtains the instruction identified by the current instruction address, normally through cache or main memory.
+During fetch, the program counter identifies where to look, and the fetched instruction is placed where the control unit can interpret it.
+
+DECODE
+★ Decode: the control unit interprets the instruction pattern and determines which operation and resources are required.
+Decode answers these questions: Which operation? Which registers or data locations? Is a memory access needed? Which control signals must be issued?
+
+EXECUTE
+★ Execute: the processor carries out the decoded operation using the required functional unit and available operands.
+Possible operations during execute: arithmetic, logic, comparison, data movement, address calculation, or a change in the next instruction location.
+
+STORE OR WRITE-BACK
+★ Write-back: the processor places a result in a register, memory location, storage path, or other destination required by the instruction.
+★ Write-back is not always permanent: a result written to a register or RAM remains temporary, and a later operation may send it to nonvolatile storage.
+
+EXAMPLE: A SIMPLE ADDITION
+⚙ Fetch: obtain the ADD instruction.
+⚙ Decode: select the operation and operands.
+⚙ Execute: the ALU adds the values.
+⚙ Write-back: place the sum in the destination.
+★ One visible click may cause millions or billions of instructions.
+
+PARTS OF THE PROCESSOR
+★ Control unit: the processor component that interprets instructions and directs the timing and movement of operations and data.
+The control unit selects data paths, issues control signals, and coordinates registers, arithmetic units, memory access, and other processor resources.
+★ ALU (arithmetic logic unit): performs numerical operations, logical operations, comparisons, and related transformations.
+ALU examples: add, subtract, compare, AND, OR, shift, and test whether a value is zero, positive, or negative.
+★ Register: a very small, very fast storage location inside the processor used for active values, addresses, instructions, or status.
+Registers matter because processor operations work most directly with values already in registers, which reduces waiting for slower memory.
+EASIER: The control unit coordinates, the ALU calculates, and registers hold immediate values.
+EASIER: Picture an orchestra: the control unit is the conductor, the ALU is the musician who plays the notes, and registers are the sheet music on the stand right in front of them.
+
+PROGRAM COUNTER AND INSTRUCTION REGISTER
+★ Program counter: a special register that holds the address of the next instruction to fetch.
+Most instructions simply advance the program counter; branch, jump, call, return, or exception behavior can replace it with another address.
+★ Instruction register: a conceptual register that holds the fetched instruction while it is being interpreted or processed.
+The instruction register is a model, not a universal label: textbooks use the term to explain the cycle, while modern processors may spread this state across several internal structures.
+Difference: the program counter holds the address of the next instruction; the instruction register holds the current instruction itself.
+EASIER: The program counter is the bookmark telling you which page to read next; the instruction register is the page you are reading now.
+
+THE CLOCK
+★ Clock: a repeating timing signal used to coordinate many state changes inside a digital system.
+★ Clock rate is measured in cycles per second.
+★ A higher clock rate alone does not guarantee a faster computer, because design, workload, memory, and heat also matter.
+Added example: one cycle per second is one hertz (Hz), so a 3 GHz clock ticks about 3 billion times per second.
+EASIER: The clock is like a drummer keeping the beat so every part moves in step.
+
+CORES AND HARDWARE THREADS
+★ Core: a processor core contains the resources needed to execute an instruction stream, including control and arithmetic capabilities.
+★ A multicore processor can work on more than one instruction stream when software and the workload provide independent work.
+★ Hardware thread: a processor-supported execution context that can maintain the state of an instruction stream on a core.
+★ One core may support one or more hardware threads.
+Operating systems schedule software threads onto available logical processors.
+Core: physical instruction-processing resources; contains execution units and local state; may support multiple threads.
+Hardware thread: an execution context visible to the system; maintains architectural state; shares core resources when colocated (placed on the same core).
+Difference: a core is the physical engine; a hardware thread is a context (the kept-track-of state of one instruction stream) that runs on a core.
+EASIER: A core is one cook; hardware threads are the separate orders that one cook keeps track of at the same time while sharing the same stove.
+Added example: a processor listed as 8 cores and 16 threads has 8 cores that each support 2 hardware threads, so the operating system sees 16 logical processors.
+★ Clock rate, cores, cache, memory, workload, power, and cooling all shape observed speed.
+Specifications describe resources; they do not guarantee identical results for every task.
+
+THE MEMORY HIERARCHY
+★ Systems combine several memory and storage levels because speed, capacity, cost, and persistence involve trade-offs.
+The hierarchy keeps frequently needed items close to the processor while preserving larger collections elsewhere.
+Fast and small sits close to the processor; large and persistent sits farther away.
+⚙ Rank 1 (nearest): Registers, smallest and fastest, inside the CPU.
+⚙ Rank 2: Cache, very fast, keeps nearby copies.
+⚙ Rank 3: RAM, holds active programs and data.
+⚙ Rank 4: Internal storage, large and nonvolatile.
+⚙ Rank 5 (farthest): External or remote storage, removable, networked, or archival.
+EASIER: Registers are what is in your hand, cache is the top of your desk, RAM is the shelf in your room, internal storage is the library in your building, and external storage is a warehouse across town.
+
+REGISTERS AND CACHE
+★ Registers (as a hierarchy level): tiny storage locations inside a processor that hold values and control state currently needed by instructions.
+Typical register contents: operands, results, addresses, the next instruction location, the current instruction, and condition information.
+★ Cache: small, fast memory that stores copies of instructions and data likely to be used again soon.
+★ Locality: programs often reuse recent items and nearby addresses; cache exploits these patterns to reduce waiting for main memory.
+EASIER: Cache is like keeping the few books you keep reaching for on your desk instead of walking to the shelf every time.
+
+RAM AND STORAGE
+★ RAM: main memory that temporarily holds active programs, instructions, and data for relatively fast processor access.
+When an application opens, its program instructions and required data are loaded from storage into RAM, and its active state changes as the application runs.
+★ Storage: nonvolatile hardware that retains operating systems, applications, files, and other data when ordinary power is removed.
+Common storage devices: solid-state drive, hard disk drive, removable flash storage, memory card, optical media, or network-attached storage.
+
+VOLATILE AND NONVOLATILE
+★ Volatile: requires ongoing power to preserve ordinary contents; the typical example is RAM; used for active working state.
+★ Nonvolatile: retains ordinary contents without ongoing power; examples are SSD, HDD, and flash; used for persistent state.
+Registers, cache, and RAM are normally volatile; internal storage is nonvolatile.
+EASIER: Volatile means the contents vanish when the power goes off; nonvolatile means they stay.
+
+CAPACITY UNITS
+Capacity units scale by powers.
+★ B (byte): a basic unit commonly used for capacity.
+★ KB / KiB: thousands of bytes; the decimal and binary conventions may differ.
+★ MB / MiB: millions of bytes; common for files and memory regions.
+★ GB / GiB: billions of bytes; common for RAM and storage specifications.
+Added example: in the decimal convention $1\text{ KB} = 10^{3} = 1000$ bytes, while in the binary convention $1\text{ KiB} = 2^{10} = 1024$ bytes.
+EASIER: KB counts bytes in thousands, while KiB counts them in groups of 1024, so a KiB is slightly bigger than a KB.
+Added example: $1\text{ MiB} = 2^{20}$ bytes and $1\text{ GiB} = 2^{30}$ bytes.
+EASIER: Each binary step up (KiB to MiB to GiB) multiplies by 1024.
+
+CAPACITY AND LATENCY
+★ Capacity answers "How much can be held?" and is usually expressed in bytes and scaled units.
+More capacity does not automatically mean faster access.
+★ Latency answers "How long before an access begins or completes?"
+Lower latency means less waiting, and closer hierarchy levels generally have lower latency.
+Difference: capacity is about size; latency is about waiting time.
+EASIER: A warehouse holds a lot (high capacity) but takes long to get things from (high latency); your pocket holds little but is instant.
+
+EXAMPLE: OPENING AN APPLICATION
+⚙ Step 1: Storage preserves the app and its files.
+⚙ Step 2: RAM holds the active working set.
+⚙ Step 3: Cache keeps likely-needed copies.
+⚙ Step 4: Registers hold immediate operands.
+⚙ Step 5: The processor executes the instructions.
+Results update memory and may return to storage.
+★ Instructions cycle through processor state while data moves across a hierarchy of registers, cache, RAM, and storage.
+
+CONNECTING THE MACHINE
+Interconnects, interfaces, storage, accelerators, power, and form factors complete the physical system.
+Buses, controllers, ports, and interfaces provide the paths and shared rules for moving data between components.
+
+BUSES
+★ Bus: a set of communication lines and rules used to transfer data, addresses, and control information among components.
+Some modern systems use point-to-point links or switched interconnects rather than one shared bus, but the introductory bus functions remain useful.
+★ Data bus: the pathway that carries instruction bits, operand values, results, and other represented data between components.
+Data may move toward or away from the processor depending on whether the operation reads, writes, receives, or sends.
+★ Address bus: the pathway used to specify which memory location, device register, or target should participate in a transfer.
+★ Control bus: the pathway for signals that coordinate operations such as read, write, timing, readiness, requests, and acknowledgments.
+EASIER: The address answers where, the data answers what value is being transferred, and control answers what action should occur and when.
+
+THE FOUR QUESTIONS OF A TRANSFER
+★ Where: the address identifies the target location or device.
+★ What: the data carries the represented value.
+★ How: control states the requested action.
+★ When: timing coordinates participation and completion.
+EASIER: Mailing a package needs an address (where), the package contents (what), an instruction such as deliver or pick up (how), and a delivery time (when).
+
+CONTROLLERS
+★ Controller: hardware that manages communication and control between the main system and a device or subsystem.
+Controller examples: storage controller, display controller, USB controller, network interface controller, keyboard controller, or memory controller.
+EASIER: A controller is like a translator and manager assigned to one kind of device.
+
+INPUT AND OUTPUT DEVICES
+★ Input device: hardware that converts user actions, measurements, media, or external signals into data the system can receive.
+Input examples: keyboard, mouse, touchscreen, camera, microphone, scanner, sensor, game controller, and network receiver.
+★ Output device: hardware that converts system data or control signals into a form perceived by people or used by another physical system.
+Output examples: display, speaker, printer, actuator, vibration motor, indicator light, and network transmitter.
+EASIER: An actuator is a part that produces physical movement, such as a motor that opens a valve.
+★ One device may support both input and output, for example a touchscreen.
+Touchscreen input detects position, gestures, and pressure or contact information, and converts user action into events or coordinates.
+Display output presents pixels, color, motion, text, and interface feedback, and converts digital image data into visible light.
+
+PERIPHERALS
+★ Peripheral: a device connected to a computer to provide input, output, storage, communication, or another specialized function.
+A peripheral may be inside a case, attached by a cable, connected wirelessly, or integrated into a portable device.
+
+CONNECTOR, PORT, INTERFACE, AND PROTOCOL
+★ Connector (shape): the physical plug or receptacle form.
+★ Port (access): the connection point on a device.
+★ Interface (exchange): a defined boundary for communication.
+★ Protocol (rules): the agreed format and behavior.
+EASIER: The connector is the plug's shape, the port is the hole you plug into, the interface is the agreed meeting point for the exchange, and the protocol is the language spoken across it.
+
+USB CONNECTORS
+★ USB Type-A: a rectangular connector form, common on host devices, with one orientation for insertion.
+★ USB Type-C: a smaller reversible connector form, used on hosts and devices, that may support several capabilities.
+EASIER: The host is the computer side that controls the connection; the device is what gets plugged in.
+★ Connector shape, data protocol, transfer rate, video support, and power delivery must be verified separately.
+Read the device and cable specifications; do not infer capability from appearance alone.
+Seeing a USB-C port, you can state with confidence only that the connector form is USB Type-C; its data protocol, transfer rate, video support, and power delivery still require verification.
+
+DISPLAY AND OTHER INTERFACES
+★ HDMI: a digital audiovisual interface widely used with displays, projectors, televisions, and media equipment; its capabilities depend on device and cable support.
+★ DisplayPort: a digital display interface common in computers and monitors; its connector variants and supported features differ.
+★ Ethernet (network): a wired local-network connection.
+★ Audio jack (audio): an analog or combined audio connection.
+★ Memory-card slot (storage): a removable media interface.
+★ Power input (power): an electrical power connection.
+
+MASS STORAGE
+Storage technologies and specialized processors support different kinds of work.
+★ Mass storage: nonvolatile hardware used to retain operating systems, applications, media, records, and other files across power cycles.
+Mass storage selection factors: capacity, access behavior, durability, energy use, physical size, interface, portability, reliability, and cost.
+★ HDD (hard disk drive): stores data magnetically on rotating platters and uses moving mechanisms to access locations.
+HDD general characteristics: nonvolatile, high-capacity options, mechanical movement, and greater sensitivity to shock than solid-state storage.
+★ SATA SSD: a solid-state drive that stores data in nonvolatile flash memory and communicates through the SATA storage interface.
+SATA SSD general characteristics: no moving access mechanism, common compatibility, and performance constrained by the SATA pathway and device design.
+★ NVMe SSD: a solid-state drive that communicates using the NVMe protocol, commonly over a PCI Express (PCIe) connection.
+★ NVMe is a protocol, PCIe is an interconnect, and M.2 is a form factor that can host different interfaces or protocols.
+Added example: an M.2 drive can be either a SATA SSD or an NVMe SSD, so the M.2 shape alone does not tell you which one it is.
+EASIER: SATA stands for Serial ATA, NVMe stands for Non-Volatile Memory Express, and PCIe stands for Peripheral Component Interconnect Express.
+★ Removable flash: nonvolatile semiconductor storage packaged for easy movement between compatible devices.
+Removable flash examples are the USB flash drive and the memory card; their capacity, endurance, transfer rate, connector, and file-system compatibility vary.
+
+STORAGE LABELS DESCRIBE DIFFERENT DIMENSIONS
+★ Technology: HDD or SSD, the mechanical magnetic or solid-state medium.
+★ Protocol: SATA or NVMe, the command and communication method.
+★ Link: SATA or PCIe, the path carrying the traffic.
+★ Form: 2.5-inch or M.2, the physical size and connector arrangement.
+SATA appears under both protocol and link because the name covers both a command method and the path that carries it.
+
+ACCELERATORS
+★ GPU (graphics processing unit): a specialized processor built to perform many similar calculations across large collections of data.
+GPU uses: rendering graphics, processing images and video, scientific computation, and selected machine-learning operations.
+★ NPU (neural processing unit): specialized hardware for selected operations used in machine-learning inference or related workloads.
+NPU possible uses: image enhancement, speech features, background effects, local generative functions, classification, and other supported AI tasks.
+EASIER: Inference means using an already-trained AI model to produce a prediction or result.
+★ CPU emphasis, general control: varied instructions and system coordination.
+★ GPU emphasis, parallel throughput: many similar operations across data.
+★ NPU emphasis, AI operations: selected machine-learning workloads.
+★ System cooperation: software assigns work to supported hardware.
+EASIER: The CPU is a manager handling many different tasks, the GPU is a large team doing the same task in parallel, and the NPU is a specialist for AI math.
+
+EXAMPLE: A MEDIA TASK
+⚙ Step 1: Input, a camera or file supplies the media.
+⚙ Step 2: Storage holds the source asset.
+⚙ Step 3: RAM holds the active frames.
+⚙ Step 4: CPU / GPU coordinates and transforms.
+⚙ Step 5: The display presents the result.
+Edits and previews create repeated feedback.
+
+EXAMPLE: AN AI FEATURE
+⚙ Step 1: Input, text, image, sound, or sensor data.
+⚙ Step 2: Memory holds the active model state.
+⚙ Step 3: The CPU coordinates the software.
+⚙ Step 4: GPU / NPU runs the supported operations.
+⚙ Step 5: Output returns a prediction or generated data.
+The user verifies and responds.
+
+POWER SYSTEM
+Power, heat, cooling, form factor, safety, and sustainability affect every component.
+★ Power system: hardware that receives, converts, stores, regulates, and distributes electrical energy to computing components.
+Power system examples: power supply, charger, battery, voltage regulation, power-management circuitry, and device-specific connectors.
+
+HEAT AND COOLING
+★ Processors, memory, storage, displays, and power circuits release heat while operating.
+★ A device must move heat away fast enough to remain within safe operating conditions.
+★ Heat spreader (spread): moves heat across a larger surface.
+★ Heat sink (conduct): conducts and exposes heat to air.
+★ Fan (move): moves air across hot surfaces.
+★ Firmware (control): adjusts power and fan behavior.
+★ Thermal throttling: automatic reduction of clock rate, voltage, or workload activity when temperature or power conditions require protection.
+A user may notice a device becoming slower during sustained work even though its processor model and memory capacity have not changed.
+EASIER: Thermal throttling is the computer slowing itself down on purpose so it does not overheat, like a runner walking for a bit to cool off.
+
+FORM FACTORS
+EASIER: Form factor means the size, shape, and physical arrangement of a device.
+★ Desktop, expandable: space for cooling, power, and replaceable parts.
+★ Laptop, portable: integrates display, battery, input, and cooling.
+★ Mobile, highly integrated: compact SoC, sensors, battery, and wireless links.
+★ Server, service-focused: designed for shared workloads and managed operation.
+
+EMBEDDED AND EDGE DEVICES
+★ Embedded system: a computer integrated into a product or environment to perform a limited set of dedicated functions.
+Edge examples: camera, vehicle controller, appliance, wearable, kiosk, robot, sensor gateway, or on-site AI device processing data near its source.
+EASIER: Edge computing means the data is processed close to where it is created instead of being sent far away first.
+
+HARDWARE SAFETY
+⚙ Power: shut down and disconnect power when instructed.
+⚙ Battery: do not open; avoid damaged or swollen batteries.
+⚙ Static: control ESD by handling components using approved procedures.
+⚙ Boundary: no disassembly; there is no need to open devices unless explicitly stated.
+EASIER: ESD means electrostatic discharge, the small static shock that can damage electronic parts.
+
+SUSTAINABILITY
+★ Maintain, repair, reuse, donate, and recycle electronics through appropriate channels.
+★ Erase personal data and follow institutional or local e-waste procedures before transfer or disposal.
+
+READING A SPECIFICATION SHEET
+A specification sheet becomes readable when you group it by category.
+★ Process: CPU / GPU / NPU, giving model, cores, and supported roles.
+★ Work: memory, giving capacity and memory type.
+★ Keep: storage, giving technology, capacity, and interface.
+★ Connect: ports and wireless, giving connector form and verified capabilities.
+
+HARDWARE VOCABULARY ACROSS PROGRAMS
+Four programs use the same hardware vocabulary in different ways.
+IT: deploy and support, identifying components, interfaces, compatibility, and operating limits.
+CS: explain execution, connecting programs to instructions, memory, and architecture.
+AIS: place AI workloads, recognizing the CPU, GPU, NPU, memory, and data movement.
+MMA: understand media flow, connecting capture, processing, storage, display, and export.
+
+EXAMPLE: ONE CLICK AS A HARDWARE JOURNEY
+⚙ Step 1: Input, the device captures the command.
+⚙ Step 2: Interconnect, a controller transfers the signals.
+⚙ Step 3: Memory, instructions and data become active.
+⚙ Step 4: Processor, it fetches, decodes, and executes.
+⚙ Step 5: Output or storage, the result appears or persists.
+Feedback leads to the next input.
+The full path in words: an input device captures the command, a controller passes it over the interconnect, RAM and then cache supply instructions and data, registers hold the immediate values, the control unit directs and the ALU calculates, and the result goes to output or storage.
+
+UNIT SYNTHESIS
+★ Hardware is a coordinated pathway, not a list of parts.
+★ Processors act, memory supplies working state, storage preserves, interconnects move, I/O connects, and power keeps the pathway alive.
+
+LABORATORY EVIDENCE FILE
+The unit's laboratory task is a device-specific hardware evidence file that describes one assigned instruction-and-data pathway.
+Four laboratory controls make the evidence authentic: current (two live codes and a visible date or time), device-specific (the actual CPU, memory, storage, ports, and I/O), cross-linked (every claim points to an evidence ID), and verified (peer scan and instructor spot-check route).
+
+COMMON MISTAKES
+Mistake: believing a higher clock rate alone makes a faster computer; design, workload, memory, and heat also matter.
+Mistake: treating a core and a hardware thread as the same thing; one core may support several hardware threads.
+Mistake: mixing up memory and storage; RAM is volatile working memory, while storage is nonvolatile.
+Mistake: assuming a USB-C port supports video, fast data, or charging just because of its shape.
+Mistake: calling M.2 a protocol; M.2 is a form factor, NVMe is a protocol, and PCIe is an interconnect.
+Mistake: thinking write-back is always permanent; a result in a register or RAM is still temporary.
+Mistake: confusing capacity with latency; a larger device is not automatically faster to access.
+Mistake: confusing the program counter (address of the next instruction) with the instruction register (the current instruction).
+
+EXAM TIPS
+Memorize the cycle order: fetch, decode, execute, store (write-back).
+Memorize the hierarchy from nearest to farthest: registers, cache, RAM, internal storage, external or remote storage.
+For buses, link address to where, data to what, and control to how and when.
+For storage labels, sort each label into technology, protocol, link, or form.
+For the processor, the control unit coordinates, the ALU calculates, and registers hold immediate values.
+
+SELF-TEST
+Q: Which component group holds active instructions, and which preserves them after power is removed?
+★ Memory holds active instructions; storage preserves them.
+Q: Which stage of the cycle interprets the instruction pattern?
+★ Decode.
+Q: Which register holds the address of the next instruction to fetch?
+★ The program counter.
+Q: Which hierarchy levels are normally volatile?
+★ Registers, cache, and RAM.
+Q: Which bus answers the question "where"?
+★ The address bus.
+Q: Is M.2 a protocol, an interconnect, or a form factor?
+★ A form factor.
+Q: What is it called when a hot device automatically lowers its clock rate to protect itself?
+★ Thermal throttling.

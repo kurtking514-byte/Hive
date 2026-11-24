@@ -928,5 +928,45 @@
   "quiz": 30,
   "course": "BSIT",
   "exam": "Finals"
+ },
+ {
+  "id": "bsit-cc1-u1",
+  "subject": "CC1",
+  "tab": "Unit 1",
+  "title": "Computing as a System",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Midterm"
+ },
+ {
+  "id": "bsit-cc1-u2",
+  "subject": "CC1",
+  "tab": "Unit 2",
+  "title": "Hardware and Architecture",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Midterm"
+ },
+ {
+  "id": "bsit-cc1-u3",
+  "subject": "CC1",
+  "tab": "Unit 3",
+  "title": "Software and Operating Systems",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Finals"
+ },
+ {
+  "id": "bsit-cc1-u4",
+  "subject": "CC1",
+  "tab": "Unit 4",
+  "title": "Data Representation and Number Systems",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Finals"
  }
 ]

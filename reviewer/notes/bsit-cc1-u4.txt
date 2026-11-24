@@ -1,0 +1,472 @@
+Unit 4 Data Representation and Number Systems
+How the same bits can stand for numbers, text, colors, images, and sound
+
+DATA AND REPRESENTATION
+★ Data: symbols, measurements, observations, or recorded values that a computing system can store, process, or communicate.
+Examples of data: a score, a name, a color value, a photograph, a sound sample, or a sensor reading.
+★ Information: data interpreted with enough context to answer a question or support an action.
+Example: the value 84 alone says little. It becomes useful information when a label identifies it as a quiz score out of 100.
+★ Representation: a chosen pattern of symbols used to stand for a value, object, event, or instruction.
+Example: the value ten can appear as 10 in decimal, 1010 in binary, or A in hexadecimal. The value stays the same; only the way it is written changes.
+EASIER: Data is the raw value. Information is that value plus the label that tells you what it means. Representation is the way the value is written down.
+Difference: data is the raw value (84). Information is the value with context (84 out of 100 on a quiz).
+
+PATTERN AND MEANING
+A stored sequence such as 01000001 has a physical form in memory or storage. This is the pattern.
+An agreed encoding or data type tells software whether that sequence means a number, a character, or something else. This is the interpretation.
+★ A bit pattern gains meaning from its data type, encoding, and context.
+EASIER: The word "pan" means a cooking pot in English but bread in Spanish. The letters are the same; the language decides the meaning. Bits work the same way.
+The pattern 01000001 does not always mean the letter A. Read as an unsigned number it is 65. Read as ASCII or UTF-8 text it is the letter A. The rule chosen by the software decides.
+
+BITS, BIT PATTERNS, BYTES, AND NIBBLES
+★ Bit: a binary digit with one of two possible values, 0 or 1.
+Hardware may represent the two states using voltage levels, charge states, magnetic orientation, or other mechanisms.
+EASIER: A bit is like a light switch: off is 0 and on is 1.
+★ Bit pattern: an ordered sequence of bits that can represent a value under a stated rule.
+Examples: 0, 11, 1010, and 01000001 are bit patterns of different lengths.
+★ Pattern count rule: with n bits, a system can form $2^{n}$ distinct patterns.
+EASIER: Every extra bit doubles the number of patterns, because each old pattern can now end in 0 or in 1.
+⚙ 1 bit: $2^{1} = 2$ patterns, 0 through 1.
+⚙ 2 bits: $2^{2} = 4$ patterns: 00, 01, 10, and 11.
+⚙ 4 bits: $2^{4} = 16$ patterns, 0000 through 1111.
+⚙ 8 bits: $2^{8} = 256$ patterns, 00000000 through 11111111.
+★ Byte: a group of eight bits treated as one unit.
+Example: 01000001 contains eight bit positions, so it occupies one byte as a stored code unit.
+★ Nibble: a group of four bits.
+A nibble matters because one hexadecimal digit maps exactly to one four-bit group.
+EASIER: A nibble is half a byte, a small "bite" of a byte.
+Difference: a bit is one 0 or 1, a nibble is 4 bits, and a byte is 8 bits.
+
+POSITIONAL NUMBER SYSTEMS
+★ Numeral system: a set of digit symbols and rules for writing numbers.
+Decimal uses ten digit symbols, binary uses two, and hexadecimal uses sixteen.
+★ Base: the number of distinct digit values used by a positional numeral system.
+Base 10 uses 0 through 9. Base 2 uses 0 and 1. Base 16 uses 0 through 9 and A through F.
+★ Positional system: position gives each digit a weight based on the chosen base, and a digit's value is the digit times its weight.
+EASIER: The digit says how many. The position says how many of what.
+A small subscript shows the base: $1011_{2}$ is binary, $45_{10}$ is decimal, and $2D_{16}$ is hexadecimal.
+
+DECIMAL PLACE VALUES
+⚙ Base 10 weights from right to left: 1, 10, 100, 1000, and so on. Each weight is 10 times the one to its right.
+⚙ $472 = (4 \times 100) + (7 \times 10) + (2 \times 1) = 400 + 70 + 2 = 472$
+That is 4 hundreds plus 7 tens plus 2 ones.
+
+BINARY PLACE VALUES
+⚙ Base 2 weights from right to left: 1, 2, 4, 8, 16, 32, 64, 128, and so on. Each weight is 2 times the one to its right.
+⚙ $1011_{2} = (1 \times 8) + (0 \times 4) + (1 \times 2) + (1 \times 1) = 8 + 0 + 2 + 1 = 11$
+That is 1 eight plus 0 fours plus 1 two plus 1 one, which equals decimal 11.
+⚙ Bit value 1: the place value contributes to the total.
+⚙ Bit value 0: the place value contributes zero to the total.
+EASIER: Start at 1 on the right and keep doubling as you move left.
+
+HOW TO READ AN EIGHT-BIT UNSIGNED VALUE
+★ Unsigned value: a binary value read as zero or a positive whole number, with no bit set aside for a sign.
+⚙ Step 1: Locate the 1s. Mark the active positions.
+⚙ Step 2: Name the weights: 128, 64, 32, 16, 8, 4, 2, 1.
+⚙ Step 3: Keep only the weights that sit beneath 1 bits.
+⚙ Step 4: Add those values and state the decimal equivalent.
+
+EXAMPLE: 10110110 TO DECIMAL
+⚙ Weights: 128, 64, 32, 16, 8, 4, 2, 1
+⚙ Bits: 1, 0, 1, 1, 0, 1, 1, 0
+⚙ Active weights: 128, 32, 16, 4, 2
+⚙ $128 + 32 + 16 + 4 + 2 = 182$
+⚙ Check another way: the nibbles 1011 and 0110 are hex B6, and $(11 \times 16) + 6 = 176 + 6 = 182$.
+⚙ Answer: $10110110_{2} = 182_{10}$
+
+EXAMPLE: 00101101 TO DECIMAL
+⚙ Active positions: the 32, 8, 4, and 1 positions each contain a 1.
+⚙ $32 + 8 + 4 + 1 = 45$
+⚙ Check another way: the nibbles 0010 and 1101 are hex 2D, and $(2 \times 16) + 13 = 45$.
+⚙ Answer: decimal 45 and binary 00101101 are one value in two written forms.
+Decimal 45 uses the base 10 notation of everyday counting. Binary 00101101 uses eight positions so the bit width stays visible.
+
+EXAMPLE: ACTIVE PLACE VALUES IN 11001010
+⚙ Bits 1, 1, 0, 0, 1, 0, 1, 0 sit under weights 128, 64, 32, 16, 8, 4, 2, 1.
+⚙ Active place values: 128, 64, 8, and 2.
+⚙ $128 + 64 + 8 + 2 = 202$
+⚙ Check another way: the nibbles 1100 and 1010 are hex CA, and $(12 \times 16) + 10 = 192 + 10 = 202$.
+
+HOW TO CONVERT DECIMAL TO BINARY
+Added example: the lecture reads binary as decimal. These two methods go the other way.
+⚙ Subtraction method, Step 1: Write the weights 128, 64, 32, 16, 8, 4, 2, 1.
+⚙ Step 2: Going from the left, write 1 under a weight if it fits into what is left and subtract it. Otherwise write 0.
+⚙ Step 3: Continue until the amount left is 0, and write 0 in every remaining position.
+⚙ Division method: divide by 2 again and again, write each remainder, and read the remainders from bottom to top.
+
+EXAMPLE: DECIMAL 65 TO BINARY AND HEX
+Added example:
+⚙ Subtraction: $65 - 64 = 1$, then $1 - 1 = 0$. The active weights are 64 and 1.
+⚙ Bits under 128, 64, 32, 16, 8, 4, 2, 1: 0, 1, 0, 0, 0, 0, 0, 1, so 65 = 01000001.
+⚙ Division check: $65 \div 2 = 32$ r 1, $32 \div 2 = 16$ r 0, $16 \div 2 = 8$ r 0, $8 \div 2 = 4$ r 0, $4 \div 2 = 2$ r 0, $2 \div 2 = 1$ r 0, $1 \div 2 = 0$ r 1.
+⚙ Remainders read bottom to top: 1000001, padded to eight bits as 01000001.
+⚙ Hex: the nibbles 0100 and 0001 are 4 and 1, so 65 = hex 41.
+⚙ Check: $(4 \times 16) + 1 = 65$.
+⚙ Answer: decimal 65 = binary 01000001 = hex 41. The active binary weights are 64 and 1.
+
+HEXADECIMAL
+★ Hexadecimal: a base 16 numeral system that uses 0 through 9 and A through F as digit symbols.
+★ Hex digit values: A = 10, B = 11, C = 12, D = 13, E = 14, and F = 15.
+Hex digit groups: 0 to 3 are decimal 0 through 3, 4 to 7 are decimal 4 through 7, 8 to B are decimal 8 through 11, and C to F are decimal 12 through 15.
+EASIER: Hex needs sixteen single symbols, but there are only ten number digits, so it borrows the letters A to F for the values 10 to 15.
+⚙ Hex place values: the rightmost digit has weight 1, the next digit has weight 16, and the next has weight $16^{2} = 256$.
+⚙ $2D_{16} = (2 \times 16) + (13 \times 1) = 32 + 13 = 45$
+That is 2 sixteens plus 13 ones, which equals decimal 45.
+⚙ Two-digit hex to decimal: first digit times 16, plus the second digit.
+Added example: decimal to hex by division: $199 \div 16 = 12$ r 7, and 12 is C, so 199 = hex C7.
+
+FOUR BITS AND ONE HEX DIGIT
+A binary nibble, 0000 through 1111, gives sixteen possible patterns. Hex digits 0 through F give sixteen matching symbols. So one hex digit stands for exactly one nibble.
+⚙ 0000 = 0, 0001 = 1, 0010 = 2, 0011 = 3
+⚙ 0100 = 4, 0101 = 5, 0110 = 6, 0111 = 7
+⚙ 1000 = 8, 1001 = 9, 1010 = A, 1011 = B
+⚙ 1100 = C, 1101 = D, 1110 = E, 1111 = F
+EASIER: To rebuild this table, count from 0 to 15 in binary with four digits, using the weights 8, 4, 2, 1.
+
+BINARY TO HEXADECIMAL
+⚙ Step 1: Group. Split the bits into groups of four, starting from the right.
+⚙ Step 2: Read the left group. For 00101101, the left group 0010 equals hex 2.
+⚙ Step 3: Read the right group. 1101 equals hex D.
+⚙ Step 4: Combine. 00101101 equals hex 2D.
+★ Grouping rule: grouping is done from the right. Add leading zeros on the left only when a full nibble is needed.
+Added example: 101101 has six bits. From the right the groups are 1101 and 10. Pad the left group to 0010. The result is 2D, which is 45.
+Common mistake: grouping from the left. 101101 grouped from the left gives 1011 and 01, which wrongly gives B1.
+
+HEXADECIMAL TO BINARY
+⚙ Step 1: Read the first digit. C equals 1100.
+⚙ Step 2: Read the second digit. 7 equals 0111.
+⚙ Step 3: Join the groups. C7 equals 11000111.
+⚙ Step 4: Check the width. Two hex digits equal eight bits.
+⚙ Check the value: $C7_{16} = (12 \times 16) + 7 = 199$ and $11000111_{2} = 128 + 64 + 4 + 2 + 1 = 199$.
+Hexadecimal provides a compact way to read long bit patterns.
+EASIER: Hex is shorthand for binary. Every hex digit stands for exactly four bits.
+Common mistake: writing 7 as 111 instead of 0111. Every hex digit must become a full four-bit group, or the bits shift and the value changes.
+
+EQUIVALENT EIGHT-BIT VALUES
+⚙ 00000000 = hex 00 = decimal 0
+⚙ 00001111 = hex 0F = decimal 15
+⚙ 01000001 = hex 41 = decimal 65
+⚙ 11111111 = hex FF = decimal 255
+
+LEADING ZEROS AND BIT WIDTH
+★ Leading zero: a zero placed to the left of a numeral without changing its numeric value.
+In 00101101, the leading zeros make the eight-bit width explicit.
+★ Bit width: the number of bit positions used by a representation.
+Example: the value 5 can appear as 101, 0101, or 00000101. The value stays five while the visible width changes.
+EASIER: Leading zeros are like writing 007 on a jersey. It is still 7; the zeros only fill the empty slots.
+Difference: zeros on the left never change the value, but a zero added on the right does. 101 is 5, while 1010 is 10.
+
+UNSIGNED EIGHT-BIT RANGE
+⚙ Lowest value: 00000000 represents decimal 0.
+⚙ Highest value: 11111111 represents decimal 255.
+★ Eight bits provide 256 distinct patterns, so the unsigned eight-bit range is 0 to 255.
+⚙ General rule: n bits give $2^{n}$ patterns, from 0 up to $2^{n} - 1$.
+⚙ Check: $128 + 64 + 32 + 16 + 8 + 4 + 2 + 1 = 255 = 2^{8} - 1$
+Common mistake: saying 8 bits can reach 256. They give 256 patterns, but one of the patterns is 0, so the highest value is 255.
+
+MOST AND LEAST SIGNIFICANT BITS
+★ MSB (most significant bit): the leftmost bit in the written pattern, which has the greatest place value.
+★ LSB (least significant bit): the rightmost bit, which has the smallest place value, 1 for an integer.
+Example: in 10110110 the MSB is 1 with weight 128, and the LSB is 0 with weight 1.
+Added example: an unsigned binary whole number is odd exactly when its LSB is 1.
+
+BIT AND BYTE SYMBOLS
+★ Lowercase b: often used for bit, especially in transmission rates such as Mb/s (megabits per second).
+★ Uppercase B: used for byte, especially in file and storage sizes such as MB.
+⚙ To change bytes to bits, multiply by 8. To change bits to bytes, divide by 8.
+Added example: a 100 Mb/s connection moves $100 \div 8 = 12.5$ MB per second.
+Added example: a 50 MB file is $50 \times 8 = 400$ Mb, so at 100 Mb/s it needs $400 \div 100 = 4$ seconds, ignoring overhead.
+⚙ Check: 50 MB at 12.5 MB per second also takes $50 \div 12.5 = 4$ seconds.
+Common mistake: reading Mb/s as MB/s. The lowercase b means the number is 8 times smaller when counted in bytes.
+
+COMMON SIZE PREFIXES
+★ KB (kilobyte): decimal prefix, 1,000 bytes.
+★ KiB (kibibyte): binary prefix, 1,024 bytes, which is $2^{10}$.
+★ MB (megabyte): decimal prefix, 1,000,000 bytes.
+★ MiB (mebibyte): binary prefix, 1,048,576 bytes, which is $2^{20} = 1024 \times 1024$.
+EASIER: The "bi" prefixes (kibi, mebi) mean binary, so they use powers of 2. The plain prefixes (kilo, mega) use powers of 10.
+⚙ Example: 2 KB = 2,000 bytes, but 2 KiB = $2 \times 1024 = 2048$ bytes.
+Added example: GB (gigabyte) is 1,000,000,000 bytes and GiB (gibibyte) is $2^{30} = 1{,}073{,}741{,}824$ bytes.
+
+WHY DISPLAYED CAPACITIES DIFFER
+A storage vendor may report capacity using decimal prefixes.
+Software may use binary prefixes, or a binary calculation shown with a decimal label.
+So the same drive can look smaller on the computer than on the box, even though no bytes are missing.
+
+EXAMPLE: 500 GB DRIVE SHOWN IN BINARY UNITS
+Added example:
+⚙ The label says 500 GB, which is 500,000,000,000 bytes.
+⚙ Divide by the binary unit: $500{,}000{,}000{,}000 \div 1{,}073{,}741{,}824 \approx 465.66$
+⚙ The system may show about 465.66 GiB, sometimes labeled "465 GB".
+⚙ Check: $465.66 \times 1{,}073{,}741{,}824 \approx 499{,}998{,}600{,}000$, which is about 500,000,000,000 bytes.
+
+ONE PATTERN, MANY MEANINGS
+01000001 can represent both 65 and the letter A. As an unsigned binary number it is 65. Read with the ASCII text code, code 65 is the letter A.
+Recognize equivalent decimal, binary, and hexadecimal forms before interpreting higher-level data such as text, color, and sound.
+
+TEXT REPRESENTATION
+Character encodings map writing-system symbols to numeric codes and byte sequences.
+Before software can display 01000001 as A, it must know that the bytes are text and which character encoding was used.
+★ Character: an abstract text element such as a letter, digit, punctuation mark, symbol, or control character.
+Examples: A, 9, ?, ñ, and the check mark can each be treated as a character.
+★ Character set: a defined collection of characters supported by a standard or system.
+A character set identifies which abstract text elements can be represented.
+★ Code point: a numeric value assigned to a character in a coded character set.
+Unicode writes a code point as U+ followed by hex digits. U+0041 identifies the code point for Latin capital letter A.
+★ Character encoding: a rule that maps characters or code points to stored or transmitted code units.
+Example: UTF-8 maps a Unicode code point to one or more bytes.
+EASIER: The character set is the list of allowed characters. The code point is each character's ID number. The encoding is how that ID number is packed into bytes.
+⚙ U+0041 is hex 41, which is $(4 \times 16) + 1 = 65$ in decimal.
+
+ASCII
+★ ASCII: an early character code that assigns numeric values to English letters, digits, punctuation, and control characters.
+⚙ In ASCII, capital A is decimal 65, hexadecimal 41, and binary 01000001.
+Strength: its core codes remain widely recognizable and match the first 128 Unicode code points.
+Limit: it does not represent the full range of world writing systems and symbols.
+Added example: the 128 core codes are 0 through 127, which is U+0000 through U+007F, since hex 7F is $(7 \times 16) + 15 = 127$.
+Added example: capital B is 66 (hex 42) and capital C is 67 (hex 43), because the letters follow A in order.
+
+UNICODE AND UTF-8
+★ Unicode: a standard that assigns code points to characters used across many writing systems, symbols, and technical conventions.
+★ UTF-8: a variable-length encoding of Unicode code points that uses one to four bytes per code point.
+Difference: Unicode code points are abstract values. UTF-8 is one encoding that converts them to bytes.
+★ ASCII compatibility: the one-byte UTF-8 forms for U+0000 through U+007F match the ASCII byte values.
+★ Variable-length encoding: an encoding in which different characters can use different numbers of bytes.
+Many common English letters, digits, and punctuation marks use one byte in UTF-8. Other code points use two, three, or four bytes.
+EASIER: Unicode is the phone book that gives every character a number. UTF-8 picks the envelope: small numbers fit in a small envelope of 1 byte, bigger numbers need envelopes of up to 4 bytes.
+
+UTF-8 BYTE EXAMPLES
+⚙ A: U+0041, stored as 41, one byte.
+⚙ ñ: U+00F1, stored as C3 B1, two bytes.
+⚙ Check mark: U+2713, stored as E2 9C 93, three bytes.
+⚙ Grinning face emoji: U+1F600, stored as F0 9F 98 80, four bytes.
+
+CHARACTER COUNT AND BYTE COUNT
+★ Character count: the number of abstract text elements in the chosen string model.
+★ Byte count: the number of encoded storage units. In UTF-8, one code point can use several bytes.
+⚙ Step 1: Split the text into characters.
+⚙ Step 2: Find how many UTF-8 bytes each character needs.
+⚙ Step 3: Add the bytes.
+A file can contain six visible characters but more than six bytes, because some of those characters need two, three, or four bytes in UTF-8.
+
+EXAMPLE: BYTES IN THE WORD mañana
+Added example:
+⚙ Characters: m, a, ñ, a, n, a, which is 6 characters.
+⚙ Bytes: m = 1, a = 1, ñ = 2, a = 1, n = 1, a = 1
+⚙ $1 + 1 + 2 + 1 + 1 + 1 = 7$ bytes
+⚙ Check another way: 5 ASCII letters at 1 byte each give 5 bytes, plus 2 bytes for ñ, which is 7 bytes.
+⚙ Answer: 6 characters but 7 bytes.
+
+IMAGE REPRESENTATION
+Digital images represent spatial positions and color values.
+★ Pixel: a picture element in a raster image that stores or refers to color information at one grid position.
+A displayed pixel (a dot on the screen) and an image pixel (a value in the file) are related concepts, but scaling can map them differently.
+★ Raster image: an image represented as a rectangular grid of pixels.
+Photographs and scanned images commonly use raster formats.
+★ Width: the number of pixel positions across the image.
+★ Height: the number of pixel positions down the image.
+★ Pixel count: $\text{total pixels} = \text{width} \times \text{height}$
+EASIER: A raster image is like graph paper where every small square is filled with one color. Count the squares across, count them down, and multiply.
+
+EXAMPLE: PIXELS IN A 1920 BY 1080 IMAGE
+⚙ $1920 \times 1080 = 2{,}073{,}600$ pixel positions
+⚙ Working: $1920 \times 1000 = 1{,}920{,}000$ and $1920 \times 80 = 153{,}600$
+⚙ $1{,}920{,}000 + 153{,}600 = 2{,}073{,}600$
+⚙ Check another way: $1080 \times 2000 = 2{,}160{,}000$, minus $1080 \times 80 = 86{,}400$, gives $2{,}073{,}600$.
+
+COLOR REPRESENTATION
+★ Color channel: one component of a color representation.
+In RGB, separate red, green, and blue channel values combine to describe a color.
+★ RGB: an additive color model that represents color using red, green, and blue components.
+Many digital displays and image formats store or process RGB-related channel values.
+EASIER: Additive means the color is made by adding light. Full red, green, and blue light together make white; no light at all makes black.
+⚙ Per channel: eight bits give values from 0 through 255 for one component.
+★ 24-bit RGB: a common representation that uses eight bits each for red, green, and blue, so $3 \times 8 = 24$ bits per pixel.
+Added example: 24-bit RGB can form $2^{24} = 256 \times 256 \times 256 = 16{,}777{,}216$ colors.
+★ Color depth: the number of bits used to represent color information for a pixel or channel.
+Greater color depth provides more possible patterns, although display and format behavior also matter.
+Added example: 1 bit per pixel gives $2^{1} = 2$ colors, such as black and white. 8 bits per pixel gives $2^{8} = 256$ colors.
+★ Alpha channel: a channel that describes opacity or coverage in image compositing.
+A fully opaque pixel blocks what is behind it. A transparent value allows background content to show.
+Added example: RGBA with 8 bits per channel uses $4 \times 8 = 32$ bits per pixel.
+
+HEX COLOR NOTATION
+★ Hex color notation: a compact way to write RGB channel values using two hexadecimal digits per channel.
+★ Form: #RRGGBB places red first, green second, and blue third.
+⚙ Step 1: Split the six digits into three pairs.
+⚙ Step 2: Convert each pair: the first digit times 16, plus the second digit.
+⚙ Step 3: Write the results in the order red, green, blue.
+
+EXAMPLE: READING #1D3922
+⚙ Red: hex 1D = $(1 \times 16) + 13 = 29$
+⚙ Green: hex 39 = $(3 \times 16) + 9 = 57$
+⚙ Blue: hex 22 = $(2 \times 16) + 2 = 34$
+⚙ Combined: RGB 29, 57, 34, a dark green because green is the largest value.
+⚙ Check through binary: 1D is 0001 1101, and $16 + 8 + 4 + 1 = 29$.
+
+EXAMPLE: READING #FF8000
+⚙ FF is red: $(15 \times 16) + 15 = 255$, the maximum.
+⚙ 80 is green: $(8 \times 16) + 0 = 128$, about half.
+⚙ 00 is blue: 0, none.
+⚙ Combined: RGB 255, 128, 0, which is orange (full red plus half green).
+Common mistake: reading the pairs in the wrong order. The order is always red, green, blue.
+
+PALETTES AND BITMAPS
+★ Palette: a table of available colors that image data can reference by index.
+Tradeoff: indexed color can store small codes per pixel when a limited set of colors is sufficient.
+EASIER: A palette works like a paint-by-number kit. Each pixel stores only a small number, and the palette says which color that number means.
+⚙ With k bits per index, the palette can hold $2^{k}$ colors.
+Added example: a 16-color palette needs 4 bits per pixel, because $2^{4} = 16$.
+★ Bitmap pattern: each row and column identifies a picture location, and a bit or small code at that location selects a state or palette entry.
+
+EXAMPLE: INDEXED COLOR VERSUS 24-BIT RGB
+Added example: a 100 by 100 image.
+⚙ Pixels: $100 \times 100 = 10{,}000$
+⚙ With a 16-color palette: $10{,}000 \times 4 = 40{,}000$ bits, and $40{,}000 \div 8 = 5{,}000$ bytes.
+⚙ With 24-bit RGB: $10{,}000 \times 24 = 240{,}000$ bits, and $240{,}000 \div 8 = 30{,}000$ bytes.
+⚙ Check another way: 24 bits is 6 times 4 bits, and $5{,}000 \times 6 = 30{,}000$.
+⚙ Answer: the palette version stores 5,000 bytes of pixel data (plus the small palette table) instead of 30,000 bytes.
+
+EXAMPLE: AN EIGHT-ROW BIT IMAGE
+Added example: an 8 by 8 bitmap where 1 means a dark pixel and 0 means a light pixel.
+⚙ Size: $8 \times 8 = 64$ pixels at 1 bit each is 64 bits, which is $64 \div 8 = 8$ bytes, one byte per row.
+⚙ The row 00111100 has dark pixels in the middle four positions.
+⚙ As a number: $32 + 16 + 8 + 4 = 60$, which is hex 3C.
+⚙ Check: $3C_{16} = (3 \times 16) + 12 = 60$.
+
+FILE FORMATS, COMPRESSION, AND METADATA
+★ File format: a documented structure that tells software how stored bytes are organized and interpreted.
+Examples: PNG, JPEG, WAV, and MP3 organize media data using different rules.
+★ Compression: a representation technique that reduces the number of bits needed to store or transmit data.
+Compression can reduce file size or transmission time under stated quality and compatibility requirements.
+★ Lossless compression: compression in which decompression can reproduce the original represented data exactly.
+Common use of lossless compression: text, program files, archives, and images that require exact reconstruction.
+★ Lossy compression: compression in which the stored representation discards some information to reduce size.
+Common use of lossy compression: images, audio, or video when an acceptable quality tradeoff is allowed.
+Difference: lossless gives back every original bit; lossy gives back a close copy, not the exact original.
+EASIER: Lossless is like folding a shirt to fit a suitcase: unfold it and it is the same shirt. Lossy is like cutting off the sleeves to fit: smaller, but the sleeves are gone for good.
+Added example: PNG is commonly lossless, while JPEG and MP3 are commonly lossy. WAV usually stores uncompressed audio.
+★ Metadata: data that describes other data.
+Media examples of metadata: dimensions, color profile, capture time, sample rate, duration, or author information.
+
+WHY SAME-SIZE IMAGES CAN HAVE DIFFERENT FILE SIZES
+Two images with the same dimensions can still have different file sizes because of four things.
+⚙ Color depth: more bits per pixel means more data.
+⚙ Compression: lossy or lossless, and how strong the setting is.
+⚙ Content: a plain area compresses well, while a detailed photo with many changes compresses less.
+⚙ Metadata: extra stored details such as a color profile, capture time, or author add bytes.
+
+EXAMPLE: UNCOMPRESSED SIZE OF A 1920 BY 1080 IMAGE
+Added example: 24-bit RGB, no compression, no metadata.
+⚙ Formula: $\text{size in bits} = \text{width} \times \text{height} \times \text{bits per pixel}$
+EASIER: Count the pixels, multiply by the bits each pixel uses, then divide by 8 to get bytes.
+⚙ $1920 \times 1080 = 2{,}073{,}600$ pixels
+⚙ $2{,}073{,}600 \times 24 = 49{,}766{,}400$ bits
+⚙ $49{,}766{,}400 \div 8 = 6{,}220{,}800$ bytes, about 6.2 MB
+⚙ Check another way: 24 bits is 3 bytes per pixel, and $2{,}073{,}600 \times 3 = 6{,}220{,}800$ bytes.
+
+AUDIO REPRESENTATION
+Digital audio records a sequence of measured signal values over time.
+★ Sample: a numeric measurement of a signal at a particular moment.
+A sequence of samples approximates how an audio signal changes over time.
+★ Sample rate: the number of audio samples recorded or processed per second.
+★ Hertz (Hz): events per second. A sample rate label states samples per second, so 44,100 Hz means 44,100 samples each second.
+★ Audio bit depth: the number of bits used to represent one sample value for one channel.
+More bits provide more possible numeric levels for each sample.
+Added example: 16-bit audio gives $2^{16} = 65{,}536$ possible levels per sample, while 8-bit audio gives only $2^{8} = 256$.
+★ Audio channel: a separate stream of audio samples within a recording or playback format.
+Mono uses one channel. Stereo normally uses two channels.
+EASIER: Sampling is like taking many snapshots of a moving wave every second. Sample rate is how many snapshots per second; bit depth is how precise each snapshot is.
+Difference: sample rate is how often the signal is measured; bit depth is how precisely each measurement is stored.
+Difference: image color depth counts bits per pixel or channel; audio bit depth counts bits per sample.
+
+CODEC AND CONTAINER
+★ Codec: a method for encoding and decoding media data, which may include compression.
+★ Container: a file structure that holds one or more media streams and related metadata.
+EASIER: The codec is how the media is packed; the container is the box that holds the packed streams plus their labels.
+Added example: an MP4 file is a container that can hold a video stream and an audio stream, each made with its own codec.
+
+FACTORS THAT SHAPE AUDIO SIZE
+⚙ Rate: the sample rate, the samples recorded each second.
+⚙ Depth: the bit depth, the bits for each sample value.
+⚙ Channels: the channel count, the parallel sample streams.
+⚙ Time: the duration, the number of recorded seconds.
+★ Uncompressed audio size: $\text{bits} = \text{sample rate} \times \text{bit depth} \times \text{channels} \times \text{seconds}$
+EASIER: Multiply how often, how precisely, how many streams, and how long. Divide the result by 8 to get bytes.
+Stereo normally needs more uncompressed data than mono for the same duration and settings, because it stores two streams of samples instead of one, which doubles the data.
+
+EXAMPLE: 10 SECONDS OF CD-QUALITY STEREO
+Added example: 44,100 Hz, 16-bit, 2 channels, 10 seconds, uncompressed.
+⚙ $44{,}100 \times 16 = 705{,}600$ bits per second for one channel
+⚙ $705{,}600 \times 2 = 1{,}411{,}200$ bits per second for stereo
+⚙ $1{,}411{,}200 \times 10 = 14{,}112{,}000$ bits
+⚙ $14{,}112{,}000 \div 8 = 1{,}764{,}000$ bytes, about 1.76 MB
+⚙ Check another way: 16 bits is 2 bytes, so $44{,}100 \times 2 \times 2 = 176{,}400$ bytes per second, and $176{,}400 \times 10 = 1{,}764{,}000$ bytes.
+⚙ The same recording in mono is half as large: 882,000 bytes.
+
+FROM INFORMATION TO MEANING
+⚙ Step 1: Choose the type: number, text, image, or sound.
+⚙ Step 2: Apply a format: define the code units and structure.
+⚙ Step 3: Store the bits: preserve the resulting pattern.
+⚙ Step 4: Interpret: software reconstructs usable meaning.
+★ Errors occur when software uses the wrong type, encoding, byte order, format, or metadata.
+Added example: byte order is the order in which the bytes of a multi-byte value are stored. Reading the bytes in the opposite order gives a different value.
+Added example: opening a UTF-8 file with the wrong encoding can show ñ as two strange symbols, because its two bytes C3 B1 are read as two separate characters.
+★ Computers preserve patterns of bits, while formats and encodings tell software what those patterns mean.
+The same storage hardware can keep a text file, a photograph, and a sound recording because all three are stored as bits; only their formats and encodings differ.
+
+WHY EVERY PROGRAM NEEDS REPRESENTATION LITERACY
+IT: operate systems by reading sizes, formats, encodings, and compatibility limits.
+CS: build abstractions by connecting data types and algorithms to bit-level storage.
+AIS: prepare data by recognizing numeric, text, image, and audio representations.
+MMA: control media by understanding color, resolution, sampling, and compression choices.
+
+SIMILAR TERMS THAT GET CONFUSED
+Data vs information: data is the raw value; information is that value with enough context to use it.
+Bit vs nibble vs byte: 1 bit, 4 bits, 8 bits.
+Number of patterns vs largest value: n bits give $2^{n}$ patterns, but the largest unsigned value is $2^{n} - 1$.
+KB vs KiB: 1,000 bytes vs 1,024 bytes. MB vs MiB: 1,000,000 bytes vs 1,048,576 bytes.
+b vs B: lowercase b is bit (rates such as Mb/s); uppercase B is byte (sizes such as MB).
+Code point vs encoding: the code point is the character's number (U+00F1); the encoding is how that number becomes bytes (C3 B1 in UTF-8).
+Character count vs byte count: ñ is 1 character but 2 UTF-8 bytes.
+Unicode vs UTF-8: Unicode assigns the numbers; UTF-8 stores them as 1 to 4 bytes.
+Lossless vs lossy: exact rebuild vs some information discarded.
+Codec vs container: the codec encodes and decodes the stream; the container holds the streams and metadata.
+MSB vs LSB: leftmost and largest weight vs rightmost and weight 1.
+
+COMMON MISTAKES
+Starting the binary weights at 2 instead of 1. The rightmost position always has weight 1.
+Grouping bits into nibbles from the left. Always group from the right and pad on the left.
+Converting a hex digit to fewer than four bits, such as 7 as 111 instead of 0111.
+Forgetting that A to F stand for 10 to 15 when converting hex to decimal.
+Reading hex color pairs in the wrong order. #RRGGBB is red, green, blue.
+Treating every character as one byte in UTF-8.
+Mixing up bits and bytes in speeds and sizes. Multiply bytes by 8 to get bits.
+Forgetting the channel count or the duration in audio size, or forgetting to divide bits by 8 at the end.
+
+EXAM TIPS
+Memorize the 8-bit weights: 128, 64, 32, 16, 8, 4, 2, 1. They add up to 255.
+Memorize the nibble table 0000 to 1111 with hex 0 to F.
+Memorize the anchors: A is decimal 65, hex 41, binary 01000001, code point U+0041.
+Check every conversion by converting it back another way, for example binary to hex to decimal.
+For any size question, write the formula first, multiply, then divide by 8 at the end for bytes.
+
+SELF-TEST
+Q: Which place values are active in 11001010, and what is its decimal value?
+★ 128, 64, 8, and 2, which add to 202.
+Q: What is hex 2D in eight-bit binary?
+★ 00101101
+Q: How many distinct patterns can 4 bits form?
+★ $2^{4} = 16$
+Q: What eight-bit binary pattern and two-digit hex value represent decimal 65?
+★ 01000001 and hex 41 (active weights 64 and 1; nibbles 0100 and 0001).
+Q: What does each pair in #FF8000 represent?
+★ FF is red 255, 80 is green 128, and 00 is blue 0.
+Q: How many UTF-8 bytes does ñ use?
+★ 2 bytes, C3 B1.
+Q: How many bytes are in 1 KiB?
+★ 1,024 bytes.
+Q: How many pixel positions are in a 1920 by 1080 raster?
+★ 2,073,600
+Q: Why does stereo need more uncompressed data than mono?
+★ Stereo stores two channels of samples instead of one, so it doubles the data for the same settings and duration.

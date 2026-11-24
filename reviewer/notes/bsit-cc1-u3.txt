@@ -1,0 +1,244 @@
+Unit 3 Software and Operating Systems
+Software layers, operating system services, files and folders, and software in a live workflow
+
+SOFTWARE LAYERS
+A visible application depends on software beneath it.
+★ Software: programs and related instructions that direct hardware and coordinate computing work.
+Examples of software: operating system, device driver, photo editor, web browser, spreadsheet, and utility.
+EASIER: Hardware is the body of the computer, and software is the set of instructions that tells the body what to do.
+★ Hardware: physical components such as memory, processor, screen, storage, and network adapter.
+Software is the instructions and services that use or manage those physical components.
+Difference: hardware is something you can touch; software is instructions that use or manage that hardware.
+
+SYSTEM SOFTWARE AND APPLICATION SOFTWARE
+★ System software: software that runs and coordinates the computer itself and provides common services to programs.
+Examples of system software: operating system, device drivers, firmware interfaces, and system utilities.
+★ Application software: software that helps a user carry out a particular task.
+Examples of application software: word processor, web browser, video editor, game, and learning management app.
+★ System software provides shared facilities: file access, process execution, hardware control, and the user interface.
+★ Application software uses those facilities to help a person perform a task, such as editing a photo.
+EASIER: System software is the building's electricity and plumbing; application software is the shop that uses them to serve customers.
+Difference: system software serves the computer and all programs; application software serves the person doing one task.
+Example: a video editor is application software because it helps a person edit videos, while its audio driver is system software because it lets the operating system control the sound hardware.
+
+FIRMWARE, DRIVERS, AND UTILITIES
+★ Firmware: software stored in a device that supports basic operation and startup.
+Example: device firmware may initialize (prepare) hardware before the operating system takes control.
+EASIER: Firmware is the small built-in program that wakes the device up before the main operating system loads.
+★ Device driver: software that lets the operating system communicate with a particular class of hardware device.
+Example: a printer driver helps the operating system send a print job in a form the printer can use.
+EASIER: A driver is a translator between the operating system and one kind of hardware.
+★ System utility: a tool for maintaining, configuring, observing, or protecting a computer.
+Examples of system utilities: file manager, storage tool, backup tool, and process viewer.
+Difference: firmware lives in the device and handles startup; a driver lets the operating system talk to a device; a utility is a tool the person uses to look after the computer.
+
+LOCAL AND REMOTE COMPONENTS
+An application can be local or remote.
+★ Local component: code and data may run on the device you hold, and the operating system still supplies services.
+★ Remote component: a web app may also use servers and stored data elsewhere, but the browser remains a local application.
+EASIER: Even when a website does the heavy work on a far-away server, the browser you are using still runs on your own device.
+
+EXAMPLE: A PHOTO EDITOR DEPENDS ON LAYERS
+⚙ Step 1: Person chooses Open.
+⚙ Step 2: Editor requests file access.
+⚙ Step 3: Operating system locates and reads the file.
+⚙ Step 4: Storage supplies the bytes.
+The editor uses an operating system service to reach stored data.
+Example: when you open a saved photograph, the application is the photo viewer or editor, the operating system service is file management, and the hardware resource is storage (and the screen that shows the picture).
+
+OPERATING SYSTEM SERVICES
+The operating system coordinates resources shared by programs.
+★ Operating system (OS): system software that manages hardware resources and provides common services and interfaces for programs and users.
+★ Windows, macOS, Linux, Android, and iOS are operating system families.
+EASIER: The operating system is the manager of the computer; every app has to go through it to use the hardware.
+
+CORE OPERATING SYSTEM SERVICES
+⚙ Processes (RUN): starts and coordinates running programs.
+⚙ Memory (MEM): assigns working space to processes.
+⚙ Files (FILE): organizes and provides stored data.
+⚙ Devices (DEV): coordinates input, output, and communication.
+EASIER: Remember the four as Run, Mem, File, Dev: run programs, give them memory, keep their files, and connect them to devices.
+
+PROCESSES AND PROGRAMS
+★ Process: a running instance of a program together with the resources and state it uses.
+Example: opening an editor creates a running process or several related processes.
+★ Program file: stored instructions that can be launched again later.
+★ Running process: active execution with state and resources, visible to an operating system process viewer.
+EASIER: A program file is a recipe in a book; a process is someone actually cooking from that recipe right now.
+Difference: the program file stays in storage after you close it; the process exists only while it runs.
+Closing an editor ends its process, but a saved document stays in storage and does not disappear.
+
+MEMORY MANAGEMENT AND PROCESS SCHEDULING
+★ Memory management: the operating system tracks and allocates working memory while programs run.
+Observation: a process viewer can show current memory use, and the displayed amount may change while an app is open.
+★ Process scheduling: the operating system chooses which runnable tasks receive processor time.
+Observation: several apps can appear responsive even when each needs processor time.
+EASIER: Scheduling is like a teacher calling on students in quick turns, so everyone seems to be answering at once.
+One computer can run a browser and an image editor at once because the operating system schedules processor time between them and gives each its own working memory.
+Difference: memory management hands out working space (memory); process scheduling hands out processor time.
+
+DEVICE AND FILE MANAGEMENT
+★ Device management: the operating system coordinates programs and hardware through drivers and other interfaces.
+Example: an editor asks to save, and the OS and storage hardware complete the request.
+★ File management: the operating system names, organizes, stores, finds, and controls access to files.
+Example: a file manager can display folders, file names, sizes, and types.
+
+USER INTERFACE
+★ User interface: the means by which a person communicates with a computer system.
+Examples of user interfaces: desktop, touch controls, accessibility tools, and command interface.
+★ Graphical interface: people select visual controls, windows, and files.
+★ Command interface: people type commands in a shell.
+Both routes, graphical and command, request operating system services.
+Difference: in a graphical interface you click or tap what you see; in a command interface you type text commands.
+
+KERNEL, PROTECTED SERVICES, AND PERMISSION
+★ Kernel: the central operating system component that manages protected system resources.
+Applications use operating system interfaces to request access to files and devices.
+★ Application space (user space): ordinary applications run with limits on direct access to protected resources.
+★ Protected OS services: the system handles requests for device and memory operations under operating system rules.
+EASIER: Apps are customers at a bank counter; they ask, and only the kernel behind the counter touches the vault.
+Clicking Save does not bypass the operating system; the app asks the OS, which writes the file to storage.
+★ Permission: a rule that allows or denies a requested action on a resource.
+Example: a program may need access to a file, camera, microphone, or folder.
+
+EXAMPLE: OPENING A SAVED DOCUMENT
+⚙ Step 1: Click Open (user action).
+⚙ Step 2: App request (select the file).
+⚙ Step 3: OS service (check and read).
+⚙ Step 4: App view (display content).
+The document is stored data; the editor is a running application.
+
+FOUR THINGS YOU CAN OBSERVE
+★ Platform (OS): operating system name and version.
+★ Application (APP): the program used for the task.
+★ Process (PROC): an active instance in a process viewer.
+★ File (FILE): a named item in the file manager.
+Key point: the operating system supplies shared services to running applications.
+
+FILES AND FOLDERS
+Stored data has a name, a location, and a format.
+When an application opens a saved file, the program is launched as a running process, and an operating system service (file management) reads the file so the app can show it.
+★ File: a named collection of data stored so it can be retrieved, moved, copied, or changed.
+Examples of files: report, photograph, source code, data table, and audio recording.
+★ Folder: a container used to organize files and other folders within a file system.
+Example: a course folder can contain readings, data, and submissions.
+★ File system: the operating system's method for organizing and retrieving stored files and folders.
+Observation: a file manager shows a usable view of file system locations and names.
+Difference: a file holds data; a folder holds files and other folders; the file system is the OS method that organizes all of them.
+
+PATHS AND FILENAMES
+★ Path: a written location that identifies a file or folder within a folder hierarchy.
+Example: CC1 / Week3 / notes / brief.txt names the folder chain and the file.
+EASIER: A path is like a full home address: province, city, street, then house.
+★ Filename: identifies an item within its current folder; two folders may contain files with the same name.
+★ Location: the path identifies the folder chain; moving an item changes its location.
+Difference: the filename is the item's name; the location (path) is where it sits.
+
+FILE EXTENSIONS AND CONTENT
+★ File extension: a suffix in a filename, commonly used as a clue to file format or associated application.
+Examples of extensions: brief.txt, attendance.csv, photo.png.
+The suffix alone does not prove what the bytes contain.
+★ Extension: a name suffix that may guide how software opens a file.
+★ Content: the data inside must match a format an application understands.
+Renaming .txt to .png does not convert text into an image, so renaming scene.txt to scene.png does not make it a picture.
+EASIER: Changing the label on a jar does not change what is inside the jar.
+
+PLAIN TEXT AND CSV
+★ Plain text: text stored as characters without a document's rich formatting.
+Example: a .txt file can be read by many text editors.
+★ Comma-separated values (CSV): plain text that records tabular values in rows with commas between fields under the chosen CSV convention.
+Example: the line name,role followed by Ana,editor on a new line.
+EASIER: A CSV is a table written as plain text, where each line is a row and commas split the columns.
+★ Data file: a .csv file holds values, and opening it does not turn it into an app.
+★ Application: a spreadsheet program may display the rows as a table and let you edit them.
+Difference: the .csv file is data; the spreadsheet program is the software that shows and edits it.
+
+METADATA
+★ Metadata: information about a file, such as its name, type, size, modified time, or location.
+Observation: a file manager can show several metadata fields without opening the file.
+EASIER: Metadata is data about data, like the label on a box instead of the things inside.
+
+COPY, MOVE, ARCHIVE, AND VERSION
+★ Copy: creates another item containing the data at a chosen destination.
+★ Move: changes where an existing item appears in the folder hierarchy.
+Difference: after a copy there are two items; after a move there is still one item, now in a new place.
+★ Archive folder: a named location people use to keep older or completed items separate from active work.
+Example: move the final handoff note from docs to archive when work closes.
+★ Version: a distinguishable state of a file or document at a point in a workflow.
+Example: the first brief and a revised brief differ in their content.
+
+SAVED AND UNSAVED CHANGES
+★ Unsaved change: the application may hold an edit in working memory before it writes the edit to storage.
+★ Saved change: after a successful save, stored file content changes.
+A visible Save indicator depends on the app.
+A revised document needs a save step because until it is saved the edit lives only in working memory, not in the stored file.
+EASIER: Typing is writing on a whiteboard; saving is copying it into your notebook.
+
+SOFTWARE IN A LIVE WORKFLOW
+Visible behavior gives clues about underlying services.
+★ Process viewer: a system utility that lists processes and often shows resource use.
+★ Platform examples of process viewers: Task Manager (Windows), Activity Monitor (macOS), and a Linux system monitor.
+★ Visible app: the window or icon that the student recognizes.
+★ Process list: one or more entries tied to running work; an entry name may differ from the app title.
+A browser showing six processes does not mean six separate browsers were started; one application can run several related processes.
+★ Resource use: the amount of processor time, memory, or other resources shown for a running task.
+Observation: values change, so one screenshot is a sample at a particular moment.
+★ Open: starting an application can create a process and allocate memory.
+★ Close: closing its window can end or change related processes, depending on the program.
+
+DEFAULT APPLICATIONS AND ASSOCIATION
+★ Default application: the app an operating system chooses for a file or action when the user has not specified another choice.
+Example: opening a .txt file often starts the configured text editor.
+★ Association: the system may link a filename suffix with an application.
+★ Format: the actual bytes still determine whether that application can interpret the content.
+Difference: association decides which app tries to open the file; format decides whether that app can actually read it.
+
+UPDATES, BACKUPS, AND CLOUD FILES
+★ Software update: a released change to a program or system component.
+⚙ Possible purposes of an update: fix defects, improve security, or add behavior.
+★ Backup: a separate recoverable copy of data retained in case the working copy is lost or damaged.
+Example: a separate copy of course work helps recover from accidental deletion.
+★ Local file: data may be stored on the device's own storage.
+★ Cloud file: a service may keep a remote copy; the app and OS still manage local interactions and sync.
+A cloud icon does not tell you every file exists only on a server; a local copy and a remote copy can both be present because sync keeps them matched.
+Difference: a backup is a copy kept for recovery; a cloud file is a remote copy kept in sync with the device.
+
+EXAMPLE: A DOCUMENT EDIT CROSSES SOFTWARE LAYERS
+⚙ Step 1: Editor holds an edit.
+⚙ Step 2: OS service handles the save.
+⚙ Step 3: File system updates the stored file.
+⚙ Step 4: File manager shows the modified item.
+A screenshot captures the visible result, not every internal step.
+
+A USEFUL LAB OBSERVATION
+⚙ Step 1, Identify (NAME): record the exact application and process name.
+⚙ Step 2, Observe (STATE): capture current process and file views.
+⚙ Step 3, Locate (PATH): record the file path before and after a move.
+⚙ Step 4, Explain (WHY): name the OS service behind the change.
+Example: when a photo editor opens an image and saves a revision, the photo editor and the operating system are software, and the image file is data.
+Key point: applications use operating system services to run, access files, and work with devices.
+
+COMMON MISTAKES
+Thinking a web app runs only on a server; the browser is still a local application.
+Thinking closing an app deletes its saved file; closing ends the process, not the stored file.
+Thinking renaming a file extension converts the file; the bytes inside stay the same.
+Thinking a .csv file becomes a spreadsheet app when opened; it stays a data file.
+Thinking one app always equals one process; one app can show several processes.
+Thinking moving a file makes a second copy; only copying does.
+
+EXAM TIPS
+Know the four core OS services in order: processes, memory, files, devices.
+Know the three ordered workflows: photo editor layers, opening a saved document, and a document edit crossing layers.
+Match each term to its example: printer driver for device driver, Task Manager for process viewer, brief.txt for file extension.
+
+SELF-TEST
+Q: What is the central operating system component that manages protected system resources?
+★ The kernel.
+Q: Which OS service chooses which runnable tasks receive processor time?
+★ Process scheduling.
+Q: What is a running instance of a program together with the resources and state it uses?
+★ A process.
+Q: Does renaming scene.txt to scene.png make it a picture?
+★ No; the extension changes, but the bytes inside are still text.
+Q: What is information about a file, such as its name, type, size, modified time, or location?
+★ Metadata.

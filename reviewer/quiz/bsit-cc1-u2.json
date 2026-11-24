@@ -1,0 +1,362 @@
+[
+ {
+  "q": "Which term refers to the electronic, electrical, and mechanical components that input, process, store, output, or communicate represented data?",
+  "options": [
+   "Architecture",
+   "Hardware",
+   "Organization",
+   "Interface"
+  ],
+  "answer": 1,
+  "explanation": "Hardware is the physical layer: the electronic, electrical, and mechanical components that handle represented data. Architecture is the set of features visible to software, organization is how hardware realizes that architecture, and an interface is a defined boundary for communication.",
+  "source": "notes"
+ },
+ {
+  "q": "Which term describes how hardware realizes the architecture through caches, buses, control signals, and physical implementation?",
+  "options": [
+   "Architecture",
+   "Instruction set",
+   "Form factor",
+   "Organization"
+  ],
+  "answer": 3,
+  "explanation": "Organization is how the hardware actually carries out the architecture, covering caches, buses, control signals, and physical implementation. Architecture is what software can see (instruction set, data sizes, addressing, program-visible registers), the instruction set is part of architecture, and form factor is a device's size and physical arrangement.",
+  "source": "notes"
+ },
+ {
+  "q": "What is a system on a chip (SoC)?",
+  "options": [
+   "Several computing components combined within one integrated circuit package",
+   "The main circuit board that physically supports and electrically connects major components",
+   "A specialized processor that performs many similar calculations across large data collections",
+   "Hardware that manages communication between the main system and one device or subsystem"
+  ],
+  "answer": 0,
+  "explanation": "An SoC combines components such as CPU cores, graphics, memory controllers, and communication interfaces in one integrated circuit package. The main circuit board is the motherboard, many similar calculations describe a GPU, and managing one device describes a controller.",
+  "source": "notes"
+ },
+ {
+  "q": "Which processor component interprets instructions and directs the timing and movement of operations and data?",
+  "options": [
+   "Arithmetic logic unit",
+   "Program counter",
+   "Control unit",
+   "Cache"
+  ],
+  "answer": 2,
+  "explanation": "The control unit interprets instructions, selects data paths, and issues control signals. The ALU calculates, the program counter holds the address of the next instruction, and cache stores copies of likely-needed items.",
+  "source": "notes"
+ },
+ {
+  "q": "Which term matches a very small, very fast storage location inside the processor used for active values, addresses, instructions, or status?",
+  "options": [
+   "Cache",
+   "Register",
+   "RAM",
+   "Storage controller"
+  ],
+  "answer": 1,
+  "explanation": "A register sits inside the processor and holds immediate working values. Cache is small fast memory holding copies near the processor, RAM is main memory for active programs, and a storage controller manages a storage device.",
+  "source": "notes"
+ },
+ {
+  "q": "Which special register holds the address of the next instruction to fetch?",
+  "options": [
+   "Program counter",
+   "Instruction register",
+   "Control unit",
+   "Address bus"
+  ],
+  "answer": 0,
+  "explanation": "The program counter points to what comes next; branch, jump, call, return, or exception behavior can replace its address. The instruction register holds the current instruction, the control unit is not a register, and the address bus is a pathway rather than a register.",
+  "source": "notes"
+ },
+ {
+  "q": "Which unit performs numerical operations, logical operations, comparisons, and related transformations?",
+  "options": [
+   "Control unit",
+   "Neural processing unit",
+   "Instruction register",
+   "Arithmetic logic unit"
+  ],
+  "answer": 3,
+  "explanation": "The ALU adds, subtracts, compares, performs AND, OR, and shift, and tests whether a value is zero, positive, or negative. The control unit coordinates rather than calculates, the NPU targets selected machine-learning operations, and the instruction register only holds the current instruction.",
+  "source": "notes"
+ },
+ {
+  "q": "What is a hardware thread?",
+  "options": [
+   "The physical instruction-processing resources of a processor, including its execution units",
+   "A repeating timing signal that coordinates many state changes inside a digital system",
+   "A processor-supported execution context that maintains the state of an instruction stream on a core",
+   "A special register that holds the address of the next instruction to fetch"
+  ],
+  "answer": 2,
+  "explanation": "A hardware thread is an execution context that keeps the state of one instruction stream and shares core resources when colocated. Physical execution resources describe a core, the timing signal is the clock, and the next-instruction address register is the program counter.",
+  "source": "notes"
+ },
+ {
+  "q": "Which pathway specifies which memory location, device register, or target should participate in a transfer?",
+  "options": [
+   "Address bus",
+   "Data bus",
+   "Control bus",
+   "Clock"
+  ],
+  "answer": 0,
+  "explanation": "The address bus answers where. The data bus carries the value being transferred, the control bus carries signals such as read, write, and acknowledgments, and the clock is a timing signal rather than a pathway for locations.",
+  "source": "notes"
+ },
+ {
+  "q": "Which term matches a device connected to a computer to provide input, output, storage, communication, or another specialized function?",
+  "options": [
+   "Controller",
+   "Peripheral",
+   "Embedded system",
+   "Motherboard"
+  ],
+  "answer": 1,
+  "explanation": "A peripheral extends the core system and may be internal, cabled, wireless, or built into a portable device. A controller manages communication with a device, an embedded system is a computer inside a product, and the motherboard connects the major components.",
+  "source": "notes"
+ },
+ {
+  "q": "Which hardware is specialized for selected operations used in machine-learning inference or related workloads?",
+  "options": [
+   "Graphics processing unit (GPU)",
+   "Central processing unit (CPU)",
+   "Neural processing unit (NPU)",
+   "Arithmetic logic unit (ALU)"
+  ],
+  "answer": 2,
+  "explanation": "The NPU targets AI operations such as image enhancement, speech features, and classification. The GPU emphasizes parallel throughput across many similar operations, the CPU emphasizes general control and coordination, and the ALU is the arithmetic and logic part inside a processor.",
+  "source": "notes"
+ },
+ {
+  "q": "Which term answers the question \"How long before an access begins or completes?\"",
+  "options": [
+   "Capacity",
+   "Clock rate",
+   "Locality",
+   "Latency"
+  ],
+  "answer": 3,
+  "explanation": "Latency is waiting time, and lower latency means less waiting. Capacity answers how much can be held, clock rate is measured in cycles per second, and locality is the pattern of reusing recent items and nearby addresses.",
+  "source": "notes"
+ },
+ {
+  "q": "Which list gives the features that make up a system's architecture?",
+  "options": [
+   "Caches, buses, control signals, and physical implementation",
+   "Instruction set, data sizes, addressing, and program-visible registers",
+   "Instruction set, caches, buses, and control signals",
+   "Data sizes, clock rate, cores, and cooling"
+  ],
+  "answer": 1,
+  "explanation": "Architecture is the set of features visible to software: instruction set, data sizes, addressing, and program-visible registers. Caches, buses, control signals, and physical implementation belong to organization, and clock rate, cores, and cooling are performance factors.",
+  "source": "notes"
+ },
+ {
+  "q": "In the binary convention, how many bytes are in $1\\text{ KiB}$?",
+  "options": [
+   "$1024$",
+   "$1000$",
+   "$2^{20}$",
+   "$8$"
+  ],
+  "answer": 0,
+  "explanation": "A KiB uses the binary convention, so $1\\text{ KiB} = 2^{10} = 1024$ bytes. The decimal KB is $1000$ bytes, $2^{20}$ bytes is one MiB, and $8$ is the number of bits in one byte.",
+  "source": "notes"
+ },
+ {
+  "q": "Among the cooling mechanisms, which one adjusts power and fan behavior?",
+  "options": [
+   "Heat sink",
+   "Heat spreader",
+   "Fan",
+   "Firmware"
+  ],
+  "answer": 3,
+  "explanation": "Firmware has the control role. A heat spreader moves heat across a larger surface, a heat sink conducts and exposes heat to air, and a fan moves air across hot surfaces.",
+  "source": "notes"
+ },
+ {
+  "q": "In what unit is clock rate measured?",
+  "options": [
+   "Bytes per second",
+   "Instructions per core",
+   "Cycles per second",
+   "Threads per core"
+  ],
+  "answer": 2,
+  "explanation": "Clock rate counts the repeating timing signal in cycles per second. Bytes describe capacity or transfer amounts, and instructions or threads per core describe different resources.",
+  "source": "notes"
+ },
+ {
+  "q": "Which description matches USB Type-A?",
+  "options": [
+   "Smaller reversible connector form used on both hosts and devices",
+   "Rectangular connector form, common on host devices, with one insertion orientation",
+   "Digital audiovisual interface used with displays, projectors, and televisions",
+   "Digital display interface common in computers and monitors with several variants"
+  ],
+  "answer": 1,
+  "explanation": "USB Type-A is rectangular, common on hosts, and inserts one way. The smaller reversible form is USB Type-C, the audiovisual interface is HDMI, and the display interface with variants is DisplayPort.",
+  "source": "notes"
+ },
+ {
+  "q": "An NVMe SSD most commonly communicates over which connection?",
+  "options": [
+   "PCI Express",
+   "SATA",
+   "M.2",
+   "DisplayPort"
+  ],
+  "answer": 0,
+  "explanation": "An NVMe SSD uses the NVMe protocol, commonly over PCIe. SATA is the interface used by SATA SSDs, M.2 is a form factor rather than a connection type, and DisplayPort is a display interface.",
+  "source": "notes"
+ },
+ {
+  "q": "What is the correct order of the basic instruction cycle?",
+  "options": [
+   "Decode, fetch, execute, store",
+   "Fetch, execute, decode, store",
+   "Fetch, decode, execute, store",
+   "Fetch, decode, store, execute"
+  ],
+  "answer": 2,
+  "explanation": "The processor first fetches the next instruction, decodes its operation, executes it, then stores (writes back) the result; the cycle repeats while a program runs. The other orders interpret before retrieving, act before interpreting, or save before acting.",
+  "source": "notes"
+ },
+ {
+  "q": "Which sequence orders the memory hierarchy from nearest the processor to farthest?",
+  "options": [
+   "Cache, registers, RAM, internal storage, external or remote storage",
+   "Registers, RAM, cache, internal storage, external or remote storage",
+   "Registers, cache, internal storage, RAM, external or remote storage",
+   "Registers, cache, RAM, internal storage, external or remote storage"
+  ],
+  "answer": 3,
+  "explanation": "Fast and small sits close to the processor: registers, then cache, then RAM, then large nonvolatile internal storage, then removable, networked, or archival storage. Each wrong option swaps two adjacent levels.",
+  "source": "notes"
+ },
+ {
+  "q": "When an application opens, in what order do the hardware levels take part?",
+  "options": [
+   "Storage, RAM, cache, registers, processor",
+   "RAM, storage, cache, registers, processor",
+   "Storage, cache, RAM, registers, processor",
+   "Storage, RAM, registers, cache, processor"
+  ],
+  "answer": 0,
+  "explanation": "Storage preserves the app, RAM holds the active working set, cache keeps likely-needed copies, registers hold immediate operands, and the processor executes. Results then update memory and may return to storage.",
+  "source": "notes"
+ },
+ {
+  "q": "Which sequence describes one click as a complete hardware journey?",
+  "options": [
+   "Input, memory, interconnect, processor, output or storage",
+   "Input, interconnect, memory, processor, output or storage",
+   "Interconnect, input, processor, memory, output or storage",
+   "Input, processor, interconnect, memory, output or storage"
+  ],
+  "answer": 1,
+  "explanation": "An input device captures the command, a controller transfers signals over the interconnect, instructions and data become active in memory, the processor fetches, decodes, and executes, and the result appears or persists. Feedback then leads to the next input.",
+  "source": "notes"
+ },
+ {
+  "q": "Which storage label is paired with the WRONG dimension?",
+  "options": [
+   "HDD or SSD: mechanical magnetic or solid-state medium",
+   "SATA or NVMe: command and communication method",
+   "SATA or PCIe: path carrying the traffic",
+   "2.5-inch or M.2: command and communication method"
+  ],
+  "answer": 3,
+  "explanation": "2.5-inch and M.2 describe form, meaning physical size and connector arrangement, not a command method. HDD or SSD is technology, SATA or NVMe is protocol, and SATA or PCIe is the link.",
+  "source": "notes"
+ },
+ {
+  "q": "Which statement about cores and hardware threads is NOT true?",
+  "options": [
+   "One core may support one or more hardware threads",
+   "Operating systems schedule software threads onto available logical processors",
+   "A hardware thread is the physical resource that contains execution units and local state",
+   "Hardware threads share core resources when they are colocated on one core"
+  ],
+  "answer": 2,
+  "explanation": "Physical execution units and local state belong to the core; a hardware thread is an execution context that maintains architectural state. The other three statements are true.",
+  "source": "notes"
+ },
+ {
+  "q": "Which statement about volatile and nonvolatile hardware is NOT true?",
+  "options": [
+   "RAM requires ongoing power to preserve its ordinary contents",
+   "Cache is nonvolatile because it keeps copies of instructions near the processor",
+   "SSD, HDD, and flash retain ordinary contents without ongoing power",
+   "A result written to RAM stays temporary until it is sent to nonvolatile storage"
+  ],
+  "answer": 1,
+  "explanation": "Registers, cache, and RAM are normally volatile; keeping copies close to the processor is about speed, not retention. RAM is the typical volatile example, SSD, HDD, and flash are nonvolatile, and write-back to RAM is not permanent.",
+  "source": "notes"
+ },
+ {
+  "q": "Which statement about a USB Type-C port is NOT true?",
+  "options": [
+   "Its reversible shape confirms that it supports video output and power delivery",
+   "It is a smaller, reversible connector form",
+   "It is used on both host devices and attached devices",
+   "Its data protocol and transfer rate must be verified separately"
+  ],
+  "answer": 0,
+  "explanation": "Connector shape, data protocol, transfer rate, video support, and power delivery must each be verified from device and cable specifications, so the shape alone confirms only the connector form. The other statements are true.",
+  "source": "notes"
+ },
+ {
+  "q": "Which pairing of a bus or transfer element with its role is mismatched?",
+  "options": [
+   "Data bus: carries instruction bits, operand values, and results",
+   "Control bus: carries read, write, readiness, and acknowledgment signals",
+   "Address bus: carries the represented value being transferred",
+   "Timing: coordinates participation and completion of the transfer"
+  ],
+  "answer": 2,
+  "explanation": "The address bus identifies where (the target location or device); carrying the value itself is the data bus's job. The other pairings are correct.",
+  "source": "notes"
+ },
+ {
+  "q": "During a long video export, a laptop gradually slows down even though its processor model and memory capacity have not changed. What is the most likely cause?",
+  "options": [
+   "Write-back to nonvolatile storage",
+   "Lower storage capacity",
+   "A switch from volatile to nonvolatile memory",
+   "Thermal throttling"
+  ],
+  "answer": 3,
+  "explanation": "Thermal throttling automatically reduces clock rate, voltage, or workload activity when temperature or power conditions require protection, which shows up as slowdown during sustained work. Write-back, storage capacity, and memory volatility do not explain a heat-related slowdown over time.",
+  "source": "notes"
+ },
+ {
+  "q": "A home thermostat contains a small computer that only reads room temperature and switches the heater on or off. How is this computer classified?",
+  "options": [
+   "Peripheral",
+   "Embedded system",
+   "Server",
+   "Laptop"
+  ],
+  "answer": 1,
+  "explanation": "An embedded system is a computer integrated into a product to perform a limited set of dedicated functions. A peripheral extends another computer, a server handles shared workloads, and a laptop is a general-purpose portable form factor.",
+  "source": "notes"
+ },
+ {
+  "q": "A program keeps reusing the same few values, and the processor gets them without waiting for main memory because copies are kept nearby. Which hardware and pattern are at work?",
+  "options": [
+   "Cache exploiting locality",
+   "Registers exploiting write-back",
+   "RAM exploiting latency",
+   "Storage exploiting capacity"
+  ],
+  "answer": 0,
+  "explanation": "Cache stores copies of instructions and data likely to be used again soon, and it exploits locality, the tendency to reuse recent items and nearby addresses. Write-back is an instruction-cycle stage, and latency and capacity are measures, not patterns that keep copies close.",
+  "source": "notes"
+ }
+]

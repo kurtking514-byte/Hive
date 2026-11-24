@@ -1,0 +1,362 @@
+[
+{
+"q": "Which term refers to programs and related instructions that direct hardware and coordinate computing work?",
+"options": [
+"Hardware",
+"Firmware",
+"Software",
+"System utility"
+],
+"answer": 2,
+"explanation": "Software is programs and related instructions that direct hardware and coordinate computing work. Hardware is the physical components, firmware is software stored in a device for startup, and a system utility is a maintenance tool.",
+"source": "notes"
+},
+{
+"q": "Which term refers to software that runs and coordinates the computer itself and provides common services to programs?",
+"options": [
+"System software",
+"Application software",
+"Device driver",
+"Firmware"
+],
+"answer": 0,
+"explanation": "System software runs and coordinates the computer and provides common services to programs. Application software helps a user carry out a particular task, while drivers and firmware are specific kinds of system software, not the general category.",
+"source": "notes"
+},
+{
+"q": "What is firmware?",
+"options": [
+"Software that lets the operating system communicate with a particular class of hardware device",
+"A tool for maintaining, configuring, observing, or protecting a computer",
+"A released change to a program or system component",
+"Software stored in a device that supports basic operation and startup"
+],
+"answer": 3,
+"explanation": "Firmware is software stored in a device that supports basic operation and startup, and it may initialize hardware before the operating system takes control. The other options define a device driver, a system utility, and a software update.",
+"source": "notes"
+},
+{
+"q": "Which term refers to software that lets the operating system communicate with a particular class of hardware device?",
+"options": [
+"Kernel",
+"Device driver",
+"Firmware",
+"Process viewer"
+],
+"answer": 1,
+"explanation": "A device driver lets the operating system communicate with a class of hardware, such as a printer driver sending a print job in a usable form. The kernel manages protected resources, firmware handles startup, and a process viewer lists processes.",
+"source": "notes"
+},
+{
+"q": "What is a system utility?",
+"options": [
+"A tool for maintaining, configuring, observing, or protecting a computer",
+"Software that helps a user carry out a particular task such as editing a photo",
+"The central operating system component that manages protected system resources",
+"Software stored in a device that supports basic operation and startup"
+],
+"answer": 0,
+"explanation": "A system utility is a tool for maintaining, configuring, observing, or protecting a computer, such as a file manager, storage tool, backup tool, or process viewer. The other options define application software, the kernel, and firmware.",
+"source": "notes"
+},
+{
+"q": "Which term refers to a running instance of a program together with the resources and state it uses?",
+"options": [
+"Program file",
+"Version",
+"Process",
+"Default application"
+],
+"answer": 2,
+"explanation": "A process is a running instance of a program with its resources and state. A program file is stored instructions that can be launched later, a version is a state of a document, and a default application is the app the OS chooses for a file.",
+"source": "notes"
+},
+{
+"q": "Which term refers to the central operating system component that manages protected system resources?",
+"options": [
+"Shell",
+"Kernel",
+"Firmware",
+"File system"
+],
+"answer": 1,
+"explanation": "The kernel is the central OS component that manages protected system resources. A shell is where commands are typed, firmware supports startup, and the file system is the OS method for organizing stored files.",
+"source": "notes"
+},
+{
+"q": "What is a permission?",
+"options": [
+"A link the system makes between a filename suffix and an application",
+"Information about a file such as its name, type, size, or location",
+"A suffix in a filename used as a clue to the file format",
+"A rule that allows or denies a requested action on a resource"
+],
+"answer": 3,
+"explanation": "A permission is a rule that allows or denies a requested action on a resource, such as a program's access to a file, camera, microphone, or folder. The other options describe association, metadata, and a file extension.",
+"source": "notes"
+},
+{
+"q": "Which term refers to the operating system's method for organizing and retrieving stored files and folders?",
+"options": [
+"File system",
+"Folder",
+"Path",
+"File manager"
+],
+"answer": 0,
+"explanation": "The file system is the OS method for organizing and retrieving stored files and folders. A folder is a container inside it, a path is a written location, and a file manager is a utility that shows a usable view of the file system.",
+"source": "notes"
+},
+{
+"q": "Which term refers to a written location that identifies a file or folder within a folder hierarchy?",
+"options": [
+"Filename",
+"Path",
+"Metadata",
+"File extension"
+],
+"answer": 1,
+"explanation": "A path, such as CC1 / Week3 / notes / brief.txt, names the folder chain and the item. A filename only identifies an item within its current folder, metadata is information about a file, and an extension is a name suffix.",
+"source": "notes"
+},
+{
+"q": "Which term refers to information about a file, such as its name, type, size, modified time, or location?",
+"options": [
+"Plain text",
+"Version",
+"Metadata",
+"Resource use"
+],
+"answer": 2,
+"explanation": "Metadata is information about a file, and a file manager can show several metadata fields without opening the file. Plain text is a storage form, a version is a state of a document, and resource use is the processor time or memory shown for a running task.",
+"source": "notes"
+},
+{
+"q": "Which term refers to the app an operating system chooses for a file or action when the user has not specified another choice?",
+"options": [
+"Association",
+"System utility",
+"Application software",
+"Default application"
+],
+"answer": 3,
+"explanation": "The default application is the app the OS chooses when the user has not chosen another, such as the configured text editor for a .txt file. Association is the link between a suffix and an app, not the app itself; a system utility and application software are broader categories.",
+"source": "notes"
+},
+{
+"q": "Which list gives the shared facilities that system software provides?",
+"options": [
+"File access, photo editing, word processing, and web browsing",
+"File access, process execution, hardware control, and the user interface",
+"Process execution, backup, cloud sync, and software updates",
+"Hardware control, spreadsheets, games, and learning management"
+],
+"answer": 1,
+"explanation": "System software provides file access, process execution, hardware control, and the user interface. Photo editing, word processing, browsing, spreadsheets, games, and learning management apps are application software tasks.",
+"source": "notes"
+},
+{
+"q": "Which list contains only operating system families named in this unit?",
+"options": [
+"Windows, macOS, Linux, Android, and iOS",
+"Windows, macOS, Linux, Task Manager, and iOS",
+"Android, iOS, Activity Monitor, Linux, and Windows",
+"macOS, Linux, Android, firmware, and Windows"
+],
+"answer": 0,
+"explanation": "The OS families named are Windows, macOS, Linux, Android, and iOS. Task Manager and Activity Monitor are process viewers, and firmware is device startup software, not an operating system family.",
+"source": "notes"
+},
+{
+"q": "Which set lists the four things you can observe in a software and file workflow?",
+"options": [
+"Kernel, driver, firmware, and shell",
+"Hardware, memory, processor, and storage",
+"Platform, application, process, and file",
+"Path, extension, metadata, and backup"
+],
+"answer": 2,
+"explanation": "The four observable things are the platform (OS name and version), the application used for the task, the process shown in a process viewer, and the file shown in the file manager. The other sets mix internal components, hardware, or file details.",
+"source": "notes"
+},
+{
+"q": "Which list gives platform examples of a process viewer?",
+"options": [
+"File Explorer, Finder, and a Linux file manager",
+"Windows, macOS, and Linux",
+"Device driver, firmware, and kernel",
+"Task Manager, Activity Monitor, and a Linux system monitor"
+],
+"answer": 3,
+"explanation": "A process viewer is a system utility that lists processes, with platform examples Task Manager, Activity Monitor, and a Linux system monitor. File managers show files, Windows, macOS, and Linux are OS families, and drivers, firmware, and the kernel are not process viewers.",
+"source": "notes"
+},
+{
+"q": "Which statement correctly describes a comma-separated values (CSV) file?",
+"options": [
+"Plain text that records tabular values in rows with commas between fields",
+"A spreadsheet application that displays rows as a table and lets you edit them",
+"A rich formatted document that stores fonts and layout along with its text",
+"An image format whose bytes store pixels separated by commas"
+],
+"answer": 0,
+"explanation": "CSV is plain text that records tabular values in rows with commas between fields, such as name,role followed by Ana,editor. A spreadsheet program is the application that may display it; opening a .csv does not turn the data file into an app.",
+"source": "notes"
+},
+{
+"q": "Which list gives the possible purposes of a software update?",
+"options": [
+"Convert file formats, rename extensions, or move folders",
+"Fix defects, improve security, or add behavior",
+"Create backups, archive old items, or sync cloud files",
+"Allocate memory, schedule processes, or manage devices"
+],
+"answer": 1,
+"explanation": "A software update is a released change to a program or system component that may fix defects, improve security, or add behavior. The other lists describe file tasks, data protection tasks, or core OS services.",
+"source": "notes"
+},
+{
+"q": "What is the correct order of the layers when a photo editor opens a saved image?",
+"options": [
+"Person chooses Open, operating system locates and reads, editor requests file access, storage supplies bytes",
+"Editor requests file access, person chooses Open, storage supplies bytes, operating system locates and reads",
+"Storage supplies bytes, operating system locates and reads, editor requests file access, person chooses Open",
+"Person chooses Open, editor requests file access, operating system locates and reads, storage supplies bytes"
+],
+"answer": 3,
+"explanation": "The person chooses Open, the editor requests file access, the operating system locates and reads, and storage supplies the bytes. The editor must ask the OS before the OS can read storage, and the reversed order runs the chain backward.",
+"source": "notes"
+},
+{
+"q": "What is the correct order of steps when opening a saved document?",
+"options": [
+"App request, click Open, app view, OS service",
+"Click Open, OS service, app request, app view",
+"Click Open, app request, OS service, app view",
+"Click Open, app request, app view, OS service"
+],
+"answer": 2,
+"explanation": "The user clicks Open, the app requests the selected file, the OS service checks and reads it, and the app view displays the content. The content cannot be displayed before the OS reads it.",
+"source": "notes"
+},
+{
+"q": "What is the correct order when a document edit crosses software layers?",
+"options": [
+"Editor holds an edit, OS service handles the save, file system updates the stored file, file manager shows the modified item",
+"File system updates the stored file, editor holds an edit, OS service handles the save, file manager shows the modified item",
+"Editor holds an edit, file system updates the stored file, file manager shows the modified item, OS service handles the save",
+"OS service handles the save, editor holds an edit, file manager shows the modified item, file system updates the stored file"
+],
+"answer": 0,
+"explanation": "The editor first holds the edit in working memory, the OS service handles the save, the file system updates the stored file, and the file manager then shows the modified item. A screenshot captures only the visible result, not every internal step.",
+"source": "notes"
+},
+{
+"q": "What is the correct order of a useful lab observation?",
+"options": [
+"Observe, identify, explain, locate",
+"Identify, observe, locate, explain",
+"Identify, locate, observe, explain",
+"Locate, identify, observe, explain"
+],
+"answer": 1,
+"explanation": "Identify records the exact application and process name, observe captures current process and file views, locate records the file path before and after a move, and explain names the OS service behind the change.",
+"source": "notes"
+},
+{
+"q": "Which pairing of a core operating system service and its job is mismatched?",
+"options": [
+"Processes: starts and coordinates running programs",
+"Memory: assigns working space to processes",
+"Files: organizes and provides stored data",
+"Devices: chooses which runnable tasks receive processor time"
+],
+"answer": 3,
+"explanation": "The devices service coordinates input, output, and communication. Choosing which runnable tasks receive processor time is process scheduling. The other three pairings are correct.",
+"source": "notes"
+},
+{
+"q": "Which statement about files and extensions is NOT true?",
+"options": [
+"Renaming scene.txt to scene.png converts its text into an image",
+"Two folders may contain files with the same name",
+"Moving an item changes its location",
+"The suffix alone does not prove what the bytes contain"
+],
+"answer": 0,
+"explanation": "Renaming changes only the extension; the bytes are still text and must match a format an application understands, so the file does not become a picture. The other statements are true.",
+"source": "notes"
+},
+{
+"q": "Which pairing of a term and its meaning is mismatched?",
+"options": [
+"Copy: creates another item containing the data at a chosen destination",
+"Backup: a separate recoverable copy of data retained in case the working copy is lost or damaged",
+"Archive folder: a distinguishable state of a file or document at a point in a workflow",
+"Move: changes where an existing item appears in the folder hierarchy"
+],
+"answer": 2,
+"explanation": "A distinguishable state of a file at a point in a workflow is a version. An archive folder is a named location that keeps older or completed items separate from active work. The copy, backup, and move pairings are correct.",
+"source": "notes"
+},
+{
+"q": "Which statement about programs and processes is NOT true?",
+"options": [
+"A program file is stored instructions that can be launched again later",
+"Closing an editor deletes the saved document because its process ends",
+"Ordinary applications run with limits on direct access to protected resources",
+"Starting an application can create a process and allocate memory"
+],
+"answer": 1,
+"explanation": "Closing an editor ends or changes its process, but the saved document stays in storage. The other statements correctly describe a program file, application space, and opening an app.",
+"source": "notes"
+},
+{
+"q": "Which statement about local, remote, and cloud files is NOT true?",
+"options": [
+"When a web app uses remote servers, the browser remains a local application",
+"With a cloud file, the app and OS still manage local interactions and sync",
+"A local file is data stored on the device's own storage",
+"A cloud icon shows that a file exists only on a server"
+],
+"answer": 3,
+"explanation": "A cloud service may keep a remote copy, but a local copy can also be present because the app and OS manage sync, so a cloud icon does not prove the file exists only on a server. The other statements are true.",
+"source": "notes"
+},
+{
+"q": "A student classifies a video editor and the audio driver it uses. Which classification is correct?",
+"options": [
+"The video editor is application software, and the audio driver is system software",
+"The video editor is system software, and the audio driver is application software",
+"Both are application software because the editor uses the driver to play sound",
+"Both are firmware because they work with the sound hardware"
+],
+"answer": 0,
+"explanation": "The video editor helps a person carry out a task, so it is application software. The audio driver lets the OS communicate with the sound hardware, so it is system software. Firmware is stored in a device and supports startup.",
+"source": "notes"
+},
+{
+"q": "A process viewer shows six entries for one browser that a student opened once. Which explanation is correct?",
+"options": [
+"The student started six separate browsers, since each process is one copy of the app",
+"One application can have several related processes, and entry names may differ from the app title",
+"The browser's firmware created six devices, one for each process listed",
+"Each entry is a saved file that the browser opened from storage"
+],
+"answer": 1,
+"explanation": "Opening an app can create one or several related processes, and the process list may show names that differ from the visible app. Processes are running work, not separate browser copies, devices, or saved files.",
+"source": "notes"
+},
+{
+"q": "One student lists a folder by typing a command in a shell, and another opens the same folder by clicking its icon. Which statement is correct?",
+"options": [
+"The first uses a graphical interface and the second a command interface, and only the first uses the OS",
+"Both use a command interface, but only the typed command reaches the file system",
+"The first uses a command interface and the second a graphical interface, and both request OS services",
+"The first bypasses the operating system, while the second uses a device driver directly"
+],
+"answer": 2,
+"explanation": "Typing commands in a shell is a command interface; selecting visual controls is a graphical interface. Both routes request operating system services, and neither bypasses the OS.",
+"source": "notes"
+}
+]

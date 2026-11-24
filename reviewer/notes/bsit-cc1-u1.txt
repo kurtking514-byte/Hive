@@ -1,0 +1,286 @@
+Unit 1 Computing as a System
+The six components, the six functions, boundaries, and the layers of a computing system
+
+UNIT OBJECTIVES
+Objective 1: Identify the six components of a computing system.
+Objective 2: Explain how data moves through a system.
+Objective 3: Map boundaries, actors, and dependencies.
+Objective 4: Compare how disciplines view one system.
+
+THE SMARTPHONE AS A COMPUTING SYSTEM
+The unit opens with the question: is a smartphone a computing system?
+★ A smartphone, in simple terms, is a mobile phone that works like a tiny computer.
+★ Smartphone (full definition): a pocket-sized mobile device that combines cellular telephone hardware with a high-level computing architecture, including an operating system, a touchscreen interface, and the ability to run third-party software applications.
+★ Key point: a smartphone contains more than hardware.
+EASIER: The phone is not just its metal, glass, and chips. It also has instructions (the operating system and apps), data (photos, messages, settings), and people and networks outside it that it works with.
+Looking at a phone as a system means sorting its parts: which parts are physical, which are instructions, which are data, and who or what is outside the phone.
+Added example: The battery and screen are physical, the apps are instructions, your contacts list is data, and the cell tower and the person using the phone are outside the phone.
+
+COMPUTING IS TRANSFORMATION
+★ Computing transforms represented data through defined processes.
+★ Devices make the transformation possible; systems make it useful.
+EASIER: A computer changes data into something else by following set steps. The device can do the work, but it only becomes useful when it is part of a whole system with a purpose.
+★ Computing: the study and use of computational processes to represent, process, store, communicate, and act on information.
+★ Computing is not limited to programming. It includes devices, operating systems, applications, networks, data security, human interaction, automation, and organizational procedures.
+EASIER: Computing is more than writing code. Setting up networks, keeping data safe, and following office procedures are also part of computing.
+
+THE FIVE RECURRING ACTIONS OF COMPUTING
+⚙ Five recurring actions organize computing: Represent, Process, Store, Communicate, and Act.
+★ Represent: encode something in a usable form.
+★ Process: apply operations or rules.
+★ Store: preserve state for later use.
+★ Communicate: move data between components.
+★ Act: use the result to do something, which is the "act on information" part of the definition of computing.
+EASIER: The slides list the first four and ask the class to name the fifth; the fifth comes from the definition of computing, which ends with "act on information".
+EASIER: Memory trick: R-P-S-C-A. Turn it into data, work on it, keep it, send it, then do something with it.
+
+DATA VERSUS INFORMATION
+★ Data: represented facts, observations, symbols, or measurements that a system can store or process.
+★ Information: data becomes information when it is organized or interpreted so that it answers a question or supports an action.
+Data and information are related, but they are not identical.
+Difference: data is the raw recorded value; information is that value after it has been organized or given meaning so it is useful.
+★ Context turns data into usable information. Labels, rules, and purpose create meaning.
+
+EXAMPLE: RAW SCORES TO INFORMATION
+Raw observations: 97, 92, 85, 90.
+Without labels, the values are ambiguous, meaning they could stand for anything (ages, prices, temperatures).
+Interpreted result: they are four quiz scores, the average is 91, and the status is mastery achieved.
+EASIER: The numbers alone are data. Once you know they are quiz scores and you compute the average and a status, they become information you can act on.
+
+TRACING A TRANSFORMATION STEP BY STEP
+⚙ A transformation can be traced in this order: Observe, Represent, Process, Interpret, Act.
+★ Feedback changes the next input or process, so the cycle can start again with better input.
+Added example: A thermometer observes the room, the reading is represented as a number, the number is processed against a target, it is interpreted as "too hot", and the air conditioner acts by turning on. The new room temperature is the feedback for the next reading.
+
+WHAT A COMPUTING SYSTEM IS
+★ Computing system: a set of interacting components that collectively perform computing functions for a purpose.
+★ The purpose matters. The same laptop can belong to a learning system, a media-production system, a banking system, or an AI-development system, depending on the task and the boundary.
+EASIER: A system is like a team. The same player can be on different teams depending on the game being played.
+★ Summary definition: a computing system is an organized relationship among six component categories performing five recurring functions.
+
+THE SIX COMPONENTS OF A COMPUTING SYSTEM
+⚙ The six components are Hardware, Software, Data, People, Procedures, and Connectivity.
+⚙ Hardware: physical resources.
+⚙ Software: instructions and services.
+⚙ Data: represented facts.
+⚙ People: users and specialists.
+⚙ Procedures: rules and workflows.
+⚙ Connectivity: links and channels.
+EASIER: Memory trick: "Hard Soft Data People Proceed to Connect".
+
+HARDWARE
+★ Hardware supplies physical capability.
+★ Hardware: the tangible electronic and mechanical components that input, process, store, output, or communicate data.
+Examples: processor, memory, storage device, keyboard, display, camera, microphone, printer, sensor, router, and cable.
+EASIER: Tangible means you can touch it. If you can hold it or plug it in, it is hardware.
+
+SOFTWARE
+★ Software expresses instructions and services.
+★ Software: programs and related instructions that direct hardware and coordinate computational work.
+⚙ Layers of software: firmware, operating system, drivers, utilities, applications, libraries, web services, and AI models used by an application.
+EASIER: Hardware is the body; software is the set of instructions telling the body what to do.
+
+DATA AS A COMPONENT
+★ Data carries the system's represented state.
+★ Data (as a component): the symbols, values, files, records, media, and signals a system receives, creates, stores, or transmits.
+Examples: user credentials, text, images, grades, timestamps, device settings, transaction records, model inputs, and system logs.
+EASIER: Data is everything the system is holding or passing around, from your password to a log of what happened.
+
+PEOPLE
+★ People give systems goals and meaning.
+★ People: the users, clients, designers, developers, administrators, decision-makers, and affected stakeholders who interact with or influence the system.
+★ A person may have several roles in the same system.
+Example: a faculty member can be a user of Canvas, an author of course content, an evaluator of student work, and a stakeholder affected by system policies.
+EASIER: A stakeholder is anyone affected by the system, even if they never touch it.
+
+PROCEDURES
+★ Procedures coordinate repeatable work.
+★ Procedures: documented or understood rules, steps, conventions, and responsibilities that guide how a system is used and maintained.
+Examples: login rules, naming conventions, submission steps, approval workflows, backup schedules, escalation paths, and grading procedures.
+EASIER: Procedures are the "how we do things here" rules. An escalation path is who you go to next when a problem cannot be solved at your level.
+
+CONNECTIVITY
+★ Connectivity lets components exchange data.
+★ Connectivity: the communication links, protocols, and services that allow components to exchange data across a system boundary.
+Examples: Wi-Fi, mobile data, Ethernet, Bluetooth, USB, local networks, the Internet, web protocols, and cloud connections.
+EASIER: Connectivity is the road system that data travels on.
+
+CLASSIFYING ITEMS INTO THE SIX COMPONENTS
+Added example: Router belongs to Hardware (it is a physical device and is listed among hardware examples).
+Added example: Password policy belongs to Procedures (it is a rule, like login rules).
+Added example: Uploaded file belongs to Data (it is a file the system receives and stores).
+Added example: Student belongs to People (a user of the system).
+Added example: Web browser belongs to Software (an application program).
+Added example: Wi-Fi belongs to Connectivity (a communication link).
+Added example: Processor belongs to Hardware (a tangible component that processes data).
+Added example: Submission instructions belong to Procedures (steps that guide how the system is used).
+Added example: ChatGPT belongs to Software (an AI-based application or web service).
+
+PEOPLE AND PROCEDURES ARE NOT OPTIONAL EXTRAS
+★ A technically working device can still produce a failed system outcome.
+★ The wrong user, unclear rule, incomplete data, or broken workflow can defeat functioning hardware and software.
+EASIER: A perfect laptop still fails the task if the student uploads the wrong file or does not know the deadline.
+
+VALUE APPEARS THROUGH INTERACTION
+⚙ Interaction flow: Person chooses and acts, then the Interface captures input, then the Service applies rules, then the Result informs action, and Feedback goes back to the person.
+EASIER: You tap a button, the screen records the tap, the server follows its rules, and the result tells you what to do next.
+
+THE SIX FUNCTIONS TO TRACE ANY SYSTEM
+⚙ Functions to trace any system: Input, Process, Output, Storage, Communication, and Feedback.
+Difference: the six components are the parts a system is made of; the six functions are what those parts do with data.
+
+INPUT
+★ Input: data, signals, commands, or resources entering a defined system or process.
+★ Input is boundary-dependent.
+Example: a student's file is an output of a word processor but an input to the learning-management submission process.
+EASIER: Whether something counts as input depends on where you draw the line around the system.
+
+PROCESSING
+★ Processing transforms state.
+★ Processing: operations that validate, calculate, organize, compare, transform, route, or otherwise act on data.
+★ Processing is not always calculation.
+Examples: checking a password, resizing an image, sorting records, compressing a file, and routing a message are all forms of processing.
+
+OUTPUT
+★ Output: a result, response, action, or representation produced by a process and delivered to another component or actor.
+★ Outputs may be visible or hidden.
+Example: a displayed confirmation is visible. A log entry, updated database record, or background notification may not be visible to the user.
+
+STORAGE
+★ Storage preserves state across time.
+★ Storage: the retention of data, instructions, configuration, or results so they can be retrieved or used later.
+★ Storage exists at several timescales.
+⚙ Memory may hold temporary working state; files and databases preserve longer-term state; backups protect against loss.
+EASIER: Memory is short-term, files and databases are long-term, and backups are the safety copy.
+
+COMMUNICATION
+★ Communication moves represented data.
+★ Communication: the transfer of data or control messages among components, processes, devices, or people.
+★ Communication requires agreement. The sender and receiver need compatible formats, protocols, identifiers, and expectations to interpret the transfer correctly.
+EASIER: Two people must speak the same language to understand each other; two devices must use the same format and protocol.
+
+FEEDBACK
+★ Feedback changes what happens next.
+★ Feedback: information about a result or current condition that influences later input, decisions, or processing.
+Example: an error message prompts correction.
+Example: a progress indicator changes user behavior.
+Example: a recommendation system updates future suggestions from user responses.
+
+EXAMPLE: SUBMITTING AN ASSIGNMENT TO THE LMS
+LMS stands for learning management system, the online platform where courses and submissions are handled (Canvas is one).
+★ System purpose: deliver the intended student work to the correct course activity before the deadline and preserve evidence of submission.
+Inputs: file, credentials, course choice, assignment choice, and submit command.
+★ Each input must be valid, correctly represented, and associated with the right context.
+⚙ Processes in order: Authenticate, Validate, Associate, Transfer, Record.
+★ Rules determine whether the submission is accepted, rejected, or flagged.
+EASIER: Authenticate means check who you are; validate means check the file is acceptable; associate means link it to the right course and assignment; transfer means send it; record means save proof.
+Outputs: success message, timestamp, receipt, and error message.
+★ A useful output tells the student what happened and what to do next.
+Storage: uploaded file, submission record, timestamp, and audit log.
+★ Without stored state, the system cannot prove what happened later.
+⚙ Communication chain: Device, Wi-Fi, Internet, LMS service, Storage service (data can travel both ways along each link).
+★ A failure at any link may interrupt the outcome even when the other components work.
+Feedback: progress bar, confirmation of success, and error.
+★ Success ends the task; an error triggers correction, retry, or escalation.
+
+SYSTEMS AND PURPOSE
+★ System: an organized set of interacting parts that produces outcomes within a defined context.
+★ Purpose controls relevance.
+Example: when analyzing assignment submission, the student's breakfast is normally irrelevant, but the network connection and file format are not.
+
+SYSTEM BOUNDARY
+★ System boundary: the conceptual line that identifies what the analysis treats as inside the system and what it treats as external.
+★ Boundaries are choices.
+Example: a laptop can be the entire system for a hardware diagnosis or one component inside a university learning system.
+EASIER: A boundary is like a fence you draw on a map. You decide where it goes based on what you are studying.
+
+EXAMPLE: NARROW AND BROAD BOUNDARIES FOR THE SAME TASK
+★ Narrow boundary (the upload feature): includes the browser, file selector, validation, transfer, and confirmation.
+★ Broader boundary (the course-submission system): also includes the student, instructor, assessment rules, deadlines, storage, support, and grading.
+
+ENVIRONMENT
+★ Environment: external actors, conditions, policies, services, and events that influence the system without being modeled as internal components.
+Examples: electricity, government regulation, institutional policy, Internet service providers, weather, and external users may belong to the environment.
+Difference: the environment affects the system from outside the boundary; components are inside the boundary.
+
+SUBSYSTEM
+★ Subsystem: a component or group of components that functions as a system within a larger system.
+Example (LMS subsystems): authentication, content delivery, submission, grading, notification, analytics, and support can each be treated as subsystems.
+EASIER: A subsystem is a smaller system inside a bigger one, like the kitchen inside a restaurant.
+
+INTERFACE
+★ Interface: a defined point where two components, systems, or people exchange data, commands, or services.
+★ Interfaces are not only screens.
+Example: a button is a user interface. A file format, network protocol, connector, or application programming interface (API) can also define an interface.
+
+DEPENDENCY
+★ Dependency: a condition in which one component or outcome requires another component, resource, or service to function correctly.
+Example: a cloud document may depend on an account, browser, network, remote service, storage quota, permissions, and a compatible file format.
+
+CONSTRAINT
+★ Constraint: a requirement, limitation, rule, resource condition, or environmental factor that restricts how a system may operate.
+Examples: budget, deadline, bandwidth, device capacity, accessibility, policy, privacy, file size, and user skill can all constrain a solution.
+Difference: a dependency is something the system needs in order to work; a constraint is something that limits how the system may work.
+
+ABSTRACTION
+★ Abstraction: a simplified representation that preserves relevant features while hiding unnecessary implementation detail.
+Everyday example: a Save button exposes an action without requiring the user to manage memory addresses, storage blocks, or file-system calls.
+★ Abstraction makes complex systems usable: we can reason about one layer without understanding every lower layer.
+★ The hidden details still exist and may matter when something fails.
+EASIER: You drive a car using the steering wheel and pedals without knowing how the engine works, until the car breaks down.
+
+COMPUTING SYSTEMS ARE BUILT IN LAYERS
+⚙ L1 Hardware and signals: processors, memory, storage, networks.
+⚙ L2 System software: operating system, drivers, runtimes.
+⚙ L3 Applications: task-focused tools and services.
+⚙ L4 People and purpose: goals, decisions, communication.
+EASIER: Count up from the bottom: hardware first, then the software that runs the hardware, then the apps, then the people using them.
+
+DIFFERENT SYSTEMS SHARE A COMMON ANATOMY
+⚙ Common anatomy of any system, in order: Purpose, components, interactions, outputs, feedback.
+★ The framework stays stable even when technologies change.
+
+COMPUTING WORK IS COLLABORATIVE
+⚙ Technical contribution: analyze needs, design and build, operate and secure, test and improve.
+⚙ Collaborative contribution: ask clear questions, document decisions, explain trade-offs, coordinate responsibilities.
+★ A system map makes hidden assumptions visible.
+★ A system map lets a team challenge boundaries, missing actors, dependencies, and failure points before implementation.
+EASIER: Drawing the system before building it helps the team spot what they forgot.
+
+EVERY SYSTEM ALSO CREATES RESPONSIBILITY
+Every system raises questions: Who can access the data? Who may be excluded? Who is accountable when the result is wrong?
+★ Security, privacy, ethics, accessibility, and impact are recurring concerns throughout the course.
+
+KEY IDEA TO REMEMBER
+⚙ Computing becomes understandable when you trace purpose, boundaries, components, interactions, and feedback.
+The next unit is Hardware.
+
+COMMON MISTAKES
+Mistake: thinking computing means only programming. It also covers devices, networks, security, people, and procedures.
+Mistake: treating data and information as the same. Information is data that has been organized or interpreted.
+Mistake: thinking processing always means calculation. Checking a password and routing a message are processing too.
+Mistake: thinking every output is shown on screen. Log entries and database updates are hidden outputs.
+Mistake: thinking interfaces are only screens. File formats, protocols, connectors, and APIs are interfaces too.
+Mistake: mixing up dependency and constraint. A dependency is needed to work; a constraint restricts how it works.
+Mistake: mixing up the six components with the six functions. Components are parts; functions are what the parts do.
+
+EXAM TIPS
+Know the six components in order: Hardware, Software, Data, People, Procedures, Connectivity.
+Know the six functions in order: Input, Process, Output, Storage, Communication, Feedback.
+Know the LMS process order: Authenticate, Validate, Associate, Transfer, Record.
+Know the four layers from L1 to L4: Hardware and signals, System software, Applications, People and purpose.
+Remember that input and boundaries depend on where the analysis draws the line.
+
+SELF-TEST
+Q: What are the five recurring actions that organize computing?
+★ Represent, Process, Store, Communicate, and Act.
+Q: When does data become information?
+★ When it is organized or interpreted so that it answers a question or supports an action.
+Q: Which component category does a backup schedule belong to?
+★ Procedures.
+Q: What is the order of processes when submitting to the LMS?
+★ Authenticate, Validate, Associate, Transfer, Record.
+Q: What is a subsystem?
+★ A component or group of components that functions as a system within a larger system.
+Q: Which layer is L2?
+★ System software: operating system, drivers, runtimes.

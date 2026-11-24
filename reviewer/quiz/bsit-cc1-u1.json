@@ -1,0 +1,212 @@
+[
+{
+"q": "Which term refers to the study and use of computational processes to represent, process, store, communicate, and act on information?",
+"options": ["Computing", "Programming", "Abstraction", "Connectivity"],
+"answer": 0,
+"explanation": "This is the definition of computing. Programming is only one part of computing, since computing also includes devices, operating systems, networks, data security, human interaction, automation, and organizational procedures. Abstraction and connectivity are narrower concepts.",
+"source": "notes"
+},
+{
+"q": "Data becomes information when it is what?",
+"options": ["Stored in a database or file so that it can be retrieved and used again at a later time", "Organized or interpreted so that it answers a question or supports an action", "Transferred between components using compatible formats, protocols, and identifiers", "Encoded as symbols, observations, or measurements that a system can store or process"],
+"answer": 1,
+"explanation": "Data becomes information when it is organized or interpreted so that it answers a question or supports an action. Storing describes storage, transferring describes communication, and encoding as symbols or measurements describes data itself.",
+"source": "notes"
+},
+{
+"q": "Which list gives the five recurring actions that organize computing?",
+"options": ["Input, Process, Output, Storage, Feedback", "Observe, Represent, Process, Interpret, Act", "Represent, Process, Store, Communicate, Act", "Represent, Process, Store, Communicate, Interpret"],
+"answer": 2,
+"explanation": "The five recurring actions are Represent, Process, Store, Communicate, and Act, matching the definition of computing that ends with acting on information. Input through Feedback are the functions used to trace a system, and Observe through Act are the steps for tracing a transformation.",
+"source": "notes"
+},
+{
+"q": "In which order can a transformation be traced step by step?",
+"options": ["Represent, Observe, Process, Act, Interpret", "Observe, Process, Represent, Interpret, Act", "Observe, Represent, Interpret, Process, Act", "Observe, Represent, Process, Interpret, Act"],
+"answer": 3,
+"explanation": "A transformation is traced as Observe, Represent, Process, Interpret, Act, with feedback changing the next input or process. Something must be observed before it is represented, and processed before it is interpreted.",
+"source": "notes"
+},
+{
+"q": "What is the term for a set of interacting components that collectively perform computing functions for a purpose?",
+"options": ["A subsystem", "A computing system", "An abstraction", "An interface"],
+"answer": 1,
+"explanation": "A computing system is a set of interacting components that collectively perform computing functions for a purpose. A subsystem functions as a system within a larger system, an abstraction is a simplified representation, and an interface is a point of exchange.",
+"source": "notes"
+},
+{
+"q": "Which list gives the six components of a computing system?",
+"options": ["Hardware, Software, Data, People, Procedures, Connectivity", "Hardware, Software, Data, Input, Output, Storage", "Hardware, Software, People, Procedures, Interfaces, Environment", "Input, Process, Output, Storage, Communication, Feedback"],
+"answer": 0,
+"explanation": "The six components are Hardware, Software, Data, People, Procedures, and Connectivity. Input, Process, Output, Storage, Communication, and Feedback are the six functions used to trace a system, and the environment lies outside the system.",
+"source": "notes"
+},
+{
+"q": "Which component is defined as the tangible electronic and mechanical components that input, process, store, output, or communicate data?",
+"options": ["Software", "Connectivity", "Data", "Hardware"],
+"answer": 3,
+"explanation": "Hardware is the tangible electronic and mechanical part of the system, such as the processor, memory, keyboard, and router. Software is instructions, data is represented facts, and connectivity is links and channels.",
+"source": "notes"
+},
+{
+"q": "Programs and related instructions that direct hardware and coordinate computational work describe which component?",
+"options": ["Procedures", "Hardware", "Software", "Connectivity"],
+"answer": 2,
+"explanation": "Software is the programs and related instructions that direct hardware and coordinate computational work. Procedures are rules and workflows that guide people, not instructions that direct hardware.",
+"source": "notes"
+},
+{
+"q": "Which item is listed among the layers of software?",
+"options": ["Firmware", "Router", "Backup schedule", "Ethernet"],
+"answer": 0,
+"explanation": "The layers of software are firmware, operating system, drivers, utilities, applications, libraries, web services, and AI models used by an application. A router is hardware, a backup schedule is a procedure, and Ethernet is connectivity.",
+"source": "notes"
+},
+{
+"q": "Documented or understood rules, steps, conventions, and responsibilities that guide how a system is used and maintained describe which component?",
+"options": ["People", "Procedures", "Software", "Data"],
+"answer": 1,
+"explanation": "Procedures coordinate repeatable work through rules, steps, conventions, and responsibilities, such as login rules and backup schedules. People follow or create procedures but are a separate component.",
+"source": "notes"
+},
+{
+"q": "Which component consists of the communication links, protocols, and services that allow components to exchange data across a system boundary?",
+"options": ["Communication", "Interface", "Connectivity", "Hardware"],
+"answer": 2,
+"explanation": "Connectivity is the component made of links, protocols, and services, such as Wi-Fi, Bluetooth, and the Internet. Communication is the function of transferring data, and an interface is a single defined point of exchange.",
+"source": "notes"
+},
+{
+"q": "Which pairing of component and short description is mismatched?",
+"options": ["Hardware: physical resources", "Data: represented facts", "Connectivity: links and channels", "People: rules and workflows"],
+"answer": 3,
+"explanation": "People are users and specialists. Rules and workflows describe procedures. The other three pairings are correct.",
+"source": "notes"
+},
+{
+"q": "A university requires every LMS password to have at least 12 characters and to be changed every term. Into which component category does this password policy fall?",
+"options": ["People", "Procedures", "Data", "Software"],
+"answer": 1,
+"explanation": "A password policy is a rule that guides how the system is used, like the login rules listed under procedures. The password itself would be data, the users are people, and the program that checks the password is software.",
+"source": "notes"
+},
+{
+"q": "Which statement about people and procedures in a computing system is NOT true?",
+"options": ["If the hardware and software work correctly, the system outcome cannot fail", "A faculty member can be a user, an author, an evaluator, and a stakeholder of one system", "An unclear rule or a broken workflow can defeat functioning hardware and software", "People are the component that gives a system its goals and meaning"],
+"answer": 0,
+"explanation": "A technically working device can still produce a failed system outcome because of the wrong user, an unclear rule, incomplete data, or a broken workflow. The other statements are correct: one person may hold several roles, and people give systems goals and meaning.",
+"source": "notes"
+},
+{
+"q": "A student's file is an output of a word processor but an input to the learning-management submission process. Which idea does this illustrate?",
+"options": ["Outputs may be visible or hidden", "Processing is not always calculation", "Communication requires agreement", "Input is boundary-dependent"],
+"answer": 3,
+"explanation": "Whether something is input depends on the boundary drawn around the system or process. The same file is output for one process and input for another. The other options are true ideas but do not describe this case.",
+"source": "notes"
+},
+{
+"q": "Which statement about processing is NOT true?",
+"options": ["Processing transforms the state of a system", "Checking a password and routing a message are both forms of processing", "Processing always involves a numeric calculation", "Processing includes operations that validate, compare, organize, or route data"],
+"answer": 2,
+"explanation": "Processing is not always calculation. Checking a password, resizing an image, sorting records, compressing a file, and routing a message are all processing. The other statements are correct.",
+"source": "notes"
+},
+{
+"q": "Which of the following is an example of a hidden output?",
+"options": ["A displayed confirmation message after an upload", "An updated database record", "A success message shown on the screen", "A receipt displayed to the student"],
+"answer": 1,
+"explanation": "Outputs may be visible or hidden. An updated database record, a log entry, or a background notification may not be visible to the user. Confirmations, success messages, and displayed receipts are visible outputs.",
+"source": "notes"
+},
+{
+"q": "Which statement correctly matches storage to its timescale?",
+"options": ["Memory: temporary working state; files and databases: longer-term state; backups: protection against loss", "Memory: longer-term state; files: temporary working state; backups: faster processing of data", "Backups: temporary working state; memory: protection against loss; databases: data transfer", "Files: temporary working state; memory: protection against loss; backups: a form of system input"],
+"answer": 0,
+"explanation": "Storage exists at several timescales: memory may hold temporary working state, files and databases preserve longer-term state, and backups protect against loss. The other options swap these roles.",
+"source": "notes"
+},
+{
+"q": "For data transferred between a sender and a receiver to be interpreted correctly, what must they share?",
+"options": ["The same physical location and the same hardware brand", "The same operating system and the same screen size", "Compatible formats, protocols, identifiers, and expectations", "Identical storage capacity and identical processing speed"],
+"answer": 2,
+"explanation": "Communication requires agreement: compatible formats, protocols, identifiers, and expectations. Location, brand, operating system, screen size, capacity, and speed do not need to match.",
+"source": "notes"
+},
+{
+"q": "A video app changes its future suggestions after a user skips several cooking videos. Which of the six system functions does this best illustrate?",
+"options": ["Input", "Storage", "Output", "Feedback"],
+"answer": 3,
+"explanation": "Feedback is information about a result or current condition that influences later input, decisions, or processing. A recommendation system updating future suggestions from user responses is a feedback example. The skips are not simply stored or output; they change what happens next.",
+"source": "notes"
+},
+{
+"q": "In the example of submitting an assignment to the LMS, in which order do the processes occur?",
+"options": ["Authenticate, Validate, Associate, Transfer, Record", "Validate, Authenticate, Transfer, Associate, Record", "Authenticate, Associate, Validate, Record, Transfer", "Record, Authenticate, Validate, Associate, Transfer"],
+"answer": 0,
+"explanation": "The processes are Authenticate, Validate, Associate, Transfer, Record. The user is identified first, the submission is checked and linked to the right course activity, then it is sent and recorded as proof.",
+"source": "notes"
+},
+{
+"q": "What is the term for a simplified representation that preserves relevant features while hiding unnecessary implementation detail?",
+"options": ["Interface", "Abstraction", "Subsystem", "System map"],
+"answer": 1,
+"explanation": "Abstraction preserves relevant features and hides unnecessary detail, like a Save button that hides memory addresses and file-system calls. An interface is a point of exchange, a subsystem is a system within a larger system, and a system map makes hidden assumptions visible.",
+"source": "notes"
+},
+{
+"q": "Which statement about the LMS assignment submission example is NOT true?",
+"options": ["Without stored state, the system cannot prove what happened later", "A failure at any communication link may interrupt the outcome even when other components work", "An error triggers correction, retry, or escalation", "The system purpose is only to move a file from the student's device to a storage service"],
+"answer": 3,
+"explanation": "The stated purpose is to deliver the intended student work to the correct course activity before the deadline and preserve evidence of submission, which is more than moving a file. The other statements are correct.",
+"source": "notes"
+},
+{
+"q": "What is the conceptual line that identifies what an analysis treats as inside the system and what it treats as external?",
+"options": ["Interface", "Environment", "System boundary", "Constraint"],
+"answer": 2,
+"explanation": "The system boundary separates the system from its environment, and boundaries are choices. The environment is what lies outside, an interface is a point of exchange, and a constraint restricts how a system may operate.",
+"source": "notes"
+},
+{
+"q": "External actors, conditions, policies, services, and events that influence a system without being modeled as internal components make up the system's what?",
+"options": ["Subsystem", "Environment", "Dependency", "Stakeholders"],
+"answer": 1,
+"explanation": "This is the environment, which may include electricity, government regulation, institutional policy, Internet service providers, weather, and external users. A subsystem is inside the system, and stakeholders are part of the people component.",
+"source": "notes"
+},
+{
+"q": "An analyst studying assignment submission includes the student, instructor, assessment rules, deadlines, support, and grading, not only the browser, file selector, and validation. What kind of boundary is the analyst using?",
+"options": ["A broader boundary", "A narrow boundary", "The environment", "An abstraction layer"],
+"answer": 0,
+"explanation": "The broader boundary is the course-submission system, which adds people, rules, deadlines, storage, support, and grading. The narrow boundary is the upload feature only: browser, file selector, validation, transfer, and confirmation.",
+"source": "notes"
+},
+{
+"q": "Authentication, content delivery, submission, grading, notification, analytics, and support within an LMS can each be treated as what?",
+"options": ["Environments", "Dependencies", "Subsystems", "Constraints"],
+"answer": 2,
+"explanation": "A subsystem is a component or group of components that functions as a system within a larger system, and these LMS parts are given as examples. They are not outside influences, required resources, or restrictions.",
+"source": "notes"
+},
+{
+"q": "Which pair of term and example is mismatched?",
+"options": ["Interface: a file format, network protocol, or connector", "Dependency: a cloud document that needs an account, network, and storage quota", "Constraint: budget, deadline, bandwidth, or file size", "Abstraction: a cable carrying signals between a router and a laptop"],
+"answer": 3,
+"explanation": "The abstraction example is a Save button that hides memory addresses, storage blocks, and file-system calls. A cable is hardware. Interfaces are not only screens, dependencies are things a component requires, and constraints restrict how a system may operate.",
+"source": "notes"
+},
+{
+"q": "Which list orders the layers of a computing system from L1 to L4?",
+"options": ["Hardware and signals, System software, Applications, People and purpose", "System software, Hardware and signals, Applications, People and purpose", "Hardware and signals, Applications, System software, People and purpose", "People and purpose, Applications, System software, Hardware and signals"],
+"answer": 0,
+"explanation": "L1 is hardware and signals, L2 is system software (operating system, drivers, runtimes), L3 is applications, and L4 is people and purpose. The last option lists the layers from L4 down to L1.",
+"source": "notes"
+},
+{
+"q": "Which sequence gives the common anatomy that different systems share?",
+"options": ["Components, purpose, interactions, feedback, outputs", "Purpose, components, interactions, outputs, feedback", "Purpose, interactions, components, outputs, feedback", "Components, interactions, purpose, outputs, feedback"],
+"answer": 1,
+"explanation": "Different systems share the anatomy Purpose, components, interactions, outputs, feedback, and this framework stays stable even when technologies change. A system is defined for a purpose first, so purpose comes before components.",
+"source": "notes"
+}
+]
