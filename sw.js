@@ -1,5 +1,5 @@
 /* Keeps the upload page working offline. Bump CACHE when you change files. */
-const CACHE = 'hive-v52';
+const CACHE = 'hive-v53';
 const TUS = 'https://cdn.jsdelivr.net/npm/tus-js-client@4.1.0/dist/tus.min.js';
 const FFLATE = 'https://cdn.jsdelivr.net/npm/fflate@0.8.2/umd/index.js';
 /* KaTeX draws the math in lessons. Saved up front (with the fonts most math uses) so math
