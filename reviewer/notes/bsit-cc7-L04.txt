@@ -1,0 +1,75 @@
+Lecture 4 Human Errors
+From Norman, D.A. (1988). The Design of Everyday Things
+
+1. Human vs computer
+★ Humans are the result of millions of years of evolution
+Humans: the guiding principle was survival, not precision
+Humans: robust in the face of unexpected circumstances
+Humans: have the ability to deceive
+★ Computers are less than 100 years old
+Computers are reliable, consistent, and based on mathematics
+EASIER: People were built to survive surprises, computers were built to be exact.
+
+2. Differences in computation
+★ Human computation is slow, complex, highly parallel, subject to rapid change, error tolerant, and forgiving
+★ Computer computation is fast, high speed, precise, and not fault tolerant
+EASIER: People are sloppy but flexible, machines are exact but brittle.
+
+3. The concept of error
+★ Common computer view of error: the computer was given information it could not process
+Blame is then shifted onto the human being
+⚙ Achieving a goal should be a cooperative endeavor between human and machine
+⚙ The task is not to assess blame but to complete the task
+EASIER: Stop asking who is at fault and help get the job done.
+
+4. Types of error
+★ Slips result from automatic behavior
+★ Mistakes stem from conscious deliberation
+EASIER: A slip is autopilot going wrong, a mistake is thinking it through and getting it wrong.
+Six types of slips: capture, description, data driven, association activation, loss of activation, and mode errors
+
+5. Capture errors
+★ Capture error: a frequently done activity captures the one intended
+Example: mistakenly dialing telephone numbers with the same prefix
+Example: 426-6001 is the Ateneo trunk line and 426-6071 is the DISCS direct line
+EASIER: A habit grabs the steering wheel from the thing you meant to do.
+
+6. Description errors
+★ Description error: an action is performed on the wrong artifact
+EASIER: Right action, wrong object.
+
+7. Data-driven errors
+★ Data-driven error: triggered by the arrival of sensory data
+Example: typing what you are thinking, hearing, or seeing and not what is intended
+Example: calling someone by the wrong name
+Slide-note anecdote under this topic: a thief shouted a stick-up at a bank and the 20-year-old teller told him he was in the wrong line and to wait over there, and he waited until the police arrived
+EASIER: What comes in through your senses leaks into what you do.
+
+8. Freudian slips
+★ Freudian slip: a verbal or memory mistake that usually reveals the subconscious
+
+9. Loss-of-activation errors
+★ Loss-of-activation error: forgetting to do something
+EASIER: The intention faded before you carried it out.
+
+10. Association activation errors
+Association activation errors are listed as a slip type, but the slides give no definition or example for them
+
+11. Mode errors
+★ Mode error: an action sequence performed in the wrong mode
+Example: typing in the password with CAPS LOCK on
+Slide-note anecdote near this topic: a government secretary mistakenly sent a personal letter to all government offices
+EASIER: Right keystrokes, wrong state of the system.
+
+12. Mistakes
+★ Mistake: choice of an inappropriate goal
+Mistakes include a poor decision, misclassifying a situation, or failing to take all factors into account
+Mental thought is not neat and orderly
+The disorder leads to creativity, discovery, and great robustness of behavior
+
+13. Failure to detect problems
+★ The user's ability to detect errors is unreliable
+★ Relevance bias: people seek confirmatory evidence when evaluating a hypothesis
+★ Partial explanation: crude agreement between what the user expects and what he sees
+★ Overlap of model and world: the user's mental model is partially consistent with the world
+EASIER: Users look for proof they are right, accept a rough match, and rely on a model that is only partly true.

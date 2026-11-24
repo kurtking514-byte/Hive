@@ -828,5 +828,105 @@
   "quiz": 30,
   "course": "BSIT",
   "exam": "Finals"
+ },
+ {
+  "id": "bsit-cc7-L01",
+  "subject": "CC7",
+  "tab": "Unit 1",
+  "title": "Introduction to Human Computer Interaction",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Midterm"
+ },
+ {
+  "id": "bsit-cc7-L02",
+  "subject": "CC7",
+  "tab": "Lecture 2",
+  "title": "Introduction to Designing",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Midterm"
+ },
+ {
+  "id": "bsit-cc7-L03",
+  "subject": "CC7",
+  "tab": "Lecture 3",
+  "title": "The Human Being",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Midterm"
+ },
+ {
+  "id": "bsit-cc7-L04",
+  "subject": "CC7",
+  "tab": "Lecture 4",
+  "title": "Human Errors",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Midterm"
+ },
+ {
+  "id": "bsit-cc7-L05",
+  "subject": "CC7",
+  "tab": "Lecture 5",
+  "title": "The Human: Emotions",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Midterm"
+ },
+ {
+  "id": "bsit-cc7-L06",
+  "subject": "CC7",
+  "tab": "Lecture 6",
+  "title": "The Computer",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Midterm"
+ },
+ {
+  "id": "bsit-cc7-L07",
+  "subject": "CC7",
+  "tab": "Lecture 7",
+  "title": "Interactions",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Midterm"
+ },
+ {
+  "id": "bsit-cc7-L08",
+  "subject": "CC7",
+  "tab": "Lecture 8",
+  "title": "Context",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Finals"
+ },
+ {
+  "id": "bsit-cc7-L09",
+  "subject": "CC7",
+  "tab": "Lecture 9",
+  "title": "Measuring UX",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Finals"
+ },
+ {
+  "id": "bsit-cc7-L10",
+  "subject": "CC7",
+  "tab": "Lecture 10",
+  "title": "Quality Testing",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Finals"
  }
 ]

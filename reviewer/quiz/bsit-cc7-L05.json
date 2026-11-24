@@ -1,0 +1,362 @@
+[
+{
+"q": "Which difficulty is predicted for people who have no emotions?",
+"options": [
+"They cannot choose between alternatives",
+"They become so creative that they cannot stop generating options",
+"They process everything consciously and therefore choose faster",
+"They make more subconscious judgments than other people"
+],
+"answer": 0,
+"explanation": "Without the affective system, people cannot choose between alternatives. The other options are not claimed: removing emotion does not speed up choice, create excess creativity, or increase subconscious judgment.",
+"source": "notes"
+},
+{
+"q": "Which function is attributed to the affective system?",
+"options": [
+"Storing long-term factual memories",
+"Controlling fine motor output",
+"Converting sensory input into raw signals",
+"Helping the person make judgments"
+],
+"answer": 3,
+"explanation": "The affective (emotional) system helps a person make judgments. Memory storage, motor control, and sensory transduction are other systems.",
+"source": "notes"
+},
+{
+"q": "Which statement about emotions and intelligence is supported by the lecture?",
+"options": [
+"Emotions are noise that should be removed to decide well",
+"Emotions make the human smart",
+"Emotions matter only for entertainment products",
+"Emotions matter only in conscious, deliberate processing"
+],
+"answer": 1,
+"explanation": "Emotions make the human smart. Treating them as noise ignores their role in judgment, and they are not limited to entertainment or to conscious thought.",
+"source": "notes"
+},
+{
+"q": "Which description best fits much of human behavior?",
+"options": [
+"Fully conscious and deliberate",
+"Subconscious",
+"Purely reflexive",
+"Determined only by formal training"
+],
+"answer": 1,
+"explanation": "Much of human behavior is subconscious. Calling it fully conscious is the common misconception.",
+"source": "notes"
+},
+{
+"q": "Which of the following is an effect of using emotions in design?",
+"options": [
+"Narrowing of attention onto one task",
+"Reduced tolerance of minor difficulties",
+"Lower imagination in problem solving",
+"Greater creativity"
+],
+"answer": 3,
+"explanation": "Using emotions brings greater creativity. The other options reverse the listed effects.",
+"source": "notes"
+},
+{
+"q": "Users enjoying an emotionally engaging app keep using it despite a slow-loading menu and a small layout glitch. Which effect of emotions in design does this best illustrate?",
+"options": [
+"Greater imagination of future uses",
+"Broadened thorough processing",
+"Greater creativity in problem solving",
+"More tolerance of minor difficulties"
+],
+"answer": 3,
+"explanation": "Continuing to use the app despite small flaws is more tolerance of minor difficulties. Creativity and imagination concern generating ideas, not forgiving flaws.",
+"source": "notes"
+},
+{
+"q": "Which of the following is NOT listed as an effect of using emotions for design?",
+"options": [
+"Broadening of thorough processes",
+"Greater imagination",
+"Faster motor reaction",
+"More tolerance of minor difficulties"
+],
+"answer": 2,
+"explanation": "The four listed effects are broadening of thorough processes, greater creativity, greater imagination, and more tolerance of minor difficulties. Faster motor reaction is not among them.",
+"source": "notes"
+},
+{
+"q": "Which set correctly names the three levels of emotion-based processing?",
+"options": [
+"Visceral, cognitive, reflective",
+"Visceral, behavioral, reflective",
+"Behavioral, perceptual, reflective",
+"Visceral, motor, behavioral"
+],
+"answer": 1,
+"explanation": "The three levels are visceral, behavioral, and reflective. Cognitive, perceptual, and motor are plausible HCI terms but are not levels of emotion-based processing.",
+"source": "notes"
+},
+{
+"q": "Which level of emotion-based processing is described as pre-conscious and pre-thought?",
+"options": [
+"Reflective",
+"Visceral",
+"Behavioral",
+"Cognitive"
+],
+"answer": 1,
+"explanation": "Visceral processing happens before conscious thought. Behavioral concerns use, and reflective concerns considered, longer-term evaluation.",
+"source": "notes"
+},
+{
+"q": "A shopper picks up a phone and immediately loves how the glossy surface looks and feels, before reading any specification. Which level is mainly at work?",
+"options": [
+"Visceral",
+"Behavioral",
+"Reflective",
+"Procedural"
+],
+"answer": 0,
+"explanation": "An immediate reaction to touch, feel, and appearance is visceral. Behavioral needs experience of use, and reflective involves longer-term considerations.",
+"source": "notes"
+},
+{
+"q": "Which statement about first impressions of a product is correct?",
+"options": [
+"They form at the visceral level, pre-consciously",
+"They form at the behavioral level, once the user has tried the function",
+"They form at the reflective level, once the user considers the future",
+"They form at the behavioral level, once usability has been judged"
+],
+"answer": 0,
+"explanation": "First impressions are formed at the visceral level. The other options assign them to levels that depend on use or on considered reflection.",
+"source": "notes"
+},
+{
+"q": "Which three aspects make up the initial impact of a product at the visceral level?",
+"options": [
+"Touch, feel, appearance",
+"Function, performance, usability",
+"Culture, experience, education",
+"Self-image, satisfaction, memories"
+],
+"answer": 0,
+"explanation": "The initial impact is touch, feel, and appearance. Function, performance, and usability are behavioral, and the other lists are reflective.",
+"source": "notes"
+},
+{
+"q": "Which statement about the visceral level is FALSE?",
+"options": [
+"Appearance matters at this level",
+"It covers the initial impact of touch and feel",
+"It operates before conscious thought",
+"It is mainly shaped by culture and education"
+],
+"answer": 3,
+"explanation": "Culture, experience, and education shape the reflective level, not the visceral level. The other three statements describe visceral processing.",
+"source": "notes"
+},
+{
+"q": "What does the behavioral level of emotion-based processing focus on?",
+"options": [
+"The appearance of the product",
+"The long-term self-image of the owner",
+"The cultural meaning of the product",
+"The use of the product"
+],
+"answer": 3,
+"explanation": "The behavioral level focuses on use. Appearance is visceral, and self-image and cultural meaning are reflective.",
+"source": "notes"
+},
+{
+"q": "Which three components make up the experience with the product at the behavioral level?",
+"options": [
+"Function, performance, usability",
+"Touch, feel, appearance",
+"Culture, education, memories",
+"Sophistication, popularity, future"
+],
+"answer": 0,
+"explanation": "Behavioral experience consists of function, performance, and usability. The other lists belong to the visceral and reflective levels.",
+"source": "notes"
+},
+{
+"q": "A team measures how quickly users complete a checkout task and how many errors they make. Which level of emotion-based processing does this mainly address?",
+"options": [
+"Visceral",
+"Reflective",
+"Behavioral",
+"Cognitive"
+],
+"answer": 2,
+"explanation": "Task speed and errors reflect performance and usability, which belong to the behavioral level. Cognitive is not one of the three levels.",
+"source": "notes"
+},
+{
+"q": "Which level is affected by culture, experience, education, and individual differences?",
+"options": [
+"Visceral",
+"Reflective",
+"Behavioral",
+"Procedural"
+],
+"answer": 1,
+"explanation": "These influences shape the reflective level. Visceral processing is pre-conscious, and behavioral concerns use of the product.",
+"source": "notes"
+},
+{
+"q": "Which level can override the visceral and behavioral levels?",
+"options": [
+"Behavioral",
+"Reflective",
+"Visceral",
+"Motor"
+],
+"answer": 1,
+"explanation": "The reflective level can override both the visceral and behavioral levels.",
+"source": "notes"
+},
+{
+"q": "A person keeps a modest, unpopular tool and refuses to replace it, even though a newer model works better and looks nicer, because it reflects who they are and recalls a mentor. Which level is dominating?",
+"options": [
+"Reflective, overriding both others",
+"Visceral, because of its looks",
+"Behavioral, because it works well in use",
+"Visceral, because of its feel"
+],
+"answer": 0,
+"explanation": "Self-image and memories are reflective, and the reflective level can override visceral appeal and behavioral performance. The better looks and function of the newer model do not decide the outcome.",
+"source": "notes"
+},
+{
+"q": "Which pair of concerns is contrasted at the reflective level?",
+"options": [
+"Function versus performance",
+"Touch versus feel of materials",
+"Sophistication versus popularity",
+"Usability versus appearance of parts"
+],
+"answer": 2,
+"explanation": "Sophistication versus popularity is listed under the reflective level. The other pairs belong to the behavioral and visceral levels.",
+"source": "notes"
+},
+{
+"q": "Which of these is a concern of the reflective level?",
+"options": [
+"Initial touch and feel",
+"Speed of completing a task",
+"Immediate reaction to color",
+"Long-term relationships"
+],
+"answer": 3,
+"explanation": "Long-term relationships with the product are reflective. Touch, color, and task speed are visceral or behavioral concerns.",
+"source": "notes"
+},
+{
+"q": "Consideration of the future is characteristic of which level?",
+"options": [
+"Visceral",
+"Behavioral",
+"Reflective",
+"Procedural"
+],
+"answer": 2,
+"explanation": "Consideration of the future is listed under the reflective level. Visceral is immediate and behavioral concerns present use.",
+"source": "notes"
+},
+{
+"q": "In working with the three levels, which design target is associated with the visceral level?",
+"options": [
+"Pleasure and effectiveness of use",
+"Self-image",
+"Appearance",
+"Memories"
+],
+"answer": 2,
+"explanation": "Visceral design targets appearance. Pleasure and effectiveness of use are behavioral, and self-image and memories are reflective.",
+"source": "notes"
+},
+{
+"q": "In working with the three levels, which design target is associated with the behavioral level?",
+"options": [
+"Pleasure and effectiveness of use",
+"Appearance",
+"Self-image and personal satisfaction",
+"Memories"
+],
+"answer": 0,
+"explanation": "Behavioral design targets pleasure and effectiveness of use. Appearance is visceral, and self-image, satisfaction, and memories are reflective.",
+"source": "notes"
+},
+{
+"q": "In working with the three levels, which design targets are associated with the reflective level?",
+"options": [
+"Appearance, touch, and first impressions",
+"Self-image, satisfaction, and memories",
+"Function, performance, and the pleasure of use",
+"Pleasure and effectiveness of use"
+],
+"answer": 1,
+"explanation": "Reflective design targets self-image, personal satisfaction, and memories. The other options describe visceral and behavioral targets.",
+"source": "notes"
+},
+{
+"q": "Which statement correctly separates usability from first impressions?",
+"options": [
+"Usability is visceral and first impressions are behavioral",
+"Usability is behavioral and first impressions are visceral",
+"Both usability and first impressions are behavioral",
+"Both usability and first impressions are reflective"
+],
+"answer": 1,
+"explanation": "Usability belongs to the behavioral level, and first impressions are formed at the visceral level. Assuming a highly usable product automatically gives a good first impression merges the two levels.",
+"source": "notes"
+},
+{
+"q": "Which statement about emotions is a misconception?",
+"options": [
+"Much of human behavior happens subconsciously",
+"The affective system supports judgments",
+"Choice among options needs no emotion",
+"Emotions help make the human smart"
+],
+"answer": 2,
+"explanation": "People without emotions cannot choose between alternatives, so choice does need emotion. The other three statements match the lecture.",
+"source": "notes"
+},
+{
+"q": "Which pairing of level and concern is mismatched?",
+"options": [
+"Visceral: long-term relationships with the product",
+"Visceral: touch, feel, and appearance",
+"Behavioral: function, performance, and usability",
+"Reflective: self-image, personal satisfaction, and memories"
+],
+"answer": 0,
+"explanation": "Long-term relationships with the product are a reflective-level concern. Visceral covers touch, feel, and appearance, behavioral covers function, performance, and usability, and reflective covers self-image, satisfaction, and memories.",
+"source": "notes"
+},
+{
+"q": "Which statement about the behavioral level is NOT true?",
+"options": [
+"It focuses on the use of the product",
+"It covers function, performance, and usability",
+"Design at this level targets pleasure and effectiveness of use",
+"It is where first impressions are formed pre-consciously"
+],
+"answer": 3,
+"explanation": "First impressions and pre-conscious reactions belong to the visceral level. The behavioral level concerns the use of the product, and the other three statements are accurate.",
+"source": "notes"
+},
+{
+"q": "Which statement about the reflective level is NOT true?",
+"options": [
+"It is affected by culture, experience, education, and individual differences",
+"It can override the visceral and behavioral levels",
+"It is pre-conscious and pre-thought",
+"It involves long-term relationships with the product and consideration of the future"
+],
+"answer": 2,
+"explanation": "Pre-conscious, pre-thought processing describes the visceral level. The reflective level is shaped by culture, experience, and education, can override the other two levels, and involves long-term relationships and the future.",
+"source": "notes"
+}
+]

@@ -1,0 +1,200 @@
+Lecture 6 The Computer
+Input and output devices, virtual reality, biosensing, memory, and processing in HCI
+
+LECTURE OUTLINE
+The lecture covers seven parts: the role of computers in HCI, input devices, output devices, virtual reality devices, biosensing, computer memory, and computer processing.
+
+THE ROLE OF COMPUTERS IN HCI
+The lecture opens with two guide questions: what are our goals when interacting with people, and how do our interactions with people relate to our interactions with computers?
+★ Interaction is a process of information transfer.
+EASIER: Whether you talk to a friend or click a button, information moves from one side to the other; that movement is what interaction means.
+The lecture shows ENIAC as a picture from computer history.
+Added example: ENIAC (Electronic Numerical Integrator and Computer) was one of the first general-purpose electronic digital computers, completed in the United States in the mid-1940s and filling an entire room.
+⚙ Computer peripherals and parts covered in the lecture: input and output devices, virtual reality systems, bio sensors, computer memory, and computer processors.
+
+WHY KNOW THE COMPUTER DEVICES
+★ Designers must know computer devices so they can match the devices that complement the capabilities and limitations of the human.
+⚙ The human capabilities and limitations to match are: the perceptual system, human memory and processing, human error, and human emotions.
+★ Not every user would have all the required computer devices.
+EASIER: Pick devices that fit how people see, remember, make mistakes, and feel, and remember that some users may not own the device your design needs.
+
+INPUT DEVICES
+EASIER: An input device sends data or commands from the user into the computer.
+⚙ Input devices listed: keyboard, mouse, microphone, trackball, touchpad, touchscreen devices, controllers, scanner, drawing tablet, eye tracking devices, and hand tracking devices.
+
+KEYBOARD
+★ Keyboard: like a typewriter, it is composed of buttons used to create letters, numbers, and symbols, and to perform additional functions.
+★ The buttons or keys act as mechanical levers or electronic switches.
+⚙ The arrangement of the buttons depends on the format: QWERTY, QWERTZ, AZERTY, and DVORAK.
+★ QWERTY, also called the Sholes keyboard, is named after the first 6 alphabetic keys on the top left.
+⚙ QWERTY may have been created for one of two reasons: due to mechanical failings in early typewriters, or to make it easier to decode Morse code.
+★ QWERTZ, also called the Swiss keyboard, is used in German-speaking countries.
+★ AZERTY is commonly used in France and Belgium.
+★ DVORAK is an ergonomic alternative to the QWERTY layout.
+⚙ DVORAK layout rules: all vowels and punctuation marks are on the left side, all consonants are on the right side, and the most used letters are in the middle row so they are easier to reach.
+EASIER: The name of each layout is just the first letters on its top row: Q-W-E-R-T-Y, Q-W-E-R-T-Z, A-Z-E-R-T-Y.
+QWERTZ versus AZERTY: QWERTZ is the German-speaking (Swiss) layout, while AZERTY is the French and Belgian layout.
+
+MOUSE
+★ Mouse: a handheld hardware input device that controls a cursor in a GUI (graphical user interface).
+A mouse is used to move and select text, icons, files, and folders on the computer.
+A mouse commonly makes use of a pointer on a display.
+⚙ Types of mouse: ambidextrous, left-handed, and vertical.
+★ Ambidextrous mouse: designed to fit either left-handed or right-handed people; it is the most common type of mouse.
+★ Left-handed mouse: specifically designed for users whose dominant hand is their left hand.
+★ Vertical mouse: taller than it is wide and designed to reduce strain.
+The vertical mouse is held vertically, much like you would during a handshake, and its buttons are located right beneath the grasp.
+EASIER: Ambidextrous means both hands can use it; vertical means you grip it sideways like a handshake.
+Ambidextrous versus left-handed: an ambidextrous mouse fits either hand, while a left-handed mouse is built only for left-hand-dominant users.
+
+OTHER INPUT DEVICES
+★ Microphone: translates sound vibrations in the air into electronic signals or scribes (records) them to a recording medium.
+★ Trackball: a small ball set in a holder that can be rotated by hand to move a cursor on a computer.
+★ Touchpad: controls the pointer on a display screen by sliding the finger along a touch-sensitive surface.
+Trackball versus touchpad: with a trackball you roll a ball with your hand; with a touchpad you slide your finger on a flat surface.
+★ Touchscreen devices are technically both an input and an output device.
+The user gives input through multi-touch gestures by touching the screen or through a stylus.
+Output may be shown on another screen or on the same screen.
+EASIER: A phone screen is both where you tap (input) and what you look at (output).
+★ Game controller: also known as a gaming controller or controller; it is used to provide input to a video game.
+A game controller can be haptic, meaning it gives touch feedback such as vibration.
+★ Gamepad: the common game controller; it came from console games and is used for better mobility of a character.
+⚙ Other game controllers: paddle, steering wheel set, touchscreen, motion sensor, light gun, and rhythm game controllers.
+★ Scanner: uses a light beam to scan codes, text, or graphic images directly into a computer or computer system.
+★ Drawing tablet: converts movements from a stylus pressed on a designated area on the tablet's screen; it is commonly used for digital arts.
+★ Eye tracking device: sensor technology that makes it possible to know where a person is looking in real time.
+An eye tracking device uses a specialized camera and detects the presence, attention, and focus of the user.
+★ Hand tracking device: makes use of various sensors to capture data on the position, orientation, and velocity of the hands.
+A hand tracking device can be attached to the hand or can be a device away from the hand.
+Eye tracking versus hand tracking: eye tracking finds where a person is looking; hand tracking measures where the hands are, which way they face, and how fast they move.
+
+OUTPUT DEVICES
+EASIER: An output device presents information from the computer to the user.
+⚙ Output devices listed: monitor, speakers, headphones, and printers.
+
+MONITOR
+★ Monitor: displays information in pictorial or text form.
+★ Modern monitors use liquid crystal display (LCD).
+⚙ The three popular LCD monitor types are Twisted Nematic (TN), IPS (In-Plane Switching), and VA (Vertical Alignment).
+★ Twisted Nematic (TN) panels: the oldest type of LCD panel and the most budget-friendly, with low production cost.
+TN panels have limited viewing angles, particularly on the vertical axis.
+TN panels have high refresh rates and low input lag.
+TN colors: reproduction is not strong, and colors can invert completely when viewed from an extreme angle.
+EASIER: TN is the cheap, fast gaming panel whose colors look washed out or flipped if you look from the side.
+Added example: IPS (In-Plane Switching) panels are known for the most accurate colors and the widest viewing angles of the three, but usually cost more and respond more slowly than TN.
+★ Vertical Alignment (VA) panels: a compromise between TN and IPS, with the best contrast ratios.
+VA panels are used extensively for TV manufacturing.
+VA viewing angles are in the middle of IPS and TN.
+VA panels have slower response times than TN panels and are ideal for general use.
+TN versus VA: TN is the oldest and cheapest with the fastest response; VA has the best contrast but is slower than TN.
+
+SPEAKERS AND HEADPHONES
+★ Speakers: connect to a computer to generate sound; the signal is created by the computer's sound card.
+★ Headphones: small speakers that can be worn in or around the ears.
+★ Traditional headphones have two ear cups attached by a band and placed over the head.
+★ Earbuds or earphones are placed inside the outer part of the ear canal.
+Traditional headphones versus earbuds: headphones sit over the head with ear cups; earbuds go inside the outer ear canal.
+
+PRINTER
+★ Printer: accepts text and graphic output from a computer.
+Traditional printers transfer the information to paper.
+★ 3D printer: a computer-aided manufacturing (CAM) device that creates three-dimensional objects.
+A 3D printer builds a three-dimensional model out of a custom material.
+EASIER: A normal printer puts ink on paper; a 3D printer builds a solid object layer by layer.
+
+VIRTUAL REALITY SYSTEMS
+★ Virtual reality (VR): a simulated experience that can create an artificial world.
+In VR the user can look and move around the artificial world and interact with objects around them.
+VR utilizes limited visual and auditory processing and high haptic feedback for a more immersive experience.
+EASIER: VR puts you inside a computer-made world that you can look around in and touch.
+⚙ Virtual reality devices: virtual reality headset, motion controllers, and optical tracking.
+★ VR headset: also called VR goggles; a head-worn apparatus that completely covers the eyes for an immersive 3D experience.
+★ A VR headset can be attached to a computer (example: Valve Index) or can be self-contained (example: Oculus Quest 2).
+Attached versus self-contained: the Valve Index needs a computer to run, while the Oculus Quest 2 works on its own.
+★ Motion controllers: a collection of devices that detect the user's motion at different levels.
+Motion controllers are tracked with cameras, sensors in the controllers, or both.
+⚙ Examples of motion controllers: hand controllers, wired glove, and omnidirectional treadmill.
+Added example: an omnidirectional treadmill lets the user walk or run in any direction while staying in one place.
+★ Optical tracking: the process of monitoring the user's position through visual information.
+Optical tracking is mostly done through sets of cameras and other sensors in or out of the headset.
+Optical tracking can track anything from smaller body parts (fingers) to the entire body.
+Motion controllers versus optical tracking: motion controllers are devices the user holds or wears; optical tracking is the process of watching the user with cameras.
+
+BIOSENSING
+★ Biosensing: the detection of target molecules based on the principles used by a living system.
+Biosensing can be used as a more precise means of determining user input with little movement.
+EASIER: Biosensing reads signals from the body itself, so the user barely has to move.
+★ Biosensor: a self-contained integrated device capable of providing specific quantitative analytical information using a biological recognition element.
+⚙ Biological recognition elements: enzymes, antibodies, natural receptors, and cells.
+★ Brain sensors: can allow a user to control software, apps, and machines.
+This is done by developing new virtual reality, augmented reality, and brain-controlled technology with brain-computer interface (BCI) software.
+Biosensing versus biosensor: biosensing is the process of detecting target molecules; a biosensor is the device that does it.
+
+COMPUTER MEMORY
+⚙ Computer memory devices are grouped into two kinds: non-volatile memory (hard disk drive, solid state drive, flash memory, nonvolatile memory express) and volatile memory (random access memory).
+★ Non-volatile memory: computer memory that can retain stored information even after power is removed.
+⚙ Common examples of non-volatile memory: HDD (Hard Disk Drive), flash memory, SSD (Solid State Drive), and NVMe (Nonvolatile Memory Express).
+★ Volatile memory: computer memory that only maintains its data while the device is powered.
+EASIER: Non-volatile memory keeps your files when you unplug; volatile memory forgets everything when the power goes off.
+Volatile versus non-volatile: the difference is whether the data survives when the power is removed.
+
+NON-VOLATILE MEMORY DEVICES
+★ Hard Disk Drive (HDD): a magnetic storage medium for a computer.
+Hard disks are flat circular plates made of aluminum or glass and coated with a magnetic material.
+HDDs are used for general storage but are quite slower.
+★ Flash memory: the general term for electronic non-volatile memory that can be electrically erased and reprogrammed.
+⚙ Flash memory is used for many modern memory devices: USB flash drives, memory cards, and SSDs and NVMes.
+★ Solid State Drive (SSD): a new generation of storage device used in computers that uses flash-based memory.
+An SSD is much faster than a traditional mechanical hard disk and is used for more modern systems that require fast access of storage.
+HDD versus SSD: an HDD stores data magnetically on spinning plates and is slower; an SSD stores data in flash memory and is much faster.
+★ Nonvolatile Memory Express (NVMe): a new storage access and transport protocol for flash and next-generation solid-state drives.
+NVMe delivers the highest throughput and fastest response times yet for all types of enterprise workloads.
+SSD versus NVMe: an SSD is a storage device, while NVMe is a protocol (a set of rules) for accessing and moving data on flash drives.
+
+VOLATILE MEMORY
+★ Volatile memory is used for primary storage in personal computers.
+★ Volatile memory is much faster to read from and write to than the other kinds of storage in a computer.
+Data stored in volatile memory are temporary data used in computer systems or data needed by the processor.
+★ Random Access Memory (RAM): short-term memory where data is stored as the processor needs it, so the processor can get to the data quickly.
+Examples of RAM use: playing a game from the computer's hard drive, and streaming a movie from the Internet.
+EASIER: RAM is the computer's desk; the hard drive is the filing cabinet. Things you are using right now go on the desk.
+
+COMPUTER PROCESSING
+★ Processing can be too slow or too fast.
+★ Too slow: the computer is unable to catch input when it happens; input is buffered and feedback is too slow.
+★ Too fast: output comes out too quickly, so the user is unable to read it.
+EASIER: Slow processing makes you wait for a reaction; overly fast processing flashes results before you can read them.
+
+COMPUTER PROCESSOR
+★ Central Processing Unit (CPU): the circuitry inside a computer that executes instructions on behalf of programs.
+★ Modern computer processors can process millions of instructions in a second.
+★ Processors are considered the main chip on a computer.
+⚙ Limitations that decrease processor performance: computation limitations, storage channel limitations, graphics limitations, and network limitations.
+
+COMMON MISTAKES
+Calling a touchscreen only an input device; it is technically both input and output.
+Mixing up QWERTZ (German-speaking countries) and AZERTY (France and Belgium).
+Thinking the ambidextrous mouse is rare; it is the most common type.
+Saying VA has the fastest response; TN is faster, while VA has the best contrast.
+Treating NVMe as a type of disk; it is a storage access and transport protocol.
+Thinking RAM keeps data after shutdown; RAM is volatile.
+
+EXAM TIPS
+Memorize the four keyboard formats and where each is used.
+Memorize the three LCD types: TN is the oldest, cheapest, and fastest; VA has the best contrast and sits between TN and IPS.
+Memorize the four non-volatile examples and the one volatile example.
+Memorize the four biological recognition elements and the four processor limitations.
+
+SELF-TEST
+Q: Which keyboard layout is named after the Swiss and used in German-speaking countries?
+★ QWERTZ.
+Q: Which mouse type is held like a handshake to reduce strain?
+★ Vertical mouse.
+Q: Which LCD panel type has the best contrast ratios?
+★ Vertical Alignment (VA).
+Q: Name the three VR devices in the lecture.
+★ VR headset, motion controllers, and optical tracking.
+Q: What kind of memory loses its data when the power is removed?
+★ Volatile memory, such as RAM.
+Q: What happens to the user when processing is too fast?
+★ Output comes out too quickly and the user is unable to read it.

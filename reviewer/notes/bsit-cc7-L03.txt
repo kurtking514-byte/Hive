@@ -1,0 +1,137 @@
+Lecture 3 The Human Being
+Human capabilities and limitations: perception, memory and thinking (after Dix, Finlay, Abowd and Beale, 2005)
+
+HCI STARTS WITH THE HUMAN
+★ User: the central character in human-computer interaction (HCI).
+We need to understand human capabilities.
+We need to understand human limitations.
+Human beings are complex.
+The human is modelled as an information processor: input-output channels are the first part and memory is the second part.
+
+INPUT-OUTPUT CHANNELS AND THE PERCEPTUAL SYSTEM
+★ Perceptual system: sight, hearing, touch, taste and smell.
+HCI is concerned with three of the five senses; taste and smell are not currently significant, which leaves sight, hearing and touch.
+EASIER: for interface design, only the eyes, ears and skin matter right now.
+
+SIGHT
+★ Visual processing: transformation and interpretation of a complete image.
+Expectations affect the way an image is perceived.
+Visual processing compensates for movement, colour and brightness.
+Visual processing helps resolve ambiguities.
+★ Familiarity: a third cue for perceiving size (shown with an optical illusion picture).
+★ Depth perception: another visual cue (shown with a landscape photograph).
+Colour perception is another visual capability (introduced with pictures).
+
+READING
+★ Reading: perception and processing of text is a special case of visual perception.
+⚙ Reading stage 1: the visual pattern of the word is perceived.
+⚙ Reading stage 2: the word is decoded with an internal representation of the language.
+⚙ Reading stage 3: syntactic and semantic analysis.
+Adults read about 250 words per minute.
+★ Word shape: words are recognised by their shape.
+⚙ Rule: removing word-shape clues by using all caps is detrimental to reading speed and accuracy, so avoid all caps for text.
+Meaning depends on context: Il can be the letters IL (as in Ilocano) or the roman number 2 (as in I, II, III, IV, V).
+EASIER: the same shape is read differently depending on what surrounds it.
+Example sentence shown: The quick brown fox jumps over the the lazy dog, with a repeated word across a line break.
+★ Whole-word reading: text with scrambled middle letters (first and last letter in place) can still be read because we do not read every letter by itself but the word as a whole.
+
+HEARING
+★ Hearing: humans can hear sounds from 20 Hz to 15 kHz.
+Humans can distinguish frequency changes of less than 1.5 Hz at low frequencies.
+Hearing is less accurate at high frequencies.
+Hearing can be selective.
+Sound can convey a lot of information.
+
+TOUCH
+★ Haptic perception: an important means of feedback.
+If we can see an object but not feel it, speed and accuracy of response are reduced.
+
+HUMAN MEMORY
+Memory is the second part of the model of the human as an information processor.
+★ Three types of memory: sensory buffers, short-term memory and long-term memory.
+★ Multistage model: sensory registers feed the short-term store, then short-term memory, then long-term memory, with executive control processes overseeing; data is lost from the system.
+Timing: the short-term store lasts 0.5 to 2.0 seconds.
+Timing: short-term memory lasts about 20 seconds.
+
+SENSORY MEMORY
+★ Iconic memory: visual; persistence of the image after the stimulus has been removed.
+★ Echoic memory: aural; allows a brief play-back.
+★ Haptic memory: touch.
+Demonstration: an image (a chocolate cake) is flashed and removed, then viewers are asked what it was.
+Pictures of a pillow and a cactus illustrate haptic memory.
+
+SHORT-TERM MEMORY
+★ Short-term memory: a scratch-pad for temporary recall, used for information needed fleetingly; rapid access, limited capacity.
+⚙ Capacity: 7 +/- 2 chunks of information.
+Patterns are useful memory aids.
+EASIER: group items into meaningful chunks so more fits into the 7 +/- 2 slots.
+Demonstration: memorise a picture for 10 seconds, write down everything remembered, then count how many you got.
+
+LONG-TERM MEMORY
+★ Long-term memory: stores everything we know: factual information, experiential knowledge and procedural rules of behaviour.
+Capacity is huge, if not unlimited.
+Access time is relatively slow (1/10 second).
+Forgetting occurs more slowly.
+Long-term memory has two parts: episodic and semantic.
+Information can be organised into semantic networks, frames, scripts and production rules.
+★ Episodic memory: memory of events in serial form; we can reconstruct actual events based on experience.
+★ Semantic memory: structured record of facts, concepts and skills; derived from episodic memory.
+EASIER: episodic is what happened to me, semantic is what I know.
+Semantic memory prompts used: the national hero of the Philippines, the numeric value of pi, the colours of the rainbow.
+★ Semantic networks: interconnections or associations among memories (for example, what you associate with the word cat).
+★ Frames: contain slots or attributes; attributes represent default, fixed or variable information.
+Frame example for Dog: fixed legs 4, default sound bark, variable size and colour.
+EASIER: a frame is a form with some boxes pre-filled, some holding a usual answer, and some left open.
+★ Scripts: represent default stereotypical information.
+⚙ Script components: entry conditions, results, props, roles, scenes and tracks.
+Script example: goal is to fill my mug with coffee; entry condition is that my mug is empty; result is that my mug is full of coffee.
+Script example continued: props are mug, coffee machine and coffee; role is me making my coffee and filling my cup.
+Script example continued: scenes are first preparing the coffee and then drinking it when ready; the track is no more coffee available.
+★ Production rules: a series of condition-action (if-then) statements.
+Production rule example: if it is raining then bring an umbrella.
+
+LONG-TERM MEMORY PROCESSES
+Long-term memory processes are storing, forgetting and remembering.
+⚙ Total time hypothesis: the amount learned is proportional to the amount of time spent.
+⚙ Distribution of practice effect: learning time is most effective if distributed over time.
+EASIER: total time says more hours means more learning; distribution says spread those hours out.
+⚙ Information must be meaningful for it to be stored.
+Demonstration: an abstract word list (faith, age, cold, tenet, quiet, logic, idea, value, past, large) and a concrete word list (boat, tree, cat, child, rug, man, church, gun, flame, head) are each shown for 10 seconds.
+⚙ Result: it is easier to remember concrete words than abstract words, so the second list is usually recalled better.
+Forgetting has two causes: decay and interference.
+★ Interference: old memory replaced by new or vice versa.
+★ Retroactive interference: new information replaces the old.
+★ Proactive inhibition: the old memory interferes with the new information.
+EASIER: retroactive means the new thing pushes the old one out; proactive means the old thing blocks the new one.
+Remembering (information retrieval) takes two forms.
+★ Recall: information is reproduced from memory.
+★ Recognition: the information has been seen before.
+EASIER: recall is writing the answer from a blank page; recognition is spotting the right answer in a list.
+
+THINKING
+Thinking covers reasoning and problem solving.
+★ Reasoning: the process of deriving new information from what is known.
+★ Deductive reasoning: two or more assertions lead to a conclusion, with mathematical certainty.
+Deductive example: all blondes are fun; Christy is a blonde; therefore Christy is fun.
+★ Inductive reasoning: arriving at generalisations from observations we have seen about cases we have not seen.
+Inductive example: every elephant we have seen has a trunk; therefore all elephants have trunks.
+★ Abductive reasoning: formulation of hypotheses to explain a phenomenon.
+EASIER: deduction proves, induction generalises, abduction proposes an explanation.
+
+PROBLEM SOLVING
+★ Problem solving: the process of finding a solution to an unfamiliar situation.
+Three examples are covered: Gestalt, problem space theory and analogy in problem solving.
+★ Gestalt: German for whole or form; people draw on previous experience, have insights, are sense-makers and restructure the problem.
+Gestalt weakness: the theory lacked structure and support and does not explain insight and restructuring.
+Gestalt principle: the whole is greater than the sum of its parts.
+Gestalt principle: people perform based on understanding the general principles of a situation.
+Gestalt warning: if we perform on memorised facts, we make stupid mistakes.
+★ Problem space theory: the problem is represented in terms of problem states, and heuristics are employed to go from the initial state to the goal state.
+Problem space theory limit: the general problem solver works for well-structured domains, but real-world problems are more complex.
+★ Analogy in problem solving: interested in how people solve novel problems; similarities between a known domain and the new one are noted, and operators from the known domain are transferred.
+★ Skill acquisition: the ability to remember larger and larger chunks, for example chess players.
+Novices group problems according to superficial characteristics.
+Experts group problems according to conceptual similarities.
+
+NEXT TIME
+Next lecture topics: errors and emotions.

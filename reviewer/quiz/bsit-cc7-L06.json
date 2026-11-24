@@ -1,0 +1,362 @@
+[
+{
+"q": "In HCI, interaction is described as which kind of process?",
+"options": [
+"A process of energy conversion",
+"A process of data compression",
+"A process of information transfer",
+"A process of hardware assembly"
+],
+"answer": 2,
+"explanation": "Interaction is a process of information transfer, whether between people or between a person and a computer. Energy conversion, compression, and assembly do not describe interaction.",
+"source": "notes"
+},
+{
+"q": "Which human factors should computer devices be matched to, as the reason for knowing computer devices?",
+"options": [
+"Perceptual system, memory and processing, human error, and human emotions",
+"Perceptual system, height and weight, human error, and income level",
+"Memory and processing, typing speed, eyesight, and native language",
+"Human emotions, physical strength, age, and educational attainment"
+],
+"answer": 0,
+"explanation": "Devices should complement the human perceptual system, memory and processing, error, and emotions. The other lists swap in factors that were not part of that set.",
+"source": "notes"
+},
+{
+"q": "Which keyboard format is also called the Sholes keyboard?",
+"options": [
+"QWERTZ",
+"QWERTY",
+"AZERTY",
+"DVORAK"
+],
+"answer": 1,
+"explanation": "QWERTY is the Sholes keyboard, named after its first six top-left alphabetic keys. QWERTZ is the Swiss keyboard, AZERTY is used in France and Belgium, and DVORAK is the ergonomic alternative.",
+"source": "notes"
+},
+{
+"q": "A keyboard layout that is commonly used in France and Belgium is the:",
+"options": [
+"QWERTZ keyboard",
+"DVORAK keyboard",
+"QWERTY keyboard",
+"AZERTY keyboard"
+],
+"answer": 3,
+"explanation": "AZERTY is commonly used in France and Belgium. QWERTZ is used in German-speaking countries, while QWERTY and DVORAK are not tied to those countries.",
+"source": "notes"
+},
+{
+"q": "Which keyboard layout places all vowels and punctuation marks on the left side and all consonants on the right side?",
+"options": [
+"DVORAK",
+"QWERTY",
+"AZERTY",
+"QWERTZ"
+],
+"answer": 0,
+"explanation": "DVORAK is the ergonomic alternative to QWERTY, with vowels and punctuation on the left, consonants on the right, and the most used letters in the middle row.",
+"source": "notes"
+},
+{
+"q": "Which pair of reasons is given for why the QWERTY layout may have been created?",
+"options": [
+"Faster typing of vowels, and fewer finger movements",
+"Adapting to German letters, and saving space on the keyboard",
+"Mechanical failings in early typewriters, and easier decoding of Morse code",
+"Reducing hand strain, and placing common letters in the middle row"
+],
+"answer": 2,
+"explanation": "QWERTY may have been created due to mechanical failings in early typewriters or to make Morse code easier to decode. Reducing strain and putting common letters in the middle row describe DVORAK.",
+"source": "notes"
+},
+{
+"q": "Which type of mouse is the most common?",
+"options": [
+"Vertical mouse",
+"Ambidextrous mouse",
+"Left-handed mouse",
+"Trackball mouse"
+],
+"answer": 1,
+"explanation": "The ambidextrous mouse, which fits either left-handed or right-handed people, is the most common type. The vertical and left-handed mice are specialized, and a trackball is a separate input device.",
+"source": "notes"
+},
+{
+"q": "Which mouse type is taller than it is wide and is held like a handshake to reduce strain?",
+"options": [
+"Ambidextrous mouse",
+"Left-handed mouse",
+"Gamepad",
+"Vertical mouse"
+],
+"answer": 3,
+"explanation": "The vertical mouse is taller than it is wide, is held vertically like a handshake, has its buttons right beneath the grasp, and is designed to reduce strain.",
+"source": "notes"
+},
+{
+"q": "Which input device translates sound vibrations in the air into electronic signals?",
+"options": [
+"Microphone",
+"Speaker",
+"Scanner",
+"Headphones"
+],
+"answer": 0,
+"explanation": "A microphone translates sound vibrations in the air into electronic signals or records them to a medium. Speakers and headphones are output devices, and a scanner uses a light beam.",
+"source": "notes"
+},
+{
+"q": "Which input device is a small ball set in a holder that is rotated by hand to move a cursor?",
+"options": [
+"Touchpad",
+"Trackball",
+"Gamepad",
+"Drawing tablet"
+],
+"answer": 1,
+"explanation": "A trackball is a small ball in a holder rotated by hand. A touchpad is controlled by sliding a finger on a touch-sensitive surface.",
+"source": "notes"
+},
+{
+"q": "Which device is described as technically both an input and an output device?",
+"options": [
+"Drawing tablet",
+"Scanner",
+"Touchscreen device",
+"Monitor"
+],
+"answer": 2,
+"explanation": "A touchscreen takes input through multi-touch gestures or a stylus and shows output, so it is technically both. A drawing tablet and scanner are listed as input devices, and a monitor as an output device.",
+"source": "notes"
+},
+{
+"q": "Which game controller is the common controller that came from console games and is used for better mobility of a character?",
+"options": [
+"Paddle",
+"Light gun",
+"Steering wheel set",
+"Gamepad"
+],
+"answer": 3,
+"explanation": "The gamepad is the common game controller, from console games, used for better character mobility. Paddle, light gun, and steering wheel set are listed among other game controllers.",
+"source": "notes"
+},
+{
+"q": "Which statement correctly describes the Central Processing Unit (CPU)?",
+"options": [
+"It stores data only while powered and is used for primary storage",
+"It executes instructions on behalf of programs and is considered the main chip on a computer",
+"It is a protocol for accessing flash and next-generation solid-state drives",
+"It creates the sound signal that is sent to the computer's speakers"
+],
+"answer": 1,
+"explanation": "The CPU executes instructions on behalf of programs, can process millions of instructions in a second, and is considered the main chip. Storing data while powered describes RAM, the protocol is NVMe, and the sound signal comes from the sound card.",
+"source": "notes"
+},
+{
+"q": "Which input device uses a specialized camera to know where a person is looking in real time?",
+"options": [
+"Eye tracking device",
+"Hand tracking device",
+"Optical tracking",
+"Scanner"
+],
+"answer": 0,
+"explanation": "An eye tracking device uses a specialized camera and detects the presence, attention, and focus of the user. A hand tracking device captures the position, orientation, and velocity of the hands.",
+"source": "notes"
+},
+{
+"q": "Which set of data does a hand tracking device capture?",
+"options": [
+"Presence, attention, and focus of the user",
+"Pressure, angle, and color of a stylus",
+"Position, orientation, and velocity of the hands",
+"Heart rate, temperature, and breathing of the user"
+],
+"answer": 2,
+"explanation": "A hand tracking device uses various sensors to capture the position, orientation, and velocity of the hands. Presence, attention, and focus are what an eye tracking device detects.",
+"source": "notes"
+},
+{
+"q": "Which list gives the three popular LCD monitor types?",
+"options": [
+"Twisted Nematic, Cathode Ray Tube, and Vertical Alignment",
+"In-Plane Switching, Organic LED, and Twisted Nematic",
+"Vertical Alignment, Plasma, and In-Plane Switching",
+"Twisted Nematic, In-Plane Switching, and Vertical Alignment"
+],
+"answer": 3,
+"explanation": "The three popular LCD monitor types are TN, IPS, and VA. Cathode ray tube, organic LED, and plasma are not LCD panel types.",
+"source": "notes"
+},
+{
+"q": "Which statement about Twisted Nematic (TN) panels is NOT true?",
+"options": [
+"TN panels have the best contrast ratios of the LCD types",
+"TN is the oldest type of LCD panel",
+"TN panels have high refresh rates and low input lag",
+"TN colors can invert completely when viewed from an extreme angle"
+],
+"answer": 0,
+"explanation": "The best contrast ratios belong to VA panels, not TN. TN panels are the oldest, have high refresh rates and low input lag, and their colors can invert at extreme angles.",
+"source": "notes"
+},
+{
+"q": "Which statement about Vertical Alignment (VA) panels is NOT true?",
+"options": [
+"VA panels are a compromise between TN and IPS",
+"VA panels have faster response times than TN panels",
+"VA panels are used extensively for TV manufacturing",
+"VA viewing angles are in the middle of IPS and TN"
+],
+"answer": 1,
+"explanation": "VA panels have slower response times than TN panels. The other statements are true: VA is a compromise between TN and IPS, is used extensively for TVs, and has viewing angles between IPS and TN.",
+"source": "notes"
+},
+{
+"q": "Which pair of output device and description is mismatched?",
+"options": [
+"Monitor: displays information in pictorial or text form",
+"Headphones: small speakers worn in or around the ears",
+"Printer: accepts text and graphic output from a computer",
+"Speakers: signal is created by the computer's graphics card"
+],
+"answer": 3,
+"explanation": "The speaker signal is created by the computer's sound card, not the graphics card. The other three pairs are correct.",
+"source": "notes"
+},
+{
+"q": "Which statement about headphones is NOT true?",
+"options": [
+"Headphones are small speakers worn in or around the ears",
+"Traditional headphones are placed over the head",
+"Earbuds have two ear cups attached by a band placed over the head",
+"Earbuds or earphones are placed inside the outer part of the ear canal"
+],
+"answer": 2,
+"explanation": "Two ear cups attached by a band and placed over the head describe traditional headphones, not earbuds. Earbuds go inside the outer part of the ear canal.",
+"source": "notes"
+},
+{
+"q": "A 3D printer is classified as what kind of device?",
+"options": [
+"A computer-aided manufacturing (CAM) device",
+"A computer-aided design (CAD) device",
+"A brain-computer interface (BCI) device",
+"A liquid crystal display (LCD) device"
+],
+"answer": 0,
+"explanation": "A 3D printer is a computer-aided manufacturing device that creates three-dimensional objects out of a custom material. CAD is design software, BCI relates to brain sensors, and LCD is a display technology.",
+"source": "notes"
+},
+{
+"q": "Which list gives the virtual reality devices covered in the lecture?",
+"options": [
+"VR headset, drawing tablet, and brain sensors",
+"VR headset, motion controllers, and optical tracking",
+"Motion controllers, trackball, and eye tracking device",
+"Optical tracking, scanner, and omnidirectional speaker"
+],
+"answer": 1,
+"explanation": "The VR devices are the VR headset, motion controllers, and optical tracking. The other lists mix in general input devices or biosensing items.",
+"source": "notes"
+},
+{
+"q": "Which pair of VR headset and type is correctly matched?",
+"options": [
+"Valve Index: self-contained headset",
+"Oculus Quest 2: headset that must be attached to a computer",
+"Valve Index: omnidirectional treadmill",
+"Oculus Quest 2: self-contained headset"
+],
+"answer": 3,
+"explanation": "The Oculus Quest 2 is the self-contained example, while the Valve Index is the example attached to a computer. An omnidirectional treadmill is a motion controller, not a headset.",
+"source": "notes"
+},
+{
+"q": "Which statement about virtual reality systems is NOT true?",
+"options": [
+"A VR headset completely covers the eyes for an immersive 3D experience",
+"Motion controllers are tracked with cameras, sensors in the controllers, or both",
+"Optical tracking can only track the entire body and not small parts such as fingers",
+"VR is a simulated experience that can create an artificial world"
+],
+"answer": 2,
+"explanation": "Optical tracking can track anything from smaller body parts such as fingers to the entire body. The other three statements are true.",
+"source": "notes"
+},
+{
+"q": "Biosensing is defined as:",
+"options": [
+"The detection of target molecules based on the principles used by a living system",
+"The monitoring of the user's position through visual information",
+"The translation of sound vibrations into electronic signals",
+"The control of software through brain-computer interface software"
+],
+"answer": 0,
+"explanation": "Biosensing detects target molecules using the principles of a living system. Monitoring position visually is optical tracking, translating sound is a microphone, and BCI control describes brain sensors.",
+"source": "notes"
+},
+{
+"q": "Which list gives the biological recognition elements used by a biosensor?",
+"options": [
+"Enzymes, hormones, platelets, and neurons",
+"Enzymes, antibodies, natural receptors, and cells",
+"Antibodies, vitamins, proteins, and tissues",
+"Cells, minerals, natural receptors, and plasma"
+],
+"answer": 1,
+"explanation": "A biosensor uses a biological recognition element: enzymes, antibodies, natural receptors, or cells. The other lists replace some of these with items that were not part of the list.",
+"source": "notes"
+},
+{
+"q": "A student says, \"I unplugged my PC and everything I was working on in memory disappeared, but my saved files were still there.\" Which memory lost the unsaved work?",
+"options": [
+"Hard disk drive",
+"Solid state drive",
+"Flash memory",
+"Random access memory"
+],
+"answer": 3,
+"explanation": "RAM is volatile memory, which only keeps data while powered, so unsaved work in RAM is lost. HDD, SSD, and flash memory are non-volatile and keep data after power is removed.",
+"source": "notes"
+},
+{
+"q": "A company needs storage with the highest throughput and fastest response times for enterprise workloads on flash drives. Which option fits?",
+"options": [
+"Hard Disk Drive (HDD)",
+"Random Access Memory (RAM)",
+"Nonvolatile Memory Express (NVMe)",
+"USB flash drive"
+],
+"answer": 2,
+"explanation": "NVMe is the storage access and transport protocol for flash and next-generation SSDs that delivers the highest throughput and fastest response times for enterprise workloads. HDDs are slower, RAM is volatile, and a USB flash drive is a portable device.",
+"source": "notes"
+},
+{
+"q": "Which statement about non-volatile memory devices is NOT true?",
+"options": [
+"A solid state drive stores data on aluminum or glass plates coated with magnetic material",
+"A hard disk drive is a magnetic storage medium",
+"Flash memory can be electrically erased and reprogrammed",
+"A solid state drive is much faster than a traditional mechanical hard disk"
+],
+"answer": 0,
+"explanation": "Plates of aluminum or glass coated with magnetic material describe a hard disk drive. An SSD uses flash-based memory and is much faster than a mechanical hard disk.",
+"source": "notes"
+},
+{
+"q": "A user clicks a button, but the program misses the click, buffers it, and responds late. Which processing problem is this, and which limitation list applies to processors?",
+"options": [
+"Processing too fast; processor limitations are computation, storage channel, graphics, and network",
+"Processing too slow; processor limitations are computation, storage channel, graphics, and network",
+"Processing too slow; processor limitations are memory, cooling, power, and display",
+"Processing too fast; processor limitations are memory, cooling, power, and display"
+],
+"answer": 1,
+"explanation": "Missing input, buffering it, and giving slow feedback is processing that is too slow; too fast means output comes out before the user can read it. The four limitations that decrease processor performance are computation, storage channel, graphics, and network.",
+"source": "notes"
+}
+]

@@ -1,0 +1,362 @@
+[
+{
+"q": "In the lecture, HCI is described as which of the following?",
+"options": [
+"A hardware engineering discipline concerned mainly with making devices faster and cheaper to manufacture",
+"A software testing method applied only after a product has been released to its users",
+"A complex problem solving process for creating and designing interactive products and services",
+"A branch of graphic design limited to choosing colors, icons, and layouts for web pages"
+],
+"answer": 2,
+"explanation": "HCI is presented as a complex problem solving process for creating and designing interactive products and services, with heavy focus on how users interact with them. The other options describe manufacturing, testing, or visual styling, which are not how HCI is defined.",
+"source": "notes"
+},
+{
+"q": "Which list matches the ideas that HCI looks into when designing interactive products and services?",
+"options": [
+"Planned usage, target area, resources, cost, and viability",
+"Planned usage, color palette, typography, branding, and brand loyalty",
+"Target area, programming language, server load, bandwidth, and uptime",
+"Resources, legal liability, taxation, shareholder returns, and exit strategy"
+],
+"answer": 0,
+"explanation": "The considerations are planned usage, target area, resources, cost, and viability. The other lists mix in visual branding, server concerns, or business finance items that are not part of that list.",
+"source": "notes"
+},
+{
+"q": "Which sequence reflects the order of the lecture's main topics?",
+"options": [
+"Donald Norman and the Norman door, then failures in design, then the six principles, then discoverability",
+"The six principles, then failures in design, then Donald Norman and the Norman door, then discoverability",
+"Failures in design, then the six principles, then Donald Norman and the Norman door, then discoverability",
+"Failures in design, then Donald Norman and the Norman door, then the six principles, then discoverability"
+],
+"answer": 3,
+"explanation": "The lecture moves from failures in design to Donald Norman and the Norman door, then to the six principles, and ends with discoverability as a later addition.",
+"source": "notes"
+},
+{
+"q": "What is Donald A. Norman's professional background as given in the lecture?",
+"options": [
+"Industrial engineer and patent attorney",
+"Graphic designer and typographer",
+"Computer scientist and compiler researcher",
+"Cognitive psychologist, author, and lecturer"
+],
+"answer": 3,
+"explanation": "Norman is a cognitive psychologist, author, and lecturer. He is not described as an engineer, designer, or computer scientist.",
+"source": "notes"
+},
+{
+"q": "Which person is dubbed the Father of User Experience Design in the lecture?",
+"options": [
+"Alan Turing, mathematician and computer pioneer",
+"Donald A. Norman",
+"Steve Jobs, founder of Apple",
+"Luis Meing, who prepared the lecture slides"
+],
+"answer": 1,
+"explanation": "Donald A. Norman earned this title for his contributions to interaction design and UI/UX. Luis Meing only prepared the slides, and the other names are not credited in the lecture.",
+"source": "notes"
+},
+{
+"q": "Which statement defines a Norman door?",
+"options": [
+"A door that opens automatically when it senses someone approaching",
+"Any door that is confusing or difficult to use",
+"A door Donald Norman designed for his own university office",
+"Any glass door that has exactly two vertical handles"
+],
+"answer": 1,
+"explanation": "A Norman door is basically any door that is confusing or difficult to use. It is not tied to a material, a handle count, or a door Norman built.",
+"source": "notes"
+},
+{
+"q": "What must you be able to determine to decide whether a door is a Norman door?",
+"options": [
+"Whether the door was originally installed by a certified building engineer",
+"Whether the door is made of glass or wood",
+"Whether the door has a handle on both sides",
+"Whether the door makes sense as it is being approached"
+],
+"answer": 3,
+"explanation": "The test is whether the door makes sense as it is being approached. Material, handles on both sides, and who installed it are not part of the test.",
+"source": "notes"
+},
+{
+"q": "You approach a glass door with several long handles and cannot tell whether to push or pull. What kind of door is this, by Donald Norman's definition?",
+"options": [
+"A semantic constraint",
+"A Norman door",
+"A conceptual model",
+"A well mapped door"
+],
+"answer": 1,
+"explanation": "A door that is confusing or difficult to use as you approach it is a Norman door. The other options are principles or misuse of terms, not a description of the door.",
+"source": "notes"
+},
+{
+"q": "As the solution to the Norman door, Donald A. Norman formulated what?",
+"options": [
+"Ten usability heuristics based on expert inspection of finished interfaces and prototypes",
+"Seven laws of visual hierarchy based on classical graphic design theory and typography",
+"Four design constraints based on the physical limits of engineering materials",
+"Six principles of interaction design based on Human Centered Design"
+],
+"answer": 3,
+"explanation": "Norman formulated six principles of interaction design based on Human Centered Design. Ten heuristics is a different well known list and is not what the lecture credits to Norman.",
+"source": "notes"
+},
+{
+"q": "In which order does the lecture list the six principles of interaction design?",
+"options": [
+"Affordances, Signifiers, Constraints, Mappings, Feedback, Conceptual Models",
+"Signifiers, Affordances, Constraints, Feedback, Mappings, Conceptual Models",
+"Affordances, Constraints, Signifiers, Mappings, Conceptual Models, Feedback",
+"Constraints, Affordances, Signifiers, Mappings, Feedback, Conceptual Models"
+],
+"answer": 0,
+"explanation": "The six principles are presented as Affordances, Signifiers, Constraints, Mappings, Feedback, and Conceptual Models. The other sequences swap neighboring principles.",
+"source": "notes"
+},
+{
+"q": "Which of the following was NOT part of the original six principles of interaction design and was added in later years?",
+"options": [
+"Discoverability",
+"Feedback",
+"Mappings",
+"Conceptual models"
+],
+"answer": 0,
+"explanation": "Discoverability, also called visibility, was added later. Feedback, mappings, and conceptual models are all among the original six, along with affordances, signifiers, and constraints.",
+"source": "notes"
+},
+{
+"q": "Which principle focuses on the qualities or properties of an object that define its possible uses or make clear how it can or should be used?",
+"options": [
+"Signifiers",
+"Affordances",
+"Constraints",
+"Mappings"
+],
+"answer": 1,
+"explanation": "Affordances are the qualities or properties of an object that define its possible uses. Signifiers communicate the action needed, constraints limit actions, and mappings relate inputs to permissible outputs.",
+"source": "notes"
+},
+{
+"q": "In the context of interaction design, what does 'to afford' mean?",
+"options": [
+"To pay the cost of producing an object",
+"To restrict the actions available to a user",
+"To give a clue",
+"To notify the user that an action has finished"
+],
+"answer": 2,
+"explanation": "In this context, to afford means to give a clue about how an object can or should be used. Paying a cost is the everyday meaning, restricting actions describes constraints, and notifying describes feedback.",
+"source": "notes"
+},
+{
+"q": "Which description matches signifiers?",
+"options": [
+"Restrictions that limit the set of possible actions available to the user at any moment",
+"The relationship between a set of inputs and a set of permissible outputs in a control layout",
+"A highly simplified explanation of how a product or device works, often with several versions",
+"Indicators of any type that communicate the action needed so the affordance can take place"
+],
+"answer": 3,
+"explanation": "Signifiers are indicators of any type that communicate the action needed so the affordance can take place. The other options describe constraints, mappings, and conceptual models.",
+"source": "notes"
+},
+{
+"q": "Which statement correctly relates signifiers to affordances?",
+"options": [
+"Signifiers communicate the action needed so that the affordance can take place",
+"Signifiers are the physical properties that define everything an object can do",
+"Signifiers limit the set of actions so that an affordance cannot take place",
+"Signifiers are a highly simplified explanation of why an affordance exists"
+],
+"answer": 0,
+"explanation": "Signifiers communicate the action needed so the affordance can take place. Affordances are the properties that define possible uses, constraints limit actions, and conceptual models are simplified explanations of how something works.",
+"source": "notes"
+},
+{
+"q": "In most digital user interfaces, a cursor is the lecture's example of which principle?",
+"options": [
+"Affordance",
+"Constraint",
+"Signifier",
+"Mapping"
+],
+"answer": 2,
+"explanation": "A cursor is a perceivable indicator that communicates appropriate behavior, which makes it a signifier. It is not an affordance, constraint, or mapping.",
+"source": "notes"
+},
+{
+"q": "A form shows one button in solid blue and another in washed-out grey so users know which can be clicked. Which principle do enabled and disabled button states illustrate in the lecture?",
+"options": [
+"Mappings",
+"Conceptual models",
+"Signifiers",
+"Discoverability"
+],
+"answer": 2,
+"explanation": "Enabled versus disabled buttons are shown as signifiers because they communicate which action can be taken. They are not examples of mappings, conceptual models, or discoverability.",
+"source": "notes"
+},
+{
+"q": "How do constraints help a user determine a course of action?",
+"options": [
+"By limiting the set of possible actions available to the user",
+"By adding more controls so that every possible action is visible at once",
+"By notifying the user after each action that the system is working",
+"By describing in simplified terms how the whole product operates"
+],
+"answer": 0,
+"explanation": "Constraints give clues by limiting the possible actions available to the user. Adding controls, notifying, and simplified explanations describe other principles or are not constraints.",
+"source": "notes"
+},
+{
+"q": "In which order does the lecture present the four kinds of constraints?",
+"options": [
+"Physical, Semantic, Cultural, Logical",
+"Cultural, Physical, Logical, Semantic",
+"Physical, Cultural, Semantic, Logical",
+"Logical, Semantic, Cultural, Physical"
+],
+"answer": 2,
+"explanation": "The four kinds are presented as Physical, Cultural, Semantic, and Logical. The other sequences swap or reverse them.",
+"source": "notes"
+},
+{
+"q": "Which example from the lecture does NOT illustrate one of the four kinds of constraints?",
+"options": [
+"A lock cylinder and its key pins",
+"Chopsticks and fork, spoon, and knife sets",
+"A scissors diagram",
+"A wooden shape sorter cube with colored blocks"
+],
+"answer": 2,
+"explanation": "The scissors diagram is the conceptual model example. The lock is physical, the utensil sets are cultural, and the shape sorter is logical.",
+"source": "notes"
+},
+{
+"q": "Mappings look into which of the following?",
+"options": [
+"The degree of ease with which a user can find features of a new system",
+"A highly simplified explanation of how a product works",
+"The relationship between a set of inputs and a set of permissible outputs",
+"Indicators that communicate the action needed so an affordance can occur"
+],
+"answer": 2,
+"explanation": "Mappings look into the relationship between a set of inputs and a set of permissible outputs. Discoverability concerns finding features, conceptual models are simplified explanations of how something works, and signifiers communicate the action needed.",
+"source": "notes"
+},
+{
+"q": "The relationship between controls and their actions follows the principles of good mapping, enhanced as much as possible through which two things?",
+"options": [
+"Spatial layout and temporal contiguity",
+"Color contrast and typographic hierarchy",
+"Audio cues and haptic vibration",
+"Brand consistency and tone of voice"
+],
+"answer": 0,
+"explanation": "Good mapping is enhanced through spatial layout and temporal contiguity. The other pairs are design qualities that are not named as part of mapping.",
+"source": "notes"
+},
+{
+"q": "Which situation is feedback as defined in the lecture?",
+"options": [
+"A greyed out button placed on a form to show that an option is currently unavailable",
+"A lock cylinder whose internal pins only accept a key that has been cut correctly",
+"A simplified labeled diagram explaining how the parts of a pair of scissors work",
+"A system notifying the user that it is working toward finishing its objective"
+],
+"answer": 3,
+"explanation": "Feedback happens when an object or system notifies the user that it is working towards completing its objective. The greyed out button is a signifier, the lock is a physical constraint, and the scissors diagram is a conceptual model.",
+"source": "notes"
+},
+{
+"q": "Which statement about conceptual models is NOT true?",
+"options": [
+"A conceptual model is an explanation, usually highly simplified, of how something works",
+"A product can have only one valid conceptual model",
+"A complex system often has more than one conceptual model",
+"A labeled diagram of scissors is the lecture's example of a conceptual model"
+],
+"answer": 1,
+"explanation": "There are often multiple conceptual models of a product or device, especially complex systems. The other statements are accurate.",
+"source": "notes"
+},
+{
+"q": "How does the lecture define a conceptual model?",
+"options": [
+"A restriction that limits the possible actions a user can take",
+"An explanation, usually highly simplified, of how something works",
+"The ease with which a user finds the features of a new system",
+"A notification that an object or system is working toward its goal"
+],
+"answer": 1,
+"explanation": "A conceptual model is an explanation, usually highly simplified, of how something works. A restriction on actions is a constraint, ease of finding features is discoverability, and a notification that the system is working is feedback.",
+"source": "notes"
+},
+{
+"q": "A teacher explains how a photocopier works by saying only that paper goes in, light scans it, and a copy comes out, skipping all internal parts. Which principle is this simplified explanation closest to?",
+"options": [
+"Mappings",
+"Feedback",
+"Physical constraints",
+"Conceptual models"
+],
+"answer": 3,
+"explanation": "A conceptual model is a highly simplified explanation of how something works, which is what the teacher gives. Mappings, feedback, and physical constraints do not describe explanations.",
+"source": "notes"
+},
+{
+"q": "Which principle looks into the degree of ease with which users can find all the elements and features of a new system when they first encounter it?",
+"options": [
+"Feedback",
+"Discoverability",
+"Affordances",
+"Conceptual models"
+],
+"answer": 1,
+"explanation": "Discoverability, also known as visibility, concerns how easily users find a new system's elements and features. Feedback, conceptual models, and affordances address other concerns.",
+"source": "notes"
+},
+{
+"q": "Discoverability is also known by which other name?",
+"options": [
+"Usability",
+"Visibility",
+"Learnability",
+"Reliability"
+],
+"answer": 1,
+"explanation": "The lecture states that discoverability is also known as visibility. The other terms are not given as alternative names.",
+"source": "notes"
+},
+{
+"q": "Which pairing of principle and description is correct?",
+"options": [
+"Mappings: the relationship between a set of inputs and permissible outputs",
+"Constraints: indicators that communicate the action needed so an affordance can occur",
+"Conceptual models: the notification that a system is working toward its objective",
+"Feedback: the relationship between a set of inputs and a set of permissible outputs"
+],
+"answer": 0,
+"explanation": "Mappings look into the relationship between a set of inputs and a set of permissible outputs. The other pairings attach the wrong description: the input-output relationship is not feedback, indicators that communicate the needed action are signifiers, and the notification of progress is feedback.",
+"source": "notes"
+},
+{
+"q": "Which statement about the ten real world design fails shown in the lecture is NOT true?",
+"options": [
+"Each one is accompanied by a detailed written explanation on the slides",
+"They include a jeepney sign reading MINIMUM FEAR P11.00, a typo for fare",
+"They include a pair of glass doors with pull style handles that are labeled PUSH",
+"They include food tray labels that name the same dish in two languages"
+],
+"answer": 0,
+"explanation": "The fails are shown as pictures only, with no written explanation on the slides. The door, jeepney sign, and food tray examples are all among the ten.",
+"source": "notes"
+}
+]

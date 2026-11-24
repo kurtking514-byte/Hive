@@ -1,0 +1,362 @@
+[
+{
+"q": "Which statement best defines Human Computer Interaction (HCI)?",
+"options": [
+"A narrow engineering discipline concerned only with making computer hardware components faster and cheaper to build",
+"A programming specialty concerned mainly with writing efficient source code and managing large databases for companies",
+"A multidisciplinary field of study on the design of computer technology and the interaction between humans and computers",
+"A networking field concerned with how separate computers exchange data and communicate with each other over the internet"
+],
+"answer": 2,
+"explanation": "HCI is a multidisciplinary field about designing computer technology and the human-computer interaction. It is not limited to hardware, code, or networking.",
+"source": "notes"
+},
+{
+"q": "Which aspects of the interaction processes is HCI concerned with?",
+"options": [
+"Physical, psychological, and theoretical aspects",
+"Financial, legal, and marketing aspects",
+"Mechanical, chemical, and electrical aspects",
+"Political, historical, and geographical aspects"
+],
+"answer": 0,
+"explanation": "HCI is concerned with the physical, psychological, and theoretical aspects of the processes. The other sets are not part of the definition.",
+"source": "notes"
+},
+{
+"q": "Which description matches the second definition of HCI given in the lecture?",
+"options": [
+"Increasing the processing speed of consumer computers by designing faster chips and more efficient memory modules",
+"Optimizing how users and computers interact by designing interactive computer interfaces that satisfy users' needs",
+"Reducing the manufacturing cost of computer devices by designing cheaper interfaces that satisfy company budgets",
+"Replacing human operators with automated systems by designing interfaces that need no user input or supervision"
+],
+"answer": 1,
+"explanation": "HCI focuses on optimizing user-computer interaction through interactive interfaces that satisfy users' needs. The other options describe hardware speed, cost cutting, or removing the user.",
+"source": "notes"
+},
+{
+"q": "In which decade did HCI emerge, as personal computing was on the rise?",
+"options": [
+"The 1960s, when large timesharing mainframes first appeared at universities and companies",
+"The 1980s, when desktop computers began appearing in households and corporate offices",
+"The 2000s, when smartphones and touchscreens first became widely available to consumers",
+"The 2010s, when Internet of Things devices and voice assistants became common at home"
+],
+"answer": 1,
+"explanation": "HCI emerged in the 1980s with the rise of personal computing and desktop computers. Smartphones, voice, and IoT came later.",
+"source": "notes"
+},
+{
+"q": "HCI's journey began with which kinds of technologies?",
+"options": [
+"Smartwatches, smart glasses, and voice assistants",
+"Social media platforms, streaming apps, and cloud storage",
+"Internet of Things sensors, smart speakers, and wearables",
+"Video games, word processors, and numerical units"
+],
+"answer": 3,
+"explanation": "The early HCI journey began with video games, word processors, and numerical units. The other items are much later developments.",
+"source": "notes"
+},
+{
+"q": "According to the history of HCI, the growing need for a tool aimed to make man-machine interactions what?",
+"options": [
+"More human-like",
+"Faster than normal human speech",
+"Fully automatic with no user involved",
+"Cheaper to produce at large scale"
+],
+"answer": 0,
+"explanation": "As computing spread, the need grew for a tool that would make man-machine interactions more human-like.",
+"source": "notes"
+},
+{
+"q": "Which fields were brought under HCI's realm when it was established as a technology?",
+"options": [
+"Accounting, marketing, and human resources",
+"Geology, astronomy, and meteorology",
+"Cognitive engineering, linguistics, and neuroscience",
+"Architecture, agriculture, and aviation"
+],
+"answer": 2,
+"explanation": "HCI brought cognitive engineering, linguistics, neuroscience, and others under its realm.",
+"source": "notes"
+},
+{
+"q": "Which set lists the design areas that today's HCI includes?",
+"options": [
+"User interface design, user-centered design, and user-interaction database design",
+"Hardware interface design, network-centered design, and user experience design",
+"User interface design, user-centered design, and user experience design",
+"User interface design, system-centered design, and user experience design"
+],
+"answer": 2,
+"explanation": "Today's HCI includes user interface design, user-centered design, and user experience design. The other options swap in one wrong term, such as system-centered.",
+"source": "notes"
+},
+{
+"q": "Which sequence correctly orders the development of HCI described in the lecture?",
+"options": [
+"Emergence in the 1980s with desktop computers, then the internet, mobile, voice, and IoT making computing omnipresent, then today's design, implementation, and evaluation of interfaces",
+"The internet, mobile, voice, and IoT making computing omnipresent, then emergence in the 1980s with desktop computers, then today's design, implementation, and evaluation of interfaces",
+"Today's design, implementation, and evaluation of interfaces, then emergence in the 1980s with desktop computers, then the internet, mobile, voice, and IoT making computing omnipresent",
+"Emergence in the 1980s with desktop computers, then today's design, implementation, and evaluation of interfaces, then the internet, mobile, voice, and IoT making computing omnipresent"
+],
+"answer": 0,
+"explanation": "HCI emerged in the 1980s with desktop computing, expanded through the internet, mobile, voice, and IoT, and today focuses on designing, implementing, and evaluating interfaces. The other sequences reverse or scramble these stages.",
+"source": "notes"
+},
+{
+"q": "Which five modes branch out from Cognitive Interaction in the Spiceworks HCI diagram?",
+"options": [
+"Sight, Touch, Taste, Smell, Voice",
+"Sight, Hearing, Voice, Memory, Spatial",
+"Sight, Touch, Hearing, Voice, Spatial",
+"Touch, Hearing, Voice, Gesture, Movement"
+],
+"answer": 2,
+"explanation": "The diagram branches into Sight, Touch, Hearing, Voice, and Spatial. Taste, smell, memory, and gesture are not branches.",
+"source": "notes"
+},
+{
+"q": "A phone app takes input through a touchscreen UI and responds through screen, speakers, and vibrations. Which table in the Spiceworks diagram does it match?",
+"options": [
+"Interaction II, because vibrations from the phone count as body movement input and sensors output in the diagram",
+"Interaction I, because touch screen UI input and screen plus speakers plus vibrations output are listed there",
+"Interaction II, because touch is a spatial mode and spatial modes always use gesture plus face input only",
+"Neither table, because the diagram lists only voice-based devices and no touch devices at all in its tables"
+],
+"answer": 1,
+"explanation": "Interaction I lists Mouse plus Keyboard and Touch screen UI as input, with Screen plus speakers plus vibrations as output. Interaction II covers voice, body movement, and gesture plus face.",
+"source": "notes"
+},
+{
+"q": "Which of these is one of the questions posed in the lecture about good and bad technologies?",
+"options": [
+"How can we verify or validate the goodness of our technologies?",
+"How can we make technologies cheaper to manufacture for everyone?",
+"How can we make technologies reach the market faster than rivals?",
+"How can we replace outdated technologies with newer versions quickly?"
+],
+"answer": 0,
+"explanation": "The four questions are: is good or bad the right question, what makes a technology good or bad, how to build good technologies, and how to verify or validate their goodness.",
+"source": "notes"
+},
+{
+"q": "Which of these is listed in the lecture as a reason errors in computer technologies still exist today?",
+"options": [
+"Computers having too little processing power for modern tasks",
+"Developers using too few programming languages in projects",
+"Companies releasing products without enough advertising budget",
+"Too much focus on the design of the technology"
+],
+"answer": 3,
+"explanation": "Too much focus on the design is one of the six listed causes. The others are not listed.",
+"source": "notes"
+},
+{
+"q": "Which of the following is NOT one of the criteria that technologies should meet when they are created?",
+"options": [
+"Suitable for the task",
+"Adaptable to the user's knowledge and experience",
+"Built at the lowest possible manufacturing cost",
+"Conforms to the principles of software ergonomics"
+],
+"answer": 2,
+"explanation": "The listed criteria are suitable for the task, easy to use, adaptable to the user's knowledge and experience, feedback on performance, information displayed in an understandable format and pace, and conformity to software ergonomics. Manufacturing cost is not among them.",
+"source": "notes"
+},
+{
+"q": "Which description matches the idea of 'Useful' in HCI?",
+"options": [
+"Doing the task easily and naturally for the user, without any danger of making an error while doing it",
+"Making people want to use the product because it is attractive, engaging, and fun to interact with",
+"Accomplishing what is required, such as playing music, cooking dinner, or formatting a document",
+"Giving users feedback on their performance in a format and at a pace that they can understand easily"
+],
+"answer": 2,
+"explanation": "Useful means accomplishing what is required. Easy and error-free is Usable, attractive and engaging is Used, and feedback is a separate criterion.",
+"source": "notes"
+},
+{
+"q": "A banking app can transfer money, but its confusing layout often leads people to send money to the wrong account. Which idea of use is most lacking?",
+"options": [
+"Usable",
+"Useful",
+"Used",
+"None, because it only needs to work"
+],
+"answer": 0,
+"explanation": "The app accomplishes the task, so it is Useful, but it is not easy or safe from error. That is Usable.",
+"source": "notes"
+},
+{
+"q": "Which pairing of an idea of use and its meaning is mismatched?",
+"options": [
+"Useful: accomplishes what is required, such as playing music or formatting a document",
+"Usable: accomplishes what is required, such as playing music or cooking dinner",
+"Usable: does the task easily and naturally, without danger of error",
+"Used: makes people want to use it by being attractive, engaging, and fun"
+],
+"answer": 1,
+"explanation": "Accomplishing what is required describes Useful, not Usable. Usable means easy, natural, and free of danger of error, and Used means attractive, engaging, and fun.",
+"source": "notes"
+},
+{
+"q": "Which are the four components of HCI?",
+"options": [
+"Human, Computer, Interaction, Context",
+"Hardware, Software, Network, User",
+"Input, Output, Memory, Processing",
+"Design, Implementation, Evaluation, Maintenance"
+],
+"answer": 0,
+"explanation": "The four components are Human, Computer, Interaction, and Context. The others mix up components, computer parts, and design activities.",
+"source": "notes"
+},
+{
+"q": "Which component is also known as the user or end-user and focuses on who the HCI is for?",
+"options": [
+"Computer",
+"Interaction",
+"Context",
+"Human"
+],
+"answer": 3,
+"explanation": "The Human is the user or end-user, and this component focuses on who the HCI is for.",
+"source": "notes"
+},
+{
+"q": "Which component of HCI focuses on where the HCI is found?",
+"options": [
+"Human",
+"Context",
+"Computer",
+"Interaction"
+],
+"answer": 2,
+"explanation": "The Computer component focuses on where the HCI is found. Context is about how the HCI will be formed, which is the tempting wrong answer.",
+"source": "notes"
+},
+{
+"q": "Which pairing of HCI component and guiding question is mismatched?",
+"options": [
+"Human: who the HCI is for",
+"Interaction: how the HCI will be formed",
+"Computer: where the HCI is found",
+"Context: how the HCI will be formed"
+],
+"answer": 1,
+"explanation": "Interaction answers what the HCI is, not how it will be formed. Human is who, Computer is where, and Context is how.",
+"source": "notes"
+},
+{
+"q": "A design team compares timesharing, WIMP, and ubiquitous computing as strategies for building usable interactive systems. Which component are they working on?",
+"options": [
+"Human",
+"Context",
+"Interaction",
+"Computer"
+],
+"answer": 1,
+"explanation": "Context, also called paradigms, covers effective strategies for building usable interactive systems and focuses on how the HCI will be formed.",
+"source": "notes"
+},
+{
+"q": "Which statement about human users is correct?",
+"options": [
+"Users share common capabilities but are individuals with differences",
+"All users have identical capabilities, so one design fits every person",
+"Human capacity to process information has no limit, so designers need not simplify",
+"Emotion has no effect on what humans are able to do with technology"
+],
+"answer": 0,
+"explanation": "Users share common capabilities but differ as individuals. Humans are limited in processing information, and emotion influences capabilities.",
+"source": "notes"
+},
+{
+"q": "Through which channels does a human receive information and give responses?",
+"options": [
+"Visual, olfactory, gustatory, and movement",
+"Visual, auditory, haptic, and cognitive",
+"Visual, auditory, chemical, and movement",
+"Visual, auditory, haptic, and movement"
+],
+"answer": 3,
+"explanation": "The human channels are visual, auditory, haptic, and movement. Cognitive processing is not a channel, and smell and taste were not listed.",
+"source": "notes"
+},
+{
+"q": "Which set lists the three types of human memory in the lecture?",
+"options": [
+"Sensory, short-term (working), and long-term memory",
+"Visual, auditory, and haptic memory",
+"Sensory, long-term, and episodic memory",
+"Short-term, long-term, and cache memory"
+],
+"answer": 0,
+"explanation": "Information is stored in sensory, short-term (working), and long-term memory. Cache memory belongs to the computer, and visual, auditory, and haptic are channels.",
+"source": "notes"
+},
+{
+"q": "Which of the following is NOT listed as an element of the Computer component of HCI?",
+"options": [
+"Input devices",
+"Virtual reality systems",
+"Paper output and input",
+"Reasoning and problem solving"
+],
+"answer": 3,
+"explanation": "Reasoning and problem solving are ways the Human component processes information. The Computer component lists input devices, output display, virtual reality systems, various displays, paper output and input, memory, and processing.",
+"source": "notes"
+},
+{
+"q": "What does ergonomics refer to in the Interaction component?",
+"options": [
+"The social and organizational setting in which the interaction takes place",
+"The physical characteristics of the interaction and how these influence its effectiveness",
+"The style of the dialog between the user and the system interface",
+"The translation between what the user wants and what the system does"
+],
+"answer": 1,
+"explanation": "Ergonomics are the physical characteristics of the interaction and how they influence effectiveness. The other options describe the social context, interface style, and interaction models.",
+"source": "notes"
+},
+{
+"q": "Which statement about the Interaction component of HCI is NOT true?",
+"options": [
+"Interaction models address the translations between what the user wants and what the system does",
+"Ergonomics are the physical characteristics of the interaction and how they influence its effectiveness",
+"Dialog between user and system is influenced by the style of the interface",
+"It is also known as paradigms, meaning effective strategies for building interactive systems"
+],
+"answer": 3,
+"explanation": "Paradigms is another name for the Context component, not Interaction. The other statements correctly describe interaction models, ergonomics, and interface style.",
+"source": "notes"
+},
+{
+"q": "The Context component of HCI is also known as what?",
+"options": [
+"Ergonomics",
+"Paradigms",
+"Dialog",
+"Models"
+],
+"answer": 1,
+"explanation": "Context is also known as paradigms, meaning effective strategies for building interactive systems.",
+"source": "notes"
+},
+{
+"q": "Which sequence best reflects the range of the Context component?",
+"options": [
+"Ubiquitous computing, then timesharing computers, then WIMP and web, then context-aware computing",
+"WIMP and web, then ubiquitous computing, then timesharing computers, then context-aware computing",
+"Timesharing computers, then ubiquitous computing, then WIMP and web, then context-aware computing",
+"Timesharing computers, through the WIMP and web, to ubiquitous and context-aware computing"
+],
+"answer": 3,
+"explanation": "Context ranges from timesharing computers, through the WIMP and web, to ubiquitous and context-aware computing. The other sequences scramble the order.",
+"source": "notes"
+}
+]
