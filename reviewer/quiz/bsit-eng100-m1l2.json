@@ -1,0 +1,362 @@
+[
+{
+"q": "Which of the 7 C’s requires a writer to support claims with enough facts so that readers cannot suspect bluffing or deception?",
+"options": [
+"Be correct",
+"Be complete",
+"Be concrete",
+"Be coherent"
+],
+"answer": 2,
+"explanation": "Being concrete means substantiating claims with facts. Being complete concerns including all necessary information, being correct concerns grammar, and being coherent concerns logical flow.",
+"source": "notes"
+},
+{
+"q": "What does the written principle “be correct” require?",
+"options": [
+"Observing grammatical correctness and taking time to revise and edit",
+"Including all necessary and relevant information",
+"Keeping a friendly tone free of insinuation",
+"Connecting ideas logically through transitional devices"
+],
+"answer": 0,
+"explanation": "Be correct is about grammar, revising, and editing because even simple errors distract readers. The other options describe be complete, be courteous, and be coherent.",
+"source": "notes"
+},
+{
+"q": "Which written principle calls for ideas that are connected, related to the topic, and presented in a smooth flow using cohesive devices?",
+"options": [
+"Be concise",
+"Be clear",
+"Be concrete",
+"Be coherent"
+],
+"answer": 3,
+"explanation": "Coherence is about logical connection and smooth flow aided by transitional or cohesive devices. Conciseness is brevity; clarity is being guided by purpose; concreteness is factual support.",
+"source": "notes"
+},
+{
+"q": "What does the written principle “be courteous” require?",
+"options": [
+"Brief statements that focus on the main point",
+"A friendly tone that avoids overtone or insinuation",
+"Grammatically correct sentences that are carefully edited",
+"Claims supported by enough facts"
+],
+"answer": 1,
+"explanation": "Being courteous means a friendly tone without overtone or insinuation, which prevents confusion and misinterpretation. The other options describe concise, correct, and concrete writing.",
+"source": "notes"
+},
+{
+"q": "Which written principle requires including all necessary and relevant information so that the audience is not left wanting of any information?",
+"options": [
+"Be complete",
+"Be concrete",
+"Be correct",
+"Be clear"
+],
+"answer": 0,
+"explanation": "Completeness covers all necessary and relevant information. Concreteness is about supporting claims with facts, which students often confuse with completeness.",
+"source": "notes"
+},
+{
+"q": "Which written principle advises the writer to stick to the point and not beat around the bush?",
+"options": [
+"Be clear",
+"Be coherent",
+"Be concise",
+"Be courteous"
+],
+"answer": 2,
+"explanation": "Being concise means staying brief by focusing on the main point. Coherence concerns logical connection, not length.",
+"source": "notes"
+},
+{
+"q": "Which oral communication principle involves punctuating important words with appropriate gestures and movements?",
+"options": [
+"Be clear with your purpose",
+"Be specific and timely with your feedback",
+"Be complete with the message you deliver",
+"Be natural with your delivery"
+],
+"answer": 3,
+"explanation": "Natural delivery uses gestures and movements on important words and projects confidence. The other options concern objective, feedback, and supporting facts.",
+"source": "notes"
+},
+{
+"q": "Which oral communication principle states that inputs are most helpful when provided on time?",
+"options": [
+"Be natural with your delivery",
+"Be specific and timely with your feedback",
+"Be concise",
+"Be clear with your purpose"
+],
+"answer": 1,
+"explanation": "Feedback should be specific and timely because inputs help most when given on time.",
+"source": "notes"
+},
+{
+"q": "In oral communication, what does being clear with your purpose mean?",
+"options": [
+"Knowing by heart your objective in communicating",
+"Supporting every claim with facts and essential information",
+"Avoiding verbose or wordy statements",
+"Using gestures to stress important words"
+],
+"answer": 0,
+"explanation": "Clarity of purpose means knowing your objective by heart. The other options describe being complete, being concise, and being natural.",
+"source": "notes"
+},
+{
+"q": "How did Johannesen (1990) define ethics?",
+"options": [
+"The set of grammatical rules that make a message correct and clear",
+"A list of workplace temptations such as spin and hidden agendas",
+"The discussion of judgments about the appropriateness, the right or wrong, of our actions and policies",
+"The legal protection that an author holds over an original work"
+],
+"answer": 2,
+"explanation": "Johannesen described ethics as the discussion of judgments about the right or wrong of actions and policies, whether communicative, political, social, personal, or mixed. Workplace dilemmas come from Eunson, and legal protection of works is copyright.",
+"source": "notes"
+},
+{
+"q": "What does communication ethics emphasize?",
+"options": [
+"That messages must follow the 7 C’s to be considered ethical",
+"That brevity in speech is the main sign of honesty",
+"That only organizations, not individuals, need a code of ethics",
+"That morals influence the behaviour of an individual, group, or organization and thereby affect their communication"
+],
+"answer": 3,
+"explanation": "Communication ethics links morals to behaviour and, through behaviour, to communication. The 7 C’s are principles of effective writing, not the definition of communication ethics.",
+"source": "notes"
+},
+{
+"q": "What does a code of ethics do for a person or a company?",
+"options": [
+"It lists the grammatical rules to observe in written documents",
+"It sets the standards to be observed and determines which behaviour is proper and desirable",
+"It replaces the need to disclose vital information",
+"It protects authors’ rights over the information they publish"
+],
+"answer": 1,
+"explanation": "A code of ethics sets standards of proper, desirable behaviour and builds a good reputation for both individual and organization.",
+"source": "notes"
+},
+{
+"q": "Why must communicators consider their behaviour when communicating with others?",
+"options": [
+"People vary in cultural background and personalities, so they may interpret messages differently",
+"Written messages always reach their readers faster than spoken ones",
+"Copyright laws require every message to be reviewed",
+"Feedback is only useful when it is given in writing"
+],
+"answer": 0,
+"explanation": "The lecture notes that people interpret messages differently because they vary in cultural background and personalities.",
+"source": "notes"
+},
+{
+"q": "Which set correctly lists the 7 C’s of effective written communication?",
+"options": [
+"Clear, concise, concrete, correct, considerate, complete, courteous",
+"Clear, concise, consistent, correct, coherent, complete, confident",
+"Clear, candid, concrete, correct, coherent, complete, courteous",
+"Clear, concise, concrete, correct, coherent, complete, courteous"
+],
+"answer": 3,
+"explanation": "The lecture’s 7 C’s are clear, concise, concrete, correct, coherent, complete, and courteous. Considerate, consistent, confident, and candid are not in this list.",
+"source": "notes"
+},
+{
+"q": "Who listed the ethical dilemmas that people often face in the workplace, such as embellishing a resume with half-truths?",
+"options": [
+"Johannesen (1990)",
+"Eunson (2007)",
+"John Adair",
+"Theo Haimann"
+],
+"answer": 1,
+"explanation": "Eunson (2007) listed workplace ethical dilemmas. Johannesen (1990) defined ethics and gave the suggestions on ethical communication; Adair and Haimann defined communication.",
+"source": "notes"
+},
+{
+"q": "Which qualities should regulate one’s behaviour according to communication ethics?",
+"options": [
+"Clarity, conciseness, correctness, coherence, and courtesy",
+"Confidence, brevity, timeliness, specificity, and naturalness",
+"Honesty, decency, truthfulness, sincerity, and moral uprightness",
+"Integrity, transparency, accuracy, persuasion, and loyalty"
+],
+"answer": 2,
+"explanation": "Behaviour should be regulated by honesty, decency, truthfulness, sincerity, and moral uprightness. The other sets mix in principles of effective oral and written communication or terms not in this list.",
+"source": "notes"
+},
+{
+"q": "Which ethical issue in communication is linked to the rules on copyright and the legal use of information from various sources?",
+"options": [
+"Plagiarism",
+"Spin",
+"Censorship",
+"Embellishment"
+],
+"answer": 0,
+"explanation": "The lecture names plagiarism as one ethical issue and advises awareness of copyright rules and legal issues on using information from sources.",
+"source": "notes"
+},
+{
+"q": "What may result from respecting others’ rights and their views?",
+"options": [
+"Stronger persuasion through selective use of statistics",
+"Fewer obligations to disclose vital information",
+"Shorter messages that need no supporting facts",
+"Negotiations, effective communication, and a good working relationship"
+],
+"answer": 3,
+"explanation": "Respecting others’ rights and views may result in negotiations, effective communication, and a good working relationship.",
+"source": "notes"
+},
+{
+"q": "In the guides to ethical communication, what does establishing an effective value system pave the way for?",
+"options": [
+"The concealment of information for strategic reasons",
+"The development of one’s integrity as a person",
+"The use of leadership styles to manage others",
+"The removal of the need for a code of ethics"
+],
+"answer": 1,
+"explanation": "An effective value system develops integrity, and one’s behaviour and decision-making style in turn affect the operations of an organization.",
+"source": "notes"
+},
+{
+"q": "Which guide states that the data you provide should always be contextualized and correct, whether it is needed or not?",
+"options": [
+"Establish an effective value system",
+"Disclose vital information adequately and appropriately",
+"Provide complete and accurate information",
+"Respect the rights of others to information"
+],
+"answer": 2,
+"explanation": "Guide 2, provide complete and accurate information, requires contextualized and correct data. Guide 3 concerns disclosure for transparency.",
+"source": "notes"
+},
+{
+"q": "Which guide warns never to conceal or hide necessary information, for purposes of transparency?",
+"options": [
+"Disclose vital information adequately and appropriately",
+"Provide complete and accurate information",
+"Establish an effective value system",
+"Consider the consequences of communication"
+],
+"answer": 0,
+"explanation": "Guide 3 is about adequate and appropriate disclosure so that necessary information is not concealed.",
+"source": "notes"
+},
+{
+"q": "Ethics helps a communicator decide whether what is said or done is suitable or proper by considering its effects on what?",
+"options": [
+"The speaker’s grammar",
+"Society",
+"The length of the message",
+"The speed of the feedback"
+],
+"answer": 1,
+"explanation": "Ethics helps us determine whether what we say or do is suitable or proper considering its effects on society.",
+"source": "notes"
+},
+{
+"q": "Which pair of oral communication principle and description is mismatched?",
+"options": [
+"Be concise: brevity in speech is a must",
+"Be complete: claims are supported by facts and essential information",
+"Be natural with your delivery: exude confidence even when not feeling confident",
+"Be specific and timely with your feedback: revise and edit the speech before delivering it"
+],
+"answer": 3,
+"explanation": "Specific and timely feedback means giving inputs on time. Revising and editing belongs to the written principle be correct.",
+"source": "notes"
+},
+{
+"q": "Which statement about the oral principles and the 7 C’s is NOT true?",
+"options": [
+"Be concise appears in both the oral list and the written list",
+"Be courteous appears only in the written list",
+"Be concrete appears in both the oral list and the written list",
+"Be natural with your delivery appears only in the oral list"
+],
+"answer": 2,
+"explanation": "Be concrete is only one of the 7 C’s. Be clear, be concise, and be complete are the principles shared by both lists.",
+"source": "notes"
+},
+{
+"q": "Which statement is NOT one of Johannesen’s (1990) suggestions on ethical communication?",
+"options": [
+"Ethical communicators filter information that may upset the audience",
+"Ethical communicators respect truth",
+"Ethical communicators use information properly",
+"Ethical communicators respect the rights of others to information"
+],
+"answer": 0,
+"explanation": "Filtering or blocking information is one of Eunson’s workplace dilemmas, not a suggestion. The six suggestions include respecting truth, using information properly, and respecting others’ rights to information.",
+"source": "notes"
+},
+{
+"q": "Which pair of written principle and description is mismatched?",
+"options": [
+"Be concrete: support claims with enough facts",
+"Be coherent: keep a friendly tone and avoid insinuation",
+"Be correct: observe grammatical correctness",
+"Be complete: include all necessary and relevant information"
+],
+"answer": 1,
+"explanation": "A friendly tone without insinuation describes being courteous. Being coherent means logical, connected ideas with a smooth flow.",
+"source": "notes"
+},
+{
+"q": "Which statement about ethical communication and codes of ethics is NOT true?",
+"options": [
+"A code of ethics can create a positive image for both an individual and an organization",
+"One’s behaviour and decision-making style affect the operations of an organization",
+"Ethical communicators consider the consequences of their communication",
+"Vital information may be concealed when disclosure is inconvenient"
+],
+"answer": 3,
+"explanation": "Guide 3 says never to conceal or hide necessary information, for purposes of transparency. The other statements are taken from the lesson.",
+"source": "notes"
+},
+{
+"q": "A student submits a report with several misspelled words and grammar errors that distract the teacher from the main argument. Which of the 7 C’s did the student fail to observe?",
+"options": [
+"Be concise",
+"Be courteous",
+"Be correct",
+"Be coherent"
+],
+"answer": 2,
+"explanation": "Grammatical errors that distract readers violate being correct, which requires revising and editing.",
+"source": "notes"
+},
+{
+"q": "An employee starts the vertical axis of a sales chart at a high value so that a small increase looks dramatic in a presentation. Which ethical dilemma listed by Eunson does this illustrate?",
+"options": [
+"Creating spin when communicating with the public",
+"Lying with statistics in graphs or charts",
+"Plagiarizing materials to pad out documents",
+"Following a hidden agenda in meetings"
+],
+"answer": 1,
+"explanation": "Distorting a graph to make an argument more persuasive is lying with statistics. Spin refers to deceptive impressions given to the public.",
+"source": "notes"
+},
+{
+"q": "During a class report, a speaker stands stiffly and reads every line in a flat voice without gestures, even on key points. Which oral principle is the speaker failing to observe?",
+"options": [
+"Be natural with your delivery",
+"Be clear with your purpose",
+"Be specific and timely with your feedback",
+"Be complete with the message you deliver"
+],
+"answer": 0,
+"explanation": "Natural delivery punctuates important words with gestures and movements and projects confidence.",
+"source": "notes"
+}
+]

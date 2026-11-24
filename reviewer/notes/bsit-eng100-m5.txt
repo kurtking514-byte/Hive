@@ -1,0 +1,275 @@
+Module 5 English for Work Purposes
+Communication networks, minutes of a meeting, memoranda, and letters of application
+
+MODULE LESSONS AND EXPECTED OUTPUTS
+⚙ Lesson 1: Patterns of Communication Network. Output: a communication network analysis.
+⚙ Lesson 2: Minutes and Minutes of Meeting. Output: formal minutes of a meeting.
+⚙ Lesson 3: Memorandum. Output: a workplace memorandum.
+⚙ Lesson 4: Letter of Application. Output: a professional application letter.
+The module stresses clarity, accuracy, professionalism, appropriate language, and proper document formatting.
+
+COMMUNICATION NETWORK
+Employees, managers, supervisors, and other members of an organization exchange information to reach common goals.
+★ Communication network: the pattern or structure through which messages, instructions, ideas, and feedback are transmitted among individuals or groups.
+★ In simple terms, it is the way information moves among the members of an organization.
+EASIER: think of it as the "road map" a message follows inside a company: who talks to whom, and in which direction.
+Knowing the network tells employees how information should be shared, who should be contacted, and how communication can be made more efficient.
+★ The most commonly used patterns: Formal, Upward, Downward, Horizontal, and Informal.
+
+THE FIVE PATTERNS
+★ Added example: Formal communication: messages that travel through the official channels and lines of authority of the organization, such as reports, memos, and meetings.
+★ Added example: Downward communication: messages that flow from a higher level to a lower level, such as a manager giving instructions, policies, or feedback to employees.
+★ Added example: Upward communication: messages that flow from a lower level to a higher level, such as an employee sending a report, suggestion, or complaint to a supervisor.
+★ Added example: Horizontal communication: messages exchanged among people at the same level, such as two department heads or teammates coordinating work. It is also called lateral communication.
+★ Added example: Informal communication: messages shared outside the official channels, such as casual talk among co-workers. It is often called the grapevine.
+EASIER: down = boss to staff, up = staff to boss, horizontal = co-worker to co-worker, informal = the office grapevine.
+Difference: downward and upward communication move between different levels of authority. Horizontal communication stays on the same level.
+Difference: formal communication follows official channels. Informal communication (the grapevine) is fast but can spread rumors and inaccurate information.
+
+NETWORK SHAPES USED IN THE ACTIVITIES
+★ Added example: Wheel network: one central person, usually a leader, receives information from all members and sends instructions to them; members communicate mainly through that central person.
+⚙ Added example: wheel strength: fast and well controlled. Wheel limitation: the central person can be overloaded, and members have little chance to share in decisions.
+★ Added example: Chain network: a message passes step by step from one person to the next along the line of authority, upward or downward.
+⚙ Added example: chain limitation: it is slow, and the message can be changed or distorted as it passes through many people.
+★ Added example: Circle network: each person communicates with the people beside them, who then pass the message on to others.
+★ Added example: All-channel network: every member communicates directly with every other member, as in a project team group chat.
+⚙ Added example: all-channel strength: high participation and teamwork, good for shared decision-making. Limitation: it can be slower to organize and harder to control.
+EXAMPLE: IDENTIFY THE NETWORK
+⚙ A supervisor receives information from all team members and distributes instructions to them: wheel.
+⚙ Employees talk directly with every member of their project team through an online group chat: all-channel.
+⚙ An employee reports to a team leader, who forwards the report to the department supervisor: chain (upward).
+⚙ A department head sends instructions to a supervisor, who passes them to the employees: chain (downward).
+⚙ Employees share information with colleagues seated beside them, who pass it to others: circle.
+⚙ A five-member conference committee whose chairperson wants every member to join in decision-making: all-channel is the best fit; a wheel would leave decisions to one central person.
+
+IMPORTANCE OF COMMUNICATION NETWORKS
+⚙ They establish clear channels for sharing information.
+⚙ They help employees understand reporting relationships.
+⚙ They improve coordination and teamwork.
+⚙ They support decision-making and problem-solving.
+⚙ They reduce misunderstandings and communication barriers.
+⚙ They promote organizational efficiency.
+
+MINUTES OF A MEETING
+Meetings let employees and administrators discuss concerns, share information, make decisions, and plan activities. What is said and decided must be properly documented.
+★ Minutes of a meeting: official written records of the important discussions, decisions, agreements, and action items during a meeting.
+★ They are also described as formal written documents that summarize the significant proceedings of a meeting.
+★ Minutes are prepared by a designated person, usually called the secretary or recording secretary.
+EASIER: minutes are the "official memory" of a meeting, so people who attended or missed it can check what was decided and who must do what.
+Difference: minutes are a summary of the important points, not a word-for-word transcript of everything said.
+
+PURPOSES OF MEETING MINUTES
+⚙ To provide an official record of discussions and decisions.
+⚙ To document agreements and assigned responsibilities.
+⚙ To remind participants of their tasks and deadlines.
+⚙ To monitor the progress of organizational activities.
+⚙ To provide a reference for future meetings.
+⚙ To promote accountability and transparency.
+
+ESSENTIAL PARTS OF MINUTES IN ORDER
+⚙ Part 1: Name of Organization: identifies the organization or group conducting the meeting.
+⚙ Part 2: Title: usually written as "Minutes of the Meeting."
+⚙ Part 3: Date and Time: when the meeting was held.
+⚙ Part 4: Venue: the location or online platform.
+⚙ Part 5: Attendance: the members present, absent, and invited guests when applicable.
+⚙ Part 6: Call to Order: the official start of the meeting and the presiding officer.
+⚙ Part 7: Approval of Previous Minutes: the approval or correction of the previous meeting's minutes.
+⚙ Part 8: Matters Arising: unresolved concerns from the previous meeting.
+⚙ Part 9: Agenda or Matters Discussed: a summary of the important issues discussed.
+⚙ Part 10: Decisions and Agreements: the resolutions and agreements reached.
+⚙ Part 11: Action Items: assigned tasks, responsible persons, and deadlines.
+⚙ Part 12: Adjournment: the official closing time.
+⚙ Part 13: Prepared by and Approved by: the person who prepared the minutes and the person who approved them.
+Difference: Matters Arising are leftover, unresolved concerns from the previous meeting. Matters Discussed are the issues taken up in the current meeting.
+Difference: Call to Order marks the official start. Adjournment marks the official close.
+Difference: Decisions and Agreements record what was resolved. Action Items record who will do which task and by when.
+
+GUIDELINES IN WRITING MINUTES
+★ Accurate: information must reflect what actually happened.
+★ Objective: avoid personal opinions and emotional interpretations.
+★ Concise: include important information without unnecessary details.
+★ Organized: follow the sequence of the meeting agenda.
+★ Clear: use simple, formal, and understandable language.
+★ Complete: include decisions, assigned tasks, and deadlines.
+EASIER: the six qualities are A-O-C-O-C-C: Accurate, Objective, Concise, Organized, Clear, Complete.
+Important reminders:
+⚙ Do not write every word spoken during the meeting.
+⚙ Record important decisions and agreements.
+⚙ Identify the person responsible for each action item.
+⚙ Use past tense when reporting completed discussions.
+⚙ Review the document for grammatical and factual accuracy.
+⚙ Do not record a proposal as an approved decision unless it was actually approved.
+
+EXAMPLE: SAMPLE MINUTES OF A MEETING
+⚙ Heading: ABC University, Student Organization, Minutes of the Meeting, Planning Committee Meeting.
+⚙ Date: November 10, 2026. Time: 9:00 a.m. to 10:30 a.m. Venue: Conference Room.
+⚙ Presiding Officer: Maria Santos, Committee Chairperson.
+⚙ Present: Maria Santos (Chairperson), John Reyes (Secretary), Angela Cruz (Treasurer), Mark Dela Peña (Member), Sarah Lim (Member). Absent: none.
+⚙ Call to Order: the meeting was called to order at 9:00 a.m. by the chairperson, Maria Santos.
+⚙ Approval of Previous Minutes: reviewed and approved without revisions.
+⚙ Matters Discussed: the proposed schedule for a student leadership seminar; the treasurer's estimated budget of ₱15,000; a suggestion to invite two guest speakers from the local community.
+⚙ Decisions and Agreements: the seminar was scheduled for December 5, 2026; the budget was approved, subject to final administrative confirmation; two guest speakers will be invited.
+⚙ Action Items: John Reyes prepares invitation letters by Nov. 15; Angela Cruz finalizes the budget by Nov. 18; Sarah Lim coordinates with the speakers by Nov. 20.
+⚙ Adjournment: "There being no other matters to discuss, the meeting was adjourned at 10:30 a.m."
+⚙ Prepared by: John Reyes, Committee Secretary. Approved by: Maria Santos, Committee Chairperson.
+EASIER: the secretary prepares the minutes; the presiding officer (here the chairperson) approves them.
+
+MEMORANDUM
+Organizations regularly issue announcements, reminders, instructions, and policy updates to their employees and members.
+★ Memorandum (memo): a short, formal written communication used within an organization to convey important information, announce policies, provide instructions, request action, or remind employees about specific matters.
+★ Unlike a personal letter, a memorandum is generally intended for internal organizational communication.
+EASIER: a memo is an official "notice to everyone inside the company", like the announcements a school office posts for its own students.
+
+PURPOSES OF A MEMORANDUM
+⚙ Announce an upcoming organizational activity.
+⚙ Communicate changes in office policies.
+⚙ Remind employees of deadlines and responsibilities.
+⚙ Provide instructions regarding workplace procedures.
+⚙ Request information or action from employees.
+⚙ Report important organizational updates.
+
+ESSENTIAL PARTS OF A MEMORANDUM
+⚙ The word MEMORANDUM appears at the top as the heading.
+⚙ TO: the intended recipient or group of recipients.
+⚙ FROM: the name and position of the sender.
+⚙ DATE: the date the memorandum is issued.
+⚙ SUBJECT: a brief statement identifying the main topic.
+⚙ BODY: the message containing the purpose, details, instructions, or requested action.
+⚙ CLOSING or CONTACT INFORMATION (if needed): additional instructions or contact details.
+EASIER: the four headings go TO, FROM, DATE, SUBJECT: "who gets it, who sent it, when, and what about".
+
+CHARACTERISTICS OF AN EFFECTIVE MEMORANDUM
+★ Brief: avoid unnecessary explanations.
+★ Direct: present the main purpose immediately.
+★ Clear: use understandable and specific language.
+★ Formal: maintain a professional tone.
+★ Organized: present information logically.
+★ Action-oriented: clearly state what the reader is expected to do, when necessary.
+Difference: "Direct" means the main purpose comes first. "Brief" means no unnecessary explanations. "Action-oriented" means the reader knows what to do.
+
+FORMAL AND INFORMAL LANGUAGE IN MEMORANDA
+A memorandum should use professional language.
+⚙ Informal "Just a reminder..." becomes "This is to remind all employees that..."
+⚙ Informal "Don't forget to submit..." becomes "All employees are requested to submit..."
+⚙ Informal "We need you to attend..." becomes "Your attendance is required at..."
+⚙ Informal "Send it ASAP." becomes "Please submit the document on or before the specified deadline."
+⚙ Informal "Let us know if you have questions." becomes "For further clarification, please contact the undersigned."
+EASIER: "the undersigned" means the person who signed the memo.
+
+EXAMPLE: SAMPLE MEMORANDUM
+⚙ Heading: ABC University, Office of Student Affairs, Memorandum.
+⚙ TO: All First-Year College Students. FROM: Office of Student Affairs. DATE: November 17, 2026.
+⚙ SUBJECT: Attendance at the Freshmen Career Orientation.
+⚙ Body: the orientation is on November 25, 2026, from 8:00 a.m. to 12:00 noon at the University Auditorium.
+⚙ Purpose stated: to introduce students to career opportunities, workplace expectations, and professional communication practices.
+⚙ Requested action: all first-year students are expected to attend, arrive at least 15 minutes early, and wear their prescribed university attire.
+⚙ Closing: questions go to the Office of Student Affairs, followed by "Thank you for your cooperation."
+⚙ A second sample memo from the Human Resources Manager to All Department Employees asks for monthly attendance reports to be submitted to the Human Resources Office on or before November 30, 2026.
+
+MEMORANDUM VERSUS BUSINESS LETTER
+⚙ Use: a memorandum is generally for internal communication; a business letter is commonly for external communication.
+⚙ Readers: a memorandum is addressed to individuals or groups within the organization; a business letter is often addressed to clients, companies, or other organizations.
+⚙ Headings: a memorandum uses TO, FROM, DATE, and SUBJECT; a business letter uses the sender's address, date, inside address, salutation, and complimentary closing.
+⚙ Length: a memorandum is usually concise and direct; a business letter may contain more detailed explanations.
+⚙ Salutation: a memorandum generally does not require one; a business letter usually includes one.
+EASIER: memo = inside the company, no "Dear..."; business letter = outside the company, with "Dear..." and "Sincerely yours,".
+
+LETTER OF APPLICATION
+★ Letter of application: a formal written document submitted to an employer to express interest in a particular job position.
+★ It is also called an application letter or a cover letter.
+It introduces the applicant, highlights relevant qualifications, and explains why the applicant is suitable for the position.
+For students, it prepares them for future employment, internships, and other professional opportunities.
+EASIER: the résumé lists your details; the application letter is the short, polite "introduction" that says which job you want and why you fit it.
+
+PURPOSES OF A LETTER OF APPLICATION
+⚙ Express interest in an advertised job position.
+⚙ Introduce the applicant to a prospective employer.
+⚙ Present relevant educational background and qualifications.
+⚙ Highlight skills, abilities, and experiences.
+⚙ Explain why the applicant is suitable for the position.
+⚙ Request an opportunity for an interview.
+
+ESSENTIAL PARTS OF A LETTER OF APPLICATION IN ORDER
+⚙ Part 1: Sender's Address: the applicant's complete mailing address and contact information.
+⚙ Part 2: Date: the date the letter is written.
+⚙ Part 3: Inside Address: the name, position, and address of the employer or recipient.
+⚙ Part 4: Salutation: a formal greeting, such as "Dear Ms. Santos:"
+⚙ Part 5: Opening Paragraph: states the position being applied for and where the applicant learned about it.
+⚙ Part 6: Body Paragraph: presents the applicant's education, skills, qualifications, and relevant experiences.
+⚙ Part 7: Closing Paragraph: expresses appreciation and requests an opportunity for an interview.
+⚙ Part 8: Complimentary Closing: a formal closing such as "Sincerely yours,"
+⚙ Part 9: Signature and Printed Name: the applicant's signature and complete name.
+⚙ Part 10: Enclosure: indicates attached documents, such as a résumé, when applicable.
+Difference: the sender's address is the applicant's own address. The inside address is the employer's name, position, and address.
+Difference: the salutation is the greeting at the start ("Dear Ms. Santos:"). The complimentary closing is the polite ending ("Sincerely yours,").
+Difference: the opening paragraph names the position and where you heard of it. The closing paragraph thanks the reader and asks for an interview.
+
+GUIDELINES IN WRITING AN EFFECTIVE APPLICATION LETTER
+⚙ Guideline A: Use a professional format. Follow the standard business letter format, use readable fonts and appropriate spacing, and keep the letter concise, preferably one page.
+⚙ Guideline B: Maintain a professional tone. Avoid slang and informal expressions, use polite and respectful language, and avoid exaggerated claims about your abilities.
+⚙ Guideline C: Highlight relevant qualifications. Include your educational background, mention skills relevant to the position, give examples of relevant academic, volunteer, or extracurricular experiences, and explain how your skills can contribute to the organization.
+⚙ Guideline D: Observe correct grammar and mechanics. Check spelling and punctuation, use complete and grammatically correct sentences, keep verb tense consistent, and proofread before submitting.
+
+USEFUL EXPRESSIONS IN AN APPLICATION LETTER
+⚙ Opening: "I am writing to express my interest in the position of..."
+⚙ Referring to an advertisement: "I learned about the vacancy through..."
+⚙ Presenting qualifications: "I am currently a student of..."
+⚙ Highlighting skills: "I have developed skills in..."
+⚙ Describing experience: "Through my academic and extracurricular activities, I have gained experience in..."
+⚙ Expressing suitability: "I believe that my skills and dedication make me a suitable candidate for this position."
+⚙ Requesting an interview: "I would appreciate the opportunity to discuss my qualifications in an interview."
+⚙ Closing: "Thank you for considering my application."
+
+EXAMPLE: SAMPLE LETTER OF APPLICATION
+⚙ Sender's address: 123 Mabini Street, Cebu City, Philippines. Date: November 17, 2026.
+⚙ Inside address: Ms. Angela Reyes, Human Resources Manager, ABC Company, Cebu City, Philippines.
+⚙ Salutation: "Dear Ms. Reyes:" followed by the subject line "Application for the Position of Office Assistant".
+⚙ Opening: the applicant expresses interest in the Office Assistant position, as advertised on the company's official recruitment page.
+⚙ Body: a first-year student in English Language Studies who developed communication, teamwork, time-management, and basic computer skills through academic activities and group projects.
+⚙ Suitability: willingness to learn, positive attitude, and commitment to responsible work make the applicant suitable for an entry-level opportunity.
+⚙ Closing: asks for an interview, mentions the attached résumé, and thanks the reader ("I look forward to hearing from you.").
+⚙ Complimentary closing: "Sincerely yours," then the signature, the name Juan Dela Cruz, and "Applicant".
+⚙ Enclosure: Résumé.
+
+COMMON MISTAKES IN APPLICATION LETTERS
+⚙ Using informal greetings. Instead: use a professional salutation.
+⚙ Writing a very long letter. Instead: keep the letter concise and relevant.
+⚙ Repeating information from the résumé. Instead: highlight only the most relevant qualifications.
+⚙ Making unsupported claims. Instead: provide specific examples of skills and experiences.
+⚙ Using generic statements. Instead: connect your qualifications to the job requirements.
+⚙ Forgetting contact details. Instead: include accurate contact information.
+⚙ Submitting without proofreading. Instead: check grammar, spelling, and formatting.
+Added example: "I want this job because I really need money" can be rewritten as "I am interested in this position because it matches my skills and career goals."
+Added example: "I am good at everything" is an exaggerated, unsupported claim; name specific skills with examples instead.
+Added example: "I hope you call me soon because I am waiting" can be rewritten as "I would appreciate the opportunity to discuss my qualifications in an interview."
+
+COMMON MISTAKES
+⚙ Writing minutes word for word. Minutes record only the important discussions, decisions, and action items.
+⚙ Recording a proposal as approved when it was only suggested.
+⚙ Mixing up Matters Arising (unresolved items from the last meeting) with Matters Discussed (this meeting's issues).
+⚙ Putting a salutation such as "Dear Sir:" in a memo. Memos generally do not need one; business letters do.
+⚙ Thinking a memo is for outside clients. A memo is for internal communication; a business letter is for external communication.
+⚙ Confusing the sender's address (the applicant's) with the inside address (the employer's).
+
+EXAM TIPS
+⚙ Memorize the order of the parts of minutes, from Name of Organization to Prepared by and Approved by.
+⚙ Memorize the memo headings: TO, FROM, DATE, SUBJECT.
+⚙ Memorize the ten parts of an application letter in order.
+⚙ Know the six guidelines for minutes and the six characteristics of an effective memo.
+⚙ Be ready to rewrite informal expressions into professional ones.
+
+SELF-TEST
+Q: What is a communication network?
+★ The pattern or structure through which messages, instructions, ideas, and feedback are transmitted among individuals or groups.
+Q: Who usually prepares the minutes of a meeting?
+★ The secretary or recording secretary.
+Q: Which part of the minutes identifies assigned tasks, responsible persons, and deadlines?
+★ Action Items.
+Q: What are the four headings of a memorandum?
+★ TO, FROM, DATE, and SUBJECT.
+Q: What is the professional version of "Send it ASAP."?
+★ "Please submit the document on or before the specified deadline."
+Q: What are two other names for a letter of application?
+★ Application letter and cover letter.
+Q: Which part of an application letter indicates attached documents such as a résumé?
+★ Enclosure.

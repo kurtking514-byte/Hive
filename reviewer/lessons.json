@@ -968,5 +968,75 @@
   "quiz": 30,
   "course": "BSIT",
   "exam": "Finals"
+ },
+ {
+  "id": "bsit-eng100-m1l1",
+  "subject": "ENG100",
+  "tab": "Module 1 Lesson 1",
+  "title": "Principles of Communication",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Midterm"
+ },
+ {
+  "id": "bsit-eng100-m1l2",
+  "subject": "ENG100",
+  "tab": "Module 1 Lesson 2",
+  "title": "Ethical and Effective Oral and Written Communication",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Midterm"
+ },
+ {
+  "id": "bsit-eng100-m2",
+  "subject": "ENG100",
+  "tab": "Module 2",
+  "title": "Communication and Globalization",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Midterm"
+ },
+ {
+  "id": "bsit-eng100-m3",
+  "subject": "ENG100",
+  "tab": "Module 3",
+  "title": "Business Communication",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Finals"
+ },
+ {
+  "id": "bsit-eng100-m4",
+  "subject": "ENG100",
+  "tab": "Module 4",
+  "title": "Communication for Various Purposes",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Finals"
+ },
+ {
+  "id": "bsit-eng100-essay",
+  "subject": "ENG100",
+  "tab": "Essay Expressions",
+  "title": "Cause-and-Effect and Comparison-and-Contrast Expressions",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Finals"
+ },
+ {
+  "id": "bsit-eng100-m5",
+  "subject": "ENG100",
+  "tab": "Module 5",
+  "title": "English for Work Purposes",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSIT",
+  "exam": "Finals"
  }
 ]

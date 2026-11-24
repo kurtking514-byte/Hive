@@ -1,0 +1,259 @@
+Module 4 Communication for Various Purposes
+English for Academic Purposes: genres, structure and style, audience and context, and writing an academic paper
+
+ENGLISH FOR ACADEMIC PURPOSES
+★ English for Academic Purposes (EAP): the study of English that prepares students to use the language effectively in academic settings.
+EAP develops four skills: understanding academic texts, communicating ideas clearly, analyzing information critically, and producing written work that follows academic conventions.
+★ Academic writing differs from everyday communication because it is generally organized, evidence-based, formal, and directed toward a particular academic audience.
+A student must know what they want to say, why they are writing, who will read the work, and which conventions fit the task.
+EASIER: Texting a friend and writing a term paper are both writing, but the term paper has rules about order, proof, tone, and readers.
+
+OBJECTIVES
+⚙ Determine the genres in academic writing by identifying their purposes, characteristics, and intended readers.
+⚙ Discuss the structure and style of academic writing by explaining common organizational patterns and linguistic conventions.
+⚙ Manifest awareness of audience and context by adapting content, language, tone, and level of detail to a specific academic situation.
+⚙ Write academic papers with appropriate tone and style by producing a coherent, organized, formal, and evidence-supported text.
+
+LESSON 1: GENRES IN ACADEMIC WRITING
+
+WHAT IS ACADEMIC WRITING
+★ Academic writing: a formal type of written communication used in educational and research settings to explain concepts, analyze issues, present arguments, report findings, and contribute to scholarly discussions.
+EASIER: It is the kind of writing teachers and researchers expect: careful, organized, and backed up by proof.
+Its six major characteristics:
+★ Clarity: ideas are expressed in language that readers can understand.
+★ Formality: language is appropriate for academic communication.
+★ Objectivity: claims are supported by reasons, evidence, or reliable sources.
+★ Organization: ideas follow a logical structure.
+★ Precision: words and statements communicate specific meanings.
+★ Evidence-based reasoning: relevant information supports interpretations and conclusions.
+Difference: Clarity means the reader can understand the idea. Precision means each word has a specific, exact meaning ("a majority of respondents" instead of "lots of people").
+Difference: Objectivity is about not making unsupported claims. Evidence-based reasoning is about using relevant information to reach interpretations and conclusions.
+
+COMMON GENRES OF ACADEMIC WRITING
+★ Genre: a type or category of writing with its own purpose, structure, and expected readers.
+★ Academic essay: written to explain, discuss, analyze, or argue a position on a topic.
+⚙ It presents a central idea supported by reasons, examples, and evidence.
+⚙ It usually has an introduction, body paragraphs, and a conclusion.
+⚙ Example title: The Influence of Social Media on University Students' Academic Performance.
+★ Research paper: written to investigate a research question and present findings or an evidence-based analysis.
+⚙ It includes a research problem, relevant literature, methodology when applicable, analysis or findings, discussion, and references.
+⚙ Its structure varies according to the discipline and the assignment.
+⚙ Example title: A Study of English Language Learning Strategies Among First-Year College Students.
+★ Literature review: written to synthesize and evaluate existing research on a topic.
+⚙ It identifies major themes, compares scholarly perspectives, evaluates evidence, and may identify research gaps.
+⚙ Example title: A Review of Studies on English-Medium Instruction in Higher Education.
+EASIER: A literature review is a "review of what others already found", and a research gap is a question those studies have not answered yet.
+★ Research or laboratory report: written to document a procedure, investigation, or experiment and report its results.
+⚙ It commonly includes an introduction, methods, results, discussion, and conclusion.
+⚙ Example title: The Effects of Different Study Environments on Reading Comprehension.
+★ IMRaD: a structure used by some scientific papers, standing for Introduction, Methods, Results, and Discussion.
+EASIER: IMRaD answers four questions in order: What did you study? How? What did you find? What does it mean?
+★ Critical review: written to evaluate a scholarly book, article, theory, or other academic work.
+⚙ It summarizes the main ideas and evaluates their strengths, limitations, evidence, and contribution to the field.
+⚙ Example title: A Critical Review of a Contemporary Theory of Language Learning.
+★ Academic reflection: written to examine learning experiences and connect them with academic concepts or theories.
+⚙ It may include personal observations, but these must be developed through critical analysis and connections to course concepts or evidence.
+⚙ Example title: Reflecting on the Role of Feedback in Developing Academic Writing Skills.
+Difference: A literature review evaluates many existing studies on one topic. A critical review evaluates one specific work, such as a single book or article.
+Difference: An academic reflection starts from your own learning experience. An academic essay starts from a topic and argues or explains a central idea.
+Difference: A research paper investigates a research question. A research or laboratory report documents a procedure or experiment and its results.
+
+HOW TO IDENTIFY AN ACADEMIC GENRE
+Ask these five questions about the text:
+⚙ Question 1: What is the writer trying to accomplish?
+⚙ Question 2: What type of information is presented?
+⚙ Question 3: How is the text organized?
+⚙ Question 4: Who is expected to read it?
+⚙ Question 5: What evidence, conventions, or disciplinary expectations does it follow?
+★ Genres may overlap: a research paper may contain a literature review, and a critical essay may include research findings.
+EASIER: Purpose, information, organization, readers, and conventions together tell you the genre.
+
+EXAMPLE: IDENTIFY THE GENRE
+⚙ A student argues that universities should strengthen academic integrity policies and supports the position with evidence: academic essay (argumentative essay).
+⚙ A researcher examines previous studies about multilingual education and identifies gaps in the literature: literature review.
+⚙ A student evaluates the strengths and weaknesses of a published scholarly book: critical review.
+⚙ A science student documents an experiment, presents results, and discusses the findings: research or laboratory report.
+⚙ A student connects a classroom experience with theories of language acquisition and evaluates what was learned: academic reflection.
+
+LESSON 2: STRUCTURE AND STYLE OF ACADEMIC WRITING
+
+THE BASIC STRUCTURE OF AN ACADEMIC ESSAY
+Many academic essays follow a three-part structure: introduction, body, and conclusion.
+★ Introduction: introduces the topic and gives background, establishes the purpose or research problem, and presents the thesis statement or central argument when appropriate.
+★ Thesis statement: the sentence that states the central argument or main claim of the paper.
+★ Body: develops the main ideas in organized paragraphs, gives explanations, examples, data, or scholarly evidence, analyzes the evidence and connects it to the central claim, and uses transitions to show how ideas relate.
+★ Conclusion: synthesizes the main points, reinforces the central argument or answers the research question, and explains the significance or implications of the discussion.
+EASIER: Introduction tells the reader where you are going, the body takes them there with proof, and the conclusion explains why the trip mattered.
+★ A full research article may use a more specialized structure: IMRaD is common in empirical research, while humanities papers may organize sections around themes, arguments, or textual analysis.
+★ Empirical research: research based on observation, experiments, or collected data.
+
+PARAGRAPH ORGANIZATION
+An effective academic paragraph typically contains four parts, in this order:
+⚙ Topic sentence: introduces the paragraph's main point.
+⚙ Supporting evidence: provides facts, examples, data, or scholarly sources.
+⚙ Analysis: explains what the evidence means and how it supports the point.
+⚙ Linking sentence: connects the discussion to the next point or the overall argument, when appropriate.
+Difference: Supporting evidence gives the facts. Analysis explains what those facts mean and why they support the point.
+
+EXAMPLE: SAMPLE PARAGRAPH
+Academic writing requires students to evaluate information rather than simply reproduce it.
+When students compare scholarly sources, examine the credibility of evidence, and identify relationships between ideas, they develop a deeper understanding of their subject.
+For example, a student writing about social media and academic performance should distinguish between studies showing correlation and studies providing evidence of causation.
+Such analysis strengthens the accuracy and credibility of an academic argument.
+★ The paragraph introduces a claim, explains it, provides an example, and connects the example to the importance of academic reasoning.
+Added example: Correlation means two things happen together; causation means one thing actually causes the other. Students who use social media a lot may have lower grades (correlation), but that alone does not prove social media causes the lower grades (causation).
+
+LINGUISTIC AND STYLISTIC FEATURES
+★ Formality: avoid overly casual expressions. Example: "The findings indicate..." rather than "The results are kind of..."
+★ Precision: choose specific, meaningful words. Example: "A majority of respondents" rather than "Lots of people."
+★ Objectivity: avoid unsupported judgments. Example: "The evidence suggests..." rather than "This is obviously terrible."
+★ Clarity: express ideas directly. Example: "The study examined reading strategies."
+★ Cohesion: use logical transitions. Examples: "Furthermore," "However," "Consequently."
+★ Evidence: support claims with credible sources. Example: "Previous research suggests..." followed by an appropriate citation.
+★ Grammar: use accurate sentence structures and punctuation. Example: "The results show..." rather than "The results shows..."
+EASIER: Cohesion is the "glue" between sentences; transition words like "however" tell the reader how one idea connects to the next.
+★ Academic writing does not always have to sound impersonal: first-person pronouns such as I and we may be appropriate in reflective writing, research reports, or disciplines that permit an explicit authorial voice.
+⚙ The writer should follow the conventions of the assignment or field.
+
+INFORMAL VERSUS ACADEMIC LANGUAGE
+⚙ "A lot of students think..." becomes "Many students believe..."
+⚙ "Kids these days..." becomes "Contemporary students..."
+⚙ "This proves that..." becomes "This suggests that..." or "This provides evidence that..."
+⚙ "I think the author is wrong." becomes "The author's argument may be questioned because..."
+⚙ "The results were really bad." becomes "The results were unfavorable or did not meet the expected standard."
+⚙ "Everyone knows that..." becomes "Existing evidence indicates that..." (with supporting evidence).
+★ Formal language alone does not make a text academic: strong academic writing also needs sound reasoning, credible evidence, clear organization, and appropriate acknowledgment of sources.
+EASIER: Fancy words cannot save a paper with weak proof. "Proves" is usually too strong; academic writers say "suggests" or "provides evidence".
+
+EXAMPLE: REVISING FOR ACADEMIC STYLE
+⚙ "A lot of students don't read because they think it's boring." becomes "Many students do not read regularly because they perceive reading as uninteresting."
+⚙ "I think social media is bad because it wastes everybody's time." becomes "Social media may reduce the time available for academic tasks when students use it excessively."
+⚙ "The research totally proves that online classes are better." becomes "The research provides evidence that online classes may be more effective under certain conditions."
+⚙ "The author talks about many things, but the article is kind of confusing." becomes "The author discusses several issues, but the article's organization and explanations could be clearer."
+These are possible revisions; answers may vary as long as the meaning is kept and the tone is academic.
+
+LESSON 3: AUDIENCE AND CONTEXT IN ACADEMIC WRITING
+
+UNDERSTANDING AUDIENCE
+★ Audience: the intended readers of a text.
+★ Academic audiences may include classmates, instructors, researchers, journal reviewers, policymakers, or professionals.
+Writers should consider the readers':
+⚙ Existing knowledge of the subject.
+⚙ Academic background and disciplinary expectations.
+⚙ Purpose for reading the text.
+⚙ Need for definitions, explanations, examples, or evidence.
+⚙ Expectations concerning formality, citation, and organization.
+★ A paper for first-year university students may need to define technical terms; a paper for specialists may use disciplinary terminology, provided it is precise and appropriate.
+EASIER: Explaining a topic to a beginner and to an expert takes different words, even if the topic is the same.
+
+UNDERSTANDING CONTEXT
+★ Context: the circumstances surrounding a writing task, including the purpose, setting, subject, discipline, assignment requirements, and conventions that influence how a text should be written.
+Difference: Audience is who reads the text. Context is the situation the text is written in.
+The five contextual factors to consider:
+★ Purpose: are you explaining, analyzing, arguing, reporting, or reflecting?
+★ Setting: is the text for a classroom assignment, research conference, journal, or professional report?
+★ Discipline: does the field expect particular terminology, methods, or citation conventions?
+★ Task requirements: are there word limits, formatting rules, source requirements, or specific questions?
+★ Cultural context: could readers interpret examples, expressions, or claims differently because of their experiences and cultural backgrounds?
+Difference: Setting is where the text will appear (classroom, conference, journal). Discipline is the field of study and its expectations (terminology, methods, citation style).
+
+EXAMPLE: ONE TOPIC, DIFFERENT AUDIENCES AND CONTEXTS
+Topic: The Use of Artificial Intelligence in Education.
+⚙ Short classroom essay: explain the issue, develop a clear argument, and use relevant examples.
+⚙ Research paper for language educators: examine AI's effects on language learning and support claims with scholarly studies.
+⚙ Policy brief for university administrators: present concise findings, institutional implications, risks, and actionable recommendations.
+⚙ Reflective journal: analyze personal learning experiences and connect them to course concepts.
+★ Although the topic stays the same, the purpose, organization, evidence, and tone change according to the audience and context.
+★ Policy brief: a short document for decision-makers that presents concise findings, implications, risks, and actionable recommendations.
+
+EXAMPLE: AUDIENCE AND CONTEXT ANALYSIS
+Situation: a university student must write a 700-word paper for an English for Academic Purposes course on the role of multilingualism in higher education. The instructor expects a clear thesis statement, logical organization, formal language, and at least three credible academic sources.
+⚙ Audience: the EAP instructor.
+⚙ Purpose: to explain or analyze the role of multilingualism in higher education.
+⚙ Structure: an introduction with a clear thesis, logically organized body paragraphs, and a conclusion.
+⚙ Tone: formal, clear, precise, and appropriate for an academic audience.
+⚙ Evidence: credible scholarly books, peer-reviewed journal articles, and relevant research findings.
+⚙ Acknowledgment: paraphrase or quote accurately, provide in-text citations, and include a reference list using the required citation style.
+EASIER: Paraphrase means restating an author's idea in your own words; you still cite the author.
+
+LESSON 4: WRITING AN ACADEMIC PAPER
+
+THE ACADEMIC WRITING PROCESS
+⚙ Step 1: Analyze the task. Identify the topic, purpose, genre, audience, required length, and assessment criteria.
+⚙ Step 2: Gather and evaluate information. Consult relevant academic sources and check authorship, credibility, relevance, currency, and supporting evidence.
+⚙ Step 3: Plan and organize. Develop a thesis statement or central purpose and prepare an outline of the main points and supporting evidence.
+⚙ Step 4: Draft the paper. Write the introduction, body, and conclusion using clear paragraphs, suitable transitions, and appropriate academic language.
+⚙ Step 5: Revise, edit, and proofread. Check the strength of the argument, evidence, organization, tone, grammar, citations, and reference list.
+EASIER: Analyze, Gather, Plan, Draft, Revise. Read the assignment first, find sources second, outline third, write fourth, polish last.
+★ Currency of a source: how recent or up to date the information is.
+★ Outline: a plan listing the main points and supporting evidence of a paper before drafting.
+
+EXAMPLE: SAMPLE ACADEMIC PAPER OUTLINE
+Suggested topic: The Importance of Academic Integrity in Higher Education.
+Title: Academic Integrity as a Foundation of University Learning.
+Part I, Introduction:
+⚙ Introduce academic integrity.
+⚙ Explain its relevance to university education.
+⚙ Present the thesis: Academic integrity promotes responsible learning, credible scholarship, and trust within the academic community.
+Part II, Body:
+⚙ Paragraph 1: Explain honesty in academic work.
+⚙ Paragraph 2: Discuss plagiarism and the ethical use of sources.
+⚙ Paragraph 3: Analyze the responsibilities of students and institutions.
+⚙ Paragraph 4: Recommend practical ways to promote academic integrity.
+Part III, Conclusion:
+⚙ Synthesize the major arguments.
+⚙ Reinforce the importance of ethical academic practice.
+⚙ Present a concluding implication for university students.
+Part IV, References:
+⚙ List all sources cited in the paper using the required citation style.
+★ The outline order is Introduction, Body, Conclusion, then References.
+
+ACADEMIC WRITING CHECKLIST
+Before submitting a paper, verify that:
+⚙ The paper addresses the assigned topic and purpose.
+⚙ The content follows the required academic genre.
+⚙ The introduction establishes a clear focus or thesis.
+⚙ The body paragraphs develop logical, connected ideas.
+⚙ Claims are supported by relevant and credible evidence.
+⚙ The tone is appropriate for the intended audience.
+⚙ Language is precise, formal where appropriate, and grammatically accurate.
+⚙ Sources are cited and acknowledged using the required style.
+⚙ The conclusion synthesizes the main ideas.
+⚙ The paper has been revised, edited, and proofread.
+
+MODULE SYNTHESIS
+★ Academic writing is a purposeful form of communication that requires writers to understand genres, follow appropriate organizational conventions, and adapt their language to the audience and context.
+★ Effective academic papers combine clear ideas, logical structure, credible evidence, appropriate tone, and accurate language.
+★ The central principle of EAP: successful academic writing communicates ideas clearly, supports claims responsibly, and meets the expectations of a particular academic situation.
+
+COMMON MISTAKES
+⚙ Confusing a literature review (many existing studies) with a critical review (one specific work).
+⚙ Thinking formal words alone make a text academic. Reasoning, evidence, organization, and acknowledgment of sources are also needed.
+⚙ Believing first-person pronouns are always forbidden. I and we may fit reflective writing, research reports, or fields that allow an authorial voice.
+⚙ Writing "This proves that..." when the evidence only suggests something.
+⚙ Mixing up audience (who reads) and context (the situation of the writing task).
+⚙ Treating an academic reflection as a personal diary. Observations must be connected to course concepts or evidence.
+⚙ Drafting before analyzing the task and gathering sources.
+
+EXAM TIPS
+⚙ Memorize the six characteristics of academic writing and the six common genres with their purposes.
+⚙ Know what IMRaD stands for: Introduction, Methods, Results, Discussion.
+⚙ Know the four parts of an academic paragraph in order: topic sentence, supporting evidence, analysis, linking sentence.
+⚙ Know the five steps of the academic writing process in order.
+⚙ Be ready to classify a situation by genre, and to choose the academic version of an informal sentence.
+
+SELF-TEST
+Q: What is the purpose of a literature review?
+★ To synthesize and evaluate existing research on a topic.
+Q: What does IMRaD stand for?
+★ Introduction, Methods, Results, and Discussion.
+Q: Which part of a paragraph explains what the evidence means?
+★ Analysis.
+Q: What is the academic alternative to "Kids these days..."?
+★ "Contemporary students..."
+Q: What are the five contextual factors?
+★ Purpose, setting, discipline, task requirements, and cultural context.
+Q: What is the second step of the academic writing process?
+★ Gather and evaluate information.
+Q: A student connects a classroom experience with theories of language acquisition. Which genre is this?
+★ Academic reflection.
