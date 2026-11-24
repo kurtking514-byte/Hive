@@ -1,0 +1,362 @@
+Unit 6 Python Classes
+CC2 Introduction to Computer Programming: OOP, classes, objects, class and instance attributes, self, __init__, instance methods, class methods, static methods
+
+OBJECT-ORIENTED PROGRAMMING
+★ Object-Oriented Programming (OOP): a programming approach that organizes a program around objects rather than simply organizing instructions into separate functions.
+★ Object (in OOP): something that has attributes and methods.
+★ Attributes: information or characteristics that describe the object.
+★ Methods: actions or behaviors that the object can perform.
+⚙ OOP lets programmers represent real-world entities using classes and objects.
+Example: a student in a university.
+⚙ Object: Student
+⚙ Attributes: name, student ID, course, year level
+⚙ Methods: study, attend class, submit assignment
+EASIER: Attributes are nouns (what the student has). Methods are verbs (what the student does).
+
+WHAT A CLASS IS
+★ Class: a user-defined blueprint or template that defines the structure and behavior that all objects of that type will share.
+★ Defining a class creates a class object in memory, not an instance.
+EASIER: A class is like the architect's plan of a house. Drawing the plan does not build a house. Each house built from the plan is an object.
+Classes allow you to:
+⚙ Organize related data and functions together.
+⚙ Reuse code.
+⚙ Model real-world entities with their behaviors and properties.
+⚙ Make programs easier to maintain and extend.
+
+CLASS SYNTAX
+★ Classes are defined with the keyword class.
+★ PascalCase: the usual naming style for classes, where each word begins with a capital letter (Student, BankAccount, StudentRecord).
+⚙ class ClassName:
+⚙     # Attributes
+⚙     # Methods
+⚙ The colon after the class name and the indentation of the body are required.
+Class example:
+⚙ class Student:
+⚙     name = "Juan"
+⚙     age = 20
+⚙     course = "BS Information Technology"
+Note: the slide shows a curly closing quote after "BS Information Technology". Python only accepts straight quotes ("), so curly quotes cause a SyntaxError.
+
+WHAT AN OBJECT IS
+★ Object (instance): a concrete realization of a class.
+★ A class defines WHAT something is. An object IS the actual thing existing in memory.
+⚙ An object is created using the class name followed by parentheses.
+⚙ object_name = ClassName()
+EASIER: The class is the cookie cutter. Each cookie you press out is an object.
+⚙ class Student:
+⚙     name = "Juan"
+⚙     age = 20
+⚙     course = "BS Information Technology"
+⚙ student1 = Student()           # Creating an object
+⚙ print(student1.name)           # Outputs Juan
+⚙ print(student1.age)            # Outputs 20
+⚙ print(student1.course)         # Outputs BS Information Technology
+Difference: Student is the class (the blueprint). Student() creates an object. student1 is the variable that refers to that object.
+
+CREATING MULTIPLE OBJECTS FROM ONE CLASS
+⚙ A single class can be used to create many objects, and each object can hold its own attribute values.
+⚙ class Student:
+⚙     name = "Juan"
+⚙     age = 20
+⚙ student1 = Student()
+⚙ student2 = Student()
+⚙ student3 = Student()
+⚙ print(student1.name)     # Outputs Juan
+⚙ print(student2.name)     # Outputs Juan
+⚙ print(student3.name)     # Outputs Juan
+Giving each object its own value:
+⚙ class Student:
+⚙     name = ""
+⚙ student1 = Student()
+⚙ student2 = Student()
+⚙ student1.name = "Juan"
+⚙ student2.name = "Maria"
+⚙ print("Student 1 Name:", student1.name)     # Outputs Student 1 Name: Juan
+⚙ print("Student 2 Name:", student2.name)     # Outputs Student 2 Name: Maria
+Note: the slide uses curly quotes in this example. They are written here as straight quotes so the code runs.
+
+ATTRIBUTES
+★ Attributes: variables associated with a class or an object. They store information that describes the properties or characteristics of an object.
+⚙ Example: a Car class may have the attributes brand, model, color, year, and speed.
+⚙ Two commonly discussed types: class attributes and instance attributes.
+★ Dot notation: the way to access an attribute, written object_name.attribute_name.
+⚙ student1.name reads the name attribute of the object student1.
+
+CLASS ATTRIBUTES
+★ Class attribute: a variable defined directly inside a class but outside its methods. It is generally shared by all instances of that class.
+⚙ class Student:
+⚙     school = "University of the Cordilleras"
+⚙     department = "CITCS"
+⚙ student1 = Student()
+⚙ student2 = Student()
+⚙ print(student1.school)          # Outputs University of the Cordilleras
+⚙ print(student1.department)      # Outputs CITCS
+⚙ print(student2.school)          # Outputs University of the Cordilleras
+⚙ print(student2.department)      # Outputs CITCS
+★ A class attribute can be changed through the class name: ClassName.attribute = new_value.
+⚙ class Student:
+⚙     school = "University of Baguio"
+⚙ student1 = Student()
+⚙ student2 = Student()
+⚙ Student.school = "Saint Louis University"
+⚙ print(student1.school)     # Outputs Saint Louis University
+⚙ print(student2.school)     # Outputs Saint Louis University
+EASIER: A class attribute is like a school sign that every student shares. Repaint the sign once and every student sees the new name.
+Added example: assigning through an object creates an instance attribute that overrides (hides) the class attribute for that object only.
+⚙ class Student:
+⚙     school = "University of Baguio"
+⚙ student1 = Student()
+⚙ student2 = Student()
+⚙ student1.school = "UC"                   # Creates an instance attribute on student1 only
+⚙ Student.school = "Saint Louis University"
+⚙ print(student1.school)     # Outputs UC (its own value hides the class attribute)
+⚙ print(student2.school)     # Outputs Saint Louis University
+⚙ When Python reads object.attribute, it looks in the object first, then in the class.
+
+INSTANCE ATTRIBUTES
+★ Instance attribute: a variable that belongs to a particular object. Unlike class attributes, instance attributes can have different values for every object.
+⚙ Instance attributes are commonly initialized inside a special method called __init__() using the self keyword.
+★ __init__(): a special method that initializes an object when it is created.
+★ self: refers to the current object.
+⚙ self.name = name creates an instance attribute named name.
+⚙ The values passed when creating the object are assigned to their corresponding attributes.
+⚙ class Student:
+⚙     def __init__(self, name, age, course):
+⚙         self.name = name
+⚙         self.age = age
+⚙         self.course = course
+⚙ student1 = Student("Juan", 20, "BSIT")
+⚙ student2 = Student("Maria", 21, "BSCS")
+⚙ print(student1.name, student1.age, student1.course)     # Outputs Juan 20 BSIT
+⚙ print(student2.name, student2.age, student2.course)     # Outputs Maria 21 BSCS
+EASIER: In self.name = name, the right side (name) is the value you passed in. The left side (self.name) is the box on this object where it gets stored.
+
+THE SELF KEYWORD
+★ self: refers to the current instance of a class. It allows an object to access its own attributes and methods.
+⚙ self is one of the most important concepts in Python classes.
+⚙ class Student:
+⚙     def introduce(self):
+⚙         print("Hello! My name is Juan.")
+⚙ student1 = Student()
+⚙ student1.introduce()     # Outputs Hello! My name is Juan.
+Using self to reach each object's own data:
+⚙ class Student:
+⚙     def __init__(self, name):
+⚙         self.name = name
+⚙     def introduce(self):
+⚙         print("Hello! My name is", self.name)
+⚙ student1 = Student("Juan")
+⚙ student2 = Student("Maria")
+⚙ student1.introduce()     # Outputs Hello! My name is Juan
+⚙ student2.introduce()     # Outputs Hello! My name is Maria
+★ self is not a reserved Python keyword. It is a naming convention. It can technically be replaced with another name, but doing so is strongly discouraged.
+⚙ When you call student1.introduce(), Python passes student1 into self automatically. You do not type it in the parentheses.
+EASIER: self means "me, the object this method was called on". Inside student2.introduce(), self is student2.
+
+CLASS ATTRIBUTES VS INSTANCE ATTRIBUTES
+⚙ Where defined: class attributes are defined directly inside the class. Instance attributes are usually defined inside __init__().
+⚙ Who owns them: class attributes are shared among instances unless overridden. Instance attributes belong to individual objects.
+⚙ How accessed: class attributes are commonly accessed through the class name. Instance attributes are accessed through an object.
+Example with both kinds:
+⚙ class Employee:
+⚙     company = "ABC Corporation"               # Class attribute
+⚙     def __init__(self, name, position):
+⚙         self.name = name                      # Instance attribute
+⚙         self.position = position              # Instance attribute
+⚙ employee1 = Employee("John", "Manager")
+⚙ employee2 = Employee("Anna", "Programmer")
+⚙ print(employee1.company, employee1.name)     # Outputs ABC Corporation John
+⚙ print(employee2.company, employee2.name)     # Outputs ABC Corporation Anna
+Difference: company is the same for both employees (class attribute). name and position differ per employee (instance attributes).
+
+METHODS (CLASS FUNCTIONS)
+★ Method (class function): a function defined inside a class. It describes the behaviors or actions that objects can perform.
+★ If attributes represent what an object HAS, methods represent what an object DOES.
+⚙ Methods are defined using the def keyword inside a class.
+⚙ Car example: attributes (what it has) are brand, model, color, speed. Methods (what it does) are start engine, stop engine, accelerate, brake.
+⚙ class ClassName:
+⚙     def method_name(self):
+⚙         # Statements
+⚙ class Student:
+⚙     def study(self):
+⚙         print("The student is studying.")
+⚙     def attend_class(self):
+⚙         print("The student is attending class.")
+⚙ student1 = Student()
+⚙ student1.study()            # Outputs The student is studying.
+⚙ student1.attend_class()     # Outputs The student is attending class.
+⚙ A method is called with dot notation and parentheses: object_name.method_name().
+
+THE __INIT__ METHOD (CONSTRUCTOR)
+★ Constructor / initializer (__init__()): a special method that automatically executes whenever a new object is created. It is commonly used to initialize an object's instance attributes.
+⚙ __init__ is written with two underscores before and two after the word init.
+⚙ class Student:
+⚙     def __init__(self, name, age, course):
+⚙         self.name = name
+⚙         self.age = age
+⚙         self.course = course
+⚙ student1 = Student("Juan", 20, "BSIT")
+⚙ print(student1.name)       # Outputs Juan
+⚙ print(student1.age)        # Outputs 20
+⚙ print(student1.course)     # Outputs BSIT
+What happens when student1 = Student("Juan", 20, "BSIT") runs:
+⚙ Step 1: Python creates a new, empty Student object.
+⚙ Step 2: Python automatically calls __init__, passing the new object as self and "Juan", 20, "BSIT" as name, age, course.
+⚙ Step 3: The body stores self.name = "Juan", self.age = 20, self.course = "BSIT".
+⚙ Step 4: The finished object is assigned to the variable student1.
+⚙ Without __init__(), programmers would have to create objects first and assign their attributes separately.
+⚙ class Student:
+⚙     pass
+⚙ student1 = Student()
+⚙ student1.name = "Juan"
+⚙ student1.age = 20
+⚙ student1.course = "BSIT"
+Added example: when __init__ has parameters, the object must be created with matching arguments. Student("Juan") with def __init__(self, name, age, course) raises a TypeError (missing 2 required positional arguments: 'age' and 'course').
+
+INSTANCE METHODS
+★ Instance method: a method that operates on the attributes of a particular object. It uses self as its first parameter.
+⚙ Instance methods are the most common type of methods used in Python classes.
+⚙ class Student:
+⚙     def __init__(self, name, grade):
+⚙         self.name = name
+⚙         self.grade = grade
+⚙     def display_info(self):
+⚙         print("Student Name:", self.name)
+⚙         print("Grade:", self.grade)
+⚙ student1 = Student("Juan", 95)
+⚙ student2 = Student("Maria", 89)
+⚙ student1.display_info()
+⚙ student2.display_info()
+⚙ Output line 1: Student Name: Juan
+⚙ Output line 2: Grade: 95
+⚙ Output line 3: Student Name: Maria
+⚙ Output line 4: Grade: 89
+Added example: forgetting self in the def line breaks the method.
+⚙ class Student:
+⚙     def study():
+⚙         print("Studying")
+⚙ Student().study()     # TypeError: study() takes 0 positional arguments but 1 was given
+⚙ Python passes the object automatically, but study() has no parameter to receive it.
+
+INSTANCE METHODS WITH PARAMETERS
+★ Methods can accept additional parameters aside from self. These let an object perform actions using values provided when the method is called.
+⚙ self always comes first; the extra parameters come after it.
+⚙ class Student:
+⚙     def __init__(self, name, grade):
+⚙         self.name = name
+⚙         self.grade = grade
+⚙     def update_grade(self, new_grade):
+⚙         self.grade = new_grade
+⚙     def display_grade(self):
+⚙         print(self.name, "has a grade of", self.grade)
+⚙ student1 = Student("Juan", 85)
+⚙ student1.display_grade()      # Outputs Juan has a grade of 85
+⚙ student1.update_grade(95)     # self is student1, new_grade is 95
+⚙ student1.display_grade()      # Outputs Juan has a grade of 95
+
+INSTANCE METHODS WITH RETURN VALUES
+★ Methods can return values using the return keyword. The result can be stored in a variable or used in another computation.
+⚙ class Rectangle:
+⚙     def __init__(self, length, width):
+⚙         self.length = length
+⚙         self.width = width
+⚙     def calculate_area(self):
+⚙         return self.length * self.width
+⚙ rectangle1 = Rectangle(10, 5)
+⚙ area = rectangle1.calculate_area()     # 10 * 5 = 50
+⚙ print("Area:", area)                   # Outputs Area: 50
+Difference: a method that prints shows the value but returns None. A method that returns hands the value back so it can be stored or used.
+
+METHODS CALLING OTHER METHODS
+★ A method inside a class can call another method belonging to the same object using self (self.method_name()).
+⚙ class Calculator:
+⚙     def __init__(self, num1, num2):
+⚙         self.num1 = num1
+⚙         self.num2 = num2
+⚙     def add(self):
+⚙         return self.num1 + self.num2
+⚙     def subtract(self):
+⚙         return self.num1 - self.num2
+⚙     def display_results(self):
+⚙         print("Addition:", self.add())
+⚙         print("Subtraction:", self.subtract())
+⚙ calc1 = Calculator(20, 10)
+⚙ calc1.display_results()
+⚙ Output line 1: Addition: 30 (20 + 10)
+⚙ Output line 2: Subtraction: 10 (20 - 10)
+Added example: writing add() instead of self.add() inside display_results raises a NameError, because add is not a plain function name outside the class.
+
+CLASS METHODS
+★ Class method: a method that works with the class itself rather than an individual object. It uses the @classmethod decorator and cls as its first parameter.
+★ cls: refers to the class, similar to how self refers to an object.
+⚙ class Student:
+⚙     school = "University of the Cordilleras"
+⚙     @classmethod
+⚙     def change_school(cls, new_school):
+⚙         cls.school = new_school
+⚙ Student.change_school("University of Baguio")
+⚙ print(Student.school)     # Outputs University of Baguio
+⚙ The decorator line @classmethod goes directly above the def line.
+EASIER: self changes one object. cls changes the class, so every object that shares that class attribute sees the change.
+
+STATIC METHODS
+★ Static method: a method that belongs to a class but does not automatically receive either the object (self) or the class (cls) as its first argument. It uses the @staticmethod decorator.
+⚙ Static methods are useful for operations related to a class that do not require access to its instance or class attributes.
+⚙ class Calculator:
+⚙     @staticmethod
+⚙     def add(num1, num2):
+⚙         return num1 + num2
+⚙     @staticmethod
+⚙     def multiply(num1, num2):
+⚙         return num1 * num2
+⚙ print(Calculator.add(10, 5))          # Outputs 15
+⚙ print(Calculator.multiply(10, 5))     # Outputs 50
+Note: the slide shows this code without indentation. It must be indented as above to run.
+EASIER: A static method is an ordinary helper function kept inside the class because it is related to it.
+
+COMPARISON OF METHOD TYPES
+⚙ Instance method: first parameter self; no decorator; main purpose is to access or modify object attributes.
+⚙ Class method: first parameter cls; decorator @classmethod; main purpose is to access or modify class attributes.
+⚙ Static method: no first parameter passed automatically; decorator @staticmethod; main purpose is to perform related operations without needing object or class data.
+
+KEY CONCEPTS
+★ Class: the blueprint for creating objects.
+★ Object/Instance: a specific instantiation of a class.
+★ Attribute: a value associated with an object.
+★ Method: a function associated with a class.
+★ Constructor / Initializer (__init__): a special method called when an object is created. It initializes the object's attributes.
+★ self: refers to the current object.
+★ cls: refers to the current class.
+
+COMMON MISTAKES
+⚙ Forgetting self as the first parameter of an instance method (TypeError when called).
+⚙ Writing name = name instead of self.name = name in __init__. The value is not saved on the object, so reading object.name later raises an AttributeError.
+⚙ Calling another method as add() instead of self.add() (NameError).
+⚙ Creating an object without the arguments __init__ needs (TypeError: missing required positional arguments).
+⚙ Thinking self is a reserved keyword. It is only a convention.
+⚙ Thinking object.attribute = value changes the class attribute for everyone. It only creates an instance attribute on that one object.
+⚙ Writing init or _init_ instead of __init__ (two underscores on each side). Python will not call it automatically.
+⚙ Using curly quotes copied from slides instead of straight quotes.
+
+EXAM TIPS
+⚙ Class = blueprint; object = the actual thing in memory, created with ClassName().
+⚙ Attributes are what an object HAS; methods are what an object DOES.
+⚙ Instance method: self. Class method: @classmethod and cls. Static method: @staticmethod, no automatic first parameter.
+⚙ Change a class attribute through the class name (or cls) to affect all objects that have not overridden it.
+⚙ When tracing, track each object's own attributes separately and remember that Python checks the object first, then the class.
+
+SELF-TEST
+Q: What keyword is used to define a class?
+★ class.
+Q: How do you create an object from a class named Student?
+★ student1 = Student()
+Q: What does self refer to?
+★ The current object (the instance the method was called on).
+Q: Which decorator and first parameter does a class method use?
+★ @classmethod and cls.
+Q: After Student.school = "Saint Louis University", what does student1.school print if student1 has no own school attribute?
+★ Saint Louis University.
+Q: What does Rectangle(10, 5).calculate_area() return?
+★ 50.
+Q: Is self a reserved Python keyword?
+★ No. It is a naming convention that can technically be replaced but should not be.

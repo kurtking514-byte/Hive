@@ -490,6 +490,16 @@
   "exam": "Finals"
  },
  {
+  "id": "cc2-unit6",
+  "subject": "CC2",
+  "tab": "Unit 6",
+  "title": "Python Classes",
+  "notes": true,
+  "quiz": 30,
+  "course": "BSCS",
+  "exam": "Finals"
+ },
+ {
   "id": "cc1-6.1",
   "subject": "CC1",
   "tab": "Lesson 6.0-6.1",
