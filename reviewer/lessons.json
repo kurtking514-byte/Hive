@@ -227,7 +227,7 @@
   "notes": true,
   "quiz": 30,
   "course": "BSCS",
-  "exam": "Midterm"
+  "exam": "Finals"
  },
  {
   "id": "HIST100-unit1",
@@ -967,7 +967,7 @@
   "notes": true,
   "quiz": 30,
   "course": "BSIT",
-  "exam": "Finals"
+  "exam": "Midterm"
  },
  {
   "id": "bsit-cc1-u4",
@@ -977,7 +977,7 @@
   "notes": true,
   "quiz": 30,
   "course": "BSIT",
-  "exam": "Finals"
+  "exam": "Midterm"
  },
  {
   "id": "bsit-eng100-m1l1",
